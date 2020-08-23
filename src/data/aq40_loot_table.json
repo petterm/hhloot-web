@@ -1,0 +1,1235 @@
+[
+  {
+    "Item Name": "Barrage Shoulders",
+    "Item ID": "21699",
+    "Slot": "Shoulder",
+    "Prio": "",
+    "Boss": "The Prophet Skeram",
+    "Linktext": "Barrage Shoulders",
+    "Link": "https://classic.wowhead.com/item=21699"
+  },
+  {
+    "Item Name": "Breastplate of Annihilation",
+    "Item ID": "21814",
+    "Slot": "Chest",
+    "Prio": "",
+    "Boss": "The Prophet Skeram",
+    "Linktext": "Breastplate of Annihilation",
+    "Link": "https://classic.wowhead.com/item=21814"
+  },
+  {
+    "Item Name": "Beetle Scaled Wristguards",
+    "Item ID": "21708",
+    "Slot": "Wrist",
+    "Prio": "",
+    "Boss": "The Prophet Skeram",
+    "Linktext": "Beetle Scaled Wristguards",
+    "Link": "https://classic.wowhead.com/item=21708"
+  },
+  {
+    "Item Name": "Leggings of Immersion",
+    "Item ID": "21698",
+    "Slot": "Legs",
+    "Prio": "",
+    "Boss": "The Prophet Skeram",
+    "Linktext": "Leggings of Immersion",
+    "Link": "https://classic.wowhead.com/item=21698"
+  },
+  {
+    "Item Name": "Boots of the Fallen Prophet",
+    "Item ID": "21705",
+    "Slot": "Feet",
+    "Prio": "",
+    "Boss": "The Prophet Skeram",
+    "Linktext": "Boots of the Fallen Prophet",
+    "Link": "https://classic.wowhead.com/item=21705"
+  },
+  {
+    "Item Name": "Boots of the Redeemed Prophecy",
+    "Item ID": "21704",
+    "Slot": "Feet",
+    "Prio": "",
+    "Boss": "The Prophet Skeram",
+    "Linktext": "Boots of the Redeemed Prophecy",
+    "Link": "https://classic.wowhead.com/item=21704"
+  },
+  {
+    "Item Name": "Boots of the Unwavering Will",
+    "Item ID": "21706",
+    "Slot": "Feet",
+    "Prio": "",
+    "Boss": "The Prophet Skeram",
+    "Linktext": "Boots of the Unwavering Will",
+    "Link": "https://classic.wowhead.com/item=21706"
+  },
+  {
+    "Item Name": "Amulet of Foul Warding",
+    "Item ID": "21702",
+    "Slot": "Neck",
+    "Prio": "",
+    "Boss": "The Prophet Skeram",
+    "Linktext": "Amulet of Foul Warding",
+    "Link": "https://classic.wowhead.com/item=21702"
+  },
+  {
+    "Item Name": "Pendant of the Qiraji Guardian",
+    "Item ID": "21700",
+    "Slot": "Neck",
+    "Prio": "",
+    "Boss": "The Prophet Skeram",
+    "Linktext": "Pendant of the Qiraji Guardian",
+    "Link": "https://classic.wowhead.com/item=21700"
+  },
+  {
+    "Item Name": "Cloak of Concentrated Hatred",
+    "Item ID": "21701",
+    "Slot": "Back",
+    "Prio": "",
+    "Boss": "The Prophet Skeram",
+    "Linktext": "Cloak of Concentrated Hatred",
+    "Link": "https://classic.wowhead.com/item=21701"
+  },
+  {
+    "Item Name": "Ring of Swarming Thought",
+    "Item ID": "21707",
+    "Slot": "Finger",
+    "Prio": "",
+    "Boss": "The Prophet Skeram",
+    "Linktext": "Ring of Swarming Thought",
+    "Link": "https://classic.wowhead.com/item=21707"
+  },
+  {
+    "Item Name": "Hammer of Ji'zhi",
+    "Item ID": "21703",
+    "Slot": "Two-Hand",
+    "Prio": "",
+    "Boss": "The Prophet Skeram",
+    "Linktext": "Hammer of Ji'zhi",
+    "Link": "https://classic.wowhead.com/item=21703"
+  },
+  {
+    "Item Name": "Staff of the Qiraji Prophets",
+    "Item ID": "21128",
+    "Slot": "Two-Hand",
+    "Prio": "",
+    "Boss": "The Prophet Skeram",
+    "Linktext": "Staff of the Qiraji Prophets",
+    "Link": "https://classic.wowhead.com/item=21128"
+  },
+  {
+    "Item Name": "",
+    "Item ID": "",
+    "Slot": "",
+    "Prio": "",
+    "Boss": "",
+    "Linktext": "",
+    "Link": ""
+  },
+  {
+    "Item Name": "Guise of the Devourer",
+    "Item ID": "21693",
+    "Slot": "Head",
+    "Prio": "",
+    "Boss": "Bug Trio",
+    "Linktext": "Guise of the Devourer",
+    "Link": "https://classic.wowhead.com/item=21693"
+  },
+  {
+    "Item Name": "Ternary Mantle",
+    "Item ID": "21694",
+    "Slot": "Shoulder",
+    "Prio": "",
+    "Boss": "Bug Trio",
+    "Linktext": "Ternary Mantle",
+    "Link": "https://classic.wowhead.com/item=21694"
+  },
+  {
+    "Item Name": "Cape of the Trinity",
+    "Item ID": "21697",
+    "Slot": "Back",
+    "Prio": "",
+    "Boss": "Bug Trio",
+    "Linktext": "Cape of the Trinity",
+    "Link": "https://classic.wowhead.com/item=21697"
+  },
+  {
+    "Item Name": "Robes of the Triumvirate",
+    "Item ID": "21696",
+    "Slot": "Chest",
+    "Prio": "",
+    "Boss": "Bug Trio",
+    "Linktext": "Robes of the Triumvirate",
+    "Link": "https://classic.wowhead.com/item=21696"
+  },
+  {
+    "Item Name": "Triad Girdle",
+    "Item ID": "21692",
+    "Slot": "Waist",
+    "Prio": "",
+    "Boss": "Bug Trio",
+    "Linktext": "Triad Girdle",
+    "Link": "https://classic.wowhead.com/item=21692"
+  },
+  {
+    "Item Name": "Angelista's Touch",
+    "Item ID": "21695",
+    "Slot": "Finger",
+    "Prio": "",
+    "Boss": "Bug Trio",
+    "Linktext": "Angelista's Touch",
+    "Link": "https://classic.wowhead.com/item=21695"
+  },
+  {
+    "Item Name": "",
+    "Item ID": "",
+    "Slot": "",
+    "Prio": "",
+    "Boss": "",
+    "Linktext": "",
+    "Link": ""
+  },
+  {
+    "Item Name": "Vest of Swift Execution",
+    "Item ID": "21680",
+    "Slot": "Chest",
+    "Prio": "",
+    "Boss": "Bug Trio",
+    "Linktext": "Vest of Swift Execution",
+    "Link": "https://classic.wowhead.com/item=21680"
+  },
+  {
+    "Item Name": "Ring of the Devoured",
+    "Item ID": "21681",
+    "Slot": "Finger",
+    "Prio": "",
+    "Boss": "Bug Trio",
+    "Linktext": "Ring of the Devoured",
+    "Link": "https://classic.wowhead.com/item=21681"
+  },
+  {
+    "Item Name": "Petrified Scarab",
+    "Item ID": "21685",
+    "Slot": "Trinket",
+    "Prio": "",
+    "Boss": "Bug Trio",
+    "Linktext": "Petrified Scarab",
+    "Link": "https://classic.wowhead.com/item=21685"
+  },
+  {
+    "Item Name": "Wand of Qiraji Nobility",
+    "Item ID": "21603",
+    "Slot": "Ranged",
+    "Prio": "",
+    "Boss": "Bug Trio",
+    "Linktext": "Wand of Qiraji Nobility",
+    "Link": "https://classic.wowhead.com/item=21603"
+  },
+  {
+    "Item Name": "",
+    "Item ID": "",
+    "Slot": "",
+    "Prio": "",
+    "Boss": "",
+    "Linktext": "",
+    "Link": ""
+  },
+  {
+    "Item Name": "Angelista's Charm",
+    "Item ID": "21690",
+    "Slot": "Neck",
+    "Prio": "",
+    "Boss": "Bug Trio",
+    "Linktext": "Angelista's Charm",
+    "Link": "https://classic.wowhead.com/item=21690"
+  },
+  {
+    "Item Name": "Gloves of Ebru",
+    "Item ID": "21689",
+    "Slot": "Hands",
+    "Prio": "",
+    "Boss": "Bug Trio",
+    "Linktext": "Gloves of Ebru",
+    "Link": "https://classic.wowhead.com/item=21689"
+  },
+  {
+    "Item Name": "Ooze-ridden Gauntlets",
+    "Item ID": "21691",
+    "Slot": "Hands",
+    "Prio": "",
+    "Boss": "Bug Trio",
+    "Linktext": "Ooze-ridden Gauntlets",
+    "Link": "https://classic.wowhead.com/item=21691"
+  },
+  {
+    "Item Name": "Boots of the Fallen Hero",
+    "Item ID": "21688",
+    "Slot": "Feet",
+    "Prio": "",
+    "Boss": "Bug Trio",
+    "Linktext": "Boots of the Fallen Hero",
+    "Link": "https://classic.wowhead.com/item=21688"
+  },
+  {
+    "Item Name": "",
+    "Item ID": "",
+    "Slot": "",
+    "Prio": "",
+    "Boss": "",
+    "Linktext": "",
+    "Link": ""
+  },
+  {
+    "Item Name": "Mantle of Phrenic Power",
+    "Item ID": "21686",
+    "Slot": "Shoulder",
+    "Prio": "",
+    "Boss": "Bug Trio",
+    "Linktext": "Mantle of Phrenic Power",
+    "Link": "https://classic.wowhead.com/item=21686"
+  },
+  {
+    "Item Name": "Mantle of the Desert's Fury",
+    "Item ID": "21684",
+    "Slot": "Shoulder",
+    "Prio": "",
+    "Boss": "Bug Trio",
+    "Linktext": "Mantle of the Desert's Fury",
+    "Link": "https://classic.wowhead.com/item=21684"
+  },
+  {
+    "Item Name": "Mantle of the Desert Crusade",
+    "Item ID": "21683",
+    "Slot": "Shoulder",
+    "Prio": "",
+    "Boss": "Bug Trio",
+    "Linktext": "Mantle of the Desert Crusade",
+    "Link": "https://classic.wowhead.com/item=21683"
+  },
+  {
+    "Item Name": "Bile-Covered Gauntlets",
+    "Item ID": "21682",
+    "Slot": "Hands",
+    "Prio": "",
+    "Boss": "Bug Trio",
+    "Linktext": "Bile-Covered Gauntlets",
+    "Link": "https://classic.wowhead.com/item=21682"
+  },
+  {
+    "Item Name": "Ukko's Ring of Darkness",
+    "Item ID": "21687",
+    "Slot": "Finger",
+    "Prio": "",
+    "Boss": "Bug Trio",
+    "Linktext": "Ukko's Ring of Darkness",
+    "Link": "https://classic.wowhead.com/item=21687"
+  },
+  {
+    "Item Name": "",
+    "Item ID": "",
+    "Slot": "",
+    "Prio": "",
+    "Boss": "",
+    "Linktext": "",
+    "Link": ""
+  },
+  {
+    "Item Name": "Creeping Vine Helm",
+    "Item ID": "21669",
+    "Slot": "Head",
+    "Prio": "",
+    "Boss": "Battleguard Sartura",
+    "Linktext": "Creeping Vine Helm",
+    "Link": "https://classic.wowhead.com/item=21669"
+  },
+  {
+    "Item Name": "Necklace of Purity",
+    "Item ID": "21678",
+    "Slot": "Neck",
+    "Prio": "",
+    "Boss": "Battleguard Sartura",
+    "Linktext": "Necklace of Purity",
+    "Link": "https://classic.wowhead.com/item=21678"
+  },
+  {
+    "Item Name": "Robes of the Battleguard",
+    "Item ID": "21671",
+    "Slot": "Chest",
+    "Prio": "",
+    "Boss": "Battleguard Sartura",
+    "Linktext": "Robes of the Battleguard",
+    "Link": "https://classic.wowhead.com/item=21671"
+  },
+  {
+    "Item Name": "Gloves of Enforcement",
+    "Item ID": "21672",
+    "Slot": "Hands",
+    "Prio": "",
+    "Boss": "Battleguard Sartura",
+    "Linktext": "Gloves of Enforcement",
+    "Link": "https://classic.wowhead.com/item=21672"
+  },
+  {
+    "Item Name": "Gauntlets of Steadfast Determination",
+    "Item ID": "21674",
+    "Slot": "Hands",
+    "Prio": "",
+    "Boss": "Battleguard Sartura",
+    "Linktext": "Gauntlets of Steadfast Determination",
+    "Link": "https://classic.wowhead.com/item=21674"
+  },
+  {
+    "Item Name": "Thick Qirajihide Belt",
+    "Item ID": "21675",
+    "Slot": "Waist",
+    "Prio": "",
+    "Boss": "Battleguard Sartura",
+    "Linktext": "Thick Qirajihide Belt",
+    "Link": "https://classic.wowhead.com/item=21675"
+  },
+  {
+    "Item Name": "Leggings of the Festering Swarm",
+    "Item ID": "21676",
+    "Slot": "Legs",
+    "Prio": "",
+    "Boss": "Battleguard Sartura",
+    "Linktext": "Leggings of the Festering Swarm",
+    "Link": "https://classic.wowhead.com/item=21676"
+  },
+  {
+    "Item Name": "Scaled Leggings of Qiraji Fury",
+    "Item ID": "21668",
+    "Slot": "Legs",
+    "Prio": "",
+    "Boss": "Battleguard Sartura",
+    "Linktext": "Scaled Leggings of Qiraji Fury",
+    "Link": "https://classic.wowhead.com/item=21668"
+  },
+  {
+    "Item Name": "Legplates of Blazing Light",
+    "Item ID": "21667",
+    "Slot": "Legs",
+    "Prio": "",
+    "Boss": "Battleguard Sartura",
+    "Linktext": "Legplates of Blazing Light",
+    "Link": "https://classic.wowhead.com/item=21667"
+  },
+  {
+    "Item Name": "Recomposed Boots",
+    "Item ID": "21648",
+    "Slot": "Feet",
+    "Prio": "",
+    "Boss": "Battleguard Sartura",
+    "Linktext": "Recomposed Boots",
+    "Link": "https://classic.wowhead.com/item=21648"
+  },
+  {
+    "Item Name": "Badge of the Swarmguard",
+    "Item ID": "21670",
+    "Slot": "Trinket",
+    "Prio": "",
+    "Boss": "Battleguard Sartura",
+    "Linktext": "Badge of the Swarmguard",
+    "Link": "https://classic.wowhead.com/item=21670"
+  },
+  {
+    "Item Name": "Sartura's Might",
+    "Item ID": "21666",
+    "Slot": "Held In Off-hand",
+    "Prio": "",
+    "Boss": "Battleguard Sartura",
+    "Linktext": "Sartura's Might",
+    "Link": "https://classic.wowhead.com/item=21666"
+  },
+  {
+    "Item Name": "Silithid Claw",
+    "Item ID": "21673",
+    "Slot": "Main Hand",
+    "Prio": "",
+    "Boss": "Battleguard Sartura",
+    "Linktext": "Silithid Claw",
+    "Link": "https://classic.wowhead.com/item=21673"
+  },
+  {
+    "Item Name": "",
+    "Item ID": "",
+    "Slot": "",
+    "Prio": "",
+    "Boss": "",
+    "Linktext": "",
+    "Link": ""
+  },
+  {
+    "Item Name": "Mantle of Wicked Revenge",
+    "Item ID": "21665",
+    "Slot": "Shoulder",
+    "Prio": "",
+    "Boss": "Fankriss the Unyielding",
+    "Linktext": "Mantle of Wicked Revenge",
+    "Link": "https://classic.wowhead.com/item=21665"
+  },
+  {
+    "Item Name": "Pauldrons of the Unrelenting",
+    "Item ID": "21639",
+    "Slot": "Shoulder",
+    "Prio": "",
+    "Boss": "Fankriss the Unyielding",
+    "Linktext": "Pauldrons of the Unrelenting",
+    "Link": "https://classic.wowhead.com/item=21639"
+  },
+  {
+    "Item Name": "Cloak of Untold Secrets",
+    "Item ID": "21627",
+    "Slot": "Back",
+    "Prio": "",
+    "Boss": "Fankriss the Unyielding",
+    "Linktext": "Cloak of Untold Secrets",
+    "Link": "https://classic.wowhead.com/item=21627"
+  },
+  {
+    "Item Name": "Robes of the Guardian Saint",
+    "Item ID": "21663",
+    "Slot": "Chest",
+    "Prio": "",
+    "Boss": "Fankriss the Unyielding",
+    "Linktext": "Robes of the Guardian Saint",
+    "Link": "https://classic.wowhead.com/item=21663"
+  },
+  {
+    "Item Name": "Silithid Carapace Chestguard",
+    "Item ID": "21652",
+    "Slot": "Chest",
+    "Prio": "",
+    "Boss": "Fankriss the Unyielding",
+    "Linktext": "Silithid Carapace Chestguard",
+    "Link": "https://classic.wowhead.com/item=21652"
+  },
+  {
+    "Item Name": "Scaled Sand Reaver Leggings",
+    "Item ID": "21651",
+    "Slot": "Legs",
+    "Prio": "",
+    "Boss": "Fankriss the Unyielding",
+    "Linktext": "Scaled Sand Reaver Leggings",
+    "Link": "https://classic.wowhead.com/item=21651"
+  },
+  {
+    "Item Name": "Hive Tunneler's Boots",
+    "Item ID": "21645",
+    "Slot": "Feet",
+    "Prio": "",
+    "Boss": "Fankriss the Unyielding",
+    "Linktext": "Hive Tunneler's Boots",
+    "Link": "https://classic.wowhead.com/item=21645"
+  },
+  {
+    "Item Name": "Ancient Qiraji Ripper",
+    "Item ID": "21650",
+    "Slot": "One-Hand",
+    "Prio": "",
+    "Boss": "Fankriss the Unyielding",
+    "Linktext": "Ancient Qiraji Ripper",
+    "Link": "https://classic.wowhead.com/item=21650"
+  },
+  {
+    "Item Name": "Barb of the Sand Reaver",
+    "Item ID": "21635",
+    "Slot": "Two-Hand",
+    "Prio": "",
+    "Boss": "Fankriss the Unyielding",
+    "Linktext": "Barb of the Sand Reaver",
+    "Link": "https://classic.wowhead.com/item=21635"
+  },
+  {
+    "Item Name": "Barbed Choker",
+    "Item ID": "21664",
+    "Slot": "Neck",
+    "Prio": "",
+    "Boss": "Fankriss the Unyielding",
+    "Linktext": "Barbed Choker",
+    "Link": "https://classic.wowhead.com/item=21664"
+  },
+  {
+    "Item Name": "Fetish of the Sand Reaver",
+    "Item ID": "21647",
+    "Slot": "Trinket",
+    "Prio": "",
+    "Boss": "Fankriss the Unyielding",
+    "Linktext": "Fetish of the Sand Reaver",
+    "Link": "https://classic.wowhead.com/item=21647"
+  },
+  {
+    "Item Name": "Libram of Grace",
+    "Item ID": "22402",
+    "Slot": "Relic",
+    "Prio": "",
+    "Boss": "Fankriss the Unyielding",
+    "Linktext": "Libram of Grace",
+    "Link": "https://classic.wowhead.com/item=22402"
+  },
+  {
+    "Item Name": "Totem of Life",
+    "Item ID": "22396",
+    "Slot": "Relic",
+    "Prio": "",
+    "Boss": "Fankriss the Unyielding",
+    "Linktext": "Totem of Life",
+    "Link": "https://classic.wowhead.com/item=22396"
+  },
+  {
+    "Item Name": "",
+    "Item ID": "",
+    "Slot": "",
+    "Prio": "",
+    "Boss": "",
+    "Linktext": "",
+    "Link": ""
+  },
+  {
+    "Item Name": "Gauntlets of Kalimdor",
+    "Item ID": "21624",
+    "Slot": "Hands",
+    "Prio": "",
+    "Boss": "Viscidus",
+    "Linktext": "Gauntlets of Kalimdor",
+    "Link": "https://classic.wowhead.com/item=21624"
+  },
+  {
+    "Item Name": "Gauntlets of the Righteous Champion",
+    "Item ID": "21623",
+    "Slot": "Hands",
+    "Prio": "",
+    "Boss": "Viscidus",
+    "Linktext": "Gauntlets of the Righteous Champion",
+    "Link": "https://classic.wowhead.com/item=21623"
+  },
+  {
+    "Item Name": "Slime-coated Leggings",
+    "Item ID": "21626",
+    "Slot": "Legs",
+    "Prio": "",
+    "Boss": "Viscidus",
+    "Linktext": "Slime-coated Leggings",
+    "Link": "https://classic.wowhead.com/item=21626"
+  },
+  {
+    "Item Name": "Sharpened Silithid Femur",
+    "Item ID": "21622",
+    "Slot": "Main Hand",
+    "Prio": "",
+    "Boss": "Viscidus",
+    "Linktext": "Sharpened Silithid Femur",
+    "Link": "https://classic.wowhead.com/item=21622"
+  },
+  {
+    "Item Name": "Ring of the Qiraji Fury",
+    "Item ID": "21677",
+    "Slot": "Finger",
+    "Prio": "",
+    "Boss": "Viscidus",
+    "Linktext": "Ring of the Qiraji Fury",
+    "Link": "https://classic.wowhead.com/item=21677"
+  },
+  {
+    "Item Name": "Scarab Brooch",
+    "Item ID": "21625",
+    "Slot": "Trinket",
+    "Prio": "",
+    "Boss": "Viscidus",
+    "Linktext": "Scarab Brooch",
+    "Link": "https://classic.wowhead.com/item=21625"
+  },
+  {
+    "Item Name": "Idol of Health",
+    "Item ID": "22399",
+    "Slot": "Relic",
+    "Prio": "",
+    "Boss": "Viscidus",
+    "Linktext": "Idol of Health",
+    "Link": "https://classic.wowhead.com/item=22399"
+  },
+  {
+    "Item Name": "",
+    "Item ID": "",
+    "Slot": "",
+    "Prio": "",
+    "Boss": "",
+    "Linktext": "",
+    "Link": ""
+  },
+  {
+    "Item Name": "Cloak of the Golden Hive",
+    "Item ID": "21621",
+    "Slot": "Back",
+    "Prio": "",
+    "Boss": "Princess Huhuran",
+    "Linktext": "Cloak of the Golden Hive",
+    "Link": "https://classic.wowhead.com/item=21621"
+  },
+  {
+    "Item Name": "Hive Defiler Wristguards",
+    "Item ID": "21618",
+    "Slot": "Wrist",
+    "Prio": "",
+    "Boss": "Princess Huhuran",
+    "Linktext": "Hive Defiler Wristguards",
+    "Link": "https://classic.wowhead.com/item=21618"
+  },
+  {
+    "Item Name": "Gloves of the Messiah",
+    "Item ID": "21619",
+    "Slot": "Hands",
+    "Prio": "",
+    "Boss": "Princess Huhuran",
+    "Linktext": "Gloves of the Messiah",
+    "Link": "https://classic.wowhead.com/item=21619"
+  },
+  {
+    "Item Name": "Wasphide Gauntlets",
+    "Item ID": "21617",
+    "Slot": "Hands",
+    "Prio": "",
+    "Boss": "Princess Huhuran",
+    "Linktext": "Wasphide Gauntlets",
+    "Link": "https://classic.wowhead.com/item=21617"
+  },
+  {
+    "Item Name": "Ring of the Martyr",
+    "Item ID": "21620",
+    "Slot": "Finger",
+    "Prio": "",
+    "Boss": "Princess Huhuran",
+    "Linktext": "Ring of the Martyr",
+    "Link": "https://classic.wowhead.com/item=21620"
+  },
+  {
+    "Item Name": "Huhuran's Stinger",
+    "Item ID": "21616",
+    "Slot": "Ranged",
+    "Prio": "",
+    "Boss": "Princess Huhuran",
+    "Linktext": "Huhuran's Stinger",
+    "Link": "https://classic.wowhead.com/item=21616"
+  },
+  {
+    "Item Name": "",
+    "Item ID": "",
+    "Slot": "",
+    "Prio": "",
+    "Boss": "",
+    "Linktext": "",
+    "Link": ""
+  },
+  {
+    "Item Name": "Vek'lor's Diadem",
+    "Item ID": "20930",
+    "Slot": "Head",
+    "Prio": "",
+    "Boss": "Twin Emperors",
+    "Linktext": "Vek'lor's Diadem",
+    "Link": "https://classic.wowhead.com/item=20930"
+  },
+  {
+    "Item Name": "Qiraji Execution Bracers",
+    "Item ID": "21602",
+    "Slot": "Wrist",
+    "Prio": "",
+    "Boss": "Twin Emperors",
+    "Linktext": "Qiraji Execution Bracers",
+    "Link": "https://classic.wowhead.com/item=21602"
+  },
+  {
+    "Item Name": "Vek'lor's Gloves of Devastation",
+    "Item ID": "21599",
+    "Slot": "Hands",
+    "Prio": "",
+    "Boss": "Twin Emperors",
+    "Linktext": "Vek'lor's Gloves of Devastation",
+    "Link": "https://classic.wowhead.com/item=21599"
+  },
+  {
+    "Item Name": "Royal Qiraji Belt",
+    "Item ID": "21598",
+    "Slot": "Waist",
+    "Prio": "",
+    "Boss": "Twin Emperors",
+    "Linktext": "Royal Qiraji Belt",
+    "Link": "https://classic.wowhead.com/item=21598"
+  },
+  {
+    "Item Name": "Boots of Epiphany",
+    "Item ID": "21600",
+    "Slot": "Feet",
+    "Prio": "",
+    "Boss": "Twin Emperors",
+    "Linktext": "Boots of Epiphany",
+    "Link": "https://classic.wowhead.com/item=21600"
+  },
+  {
+    "Item Name": "Ring of Emperor Vek'lor",
+    "Item ID": "21601",
+    "Slot": "Finger",
+    "Prio": "",
+    "Boss": "Twin Emperors",
+    "Linktext": "Ring of Emperor Vek'lor",
+    "Link": "https://classic.wowhead.com/item=21601"
+  },
+  {
+    "Item Name": "Royal Scepter of Vek'lor",
+    "Item ID": "21597",
+    "Slot": "Held In Off-hand",
+    "Prio": "",
+    "Boss": "Twin Emperors",
+    "Linktext": "Royal Scepter of Vek'lor",
+    "Link": "https://classic.wowhead.com/item=21597"
+  },
+  {
+    "Item Name": "",
+    "Item ID": "",
+    "Slot": "",
+    "Prio": "",
+    "Boss": "",
+    "Linktext": "",
+    "Link": ""
+  },
+  {
+    "Item Name": "Vek'nilash's Circlet",
+    "Item ID": "20926",
+    "Slot": "Head",
+    "Prio": "",
+    "Boss": "Twin Emperors",
+    "Linktext": "Vek'nilash's Circlet",
+    "Link": "https://classic.wowhead.com/item=20926"
+  },
+  {
+    "Item Name": "Amulet of Vek'nilash",
+    "Item ID": "21608",
+    "Slot": "Neck",
+    "Prio": "",
+    "Boss": "Twin Emperors",
+    "Linktext": "Amulet of Vek'nilash",
+    "Link": "https://classic.wowhead.com/item=21608"
+  },
+  {
+    "Item Name": "Bracelets of Royal Redemption",
+    "Item ID": "21604",
+    "Slot": "Wrist",
+    "Prio": "",
+    "Boss": "Twin Emperors",
+    "Linktext": "Bracelets of Royal Redemption",
+    "Link": "https://classic.wowhead.com/item=21604"
+  },
+  {
+    "Item Name": "Gloves of the Hidden Temple",
+    "Item ID": "21605",
+    "Slot": "Hands",
+    "Prio": "",
+    "Boss": "Twin Emperors",
+    "Linktext": "Gloves of the Hidden Temple",
+    "Link": "https://classic.wowhead.com/item=21605"
+  },
+  {
+    "Item Name": "Regenerating Belt of Vek'nilash",
+    "Item ID": "21609",
+    "Slot": "Waist",
+    "Prio": "",
+    "Boss": "Twin Emperors",
+    "Linktext": "Regenerating Belt of Vek'nilash",
+    "Link": "https://classic.wowhead.com/item=21609"
+  },
+  {
+    "Item Name": "Grasp of the Fallen Emperor",
+    "Item ID": "21607",
+    "Slot": "Waist",
+    "Prio": "",
+    "Boss": "Twin Emperors",
+    "Linktext": "Grasp of the Fallen Emperor",
+    "Link": "https://classic.wowhead.com/item=21607"
+  },
+  {
+    "Item Name": "Belt of the Fallen Emperor",
+    "Item ID": "21606",
+    "Slot": "Waist",
+    "Prio": "",
+    "Boss": "Twin Emperors",
+    "Linktext": "Belt of the Fallen Emperor",
+    "Link": "https://classic.wowhead.com/item=21606"
+  },
+  {
+    "Item Name": "Kalimdor's Revenge",
+    "Item ID": "21679",
+    "Slot": "Two-Hand",
+    "Prio": "",
+    "Boss": "Twin Emperors",
+    "Linktext": "Kalimdor's Revenge",
+    "Link": "https://classic.wowhead.com/item=21679"
+  },
+  {
+    "Item Name": "",
+    "Item ID": "",
+    "Slot": "",
+    "Prio": "",
+    "Boss": "",
+    "Linktext": "",
+    "Link": ""
+  },
+  {
+    "Item Name": "Don Rigoberto's Lost Hat",
+    "Item ID": "21615",
+    "Slot": "Head",
+    "Prio": "",
+    "Boss": "Ouro",
+    "Linktext": "Don Rigoberto's Lost Hat",
+    "Link": "https://classic.wowhead.com/item=21615"
+  },
+  {
+    "Item Name": "Burrower Bracers",
+    "Item ID": "21611",
+    "Slot": "Wrist",
+    "Prio": "",
+    "Boss": "Ouro",
+    "Linktext": "Burrower Bracers",
+    "Link": "https://classic.wowhead.com/item=21611"
+  },
+  {
+    "Item Name": "The Burrower's Shell",
+    "Item ID": "23558",
+    "Slot": "Trinket",
+    "Prio": "",
+    "Boss": "Ouro",
+    "Linktext": "The Burrower's Shell",
+    "Link": "https://classic.wowhead.com/item=23558"
+  },
+  {
+    "Item Name": "Jom Gabbar",
+    "Item ID": "23570",
+    "Slot": "Trinket",
+    "Prio": "",
+    "Boss": "Ouro",
+    "Linktext": "Jom Gabbar",
+    "Link": "https://classic.wowhead.com/item=23570"
+  },
+  {
+    "Item Name": "Wormscale Blocker",
+    "Item ID": "21610",
+    "Slot": "Shield",
+    "Prio": "",
+    "Boss": "Ouro",
+    "Linktext": "Wormscale Blocker",
+    "Link": "https://classic.wowhead.com/item=21610"
+  },
+  {
+    "Item Name": "Larvae of the Great Worm",
+    "Item ID": "23557",
+    "Slot": "Ranged",
+    "Prio": "",
+    "Boss": "Ouro",
+    "Linktext": "Larvae of the Great Worm",
+    "Link": "https://classic.wowhead.com/item=23557"
+  },
+  {
+    "Item Name": "",
+    "Item ID": "",
+    "Slot": "",
+    "Prio": "",
+    "Boss": "",
+    "Linktext": "",
+    "Link": ""
+  },
+  {
+    "Item Name": "Ouro's Intact Hide",
+    "Item ID": "20927",
+    "Slot": "Legs",
+    "Prio": "",
+    "Boss": "Ouro",
+    "Linktext": "Ouro's Intact Hide",
+    "Link": "https://classic.wowhead.com/item=20927"
+  },
+  {
+    "Item Name": "Skin of the Great Sandworm",
+    "Item ID": "20931",
+    "Slot": "Legs",
+    "Prio": "",
+    "Boss": "Ouro",
+    "Linktext": "Skin of the Great Sandworm",
+    "Link": "https://classic.wowhead.com/item=20931"
+  },
+  {
+    "Item Name": "",
+    "Item ID": "",
+    "Slot": "",
+    "Prio": "",
+    "Boss": "",
+    "Linktext": "",
+    "Link": ""
+  },
+  {
+    "Item Name": "Mark of C'Thun",
+    "Item ID": "22732",
+    "Slot": "Neck",
+    "Prio": "",
+    "Boss": "C'Thun",
+    "Linktext": "Mark of C'Thun",
+    "Link": "https://classic.wowhead.com/item=22732"
+  },
+  {
+    "Item Name": "Cloak of Clarity",
+    "Item ID": "21583",
+    "Slot": "Back",
+    "Prio": "",
+    "Boss": "C'Thun",
+    "Linktext": "Cloak of Clarity",
+    "Link": "https://classic.wowhead.com/item=21583"
+  },
+  {
+    "Item Name": "Cloak of the Devoured",
+    "Item ID": "22731",
+    "Slot": "Back",
+    "Prio": "",
+    "Boss": "C'Thun",
+    "Linktext": "Cloak of the Devoured",
+    "Link": "https://classic.wowhead.com/item=22731"
+  },
+  {
+    "Item Name": "Eyestalk Waist Cord",
+    "Item ID": "22730",
+    "Slot": "Waist",
+    "Prio": "",
+    "Boss": "C'Thun",
+    "Linktext": "Eyestalk Waist Cord",
+    "Link": "https://classic.wowhead.com/item=22730"
+  },
+  {
+    "Item Name": "Grasp of the Old God",
+    "Item ID": "21582",
+    "Slot": "Waist",
+    "Prio": "",
+    "Boss": "C'Thun",
+    "Linktext": "Grasp of the Old God",
+    "Link": "https://classic.wowhead.com/item=21582"
+  },
+  {
+    "Item Name": "Belt of Never-ending Agony",
+    "Item ID": "21586",
+    "Slot": "Waist",
+    "Prio": "",
+    "Boss": "C'Thun",
+    "Linktext": "Belt of Never-ending Agony",
+    "Link": "https://classic.wowhead.com/item=21586"
+  },
+  {
+    "Item Name": "Dark Storm Gauntlets",
+    "Item ID": "21585",
+    "Slot": "Hands",
+    "Prio": "",
+    "Boss": "C'Thun",
+    "Linktext": "Dark Storm Gauntlets",
+    "Link": "https://classic.wowhead.com/item=21585"
+  },
+  {
+    "Item Name": "Gauntlets of Annihilation",
+    "Item ID": "21581",
+    "Slot": "Hands",
+    "Prio": "",
+    "Boss": "C'Thun",
+    "Linktext": "Gauntlets of Annihilation",
+    "Link": "https://classic.wowhead.com/item=21581"
+  },
+  {
+    "Item Name": "Ring of the Godslayer",
+    "Item ID": "21596",
+    "Slot": "Finger",
+    "Prio": "",
+    "Boss": "C'Thun",
+    "Linktext": "Ring of the Godslayer",
+    "Link": "https://classic.wowhead.com/item=21596"
+  },
+  {
+    "Item Name": "Vanquished Tentacle of C'Thun",
+    "Item ID": "21579",
+    "Slot": "Trinket",
+    "Prio": "",
+    "Boss": "C'Thun",
+    "Linktext": "Vanquished Tentacle of C'Thun",
+    "Link": "https://classic.wowhead.com/item=21579"
+  },
+  {
+    "Item Name": "Scepter of the False Prophet",
+    "Item ID": "21839",
+    "Slot": "Main Hand",
+    "Prio": "",
+    "Boss": "C'Thun",
+    "Linktext": "Scepter of the False Prophet",
+    "Link": "https://classic.wowhead.com/item=21839"
+  },
+  {
+    "Item Name": "Death's Sting",
+    "Item ID": "21126",
+    "Slot": "One-Hand",
+    "Prio": "",
+    "Boss": "C'Thun",
+    "Linktext": "Death's Sting",
+    "Link": "https://classic.wowhead.com/item=21126"
+  },
+  {
+    "Item Name": "Dark Edge of Insanity",
+    "Item ID": "21134",
+    "Slot": "Two-Hand",
+    "Prio": "",
+    "Boss": "C'Thun",
+    "Linktext": "Dark Edge of Insanity",
+    "Link": "https://classic.wowhead.com/item=21134"
+  },
+  {
+    "Item Name": "Carapace of the Old God",
+    "Item ID": "20929",
+    "Slot": "Chest",
+    "Prio": "",
+    "Boss": "C'Thun",
+    "Linktext": "Carapace of the Old God",
+    "Link": "https://classic.wowhead.com/item=20929"
+  },
+  {
+    "Item Name": "Husk of the Old God",
+    "Item ID": "20933",
+    "Slot": "Chest",
+    "Prio": "",
+    "Boss": "C'Thun",
+    "Linktext": "Husk of the Old God",
+    "Link": "https://classic.wowhead.com/item=20933"
+  },
+  {
+    "Item Name": "Eye of C'Thun",
+    "Item ID": "21221",
+    "Slot": "Neck, Back, Finger",
+    "Prio": "",
+    "Boss": "C'Thun",
+    "Linktext": "Eye of C'Thun",
+    "Link": "https://classic.wowhead.com/item=21221"
+  },
+  {
+    "Item Name": "",
+    "Item ID": "",
+    "Slot": "",
+    "Prio": "",
+    "Boss": "",
+    "Linktext": "",
+    "Link": ""
+  },
+  {
+    "Item Name": "Garb of Royal Ascension",
+    "Item ID": "21838",
+    "Slot": "Chest",
+    "Prio": "",
+    "Boss": "Trash",
+    "Linktext": "Garb of Royal Ascension",
+    "Link": "https://classic.wowhead.com/item=21838"
+  },
+  {
+    "Item Name": "Gloves of the Immortal",
+    "Item ID": "21888",
+    "Slot": "Hands",
+    "Prio": "",
+    "Boss": "Trash",
+    "Linktext": "Gloves of the Immortal",
+    "Link": "https://classic.wowhead.com/item=21888"
+  },
+  {
+    "Item Name": "Gloves of the Redeemed Prophecy",
+    "Item ID": "21889",
+    "Slot": "Hands",
+    "Prio": "",
+    "Boss": "Trash",
+    "Linktext": "Gloves of the Redeemed Prophecy",
+    "Link": "https://classic.wowhead.com/item=21889"
+  },
+  {
+    "Item Name": "Neretzek",
+    "Item ID": "21856",
+    "Slot": "Two-Hand",
+    "Prio": "",
+    "Boss": "Trash",
+    "Linktext": "Neretzek",
+    "Link": "https://classic.wowhead.com/item=21856"
+  },
+  {
+    "Item Name": "Anubisath Warhammer",
+    "Item ID": "21837",
+    "Slot": "One-Hand",
+    "Prio": "",
+    "Boss": "Trash",
+    "Linktext": "Anubisath Warhammer",
+    "Link": "https://classic.wowhead.com/item=21837"
+  },
+  {
+    "Item Name": "Ritssyn's Ring of Chaos",
+    "Item ID": "21836",
+    "Slot": "Finger",
+    "Prio": "",
+    "Boss": "Trash",
+    "Linktext": "Ritssyn's Ring of Chaos",
+    "Link": "https://classic.wowhead.com/item=21836"
+  },
+  {
+    "Item Name": "Shard of the Fallen Star",
+    "Item ID": "21891",
+    "Slot": "Trinket",
+    "Prio": "",
+    "Boss": "Trash",
+    "Linktext": "Shard of the Fallen Star",
+    "Link": "https://classic.wowhead.com/item=21891"
+  },
+  {
+    "Item Name": "",
+    "Item ID": "",
+    "Slot": "",
+    "Prio": "",
+    "Boss": "",
+    "Linktext": "",
+    "Link": ""
+  },
+  {
+    "Item Name": "Qiraji Bindings of Command",
+    "Item ID": "20928",
+    "Slot": "Weapon",
+    "Prio": "",
+    "Boss": "Princess Huhuran, Viscidus",
+    "Linktext": "Qiraji Bindings of Command",
+    "Link": "https://classic.wowhead.com/item=20928"
+  },
+  {
+    "Item Name": "Qiraji Bindings of Dominance",
+    "Item ID": "20932",
+    "Slot": "Shoulder/Feet",
+    "Prio": "",
+    "Boss": "Princess Huhuran, Viscidus",
+    "Linktext": "Qiraji Bindings of Dominance",
+    "Link": "https://classic.wowhead.com/item=20932"
+  },
+  {
+    "Item Name": "",
+    "Item ID": "",
+    "Slot": "",
+    "Prio": "",
+    "Boss": "",
+    "Linktext": "",
+    "Link": ""
+  },
+  {
+    "Item Name": "Imperial Qiraji Regalia",
+    "Item ID": "21237",
+    "Slot": "Weapon",
+    "Prio": "",
+    "Boss": "Princess Huhuran, Battleguard Sartura, Ouro, Twin Emperors, Bug Trio, The Prophet Skeram, Fankriss the Unyielding, Viscidus",
+    "Linktext": "Imperial Qiraji Regalia",
+    "Link": "https://classic.wowhead.com/item=21237"
+  },
+  {
+    "Item Name": "Imperial Qiraji Armaments",
+    "Item ID": "21232",
+    "Slot": "Weapon",
+    "Prio": "",
+    "Boss": "Princess Huhuran, Battleguard Sartura, Ouro, Twin Emperors, Bug Trio, The Prophet Skeram, Fankriss the Unyielding, Viscidus",
+    "Linktext": "Imperial Qiraji Armaments",
+    "Link": "https://classic.wowhead.com/item=21232"
+  }
+]
