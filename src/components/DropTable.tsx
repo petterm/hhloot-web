@@ -6,7 +6,7 @@ type DropTableProps = { loot: BossDrop[] };
 const DropTable = ({ loot }: DropTableProps) => (
     <div>
         {loot.map(drop => (
-            <DropRow drop={drop} />
+            <DropRow key={drop.item.name} drop={drop} />
         ))}
     </div>
 );

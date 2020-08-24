@@ -1,3 +1,19 @@
+body {
+  background-color: #111;
+}
+
+a {
+  color: lightblue;
+}
+
+a:visited {
+  color: #e2b8ff;
+}
+
+.App {
+  color: #eee;
+}
+
 .App header {
   text-align: center;
 }

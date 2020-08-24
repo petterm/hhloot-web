@@ -1,34 +1,21 @@
 import React from 'react';
 import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
-import logo from './logo.svg';
 import './App.css';
 import PlayerList from './components/PlayerList';
-import { getPlayers } from './api';
+import { getPlayers, getBosses } from './api';
 import PlayerDetails from './components/PlayerDetails';
+import BossList from './components/BossList';
 
 function App() {
     return (
         <Router>
             <div className="App">
-                <Link to="/">Home</Link>
+                <Link to="/">Bosses</Link>
                 {" - "}
                 <Link to="/players">Players</Link>
                 <Switch>
                     <Route exact path="/">
-                        <header className="App-header">
-                            <img src={logo} className="App-logo" alt="logo" />
-                            <p>
-                                Edit <code>src/App.tsx</code> and save to reload.
-                            </p>
-                            <a
-                                className="App-link"
-                                href="https://reactjs.org"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Learn React
-                            </a>
-                        </header>
+                        <BossList bosses={Object.values(getBosses())} />
                     </Route>
                     <Route exact path="/players">
                         <PlayerList players={Object.values(getPlayers())} />
