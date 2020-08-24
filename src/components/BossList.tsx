@@ -6,7 +6,7 @@ type BossListProps = { bosses: Boss[] };
 const BossList = ({ bosses }: BossListProps) => {
     bosses.sort((a, b) => a.index - b.index)
     return (
-        <div style={{ margin: "20px auto" }}>
+        <div>
             {bosses.map(boss => (
                 <BossEntry boss={boss} key={boss.name} />
             ))}

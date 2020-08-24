@@ -2,6 +2,7 @@ import React from 'react';
 import { Player } from '../types'
 import { Link } from 'react-router-dom';
 import ItemLink from './ItemLink';
+import PlayerName from './PlayerName';
 
 type PlayerListProps = { players: Player[] };
 const PlayerList = ({ players }: PlayerListProps) => {
@@ -10,11 +11,11 @@ const PlayerList = ({ players }: PlayerListProps) => {
         <div style={{ margin: "20px auto", width: 350 }}>
             <table>
                 <tbody>
-                    {players.map(player => (
-                        <tr key={player.name}>
+                    {players.map((player, index) => (
+                        <tr key={player.name} style={{ backgroundColor: index % 2 === 0 ? 'none' : '#222'}}>
                             <td style={{ paddingRight: 20 }}>
-                                <Link to={`/players/${player.name}`}>
-                                    {player.name}
+                                <Link to={`/players/${player.name}`} style={{ textDecoration: 'none' }}>
+                                    <PlayerName player={player} />
                                 </Link>
                             </td>
                             {player.scoreSlots.map(slot => (

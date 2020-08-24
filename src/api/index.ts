@@ -1,7 +1,8 @@
 import reservations from '../data/aq40_reservation.json';
 import lootTable from '../data/aq40_loot_table.json';
 import itemIcons from '../data/item_icons.json';
-import { Boss, BossDrop, ItemScore, Player, PlayerItemEntry } from '../types';
+import players from '../data/players.json';
+import { Boss, BossDrop, ItemScore, Player, PlayerItemEntry, Class } from '../types';
 
 let setup = true;
 
@@ -74,6 +75,13 @@ const parsePlayerReservations = (): void => {
             name: playerName,
             scoreSlots: [],
         }
+
+        const playerInfo = players.find(info => info.name === playerName)
+        if (playerInfo) {
+            player.class = playerInfo.class as Class;
+            player.guildRank = playerInfo.guildRank
+        }
+
         player.scoreSlots.push(createEntry(100, playerReservation['100_score']))
         player.scoreSlots.push(createEntry(90, playerReservation['90_score']))
         player.scoreSlots.push(createEntry(80, playerReservation['80_score']))

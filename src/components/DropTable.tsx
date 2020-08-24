@@ -5,8 +5,8 @@ import DropRow from './DropRow';
 type DropTableProps = { loot: BossDrop[] };
 const DropTable = ({ loot }: DropTableProps) => (
     <div>
-        {loot.map(drop => (
-            <DropRow key={drop.item.name} drop={drop} />
+        {loot.map((drop, index) => (
+            <DropRow key={drop.item.name} drop={drop} even={index % 2 === 1} />
         ))}
     </div>
 );

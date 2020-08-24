@@ -1,0 +1,247 @@
+[
+    {
+        "name": "Cosy",
+        "class": "PALADIN",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Hubbé",
+        "class": "HUNTER",
+        "guildRank": "Officer"
+    },
+    {
+        "name": "Reneko",
+        "class": "WARRIOR",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Binding",
+        "class": "MAGE",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Qbx",
+        "class": "WARRIOR",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Trollsmet",
+        "class": "MAGE",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Firmand",
+        "class": "MAGE",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Greensoup",
+        "class": "PRIEST",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Ditro",
+        "class": "HUNTER",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Wulfrun",
+        "class": "DRUID",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Gurkybabe",
+        "class": "PRIEST",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Xéna",
+        "class": "HUNTER",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Vepaz",
+        "class": "WARRIOR",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Zadik",
+        "class": "PALADIN",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Swigen",
+        "class": "HUNTER",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Grillspett",
+        "class": "PRIEST",
+        "guildRank": "Guild Master"
+    },
+    {
+        "name": "Cenabettin",
+        "class": "WARRIOR",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Klesket",
+        "class": "ROGUE",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Wyldfyre",
+        "class": "DRUID",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Garlick",
+        "class": "PRIEST",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Heregud",
+        "class": "PRIEST",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Waiteyak",
+        "class": "ROGUE",
+        "guildRank": "Initiate"
+    },
+    {
+        "name": "Acaldra",
+        "class": "WARRIOR",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Nympth",
+        "class": "PALADIN",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Piclasa",
+        "class": "MAGE",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Snakepala",
+        "class": "PALADIN",
+        "guildRank": "Initiate"
+    },
+    {
+        "name": "Thirena",
+        "class": "ROGUE",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Jerj",
+        "class": "ROGUE",
+        "guildRank": "Initiate"
+    },
+    {
+        "name": "Comalight",
+        "class": "MAGE",
+        "guildRank": "Initiate"
+    },
+    {
+        "name": "Poele",
+        "class": "HUNTER",
+        "guildRank": "Initiate"
+    },
+    {
+        "name": "Anusaukko",
+        "class": "PALADIN",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Glamor",
+        "class": "WARLOCK",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Svartie",
+        "class": "PALADIN",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Rövbrytaren",
+        "class": "WARLOCK",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Kongs",
+        "class": "ROGUE",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Jalka",
+        "class": "WARRIOR",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Ñuup",
+        "class": "MAGE",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Igotwater",
+        "class": "MAGE",
+        "guildRank": "Initiate"
+    },
+    {
+        "name": "Sovietgirl",
+        "class": "WARLOCK",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Xuana",
+        "class": "WARRIOR",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Meche",
+        "class": "WARRIOR",
+        "guildRank": "Officer"
+    },
+    {
+        "name": "Muggsy",
+        "class": "ROGUE",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Waeoo",
+        "class": "PALADIN",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Psychokiller",
+        "class": "WARLOCK",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Macsonkor",
+        "class": "MAGE",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Deaurion",
+        "class": "WARRIOR",
+        "guildRank": "Officer"
+    },
+    {
+        "name": "Toestabber",
+        "class": "ROGUE",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Suncho",
+        "class": "WARRIOR",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Yungbanz",
+        "class": "DRUID",
+        "guildRank": "Member"
+    }
+]

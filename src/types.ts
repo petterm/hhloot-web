@@ -1,6 +1,8 @@
 
 export type ItemScore = 100 | 90 | 80 | 70 | 65 | 60 | 55 | 54 | 53 | 52;
 
+export type Class = 'DRUID' | 'HUNTER' | 'MAGE' | 'PALADIN' | 'PRIEST' | 'ROGUE' | 'WARLOCK' | 'WARRIOR';
+
 export interface Item {
     name: string;
     id: number;
@@ -21,6 +23,8 @@ interface PlayerRaidEvent {
 
 export interface Player {
     name: string;
+    class?: Class,
+    guildRank?: string,
     scoreSlots: PlayerItemEntry[];
     attendedRaids: PlayerRaidEvent[];
 }

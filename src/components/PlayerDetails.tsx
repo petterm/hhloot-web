@@ -3,6 +3,7 @@ import { Player, PlayerItemEntry } from '../types'
 import { useParams } from 'react-router-dom';
 import { getPlayer } from '../api';
 import ItemLink from './ItemLink';
+import PlayerName from './PlayerName';
 
 const PlayerDetails = () => {
     const { playerName } = useParams();
@@ -10,7 +11,9 @@ const PlayerDetails = () => {
 
     return (
         <div style={{ margin: "20px auto", width: 350 }}>
-            <h3>{player.name}</h3>
+            <h3>
+                <PlayerName player={player} />
+            </h3>
             <table>
                 <tbody>
                     {player.scoreSlots.map((entry: PlayerItemEntry) => (
