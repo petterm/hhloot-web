@@ -10,7 +10,7 @@ const PlayerDetails = () => {
     const player: Player = getPlayer(playerName);
 
     return (
-        <div style={{ margin: "20px auto", width: 350 }}>
+        <div style={{ margin: "20px auto", width: 370 }}>
             <h3>
                 <PlayerName player={player} />
             </h3>
@@ -18,12 +18,22 @@ const PlayerDetails = () => {
                 <tbody>
                     {player.scoreSlots.map((entry: PlayerItemEntry) => (
                         <tr key={entry.score}>
-                            <td style={{ paddingRight: 20, textAlign: "right" }}>
+                            <td style={{
+                                padding: '0 5px',
+                                marginRight: 15,
+                                textAlign: "right",
+                                backgroundColor: entry.received ? 'green' : 'none',
+                            }}>
                                 {entry.score}
                             </td>
-                            <td>
+                            <td style={{ padding: '0 5px' }}>
                                 {entry.item ? (
-                                    <ItemLink item={entry.item} size='tiny' />
+                                    <>
+                                        <ItemLink item={entry.item} size='tiny' />
+                                        {entry.received && (
+                                            <span style={{ marginLeft: 5, fontSize: 12 }}>({entry.received})</span>
+                                        )}
+                                    </>
                                 ) : '--'}
                             </td>
                         </tr>

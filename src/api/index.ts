@@ -1,8 +1,9 @@
 import reservations from '../data/aq40_reservation.json';
 import lootTable from '../data/aq40_loot_table.json';
+import lootedItems from '../data/aq40_looted.json';
 import itemIcons from '../data/item_icons.json';
 import players from '../data/players.json';
-import { Boss, BossDrop, ItemScore, Player, PlayerItemEntry, Class } from '../types';
+import { Boss, BossDrop, ItemScore, Player, PlayerItemEntry, Class, PlayerName } from '../types';
 
 let setup = true;
 
@@ -53,11 +54,10 @@ const parseLootTable = (): void => {
 const createEntry = (score: ItemScore, itemName: string): PlayerItemEntry => {
     const playerEntry: PlayerItemEntry = {
         itemBonusEvents: [],
-        received: false,
         score: score,
     };
     if (itemName) {
-        let bossDrop = bossDropMap[itemName]
+        let bossDrop = bossDropMap[itemName];
         if (bossDrop) {
             playerEntry.item = bossDrop.item;
         } else {
@@ -97,6 +97,22 @@ const parsePlayerReservations = (): void => {
     })
 };
 
+const markReceivedItems = () => {
+    for (let i in lootedItems) {
+        const lootEvent = lootedItems[i];
+        const player = playerMap[lootEvent.character];
+        if (player) {
+            const playerSlots = playerMap[lootEvent.character].scoreSlots;
+            const index = playerSlots.findIndex(
+                entry => !entry.received && entry.item && entry.item.name === lootEvent.item
+            );
+            if (index !== -1) playerSlots[index].received = lootEvent.date;
+        } else {
+            console.warn('Loot event for missing unknown player', lootEvent.character);
+        }
+    }
+}
+
 const addPlayerReservationsToItems = () => {
     for (let name in playerMap) {
         const player: Player = playerMap[name];
@@ -118,7 +134,8 @@ export const getBosses = (): BossMap => {
     if (setup) {
         parseLootTable();
         parsePlayerReservations();
-        addPlayerReservationsToItems()
+        markReceivedItems();
+        addPlayerReservationsToItems();
         setup = false;
     }
     return bossMap;
@@ -130,7 +147,8 @@ export const getPlayers = (): PlayerMap => {
     if (setup) {
         parseLootTable();
         parsePlayerReservations();
-        addPlayerReservationsToItems()
+        markReceivedItems();
+        addPlayerReservationsToItems();
         setup = false;
     }
     return playerMap;

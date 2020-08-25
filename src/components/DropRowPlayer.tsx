@@ -8,8 +8,13 @@ type DropRowPlayerProps = { playerEntry: PlayerItemEntry, playerName: string };
 const DropRowPlayer = ({ playerEntry, playerName }: DropRowPlayerProps) => {
     const player = getPlayer(playerName);
     return (
-        <div style={{ display: 'flex', marginRight: 5 }}>
-            <div style={{ marginRight: 10, width: 30, textAlign: 'right' }}>
+        <div style={{ display: 'flex', marginRight: 5, backgroundColor: playerEntry.received ? '#1d3d1d' : 'none' }}>
+            <div style={{
+                marginRight: 5,
+                padding: '0 5px',
+                width: 27,
+                textAlign: 'right',
+            }}>
                 {playerEntry.score}
             </div>
             <div style={{ width: 90, overflow: 'hidden', textOverflow: 'ellipsis' }}>

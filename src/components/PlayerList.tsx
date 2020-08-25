@@ -19,7 +19,11 @@ const PlayerList = ({ players }: PlayerListProps) => {
                                 </Link>
                             </td>
                             {player.scoreSlots.map(slot => (
-                                <td key={slot.score}>
+                                <td key={slot.score} style={{
+                                    textAlign: 'center',
+                                    backgroundColor: slot.received ? 'green' : 'none',
+                                    padding: '0 5px',
+                                }}>
                                     {slot.item ? (
                                         <ItemLink item={slot.item} noText size='tiny' />
                                     ) : '-'}

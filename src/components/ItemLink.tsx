@@ -8,7 +8,7 @@ type ItemLinkProps = { item: Item, noText?: boolean, size: 'tiny' | 'small' | 'm
 const ItemLink = ({ item, noText, size }: ItemLinkProps) => {
     const icon = getItemIcon(item.id);
     const style: React.CSSProperties = {
-        paddingLeft: 18,
+        paddingLeft: 18 - (noText ? 3 : 0),
         background: `url("${wowheadIconUrl}/${size}/${icon}") left center no-repeat`,
         textDecoration: 'none',
         color: '#a335ee',
