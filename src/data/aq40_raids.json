@@ -1,0 +1,334 @@
+[
+    {
+        "date": "2020-08-15",
+        "players": [],
+        "loot": [
+            {
+                "character": "Reneko",
+                "item": "Breastplate of Annihilation"
+            },
+            {
+                "character": "Klesket",
+                "item": "Amulet of Foul Warding"
+            },
+            {
+                "character": "Deaurion",
+                "item": "Angelista's Touch"
+            },
+            {
+                "character": "Jalka",
+                "item": "Ooze-ridden Gauntlets"
+            },
+            {
+                "character": "Deaurion",
+                "item": "Gauntlets of Steadfast Determination"
+            },
+            {
+                "character": "Trollsmet",
+                "item": "Robes of the Battleguard"
+            },
+            {
+                "character": "Youngbanz",
+                "item": "Hive Tunneler's Boots"
+            },
+            {
+                "character": "Reneko",
+                "item": "Barbed Choker"
+            },
+            {
+                "character": "Rövbrytaren",
+                "item": "Garb of Royal Ascension"
+            }
+        ],
+        "itemBonus": []
+    },
+    {
+        "date": "2020-08-22",
+        "players": [
+            {
+                "character": "Meche",
+                "attendance": 1
+            },
+            {
+                "character": "Deaurion",
+                "attendance": 1
+            },
+            {
+                "character": "Suncho",
+                "attendance": 1
+            },
+            {
+                "character": "Grillspett",
+                "attendance": 1
+            },
+            {
+                "character": "Jalka",
+                "attendance": 1
+            },
+            {
+                "character": "Thirena",
+                "attendance": 1
+            },
+            {
+                "character": "Ditro",
+                "attendance": 1
+            },
+            {
+                "character": "Xéna",
+                "attendance": 1
+            },
+            {
+                "character": "Kongs",
+                "attendance": 1
+            },
+            {
+                "character": "Acaldra",
+                "attendance": 1
+            },
+            {
+                "character": "Snakepala",
+                "attendance": 1
+            },
+            {
+                "character": "Svartie",
+                "attendance": 1
+            },
+            {
+                "character": "Yungbanz",
+                "attendance": 1
+            },
+            {
+                "character": "Hubbé",
+                "attendance": 1
+            },
+            {
+                "character": "Rövbrytaren",
+                "attendance": 1
+            },
+            {
+                "character": "Binding",
+                "attendance": 1
+            },
+            {
+                "character": "Wyldfyre",
+                "attendance": 1
+            },
+            {
+                "character": "Garlick",
+                "attendance": 1
+            },
+            {
+                "character": "Waeoo",
+                "attendance": 1
+            },
+            {
+                "character": "Piclasa",
+                "attendance": 1
+            },
+            {
+                "character": "Trollsmet",
+                "attendance": 1
+            },
+            {
+                "character": "Wulfrun",
+                "attendance": 1
+            },
+            {
+                "character": "Klesket",
+                "attendance": 1
+            },
+            {
+                "character": "Meche",
+                "attendance": 1
+            },
+            {
+                "character": "Reneko",
+                "attendance": 1
+            },
+            {
+                "character": "Macsonkor",
+                "attendance": 1
+            },
+            {
+                "character": "Firmand",
+                "attendance": 1
+            },
+            {
+                "character": "Ósýnileg",
+                "attendance": 1
+            },
+            {
+                "character": "Ñuup",
+                "attendance": 1
+            },
+            {
+                "character": "Vepaz",
+                "attendance": 1
+            },
+            {
+                "character": "Sovietgirl",
+                "attendance": 1
+            },
+            {
+                "character": "Anusaukko",
+                "attendance": 1
+            },
+            {
+                "character": "Cosy",
+                "attendance": 1
+            },
+            {
+                "character": "Greensoup",
+                "attendance": 1
+            },
+            {
+                "character": "Glamor",
+                "attendance": 1
+            },
+            {
+                "character": "Toestabber",
+                "attendance": 1
+            }
+        ],
+        "loot": [
+            {
+                "character": "Ósýnileg",
+                "item": "Cloak of Concentrated Hatred"
+            },
+            {
+                "character": "Anusaukko",
+                "item": "Boots of the Redeemed Prophecy"
+            },
+            {
+                "character": "Xéna",
+                "item": "Badge of the Swarmguard"
+            },
+            {
+                "character": "Firmand",
+                "item": "Recomposed Boots"
+            },
+            {
+                "character": "Wyldfyre",
+                "item": "Mantle of Wicked Revenge"
+            },
+            {
+                "character": "Deaurion",
+                "item": "Pauldrons of the Unrelenting"
+            },
+            {
+                "character": "Wulfrun",
+                "item": "Wasphide Gauntlets"
+            },
+            {
+                "character": "Meche",
+                "item": "Imperial Qiraji Armaments"
+            },
+            {
+                "character": "Meche",
+                "item": "Qiraji Bindings of Command"
+            },
+            {
+                "character": "Ñuup",
+                "item": "Qiraji Bindings of Dominance"
+            },
+            {
+                "character": "Wyldfyre",
+                "item": "Ring of Emperor Vek'lor"
+            },
+            {
+                "character": "Kongs",
+                "item": "Vek'lor's Diadem"
+            },
+            {
+                "character": "Rövbrytaren",
+                "item": "Amulet of Vek'nilash"
+            },
+            {
+                "character": "Sovietgirl",
+                "item": "Vek'nilash's Circlet"
+            },
+            {
+                "character": "Macsonkor",
+                "item": "Ritssyn's Ring of Chaos"
+            },
+            {
+                "character": "Vepaz",
+                "item": "Carapace of the Old God"
+            },
+            {
+                "character": "Piclasa",
+                "item": "Husk of the Old God"
+            },
+            {
+                "character": "Sovietgirl",
+                "item": "Eye of C'Thun"
+            },
+            {
+                "character": "Firmand",
+                "item": "Cloak of the Devoured"
+            },
+            {
+                "character": "Garlick",
+                "item": "Cloak of Clarity"
+            },
+            {
+                "character": "Ñuup",
+                "item": "Burrower Bracers"
+            },
+            {
+                "character": "Snakepala",
+                "item": "Skin of the Great Sandworm"
+            },
+            {
+                "character": "Suncho",
+                "item": "Ouro's Intact Hide"
+            },
+            {
+                "character": "Wyldfyre",
+                "item": "Guise of the Devourer"
+            },
+            {
+                "character": "Youngbanz",
+                "item": "Gloves of Ebru"
+            }
+        ],
+        "itemBonus": [
+            {
+                "character": "Ditro",
+                "item": "Imperial Qiraji Armaments"
+            },
+            {
+                "character": "Suncho",
+                "item": "Imperial Qiraji Armaments"
+            },
+            {
+                "character": "Toestabber",
+                "item": "Cloak of Concentrated Hatred"
+            },
+            {
+                "character": "Klesket",
+                "item": "Vek'lor's Diadem"
+            },
+            {
+                "character": "Glamor",
+                "item": "Amulet of Vek'nilash"
+            },
+            {
+                "character": "Meche",
+                "item": "Carapace of the Old God"
+            },
+            {
+                "character": "Sovietgirl",
+                "item": "Cloak of the Devoured"
+            },
+            {
+                "character": "Rövbrytaren",
+                "item": "Burrower Bracers"
+            },
+            {
+                "character": "Rövbrytaren",
+                "item": "Burrower Bracers"
+            }
+        ]
+    }
+]

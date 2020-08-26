@@ -3,7 +3,8 @@ import lootTable from '../data/aq40_loot_table.json';
 import lootedItems from '../data/aq40_looted.json';
 import itemIcons from '../data/item_icons.json';
 import players from '../data/players.json';
-import { Boss, BossDrop, ItemScore, Player, PlayerItemEntry, Class, PlayerName } from '../types';
+import { Boss, BossDrop, ItemScore, Player, PlayerItemEntry, Class } from '../types';
+import { itemScores } from '../constants';
 
 let setup = true;
 
@@ -94,6 +95,18 @@ const parsePlayerReservations = (): void => {
         player.scoreSlots.push(createEntry(52, playerReservation['52_score']))
 
         playerMap[playerName] = player;
+    })
+
+    players.forEach(player => {
+        if (!playerMap[player.name]) {
+            playerMap[player.name] = {
+                attendedRaids: [],
+                name: player.name,
+                class: player.class as Class,
+                guildRank: player.guildRank,
+                scoreSlots: itemScores.map(score => ({ score, itemBonusEvents: [] })),
+            }
+        }
     })
 };
 

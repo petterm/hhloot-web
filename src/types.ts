@@ -46,3 +46,11 @@ export interface Boss {
     drops: BossDrop[];
     index: number;
 }
+
+export interface EntryScore {
+    base: number,
+    position: number,
+    item: number,
+    attendance: number,
+    total: number,
+}

@@ -12,6 +12,9 @@ const ItemLink = ({ item, noText, size }: ItemLinkProps) => {
         background: `url("${wowheadIconUrl}/${size}/${icon}") left center no-repeat`,
         textDecoration: 'none',
         color: '#a335ee',
+        whiteSpace: "nowrap",
+        overflow: "hidden",
+        textOverflow: "ellipsis",
     };
 
     return (
