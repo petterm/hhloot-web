@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Link, Switch, Route } from 'react-router-dom';
 import './App.css';
 import PlayerList from './components/PlayerList';
 import { getPlayers, getBosses } from './api';

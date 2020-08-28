@@ -18,10 +18,8 @@ const ItemLink = ({ item, noText, size }: ItemLinkProps) => {
     };
 
     return (
-        // @ts-ignore
-        // eslint-disable-next-line
-        <a href={`https://classic.wowhead.com/item=${item.id}`} target='_blank' style={style} >
-            {noText ? '' : item.name}
+        <a href={`https://classic.wowhead.com/item=${item.id}`} target='_blank' style={style} rel="noopener noreferrer" >
+            {noText ? null : item.name}
         </a>
     );
 }
