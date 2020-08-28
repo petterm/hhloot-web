@@ -8,7 +8,8 @@ type PlayerListProps = { players: Player[] };
 const PlayerList = ({ players }: PlayerListProps) => {
     players.sort((a, b) => a.name.localeCompare(b.name))
     return (
-        <div style={{ margin: "20px auto", width: 350 }}>
+        <div>
+            <h1>Player list</h1>
             <table>
                 <tbody>
                     {players.map((player, index) => (

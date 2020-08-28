@@ -17,6 +17,7 @@ export interface PlayerItemEntry {
     itemBonusEvents: string[];
     score: ItemScore;
     received?: Date;
+    calcualtedScore?: EntryScore;
 }
 
 interface PlayerRaidEvent {
@@ -31,6 +32,8 @@ export interface Player {
     guildRank?: GuildRank,
     scoreSlots: PlayerItemEntry[];
     attendedRaids: PlayerRaidEvent[];
+    calculatedAttendance?: number;
+    positionBonus?: number;
 }
 
 export interface BossDrop {

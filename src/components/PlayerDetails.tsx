@@ -19,10 +19,10 @@ const PlayerDetails = () => {
     const player: Player = getPlayer(playerName);
 
     return (
-        <div style={{ margin: "20px auto", width: 800 }}>
-            <h3>
+        <div>
+            <h1>
                 <PlayerName player={player} />
-            </h3>
+            </h1>
             <table>
                 <thead>
                     <tr>
