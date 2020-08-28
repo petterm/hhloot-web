@@ -1,10 +1,10 @@
 import reservations from '../data/aq40_reservation.json';
 import lootTable from '../data/aq40_loot_table.json';
-import lootedItems from '../data/aq40_looted.json';
 import itemIcons from '../data/item_icons.json';
 import players from '../data/players.json';
 import { Boss, BossDrop, ItemScore, Player, PlayerItemEntry, Class } from '../types';
 import { itemScores } from '../constants';
+import { getRaids } from './raids';
 
 let setup = true;
 
@@ -111,17 +111,22 @@ const parsePlayerReservations = (): void => {
 };
 
 const markReceivedItems = () => {
-    for (let i in lootedItems) {
-        const lootEvent = lootedItems[i];
-        const player = playerMap[lootEvent.character];
-        if (player) {
-            const playerSlots = playerMap[lootEvent.character].scoreSlots;
-            const index = playerSlots.findIndex(
-                entry => !entry.received && entry.item && entry.item.name === lootEvent.item
-            );
-            if (index !== -1) playerSlots[index].received = lootEvent.date;
-        } else {
-            console.warn('Loot event for missing unknown player', lootEvent.character);
+    const raids = getRaids()
+    for (let i in raids) {
+        const raid = raids[i];
+        for (let j in raid.loot) {
+            const lootEvent = raid.loot[j];
+            const player = playerMap[lootEvent.character];
+
+            if (player) {
+                const playerSlots = player.scoreSlots;
+                const index = playerSlots.findIndex(
+                    entry => !entry.received && entry.item && entry.item.name === lootEvent.item
+                );
+                if (index !== -1) playerSlots[index].received = raid.date;
+            } else {
+                console.warn('Loot event for missing unknown player', lootEvent.character);
+            }
         }
     }
 }
