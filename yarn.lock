@@ -6620,6 +6620,19 @@ lru-cache@^5.1.1:
   dependencies:
     yallist "^3.0.2"
 
+lua-json@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/lua-json/-/lua-json-1.0.0.tgz#915b3271426674a4917a6d3e6f97988f6e917739"
+  integrity sha512-TrMvRPvrbOoPbEY79mIdZsMxwcEpzcUQ5iy9Vir6BmCOV9yOSkA3jHTFZklN1OUyx6F9o/dMLLS/Y6Urb063YQ==
+  dependencies:
+    lodash "^4.17.11"
+    luaparse "^0.2.1"
+
+luaparse@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/luaparse/-/luaparse-0.2.1.tgz#aa8f56132b0de97d37f3c991a9df42e0e17f656c"
+  integrity sha1-qo9WEysN6X0388mRqd9C4OF/ZWw=
+
 make-dir@^2.0.0, make-dir@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/make-dir/-/make-dir-2.1.0.tgz#5f0310e18b8be898cc07009295a30ae41e91e6f5"
