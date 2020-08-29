@@ -1,9 +1,10 @@
 import React from 'react';
 import { BossDrop } from '../types'
-import DropRowPlayer from './DropRowPlayer';
-import ItemLink from './ItemLink';
 import { getPlayer } from '../api';
 import { getEntryScore } from '../api/points';
+import DropRowPlayer from './DropRowPlayer';
+import ItemLink from './ItemLink';
+import styles from './DropRow.module.css'
 
 type DropRowProps = { drop: BossDrop, even: boolean, hideReceived: boolean };
 const DropRow = ({ drop, even, hideReceived }: DropRowProps) => {
@@ -20,12 +21,11 @@ const DropRow = ({ drop, even, hideReceived }: DropRowProps) => {
     scores.sort((a, b) => b.scores.total - a.scores.total);
 
     return (
-        <div style={{ padding: '3px 5px', display: 'flex', backgroundColor: even ? '#222' : 'none' }}>
-            <div style={{ whiteSpace: 'nowrap', width: 250, flexShrink: 0, overflow: 'hidden', textOverflow: 'ellipsis' }}>
-                {/* <DropRowItem item={drop.item} /> */}
+        <div className={styles.wrap}>
+            <div className={styles.item}>
                 <ItemLink item={drop.item} size='tiny' />
             </div>
-            <div style={{ display: 'flex' }}>
+            <div className={styles.players}>
                 {scores.map(({ player, playerEntry, scores }, index) =>
                     (!hideReceived || !playerEntry.received) && (
                     <DropRowPlayer

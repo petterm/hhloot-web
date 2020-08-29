@@ -1,0 +1,46 @@
+.wrap {
+    position: relative;
+    padding: 5px;
+    margin-bottom: -1px;
+    display: flex;
+    border-bottom: 1px solid #333;
+}
+
+.wrapReceived {
+    background-color: #1d3d1d;
+}
+
+.score {
+    margin-right: 5px;
+    padding: 0px 5px;
+    width: 27px;
+    text-align: right;
+}
+
+.name {
+    flex: 1 0;
+    width: 90px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tooltip {
+    position: absolute;
+    top: 35px;
+    left: 5px;
+    background-color: rgba(255, 255, 255, .9);
+    border-radius: 5px;
+    padding: 3px 5px;
+    color: #333;
+    z-index: 2;
+    font-size: 14px;
+    line-height: 1.2;
+    width: 100%;
+}
+
+@media (max-width: 420px) {
+    .wrap {
+        width: 50%;
+        box-sizing: border-box;
+    }
+}

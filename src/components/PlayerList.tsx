@@ -22,7 +22,7 @@ const PlayerList = ({ players }: PlayerListProps) => {
                             {player.scoreSlots.map(slot => (
                                 <td key={slot.score} style={{
                                     textAlign: 'center',
-                                    backgroundColor: slot.received ? 'green' : 'none',
+                                    backgroundColor: slot.received ? '#1d3d1d' : 'none',
                                     padding: '0 5px',
                                 }}>
                                     {slot.item ? (

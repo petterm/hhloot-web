@@ -1,0 +1,37 @@
+.wrap {
+    display: flex;
+    color: #eee;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    margin-top: -1px;
+    margin-bottom: -1px;
+}
+.wrap:nth-child(2n) {
+    background-color: rgb(34, 34, 34);
+}
+
+.item {
+    white-space: nowrap;
+    width: 250px;
+    flex-shrink: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 5px;
+}
+
+.players {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+
+@media (max-width: 420px) {
+    .wrap {
+        flex-direction: column;
+    }
+
+    .item {
+        margin: 5px 0;
+    }
+}

@@ -1,7 +1,8 @@
 import React from 'react';
-import { PlayerItemEntry, EntryScore, Player } from '../types'
 import { Link } from 'react-router-dom';
+import { PlayerItemEntry, EntryScore, Player } from '../types'
 import PlayerName from './PlayerName';
+import style from './DropRowPlayer.module.css'
 
 type DropRowPlayerProps = { playerEntry: PlayerItemEntry, player: Player, scores: EntryScore };
 type DropRowPlayerState = { showTooltip: boolean }
@@ -31,23 +32,18 @@ class DropRowPlayer extends React.Component<DropRowPlayerProps, DropRowPlayerSta
                 <div
                     onMouseEnter={this.onMouseEnter}
                     onMouseLeave={this.onMouseLeave}
-                    style={{ position: 'relative', display: 'flex', marginRight: 5, backgroundColor: playerEntry.received ? '#1d3d1d' : 'none' }}
+                    className={[style.wrap, (playerEntry.received ? style.wrapReceived : '')].join(' ')}
                 >
-                    <div style={{
-                        marginRight: 5,
-                        padding: '0 5px',
-                        width: 27,
-                        textAlign: 'right',
-                    }}>
+                    <div className={style.score}>
                         {scores.total}
                     </div>
-                    <div style={{ width: 90, overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                    <div className={style.name}>
                         <Link to={`/players/${player.name}`} style={{ textDecoration: 'none' }}>
                             <PlayerName player={player} />
                         </Link>
                     </div>
                     {this.state.showTooltip && (
-                        <div style={{ position: "absolute", top: 25, backgroundColor: 'rgba(255, 255, 255, .9)', borderRadius: 5, padding: '5px 8px', color: '#333', zIndex: 2 }}>
+                        <div className={style.tooltip}>
                             <table>
                                 <tbody>
                                     <tr>
