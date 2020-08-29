@@ -6,12 +6,14 @@ import { getFinalScore, getPositionBonus, getItemBonus, getAttendanceBonus } fro
 import ItemLink from './ItemLink';
 import PlayerName from './PlayerName';
 
-const style = (entry: PlayerItemEntry): React.CSSProperties => ({
-    padding: '0 5px',
+const style = (entry: PlayerItemEntry, index: number): React.CSSProperties => ({
+    padding: '0 8px',
     marginRight: 15,
     textAlign: "right",
-    backgroundColor: entry.received ? 'green' : 'none',
-    width: 70,
+    backgroundColor: entry.received ? '#1d3d1d' : 'none',
+    minWidth: 30,
+    borderBottom: '1px solid #333',
+    borderTop: index ? 'none' : '1px solid #333',
 });
 
 const PlayerDetails = () => {
@@ -23,9 +25,12 @@ const PlayerDetails = () => {
             <h1>
                 <PlayerName player={player} />
             </h1>
-            <table>
+            <table style={{ borderSpacing: 0 }}>
                 <thead>
                     <tr>
+                        <th style={{ textAlign: 'left' }}>
+                            Item
+                        </th>
                         <th>
                             Weight
                         </th>
@@ -41,38 +46,44 @@ const PlayerDetails = () => {
                         <th>
                             Total
                         </th>
-                        <th>
-                            Item
-                        </th>
                     </tr>
                 </thead>
                 <tbody>
-                    {player.scoreSlots.map((entry: PlayerItemEntry) => (
-                        <tr key={entry.score}>
-                            <td style={style(entry)}>
-                                {entry.score}
-                            </td>
-                            <td style={style(entry)}>
-                                {getPositionBonus(player)}
-                            </td>
-                            <td style={style(entry)}>
-                                {getItemBonus(entry, player)}
-                            </td>
-                            <td style={style(entry)}>
-                                {getAttendanceBonus(player)}
-                            </td>
-                            <td style={style(entry)}>
-                                {getFinalScore(entry, player)}
-                            </td>
-                            <td style={{ padding: '0 5px' }}>
+                    {player.scoreSlots.map((entry: PlayerItemEntry, index: number) => (
+                        <tr
+                            key={entry.score}
+                            style={{
+                                backgroundColor: index % 2 === 0 ? 'none' : '#222',
+                            }}
+                        >
+                            <td style={{
+                                padding: '5px 20px 5px 5px',
+                                borderBottom: '1px solid #333',
+                                borderTop: index ? 'none' : '1px solid #333',
+                            }}>
                                 {entry.item ? (
                                     <>
-                                        <ItemLink item={entry.item} size='tiny' />
+                                        <ItemLink item={entry.item} size='small' />
                                         {entry.received && (
                                             <span style={{ marginLeft: 5, fontSize: 12 }}>({entry.received})</span>
                                         )}
                                     </>
                                 ) : '--'}
+                            </td>
+                            <td style={style(entry, index)}>
+                                {entry.score}
+                            </td>
+                            <td style={style(entry, index)}>
+                                {getPositionBonus(player)}
+                            </td>
+                            <td style={style(entry, index)}>
+                                {getItemBonus(entry, player)}
+                            </td>
+                            <td style={style(entry, index)}>
+                                {getAttendanceBonus(player)}
+                            </td>
+                            <td style={style(entry, index)}>
+                                {getFinalScore(entry, player)}
                             </td>
                         </tr>
                     ))}

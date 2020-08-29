@@ -1,17 +1,12 @@
 [
     {
-        "name": "Cosy",
-        "class": "PALADIN",
+        "name": "Acaldra",
+        "class": "WARRIOR",
         "guildRank": "Member"
     },
     {
-        "name": "Hubbé",
-        "class": "HUNTER",
-        "guildRank": "Officer"
-    },
-    {
-        "name": "Reneko",
-        "class": "WARRIOR",
+        "name": "Anusaukko",
+        "class": "PALADIN",
         "guildRank": "Member"
     },
     {
@@ -20,13 +15,28 @@
         "guildRank": "Member"
     },
     {
-        "name": "Qbx",
+        "name": "Cenabettin",
         "class": "WARRIOR",
         "guildRank": "Member"
     },
     {
-        "name": "Trollsmet",
+        "name": "Comalight",
         "class": "MAGE",
+        "guildRank": "Initiate"
+    },
+    {
+        "name": "Cosy",
+        "class": "PALADIN",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Deaurion",
+        "class": "WARRIOR",
+        "guildRank": "Officer"
+    },
+    {
+        "name": "Ditro",
+        "class": "HUNTER",
         "guildRank": "Member"
     },
     {
@@ -35,43 +45,18 @@
         "guildRank": "Member"
     },
     {
+        "name": "Garlick",
+        "class": "PRIEST",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Glamor",
+        "class": "WARLOCK",
+        "guildRank": "Member"
+    },
+    {
         "name": "Greensoup",
         "class": "PRIEST",
-        "guildRank": "Member"
-    },
-    {
-        "name": "Ditro",
-        "class": "HUNTER",
-        "guildRank": "Member"
-    },
-    {
-        "name": "Wulfrun",
-        "class": "DRUID",
-        "guildRank": "Member"
-    },
-    {
-        "name": "Gurkybabe",
-        "class": "PRIEST",
-        "guildRank": "Member"
-    },
-    {
-        "name": "Xéna",
-        "class": "HUNTER",
-        "guildRank": "Member"
-    },
-    {
-        "name": "Vepaz",
-        "class": "WARRIOR",
-        "guildRank": "Member"
-    },
-    {
-        "name": "Zadik",
-        "class": "PALADIN",
-        "guildRank": "Member"
-    },
-    {
-        "name": "Swigen",
-        "class": "HUNTER",
         "guildRank": "Member"
     },
     {
@@ -80,22 +65,7 @@
         "guildRank": "Guild Master"
     },
     {
-        "name": "Cenabettin",
-        "class": "WARRIOR",
-        "guildRank": "Member"
-    },
-    {
-        "name": "Klesket",
-        "class": "ROGUE",
-        "guildRank": "Member"
-    },
-    {
-        "name": "Wyldfyre",
-        "class": "DRUID",
-        "guildRank": "Member"
-    },
-    {
-        "name": "Garlick",
+        "name": "Gurkybabe",
         "class": "PRIEST",
         "guildRank": "Member"
     },
@@ -105,33 +75,18 @@
         "guildRank": "Member"
     },
     {
-        "name": "Waiteyak",
-        "class": "ROGUE",
-        "guildRank": "Initiate"
+        "name": "Hubbé",
+        "class": "HUNTER",
+        "guildRank": "Officer"
     },
     {
-        "name": "Acaldra",
-        "class": "WARRIOR",
-        "guildRank": "Member"
-    },
-    {
-        "name": "Nympth",
-        "class": "PALADIN",
-        "guildRank": "Member"
-    },
-    {
-        "name": "Piclasa",
+        "name": "Igotwater",
         "class": "MAGE",
-        "guildRank": "Member"
-    },
-    {
-        "name": "Snakepala",
-        "class": "PALADIN",
         "guildRank": "Initiate"
     },
     {
-        "name": "Thirena",
-        "class": "ROGUE",
+        "name": "Jalka",
+        "class": "WARRIOR",
         "guildRank": "Member"
     },
     {
@@ -140,33 +95,8 @@
         "guildRank": "Initiate"
     },
     {
-        "name": "Comalight",
-        "class": "MAGE",
-        "guildRank": "Initiate"
-    },
-    {
-        "name": "Poele",
-        "class": "HUNTER",
-        "guildRank": "Initiate"
-    },
-    {
-        "name": "Anusaukko",
-        "class": "PALADIN",
-        "guildRank": "Member"
-    },
-    {
-        "name": "Glamor",
-        "class": "WARLOCK",
-        "guildRank": "Member"
-    },
-    {
-        "name": "Svartie",
-        "class": "PALADIN",
-        "guildRank": "Member"
-    },
-    {
-        "name": "Rövbrytaren",
-        "class": "WARLOCK",
+        "name": "Klesket",
+        "class": "ROGUE",
         "guildRank": "Member"
     },
     {
@@ -175,28 +105,8 @@
         "guildRank": "Member"
     },
     {
-        "name": "Jalka",
-        "class": "WARRIOR",
-        "guildRank": "Member"
-    },
-    {
-        "name": "Ñuup",
+        "name": "Macsonkor",
         "class": "MAGE",
-        "guildRank": "Member"
-    },
-    {
-        "name": "Igotwater",
-        "class": "MAGE",
-        "guildRank": "Initiate"
-    },
-    {
-        "name": "Sovietgirl",
-        "class": "WARLOCK",
-        "guildRank": "Member"
-    },
-    {
-        "name": "Xuana",
-        "class": "WARRIOR",
         "guildRank": "Member"
     },
     {
@@ -210,9 +120,24 @@
         "guildRank": "Member"
     },
     {
-        "name": "Waeoo",
+        "name": "Ñuup",
+        "class": "MAGE",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Nympth",
         "class": "PALADIN",
         "guildRank": "Member"
+    },
+    {
+        "name": "Piclasa",
+        "class": "MAGE",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Poele",
+        "class": "HUNTER",
+        "guildRank": "Initiate"
     },
     {
         "name": "Psychokiller",
@@ -220,18 +145,28 @@
         "guildRank": "Member"
     },
     {
-        "name": "Macsonkor",
-        "class": "MAGE",
+        "name": "Qbx",
+        "class": "WARRIOR",
         "guildRank": "Member"
     },
     {
-        "name": "Deaurion",
+        "name": "Reneko",
         "class": "WARRIOR",
-        "guildRank": "Officer"
+        "guildRank": "Member"
     },
     {
-        "name": "Toestabber",
-        "class": "ROGUE",
+        "name": "Rövbrytaren",
+        "class": "WARLOCK",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Snakepala",
+        "class": "PALADIN",
+        "guildRank": "Initiate"
+    },
+    {
+        "name": "Sovietgirl",
+        "class": "WARLOCK",
         "guildRank": "Member"
     },
     {
@@ -240,8 +175,73 @@
         "guildRank": "Member"
     },
     {
+        "name": "Svartie",
+        "class": "PALADIN",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Swigen",
+        "class": "HUNTER",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Thenuker",
+        "class": "MAGE",
+        "guildRank": "Initiate"
+    },
+    {
+        "name": "Thirena",
+        "class": "ROGUE",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Toestabber",
+        "class": "ROGUE",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Trollsmet",
+        "class": "MAGE",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Vepaz",
+        "class": "WARRIOR",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Waiteyak",
+        "class": "ROGUE",
+        "guildRank": "Initiate"
+    },
+    {
+        "name": "Wulfrun",
+        "class": "DRUID",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Wyldfyre",
+        "class": "DRUID",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Xéna",
+        "class": "HUNTER",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Xuana",
+        "class": "WARRIOR",
+        "guildRank": "Member"
+    },
+    {
         "name": "Yungbanz",
         "class": "DRUID",
+        "guildRank": "Member"
+    },
+    {
+        "name": "Zadik",
+        "class": "PALADIN",
         "guildRank": "Member"
     }
 ]

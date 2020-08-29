@@ -10,11 +10,20 @@ const PlayerList = ({ players }: PlayerListProps) => {
     return (
         <div>
             <h1>Player list</h1>
-            <table>
+            <table style={{ borderSpacing: 0 }}>
                 <tbody>
                     {players.map((player, index) => (
-                        <tr key={player.name} style={{ backgroundColor: index % 2 === 0 ? 'none' : '#222'}}>
-                            <td style={{ paddingRight: 20 }}>
+                        <tr
+                            key={player.name}
+                            style={{
+                                backgroundColor: index % 2 === 0 ? 'none' : '#222',
+                            }}
+                        >
+                            <td style={{
+                                padding: '5px 20px 5px 5px',
+                                borderBottom: '1px solid #333',
+                                borderTop: index ? 'none' : '1px solid #333',
+                            }}>
                                 <Link to={`/players/${player.name}`} style={{ textDecoration: 'none' }}>
                                     <PlayerName player={player} />
                                 </Link>
@@ -23,10 +32,12 @@ const PlayerList = ({ players }: PlayerListProps) => {
                                 <td key={slot.score} style={{
                                     textAlign: 'center',
                                     backgroundColor: slot.received ? '#1d3d1d' : 'none',
-                                    padding: '0 5px',
+                                    padding: '0 8px',
+                                    borderBottom: '1px solid #333',
+                                    borderTop: index ? 'none' : '1px solid #333',
                                 }}>
                                     {slot.item ? (
-                                        <ItemLink item={slot.item} noText size='tiny' />
+                                        <ItemLink item={slot.item} noText size='small' />
                                     ) : '-'}
                                 </td>
                             ))}
