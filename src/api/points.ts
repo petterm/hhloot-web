@@ -1,16 +1,31 @@
 import { Player, PlayerItemEntry, EntryScore } from "../types";
-import { getRaids, isBonusRaid, Raid } from "./raids";
+import { getRaids/*, isBonusRaid, Raid*/ } from "./raids";
+import attendance from '../data/attendance.json';
 
-const hasBonusAttendance = (attendance: number) => attendance >= 0.8;
+const hasBonusAttendance = (attendance: number) => attendance >= 0.1;
+
+const filterBonusRaids = (raids: number[]): number[] => raids.slice(-2);
 
 const getPlayerBonusRaids = (player: Player) => {
-    const raids = getRaids();
+    // const raids = getRaids();
+    // let bonus = 0;
+    // for (const raidIndex in raids) {
+    //     const raid = raids[raidIndex];
+    //     if (isBonusRaid(raid)) {
+    //         const playerAttendance = raid.players.find(o => o.character === player.name);
+    //         if (playerAttendance && hasBonusAttendance(playerAttendance.attendance)) {
+    //             bonus += 1;
+    //         }
+    //     }
+    // }
+
+    const attendanceList = attendance as { [key: string]: number[] };
     let bonus = 0;
-    for (const raidIndex in raids) {
-        const raid = raids[raidIndex];
-        if (isBonusRaid(raid)) {
-            const playerAttendance = raid.players.find(o => o.character === player.name);
-            if (playerAttendance && hasBonusAttendance(playerAttendance.attendance)) {
+    if (player.name in attendanceList) {
+        const bonusRaids = filterBonusRaids(attendanceList[player.name]);
+        for (const i in bonusRaids) {
+            const value = bonusRaids[i];
+            if (hasBonusAttendance(value)) {
                 bonus += 1;
             }
         }
@@ -20,26 +35,33 @@ const getPlayerBonusRaids = (player: Player) => {
 }
 
 // TODO: Real filter to get only attendance raids
-const getAttendanceRaids = (raids: Raid[]) => raids.slice(-10);
+// const getAttendanceRaids = (raids: Raid[]) => raids.slice(-10);
 
 // TODO: Fill out with data for new players
 const getPlayerAttendance = (player: Player): number => {
-    if (!player.calculatedAttendance) {
-        const raids = getAttendanceRaids(getRaids());
+    if (typeof(player.calculatedAttendance) === 'undefined') {
+        // const raids = getAttendanceRaids(getRaids());
         
-        let attendance = [];
-        for (const raidIndex in raids) {
-            const raid = raids[raidIndex];
+        // let attendance = [];
+        // for (const raidIndex in raids) {
+        //     const raid = raids[raidIndex];
     
-            const playerAttendance = raid.players.find(o => o.character === player.name);
-            if (playerAttendance) {
-                attendance.push(playerAttendance.attendance)
-            } else {
-                attendance.push(0);
-            }
+        //     const playerAttendance = raid.players.find(o => o.character === player.name);
+        //     if (playerAttendance) {
+        //         attendance.push(playerAttendance.attendance)
+        //     } else {
+        //         attendance.push(0);
+        //     }
+        // }
+        const attendanceList = attendance as { [key: string]: number[] };
+
+        if (player.name in attendanceList) {
+            const playerAttendanceList = attendanceList[player.name] as number[];
+            player.calculatedAttendance = playerAttendanceList.reduceRight((a, b) => a + b) / playerAttendanceList.length;
+            player.calculatedAttendance = Math.round(player.calculatedAttendance * 100) / 100;
+        } else {
+            player.calculatedAttendance = 0;
         }
-    
-        player.calculatedAttendance = attendance.reduceRight((a, b) => a + b) / attendance.length;
     }
     return player.calculatedAttendance
 }
@@ -76,7 +98,8 @@ export const getPositionBonus = (player: Player): number => {
 };
 
 export const getAttendanceBonus = (player: Player) => {
-    return getPlayerAttendance(player) * 10;
+    const value = getPlayerAttendance(player) * 10;
+    return Math.round(value * 10) / 10;
 };
 
 export const getEntryScore = (entry: PlayerItemEntry, player: Player): EntryScore => {
