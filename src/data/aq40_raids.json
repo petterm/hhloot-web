@@ -28,7 +28,7 @@
                 "item": "Robes of the Battleguard"
             },
             {
-                "character": "Yungbanz",
+                "character": "Youngbanz",
                 "item": "Hive Tunneler's Boots"
             },
             {
@@ -44,152 +44,7 @@
     },
     {
         "date": "2020-08-22",
-        "players": [
-            {
-                "character": "Meche",
-                "attendance": 1
-            },
-            {
-                "character": "Deaurion",
-                "attendance": 1
-            },
-            {
-                "character": "Suncho",
-                "attendance": 1
-            },
-            {
-                "character": "Grillspett",
-                "attendance": 1
-            },
-            {
-                "character": "Jalka",
-                "attendance": 1
-            },
-            {
-                "character": "Thirena",
-                "attendance": 1
-            },
-            {
-                "character": "Ditro",
-                "attendance": 1
-            },
-            {
-                "character": "Xéna",
-                "attendance": 1
-            },
-            {
-                "character": "Kongs",
-                "attendance": 1
-            },
-            {
-                "character": "Acaldra",
-                "attendance": 1
-            },
-            {
-                "character": "Snakepala",
-                "attendance": 1
-            },
-            {
-                "character": "Svartie",
-                "attendance": 1
-            },
-            {
-                "character": "Yungbanz",
-                "attendance": 1
-            },
-            {
-                "character": "Hubbé",
-                "attendance": 1
-            },
-            {
-                "character": "Rövbrytaren",
-                "attendance": 1
-            },
-            {
-                "character": "Binding",
-                "attendance": 1
-            },
-            {
-                "character": "Wyldfyre",
-                "attendance": 1
-            },
-            {
-                "character": "Garlick",
-                "attendance": 1
-            },
-            {
-                "character": "Waeoo",
-                "attendance": 1
-            },
-            {
-                "character": "Piclasa",
-                "attendance": 1
-            },
-            {
-                "character": "Trollsmet",
-                "attendance": 1
-            },
-            {
-                "character": "Wulfrun",
-                "attendance": 1
-            },
-            {
-                "character": "Klesket",
-                "attendance": 1
-            },
-            {
-                "character": "Meche",
-                "attendance": 1
-            },
-            {
-                "character": "Reneko",
-                "attendance": 1
-            },
-            {
-                "character": "Macsonkor",
-                "attendance": 1
-            },
-            {
-                "character": "Firmand",
-                "attendance": 1
-            },
-            {
-                "character": "Ósýnileg",
-                "attendance": 1
-            },
-            {
-                "character": "Ñuup",
-                "attendance": 1
-            },
-            {
-                "character": "Vepaz",
-                "attendance": 1
-            },
-            {
-                "character": "Sovietgirl",
-                "attendance": 1
-            },
-            {
-                "character": "Anusaukko",
-                "attendance": 1
-            },
-            {
-                "character": "Cosy",
-                "attendance": 1
-            },
-            {
-                "character": "Greensoup",
-                "attendance": 1
-            },
-            {
-                "character": "Glamor",
-                "attendance": 1
-            },
-            {
-                "character": "Toestabber",
-                "attendance": 1
-            }
-        ],
+        "players": [],
         "loot": [
             {
                 "character": "Ósýnileg",
@@ -328,6 +183,166 @@
             {
                 "character": "Rövbrytaren",
                 "item": "Burrower Bracers"
+            }
+        ]
+    },
+    {
+        "date": "2020-08-29",
+        "players": [],
+        "loot": [
+            {
+                "character": "Xuana",
+                "item": "Barrage Shoulders"
+            },
+            {
+                "character": "Qbx",
+                "item": "Breastplate of Annihilation"
+            },
+            {
+                "character": "Reneko",
+                "item": "Neretzek, The Blood Drinker"
+            },
+            {
+                "character": "Hubbé",
+                "item": "Badge of the Swarmguard"
+            },
+            {
+                "character": "Xéna",
+                "item": "Silithid Claw"
+            },
+            {
+                "character": "Svartie",
+                "item": "Libram of Grace"
+            },
+            {
+                "character": "Reneko",
+                "item": "Scaled Sand Reaver Leggings"
+            },
+            {
+                "character": "Glamor",
+                "item": "Qiraji Bindings of Dominance"
+            },
+            {
+                "character": "Reneko",
+                "item": "Qiraji Bindings of Command"
+            },
+            {
+                "character": "Suncho",
+                "item": "Hive Defiler Wristguards"
+            },
+            {
+                "character": "Meche",
+                "item": "Vek'nilash's Circlet"
+            },
+            {
+                "character": "Nympth",
+                "item": "Belt of the Fallen Emperor"
+            },
+            {
+                "character": "Wyldfyre",
+                "item": "Qiraji Execution Bracers"
+            },
+            {
+                "character": "Klesket",
+                "item": "Vek'lor's Diadem"
+            },
+            {
+                "character": "Wulfrun",
+                "item": "Eye of C'Thun"
+            },
+            {
+                "character": "Firmand",
+                "item": "Eyestalk Waist Cord"
+            },
+            {
+                "character": "Vepaz",
+                "item": "Ouro's Intact Hide"
+            },
+            {
+                "character": "Nympth",
+                "item": "Skin of the Great Sandworm"
+            },
+            {
+                "character": "Wyldfyre",
+                "item": "Mark of C'Thun"
+            },
+            {
+                "character": "Binding",
+                "item": "Burrower Bracers"
+            },
+            {
+                "character": "Toestabber",
+                "item": "Vanquished Tentacle of C'Thun"
+            },
+            {
+                "character": "Macsonkor",
+                "item": "Husk of the Old God"
+            },
+            {
+                "character": "Meche",
+                "item": "Carapace of the Old God"
+            }
+        ],
+        "itemBonus": [
+            {
+                "character": "Libram of Grace",
+                "item": "Cosy"
+            },
+            {
+                "character": "Libram of Grace",
+                "item": "Anusaukko"
+            },
+            {
+                "character": "Qiraji Bindings of Command",
+                "item": "Xuana"
+            },
+            {
+                "character": "Qiraji Bindings of Command",
+                "item": "Thirena"
+            },
+            {
+                "character": "Qiraji Bindings of Command",
+                "item": "Kongs"
+            },
+            {
+                "character": "Qiraji Bindings of Command",
+                "item": "Klesket"
+            },
+            {
+                "character": "Hive Defiler Wristguards",
+                "item": "Xuana"
+            },
+            {
+                "character": "Vek'nilash's Circlet",
+                "item": "Vepaz"
+            },
+            {
+                "character": "Vek'nilash's Circlet",
+                "item": "Firmand"
+            },
+            {
+                "character": "Eye of C'Thun",
+                "item": "Hubbé"
+            },
+            {
+                "character": "Eye of C'Thun",
+                "item": "Firmand"
+            },
+            {
+                "character": "Eye of C'Thun",
+                "item": "Xéna"
+            },
+            {
+                "character": "Eyestalk Waist Cord",
+                "item": "Macsonkor"
+            },
+            {
+                "character": "Ouro's Intact Hide",
+                "item": "Reneko"
+            },
+            {
+                "character": "Husk of the Old God",
+                "item": "Trollsmet"
             }
         ]
     }
