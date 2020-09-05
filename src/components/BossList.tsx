@@ -28,11 +28,18 @@ class BossList extends React.Component<BossListProps, BossListState> {
     }
 
     onSelectLootPlayer(loot: BossDrop, player: Player) {
-        this.setState({
-            lootPlayer: {
-                player, loot,
-            }
-        });
+        const { lootPlayer } = this.state;
+        if (lootPlayer && lootPlayer.loot === loot && lootPlayer.player === player) {
+            this.setState({
+                lootPlayer: undefined,
+            });
+        } else {
+            this.setState({
+                lootPlayer: {
+                    player, loot,
+                }
+            });
+        }
     }
 
     onClosePopup() {

@@ -20,6 +20,9 @@ const LootPlayers = ({ loot, player }: LootPlayersProps) => {
 
     let selectedPlayerScore: number;
     const eligiblePlayers = scores.filter((entry) => {
+        if (entry.playerEntry.received) {
+            return false;
+        }
         if (entry.player.name === player.name) {
             selectedPlayerScore = entry.scores.total;
             return true;
