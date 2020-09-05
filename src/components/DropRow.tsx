@@ -1,13 +1,19 @@
 import React from 'react';
-import { BossDrop } from '../types'
+import { BossDrop, Player } from '../types'
 import { getPlayer } from '../api';
 import { getEntryScore } from '../api/points';
 import DropRowPlayer from './DropRowPlayer';
 import ItemLink from './ItemLink';
 import styles from './DropRow.module.css'
 
-type DropRowProps = { drop: BossDrop, even: boolean, hideReceived: boolean };
-const DropRow = ({ drop, even, hideReceived }: DropRowProps) => {
+type DropRowProps = {
+    drop: BossDrop,
+    even: boolean,
+    hideReceived: boolean,
+    masterlooter: boolean,
+    onSelectLootPlayer: (x: BossDrop, y: Player) => void,
+};
+const DropRow = ({ drop, even, hideReceived, masterlooter, onSelectLootPlayer }: DropRowProps) => {
     const scores = drop.reservations
         .map(({ playerName, entry }) => {
             const player = getPlayer(playerName);
@@ -33,6 +39,8 @@ const DropRow = ({ drop, even, hideReceived }: DropRowProps) => {
                         playerEntry={playerEntry}
                         player={player}
                         scores={scores}
+                        masterlooter={masterlooter}
+                        onSelectLootPlayer={(player: Player) => onSelectLootPlayer(drop, player)}
                     />
                 ))}
             </div>

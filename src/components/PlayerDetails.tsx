@@ -25,6 +25,8 @@ const PlayerDetails = () => {
             <h1>
                 <PlayerName player={player} />
             </h1>
+            <p>Attendance bonus: {getAttendanceBonus(player)}</p>
+            <p>Position bonus: {getPositionBonus(player)}</p>
             <table style={{ borderSpacing: 0 }}>
                 <thead>
                     <tr>
@@ -35,13 +37,7 @@ const PlayerDetails = () => {
                             Weight
                         </th>
                         <th>
-                            Pos.
-                        </th>
-                        <th>
                             Item
-                        </th>
-                        <th>
-                            Atte.
                         </th>
                         <th>
                             Total
@@ -74,13 +70,7 @@ const PlayerDetails = () => {
                                 {entry.score}
                             </td>
                             <td style={style(entry, index)}>
-                                {getPositionBonus(player)}
-                            </td>
-                            <td style={style(entry, index)}>
                                 {getItemBonus(entry, player)}
-                            </td>
-                            <td style={style(entry, index)}>
-                                {getAttendanceBonus(player)}
                             </td>
                             <td style={style(entry, index)}>
                                 {getFinalScore(entry, player)}
