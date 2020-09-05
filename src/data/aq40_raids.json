@@ -285,64 +285,64 @@
         ],
         "itemBonus": [
             {
-                "character": "Libram of Grace",
-                "item": "Cosy"
+                "item": "Libram of Grace",
+                "character": "Cosy"
             },
             {
-                "character": "Libram of Grace",
-                "item": "Anusaukko"
+                "item": "Libram of Grace",
+                "character": "Anusaukko"
             },
             {
-                "character": "Qiraji Bindings of Command",
-                "item": "Xuana"
+                "item": "Qiraji Bindings of Command",
+                "character": "Xuana"
             },
             {
-                "character": "Qiraji Bindings of Command",
-                "item": "Thirena"
+                "item": "Qiraji Bindings of Command",
+                "character": "Thirena"
             },
             {
-                "character": "Qiraji Bindings of Command",
-                "item": "Kongs"
+                "item": "Qiraji Bindings of Command",
+                "character": "Kongs"
             },
             {
-                "character": "Qiraji Bindings of Command",
-                "item": "Klesket"
+                "item": "Qiraji Bindings of Command",
+                "character": "Klesket"
             },
             {
-                "character": "Hive Defiler Wristguards",
-                "item": "Xuana"
+                "item": "Hive Defiler Wristguards",
+                "character": "Xuana"
             },
             {
-                "character": "Vek'nilash's Circlet",
-                "item": "Vepaz"
+                "item": "Vek'nilash's Circlet",
+                "character": "Vepaz"
             },
             {
-                "character": "Vek'nilash's Circlet",
-                "item": "Firmand"
+                "item": "Vek'nilash's Circlet",
+                "character": "Firmand"
             },
             {
-                "character": "Eye of C'Thun",
-                "item": "Hubbé"
+                "item": "Eye of C'Thun",
+                "character": "Hubbé"
             },
             {
-                "character": "Eye of C'Thun",
-                "item": "Firmand"
+                "item": "Eye of C'Thun",
+                "character": "Firmand"
             },
             {
-                "character": "Eye of C'Thun",
-                "item": "Xéna"
+                "item": "Eye of C'Thun",
+                "character": "Xéna"
             },
             {
-                "character": "Eyestalk Waist Cord",
-                "item": "Macsonkor"
+                "item": "Eyestalk Waist Cord",
+                "character": "Macsonkor"
             },
             {
-                "character": "Ouro's Intact Hide",
-                "item": "Reneko"
+                "item": "Ouro's Intact Hide",
+                "character": "Reneko"
             },
             {
-                "character": "Husk of the Old God",
-                "item": "Trollsmet"
+                "item": "Husk of the Old God",
+                "character": "Trollsmet"
             }
         ]
     }

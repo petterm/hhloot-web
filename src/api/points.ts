@@ -4,7 +4,7 @@ import attendance from '../data/attendance.json';
 
 const hasBonusAttendance = (attendance: number) => attendance >= 0.1;
 
-const filterBonusRaids = (raids: number[]): number[] => raids.slice(-2);
+const filterBonusRaids = (raids: number[]): number[] => raids.slice(-4);
 
 const getPlayerBonusRaids = (player: Player) => {
     // const raids = getRaids();

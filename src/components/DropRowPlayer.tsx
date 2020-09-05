@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useHistory, useLocation } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { PlayerItemEntry, EntryScore, Player } from '../types'
 import PlayerName from './PlayerName';
 import style from './DropRowPlayer.module.css'
