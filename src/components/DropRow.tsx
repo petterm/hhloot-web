@@ -5,6 +5,7 @@ import { getEntryScore } from '../api/points';
 import DropRowPlayer from './DropRowPlayer';
 import ItemLink from './ItemLink';
 import styles from './DropRow.module.css'
+import DropRowPlayerFree from './DropRowPlayerFree';
 
 type DropRowProps = {
     drop: BossDrop,
@@ -42,6 +43,9 @@ const DropRow = ({ drop, even, hideReceived, masterlooter, onSelectLootPlayer }:
                         masterlooter={masterlooter}
                         onSelectLootPlayer={(player: Player) => onSelectLootPlayer(drop, player)}
                     />
+                ))}
+                {!hideReceived && drop.freeLoot.map(name => (
+                    <DropRowPlayerFree key={name} player={getPlayer(name)} />
                 ))}
             </div>
         </div>

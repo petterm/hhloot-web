@@ -42,6 +42,7 @@ export interface BossDrop {
         playerName: PlayerName;
         entry: PlayerItemEntry;
     }[];
+    freeLoot: PlayerName[];
 }
 
 export interface Boss {

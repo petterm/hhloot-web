@@ -24,6 +24,11 @@
     background-color: #1d3d1d;
 }
 
+.wrapReceivedFree {
+    background-color: #1d3d1d;
+    opacity: 0.5;
+}
+
 .score {
     margin-right: 5px;
     padding: 0px 5px;

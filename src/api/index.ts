@@ -27,6 +27,7 @@ const parseLootTable = (): void => {
     
             const drop: BossDrop = bossDropMap[dropJson['Item Name']] || {
                 reservations: [],
+                freeLoot: [],
                 item: {
                     id: parseInt(dropJson['Item ID']),
                     name: dropJson['Item Name'],
@@ -123,9 +124,13 @@ const markReceivedItems = () => {
                 const index = playerSlots.findIndex(
                     entry => !entry.received && entry.item && entry.item.name === lootEvent.item
                 );
-                if (index !== -1) playerSlots[index].received = raid.date;
+                if (index !== -1) {
+                    playerSlots[index].received = raid.date;
+                } else {
+                    bossDropMap[lootEvent.item].freeLoot.push(player.name)
+                }
             } else {
-                console.warn('Loot event for missing unknown player', lootEvent.character);
+                console.warn('Loot event for unknown player', lootEvent.character);
             }
         }
     }
