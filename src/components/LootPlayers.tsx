@@ -23,7 +23,7 @@ const LootPlayers = ({ loot, player }: LootPlayersProps) => {
         if (entry.playerEntry.received) {
             return false;
         }
-        if (entry.player.name === player.name) {
+        if (entry.player.name === player.name && !selectedPlayerScore) {
             selectedPlayerScore = entry.scores.total;
             return true;
         }

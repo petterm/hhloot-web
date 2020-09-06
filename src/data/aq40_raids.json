@@ -28,7 +28,7 @@
                 "item": "Robes of the Battleguard"
             },
             {
-                "character": "Youngbanz",
+                "character": "Yungbanz",
                 "item": "Hive Tunneler's Boots"
             },
             {
@@ -343,6 +343,170 @@
             {
                 "item": "Husk of the Old God",
                 "character": "Trollsmet"
+            }
+        ]
+    },
+    {
+        "date": "2020-09-05",
+        "players": [],
+        "loot": [
+            {
+                "character": "Meche",
+                "item": "Boots of the Unwavering Will"
+            },
+            {
+                "character": "Deaurion",
+                "item": "Pendant of the Qiraji Guardian"
+            },
+            {
+                "character": "Meche",
+                "item": "Gauntlets of Steadfast Determination"
+            },
+            {
+                "character": "Macsonkor",
+                "item": "Robes of the Battleguard"
+            },
+            {
+                "character": "Svartie",
+                "item": "Robes of the Guardian Saint"
+            },
+            {
+                "character": "Reneko",
+                "item": "Pauldrons of the Unrelenting"
+            },
+            {
+                "character": "Meche",
+                "item": "Cloak of the Golden Hive"
+            },
+            {
+                "character": "Xuana",
+                "item": "Qiraji Bindings of Command"
+            },
+            {
+                "character": "Piclasa",
+                "item": "Qiraji Bindings of Dominance"
+            },
+            {
+                "character": "Wulfrun",
+                "item": "Imperial Qiraji Regalia"
+            },
+            {
+                "character": "Reneko",
+                "item": "Kalimdor's Revenge"
+            },
+            {
+                "character": "Vepaz",
+                "item": "Vek'nilash's Circlet"
+            },
+            {
+                "character": "Thirena",
+                "item": "Vek'lor's Diadem"
+            },
+            {
+                "character": "Toestabber",
+                "item": "Qiraji Execution Bracers"
+            },
+            {
+                "character": "Klesket",
+                "item": "Belt of Never-ending Agony"
+            },
+            {
+                "character": "Hubbé",
+                "item": "Eye of C'Thun"
+            },
+            {
+                "character": "Xuana",
+                "item": "Carapace of the Old God"
+            },
+            {
+                "character": "Rövbrytaren",
+                "item": "Husk of the Old God"
+            },
+            {
+                "character": "Acaldra",
+                "item": "Gauntlets of Annihilation"
+            },
+            {
+                "character": "Reneko",
+                "item": "Ouro's Intact Hide"
+            },
+            {
+                "character": "Rövbrytaren",
+                "item": "Skin of the Great Sandworm"
+            },
+            {
+                "character": "Nympth",
+                "item": "Wormscale Blocker"
+            },
+            {
+                "character": "Kongs",
+                "item": "Bile-Covered Gauntlets"
+            },
+            {
+                "character": "Disenchant",
+                "item": "Triad Girdle"
+            }
+        ],
+        "itemBonus": [
+            {
+                "character": "Cosy",
+                "item": "Robes of the Guardian Saint"
+            },
+            {
+                "character": "Wulfrun",
+                "item": "Robes of the Guardian Saint"
+            },
+            {
+                "character": "Thirena",
+                "item": "Qiraji Bindings of Command"
+            },
+            {
+                "character": "Kongs",
+                "item": "Qiraji Bindings of Command"
+            },
+            {
+                "character": "Klesket",
+                "item": "Qiraji Bindings of Command"
+            },
+            {
+                "character": "Soviergirl",
+                "item": "Qiraji Bindings of Dominance"
+            },
+            {
+                "character": "Firmand",
+                "item": "Vek'nilash's Circlet"
+            },
+            {
+                "character": "Deaurion",
+                "item": "Qiraji Execution Bracers"
+            },
+            {
+                "character": "Thirena",
+                "item": "Belt of Never-ending Agony"
+            },
+            {
+                "character": "Toestabber",
+                "item": "Belt of Never-ending Agony"
+            },
+            {
+                "character": "Rövbrytaren",
+                "item": "Eye of C'Thun"
+            },
+            {
+                "character": "Psychokiller",
+                "item": "Eye of C'Thun"
+            },
+            {
+                "character": "Xéna",
+                "item": "Eye of C'Thun"
+            },
+            {
+                "character": "Trollsmet",
+                "item": "Husk of the Old God"
+            },
+            {
+                "character": "Xuana",
+                "item": "Gauntlets of Annihilation"
             }
         ]
     }
