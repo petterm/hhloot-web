@@ -18,3 +18,6 @@ export const classColor: {[C in Class]: string} = {
     WARLOCK: '#8787ED',
     WARRIOR: '#C79C6E',
 };
+
+export const bonusRaidCount = 5;
+export const attendanceRaidCount = 6;

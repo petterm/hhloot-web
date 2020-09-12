@@ -1,10 +1,11 @@
 import { Player, PlayerItemEntry, EntryScore } from "../types";
 import { getRaids/*, isBonusRaid, Raid*/ } from "./raids";
-import attendance from '../data/attendance.json';
+import attendanceData from '../data/attendance.json';
+import { bonusRaidCount, attendanceRaidCount } from "../constants";
 
 const hasBonusAttendance = (attendance: number) => attendance >= 0.1;
 
-const filterBonusRaids = (raids: number[]): number[] => raids.slice(-4);
+const filterBonusRaids = (raids: number[]): number[] => raids.slice(-bonusRaidCount);
 
 const getPlayerBonusRaids = (player: Player) => {
     // const raids = getRaids();
@@ -19,7 +20,7 @@ const getPlayerBonusRaids = (player: Player) => {
     //     }
     // }
 
-    const attendanceList = attendance as { [key: string]: number[] };
+    const attendanceList = attendanceData as { [key: string]: number[] };
     let bonus = 0;
     if (player.name in attendanceList) {
         const bonusRaids = filterBonusRaids(attendanceList[player.name]);
@@ -40,23 +41,10 @@ const getPlayerBonusRaids = (player: Player) => {
 // TODO: Fill out with data for new players
 const getPlayerAttendance = (player: Player): number => {
     if (typeof(player.calculatedAttendance) === 'undefined') {
-        // const raids = getAttendanceRaids(getRaids());
-        
-        // let attendance = [];
-        // for (const raidIndex in raids) {
-        //     const raid = raids[raidIndex];
-    
-        //     const playerAttendance = raid.players.find(o => o.character === player.name);
-        //     if (playerAttendance) {
-        //         attendance.push(playerAttendance.attendance)
-        //     } else {
-        //         attendance.push(0);
-        //     }
-        // }
-        const attendanceList = attendance as { [key: string]: number[] };
+        const attendanceList = attendanceData as { [key: string]: number[] };
 
         if (player.name in attendanceList) {
-            const playerAttendanceList = attendanceList[player.name] as number[];
+            const playerAttendanceList = (attendanceList[player.name] as number[]).slice(-attendanceRaidCount);
             player.calculatedAttendance = playerAttendanceList.reduceRight((a, b) => a + b) / playerAttendanceList.length;
             player.calculatedAttendance = Math.round(player.calculatedAttendance * 100) / 100;
         } else {
