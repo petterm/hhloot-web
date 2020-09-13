@@ -502,5 +502,140 @@
                 "item": "Gauntlets of Annihilation"
             }
         ]
+    },
+    {
+        "date": "2020-09-12",
+        "loot": [
+            {
+                "character": "Toestabber",
+                "item": "Cloak of Concentrated Hatred"
+            },
+            {
+                "character": "Glamor",
+                "item": "Ring of Swarming Thought"
+            },
+            {
+                "character": "Glamor",
+                "item": "Recomposed Boots"
+            },
+            {
+                "character": "Garlick",
+                "item": "Robes of the Battleguard"
+            },
+            {
+                "character": "Vepaz",
+                "item": "Barbed Choker"
+            },
+            {
+                "character": "Anusaukko",
+                "item": "Libram of Grace"
+            },
+            {
+                "character": "Yungbanz",
+                "item": "Imperial Qiraji Regalia"
+            },
+            {
+                "character": "Thiena",
+                "item": "Qiraji Bindings of Command"
+            },
+            {
+                "character": "Psychokiller",
+                "item": "Qiraji Bindings of Dominance"
+            },
+            {
+                "character": "Nympth",
+                "item": "Ring of the Martyr"
+            },
+            {
+                "character": "Reneko",
+                "item": "Boots of the Fallen Hero"
+            },
+            {
+                "character": "Greensoup",
+                "item": "Cape of the Trinity"
+            },
+            {
+                "character": "Reneko",
+                "item": "Ring of Emperor Vek'lor"
+            },
+            {
+                "character": "Nympth",
+                "item": "Vek'lor's Diadem"
+            },
+            {
+                "character": "Glamor",
+                "item": "Amulet of Vek'nilash"
+            },
+            {
+                "character": "Psychokiller",
+                "item": "Vek'nilash's Circlet"
+            },
+            {
+                "character": "Shard",
+                "item": "Gloves of the Redeemed Prophecy"
+            },
+            {
+                "character": "Yungbanz",
+                "item": "Eye of C'Thun"
+            },
+            {
+                "character": "Klesket",
+                "item": "Carapace of the Old God"
+            },
+            {
+                "character": "Hubbé",
+                "item": "Ring of the Godslayer"
+            },
+            {
+                "character": "Vepaz",
+                "item": "Dark Edge of Insanity"
+            },
+            {
+                "character": "Thenuker",
+                "item": "Husk of the Old God"
+            },
+            {
+                "character": "Glamor",
+                "item": "Skin of the Great Sandworm"
+            },
+            {
+                "character": "Suncho",
+                "item": "The Burrower's Shell"
+            },
+            {
+                "character": "Klesket",
+                "item": "Ouro's Intact Hide"
+            },
+            {
+                "character": "Deaurion",
+                "item": "Qiraji Bindings of Command"
+            },
+            {
+                "character": "Wulfrun",
+                "item": "Idol of Health"
+            },
+            {
+                "character": "Suncho",
+                "item": "Imperial Qiraji Armaments"
+            },
+            {
+                "character": "Piclasa",
+                "item": "Qiraji Bindings of Dominance"
+            }
+        ],
+        "itemBonus": [
+            {
+                "character": "Cosy",
+                "item": "Libram of Grace"
+            },
+            {
+                "character": "Deaurion",
+                "item": "Qiraji Bindings of Command"
+            },
+            {
+                "character": "Deaurion",
+                "item": "Boots of the Fallen Hero"
+            }
+        ]
     }
 ]
