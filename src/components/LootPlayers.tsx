@@ -3,6 +3,7 @@ import { Player, BossDrop } from '../types'
 import PlayerName from './PlayerName';
 import { getEntryScore } from '../api/points';
 import { getPlayer } from '../api';
+import { rollPointsWindow } from '../constants';
 
 type LootPlayersProps = { loot: BossDrop, player: Player };
 const LootPlayers = ({ loot, player }: LootPlayersProps) => {
@@ -27,7 +28,7 @@ const LootPlayers = ({ loot, player }: LootPlayersProps) => {
             selectedPlayerScore = entry.scores.total;
             return true;
         }
-        if (selectedPlayerScore && entry.scores.total > selectedPlayerScore - 3) {
+        if (selectedPlayerScore && entry.scores.total >= selectedPlayerScore - rollPointsWindow) {
             return true;
         }
         return false;

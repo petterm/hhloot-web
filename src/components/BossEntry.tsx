@@ -18,7 +18,6 @@ const BossEntry = ({ boss, hideReceived, masterlooter, onSelectLootPlayer }: Bos
                 <DropRow
                     key={drop.item.name}
                     drop={drop}
-                    even={index % 2 === 1}
                     hideReceived={hideReceived}
                     masterlooter={masterlooter}
                     onSelectLootPlayer={onSelectLootPlayer}

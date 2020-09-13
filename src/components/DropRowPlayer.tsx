@@ -3,6 +3,7 @@ import { Link, useHistory } from 'react-router-dom';
 import { PlayerItemEntry, EntryScore, Player } from '../types'
 import PlayerName from './PlayerName';
 import style from './DropRowPlayer.module.css'
+import { rollPointsWindow } from '../constants';
 
 type DropRowPlayerProps = {
     playerEntry: PlayerItemEntry,
@@ -10,20 +11,35 @@ type DropRowPlayerProps = {
     scores: EntryScore,
     masterlooter: boolean,
     onSelectLootPlayer: (y: Player) => void,
+    setHoverScore: (score: number) => void,
+    clearHoverScore: () => void,
+    hoverScore?: number,
 };
-type DropRowPlayerState = { showTooltip: boolean }
 
-const DropRowPlayer = ({ playerEntry, player, scores, masterlooter, onSelectLootPlayer }: DropRowPlayerProps) => {
+const DropRowPlayer = ({
+    playerEntry,
+    player,
+    scores,
+    masterlooter,
+    onSelectLootPlayer,
+    setHoverScore,
+    clearHoverScore,
+    hoverScore,
+}: DropRowPlayerProps) => {
     const [showTooltip, setShowTooltip] = useState(false);
     const history = useHistory();
 
     const onMouseEnter = () => {
         if (!masterlooter) {
             setShowTooltip(true);
+            setHoverScore(scores.total);
         }
     }
 
-    const onMouseLeave = () => setShowTooltip(false);
+    const onMouseLeave = () => {
+        setShowTooltip(false);
+        clearHoverScore();
+    }
 
     const onClick = () => {
         if (masterlooter) {
@@ -35,11 +51,18 @@ const DropRowPlayer = ({ playerEntry, player, scores, masterlooter, onSelectLoot
         }
     };
 
+    const wrapClasses = [style.wrap];
+    if (playerEntry.received) {
+        wrapClasses.push(style.wrapReceived);
+    } else if (!showTooltip && hoverScore && scores.total <= hoverScore && scores.total >= hoverScore - rollPointsWindow) {
+        wrapClasses.push(style.wrapRollRange);
+    }
+    
     return (
         <button
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
-            className={[style.wrap, (playerEntry.received ? style.wrapReceived : '')].join(' ')}
+            className={wrapClasses.join(' ')}
             onClick={onClick}
         >
             <div className={style.score}>
@@ -55,7 +78,7 @@ const DropRowPlayer = ({ playerEntry, player, scores, masterlooter, onSelectLoot
                 )}
             </div>
             {showTooltip && (
-                <div className={style.tooltip}>
+                <div className={style.tooltip} onMouseEnter={onMouseLeave}>
                     <table>
                         <tbody>
                             <tr>

@@ -29,6 +29,11 @@
     opacity: 0.5;
 }
 
+.wrapRollRange {
+    /* background-color: #3d3c1d; */
+    background-color: #333;
+}
+
 .score {
     margin-right: 5px;
     padding: 0px 5px;

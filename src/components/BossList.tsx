@@ -1,102 +1,92 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Boss, Player, BossDrop } from '../types'
 import BossEntry from './BossEntry';
 import style from './BossList.module.css';
 import LootPlayers from './LootPlayers';
 
 type BossListProps = { bosses: Boss[] };
-type BossListState = {
-    hideReceived: boolean,
-    masterLooter: boolean,
-    lootPlayer?: {
-        player: Player,
-        loot: BossDrop,
-    }
+type LootPlayer = {
+    player: Player,
+    loot: BossDrop,
 };
 
-class BossList extends React.Component<BossListProps, BossListState> {
-    state: BossListState = {
-        hideReceived: false,
-        masterLooter: false,
-        lootPlayer: undefined,
-    };
-
-    constructor(props: BossListProps) {
-        super(props);
-        this.onSelectLootPlayer = this.onSelectLootPlayer.bind(this);
-        this.onClosePopup = this.onClosePopup.bind(this);
+const localStorageSet = (key: string, value: boolean) => {
+    if (value) {
+        localStorage.setItem(key, "true");
+    } else {
+        localStorage.removeItem(key);
     }
+}
 
-    onSelectLootPlayer(loot: BossDrop, player: Player) {
-        const { lootPlayer } = this.state;
+const BossList = ({ bosses }: BossListProps) => {
+    const [hideReceived, setHideReceivedInner] = useState(localStorage.getItem("hideReceived") ? true : false);
+    const setHideReceived = (value: boolean) => {
+        setHideReceivedInner(value);
+        localStorageSet("hideReceived", value);
+    }
+    const [masterLooter, setMasterLooterInner] = useState(localStorage.getItem("masterLooter") ? true : false);
+    const setMasterLooter = (value: boolean) => {
+        setMasterLooterInner(value);
+        localStorageSet("masterLooter", value);
+    }
+    const [lootPlayer, setLootPlayer] = useState<LootPlayer>();
+
+    const onSelectLootPlayer = (loot: BossDrop, player: Player) => {
         if (lootPlayer && lootPlayer.loot === loot && lootPlayer.player === player) {
-            this.setState({
-                lootPlayer: undefined,
-            });
+            setLootPlayer(undefined);
         } else {
-            this.setState({
-                lootPlayer: {
-                    player, loot,
-                }
-            });
+            setLootPlayer({ player, loot });
         }
     }
 
-    onClosePopup() {
-        this.setState({
-            lootPlayer: undefined,
-        });
-    }
-    
-    render() {
-        // const bosses = this.props.bosses.slice(-3);
-        this.props.bosses.sort((a, b) => a.index - b.index);
-        return (
-            <div className={style.wrapper}>
-                <div>
-                    <h1>Bosses AQ 40</h1>
-                    <label style={{ cursor: "pointer" }}>
-                        <input
-                            type='checkbox'
-                            style={{ marginRight: 5, cursor: "pointer" }}
-                            checked={this.state.hideReceived}
-                            onChange={() => this.setState({ hideReceived: !this.state.hideReceived })}
-                        />
-                        Hide received items
-                    </label>
-                    {" - "}
-                    <label style={{ cursor: "pointer" }}>
-                        <input
-                            type='checkbox'
-                            style={{ marginRight: 5, cursor: "pointer" }}
-                            checked={this.state.masterLooter}
-                            onChange={() => this.setState({ masterLooter: !this.state.masterLooter })}
-                        />
-                        Masterlooter mode
-                    </label>
-                </div>
-                <div>
-                    {this.props.bosses.map(boss => (
-                        <BossEntry
-                            boss={boss}
-                            key={boss.name}
-                            hideReceived={this.state.hideReceived}
-                            masterlooter={this.state.masterLooter}
-                            onSelectLootPlayer={this.onSelectLootPlayer}
-                        />
-                    ))}
-                </div>
-                {this.state.lootPlayer ? (
-                    <div className={style.popup}>
-                        <LootPlayers loot={this.state.lootPlayer.loot} player={this.state.lootPlayer.player} />
-                        <button className={style.popupClose} onClick={this.onClosePopup}>
-                            Close
-                        </button>
-                    </div>
-                ) : null}
+    const onClosePopup = () => setLootPlayer(undefined);
+
+    bosses.sort((a, b) => a.index - b.index);
+    return (
+        <div className={style.wrapper}>
+            <div>
+                <h1>Bosses AQ 40</h1>
+                <label style={{ cursor: "pointer" }}>
+                    <input
+                        type='checkbox'
+                        style={{ marginRight: 5, cursor: "pointer" }}
+                        checked={hideReceived}
+                        onChange={() => setHideReceived(!hideReceived)}
+                    />
+                    Hide received items
+                </label>
+                {" - "}
+                <label style={{ cursor: "pointer" }}>
+                    <input
+                        type='checkbox'
+                        style={{ marginRight: 5, cursor: "pointer" }}
+                        checked={masterLooter}
+                        onChange={() => setMasterLooter(!masterLooter)}
+                    />
+                    Masterlooter mode
+                </label>
             </div>
-        );
-    }
+            <div>
+                {bosses.map(boss => (
+                    <BossEntry
+                        boss={boss}
+                        key={boss.name}
+                        hideReceived={hideReceived}
+                        masterlooter={masterLooter}
+                        onSelectLootPlayer={onSelectLootPlayer}
+                    />
+                ))}
+            </div>
+            {lootPlayer ? (
+                <div className={style.popup}>
+                    <LootPlayers loot={lootPlayer.loot} player={lootPlayer.player} />
+                    <button className={style.popupClose} onClick={onClosePopup}>
+                        Close
+                    </button>
+                </div>
+            ) : null}
+        </div>
+    );
 };
 
 export default BossList;

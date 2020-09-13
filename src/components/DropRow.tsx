@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BossDrop, Player } from '../types'
 import { getPlayer } from '../api';
 import { getEntryScore } from '../api/points';
@@ -9,12 +9,14 @@ import DropRowPlayerFree from './DropRowPlayerFree';
 
 type DropRowProps = {
     drop: BossDrop,
-    even: boolean,
     hideReceived: boolean,
     masterlooter: boolean,
     onSelectLootPlayer: (x: BossDrop, y: Player) => void,
 };
-const DropRow = ({ drop, even, hideReceived, masterlooter, onSelectLootPlayer }: DropRowProps) => {
+
+const DropRow = ({ drop, hideReceived, masterlooter, onSelectLootPlayer }: DropRowProps) => {
+    const [hoverScore, setHoverScore] = useState<number | undefined>();
+
     const scores = drop.reservations
         .map(({ playerName, entry }) => {
             const player = getPlayer(playerName);
@@ -42,6 +44,9 @@ const DropRow = ({ drop, even, hideReceived, masterlooter, onSelectLootPlayer }:
                         scores={scores}
                         masterlooter={masterlooter}
                         onSelectLootPlayer={(player: Player) => onSelectLootPlayer(drop, player)}
+                        setHoverScore={(score: number) => setHoverScore(score)}
+                        clearHoverScore={() => setHoverScore(undefined)}
+                        hoverScore={hoverScore}
                     />
                 ))}
                 {!hideReceived && drop.freeLoot.map(name => (

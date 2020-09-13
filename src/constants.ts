@@ -19,5 +19,6 @@ export const classColor: {[C in Class]: string} = {
     WARRIOR: '#C79C6E',
 };
 
+export const rollPointsWindow = 3;
 export const bonusRaidCount = 5;
 export const attendanceRaidCount = 6;
