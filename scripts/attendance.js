@@ -26,15 +26,44 @@ http.get(dataFileURL, function(response) {
 
         if ("RIDB" in data) {
             const ridbData = luaJson.parse("return " + data["RIDB"]);
+
+            // fs.writeFile('tmpRidb.json', JSON.stringify(ridbData, null, 2), err => { if (err) throw err; });
+            // if ("Players" in ridbData) {
+            //     const players = [];
+            //     for (const name in ridbData["Players"]) {
+            //         players.push({
+            //             name,
+            //             class: ridbData["Players"][name]["Class"].toUpperCase(),
+            //             guildRank: ridbData["Players"][name]["Rank"],
+            //         });
+            //     }
+            //     players.sort((a, b) => a.name.localeCompare(b.name));
+
+            //     fs.writeFile(
+            //         '../src/data/players.json',
+            //         JSON.stringify(
+            //             players.filter(a => ["Guild Master", "Officer", "Member", "Initiate"].includes(a.guildRank)),
+            //             null,
+            //             4,
+            //         ),
+            //         err => {
+            //             if (err) throw err;
+            //             console.log('Wrote to file src/data/players.json');
+            //         },
+            //     );
+            // }
+
             if ("NewAttendance" in ridbData) {
                 const sortedAttendance = {};
+
                 Object.keys(ridbData["NewAttendance"])
                     .sort()
-                    .forEach(key => sortedAttendance[key] = ridbData["NewAttendance"][key])
+                    .forEach(key => sortedAttendance[key] = ridbData["NewAttendance"][key]);
+
                 fs.writeFile('../src/data/attendance.json', JSON.stringify(sortedAttendance, null, 2), err => {
                     if (err) throw err;
                     console.log('Wrote to file src/data/attendance.json');
-                })
+                });
             } else {
                 console.log("No NewAttendance in the RIDB data");
             }

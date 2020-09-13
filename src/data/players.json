@@ -30,6 +30,11 @@
         "guildRank": "Member"
     },
     {
+        "name": "Darand",
+        "class": "ROGUE",
+        "guildRank": "Initiate"
+    },
+    {
         "name": "Deaurion",
         "class": "WARRIOR",
         "guildRank": "Officer"
@@ -75,6 +80,11 @@
         "guildRank": "Member"
     },
     {
+        "name": "Hijaarah",
+        "class": "PRIEST",
+        "guildRank": "Initiate"
+    },
+    {
         "name": "Hubbé",
         "class": "HUNTER",
         "guildRank": "Officer"
@@ -118,6 +128,11 @@
         "name": "Muggsy",
         "class": "ROGUE",
         "guildRank": "Member"
+    },
+    {
+        "name": "Mugsy",
+        "class": "MAGE",
+        "guildRank": "Initiate"
     },
     {
         "name": "Ñuup",
@@ -178,6 +193,11 @@
         "name": "Svartie",
         "class": "PALADIN",
         "guildRank": "Member"
+    },
+    {
+        "name": "Swiftmeld",
+        "class": "HUNTER",
+        "guildRank": "Initiate"
     },
     {
         "name": "Swigen",
