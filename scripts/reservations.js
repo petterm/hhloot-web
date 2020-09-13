@@ -2,7 +2,8 @@ const https = require('https');
 const Papa = require('papaparse');
 const fs = require("fs");
 
-const dataFileURL = "https://docs.google.com/a/google.com/spreadsheets/d/1vzK9lPih35GSUPbxLreslyihxPSSIXhS3JW_GWRf7Lw/gviz/tq?tqx=out:csv&sheet=Formul%C3%A4rsvar%201";
+const tabName = "Formulärsvar 1";
+const dataFileURL = `https://docs.google.com/a/google.com/spreadsheets/d/1vzK9lPih35GSUPbxLreslyihxPSSIXhS3JW_GWRf7Lw/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(tabName)}`;
 
 const players = {};
 

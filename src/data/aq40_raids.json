@@ -1,7 +1,6 @@
 [
     {
         "date": "2020-08-15",
-        "players": [],
         "loot": [
             {
                 "character": "Reneko",
@@ -40,11 +39,15 @@
                 "item": "Garb of Royal Ascension"
             }
         ],
-        "itemBonus": []
+        "itemBonus": [
+            {
+                "character": "Toestabber",
+                "item": "Barbed Choker"
+            }
+        ]
     },
     {
         "date": "2020-08-22",
-        "players": [],
         "loot": [
             {
                 "character": "Ósýnileg",
@@ -149,6 +152,10 @@
         ],
         "itemBonus": [
             {
+                "character": "Toestabber",
+                "item": "Cloak of Concentrated Hatred"
+            },
+            {
                 "character": "Ditro",
                 "item": "Imperial Qiraji Armaments"
             },
@@ -157,16 +164,8 @@
                 "item": "Imperial Qiraji Armaments"
             },
             {
-                "character": "Toestabber",
-                "item": "Cloak of Concentrated Hatred"
-            },
-            {
                 "character": "Klesket",
                 "item": "Vek'lor's Diadem"
-            },
-            {
-                "character": "Glamor",
-                "item": "Amulet of Vek'nilash"
             },
             {
                 "character": "Meche",
@@ -179,16 +178,11 @@
             {
                 "character": "Rövbrytaren",
                 "item": "Burrower Bracers"
-            },
-            {
-                "character": "Rövbrytaren",
-                "item": "Burrower Bracers"
             }
         ]
     },
     {
         "date": "2020-08-29",
-        "players": [],
         "loot": [
             {
                 "character": "Xuana",
@@ -285,70 +279,69 @@
         ],
         "itemBonus": [
             {
-                "item": "Libram of Grace",
-                "character": "Cosy"
+                "character": "Anusaukko",
+                "item": "Libram of Grace"
             },
             {
-                "item": "Libram of Grace",
-                "character": "Anusaukko"
+                "character": "Cosy",
+                "item": "Libram of Grace"
             },
             {
-                "item": "Qiraji Bindings of Command",
-                "character": "Xuana"
+                "character": "Xuana",
+                "item": "Qiraji Bindings of Command"
             },
             {
-                "item": "Qiraji Bindings of Command",
-                "character": "Thirena"
+                "character": "Thirena",
+                "item": "Qiraji Bindings of Command"
             },
             {
-                "item": "Qiraji Bindings of Command",
-                "character": "Kongs"
+                "character": "Kongs",
+                "item": "Qiraji Bindings of Command"
             },
             {
-                "item": "Qiraji Bindings of Command",
-                "character": "Klesket"
+                "character": "Klesket",
+                "item": "Qiraji Bindings of Command"
             },
             {
-                "item": "Hive Defiler Wristguards",
-                "character": "Xuana"
+                "character": "Xuana",
+                "item": "Hive Defiler Wristguards"
             },
             {
-                "item": "Vek'nilash's Circlet",
-                "character": "Vepaz"
+                "character": "Vepaz",
+                "item": "Vek'nilash's Circlet"
             },
             {
-                "item": "Vek'nilash's Circlet",
-                "character": "Firmand"
+                "character": "Firmand",
+                "item": "Vek'nilash's Circlet"
             },
             {
-                "item": "Eye of C'Thun",
-                "character": "Hubbé"
+                "character": "Hubbé",
+                "item": "Eye of C'Thun"
             },
             {
-                "item": "Eye of C'Thun",
-                "character": "Firmand"
+                "character": "Firmand",
+                "item": "Eye of C'Thun"
             },
             {
-                "item": "Eye of C'Thun",
-                "character": "Xéna"
+                "character": "Xéna",
+                "item": "Eye of C'Thun"
             },
             {
-                "item": "Eyestalk Waist Cord",
-                "character": "Macsonkor"
+                "character": "Macsonkor",
+                "item": "Eyestalk Waist Cord"
             },
             {
-                "item": "Ouro's Intact Hide",
-                "character": "Reneko"
+                "character": "Reneko",
+                "item": "Ouro's Intact Hide"
             },
             {
-                "item": "Husk of the Old God",
-                "character": "Trollsmet"
+                "character": "Trollsmet",
+                "item": "Husk of the Old God"
             }
         ]
     },
     {
         "date": "2020-09-05",
-        "players": [],
         "loot": [
             {
                 "character": "Meche",
