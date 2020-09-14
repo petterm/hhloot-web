@@ -5,6 +5,9 @@ const fs = require("fs");
 const tabName = "Loot";
 const dataFileURL = `https://docs.google.com/a/google.com/spreadsheets/d/1vzK9lPih35GSUPbxLreslyihxPSSIXhS3JW_GWRf7Lw/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(tabName)}`;
 
+const playersData = fs.readFileSync("../src/data/players.json", { encoding: "utf8" });
+const players = JSON.parse(playersData);
+
 const raidLoot = {};
 const cap = name => name.substr(0, 1).toUpperCase() + name.substr(1).toLowerCase();
 
@@ -16,15 +19,21 @@ const addLoot = (date, player, item, bonusPlayers) => {
             itemBonus: [],
         };
     }
+
+    if (!players.find(p => p.name === cap(player))) {
+        console.log("Loot for unknown player", player, item);
+    }
+
     raidLoot[date].loot.push({
         character: cap(player),
         item,
-    })
+    });
+
     bonusPlayers.forEach(bonusPlayer => {
         raidLoot[date].itemBonus.push({
             character: cap(bonusPlayer),
             item,
-        })
+        });
     });
 };
 
