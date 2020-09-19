@@ -364,7 +364,7 @@
     "52_score": "Eye of C'Thun"
   },
   {
-    "date": "2020-08-21 11.25.36",
+    "date": "2020-09-19 17.21.45",
     "character": "Snakepala",
     "100_score": "Qiraji Bindings of Dominance",
     "90_score": "Vek'lor's Diadem",
@@ -372,10 +372,10 @@
     "70_score": "Breastplate of Annihilation",
     "65_score": "Barbed Choker",
     "60_score": "Hive Defiler Wristguards",
-    "55_score": "",
-    "54_score": "",
-    "53_score": "",
-    "52_score": ""
+    "55_score": "Qiraji Bindings of Dominance",
+    "54_score": "Carapace of the Old God",
+    "53_score": "Gauntlets of Annihilation",
+    "52_score": "Eye of C'Thun"
   },
   {
     "date": "2020-08-21 19.32.03",
@@ -544,5 +544,33 @@
     "54_score": "",
     "53_score": "",
     "52_score": ""
+  },
+  {
+    "date": "2020-09-18 11.28.13",
+    "character": "Thdrag",
+    "100_score": "Imperial Qiraji Armaments",
+    "90_score": "Cloak of Concentrated Hatred",
+    "80_score": "Ouro's Intact Hide",
+    "70_score": "Vek'lor's Diadem",
+    "65_score": "Carapace of the Old God",
+    "60_score": "Ring of the Qiraji Fury",
+    "55_score": "Ring of the Godslayer",
+    "54_score": "Belt of Never-ending Agony",
+    "53_score": "Barbed Choker",
+    "52_score": "Amulet of Foul Warding"
+  },
+  {
+    "date": "2020-09-19 15.29.21",
+    "character": "Shoegun",
+    "100_score": "Don Rigoberto's Lost Hat",
+    "90_score": "Robes of the Guardian Saint",
+    "80_score": "Bracelets of Royal Redemption",
+    "70_score": "Grasp of the Old God",
+    "65_score": "Scepter of the False Prophet",
+    "60_score": "Sartura's Might",
+    "55_score": "Ternary Mantle",
+    "54_score": "Cloak of Clarity",
+    "53_score": "Ring of the Martyr",
+    "52_score": "Idol of Health"
   }
 ]

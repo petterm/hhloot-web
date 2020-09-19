@@ -15,9 +15,9 @@
         "guildRank": "Member"
     },
     {
-        "name": "Cenabettin",
-        "class": "WARRIOR",
-        "guildRank": "Member"
+        "name": "Bishealer",
+        "class": "PRIEST",
+        "guildRank": "Initiate"
     },
     {
         "name": "Comalight",
@@ -70,16 +70,6 @@
         "guildRank": "Guild Master"
     },
     {
-        "name": "Gurkybabe",
-        "class": "PRIEST",
-        "guildRank": "Member"
-    },
-    {
-        "name": "Heregud",
-        "class": "PRIEST",
-        "guildRank": "Member"
-    },
-    {
         "name": "Hijaarah",
         "class": "PRIEST",
         "guildRank": "Initiate"
@@ -98,11 +88,6 @@
         "name": "Jalka",
         "class": "WARRIOR",
         "guildRank": "Member"
-    },
-    {
-        "name": "Jerj",
-        "class": "ROGUE",
-        "guildRank": "Initiate"
     },
     {
         "name": "Klesket",
@@ -175,6 +160,11 @@
         "guildRank": "Member"
     },
     {
+        "name": "Shoegun",
+        "class": "DRUID",
+        "guildRank": "Social"
+    },
+    {
         "name": "Snakepala",
         "class": "PALADIN",
         "guildRank": "Initiate"
@@ -203,6 +193,11 @@
         "name": "Swigen",
         "class": "HUNTER",
         "guildRank": "Member"
+    },
+    {
+        "name": "Thdrag",
+        "class": "ROGUE",
+        "guildRank": "Initiate"
     },
     {
         "name": "Thenuker",

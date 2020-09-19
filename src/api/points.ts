@@ -1,11 +1,11 @@
 import { Player, PlayerItemEntry, EntryScore } from "../types";
 import { getRaids/*, isBonusRaid, Raid*/ } from "./raids";
 import attendanceData from '../data/attendance.json';
-import { bonusRaidCount, attendanceRaidCount } from "../constants";
+import { nonBonusRaidCount, attendanceRaidCount } from "../constants";
 
 const hasBonusAttendance = (attendance: number) => attendance >= 0.1;
 
-const filterBonusRaids = (raids: number[]): number[] => raids.slice(-bonusRaidCount);
+const filterBonusRaids = (raids: number[]): number[] => raids.slice(nonBonusRaidCount);
 
 const getPlayerBonusRaids = (player: Player) => {
     // const raids = getRaids();
