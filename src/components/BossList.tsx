@@ -24,11 +24,20 @@ const BossList = ({ bosses }: BossListProps) => {
         setHideReceivedInner(value);
         localStorageSet("hideReceived", value);
     }
+
     const [masterLooter, setMasterLooterInner] = useState(localStorage.getItem("masterLooter") ? true : false);
     const setMasterLooter = (value: boolean) => {
         setMasterLooterInner(value);
         localStorageSet("masterLooter", value);
     }
+
+    const [oldMembers, setOldMembersInner] = useState(localStorage.getItem("oldMembers") ? true : false);
+    const setOldMembers = (value: boolean) => {
+        setOldMembersInner(value);
+        localStorageSet("oldMembers", value);
+    }
+
+
     const [lootPlayer, setLootPlayer] = useState<LootPlayer>();
 
     const onSelectLootPlayer = (loot: BossDrop, player: Player) => {
@@ -65,6 +74,16 @@ const BossList = ({ bosses }: BossListProps) => {
                     />
                     Masterlooter mode
                 </label>
+                {" - "}
+                <label style={{ cursor: "pointer" }}>
+                    <input
+                        type='checkbox'
+                        style={{ marginRight: 5, cursor: "pointer" }}
+                        checked={oldMembers}
+                        onChange={() => setOldMembers(!oldMembers)}
+                    />
+                    Show old members
+                </label>
             </div>
             <div>
                 {bosses.map(boss => (
@@ -73,6 +92,7 @@ const BossList = ({ bosses }: BossListProps) => {
                         key={boss.name}
                         hideReceived={hideReceived}
                         masterlooter={masterLooter}
+                        oldMembers={oldMembers}
                         onSelectLootPlayer={onSelectLootPlayer}
                     />
                 ))}

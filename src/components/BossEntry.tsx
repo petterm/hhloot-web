@@ -6,9 +6,10 @@ type BossEntryProps = {
     boss: Boss,
     hideReceived: boolean,
     masterlooter: boolean,
+    oldMembers: boolean,
     onSelectLootPlayer: (x: BossDrop, y: Player) => void,
 };
-const BossEntry = ({ boss, hideReceived, masterlooter, onSelectLootPlayer }: BossEntryProps) => (
+const BossEntry = ({ boss, hideReceived, masterlooter, oldMembers, onSelectLootPlayer }: BossEntryProps) => (
     <div>
         <h3>
             {boss.name}
@@ -20,6 +21,7 @@ const BossEntry = ({ boss, hideReceived, masterlooter, onSelectLootPlayer }: Bos
                     drop={drop}
                     hideReceived={hideReceived}
                     masterlooter={masterlooter}
+                    oldMembers={oldMembers}
                     onSelectLootPlayer={onSelectLootPlayer}
                 />
             ))}

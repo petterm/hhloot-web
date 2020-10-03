@@ -11,10 +11,11 @@ type DropRowProps = {
     drop: BossDrop,
     hideReceived: boolean,
     masterlooter: boolean,
+    oldMembers: boolean,
     onSelectLootPlayer: (x: BossDrop, y: Player) => void,
 };
 
-const DropRow = ({ drop, hideReceived, masterlooter, onSelectLootPlayer }: DropRowProps) => {
+const DropRow = ({ drop, hideReceived, masterlooter, oldMembers, onSelectLootPlayer }: DropRowProps) => {
     const [hoverScore, setHoverScore] = useState<number | undefined>();
 
     const scores = drop.reservations
@@ -25,6 +26,11 @@ const DropRow = ({ drop, hideReceived, masterlooter, onSelectLootPlayer }: DropR
                 playerEntry: entry,
                 scores: getEntryScore(entry, player),
             };
+        })
+        .filter(({ player, playerEntry: { received } }) => {
+            if (hideReceived && received) return false;
+            if (!oldMembers && !player.class) return false;
+            return true;
         });
 
     scores.sort((a, b) => b.scores.total - a.scores.total);
@@ -35,8 +41,7 @@ const DropRow = ({ drop, hideReceived, masterlooter, onSelectLootPlayer }: DropR
                 <ItemLink item={drop.item} size='tiny' />
             </div>
             <div className={styles.players}>
-                {scores.map(({ player, playerEntry, scores }, index) =>
-                    (!hideReceived || !playerEntry.received) && (
+                {scores.map(({ player, playerEntry, scores }, index) => (
                     <DropRowPlayer
                         key={`${player.name}_${index}`}
                         playerEntry={playerEntry}
@@ -50,7 +55,9 @@ const DropRow = ({ drop, hideReceived, masterlooter, onSelectLootPlayer }: DropR
                     />
                 ))}
                 {!hideReceived && drop.freeLoot.map(name => (
-                    <DropRowPlayerFree key={name} player={getPlayer(name)} />
+                    (oldMembers || getPlayer(name).class) && (
+                        <DropRowPlayerFree key={name} player={getPlayer(name)} />
+                    )
                 ))}
             </div>
         </div>

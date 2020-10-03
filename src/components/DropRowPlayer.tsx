@@ -30,9 +30,9 @@ const DropRowPlayer = ({
     const history = useHistory();
 
     const onMouseEnter = () => {
+        setHoverScore(scores.total);
         if (!masterlooter) {
             setShowTooltip(true);
-            setHoverScore(scores.total);
         }
     }
 
