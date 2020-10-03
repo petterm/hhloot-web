@@ -13,6 +13,20 @@
       "54_score": "Barbed Choker",
       "53_score": "Ring of the Godslayer",
       "52_score": "Larvae of the Great Worm"
+    },
+    {
+      "date": "2020-09-30 22.09.39",
+      "character": "Toestabber",
+      "100_score": "Death's Sting",
+      "90_score": "Belt of Never-ending Agony",
+      "80_score": "Qiraji Execution Bracers",
+      "70_score": "Carapace of the Old God",
+      "65_score": "Qiraji Bindings of Command",
+      "60_score": "Qiraji Bindings of Command",
+      "55_score": "Ouro's Intact Hide",
+      "54_score": "Jom Gabbar",
+      "53_score": "Gloves of Enforcement",
+      "52_score": "Badge of the Swarmguard"
     }
   ],
   "Wulfrun": [
@@ -43,6 +57,20 @@
       "54_score": "Bracelets of Royal Redemption",
       "53_score": "Wasphide Gauntlets",
       "52_score": "Idol of Health"
+    },
+    {
+      "date": "2020-09-28 06.45.04",
+      "character": "Wulfrun",
+      "100_score": "",
+      "90_score": "Robes of the Guardian Saint",
+      "80_score": "Don Rigoberto's Lost Hat",
+      "70_score": "",
+      "65_score": "Cloak of Clarity",
+      "60_score": "Ring of the Martyr",
+      "55_score": "Grasp of the Old God",
+      "54_score": "Bracelets of Royal Redemption",
+      "53_score": "",
+      "52_score": ""
     }
   ],
   "Rövbrytaren": [
@@ -133,6 +161,34 @@
       "54_score": "Qiraji Execution Bracers",
       "53_score": "",
       "52_score": ""
+    },
+    {
+      "date": "2020-09-28 07.02.31",
+      "character": "Klesket",
+      "100_score": "Gloves of Enforcement",
+      "90_score": "Qiraji Bindings of Dominance",
+      "80_score": "Cloak of Concentrated Hatred",
+      "70_score": "Qiraji Execution Bracers",
+      "65_score": "Ring of the Qiraji Fury",
+      "60_score": "Vanquished Tentacle of C'Thun",
+      "55_score": "",
+      "54_score": "",
+      "53_score": "",
+      "52_score": ""
+    },
+    {
+      "date": "2020-09-30 18.32.35",
+      "character": "Klesket",
+      "100_score": "",
+      "90_score": "",
+      "80_score": "",
+      "70_score": "",
+      "65_score": "",
+      "60_score": "",
+      "55_score": "Qiraji Bindings of Command",
+      "54_score": "Gloves of Enforcement",
+      "53_score": "Cloak of Concentrated Hatred",
+      "52_score": "Qiraji Execution Bracers"
     }
   ],
   "Ditro": [
@@ -151,22 +207,6 @@
       "52_score": "Eye of C'Thun"
     }
   ],
-  "Ñuup": [
-    {
-      "date": "2020-08-13 18.20.18",
-      "character": "Ñuup",
-      "100_score": "Dark Storm Gauntlets",
-      "90_score": "Eyestalk Waist Cord",
-      "80_score": "Qiraji Bindings of Dominance",
-      "70_score": "Eye of C'Thun",
-      "65_score": "Amulet of Vek'nilash",
-      "60_score": "Cloak of the Devoured",
-      "55_score": "Wand of Qiraji Nobility",
-      "54_score": "Husk of the Old God",
-      "53_score": "Ritssyn's Ring of Chaos",
-      "52_score": "Sharpened Silithid Femur"
-    }
-  ],
   "Wyldfyre": [
     {
       "date": "2020-08-13 18.32.30",
@@ -181,6 +221,20 @@
       "54_score": "Ring of Emperor Vek'lor",
       "53_score": "Jom Gabbar",
       "52_score": "Imperial Qiraji Regalia"
+    },
+    {
+      "date": "2020-09-28 06.06.07",
+      "character": "Wyldfyre",
+      "100_score": "",
+      "90_score": "Gloves of Enforcement",
+      "80_score": "Belt of Never-ending Agony",
+      "70_score": "Cloak of Concentrated Hatred",
+      "65_score": "",
+      "60_score": "",
+      "55_score": "",
+      "54_score": "",
+      "53_score": "Imperial Qiraji Regalia",
+      "52_score": "Vest of Swift Execution"
     }
   ],
   "Trollsmet": [
@@ -211,6 +265,20 @@
       "54_score": "Wand of Qiraji Nobility",
       "53_score": "Qiraji Bindings of Dominance",
       "52_score": "Mantle of Phrenic Power"
+    },
+    {
+      "date": "2020-09-26 23.28.29",
+      "character": "Trollsmet",
+      "100_score": "Sharpened Silithid Femur",
+      "90_score": "",
+      "80_score": "Eyestalk Waist Cord",
+      "70_score": "",
+      "65_score": "Ritssyn's Ring of Chaos",
+      "60_score": "Dark Storm Gauntlets",
+      "55_score": "Wand of Qiraji Nobility",
+      "54_score": "Mantle of Phrenic Power",
+      "53_score": "",
+      "52_score": ""
     }
   ],
   "Piclasa": [
@@ -241,6 +309,20 @@
       "54_score": "Dark Storm Gauntlets",
       "53_score": "Cloak of the Devoured",
       "52_score": "Ritssyn's Ring of Chaos"
+    },
+    {
+      "date": "2020-09-27 21.52.32",
+      "character": "Piclasa",
+      "100_score": "",
+      "90_score": "Royal Scepter of Vek'lor",
+      "80_score": "Eyestalk Waist Cord",
+      "70_score": "",
+      "65_score": "",
+      "60_score": "",
+      "55_score": "Amulet of Vek'nilash",
+      "54_score": "Eye of C'Thun",
+      "53_score": "Ritssyn's Ring of Chaos",
+      "52_score": "Wand of Qiraji Nobility"
     }
   ],
   "Cosy": [
@@ -257,6 +339,20 @@
       "54_score": "Ring of the Martyr",
       "53_score": "Cloak of Clarity",
       "52_score": "Libram of Grace"
+    },
+    {
+      "date": "2020-10-01 21.50.45",
+      "character": "Cosy",
+      "100_score": "Scepter of the False Prophet",
+      "90_score": "Bracelets of Royal Redemption",
+      "80_score": "Robes of the Guardian Saint",
+      "70_score": "Sartura's Might",
+      "65_score": "Legplates of Blazing Light",
+      "60_score": "",
+      "55_score": "Eye of C'Thun",
+      "54_score": "Ring of the Martyr",
+      "53_score": "Cloak of Clarity",
+      "52_score": "Scarab Brooch"
     }
   ],
   "Jalka": [
@@ -273,6 +369,20 @@
       "54_score": "Ouro's Intact Hide",
       "53_score": "Eye of C'Thun",
       "52_score": "Qiraji Bindings of Command"
+    },
+    {
+      "date": "2020-10-03 13.02.06",
+      "character": "Jalka",
+      "100_score": "",
+      "90_score": "Gauntlets of Annihilation",
+      "80_score": "Ouro's Intact Hide",
+      "70_score": "Breastplate of Annihilation",
+      "65_score": "Hive Defiler Wristguards",
+      "60_score": "",
+      "55_score": "Eye of C'Thun",
+      "54_score": "",
+      "53_score": "Larvae of the Great Worm",
+      "52_score": "Ancient Qiraji Ripper"
     }
   ],
   "Kongs": [
@@ -305,6 +415,20 @@
       "54_score": "Scaled Sand Reaver Leggings",
       "53_score": "Jom Gabbar",
       "52_score": "Ring of the Qiraji Fury"
+    },
+    {
+      "date": "2020-09-27 22.55.03",
+      "character": "Reneko",
+      "100_score": "",
+      "90_score": "Gauntlets of Annihilation",
+      "80_score": "",
+      "70_score": "Hive Defiler Wristguards",
+      "65_score": "",
+      "60_score": "Larvae of the Great Worm",
+      "55_score": "",
+      "54_score": "",
+      "53_score": "Carapace of the Old God",
+      "52_score": "Vek'nilash's Circlet"
     }
   ],
   "Anusaukko": [
@@ -336,6 +460,20 @@
       "55_score": "Grasp of the Old God",
       "54_score": "Eye of C'Thun",
       "53_score": "Robes of the Guardian Saint",
+      "52_score": "Imperial Qiraji Regalia"
+    },
+    {
+      "date": "2020-10-01 15.28.41",
+      "character": "Grillspett",
+      "100_score": "Scepter of the False Prophet",
+      "90_score": "Sartura's Might",
+      "80_score": "Bracelets of Royal Redemption",
+      "70_score": "Ternary Mantle",
+      "65_score": "Grasp of the Old God",
+      "60_score": "Don Rigoberto's Lost Hat",
+      "55_score": "Ring of the Martyr",
+      "54_score": "Eye of C'Thun",
+      "53_score": "Scarab Brooch",
       "52_score": "Imperial Qiraji Regalia"
     }
   ],
@@ -549,6 +687,20 @@
       "54_score": "Badge of the Swarmguard",
       "53_score": "Eye of C'Thun",
       "52_score": "Breastplate of Annihilation"
+    },
+    {
+      "date": "2020-10-01 22.16.22",
+      "character": "Suncho",
+      "100_score": "Ouro's Intact Hide",
+      "90_score": "Badge of the Swarmguard",
+      "80_score": "Hive Defiler Wristguards",
+      "70_score": "Imperial Qiraji Armaments",
+      "65_score": "Qiraji Bindings of Command",
+      "60_score": "Dark Edge of Insanity",
+      "55_score": "Death's Sting",
+      "54_score": "Larvae of the Great Worm",
+      "53_score": "Ring of the Qiraji Fury",
+      "52_score": "Eye of C'Thun"
     }
   ],
   "Vepaz": [
@@ -623,6 +775,20 @@
       "54_score": "Carapace of the Old God",
       "53_score": "Gauntlets of Annihilation",
       "52_score": "Eye of C'Thun"
+    },
+    {
+      "date": "2020-09-28 13.35.18",
+      "character": "Snakepala",
+      "100_score": "Qiraji Bindings of Dominance",
+      "90_score": "Carapace of the Old God",
+      "80_score": "Skin of the Great Sandworm",
+      "70_score": "Qiraji Bindings of Dominance",
+      "65_score": "w",
+      "60_score": "Legplates of Blazing Light",
+      "55_score": "Eye of C'Thun",
+      "54_score": "Vek'lor's Diadem",
+      "53_score": "Ring of the Martyr",
+      "52_score": "Grasp of the Old God"
     }
   ],
   "Glamor": [
@@ -709,6 +875,20 @@
       "54_score": "Vek'nilash's Circlet",
       "53_score": "Wand of Qiraji Nobility",
       "52_score": "Shard of the Fallen Star"
+    },
+    {
+      "date": "2020-10-03 08.31.38",
+      "character": "Glamor",
+      "100_score": "Sharpened Silithid Femur",
+      "90_score": "Royal Scepter of Vek'lor",
+      "80_score": "Amulet of Vek'nilash",
+      "70_score": "Qiraji Bindings of Dominance",
+      "65_score": "Dark Storm Gauntlets",
+      "60_score": "Eyestalk Waist Cord",
+      "55_score": "Cloak of the Devoured",
+      "54_score": "Eye of C'Thun",
+      "53_score": "Wand of Qiraji Nobility",
+      "52_score": "Shard of the Fallen Star"
     }
   ],
   "Hubbé": [
@@ -725,6 +905,20 @@
       "54_score": "Belt of Never-ending Agony",
       "53_score": "Barbed Choker",
       "52_score": ""
+    },
+    {
+      "date": "2020-09-27 21.34.43",
+      "character": "Hubbé",
+      "100_score": "Larvae of the Great Worm",
+      "90_score": "Ring of the Godslayer",
+      "80_score": "Jom Gabbar",
+      "70_score": "Eye of C'Thun",
+      "65_score": "Badge of the Swarmguard",
+      "60_score": "Silithid Claw",
+      "55_score": "",
+      "54_score": "",
+      "53_score": "",
+      "52_score": "Imperial Qiraji Armaments"
     }
   ],
   "Acaldra": [
@@ -863,6 +1057,20 @@
       "54_score": "Sartura's Might",
       "53_score": "",
       "52_score": "Libram of Grace"
+    },
+    {
+      "date": "2020-10-03 11.12.04",
+      "character": "Svartie",
+      "100_score": "Scepter of the False Prophet",
+      "90_score": "Ring of the Martyr",
+      "80_score": "Don Rigoberto's Lost Hat",
+      "70_score": "Grasp of the Old God",
+      "65_score": "Bracelets of Royal Redemption",
+      "60_score": "Cloak of Clarity",
+      "55_score": "Sartura's Might",
+      "54_score": "Gauntlets of the Righteous Champion",
+      "53_score": "Wormscale Blocker",
+      "52_score": ""
     }
   ],
   "Psychokiller": [
@@ -923,6 +1131,20 @@
       "54_score": "Wand of Qiraji Nobility",
       "53_score": "Eye of C'Thun",
       "52_score": "Shard of the Fallen Star"
+    },
+    {
+      "date": "2020-10-01 22.38.32",
+      "character": "Thenuker",
+      "100_score": "Sharpened Silithid Femur",
+      "90_score": "Royal Scepter of Vek'lor",
+      "80_score": "Ritssyn's Ring of Chaos",
+      "70_score": "Eyestalk Waist Cord",
+      "65_score": "Amulet of Vek'nilash",
+      "60_score": "Dark Storm Gauntlets",
+      "55_score": "Cloak of the Devoured",
+      "54_score": "Eye of C'Thun",
+      "53_score": "Qiraji Bindings of Dominance",
+      "52_score": "Wand of Qiraji Nobility"
     }
   ],
   "Yungbanz": [
@@ -955,6 +1177,34 @@
       "54_score": "Belt of Never-ending Agony",
       "53_score": "Barbed Choker",
       "52_score": "Amulet of Foul Warding"
+    },
+    {
+      "date": "2020-09-28 10.49.08",
+      "character": "Thdrag",
+      "100_score": "Imperial Qiraji Armaments",
+      "90_score": "Cloak of Concentrated Hatred",
+      "80_score": "Ouro's Intact Hide",
+      "70_score": "Carapace of the Old God",
+      "65_score": "Ring of the Qiraji Fury",
+      "60_score": "Belt of Never-ending Agony",
+      "55_score": "Qiraji Bindings of Command",
+      "54_score": "Qiraji Execution Bracers",
+      "53_score": "Ring of the Godslayer",
+      "52_score": "Death's Sting"
+    },
+    {
+      "date": "2020-09-29 23.03.59",
+      "character": "Thdrag",
+      "100_score": "Imperial Qiraji Armaments",
+      "90_score": "Cloak of Concentrated Hatred",
+      "80_score": "Ouro's Intact Hide",
+      "70_score": "Carapace of the Old God",
+      "65_score": "Ring of the Qiraji Fury",
+      "60_score": "Qiraji Execution Bracers",
+      "55_score": "Qiraji Bindings of Command",
+      "54_score": "Ring of the Godslayer",
+      "53_score": "Jom Gabbar",
+      "52_score": "Death's Sting"
     }
   ],
   "Shoegun": [
@@ -970,6 +1220,20 @@
       "55_score": "Ternary Mantle",
       "54_score": "Cloak of Clarity",
       "53_score": "Ring of the Martyr",
+      "52_score": "Idol of Health"
+    },
+    {
+      "date": "2020-09-27 21.08.55",
+      "character": "Shoegun",
+      "100_score": "Scepter of the False Prophet",
+      "90_score": "Don Rigoberto's Lost Hat",
+      "80_score": "Cloak of Clarity",
+      "70_score": "Robes of the Guardian Saint",
+      "65_score": "Bracelets of Royal Redemption",
+      "60_score": "Grasp of the Old God",
+      "55_score": "Ring of the Martyr",
+      "54_score": "Sartura's Might",
+      "53_score": "Creeping Vine Helm",
       "52_score": "Idol of Health"
     }
   ],
@@ -1035,6 +1299,68 @@
       "54_score": "Cloak of Concentrated Hatred",
       "53_score": "Badge of the Swarmguard",
       "52_score": "Dark Edge of Insanity"
+    },
+    {
+      "date": "2020-09-29 09.10.28",
+      "character": "Seppä",
+      "100_score": "Barbed Choker",
+      "90_score": "Ancient Qiraji Ripper",
+      "80_score": "Cloak of Concentrated Hatred",
+      "70_score": "Boots of the Fallen Hero",
+      "65_score": "Breastplate of Annihilation",
+      "60_score": "Badge of the Swarmguard",
+      "55_score": "Ring of the Qiraji Fury",
+      "54_score": "Carapace of the Old God",
+      "53_score": "Hive Defiler Wristguards",
+      "52_score": "Imperial Qiraji Armaments"
+    }
+  ],
+  "Binding": [
+    {
+      "date": "2020-09-27 23.02.48",
+      "character": "Binding",
+      "100_score": "Dark Storm Gauntlets",
+      "90_score": "Eyestalk Waist Cord",
+      "80_score": "Vek'nilash's Circlet",
+      "70_score": "Wand of Qiraji Nobility",
+      "65_score": "Sharpened Silithid Femur",
+      "60_score": "Cloak of the Devoured",
+      "55_score": "Husk of the Old God",
+      "54_score": "Leggings of the Festering Swarm",
+      "53_score": "Ritssyn's Ring of Chaos",
+      "52_score": "Imperial Qiraji Regalia"
+    }
+  ],
+  "Mimtor": [
+    {
+      "date": "2020-09-30 05.54.01",
+      "character": "Mimtor",
+      "100_score": "Robes of the Guardian Saint",
+      "90_score": "Grasp of the Old God",
+      "80_score": "Wormscale Blocker",
+      "70_score": "Dark Edge of Insanity",
+      "65_score": "Ring of the Martyr",
+      "60_score": "Qiraji Bindings of Dominance",
+      "55_score": "Scepter of the False Prophet",
+      "54_score": "Carapace of the Old God",
+      "53_score": "Bracelets of Royal Redemption",
+      "52_score": "Vek'lor's Diadem"
+    }
+  ],
+  "Mardrömmar": [
+    {
+      "date": "2020-10-02 14.05.38",
+      "character": "Mardrömmar",
+      "100_score": "Gauntlets of Annihilation",
+      "90_score": "Anubisath Warhammer",
+      "80_score": "Ancient Qiraji Ripper",
+      "70_score": "Jom Gabbar",
+      "65_score": "Badge of the Swarmguard",
+      "60_score": "Boots of the Fallen Hero",
+      "55_score": "Ring of the Qiraji Fury",
+      "54_score": "Hive Defiler Wristguards",
+      "53_score": "Larvae of the Great Worm",
+      "52_score": "Eye of C'Thun"
     }
   ]
 }

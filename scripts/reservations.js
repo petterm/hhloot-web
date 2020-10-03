@@ -54,6 +54,43 @@ const playerList = JSON.parse(playerData).reduce((result, player) => {
     return result;
 }, {});
 
+const reservationData = fs.readFileSync("../src/data/aq40_reservation.json", { encoding: "utf8" });
+const reservations = JSON.parse(reservationData);
+
+const updateDataFile = (players) => {
+    Object.keys(players).forEach(playerName => {
+        const newRes = players[playerName][players[playerName].length - 1];
+        if (!newRes) {
+            console.log(players[playerName]);
+        }
+        let hasOldRes = false;
+
+        for (const i in reservations) {
+            if (reservations[i].character === playerName) {
+                hasOldRes = true;
+                const oldRes = reservations[i];
+                if (newRes.date > oldRes.date) {
+                    oldRes.date = newRes.date;
+                    [100, 90, 80, 70, 65, 60, 55, 54, 53, 52].forEach((score) => {
+                        const key = `${score}_score`;
+                        if (newRes[key]) {
+                            oldRes[key] = newRes[key];
+                        }
+                    })
+                }
+                break;
+            }
+        }
+        if (!hasOldRes) {
+            reservations.push(newRes);
+        }
+    });
+    fs.writeFile("../src/data/aq40_reservation.json", JSON.stringify(reservations, null, 2), err => {
+        if (err) throw err;
+        console.log('Wrote to file', "../src/data/aq40_reservation.json")
+    })
+};
+
 
 https.get(dataFileURL, function(response) {
     let str = "";
@@ -73,7 +110,9 @@ https.get(dataFileURL, function(response) {
 
                 fs.writeFile('reservations.json', JSON.stringify(players, null, 2), err => {
                     if (err) throw err;
-                    console.log('Wrote to file')
+                    console.log('Wrote to file', 'reservations.json')
+
+                    updateDataFile(players);
                 })
             }
         })
