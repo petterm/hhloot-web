@@ -429,6 +429,34 @@
       "54_score": "Cloak of Clarity",
       "53_score": "Ring of the Martyr",
       "52_score": "Robes of the Guardian Saint"
+    },
+    {
+      "date": "2020-09-18 17.51.48",
+      "character": "Greensoup",
+      "100_score": "Imperial Qiraji Regalia",
+      "90_score": "Grasp of the Old God",
+      "80_score": "Bracelets of Royal Redemption",
+      "70_score": "Eye of C'Thun",
+      "65_score": "Don Rigoberto's Lost Hat",
+      "60_score": "Cloak of Clarity",
+      "55_score": "Ternary Mantle",
+      "54_score": "Ring of the Martyr",
+      "53_score": "Robes of the Guardian Saint",
+      "52_score": "Wand of Qiraji Nobility"
+    },
+    {
+      "date": "2020-09-20 14.11.42",
+      "character": "Greensoup",
+      "100_score": "Imperial Qiraji Regalia",
+      "90_score": "Grasp of the Old God",
+      "80_score": "Bracelets of Royal Redemption",
+      "70_score": "Eye of C'Thun",
+      "65_score": "Ternary Mantle",
+      "60_score": "Cloak of Clarity",
+      "55_score": "Ring of the Martyr",
+      "54_score": "Wand of Qiraji Nobility",
+      "53_score": "Don Rigoberto's Lost Hat",
+      "52_score": "Robes of the Guardian Saint"
     }
   ],
   "Qbx": [
@@ -943,6 +971,70 @@
       "54_score": "Cloak of Clarity",
       "53_score": "Ring of the Martyr",
       "52_score": "Idol of Health"
+    }
+  ],
+  "Heckstor": [
+    {
+      "date": "2020-09-22 23.50.16",
+      "character": "Heckstor",
+      "100_score": "Scepter of the False Prophet",
+      "90_score": "Sartura's Might",
+      "80_score": "Cloak of Clarity",
+      "70_score": "",
+      "65_score": "",
+      "60_score": "",
+      "55_score": "",
+      "54_score": "",
+      "53_score": "",
+      "52_score": ""
+    }
+  ],
+  "Herath": [
+    {
+      "date": "2020-09-25 22.50.08",
+      "character": "Herath",
+      "100_score": "Eye of C'Thun",
+      "90_score": "Larvae of the Great Worm",
+      "80_score": "Jom Gabbar",
+      "70_score": "Ring of the Qiraji Fury",
+      "65_score": "Silithid Claw",
+      "60_score": "Imperial Qiraji Armaments",
+      "55_score": "Badge of the Swarmguard",
+      "54_score": "",
+      "53_score": "",
+      "52_score": ""
+    }
+  ],
+  "Päänmurskain": [
+    {
+      "date": "2020-09-26 01.42.17",
+      "character": "Päänmurskain",
+      "100_score": "Eye of C'Thun",
+      "90_score": "Jom Gabbar",
+      "80_score": "Ancient Qiraji Ripper",
+      "70_score": "Hive Defiler Wristguards",
+      "65_score": "Gauntlets of Annihilation",
+      "60_score": "Carapace of the Old God",
+      "55_score": "Larvae of the Great Worm",
+      "54_score": "Breastplate of Annihilation",
+      "53_score": "Qiraji Bindings of Command",
+      "52_score": "Barbed Choker"
+    }
+  ],
+  "Seppä": [
+    {
+      "date": "2020-09-26 17.47.13",
+      "character": "Seppä",
+      "100_score": "Ancient Qiraji Ripper",
+      "90_score": "Barbed Choker",
+      "80_score": "Hive Defiler Wristguards",
+      "70_score": "Breastplate of Annihilation",
+      "65_score": "Boots of the Fallen Hero",
+      "60_score": "Ring of the Qiraji Fury",
+      "55_score": "Death's Sting",
+      "54_score": "Cloak of Concentrated Hatred",
+      "53_score": "Badge of the Swarmguard",
+      "52_score": "Dark Edge of Insanity"
     }
   ]
 }

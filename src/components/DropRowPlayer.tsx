@@ -57,6 +57,9 @@ const DropRowPlayer = ({
     } else if (!showTooltip && hoverScore && scores.total <= hoverScore && scores.total >= hoverScore - rollPointsWindow) {
         wrapClasses.push(style.wrapRollRange);
     }
+    if (player.guildRank === 'Initiate') {
+        wrapClasses.push(style.wrapInitiate);
+    }
     
     return (
         <button

@@ -20,11 +20,6 @@
         "guildRank": "Initiate"
     },
     {
-        "name": "Comalight",
-        "class": "MAGE",
-        "guildRank": "Initiate"
-    },
-    {
         "name": "Cosy",
         "class": "PALADIN",
         "guildRank": "Member"
@@ -70,6 +65,16 @@
         "guildRank": "Guild Master"
     },
     {
+        "name": "Heckstor",
+        "class": "PRIEST",
+        "guildRank": "Initiate"
+    },
+    {
+        "name": "Herath",
+        "class": "HUNTER",
+        "guildRank": "Initiate"
+    },
+    {
         "name": "Hijaarah",
         "class": "PRIEST",
         "guildRank": "Initiate"
@@ -78,11 +83,6 @@
         "name": "Hubbé",
         "class": "HUNTER",
         "guildRank": "Officer"
-    },
-    {
-        "name": "Igotwater",
-        "class": "MAGE",
-        "guildRank": "Initiate"
     },
     {
         "name": "Jalka",
@@ -110,6 +110,11 @@
         "guildRank": "Officer"
     },
     {
+        "name": "Mimtor",
+        "class": "PALADIN",
+        "guildRank": "Initiate"
+    },
+    {
         "name": "Muggsy",
         "class": "ROGUE",
         "guildRank": "Member"
@@ -130,14 +135,14 @@
         "guildRank": "Member"
     },
     {
+        "name": "Päänmurskain",
+        "class": "WARRIOR",
+        "guildRank": "Initiate"
+    },
+    {
         "name": "Piclasa",
         "class": "MAGE",
         "guildRank": "Member"
-    },
-    {
-        "name": "Poele",
-        "class": "HUNTER",
-        "guildRank": "Initiate"
     },
     {
         "name": "Psychokiller",
@@ -160,9 +165,14 @@
         "guildRank": "Member"
     },
     {
+        "name": "Seppä",
+        "class": "WARRIOR",
+        "guildRank": "Initiate"
+    },
+    {
         "name": "Shoegun",
         "class": "DRUID",
-        "guildRank": "Social"
+        "guildRank": "Initiate"
     },
     {
         "name": "Snakepala",
@@ -190,11 +200,6 @@
         "guildRank": "Initiate"
     },
     {
-        "name": "Swigen",
-        "class": "HUNTER",
-        "guildRank": "Member"
-    },
-    {
         "name": "Thdrag",
         "class": "ROGUE",
         "guildRank": "Initiate"
@@ -202,6 +207,11 @@
     {
         "name": "Thenuker",
         "class": "MAGE",
+        "guildRank": "Initiate"
+    },
+    {
+        "name": "Thfrozen",
+        "class": "PRIEST",
         "guildRank": "Initiate"
     },
     {
@@ -252,11 +262,6 @@
     {
         "name": "Yungbanz",
         "class": "DRUID",
-        "guildRank": "Member"
-    },
-    {
-        "name": "Zadik",
-        "class": "PALADIN",
         "guildRank": "Member"
     }
 ]

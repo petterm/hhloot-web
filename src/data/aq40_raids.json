@@ -436,7 +436,7 @@
                 "item": "Bile-Covered Gauntlets"
             },
             {
-                "character": "Disenchant",
+                "character": "Shard",
                 "item": "Triad Girdle"
             }
         ],
@@ -635,6 +635,157 @@
             {
                 "character": "Deaurion",
                 "item": "Boots of the Fallen Hero"
+            }
+        ]
+    },
+    {
+        "date": "2020-09-19",
+        "loot": [
+            {
+                "character": "Snakepala",
+                "item": "Boots of the Redeemed Prophecy"
+            },
+            {
+                "character": "Macsonkor",
+                "item": "Staff of the Qiraji Prophets"
+            },
+            {
+                "character": "Suncho",
+                "item": "Angelista's Touch"
+            },
+            {
+                "character": "Shoegun",
+                "item": "Gloves of Ebru"
+            },
+            {
+                "character": "Wyldfyre",
+                "item": "Thick Qirajihide Belt"
+            },
+            {
+                "character": "Grillspett",
+                "item": "Sartura's Might"
+            },
+            {
+                "character": "Meche",
+                "item": "Barbed Choker"
+            },
+            {
+                "character": "Rövbrytaren",
+                "item": "Cloak of Untold Secrets"
+            },
+            {
+                "character": "Rövbrytaren",
+                "item": "Imperial Qiraji Regalia"
+            },
+            {
+                "character": "Sovietgirl",
+                "item": "Qiraji Bindings of Dominance"
+            },
+            {
+                "character": "Kongs",
+                "item": "Qiraji Bindings of Command"
+            },
+            {
+                "character": "Shoegun",
+                "item": "Wasphide Gauntlets"
+            },
+            {
+                "character": "Macsonkor",
+                "item": "Amulet of Vek'nilash"
+            },
+            {
+                "character": "Trollsmet",
+                "item": "Vek'nilash's Circlet"
+            },
+            {
+                "character": "Suncho",
+                "item": "Ring of Emperor Vek'lor"
+            },
+            {
+                "character": "Thdrag",
+                "item": "Vek'lor's Diadem"
+            },
+            {
+                "character": "Shard",
+                "item": "Gloves of the Redeemed Prophecy"
+            },
+            {
+                "character": "Xéna",
+                "item": "Eye of C'Thun"
+            },
+            {
+                "character": "Toestabber",
+                "item": "Belt of Never-ending Agony"
+            },
+            {
+                "character": "Thirena",
+                "item": "Carapace of the Old God"
+            },
+            {
+                "character": "Glamor",
+                "item": "Husk of the Old God"
+            },
+            {
+                "character": "Jalka",
+                "item": "Jom Gabbar"
+            },
+            {
+                "character": "Meche",
+                "item": "Ouro's Intact Hide"
+            },
+            {
+                "character": "Sovietgirl",
+                "item": "Skin of the Great Sandworm"
+            },
+            {
+                "character": "Deaurion",
+                "item": "Mark of C'Thun"
+            },
+            {
+                "character": "Suncho",
+                "item": "Qiraji Bindings of Command"
+            },
+            {
+                "character": "Rövbrytaren",
+                "item": "Qiraji Bindings of Dominance"
+            },
+            {
+                "character": "Garlick",
+                "item": "Scarab Brooch"
+            }
+        ],
+        "itemBonus": [
+            {
+                "character": "Toestabber",
+                "item": "Barbed Choker"
+            },
+            {
+                "character": "Hubbé",
+                "item": "Barbed Choker"
+            },
+            {
+                "character": "Thirena",
+                "item": "Belt of Never-ending Agony"
+            },
+            {
+                "character": "Deaurion",
+                "item": "Carapace of the Old God"
+            },
+            {
+                "character": "Ditro",
+                "item": "Jom Gabbar"
+            },
+            {
+                "character": "Xéna",
+                "item": "Jom Gabbar"
+            },
+            {
+                "character": "Klesket",
+                "item": "Qiraji Bindings of Command"
+            },
+            {
+                "character": "Firmand",
+                "item": "Qiraji Bindings of Dominance"
             }
         ]
     }

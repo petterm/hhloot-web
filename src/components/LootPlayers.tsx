@@ -43,8 +43,9 @@ const LootPlayers = ({ loot, player }: LootPlayersProps) => {
                 <tbody>
                     {eligiblePlayers.map(({player, scores: { total } }) => (
                         <tr key={player.name}>
-                            <td><PlayerName player={player} /></td>
-                            <td>{total}</td>
+                            <td style={{ width: 300 }}><PlayerName player={player} /></td>
+                            <td style={{ width: 100 }}>{total}</td>
+                            <td style={{ width: 200 }}>{player.guildRank}</td>
                         </tr>
                     ))}
                 </tbody>

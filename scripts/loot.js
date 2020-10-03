@@ -12,6 +12,8 @@ const raidLoot = {};
 const cap = name => name.substr(0, 1).toUpperCase() + name.substr(1).toLowerCase();
 
 const addLoot = (date, player, item, bonusPlayers) => {
+    if (!date || !player || !item) return;
+
     if (!(date in raidLoot)) {
         raidLoot[date] = {
             date,
