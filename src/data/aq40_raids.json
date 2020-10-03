@@ -788,5 +788,144 @@
                 "item": "Qiraji Bindings of Dominance"
             }
         ]
+    },
+    {
+        "date": "2020-09-26",
+        "loot": [
+            {
+                "character": "Shoegun",
+                "item": "Leggings of Immersion"
+            },
+            {
+                "character": "Nympth",
+                "item": "Boots of the Redeemed Prophecy"
+            },
+            {
+                "character": "Mimtor",
+                "item": "Gloves of Ebru"
+            },
+            {
+                "character": "Reneko",
+                "item": "Angelista's Touch"
+            },
+            {
+                "character": "Cosy",
+                "item": "Legplates of Blazing Light"
+            },
+            {
+                "character": "Ditro",
+                "item": "Silithid Claw"
+            },
+            {
+                "character": "Hubbé",
+                "item": "Barb of the Sand Reaver"
+            },
+            {
+                "character": "Klesket",
+                "item": "Ancient Qiraji Ripper"
+            },
+            {
+                "character": "Klesket",
+                "item": "Qiraji Bindings of Command"
+            },
+            {
+                "character": "Trollsmet",
+                "item": "Qiraji Bindings of Dominance"
+            },
+            {
+                "character": "Yungbanz",
+                "item": "Wasphide Gauntlets"
+            },
+            {
+                "character": "Piclasa",
+                "item": "Vek'nilash's Circlet"
+            },
+            {
+                "character": "Cosy",
+                "item": "Bracelets of Royal Redemption"
+            },
+            {
+                "character": "Toestabber",
+                "item": "Vek'lor's Diadem"
+            },
+            {
+                "character": "Trollsmet",
+                "item": "Royal Scepter of Vek'lor"
+            },
+            {
+                "character": "Garlick",
+                "item": "The Burrower's Shell"
+            },
+            {
+                "character": "Deaurion",
+                "item": "Ouro's Intact Hide"
+            },
+            {
+                "character": "Wyldfyre",
+                "item": "Skin of the Great Sandworm"
+            },
+            {
+                "character": "Deaurion",
+                "item": "Carapace of the Old God"
+            },
+            {
+                "character": "Trollsmet",
+                "item": "Husk of the Old God"
+            },
+            {
+                "character": "Meche",
+                "item": "Mark of C'Thun"
+            },
+            {
+                "character": "Piclasa",
+                "item": "Sharpened Silithid Femur"
+            },
+            {
+                "character": "Jalka",
+                "item": "Qiraji Bindings of Command"
+            },
+            {
+                "character": "Rövbrytaren",
+                "item": "Qiraji Bindings of Dominance"
+            }
+        ],
+        "itemBonus": [
+            {
+                "character": "Anusaukko",
+                "item": "Legplates of Blazing Light"
+            },
+            {
+                "character": "Rövbrytaren",
+                "item": "Qiraji Bindings of Dominance"
+            },
+            {
+                "character": "Rövbrytaren",
+                "item": "Vek'nilash's Circlet"
+            },
+            {
+                "character": "Glamor",
+                "item": "Vek'nilash's Circlet"
+            },
+            {
+                "character": "Piclasa",
+                "item": "Royal Scepter of Vek'lor"
+            },
+            {
+                "character": "Glamor",
+                "item": "Royal Scepter of Vek'lor"
+            },
+            {
+                "character": "Glamor",
+                "item": "Sharpened Silithid Femur"
+            },
+            {
+                "character": "Meche",
+                "item": "Qiraji Bindings of Command"
+            },
+            {
+                "character": "Thirena",
+                "item": "Qiraji Bindings of Command"
+            }
+        ]
     }
 ]

@@ -2,22 +2,18 @@ import React from 'react';
 import { Player, PlayerItemEntry, Item } from '../types'
 import { useParams } from 'react-router-dom';
 import { getPlayer, getBosses } from '../api';
-import { getFinalScore, getPositionBonus, getItemBonus, getAttendanceBonus } from '../api/points';
+import { getFinalScore, getPositionBonus, getItemBonus, getAttendanceBonus,
+    getCombinedPlayerAttendanceList, CombinedPlayerAttendance } from '../api/points';
 import ItemLink from './ItemLink';
 import PlayerName from './PlayerName';
+import style from './PlayerDetails.module.css';
 
-const style = (entry: PlayerItemEntry, index: number): React.CSSProperties => ({
-    padding: '0 8px',
-    marginRight: 15,
-    textAlign: "right",
-    backgroundColor: entry.received ? '#1d3d1d' : 'none',
-    minWidth: 30,
-    borderBottom: '1px solid #333',
-    borderTop: index ? 'none' : '1px solid #333',
-});
+type PlayerDetailsParams = {
+    playerName: string,
+}
 
 const PlayerDetails = () => {
-    const { playerName } = useParams();
+    const { playerName } = useParams<PlayerDetailsParams>();
     const player: Player = getPlayer(playerName);
 
     const freeLoot: Item[] = [];
@@ -31,59 +27,50 @@ const PlayerDetails = () => {
         )
     );
 
+    const attendanceRaids = getCombinedPlayerAttendanceList(player);
+
     return (
         <div>
             <h1>
                 <PlayerName player={player} />
             </h1>
-            <p>Attendance bonus: {getAttendanceBonus(player)}</p>
-            <p>Position bonus: {getPositionBonus(player)}</p>
-            <table style={{ borderSpacing: 0 }}>
+            <table className={style.mainTable}>
                 <thead>
                     <tr>
-                        <th style={{ textAlign: 'left' }}>
+                        <th className={style.headerCell}>
                             Item
                         </th>
-                        <th>
+                        <th className={style.headerCell}>
                             Weight
                         </th>
-                        <th>
+                        <th className={style.headerCell}>
                             Item
                         </th>
-                        <th>
+                        <th className={style.headerCell}>
                             Total
                         </th>
                     </tr>
                 </thead>
                 <tbody>
                     {player.scoreSlots.map((entry: PlayerItemEntry, index: number) => (
-                        <tr
-                            key={entry.score}
-                            style={{
-                                backgroundColor: index % 2 === 0 ? 'none' : '#222',
-                            }}
-                        >
-                            <td style={{
-                                padding: '5px 20px 5px 5px',
-                                borderBottom: '1px solid #333',
-                                borderTop: index ? 'none' : '1px solid #333',
-                            }}>
+                        <tr key={entry.score} className={style.row}>
+                            <td className={style.cellItem}>
                                 {entry.item ? (
                                     <>
                                         <ItemLink item={entry.item} size='small' />
                                         {entry.received && (
-                                            <span style={{ marginLeft: 5, fontSize: 12 }}>({entry.received})</span>
+                                            <span className={style.receivedDate}>({entry.received})</span>
                                         )}
                                     </>
                                 ) : '--'}
                             </td>
-                            <td style={style(entry, index)}>
+                            <td className={entry.received ? style.cellReceived : style.cell}>
                                 {entry.score}
                             </td>
-                            <td style={style(entry, index)}>
+                            <td className={entry.received ? style.cellReceived : style.cell}>
                                 {getItemBonus(entry, player)}
                             </td>
-                            <td style={style(entry, index)}>
+                            <td className={entry.received ? style.cellReceived : style.cell}>
                                 {getFinalScore(entry, player)}
                             </td>
                         </tr>
@@ -91,27 +78,18 @@ const PlayerDetails = () => {
                 </tbody>
             </table>
             {freeLoot.length > 0 && (
-                <table style={{ marginTop: 20 }}>
+                <table className={style.table}>
                     <thead>
                         <tr>
-                            <th style={{ textAlign: 'left' }}>
+                            <th className={style.headerCell}>
                                 Free loot
                             </th>
                         </tr>
                     </thead>
                     <tbody>
                         {freeLoot.map((item, index) => (
-                            <tr
-                                key={item.name}
-                                style={{
-                                    backgroundColor: index % 2 === 0 ? 'none' : '#222',
-                                }}
-                            >
-                                <td style={{
-                                    padding: '5px 20px 5px 5px',
-                                    borderBottom: '1px solid #333',
-                                    borderTop: index ? 'none' : '1px solid #333',
-                                }}>
+                            <tr key={item.name} className={style.row}>
+                                <td className={style.cellItem}>
                                     <ItemLink item={item} size='small' />
                                 </td>
                             </tr>
@@ -119,6 +97,52 @@ const PlayerDetails = () => {
                     </tbody>
                 </table>
             )}
+            <table className={style.table}>
+                <thead>
+                    <tr>
+                        <th className={style.headerCell}>
+                            Attendance
+                        </th>
+                        <th />
+                        <th className={style.headerCell}>
+                            Pos.<br />
+                            bonus
+                        </th>
+                        <th className={style.headerCell}>
+                            Att.<br />
+                            bonus
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {attendanceRaids.map(({ info, bonus, attendance }: CombinedPlayerAttendance) => (
+                        <tr key={info.key} className={style.row}>
+                            <td className={style.attendanceDate}>
+                                {info.date || '-'}
+                            </td>
+                            <td className={style.attendanceRaid}>
+                                {info.raid || '-'}
+                            </td>
+                            <td className={style.attendanceValue}>
+                                {bonus || '-'}
+                            </td>
+                            <td className={style.attendanceValue}>
+                                {attendance === undefined ? '' : `${attendance * 100} %`}
+                            </td>
+                        </tr>
+                    ))}
+                    <tr>
+                        <td />
+                        <td />
+                        <td className={style.attendanceValue}>
+                            {getPositionBonus(player)}
+                        </td>
+                        <td className={style.attendanceValue}>
+                            {getAttendanceBonus(player) * 10} %
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     );
 };

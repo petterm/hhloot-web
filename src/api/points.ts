@@ -3,49 +3,56 @@ import { getRaids/*, isBonusRaid, Raid*/ } from "./raids";
 import attendanceData from '../data/attendance.json';
 import { nonBonusRaidCount, attendanceRaidCount } from "../constants";
 
-const hasBonusAttendance = (attendance: number) => attendance >= 0.1;
+export type Attendance = {
+    key: string,
+    value: number,
+    raid?: string,
+    date?: string,
+};
 
-const filterBonusRaids = (raids: number[]): number[] => raids.slice(nonBonusRaidCount);
+type AttendanceData = {
+    [key: string]: Attendance[]
+}
 
-const getPlayerBonusRaids = (player: Player) => {
-    // const raids = getRaids();
-    // let bonus = 0;
-    // for (const raidIndex in raids) {
-    //     const raid = raids[raidIndex];
-    //     if (isBonusRaid(raid)) {
-    //         const playerAttendance = raid.players.find(o => o.character === player.name);
-    //         if (playerAttendance && hasBonusAttendance(playerAttendance.attendance)) {
-    //             bonus += 1;
-    //         }
-    //     }
-    // }
+const hasBonusAttendance = (attendance: Attendance) => attendance.value >= 0.1;
 
-    const attendanceList = attendanceData as { [key: string]: number[] };
-    let bonus = 0;
+const filterBonusRaids = (raids: Attendance[]): Attendance[] => raids.slice(nonBonusRaidCount);
+
+const getPlayerBonusRaids = (player: Player): Attendance[] => {
+    const attendanceList = attendanceData as AttendanceData;
     if (player.name in attendanceList) {
-        const bonusRaids = filterBonusRaids(attendanceList[player.name]);
-        for (const i in bonusRaids) {
-            const value = bonusRaids[i];
-            if (hasBonusAttendance(value)) {
-                bonus += 1;
-            }
+        return filterBonusRaids(attendanceList[player.name]);
+    }
+    return [];
+};
+
+const getPlayerPositionBonus = (player: Player) => {
+    let bonus = 0;
+    const bonusRaids = getPlayerBonusRaids(player);
+    for (const i in bonusRaids) {
+        const value = bonusRaids[i];
+        if (hasBonusAttendance(value)) {
+            bonus += 1;
         }
     }
 
     return bonus;
 }
 
-// TODO: Real filter to get only attendance raids
-// const getAttendanceRaids = (raids: Raid[]) => raids.slice(-10);
+const getPlayerAttendanceRaids = (player: Player): Attendance[] => {
+    const attendanceList = attendanceData as AttendanceData;
+    if (player.name in attendanceList) {
+        return attendanceList[player.name].slice(-attendanceRaidCount);
+    }
+    return [];
+};
 
-// TODO: Fill out with data for new players
 const getPlayerAttendance = (player: Player): number => {
     if (typeof(player.calculatedAttendance) === 'undefined') {
-        const attendanceList = attendanceData as { [key: string]: number[] };
-
-        if (player.name in attendanceList) {
-            const playerAttendanceList = (attendanceList[player.name] as number[]).slice(-attendanceRaidCount);
-            player.calculatedAttendance = playerAttendanceList.reduceRight((a, b) => a + b) / playerAttendanceList.length;
+        const playerAttendanceList: Attendance[] = getPlayerAttendanceRaids(player);
+        if (playerAttendanceList.length) {
+            player.calculatedAttendance = playerAttendanceList.reduce((sum, attendance) => sum + attendance.value, 0) / playerAttendanceList.length;
+            // Round to 1 digit
             player.calculatedAttendance = Math.round(player.calculatedAttendance * 100) / 100;
         } else {
             player.calculatedAttendance = 0;
@@ -80,7 +87,7 @@ export const getItemBonus = (entry: PlayerItemEntry, player: Player): number => 
 
 export const getPositionBonus = (player: Player): number => {
     if (!player.positionBonus) {
-        player.positionBonus = getPlayerBonusRaids(player);
+        player.positionBonus = getPlayerPositionBonus(player);
     }
     return player.positionBonus;
 };
@@ -101,4 +108,36 @@ export const getEntryScore = (entry: PlayerItemEntry, player: Player): EntryScor
         }
     }
     return entry.calcualtedScore;
+}
+
+export type CombinedPlayerAttendance = {
+    info: Attendance,
+    bonus?: number,
+    attendance?: number,
+};
+
+export const getCombinedPlayerAttendanceList = (player: Player): CombinedPlayerAttendance[] => {
+    const attendanceRaids = getPlayerAttendanceRaids(player);
+    const bonusRaids = getPlayerBonusRaids(player);
+
+    const combined: { [key: string]: CombinedPlayerAttendance } = {};
+    for (const i in bonusRaids) {
+        const attendance = bonusRaids[i];
+        combined[attendance.key] = {
+            info: attendance,
+            bonus: hasBonusAttendance(attendance) ? 1 : undefined,
+        }
+    }
+
+    for (const i in attendanceRaids) {
+        const attendance = attendanceRaids[i];
+        if (!combined[attendance.key]) {
+            combined[attendance.key] = {
+                info: attendance
+            };
+        }
+        combined[attendance.key].attendance = attendance.value;
+    }
+
+    return Object.values(combined);
 }

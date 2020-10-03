@@ -58,7 +58,27 @@ http.get(dataFileURL, function(response) {
 
                 Object.keys(ridbData["NewAttendance"])
                     .sort()
-                    .forEach(key => sortedAttendance[key] = ridbData["NewAttendance"][key]);
+                    .forEach((playerName) => {
+                        const valueList = ridbData["NewAttendance"][playerName];
+                        const attendanceList = [];
+
+                        for (const i in valueList) {
+                            const attendance = {
+                                key: `index-${i}`,
+                                value: valueList[i],
+                            };
+                            if ("NewRaidMapping" in ridbData && playerName in ridbData["NewRaidMapping"]) {
+                                const infoStr = ridbData["NewRaidMapping"][playerName][i];
+                                if (infoStr && infoStr !== "fake") {
+                                    const [raid, date] = infoStr.split(" - ");
+                                    attendance.raid = raid;
+                                    attendance.date = date;
+                                }
+                            }
+                            attendanceList.push(attendance);
+                        }
+                        sortedAttendance[playerName] = attendanceList;
+                    });
 
                 fs.writeFile('../src/data/attendance.json', JSON.stringify(sortedAttendance, null, 2), err => {
                     if (err) throw err;

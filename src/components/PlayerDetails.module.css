@@ -1,0 +1,75 @@
+.mainTable {
+    border-spacing: 0;
+}
+
+.table {
+    border-spacing: 0;
+    margin-top: 20px;
+}
+
+.row {
+    background-color: none;
+}
+
+.row:nth-child(2n) {
+    background-color: #222;
+}
+
+.headerCell {
+    padding: 0 8px;
+    text-align: left;
+}
+
+.cellItem {
+    padding: 5px 20px 5px 5px;
+    border-bottom: 1px solid #333;
+}
+
+.cell {
+    padding: 0 8px;
+    margin-right: 15px;
+    text-align: right;
+    min-width: 30px;
+    border-bottom: 1px solid #333;
+}
+
+.cellReceived {
+    padding: 0 8px;
+    margin-right: 15px;
+    text-align: right;
+    min-width: 30px;
+    border-bottom: 1px solid #333;
+    background-color: #1d3d1d;
+}
+
+.attendanceDate {
+    padding: 5px 20px 5px 5px;
+    border-bottom: 1px solid #333;
+}
+
+.attendanceRaid {
+    padding: 5px 20px 5px 5px;
+    border-bottom: 1px solid #333;
+    min-width: 250px;
+}
+
+.attendanceValue {
+    padding: 5px 20px 5px 5px;
+    border-bottom: 1px solid #333;
+    text-align: right;
+}
+
+tr:first-child .cellItem,
+tr:first-child .cell,
+tr:first-child .cellReceived,
+tr:first-child .attendanceDate,
+tr:first-child .attendanceRaid,
+tr:first-child .attendanceValue {
+    border-top: 1px solid #333;
+}
+
+.receivedDate {
+    margin-left: 5px;
+    font-size: 12px;
+    color: #aaa;
+}
