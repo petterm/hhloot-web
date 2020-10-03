@@ -14,7 +14,7 @@ type AttendanceData = {
     [key: string]: Attendance[]
 }
 
-const hasBonusAttendance = (attendance: Attendance) => attendance.value >= 0.1;
+const hasBonusAttendance = (attendance: Attendance) => attendance.date && attendance.value >= 0.1;
 
 const filterBonusRaids = (raids: Attendance[]): Attendance[] => raids.slice(nonBonusRaidCount);
 
