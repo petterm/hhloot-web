@@ -1,10 +1,18 @@
 import reservations from '../data/aq40_reservation.json';
 import lootTable from '../data/aq40_loot_table.json';
 import itemIcons from '../data/item_icons.json';
-import players from '../data/players.json';
-import { Boss, BossDrop, ItemScore, Player, PlayerItemEntry, Class } from '../types';
+import { Boss, BossDrop, ItemScore, Player, PlayerItemEntry, Class, GuildRank } from '../types';
 import { itemScores } from '../constants';
 import { getRaids } from './raids';
+import axios from 'axios';
+
+// Async data
+type PlayerRaw = {
+    name: string,
+    class: Class,
+    guildRank: GuildRank,
+};
+let players: PlayerRaw[] = [];
 
 let setup = true;
 
@@ -183,3 +191,10 @@ export const getPlayer = (name: string): Player => {
 };
 
 export const getItemIcon = (id: number) => (itemIcons as {[key: number]: string})[id];
+
+export const loadData = () => 
+    axios.get('/Api/Players')
+        .then((response) => {
+            const ranks: GuildRank[] = ['Guild Master', 'Officer', 'Member', 'Initiate'];
+            players = response.data.filter((player: PlayerRaw) => ranks.includes(player.guildRank))
+        });

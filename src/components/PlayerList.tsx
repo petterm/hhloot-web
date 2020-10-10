@@ -23,6 +23,7 @@ const PlayerList = ({ players }: PlayerListProps) => {
                                 padding: '5px 20px 5px 5px',
                                 borderBottom: '1px solid #333',
                                 borderTop: index ? 'none' : '1px solid #333',
+                                fontStyle: player.guildRank === 'Initiate' ? 'italic' : '',
                             }}>
                                 <Link to={`/players/${player.name}`} style={{ textDecoration: 'none' }}>
                                     <PlayerName player={player} />
