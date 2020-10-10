@@ -4,9 +4,9 @@ const fs = require("fs");
 
 const tabName = "Loot";
 const dataFileURL = `https://docs.google.com/a/google.com/spreadsheets/d/1vzK9lPih35GSUPbxLreslyihxPSSIXhS3JW_GWRf7Lw/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(tabName)}`;
+const playersApiURL = 'https://hubbe.myddns.me/Api/Players';
 
-const playersData = fs.readFileSync("../src/data/players.json", { encoding: "utf8" });
-const players = JSON.parse(playersData);
+let players = [];
 
 const raidLoot = {};
 const cap = name => name.substr(0, 1).toUpperCase() + name.substr(1).toLowerCase();
@@ -39,7 +39,7 @@ const addLoot = (date, player, item, bonusPlayers) => {
     });
 };
 
-https.get(dataFileURL, function(response) {
+const getLoot = () => https.get(dataFileURL, function(response) {
     let str = "";
 
     response.on("data", (chunk) => {
@@ -63,5 +63,20 @@ https.get(dataFileURL, function(response) {
                 })
             }
         })
+    });
+});
+
+https.get(playersApiURL, (response) => {
+    let str = "";
+
+    response.on("data", (chunk) => {
+        str += chunk;
+    });
+
+    response.on("end", () => {
+        const ranks = ['Guild Master', 'Officer', 'Member', 'Initiate'];
+        players = JSON.parse(str)
+            .filter(player => ranks.includes(player.guildRank));
+        getLoot();
     });
 });
