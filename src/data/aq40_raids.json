@@ -887,6 +887,10 @@
             {
                 "character": "Rövbrytaren",
                 "item": "Qiraji Bindings of Dominance"
+            },
+            {
+                "character": "Rövbrytaren",
+                "item": "Eye of C'Thun"
             }
         ],
         "itemBonus": [
@@ -925,6 +929,157 @@
             {
                 "character": "Thirena",
                 "item": "Qiraji Bindings of Command"
+            }
+        ]
+    },
+    {
+        "date": "2020-10-03",
+        "loot": [
+            {
+                "character": "Thenuker",
+                "item": "Ring of Swarming Thought"
+            },
+            {
+                "character": "Shard",
+                "item": "Barrage Shoulders"
+            },
+            {
+                "character": "Grillspett",
+                "item": "Ternary Mantle"
+            },
+            {
+                "character": "Garlick",
+                "item": "Angelista's Charm"
+            },
+            {
+                "character": "Nympth",
+                "item": "Legplates of Blazing Light"
+            },
+            {
+                "character": "Piclasa",
+                "item": "Recomposed Boots"
+            },
+            {
+                "character": "Psychokiller",
+                "item": "Imperial Qiraji Regalia"
+            },
+            {
+                "character": "Wyldfyre",
+                "item": "Hive Tunneler's Boots"
+            },
+            {
+                "character": "Mardrömmar",
+                "item": "Scaled Sand Reaver Leggings"
+            },
+            {
+                "character": "Klesket",
+                "item": "Qiraji Bindings of Command"
+            },
+            {
+                "character": "Thenuker",
+                "item": "Qiraji Bindings of Dominance"
+            },
+            {
+                "character": "Deaurion",
+                "item": "Cloak of the Golden Hive"
+            },
+            {
+                "character": "Grillspett",
+                "item": "Bracelets of Royal Redemption"
+            },
+            {
+                "character": "Klesket",
+                "item": "Qiraji Execution Bracers"
+            },
+            {
+                "character": "Mimtor",
+                "item": "Vek'lor's Diadem"
+            },
+            {
+                "character": "Reneko",
+                "item": "Vek'nilash's Circlet"
+            },
+            {
+                "character": "Psychokiller",
+                "item": "Skin of the Great Sandworm"
+            },
+            {
+                "character": "Jalka",
+                "item": "Ouro's Intact Hide"
+            },
+            {
+                "character": "Ditro",
+                "item": "Jom Gabbar"
+            },
+            {
+                "character": "Seppä",
+                "item": "Vanquished Tentacle of C'Thun"
+            },
+            {
+                "character": "Toestabber",
+                "item": "Carapace of the Old God"
+            },
+            {
+                "character": "Kongs",
+                "item": "Belt of Never-ending Agony"
+            },
+            {
+                "character": "Psychokiller",
+                "item": "Husk of the Old God"
+            },
+            {
+                "character": "Piclasa",
+                "item": "Eye of C'Thun"
+            },
+            {
+                "character": "Suncho",
+                "item": "Mark of C'Thun"
+            },
+            {
+                "character": "Shoegun",
+                "item": "Idol of Health"
+            },
+            {
+                "character": "Toestabber",
+                "item": "Qiraji Bindings of Command"
+            },
+            {
+                "character": "Nympth",
+                "item": "Qiraji Bindings of Dominance"
+            }
+        ],
+        "itemBonus": [
+            {
+                "character": "Toestabber",
+                "item": "Qiraji Bindings of Command"
+            },
+            {
+                "character": "Toestabber",
+                "item": "Qiraji Execution Bracers"
+            },
+            {
+                "character": "Rövbrytaren",
+                "item": "Vek'nilash's Circlet"
+            },
+            {
+                "character": "Thirena",
+                "item": "Belt of Never-ending Agony"
+            },
+            {
+                "character": "Cosy",
+                "item": "Eye of C'Thun"
+            },
+            {
+                "character": "Jalka",
+                "item": "Eye of C'Thun"
+            },
+            {
+                "character": "Glamor",
+                "item": "Eye of C'Thun"
+            },
+            {
+                "character": "Ditro",
+                "item": "Eye of C'Thun"
             }
         ]
     }

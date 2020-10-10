@@ -4,8 +4,10 @@ const fs = require("fs");
 
 const tabName = "Formulärsvar 1";
 const dataFileURL = `https://docs.google.com/a/google.com/spreadsheets/d/1vzK9lPih35GSUPbxLreslyihxPSSIXhS3JW_GWRf7Lw/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(tabName)}`;
+const playersApiURL = 'https://hubbe.myddns.me/Api/Players';
 
 const players = {};
+let playerList = [];
 
 const addReservation = ([
     date,
@@ -48,11 +50,11 @@ const addReservation = ([
     players[playerName].sort((a, b) => a.date > b.date);
 };
 
-const playerData = fs.readFileSync("../src/data/players.json", { encoding: "utf8" });
-const playerList = JSON.parse(playerData).reduce((result, player) => {
-    result[player.name] = true;
-    return result;
-}, {});
+// const playerData = fs.readFileSync("../src/data/players.json", { encoding: "utf8" });
+// const playerList = JSON.parse(playerData).reduce((result, player) => {
+//     result[player.name] = true;
+//     return result;
+// }, {});
 
 const reservationData = fs.readFileSync("../src/data/aq40_reservation.json", { encoding: "utf8" });
 const reservations = JSON.parse(reservationData);
@@ -91,8 +93,7 @@ const updateDataFile = (players) => {
     })
 };
 
-
-https.get(dataFileURL, function(response) {
+const getReservations = () => https.get(dataFileURL, (response) => {
     let str = "";
 
     response.on("data", (chunk) => {
@@ -116,5 +117,24 @@ https.get(dataFileURL, function(response) {
                 })
             }
         })
+    });
+});
+
+https.get(playersApiURL, (response) => {
+    let str = "";
+
+    response.on("data", (chunk) => {
+        str += chunk;
+    });
+
+    response.on("end", () => {
+        const ranks = ['Guild Master', 'Officer', 'Member', 'Initiate'];
+        playerList = JSON.parse(str)
+            .filter(player => ranks.includes(player.guildRank))
+            .reduce((result, player) => {
+                result[player.name] = true;
+                return result;
+            }, {});
+        getReservations();
     });
 });

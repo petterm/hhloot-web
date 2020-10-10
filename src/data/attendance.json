@@ -89,6 +89,12 @@
       "value": 0,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-15",
+      "value": 1,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Anusaukko": [
@@ -181,6 +187,12 @@
       "value": 1,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-15",
+      "value": 0,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Binding": [
@@ -273,6 +285,12 @@
       "value": 0,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-15",
+      "value": 0,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Bishealer": [
@@ -603,6 +621,12 @@
       "value": 1,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-15",
+      "value": 1,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Darand": [
@@ -665,6 +689,12 @@
       "value": 1,
       "raid": "Blackwing Lair",
       "date": "2020-09-24 19:30"
+    },
+    {
+      "key": "index-13",
+      "value": 0,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-09-26 18:30"
     }
   ],
   "Deaurion": [
@@ -757,6 +787,12 @@
       "value": 1,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-15",
+      "value": 1,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Ditro": [
@@ -849,6 +885,12 @@
       "value": 1,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-15",
+      "value": 1,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Firmand": [
@@ -941,6 +983,12 @@
       "value": 1,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-15",
+      "value": 0,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Garlick": [
@@ -1033,6 +1081,12 @@
       "value": 0,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-15",
+      "value": 1,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Glamor": [
@@ -1125,6 +1179,12 @@
       "value": 1,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-15",
+      "value": 1,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Greensoup": [
@@ -1217,6 +1277,12 @@
       "value": 0,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-15",
+      "value": 1,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Grillspett": [
@@ -1309,6 +1375,12 @@
       "value": 1,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-15",
+      "value": 1,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Gurkybabe": [
@@ -1419,6 +1491,12 @@
       "value": 1,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-10",
+      "value": 1,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Herath": [
@@ -1467,6 +1545,12 @@
       "value": 1,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-10",
+      "value": 1,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Heregud": [
@@ -1641,6 +1725,12 @@
       "value": 1,
       "raid": "The Temple of Ahn'Qiraj",
       "date": "2020-09-26 18:30"
+    },
+    {
+      "key": "index-12",
+      "value": 1,
+      "raid": "Blackwing Lair",
+      "date": "2020-10-01 19:30"
     }
   ],
   "Hubbé": [
@@ -1733,6 +1823,12 @@
       "value": 0,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-15",
+      "value": 1,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Igotwater": [
@@ -1893,6 +1989,12 @@
       "value": 1,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-15",
+      "value": 1,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Jerj": [
@@ -2047,6 +2149,12 @@
       "value": 1,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-15",
+      "value": 1,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Kongs": [
@@ -2139,6 +2247,12 @@
       "value": 1,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-15",
+      "value": 1,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Macsonkor": [
@@ -2231,6 +2345,12 @@
       "value": 1,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-15",
+      "value": 1,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Mardrömmar": [
@@ -2275,6 +2395,12 @@
       "value": 0,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-8",
+      "value": 1,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Meche": [
@@ -2367,6 +2493,12 @@
       "value": 1,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-15",
+      "value": 1,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Mimtor": [
@@ -2415,6 +2547,12 @@
       "value": 1,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-10",
+      "value": 1,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Muggsy": [
@@ -2507,6 +2645,12 @@
       "value": 0,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-15",
+      "value": 0,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Mugsy": [
@@ -2573,6 +2717,12 @@
       "value": 0,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-13",
+      "value": 0,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Nympth": [
@@ -2665,6 +2815,12 @@
       "value": 1,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-15",
+      "value": 1,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Piclasa": [
@@ -2757,6 +2913,12 @@
       "value": 1,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-15",
+      "value": 1,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Poele": [
@@ -2943,6 +3105,12 @@
       "value": 0,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-15",
+      "value": 1,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Päänmurskain": [
@@ -2989,6 +3157,12 @@
       "value": 1,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-10",
+      "value": 1,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Qbx": [
@@ -3081,6 +3255,12 @@
       "value": 0,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-15",
+      "value": 0,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Reneko": [
@@ -3173,6 +3353,12 @@
       "value": 1,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-15",
+      "value": 1,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Rövbrytaren": [
@@ -3265,6 +3451,12 @@
       "value": 1,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-15",
+      "value": 1,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Seppä": [
@@ -3313,6 +3505,12 @@
       "value": 0,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-10",
+      "value": 1,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Shoegun": [
@@ -3363,6 +3561,12 @@
       "value": 1,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-10",
+      "value": 1,
+      "raid": "Blackwing Lair",
+      "date": "2020-09-17 19:30"
     }
   ],
   "Snakepala": [
@@ -3455,6 +3659,12 @@
       "value": 1,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-15",
+      "value": 0,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Sovietgirl": [
@@ -3547,6 +3757,12 @@
       "value": 1,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-15",
+      "value": 0,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Suncho": [
@@ -3639,6 +3855,12 @@
       "value": 1,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-15",
+      "value": 1,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Svartie": [
@@ -3731,6 +3953,12 @@
       "value": 1,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-15",
+      "value": 1,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Swiftmeld": [
@@ -3795,6 +4023,12 @@
       "value": 1,
       "raid": "Blackwing Lair",
       "date": "2020-09-24 19:30"
+    },
+    {
+      "key": "index-13",
+      "value": 0,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-09-26 18:30"
     }
   ],
   "Swigen": [
@@ -3921,6 +4155,12 @@
       "value": 1,
       "raid": "Blackwing Lair",
       "date": "2020-09-17 19:30"
+    },
+    {
+      "key": "index-11",
+      "value": 1,
+      "raid": "Blackwing Lair",
+      "date": "2020-10-01 19:30"
     }
   ],
   "Thenuker": [
@@ -4013,6 +4253,12 @@
       "value": 1,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-15",
+      "value": 1,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Thfrozen": [
@@ -4061,6 +4307,12 @@
       "value": 0,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-10",
+      "value": 0,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Thirena": [
@@ -4153,6 +4405,12 @@
       "value": 1,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-15",
+      "value": 1,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Toestabber": [
@@ -4245,6 +4503,12 @@
       "value": 1,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-15",
+      "value": 1,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Trollsmet": [
@@ -4337,6 +4601,12 @@
       "value": 1,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-15",
+      "value": 1,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Vepaz": [
@@ -4429,6 +4699,12 @@
       "value": 1,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-15",
+      "value": 1,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Waiteyak": [
@@ -4521,6 +4797,12 @@
       "value": 0,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-15",
+      "value": 0,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Wulfrun": [
@@ -4613,6 +4895,12 @@
       "value": 1,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-15",
+      "value": 1,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Wyldfyre": [
@@ -4705,6 +4993,12 @@
       "value": 1,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-15",
+      "value": 1,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Xuana": [
@@ -4797,6 +5091,12 @@
       "value": 0,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-15",
+      "value": 0,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Xéna": [
@@ -4889,6 +5189,12 @@
       "value": 0,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-15",
+      "value": 0,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Yungbanz": [
@@ -4981,6 +5287,12 @@
       "value": 1,
       "raid": "Blackwing Lair",
       "date": "2020-10-01 19:30"
+    },
+    {
+      "key": "index-15",
+      "value": 1,
+      "raid": "The Temple of Ahn'Qiraj",
+      "date": "2020-10-03 18:30"
     }
   ],
   "Zadik": [
