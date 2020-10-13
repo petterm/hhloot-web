@@ -1,29 +1,14 @@
 import reservations from '../data/aq40_reservation.json';
 import lootTable from '../data/aq40_loot_table.json';
 import itemIcons from '../data/item_icons.json';
-import { Boss, BossDrop, ItemScore, Player, PlayerItemEntry, Class, GuildRank } from '../types';
-import { itemScores } from '../constants';
-import { getRaids } from './raids';
-import axios from 'axios';
-
-// Async data
-type PlayerRaw = {
-    name: string,
-    class: Class,
-    guildRank: GuildRank,
-};
-let players: PlayerRaw[] = [];
-
-let setup = true;
+import { Boss, BossDrop, ItemScore, Player, PlayerItemEntry, Class } from '../types';
+import { getRaids, getPlayersData, getPlayers } from './async';
 
 type BossMap = { [key: string]: Boss; };
 const bossMap: BossMap = {};
 
 type BossDropMap = { [key: string]: BossDrop; };
 const bossDropMap: BossDropMap = {};
-
-type PlayerMap = { [key: string]: Player };
-const playerMap: PlayerMap = {};
 
 const parseLootTable = (): void => {
     let index = 0;
@@ -78,6 +63,8 @@ const createEntry = (score: ItemScore, itemName: string): PlayerItemEntry => {
 };
 
 const parsePlayerReservations = (): void => {
+    const players = getPlayersData();
+    const playerMap = getPlayers();
     reservations.forEach(playerReservation => {
         const playerName = playerReservation.character;
         const player: Player = {
@@ -105,21 +92,10 @@ const parsePlayerReservations = (): void => {
 
         playerMap[playerName] = player;
     })
-
-    players.forEach(player => {
-        if (!playerMap[player.name]) {
-            playerMap[player.name] = {
-                attendedRaids: [],
-                name: player.name,
-                class: player.class as Class,
-                guildRank: player.guildRank,
-                scoreSlots: itemScores.map(score => ({ score, itemBonusEvents: [] })),
-            }
-        }
-    })
 };
 
 const markReceivedItems = () => {
+    const playerMap = getPlayers();
     const raids = getRaids()
     for (let i in raids) {
         const raid = raids[i];
@@ -145,6 +121,7 @@ const markReceivedItems = () => {
 }
 
 const addPlayerReservationsToItems = () => {
+    const playerMap = getPlayers();
     for (let name in playerMap) {
         const player: Player = playerMap[name];
 
@@ -161,29 +138,9 @@ const addPlayerReservationsToItems = () => {
     }
 };
 
-export const getBosses = (): BossMap => {
-    if (setup) {
-        parseLootTable();
-        parsePlayerReservations();
-        markReceivedItems();
-        addPlayerReservationsToItems();
-        setup = false;
-    }
-    return bossMap;
-};
+export const getBosses = (): BossMap => bossMap;
 
 export const getBoss = (name: string) => getBosses()[name];
-
-export const getPlayers = (): PlayerMap => {
-    if (setup) {
-        parseLootTable();
-        parsePlayerReservations();
-        markReceivedItems();
-        addPlayerReservationsToItems();
-        setup = false;
-    }
-    return playerMap;
-};
 
 export const getPlayer = (name: string): Player => {
     const players = getPlayers();
@@ -192,9 +149,9 @@ export const getPlayer = (name: string): Player => {
 
 export const getItemIcon = (id: number) => (itemIcons as {[key: number]: string})[id];
 
-export const loadData = () => 
-    axios.get('/Api/Players')
-        .then((response) => {
-            const ranks: GuildRank[] = ['Guild Master', 'Officer', 'Member', 'Initiate'];
-            players = response.data.filter((player: PlayerRaw) => ranks.includes(player.guildRank))
-        });
+export const prepareData = () => {
+    parseLootTable();
+    parsePlayerReservations();
+    markReceivedItems();
+    addPlayerReservationsToItems();
+};

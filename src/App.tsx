@@ -2,9 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { HashRouter as Router, Link, Switch, Route } from 'react-router-dom';
 import './App.css';
 import PlayerList from './components/PlayerList';
-import { getPlayers, getBosses, loadData } from './api';
+import { getBosses, prepareData } from './api';
 import PlayerDetails from './components/PlayerDetails';
 import BossList from './components/BossList';
+import { fetchData, getPlayers } from './api/async';
 
 type AppState = {
     fetching: boolean,
@@ -16,8 +17,11 @@ function App() {
     const [isLoaded, setIsLoaded] = useState(false);
 
     useEffect(() => {
-        loadData()
-            .then((result) => {
+        fetchData()
+            .then(() => {
+                prepareData();
+            })
+            .then(() => {
                 setIsLoaded(true);
             }, (error) => {
                 // setError(error)

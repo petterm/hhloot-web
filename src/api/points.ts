@@ -1,5 +1,5 @@
 import { Player, PlayerItemEntry, EntryScore } from "../types";
-import { getRaids/*, isBonusRaid, Raid*/ } from "./raids";
+import { getRaids } from "./async";
 import attendanceData from '../data/attendance.json';
 import { nonBonusRaidCount, attendanceRaidCount } from "../constants";
 
