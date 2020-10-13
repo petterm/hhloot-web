@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { PlayerItemEntry, EntryScore, Player } from '../types'
 import PlayerName from './PlayerName';
 import style from './DropRowPlayer.module.css'
@@ -27,7 +27,6 @@ const DropRowPlayer = ({
     hoverScore,
 }: DropRowPlayerProps) => {
     const [showTooltip, setShowTooltip] = useState(false);
-    const history = useHistory();
 
     const onMouseEnter = () => {
         setHoverScore(scores.total);
@@ -42,12 +41,8 @@ const DropRowPlayer = ({
     }
 
     const onClick = () => {
-        if (masterlooter) {
-            if (!playerEntry.received) {
-                onSelectLootPlayer(player);
-            }
-        } else {
-            history.push(`/players/${player.name}`);
+        if (masterlooter && !playerEntry.received) {
+            onSelectLootPlayer(player);
         }
     };
 
