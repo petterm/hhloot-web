@@ -22,3 +22,5 @@ export const classColor: {[C in Class]: string} = {
 export const rollPointsWindow = 3;
 export const nonBonusRaidCount = 4;
 export const attendanceRaidCount = 6;
+
+export const scoreGroupEdges: ItemScore[] = [80, 60];

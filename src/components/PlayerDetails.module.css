@@ -68,6 +68,11 @@ tr:first-child .attendanceValue {
     border-top: 1px solid #333;
 }
 
+.scoreRowEdge td {
+    border-bottom-width: 3px;
+    border-bottom-color: #444;
+}
+
 .receivedDate {
     margin-left: 5px;
     font-size: 12px;

@@ -3,6 +3,7 @@ import { Player } from '../types'
 import { Link } from 'react-router-dom';
 import ItemLink from './ItemLink';
 import PlayerName from './PlayerName';
+import { scoreGroupEdges } from '../constants';
 
 type PlayerListProps = { players: Player[] };
 const PlayerList = ({ players }: PlayerListProps) => {
@@ -36,6 +37,7 @@ const PlayerList = ({ players }: PlayerListProps) => {
                                     padding: '0 8px',
                                     borderBottom: '1px solid #333',
                                     borderTop: index ? 'none' : '1px solid #333',
+                                    borderRight: scoreGroupEdges.includes(slot.score) ? '2px solid #333' : 'none',
                                 }}>
                                     {slot.item ? (
                                         <ItemLink item={slot.item} noText size='small' />

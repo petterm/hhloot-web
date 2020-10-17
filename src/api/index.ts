@@ -24,6 +24,7 @@ const parseLootTable = (): void => {
                 item: {
                     id: parseInt(dropJson['Item ID']),
                     name: dropJson['Item Name'],
+                    restricted: dropJson['Restricted'] ? true : false,
                 },
             };
             
@@ -103,6 +104,7 @@ const markReceivedItems = () => {
             const lootEvent = raid.loot[j];
             const player = playerMap[lootEvent.character];
 
+            // Award item
             if (player) {
                 const playerSlots = player.scoreSlots;
                 const index = playerSlots.findIndex(
@@ -115,6 +117,24 @@ const markReceivedItems = () => {
                 }
             } else {
                 console.warn('Loot event for unknown player', lootEvent.character);
+            }
+
+            // Add bonus event for player
+            for (const k in lootEvent.bonusCharacters) {
+                const bonusPlayer = playerMap[lootEvent.bonusCharacters[k]];
+                if (bonusPlayer) {
+                    const playerSlots = bonusPlayer.scoreSlots;
+                    const index = playerSlots.findIndex(
+                        entry => !entry.received && entry.item && entry.item.name === lootEvent.item
+                    );
+                    if (index !== -1) {
+                        playerSlots[index].itemBonusEvents.push(raid.date);
+                    } else {
+                        console.warn('Item bonus for item not on players list', raid.date, bonusPlayer.name, lootEvent.item);
+                    }
+                } else {
+                    console.warn('Item bonus for unknown player', raid.date, lootEvent.bonusCharacters[k], lootEvent.item);
+                }
             }
         }
     }

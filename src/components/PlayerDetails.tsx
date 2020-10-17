@@ -7,10 +7,13 @@ import { getFinalScore, getPositionBonus, getItemBonus, getAttendanceBonus,
 import ItemLink from './ItemLink';
 import PlayerName from './PlayerName';
 import style from './PlayerDetails.module.css';
+import { scoreGroupEdges } from '../constants';
 
 type PlayerDetailsParams = {
     playerName: string,
 }
+
+const scoreRowClass = (row: PlayerItemEntry) => scoreGroupEdges.includes(row.score) ? style.scoreRowEdge : '';
 
 const PlayerDetails = () => {
     const { playerName } = useParams<PlayerDetailsParams>();
@@ -53,7 +56,7 @@ const PlayerDetails = () => {
                 </thead>
                 <tbody>
                     {player.scoreSlots.map((entry: PlayerItemEntry, index: number) => (
-                        <tr key={entry.score} className={style.row}>
+                        <tr key={entry.score} className={[style.row, scoreRowClass(entry)].join(' ')}>
                             <td className={style.cellItem}>
                                 {entry.item ? (
                                     <>

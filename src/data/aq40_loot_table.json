@@ -6,7 +6,8 @@
     "Prio": "",
     "Boss": "The Prophet Skeram",
     "Linktext": "Barrage Shoulders",
-    "Link": "https://classic.wowhead.com/item=21699"
+    "Link": "https://classic.wowhead.com/item=21699",
+    "Restricted": ""
   },
   {
     "Item Name": "Breastplate of Annihilation",
@@ -15,7 +16,8 @@
     "Prio": "",
     "Boss": "The Prophet Skeram",
     "Linktext": "Breastplate of Annihilation",
-    "Link": "https://classic.wowhead.com/item=21814"
+    "Link": "https://classic.wowhead.com/item=21814",
+    "Restricted": ""
   },
   {
     "Item Name": "Beetle Scaled Wristguards",
@@ -24,7 +26,8 @@
     "Prio": "",
     "Boss": "The Prophet Skeram",
     "Linktext": "Beetle Scaled Wristguards",
-    "Link": "https://classic.wowhead.com/item=21708"
+    "Link": "https://classic.wowhead.com/item=21708",
+    "Restricted": ""
   },
   {
     "Item Name": "Leggings of Immersion",
@@ -33,7 +36,8 @@
     "Prio": "",
     "Boss": "The Prophet Skeram",
     "Linktext": "Leggings of Immersion",
-    "Link": "https://classic.wowhead.com/item=21698"
+    "Link": "https://classic.wowhead.com/item=21698",
+    "Restricted": ""
   },
   {
     "Item Name": "Boots of the Fallen Prophet",
@@ -42,7 +46,8 @@
     "Prio": "",
     "Boss": "The Prophet Skeram",
     "Linktext": "Boots of the Fallen Prophet",
-    "Link": "https://classic.wowhead.com/item=21705"
+    "Link": "https://classic.wowhead.com/item=21705",
+    "Restricted": ""
   },
   {
     "Item Name": "Boots of the Redeemed Prophecy",
@@ -51,7 +56,8 @@
     "Prio": "",
     "Boss": "The Prophet Skeram",
     "Linktext": "Boots of the Redeemed Prophecy",
-    "Link": "https://classic.wowhead.com/item=21704"
+    "Link": "https://classic.wowhead.com/item=21704",
+    "Restricted": ""
   },
   {
     "Item Name": "Boots of the Unwavering Will",
@@ -60,7 +66,8 @@
     "Prio": "",
     "Boss": "The Prophet Skeram",
     "Linktext": "Boots of the Unwavering Will",
-    "Link": "https://classic.wowhead.com/item=21706"
+    "Link": "https://classic.wowhead.com/item=21706",
+    "Restricted": ""
   },
   {
     "Item Name": "Amulet of Foul Warding",
@@ -69,7 +76,8 @@
     "Prio": "",
     "Boss": "The Prophet Skeram",
     "Linktext": "Amulet of Foul Warding",
-    "Link": "https://classic.wowhead.com/item=21702"
+    "Link": "https://classic.wowhead.com/item=21702",
+    "Restricted": ""
   },
   {
     "Item Name": "Pendant of the Qiraji Guardian",
@@ -78,7 +86,8 @@
     "Prio": "",
     "Boss": "The Prophet Skeram",
     "Linktext": "Pendant of the Qiraji Guardian",
-    "Link": "https://classic.wowhead.com/item=21700"
+    "Link": "https://classic.wowhead.com/item=21700",
+    "Restricted": ""
   },
   {
     "Item Name": "Cloak of Concentrated Hatred",
@@ -87,7 +96,8 @@
     "Prio": "",
     "Boss": "The Prophet Skeram",
     "Linktext": "Cloak of Concentrated Hatred",
-    "Link": "https://classic.wowhead.com/item=21701"
+    "Link": "https://classic.wowhead.com/item=21701",
+    "Restricted": ""
   },
   {
     "Item Name": "Ring of Swarming Thought",
@@ -96,7 +106,8 @@
     "Prio": "",
     "Boss": "The Prophet Skeram",
     "Linktext": "Ring of Swarming Thought",
-    "Link": "https://classic.wowhead.com/item=21707"
+    "Link": "https://classic.wowhead.com/item=21707",
+    "Restricted": ""
   },
   {
     "Item Name": "Hammer of Ji'zhi",
@@ -105,7 +116,8 @@
     "Prio": "",
     "Boss": "The Prophet Skeram",
     "Linktext": "Hammer of Ji'zhi",
-    "Link": "https://classic.wowhead.com/item=21703"
+    "Link": "https://classic.wowhead.com/item=21703",
+    "Restricted": "True"
   },
   {
     "Item Name": "Staff of the Qiraji Prophets",
@@ -114,7 +126,8 @@
     "Prio": "",
     "Boss": "The Prophet Skeram",
     "Linktext": "Staff of the Qiraji Prophets",
-    "Link": "https://classic.wowhead.com/item=21128"
+    "Link": "https://classic.wowhead.com/item=21128",
+    "Restricted": "True"
   },
   {
     "Item Name": "",
@@ -123,7 +136,8 @@
     "Prio": "",
     "Boss": "",
     "Linktext": "",
-    "Link": ""
+    "Link": "",
+    "Restricted": ""
   },
   {
     "Item Name": "Guise of the Devourer",
@@ -132,7 +146,8 @@
     "Prio": "",
     "Boss": "Bug Trio",
     "Linktext": "Guise of the Devourer",
-    "Link": "https://classic.wowhead.com/item=21693"
+    "Link": "https://classic.wowhead.com/item=21693",
+    "Restricted": ""
   },
   {
     "Item Name": "Ternary Mantle",
@@ -141,7 +156,8 @@
     "Prio": "",
     "Boss": "Bug Trio",
     "Linktext": "Ternary Mantle",
-    "Link": "https://classic.wowhead.com/item=21694"
+    "Link": "https://classic.wowhead.com/item=21694",
+    "Restricted": ""
   },
   {
     "Item Name": "Cape of the Trinity",
@@ -150,7 +166,8 @@
     "Prio": "",
     "Boss": "Bug Trio",
     "Linktext": "Cape of the Trinity",
-    "Link": "https://classic.wowhead.com/item=21697"
+    "Link": "https://classic.wowhead.com/item=21697",
+    "Restricted": ""
   },
   {
     "Item Name": "Robes of the Triumvirate",
@@ -159,7 +176,8 @@
     "Prio": "",
     "Boss": "Bug Trio",
     "Linktext": "Robes of the Triumvirate",
-    "Link": "https://classic.wowhead.com/item=21696"
+    "Link": "https://classic.wowhead.com/item=21696",
+    "Restricted": ""
   },
   {
     "Item Name": "Triad Girdle",
@@ -168,7 +186,8 @@
     "Prio": "",
     "Boss": "Bug Trio",
     "Linktext": "Triad Girdle",
-    "Link": "https://classic.wowhead.com/item=21692"
+    "Link": "https://classic.wowhead.com/item=21692",
+    "Restricted": ""
   },
   {
     "Item Name": "Angelista's Touch",
@@ -177,7 +196,8 @@
     "Prio": "",
     "Boss": "Bug Trio",
     "Linktext": "Angelista's Touch",
-    "Link": "https://classic.wowhead.com/item=21695"
+    "Link": "https://classic.wowhead.com/item=21695",
+    "Restricted": ""
   },
   {
     "Item Name": "",
@@ -186,7 +206,8 @@
     "Prio": "",
     "Boss": "",
     "Linktext": "",
-    "Link": ""
+    "Link": "",
+    "Restricted": ""
   },
   {
     "Item Name": "Vest of Swift Execution",
@@ -195,7 +216,8 @@
     "Prio": "",
     "Boss": "Bug Trio",
     "Linktext": "Vest of Swift Execution",
-    "Link": "https://classic.wowhead.com/item=21680"
+    "Link": "https://classic.wowhead.com/item=21680",
+    "Restricted": ""
   },
   {
     "Item Name": "Ring of the Devoured",
@@ -204,7 +226,8 @@
     "Prio": "",
     "Boss": "Bug Trio",
     "Linktext": "Ring of the Devoured",
-    "Link": "https://classic.wowhead.com/item=21681"
+    "Link": "https://classic.wowhead.com/item=21681",
+    "Restricted": ""
   },
   {
     "Item Name": "Petrified Scarab",
@@ -213,7 +236,8 @@
     "Prio": "",
     "Boss": "Bug Trio",
     "Linktext": "Petrified Scarab",
-    "Link": "https://classic.wowhead.com/item=21685"
+    "Link": "https://classic.wowhead.com/item=21685",
+    "Restricted": ""
   },
   {
     "Item Name": "Wand of Qiraji Nobility",
@@ -222,7 +246,8 @@
     "Prio": "",
     "Boss": "Bug Trio",
     "Linktext": "Wand of Qiraji Nobility",
-    "Link": "https://classic.wowhead.com/item=21603"
+    "Link": "https://classic.wowhead.com/item=21603",
+    "Restricted": ""
   },
   {
     "Item Name": "",
@@ -231,7 +256,8 @@
     "Prio": "",
     "Boss": "",
     "Linktext": "",
-    "Link": ""
+    "Link": "",
+    "Restricted": ""
   },
   {
     "Item Name": "Angelista's Charm",
@@ -240,7 +266,8 @@
     "Prio": "",
     "Boss": "Bug Trio",
     "Linktext": "Angelista's Charm",
-    "Link": "https://classic.wowhead.com/item=21690"
+    "Link": "https://classic.wowhead.com/item=21690",
+    "Restricted": ""
   },
   {
     "Item Name": "Gloves of Ebru",
@@ -249,7 +276,8 @@
     "Prio": "",
     "Boss": "Bug Trio",
     "Linktext": "Gloves of Ebru",
-    "Link": "https://classic.wowhead.com/item=21689"
+    "Link": "https://classic.wowhead.com/item=21689",
+    "Restricted": ""
   },
   {
     "Item Name": "Ooze-ridden Gauntlets",
@@ -258,7 +286,8 @@
     "Prio": "",
     "Boss": "Bug Trio",
     "Linktext": "Ooze-ridden Gauntlets",
-    "Link": "https://classic.wowhead.com/item=21691"
+    "Link": "https://classic.wowhead.com/item=21691",
+    "Restricted": ""
   },
   {
     "Item Name": "Boots of the Fallen Hero",
@@ -267,7 +296,8 @@
     "Prio": "",
     "Boss": "Bug Trio",
     "Linktext": "Boots of the Fallen Hero",
-    "Link": "https://classic.wowhead.com/item=21688"
+    "Link": "https://classic.wowhead.com/item=21688",
+    "Restricted": ""
   },
   {
     "Item Name": "",
@@ -276,7 +306,8 @@
     "Prio": "",
     "Boss": "",
     "Linktext": "",
-    "Link": ""
+    "Link": "",
+    "Restricted": ""
   },
   {
     "Item Name": "Mantle of Phrenic Power",
@@ -285,7 +316,8 @@
     "Prio": "",
     "Boss": "Bug Trio",
     "Linktext": "Mantle of Phrenic Power",
-    "Link": "https://classic.wowhead.com/item=21686"
+    "Link": "https://classic.wowhead.com/item=21686",
+    "Restricted": ""
   },
   {
     "Item Name": "Mantle of the Desert's Fury",
@@ -294,7 +326,8 @@
     "Prio": "",
     "Boss": "Bug Trio",
     "Linktext": "Mantle of the Desert's Fury",
-    "Link": "https://classic.wowhead.com/item=21684"
+    "Link": "https://classic.wowhead.com/item=21684",
+    "Restricted": ""
   },
   {
     "Item Name": "Mantle of the Desert Crusade",
@@ -303,7 +336,8 @@
     "Prio": "",
     "Boss": "Bug Trio",
     "Linktext": "Mantle of the Desert Crusade",
-    "Link": "https://classic.wowhead.com/item=21683"
+    "Link": "https://classic.wowhead.com/item=21683",
+    "Restricted": ""
   },
   {
     "Item Name": "Bile-Covered Gauntlets",
@@ -312,7 +346,8 @@
     "Prio": "",
     "Boss": "Bug Trio",
     "Linktext": "Bile-Covered Gauntlets",
-    "Link": "https://classic.wowhead.com/item=21682"
+    "Link": "https://classic.wowhead.com/item=21682",
+    "Restricted": ""
   },
   {
     "Item Name": "Ukko's Ring of Darkness",
@@ -321,7 +356,8 @@
     "Prio": "",
     "Boss": "Bug Trio",
     "Linktext": "Ukko's Ring of Darkness",
-    "Link": "https://classic.wowhead.com/item=21687"
+    "Link": "https://classic.wowhead.com/item=21687",
+    "Restricted": ""
   },
   {
     "Item Name": "",
@@ -330,7 +366,8 @@
     "Prio": "",
     "Boss": "",
     "Linktext": "",
-    "Link": ""
+    "Link": "",
+    "Restricted": ""
   },
   {
     "Item Name": "Creeping Vine Helm",
@@ -339,7 +376,8 @@
     "Prio": "",
     "Boss": "Battleguard Sartura",
     "Linktext": "Creeping Vine Helm",
-    "Link": "https://classic.wowhead.com/item=21669"
+    "Link": "https://classic.wowhead.com/item=21669",
+    "Restricted": ""
   },
   {
     "Item Name": "Necklace of Purity",
@@ -348,7 +386,8 @@
     "Prio": "",
     "Boss": "Battleguard Sartura",
     "Linktext": "Necklace of Purity",
-    "Link": "https://classic.wowhead.com/item=21678"
+    "Link": "https://classic.wowhead.com/item=21678",
+    "Restricted": ""
   },
   {
     "Item Name": "Robes of the Battleguard",
@@ -357,7 +396,8 @@
     "Prio": "",
     "Boss": "Battleguard Sartura",
     "Linktext": "Robes of the Battleguard",
-    "Link": "https://classic.wowhead.com/item=21671"
+    "Link": "https://classic.wowhead.com/item=21671",
+    "Restricted": ""
   },
   {
     "Item Name": "Gloves of Enforcement",
@@ -366,7 +406,8 @@
     "Prio": "",
     "Boss": "Battleguard Sartura",
     "Linktext": "Gloves of Enforcement",
-    "Link": "https://classic.wowhead.com/item=21672"
+    "Link": "https://classic.wowhead.com/item=21672",
+    "Restricted": ""
   },
   {
     "Item Name": "Gauntlets of Steadfast Determination",
@@ -375,7 +416,8 @@
     "Prio": "",
     "Boss": "Battleguard Sartura",
     "Linktext": "Gauntlets of Steadfast Determination",
-    "Link": "https://classic.wowhead.com/item=21674"
+    "Link": "https://classic.wowhead.com/item=21674",
+    "Restricted": ""
   },
   {
     "Item Name": "Thick Qirajihide Belt",
@@ -384,7 +426,8 @@
     "Prio": "",
     "Boss": "Battleguard Sartura",
     "Linktext": "Thick Qirajihide Belt",
-    "Link": "https://classic.wowhead.com/item=21675"
+    "Link": "https://classic.wowhead.com/item=21675",
+    "Restricted": ""
   },
   {
     "Item Name": "Leggings of the Festering Swarm",
@@ -393,7 +436,8 @@
     "Prio": "",
     "Boss": "Battleguard Sartura",
     "Linktext": "Leggings of the Festering Swarm",
-    "Link": "https://classic.wowhead.com/item=21676"
+    "Link": "https://classic.wowhead.com/item=21676",
+    "Restricted": ""
   },
   {
     "Item Name": "Scaled Leggings of Qiraji Fury",
@@ -402,7 +446,8 @@
     "Prio": "",
     "Boss": "Battleguard Sartura",
     "Linktext": "Scaled Leggings of Qiraji Fury",
-    "Link": "https://classic.wowhead.com/item=21668"
+    "Link": "https://classic.wowhead.com/item=21668",
+    "Restricted": ""
   },
   {
     "Item Name": "Legplates of Blazing Light",
@@ -411,7 +456,8 @@
     "Prio": "",
     "Boss": "Battleguard Sartura",
     "Linktext": "Legplates of Blazing Light",
-    "Link": "https://classic.wowhead.com/item=21667"
+    "Link": "https://classic.wowhead.com/item=21667",
+    "Restricted": ""
   },
   {
     "Item Name": "Recomposed Boots",
@@ -420,7 +466,8 @@
     "Prio": "",
     "Boss": "Battleguard Sartura",
     "Linktext": "Recomposed Boots",
-    "Link": "https://classic.wowhead.com/item=21648"
+    "Link": "https://classic.wowhead.com/item=21648",
+    "Restricted": ""
   },
   {
     "Item Name": "Badge of the Swarmguard",
@@ -429,7 +476,8 @@
     "Prio": "",
     "Boss": "Battleguard Sartura",
     "Linktext": "Badge of the Swarmguard",
-    "Link": "https://classic.wowhead.com/item=21670"
+    "Link": "https://classic.wowhead.com/item=21670",
+    "Restricted": ""
   },
   {
     "Item Name": "Sartura's Might",
@@ -438,7 +486,8 @@
     "Prio": "",
     "Boss": "Battleguard Sartura",
     "Linktext": "Sartura's Might",
-    "Link": "https://classic.wowhead.com/item=21666"
+    "Link": "https://classic.wowhead.com/item=21666",
+    "Restricted": ""
   },
   {
     "Item Name": "Silithid Claw",
@@ -447,7 +496,8 @@
     "Prio": "",
     "Boss": "Battleguard Sartura",
     "Linktext": "Silithid Claw",
-    "Link": "https://classic.wowhead.com/item=21673"
+    "Link": "https://classic.wowhead.com/item=21673",
+    "Restricted": "True"
   },
   {
     "Item Name": "",
@@ -456,7 +506,8 @@
     "Prio": "",
     "Boss": "",
     "Linktext": "",
-    "Link": ""
+    "Link": "",
+    "Restricted": ""
   },
   {
     "Item Name": "Mantle of Wicked Revenge",
@@ -465,7 +516,8 @@
     "Prio": "",
     "Boss": "Fankriss the Unyielding",
     "Linktext": "Mantle of Wicked Revenge",
-    "Link": "https://classic.wowhead.com/item=21665"
+    "Link": "https://classic.wowhead.com/item=21665",
+    "Restricted": ""
   },
   {
     "Item Name": "Pauldrons of the Unrelenting",
@@ -474,7 +526,8 @@
     "Prio": "",
     "Boss": "Fankriss the Unyielding",
     "Linktext": "Pauldrons of the Unrelenting",
-    "Link": "https://classic.wowhead.com/item=21639"
+    "Link": "https://classic.wowhead.com/item=21639",
+    "Restricted": ""
   },
   {
     "Item Name": "Cloak of Untold Secrets",
@@ -483,7 +536,8 @@
     "Prio": "",
     "Boss": "Fankriss the Unyielding",
     "Linktext": "Cloak of Untold Secrets",
-    "Link": "https://classic.wowhead.com/item=21627"
+    "Link": "https://classic.wowhead.com/item=21627",
+    "Restricted": ""
   },
   {
     "Item Name": "Robes of the Guardian Saint",
@@ -492,7 +546,8 @@
     "Prio": "",
     "Boss": "Fankriss the Unyielding",
     "Linktext": "Robes of the Guardian Saint",
-    "Link": "https://classic.wowhead.com/item=21663"
+    "Link": "https://classic.wowhead.com/item=21663",
+    "Restricted": ""
   },
   {
     "Item Name": "Silithid Carapace Chestguard",
@@ -501,7 +556,8 @@
     "Prio": "",
     "Boss": "Fankriss the Unyielding",
     "Linktext": "Silithid Carapace Chestguard",
-    "Link": "https://classic.wowhead.com/item=21652"
+    "Link": "https://classic.wowhead.com/item=21652",
+    "Restricted": ""
   },
   {
     "Item Name": "Scaled Sand Reaver Leggings",
@@ -510,7 +566,8 @@
     "Prio": "",
     "Boss": "Fankriss the Unyielding",
     "Linktext": "Scaled Sand Reaver Leggings",
-    "Link": "https://classic.wowhead.com/item=21651"
+    "Link": "https://classic.wowhead.com/item=21651",
+    "Restricted": ""
   },
   {
     "Item Name": "Hive Tunneler's Boots",
@@ -519,7 +576,8 @@
     "Prio": "",
     "Boss": "Fankriss the Unyielding",
     "Linktext": "Hive Tunneler's Boots",
-    "Link": "https://classic.wowhead.com/item=21645"
+    "Link": "https://classic.wowhead.com/item=21645",
+    "Restricted": ""
   },
   {
     "Item Name": "Ancient Qiraji Ripper",
@@ -528,7 +586,8 @@
     "Prio": "",
     "Boss": "Fankriss the Unyielding",
     "Linktext": "Ancient Qiraji Ripper",
-    "Link": "https://classic.wowhead.com/item=21650"
+    "Link": "https://classic.wowhead.com/item=21650",
+    "Restricted": "True"
   },
   {
     "Item Name": "Barb of the Sand Reaver",
@@ -537,7 +596,8 @@
     "Prio": "",
     "Boss": "Fankriss the Unyielding",
     "Linktext": "Barb of the Sand Reaver",
-    "Link": "https://classic.wowhead.com/item=21635"
+    "Link": "https://classic.wowhead.com/item=21635",
+    "Restricted": "True"
   },
   {
     "Item Name": "Barbed Choker",
@@ -546,7 +606,8 @@
     "Prio": "",
     "Boss": "Fankriss the Unyielding",
     "Linktext": "Barbed Choker",
-    "Link": "https://classic.wowhead.com/item=21664"
+    "Link": "https://classic.wowhead.com/item=21664",
+    "Restricted": ""
   },
   {
     "Item Name": "Fetish of the Sand Reaver",
@@ -555,7 +616,8 @@
     "Prio": "",
     "Boss": "Fankriss the Unyielding",
     "Linktext": "Fetish of the Sand Reaver",
-    "Link": "https://classic.wowhead.com/item=21647"
+    "Link": "https://classic.wowhead.com/item=21647",
+    "Restricted": ""
   },
   {
     "Item Name": "Libram of Grace",
@@ -564,7 +626,8 @@
     "Prio": "",
     "Boss": "Fankriss the Unyielding",
     "Linktext": "Libram of Grace",
-    "Link": "https://classic.wowhead.com/item=22402"
+    "Link": "https://classic.wowhead.com/item=22402",
+    "Restricted": ""
   },
   {
     "Item Name": "Totem of Life",
@@ -573,7 +636,8 @@
     "Prio": "",
     "Boss": "Fankriss the Unyielding",
     "Linktext": "Totem of Life",
-    "Link": "https://classic.wowhead.com/item=22396"
+    "Link": "https://classic.wowhead.com/item=22396",
+    "Restricted": ""
   },
   {
     "Item Name": "",
@@ -582,7 +646,8 @@
     "Prio": "",
     "Boss": "",
     "Linktext": "",
-    "Link": ""
+    "Link": "",
+    "Restricted": ""
   },
   {
     "Item Name": "Gauntlets of Kalimdor",
@@ -591,7 +656,8 @@
     "Prio": "",
     "Boss": "Viscidus",
     "Linktext": "Gauntlets of Kalimdor",
-    "Link": "https://classic.wowhead.com/item=21624"
+    "Link": "https://classic.wowhead.com/item=21624",
+    "Restricted": ""
   },
   {
     "Item Name": "Gauntlets of the Righteous Champion",
@@ -600,7 +666,8 @@
     "Prio": "",
     "Boss": "Viscidus",
     "Linktext": "Gauntlets of the Righteous Champion",
-    "Link": "https://classic.wowhead.com/item=21623"
+    "Link": "https://classic.wowhead.com/item=21623",
+    "Restricted": ""
   },
   {
     "Item Name": "Slime-coated Leggings",
@@ -609,7 +676,8 @@
     "Prio": "",
     "Boss": "Viscidus",
     "Linktext": "Slime-coated Leggings",
-    "Link": "https://classic.wowhead.com/item=21626"
+    "Link": "https://classic.wowhead.com/item=21626",
+    "Restricted": ""
   },
   {
     "Item Name": "Sharpened Silithid Femur",
@@ -618,7 +686,8 @@
     "Prio": "",
     "Boss": "Viscidus",
     "Linktext": "Sharpened Silithid Femur",
-    "Link": "https://classic.wowhead.com/item=21622"
+    "Link": "https://classic.wowhead.com/item=21622",
+    "Restricted": "True"
   },
   {
     "Item Name": "Ring of the Qiraji Fury",
@@ -627,7 +696,8 @@
     "Prio": "",
     "Boss": "Viscidus",
     "Linktext": "Ring of the Qiraji Fury",
-    "Link": "https://classic.wowhead.com/item=21677"
+    "Link": "https://classic.wowhead.com/item=21677",
+    "Restricted": ""
   },
   {
     "Item Name": "Scarab Brooch",
@@ -636,7 +706,8 @@
     "Prio": "",
     "Boss": "Viscidus",
     "Linktext": "Scarab Brooch",
-    "Link": "https://classic.wowhead.com/item=21625"
+    "Link": "https://classic.wowhead.com/item=21625",
+    "Restricted": ""
   },
   {
     "Item Name": "Idol of Health",
@@ -645,7 +716,8 @@
     "Prio": "",
     "Boss": "Viscidus",
     "Linktext": "Idol of Health",
-    "Link": "https://classic.wowhead.com/item=22399"
+    "Link": "https://classic.wowhead.com/item=22399",
+    "Restricted": ""
   },
   {
     "Item Name": "",
@@ -654,7 +726,8 @@
     "Prio": "",
     "Boss": "",
     "Linktext": "",
-    "Link": ""
+    "Link": "",
+    "Restricted": ""
   },
   {
     "Item Name": "Cloak of the Golden Hive",
@@ -663,7 +736,8 @@
     "Prio": "",
     "Boss": "Princess Huhuran",
     "Linktext": "Cloak of the Golden Hive",
-    "Link": "https://classic.wowhead.com/item=21621"
+    "Link": "https://classic.wowhead.com/item=21621",
+    "Restricted": ""
   },
   {
     "Item Name": "Hive Defiler Wristguards",
@@ -672,7 +746,8 @@
     "Prio": "",
     "Boss": "Princess Huhuran",
     "Linktext": "Hive Defiler Wristguards",
-    "Link": "https://classic.wowhead.com/item=21618"
+    "Link": "https://classic.wowhead.com/item=21618",
+    "Restricted": ""
   },
   {
     "Item Name": "Gloves of the Messiah",
@@ -681,7 +756,8 @@
     "Prio": "",
     "Boss": "Princess Huhuran",
     "Linktext": "Gloves of the Messiah",
-    "Link": "https://classic.wowhead.com/item=21619"
+    "Link": "https://classic.wowhead.com/item=21619",
+    "Restricted": ""
   },
   {
     "Item Name": "Wasphide Gauntlets",
@@ -690,7 +766,8 @@
     "Prio": "",
     "Boss": "Princess Huhuran",
     "Linktext": "Wasphide Gauntlets",
-    "Link": "https://classic.wowhead.com/item=21617"
+    "Link": "https://classic.wowhead.com/item=21617",
+    "Restricted": ""
   },
   {
     "Item Name": "Ring of the Martyr",
@@ -699,7 +776,8 @@
     "Prio": "",
     "Boss": "Princess Huhuran",
     "Linktext": "Ring of the Martyr",
-    "Link": "https://classic.wowhead.com/item=21620"
+    "Link": "https://classic.wowhead.com/item=21620",
+    "Restricted": ""
   },
   {
     "Item Name": "Huhuran's Stinger",
@@ -708,7 +786,8 @@
     "Prio": "",
     "Boss": "Princess Huhuran",
     "Linktext": "Huhuran's Stinger",
-    "Link": "https://classic.wowhead.com/item=21616"
+    "Link": "https://classic.wowhead.com/item=21616",
+    "Restricted": ""
   },
   {
     "Item Name": "",
@@ -717,7 +796,8 @@
     "Prio": "",
     "Boss": "",
     "Linktext": "",
-    "Link": ""
+    "Link": "",
+    "Restricted": ""
   },
   {
     "Item Name": "Vek'lor's Diadem",
@@ -726,7 +806,8 @@
     "Prio": "",
     "Boss": "Twin Emperors",
     "Linktext": "Vek'lor's Diadem",
-    "Link": "https://classic.wowhead.com/item=20930"
+    "Link": "https://classic.wowhead.com/item=20930",
+    "Restricted": ""
   },
   {
     "Item Name": "Qiraji Execution Bracers",
@@ -735,7 +816,8 @@
     "Prio": "",
     "Boss": "Twin Emperors",
     "Linktext": "Qiraji Execution Bracers",
-    "Link": "https://classic.wowhead.com/item=21602"
+    "Link": "https://classic.wowhead.com/item=21602",
+    "Restricted": ""
   },
   {
     "Item Name": "Vek'lor's Gloves of Devastation",
@@ -744,7 +826,8 @@
     "Prio": "",
     "Boss": "Twin Emperors",
     "Linktext": "Vek'lor's Gloves of Devastation",
-    "Link": "https://classic.wowhead.com/item=21599"
+    "Link": "https://classic.wowhead.com/item=21599",
+    "Restricted": ""
   },
   {
     "Item Name": "Royal Qiraji Belt",
@@ -753,7 +836,8 @@
     "Prio": "",
     "Boss": "Twin Emperors",
     "Linktext": "Royal Qiraji Belt",
-    "Link": "https://classic.wowhead.com/item=21598"
+    "Link": "https://classic.wowhead.com/item=21598",
+    "Restricted": ""
   },
   {
     "Item Name": "Boots of Epiphany",
@@ -762,7 +846,8 @@
     "Prio": "",
     "Boss": "Twin Emperors",
     "Linktext": "Boots of Epiphany",
-    "Link": "https://classic.wowhead.com/item=21600"
+    "Link": "https://classic.wowhead.com/item=21600",
+    "Restricted": ""
   },
   {
     "Item Name": "Ring of Emperor Vek'lor",
@@ -771,7 +856,8 @@
     "Prio": "",
     "Boss": "Twin Emperors",
     "Linktext": "Ring of Emperor Vek'lor",
-    "Link": "https://classic.wowhead.com/item=21601"
+    "Link": "https://classic.wowhead.com/item=21601",
+    "Restricted": ""
   },
   {
     "Item Name": "Royal Scepter of Vek'lor",
@@ -780,7 +866,8 @@
     "Prio": "",
     "Boss": "Twin Emperors",
     "Linktext": "Royal Scepter of Vek'lor",
-    "Link": "https://classic.wowhead.com/item=21597"
+    "Link": "https://classic.wowhead.com/item=21597",
+    "Restricted": ""
   },
   {
     "Item Name": "",
@@ -789,7 +876,8 @@
     "Prio": "",
     "Boss": "",
     "Linktext": "",
-    "Link": ""
+    "Link": "",
+    "Restricted": ""
   },
   {
     "Item Name": "Vek'nilash's Circlet",
@@ -798,7 +886,8 @@
     "Prio": "",
     "Boss": "Twin Emperors",
     "Linktext": "Vek'nilash's Circlet",
-    "Link": "https://classic.wowhead.com/item=20926"
+    "Link": "https://classic.wowhead.com/item=20926",
+    "Restricted": ""
   },
   {
     "Item Name": "Amulet of Vek'nilash",
@@ -807,7 +896,8 @@
     "Prio": "",
     "Boss": "Twin Emperors",
     "Linktext": "Amulet of Vek'nilash",
-    "Link": "https://classic.wowhead.com/item=21608"
+    "Link": "https://classic.wowhead.com/item=21608",
+    "Restricted": ""
   },
   {
     "Item Name": "Bracelets of Royal Redemption",
@@ -816,7 +906,8 @@
     "Prio": "",
     "Boss": "Twin Emperors",
     "Linktext": "Bracelets of Royal Redemption",
-    "Link": "https://classic.wowhead.com/item=21604"
+    "Link": "https://classic.wowhead.com/item=21604",
+    "Restricted": ""
   },
   {
     "Item Name": "Gloves of the Hidden Temple",
@@ -825,7 +916,8 @@
     "Prio": "",
     "Boss": "Twin Emperors",
     "Linktext": "Gloves of the Hidden Temple",
-    "Link": "https://classic.wowhead.com/item=21605"
+    "Link": "https://classic.wowhead.com/item=21605",
+    "Restricted": ""
   },
   {
     "Item Name": "Regenerating Belt of Vek'nilash",
@@ -834,7 +926,8 @@
     "Prio": "",
     "Boss": "Twin Emperors",
     "Linktext": "Regenerating Belt of Vek'nilash",
-    "Link": "https://classic.wowhead.com/item=21609"
+    "Link": "https://classic.wowhead.com/item=21609",
+    "Restricted": ""
   },
   {
     "Item Name": "Grasp of the Fallen Emperor",
@@ -843,7 +936,8 @@
     "Prio": "",
     "Boss": "Twin Emperors",
     "Linktext": "Grasp of the Fallen Emperor",
-    "Link": "https://classic.wowhead.com/item=21607"
+    "Link": "https://classic.wowhead.com/item=21607",
+    "Restricted": ""
   },
   {
     "Item Name": "Belt of the Fallen Emperor",
@@ -852,7 +946,8 @@
     "Prio": "",
     "Boss": "Twin Emperors",
     "Linktext": "Belt of the Fallen Emperor",
-    "Link": "https://classic.wowhead.com/item=21606"
+    "Link": "https://classic.wowhead.com/item=21606",
+    "Restricted": ""
   },
   {
     "Item Name": "Kalimdor's Revenge",
@@ -861,7 +956,8 @@
     "Prio": "",
     "Boss": "Twin Emperors",
     "Linktext": "Kalimdor's Revenge",
-    "Link": "https://classic.wowhead.com/item=21679"
+    "Link": "https://classic.wowhead.com/item=21679",
+    "Restricted": "True"
   },
   {
     "Item Name": "",
@@ -870,7 +966,8 @@
     "Prio": "",
     "Boss": "",
     "Linktext": "",
-    "Link": ""
+    "Link": "",
+    "Restricted": ""
   },
   {
     "Item Name": "Don Rigoberto's Lost Hat",
@@ -879,7 +976,8 @@
     "Prio": "",
     "Boss": "Ouro",
     "Linktext": "Don Rigoberto's Lost Hat",
-    "Link": "https://classic.wowhead.com/item=21615"
+    "Link": "https://classic.wowhead.com/item=21615",
+    "Restricted": ""
   },
   {
     "Item Name": "Burrower Bracers",
@@ -888,7 +986,8 @@
     "Prio": "",
     "Boss": "Ouro",
     "Linktext": "Burrower Bracers",
-    "Link": "https://classic.wowhead.com/item=21611"
+    "Link": "https://classic.wowhead.com/item=21611",
+    "Restricted": ""
   },
   {
     "Item Name": "The Burrower's Shell",
@@ -897,7 +996,8 @@
     "Prio": "",
     "Boss": "Ouro",
     "Linktext": "The Burrower's Shell",
-    "Link": "https://classic.wowhead.com/item=23558"
+    "Link": "https://classic.wowhead.com/item=23558",
+    "Restricted": ""
   },
   {
     "Item Name": "Jom Gabbar",
@@ -906,7 +1006,8 @@
     "Prio": "",
     "Boss": "Ouro",
     "Linktext": "Jom Gabbar",
-    "Link": "https://classic.wowhead.com/item=23570"
+    "Link": "https://classic.wowhead.com/item=23570",
+    "Restricted": ""
   },
   {
     "Item Name": "Wormscale Blocker",
@@ -915,7 +1016,8 @@
     "Prio": "",
     "Boss": "Ouro",
     "Linktext": "Wormscale Blocker",
-    "Link": "https://classic.wowhead.com/item=21610"
+    "Link": "https://classic.wowhead.com/item=21610",
+    "Restricted": ""
   },
   {
     "Item Name": "Larvae of the Great Worm",
@@ -924,7 +1026,8 @@
     "Prio": "",
     "Boss": "Ouro",
     "Linktext": "Larvae of the Great Worm",
-    "Link": "https://classic.wowhead.com/item=23557"
+    "Link": "https://classic.wowhead.com/item=23557",
+    "Restricted": ""
   },
   {
     "Item Name": "",
@@ -933,7 +1036,8 @@
     "Prio": "",
     "Boss": "",
     "Linktext": "",
-    "Link": ""
+    "Link": "",
+    "Restricted": ""
   },
   {
     "Item Name": "Ouro's Intact Hide",
@@ -942,7 +1046,8 @@
     "Prio": "",
     "Boss": "Ouro",
     "Linktext": "Ouro's Intact Hide",
-    "Link": "https://classic.wowhead.com/item=20927"
+    "Link": "https://classic.wowhead.com/item=20927",
+    "Restricted": ""
   },
   {
     "Item Name": "Skin of the Great Sandworm",
@@ -951,7 +1056,8 @@
     "Prio": "",
     "Boss": "Ouro",
     "Linktext": "Skin of the Great Sandworm",
-    "Link": "https://classic.wowhead.com/item=20931"
+    "Link": "https://classic.wowhead.com/item=20931",
+    "Restricted": ""
   },
   {
     "Item Name": "",
@@ -960,7 +1066,8 @@
     "Prio": "",
     "Boss": "",
     "Linktext": "",
-    "Link": ""
+    "Link": "",
+    "Restricted": ""
   },
   {
     "Item Name": "Mark of C'Thun",
@@ -969,7 +1076,8 @@
     "Prio": "",
     "Boss": "C'Thun",
     "Linktext": "Mark of C'Thun",
-    "Link": "https://classic.wowhead.com/item=22732"
+    "Link": "https://classic.wowhead.com/item=22732",
+    "Restricted": ""
   },
   {
     "Item Name": "Cloak of Clarity",
@@ -978,7 +1086,8 @@
     "Prio": "",
     "Boss": "C'Thun",
     "Linktext": "Cloak of Clarity",
-    "Link": "https://classic.wowhead.com/item=21583"
+    "Link": "https://classic.wowhead.com/item=21583",
+    "Restricted": ""
   },
   {
     "Item Name": "Cloak of the Devoured",
@@ -987,7 +1096,8 @@
     "Prio": "",
     "Boss": "C'Thun",
     "Linktext": "Cloak of the Devoured",
-    "Link": "https://classic.wowhead.com/item=22731"
+    "Link": "https://classic.wowhead.com/item=22731",
+    "Restricted": ""
   },
   {
     "Item Name": "Eyestalk Waist Cord",
@@ -996,7 +1106,8 @@
     "Prio": "",
     "Boss": "C'Thun",
     "Linktext": "Eyestalk Waist Cord",
-    "Link": "https://classic.wowhead.com/item=22730"
+    "Link": "https://classic.wowhead.com/item=22730",
+    "Restricted": ""
   },
   {
     "Item Name": "Grasp of the Old God",
@@ -1005,7 +1116,8 @@
     "Prio": "",
     "Boss": "C'Thun",
     "Linktext": "Grasp of the Old God",
-    "Link": "https://classic.wowhead.com/item=21582"
+    "Link": "https://classic.wowhead.com/item=21582",
+    "Restricted": ""
   },
   {
     "Item Name": "Belt of Never-ending Agony",
@@ -1014,7 +1126,8 @@
     "Prio": "",
     "Boss": "C'Thun",
     "Linktext": "Belt of Never-ending Agony",
-    "Link": "https://classic.wowhead.com/item=21586"
+    "Link": "https://classic.wowhead.com/item=21586",
+    "Restricted": ""
   },
   {
     "Item Name": "Dark Storm Gauntlets",
@@ -1023,7 +1136,8 @@
     "Prio": "",
     "Boss": "C'Thun",
     "Linktext": "Dark Storm Gauntlets",
-    "Link": "https://classic.wowhead.com/item=21585"
+    "Link": "https://classic.wowhead.com/item=21585",
+    "Restricted": ""
   },
   {
     "Item Name": "Gauntlets of Annihilation",
@@ -1032,7 +1146,8 @@
     "Prio": "",
     "Boss": "C'Thun",
     "Linktext": "Gauntlets of Annihilation",
-    "Link": "https://classic.wowhead.com/item=21581"
+    "Link": "https://classic.wowhead.com/item=21581",
+    "Restricted": ""
   },
   {
     "Item Name": "Ring of the Godslayer",
@@ -1041,7 +1156,8 @@
     "Prio": "",
     "Boss": "C'Thun",
     "Linktext": "Ring of the Godslayer",
-    "Link": "https://classic.wowhead.com/item=21596"
+    "Link": "https://classic.wowhead.com/item=21596",
+    "Restricted": ""
   },
   {
     "Item Name": "Vanquished Tentacle of C'Thun",
@@ -1050,7 +1166,8 @@
     "Prio": "",
     "Boss": "C'Thun",
     "Linktext": "Vanquished Tentacle of C'Thun",
-    "Link": "https://classic.wowhead.com/item=21579"
+    "Link": "https://classic.wowhead.com/item=21579",
+    "Restricted": ""
   },
   {
     "Item Name": "Scepter of the False Prophet",
@@ -1059,7 +1176,8 @@
     "Prio": "",
     "Boss": "C'Thun",
     "Linktext": "Scepter of the False Prophet",
-    "Link": "https://classic.wowhead.com/item=21839"
+    "Link": "https://classic.wowhead.com/item=21839",
+    "Restricted": "True"
   },
   {
     "Item Name": "Death's Sting",
@@ -1068,7 +1186,8 @@
     "Prio": "",
     "Boss": "C'Thun",
     "Linktext": "Death's Sting",
-    "Link": "https://classic.wowhead.com/item=21126"
+    "Link": "https://classic.wowhead.com/item=21126",
+    "Restricted": "True"
   },
   {
     "Item Name": "Dark Edge of Insanity",
@@ -1077,7 +1196,8 @@
     "Prio": "",
     "Boss": "C'Thun",
     "Linktext": "Dark Edge of Insanity",
-    "Link": "https://classic.wowhead.com/item=21134"
+    "Link": "https://classic.wowhead.com/item=21134",
+    "Restricted": "True"
   },
   {
     "Item Name": "Carapace of the Old God",
@@ -1086,7 +1206,8 @@
     "Prio": "",
     "Boss": "C'Thun",
     "Linktext": "Carapace of the Old God",
-    "Link": "https://classic.wowhead.com/item=20929"
+    "Link": "https://classic.wowhead.com/item=20929",
+    "Restricted": ""
   },
   {
     "Item Name": "Husk of the Old God",
@@ -1095,7 +1216,8 @@
     "Prio": "",
     "Boss": "C'Thun",
     "Linktext": "Husk of the Old God",
-    "Link": "https://classic.wowhead.com/item=20933"
+    "Link": "https://classic.wowhead.com/item=20933",
+    "Restricted": ""
   },
   {
     "Item Name": "Eye of C'Thun",
@@ -1104,7 +1226,8 @@
     "Prio": "",
     "Boss": "C'Thun",
     "Linktext": "Eye of C'Thun",
-    "Link": "https://classic.wowhead.com/item=21221"
+    "Link": "https://classic.wowhead.com/item=21221",
+    "Restricted": ""
   },
   {
     "Item Name": "",
@@ -1113,7 +1236,8 @@
     "Prio": "",
     "Boss": "",
     "Linktext": "",
-    "Link": ""
+    "Link": "",
+    "Restricted": ""
   },
   {
     "Item Name": "Garb of Royal Ascension",
@@ -1122,7 +1246,8 @@
     "Prio": "",
     "Boss": "Trash",
     "Linktext": "Garb of Royal Ascension",
-    "Link": "https://classic.wowhead.com/item=21838"
+    "Link": "https://classic.wowhead.com/item=21838",
+    "Restricted": ""
   },
   {
     "Item Name": "Gloves of the Immortal",
@@ -1131,7 +1256,8 @@
     "Prio": "",
     "Boss": "Trash",
     "Linktext": "Gloves of the Immortal",
-    "Link": "https://classic.wowhead.com/item=21888"
+    "Link": "https://classic.wowhead.com/item=21888",
+    "Restricted": ""
   },
   {
     "Item Name": "Gloves of the Redeemed Prophecy",
@@ -1140,7 +1266,8 @@
     "Prio": "",
     "Boss": "Trash",
     "Linktext": "Gloves of the Redeemed Prophecy",
-    "Link": "https://classic.wowhead.com/item=21889"
+    "Link": "https://classic.wowhead.com/item=21889",
+    "Restricted": ""
   },
   {
     "Item Name": "Neretzek, The Blood Drinker",
@@ -1149,7 +1276,8 @@
     "Prio": "",
     "Boss": "Trash",
     "Linktext": "Neretzek",
-    "Link": "https://classic.wowhead.com/item=21856"
+    "Link": "https://classic.wowhead.com/item=21856",
+    "Restricted": "True"
   },
   {
     "Item Name": "Anubisath Warhammer",
@@ -1158,7 +1286,8 @@
     "Prio": "",
     "Boss": "Trash",
     "Linktext": "Anubisath Warhammer",
-    "Link": "https://classic.wowhead.com/item=21837"
+    "Link": "https://classic.wowhead.com/item=21837",
+    "Restricted": "True"
   },
   {
     "Item Name": "Ritssyn's Ring of Chaos",
@@ -1167,7 +1296,8 @@
     "Prio": "",
     "Boss": "Trash",
     "Linktext": "Ritssyn's Ring of Chaos",
-    "Link": "https://classic.wowhead.com/item=21836"
+    "Link": "https://classic.wowhead.com/item=21836",
+    "Restricted": ""
   },
   {
     "Item Name": "Shard of the Fallen Star",
@@ -1176,7 +1306,8 @@
     "Prio": "",
     "Boss": "Trash",
     "Linktext": "Shard of the Fallen Star",
-    "Link": "https://classic.wowhead.com/item=21891"
+    "Link": "https://classic.wowhead.com/item=21891",
+    "Restricted": ""
   },
   {
     "Item Name": "",
@@ -1185,7 +1316,8 @@
     "Prio": "",
     "Boss": "",
     "Linktext": "",
-    "Link": ""
+    "Link": "",
+    "Restricted": ""
   },
   {
     "Item Name": "Qiraji Bindings of Command",
@@ -1194,7 +1326,8 @@
     "Prio": "",
     "Boss": "Princess Huhuran, Viscidus",
     "Linktext": "Qiraji Bindings of Command",
-    "Link": "https://classic.wowhead.com/item=20928"
+    "Link": "https://classic.wowhead.com/item=20928",
+    "Restricted": ""
   },
   {
     "Item Name": "Qiraji Bindings of Dominance",
@@ -1203,7 +1336,8 @@
     "Prio": "",
     "Boss": "Princess Huhuran, Viscidus",
     "Linktext": "Qiraji Bindings of Dominance",
-    "Link": "https://classic.wowhead.com/item=20932"
+    "Link": "https://classic.wowhead.com/item=20932",
+    "Restricted": ""
   },
   {
     "Item Name": "",
@@ -1212,7 +1346,8 @@
     "Prio": "",
     "Boss": "",
     "Linktext": "",
-    "Link": ""
+    "Link": "",
+    "Restricted": ""
   },
   {
     "Item Name": "Imperial Qiraji Regalia",
@@ -1221,7 +1356,8 @@
     "Prio": "",
     "Boss": "Princess Huhuran, Battleguard Sartura, Ouro, Twin Emperors, Bug Trio, The Prophet Skeram, Fankriss the Unyielding, Viscidus",
     "Linktext": "Imperial Qiraji Regalia",
-    "Link": "https://classic.wowhead.com/item=21237"
+    "Link": "https://classic.wowhead.com/item=21237",
+    "Restricted": "True"
   },
   {
     "Item Name": "Imperial Qiraji Armaments",
@@ -1230,6 +1366,7 @@
     "Prio": "",
     "Boss": "Princess Huhuran, Battleguard Sartura, Ouro, Twin Emperors, Bug Trio, The Prophet Skeram, Fankriss the Unyielding, Viscidus",
     "Linktext": "Imperial Qiraji Armaments",
-    "Link": "https://classic.wowhead.com/item=21232"
+    "Link": "https://classic.wowhead.com/item=21232",
+    "Restricted": "True"
   }
 ]

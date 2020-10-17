@@ -10,6 +10,7 @@ export type PlayerName = string;
 export interface Item {
     name: string;
     id: number;
+    restricted: boolean;
 }
 
 export interface PlayerItemEntry {

@@ -3,16 +3,15 @@ import { itemScores } from "../constants";
 import { Class, GuildRank, Player } from "../types";
 import { getSheet } from "./sheets";
 
+type Loot = {
+    character: string,
+    item: string,
+    bonusCharacters: string[],
+};
+
 export interface Raid {
     date: string,
-    loot: {
-        character: string,
-        item: string,
-    }[],
-    itemBonus: {
-        character: string,
-        item: string
-    }[],
+    loot: Loot[],
 }
 let raids: Raid[];
 
@@ -57,15 +56,17 @@ export const fetchData = () =>
                         const [date, character, item] = row;
                         const bonusPlayers = row.slice(3).filter(val => !!val.length);
                         if (date && date.length && character && character.length && item && item.length) {
-                            if (!raidsRaw[date]) raidsRaw[date] = { date, loot: [], itemBonus: [] };
+                            if (!raidsRaw[date]) raidsRaw[date] = { date, loot: [] };
     
-                            raidsRaw[date].loot.push({ character, item });
+                            const loot: Loot = {
+                                character,
+                                item,
+                                bonusCharacters: [],
+                            };
                             for (const y in bonusPlayers) {
-                                raidsRaw[date].itemBonus.push({
-                                    item,
-                                    character: bonusPlayers[y],
-                                });
+                                loot.bonusCharacters.push(bonusPlayers[y]);
                             }
+                            raidsRaw[date].loot.push(loot);
                         }
                     });
 

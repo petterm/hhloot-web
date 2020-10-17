@@ -1,0 +1,50 @@
+.wrap {
+    text-decoration: none;
+    color: #a335ee;
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.wrap:visited {
+    color: #a335ee;
+}
+
+.icon--tiny,
+.icon--small,
+.icon--medium,
+.icon--large {
+    margin-right: 4px;
+    display: inline-block;
+    border: 1px solid black;
+    flex-shrink: 0;
+}
+
+.icon--tiny {
+    width: 15px;
+    height: 15px;
+}
+
+.icon--small {
+    width: 18px;
+    height: 18px;
+}
+
+.icon--medium {
+    width: 36px;
+    height: 36px;
+}
+
+.icon--large {
+    width: 56px;
+    height: 56px;
+}
+
+.icon--restricted {
+    border-color: rgb(133, 35, 0);
+}
