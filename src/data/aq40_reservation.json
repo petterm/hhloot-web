@@ -606,14 +606,14 @@
     "character": "Päänmurskain",
     "100_score": "Eye of C'Thun",
     "90_score": "Jom Gabbar",
-    "80_score": "Ancient Qiraji Ripper",
-    "70_score": "Hive Defiler Wristguards",
-    "65_score": "Gauntlets of Annihilation",
-    "60_score": "Carapace of the Old God",
-    "55_score": "Larvae of the Great Worm",
-    "54_score": "Breastplate of Annihilation",
+    "80_score": "Gauntlets of Annihilation",
+    "70_score": "Carapace of the Old God",
+    "65_score": "Hive Defiler Wristguards",
+    "60_score": "Ancient Qiraji Ripper",
+    "55_score": "Barbed Choker",
+    "54_score": "Larvae of the Great Worm",
     "53_score": "Qiraji Bindings of Command",
-    "52_score": "Barbed Choker"
+    "52_score": ""    
   },
   {
     "date": "2020-10-20 07.50.17",
@@ -682,6 +682,8 @@
     "60_score": "Death's Sting",
     "55_score": "Cloak of Concentrated Hatred",
     "54_score": "Qiraji Execution Bracers",
+    "53_score": "",
+    "52_score": ""
   },
   {
     "date": "2020-10-23 22.34.48",
