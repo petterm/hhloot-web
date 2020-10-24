@@ -1,0 +1,20 @@
+.wrap {
+    width: 300px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.boss {
+
+}
+
+.boss h3 {
+    font-size: 16px;
+    margin: 10px 0 5px 0;
+}
+
+.boss:first-child h3 {
+    margin-top: 0px;
+}

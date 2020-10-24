@@ -47,7 +47,7 @@ const parseLootTable = (): void => {
     }
 };
 
-const createEntry = (score: ItemScore, itemName: string): PlayerItemEntry => {
+const createEntry = (score: ItemScore, itemName?: string): PlayerItemEntry => {
     const playerEntry: PlayerItemEntry = {
         itemBonusEvents: [],
         score: score,

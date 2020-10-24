@@ -6,6 +6,7 @@ import { getBosses, prepareData } from './api';
 import PlayerDetails from './components/PlayerDetails';
 import BossList from './components/BossList';
 import { fetchData, getPlayers } from './api/async';
+import { Reservations } from './components/reservation/Reservations';
 
 type AppState = {
     fetching: boolean,
@@ -46,6 +47,9 @@ function App() {
                             </Route>
                             <Route path="/players/:playerName">
                                 <PlayerDetails />
+                            </Route>
+                            <Route path="/reservations">
+                                <Reservations />
                             </Route>
                         </Switch>
                     </>
