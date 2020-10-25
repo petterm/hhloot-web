@@ -1,43 +1,31 @@
-import React, { useCallback } from 'react';
-import { DragDropContext } from 'react-beautiful-dnd';
-import { LootOptionsList } from './LootOptionsList';
-import { ReservationList } from './ReservationList';
+import React from 'react';
+import { DndProvider, DragObjectWithType } from 'react-dnd';
+import { HTML5Backend } from 'react-dnd-html5-backend';
+import { Item, ItemScore } from '../../types';
+import LootOptionsList from './LootOptionsList';
+import ReservationList from './ReservationList';
 import style from './Reservations.module.css';
 
-export const Reservations: React.FunctionComponent = () => {
-    // using useCallback is optional
-    const onBeforeCapture = useCallback(() => {
-        /*...*/
-    }, []);
-    const onBeforeDragStart = useCallback(() => {
-        /*...*/
-    }, []);
-    const onDragStart = useCallback(() => {
-        /*...*/
-    }, []);
-    const onDragUpdate = useCallback(() => {
-        /*...*/
-    }, []);
-    const onDragEnd = useCallback(() => {
-        // the only one that is required
-    }, []);
+const Reservations: React.FunctionComponent = () => {
 
     return (
-        <DragDropContext
-            onBeforeCapture={onBeforeCapture}
-            onBeforeDragStart={onBeforeDragStart}
-            onDragStart={onDragStart}
-            onDragUpdate={onDragUpdate}
-            onDragEnd={onDragEnd}
-        >
-            <div className={style.wrap}>
-                <div className={style.lootList}>
-                    <LootOptionsList />
-                </div>
-                <div className={style.reservationList}>
-                    <ReservationList />
-                </div>
-            </div>
-        </DragDropContext>
+        <div className={style.wrap}>
+            <DndProvider backend={HTML5Backend}>
+                <LootOptionsList />
+                <ReservationList />
+            </DndProvider>
+        </div>
     )
 };
+
+export interface DragItem extends DragObjectWithType{
+    item: Item,
+    sourceScore?: ItemScore,
+}
+
+export interface DropResult {
+    name: string,
+    type: 'SLOT' | 'TRASH',
+}
+
+export default Reservations;

@@ -1,24 +1,7 @@
 .wrap {
-    
+    padding-left: 10px;
 }
 
-.slotWrap {
-    display: flex;
-}
-
-.slotScore {
-    text-align: right;
-    width: 30px;
-    height: 22px;
-    padding: 10px 5px;
-}
-
-.slotItem {
-    background-color: #222;
-    width: 300px;
-    height: 40px;
-}
-
-.slotDroppable {
-    height: 40px;
+.playerSelect {
+    margin-bottom: 20px;
 }

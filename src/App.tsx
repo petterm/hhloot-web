@@ -1,20 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { HashRouter as Router, Link, Switch, Route } from 'react-router-dom';
-import './App.css';
-import PlayerList from './components/PlayerList';
+import { fetchData, getPlayers } from './api/async';
 import { getBosses, prepareData } from './api';
+import PlayerList from './components/PlayerList';
 import PlayerDetails from './components/PlayerDetails';
 import BossList from './components/BossList';
-import { fetchData, getPlayers } from './api/async';
-import { Reservations } from './components/reservation/Reservations';
-
-type AppState = {
-    fetching: boolean,
-    done: boolean,
-};
+import Reservations from './components/reservation/Reservations';
+import './App.css';
 
 function App() {
-    // const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
 
     useEffect(() => {

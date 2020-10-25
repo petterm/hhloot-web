@@ -1,39 +1,36 @@
 import React from 'react';
-import { Droppable, Draggable } from 'react-beautiful-dnd';
+import { DragSourceMonitor, useDrag } from 'react-dnd';
 import { Item } from '../../types';
-import ItemLink from '../ItemLink';
+import ItemLink, { hideWowheadTooltip } from '../ItemLink';
 import style from './LootOption.module.css';
 
 interface LootOptionProps {
     item: Item
 };
 
-export const LootOption: React.FunctionComponent<LootOptionProps> = ({ item }) => {
+const LootOption: React.FunctionComponent<LootOptionProps> = ({ item }) => {
+    const [{ isDragging }, dragRef] = useDrag({
+        item: { type: 'ITEM', item },
+        collect: (monitor) => {
+            hideWowheadTooltip();
+            return {
+                isDragging: monitor.isDragging(),
+            };
+        },
+        end: (item: { item: Item } | undefined, monitor: DragSourceMonitor) => {
+            const dropResult = monitor.getDropResult();
+            if (item  && dropResult) {
+                console.log('Drop success', item, dropResult.name)
+            }
+        }
+    });
     return (
-        <div className={style.wrap}>
-            <Droppable droppableId={`source-item-${item.id}`} type="ITEM" isDropDisabled={false}>
-                {(provided, snapshot)=> (
-                    <div
-                        ref={provided.innerRef}
-                        // style={{ backgroundColor: snapshot.isDraggingOver ? 'blue' : 'grey' }}
-                        {...provided.droppableProps}
-                    >
-                        <Draggable draggableId={`item-${item.id}`} index={0}>
-                            {(provided, snapshot) => (
-                                <div
-                                    className={style.itemDragable}
-                                    ref={provided.innerRef}
-                                    {...provided.draggableProps}
-                                    {...provided.dragHandleProps}
-                                >
-                                    <ItemLink item={item} size='small' />
-                                </div>
-                            )}
-                        </Draggable>
-                        {provided.placeholder}
-                    </div>
-                )}
-            </Droppable>
+        <div className={style.wrap} ref={dragRef} style={{ opacity: isDragging ? 0.5 : 1 }}>
+            <div className={style.itemDragable}>
+                <ItemLink item={item} size='small' />
+            </div>
         </div>
     )
 };
+
+export default LootOption;
