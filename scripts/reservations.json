@@ -639,50 +639,6 @@
       "52_score": "Wand of Qiraji Nobility"
     }
   ],
-  "Greensoup": [
-    {
-      "date": "2020-08-17 20.56.55",
-      "character": "Greensoup",
-      "100_score": "Scepter of the False Prophet",
-      "90_score": "Grasp of the Old God",
-      "80_score": "Bracelets of Royal Redemption",
-      "70_score": "Sartura's Might",
-      "65_score": "Eye of C'Thun",
-      "60_score": "Don Rigoberto's Lost Hat",
-      "55_score": "Ternary Mantle",
-      "54_score": "Cloak of Clarity",
-      "53_score": "Ring of the Martyr",
-      "52_score": "Robes of the Guardian Saint"
-    },
-    {
-      "date": "2020-09-18 17.51.48",
-      "character": "Greensoup",
-      "100_score": "Imperial Qiraji Regalia",
-      "90_score": "Grasp of the Old God",
-      "80_score": "Bracelets of Royal Redemption",
-      "70_score": "Eye of C'Thun",
-      "65_score": "Don Rigoberto's Lost Hat",
-      "60_score": "Cloak of Clarity",
-      "55_score": "Ternary Mantle",
-      "54_score": "Ring of the Martyr",
-      "53_score": "Robes of the Guardian Saint",
-      "52_score": "Wand of Qiraji Nobility"
-    },
-    {
-      "date": "2020-09-20 14.11.42",
-      "character": "Greensoup",
-      "100_score": "Imperial Qiraji Regalia",
-      "90_score": "Grasp of the Old God",
-      "80_score": "Bracelets of Royal Redemption",
-      "70_score": "Eye of C'Thun",
-      "65_score": "Ternary Mantle",
-      "60_score": "Cloak of Clarity",
-      "55_score": "Ring of the Martyr",
-      "54_score": "Wand of Qiraji Nobility",
-      "53_score": "Don Rigoberto's Lost Hat",
-      "52_score": "Robes of the Guardian Saint"
-    }
-  ],
   "Meche": [
     {
       "date": "2020-08-18 17.59.46",
@@ -1759,6 +1715,22 @@
       "54_score": "Ternary Mantle",
       "53_score": "Don Rigoberto's Lost Hat",
       "52_score": "Robes of the Guardian Saint"
+    }
+  ],
+  "Bluesoup": [
+    {
+      "date": "2020-10-31 18.42.45",
+      "character": "Bluesoup",
+      "100_score": "Imperial Qiraji Armaments",
+      "90_score": "Cloak of Concentrated Hatred",
+      "80_score": "Belt of Never-ending Agony",
+      "70_score": "Badge of the Swarmguard",
+      "65_score": "Qiraji Execution Bracers",
+      "60_score": "Gloves of Enforcement",
+      "55_score": "Eye of C'Thun",
+      "54_score": "Ring of the Godslayer",
+      "53_score": "Qiraji Bindings of Command",
+      "52_score": "Carapace of the Old God"
     }
   ]
 }
