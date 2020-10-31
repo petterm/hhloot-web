@@ -533,6 +533,22 @@
       "52_score": "Gloves of the Messiah"
     }
   ],
+  "Ósýnileg": [
+    {
+      "date": "2020-08-16 22.19.37",
+      "character": "Ósýnileg",
+      "100_score": "Ancient Qiraji Ripper",
+      "90_score": "Belt of Never-ending Agony",
+      "80_score": "Cloak of Concentrated Hatred",
+      "70_score": "Qiraji Bindings of Command",
+      "65_score": "Jom Gabbar",
+      "60_score": "Gloves of Enforcement",
+      "55_score": "Qiraji Execution Bracers",
+      "54_score": "Ouro's Intact Hide",
+      "53_score": "Carapace of the Old God",
+      "52_score": "Eye of C'Thun"
+    }
+  ],
   "Garlick": [
     {
       "date": "2020-08-17 01.42.51",
@@ -1533,6 +1549,34 @@
       "54_score": "Ouro's Intact Hide",
       "53_score": "Ring of the Qiraji Fury",
       "52_score": "Larvae of the Great Worm"
+    },
+    {
+      "date": "2020-10-24 15.28.40",
+      "character": "Päänmurskain",
+      "100_score": "Eye of C'Thun",
+      "90_score": "Jom Gabbar",
+      "80_score": "Gauntlets of Annihilation",
+      "70_score": "Carapace of the Old God",
+      "65_score": "",
+      "60_score": "Ancient Qiraji Ripper",
+      "55_score": "Barbed Choker",
+      "54_score": "Larvae of the Great Worm",
+      "53_score": "Qiraji Bindings of Command",
+      "52_score": ""
+    },
+    {
+      "date": "2020-10-24 15.35.40",
+      "character": "Päänmurskain",
+      "100_score": "Eye of C'Thun",
+      "90_score": "Jom Gabbar",
+      "80_score": "Gauntlets of Annihilation",
+      "70_score": "Carapace of the Old God",
+      "65_score": "Hive Defiler Wristguards",
+      "60_score": "Ancient Qiraji Ripper",
+      "55_score": "Barbed Choker",
+      "54_score": "Larvae of the Great Worm",
+      "53_score": "Qiraji Bindings of Command",
+      "52_score": ""
     }
   ],
   "Seppä": [
@@ -1625,6 +1669,22 @@
       "52_score": ""
     }
   ],
+  "Mardrömmar": [
+    {
+      "date": "2020-10-02 14.05.38",
+      "character": "Mardrömmar",
+      "100_score": "Gauntlets of Annihilation",
+      "90_score": "Anubisath Warhammer",
+      "80_score": "Ancient Qiraji Ripper",
+      "70_score": "Jom Gabbar",
+      "65_score": "Badge of the Swarmguard",
+      "60_score": "Boots of the Fallen Hero",
+      "55_score": "Ring of the Qiraji Fury",
+      "54_score": "Hive Defiler Wristguards",
+      "53_score": "Larvae of the Great Worm",
+      "52_score": "Eye of C'Thun"
+    }
+  ],
   "Darand": [
     {
       "date": "2020-10-08 21.49.01",
@@ -1683,6 +1743,22 @@
       "54_score": "",
       "53_score": "",
       "52_score": ""
+    }
+  ],
+  "Hijaarah": [
+    {
+      "date": "2020-10-31 12.28.32",
+      "character": "Hijaarah",
+      "100_score": "Scepter of the False Prophet",
+      "90_score": "Sartura's Might",
+      "80_score": "Eye of C'Thun",
+      "70_score": "Ring of the Martyr",
+      "65_score": "Wand of Qiraji Nobility",
+      "60_score": "Bracelets of Royal Redemption",
+      "55_score": "Grasp of the Old God",
+      "54_score": "Ternary Mantle",
+      "53_score": "Don Rigoberto's Lost Hat",
+      "52_score": "Robes of the Guardian Saint"
     }
   ]
 }
