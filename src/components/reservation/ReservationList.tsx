@@ -6,13 +6,15 @@ import ReservationListSlot from './ReservationListSlot';
 import style from './ReservationList.module.css';
 import { getPlayers } from '../../api/async';
 import { ThemeConfig } from 'react-select/src/theme';
+import Trashcan from './Trashcan';
 
 type ActionChangePlayer = { type: 'CHANGE_PLAYER', player?: Player };
 type ActionAdd = { type: 'ADD', score: ItemScore, item: Item };
+type ActionRemove = { type: 'REMOVE', score: ItemScore };
 type ActionReplace = { type: 'REPLACE', score: ItemScore, item: Item };
 type ActionMove = { type: 'MOVE', targetScore: ItemScore, sourceScore: ItemScore };
 type ActionSwap = { type: 'SWAP', targetScore: ItemScore, sourceScore: ItemScore };
-export type Action = ActionChangePlayer | ActionAdd | ActionReplace | ActionMove | ActionSwap;
+export type Action = ActionChangePlayer | ActionAdd | ActionRemove | ActionReplace | ActionMove | ActionSwap;
 
 type ItemSlot = {
     item?: Item,
@@ -37,6 +39,14 @@ const reducer = (state: State, action: Action): State => {
                 slots: {
                     ...state.slots,
                     [action.score]: { item: action.item },
+                }
+            }
+        case 'REMOVE':
+            return {
+                player: state.player,
+                slots: {
+                    ...state.slots,
+                    [action.score]: {},
                 }
             }
         case 'MOVE':
@@ -157,6 +167,7 @@ const ReservationList: React.FunctionComponent = () => {
                     />
                 ))}
             </div>
+            <Trashcan dispatch={dispatch} />
         </div>
     )
 };

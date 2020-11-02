@@ -49,7 +49,7 @@ const ReservationListSlot: React.FunctionComponent<ReservationListSlotProps> = (
     });
 
     const isActive = canDrop && isOver;
-    let backgroundColor = received ? '#1d3d1d' : '#222'
+    let backgroundColor = received ? '#1d3d1d' : '#222';
     let border = '1px solid #222';
     if (isActive) {
         border = '1px solid #888';
