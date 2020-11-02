@@ -5,7 +5,7 @@ import { getPlayer, getBosses } from '../api';
 import { getFinalScore, getPositionBonus, getItemBonus, getAttendanceBonus,
     getCombinedPlayerAttendanceList, CombinedPlayerAttendance } from '../api/points';
 import ItemLink from './ItemLink';
-import PlayerName from './PlayerName';
+import PlayerName, { formatName } from './PlayerName';
 import style from './PlayerDetails.module.css';
 import { scoreGroupEdges } from '../constants';
 
@@ -17,7 +17,7 @@ const scoreRowClass = (row: PlayerItemEntry) => scoreGroupEdges.includes(row.sco
 
 const PlayerDetails = () => {
     const { playerName } = useParams<PlayerDetailsParams>();
-    const player: Player = getPlayer(playerName);
+    const player: Player = getPlayer(formatName(playerName));
 
     const freeLoot: Item[] = [];
     Object.values(getBosses()).forEach(

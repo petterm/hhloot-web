@@ -13,4 +13,6 @@ const PlayerName = ({ player }: PlayerNameProps) => {
     );
 }
 
+export const formatName = (name: string) => name.substr(0, 1).toUpperCase() + name.substr(1).toLowerCase();
+
 export default PlayerName;

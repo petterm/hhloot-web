@@ -5,7 +5,7 @@ import { getBosses, prepareData } from './api';
 import PlayerList from './components/PlayerList';
 import PlayerDetails from './components/PlayerDetails';
 import BossList from './components/BossList';
-import Reservations from './components/reservation/Reservations';
+import ReservationsStart from './components/reservation/ReservationsStart';
 import './App.css';
 
 function App() {
@@ -43,7 +43,7 @@ function App() {
                                 <PlayerDetails />
                             </Route>
                             <Route path="/reservations">
-                                <Reservations />
+                                <ReservationsStart />
                             </Route>
                         </Switch>
                     </>

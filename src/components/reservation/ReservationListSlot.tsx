@@ -64,7 +64,12 @@ const ReservationListSlot: React.FunctionComponent<ReservationListSlotProps> = (
             </div>
             <div className={style.slotItem} ref={dropRef} style={{ backgroundColor, border }}>
                 {item && (
-                    <ReservationItem item={item} slotScore={slotScore} dispatch={dispatch} />
+                    <ReservationItem
+                        item={item}
+                        slotScore={slotScore}
+                        dispatch={dispatch}
+                        locked={!!received}
+                    />
                 )}
             </div>
         </div>

@@ -6,6 +6,7 @@ export type Class = 'DRUID' | 'HUNTER' | 'MAGE' | 'PALADIN' | 'PRIEST' | 'ROGUE'
 export type Date = string;
 export type GuildRank = 'Guild Master' | 'Officer' | 'Officer alt' | 'Member' | 'Initiate' | 'Social' | 'Alt';
 export type PlayerName = string;
+export type Instance = 'aq40' | 'naxx';
 
 export interface Item {
     name: string;

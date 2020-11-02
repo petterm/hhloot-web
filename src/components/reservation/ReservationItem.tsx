@@ -9,6 +9,7 @@ import { DragItem, DropResult } from './Reservations';
 interface ReservationItemProps {
     slotScore: ItemScore,
     item: Item,
+    locked: boolean,
     dispatch: Dispatch<Action>,
 };
 
@@ -16,7 +17,7 @@ interface CollectedProps {
     isDragging: boolean
 };
 
-const ReservationItem: React.FunctionComponent<ReservationItemProps> = ({ slotScore, item, dispatch }) => {
+const ReservationItem: React.FunctionComponent<ReservationItemProps> = ({ slotScore, item, locked, dispatch }) => {
     const [{ isDragging }, dragRef] = useDrag<DragItem, DropResult, CollectedProps>({
         item: { type: 'ITEM', item, sourceScore: slotScore },
         collect: (monitor) => {
@@ -25,6 +26,7 @@ const ReservationItem: React.FunctionComponent<ReservationItemProps> = ({ slotSc
                 isDragging: monitor.isDragging(),
             };
         },
+        canDrag: (monitor) => !locked,
     });
 
     return (
