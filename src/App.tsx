@@ -13,12 +13,10 @@ function App() {
 
     useEffect(() => {
         fetchData()
-            .then(() => {
-                prepareData();
-            })
-            .then(() => {
-                setIsLoaded(true);
-            }, (error) => {
+            .then(prepareData)
+            .then(
+                () => setIsLoaded(true),
+                (error: Error) => {
                 // setError(error)
                 console.error(error);
             })

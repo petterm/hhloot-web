@@ -7,6 +7,8 @@ TODO:
   - Google sheets api
     `POST https://sheets.googleapis.com/v4/spreadsheets/{spreadsheetId}/values/{range}:append`
     https://developers.google.com/sheets/api/reference/rest/v4/spreadsheets.values/append
+    https://github.com/googleapis/google-api-nodejs-client
+    https://developers.google.com/sheets/api/guides/values#appending_values
   - UI
     - Stripe lists
     - Scroll for options list

@@ -1,37 +1,36 @@
-let callbackIndex = 0;
+const setup = async () => {
+    await new Promise((resolve, reject) => gapi.load('client', resolve));
+    await gapi.client.init({
+        apiKey: process.env.REACT_APP_DEV_API_KEY ? process.env.REACT_APP_DEV_API_KEY : 'AIzaSyBaVroI2BsGCAYX6w1ZJAJGo2u_oi9r3ls',
+        scope: 'https://www.googleapis.com/auth/spreadsheets',
+    });
+    await gapi.client.load('sheets', 'v4');
+}
 
-type SheetData = {
-    range: string,
-    majorDimension: string,
-    values: string[][],
+export const getSheet = async (sheetId: string, tab: string): Promise<string[][]> => {
+    await setup();
+
+    const response = await gapi.client.sheets.spreadsheets.values.get({
+        spreadsheetId: sheetId,
+        range: tab,
+    });
+
+    return response.result.values || [];
 };
-type GoogleError = {
-    error: {
-        code: number,
-        message: string,
-        status: string,
-        details?: any,
-    }
-};
 
-const apiKey = () => process.env.REACT_APP_DEV_API_KEY ? process.env.REACT_APP_DEV_API_KEY : 'AIzaSyBaVroI2BsGCAYX6w1ZJAJGo2u_oi9r3ls';
+export const appendSheet = async (sheetId: string, tab: string, values: string[] ) => {
+    await setup();
 
-const getDataUrl = (sheetId: string, tab: string, callback: string) =>
-    `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${tab}?key=${apiKey()}&callback=${callback}`;
-
-const getCallbackName = (): string => `hhlootcb_${callbackIndex++}`;
-
-export const getSheet = (sheetId: string, tab: string): Promise<string[][]> => new Promise((resolve, reject) => {
-    const callbackName = getCallbackName();
-    (window as any)[callbackName] = (data: SheetData | GoogleError) => {
-        if ('error' in data) {
-            reject(data.error);
-        } else {
-            resolve(data.values);
+    const response = await gapi.client.sheets.spreadsheets.values.append({
+        spreadsheetId: sheetId,
+        range: tab,
+        valueInputOption: 'RAW',
+        resource: {
+            values: [
+                values,
+            ],
         }
-    };
+    });
 
-    const el = document.createElement('script');
-    el.setAttribute('src', getDataUrl(sheetId, tab, callbackName));
-    document.body.append(el);
-});
+    return response.result.updates;
+};
