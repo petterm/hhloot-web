@@ -533,22 +533,6 @@
       "52_score": "Gloves of the Messiah"
     }
   ],
-  "Ósýnileg": [
-    {
-      "date": "2020-08-16 22.19.37",
-      "character": "Ósýnileg",
-      "100_score": "Ancient Qiraji Ripper",
-      "90_score": "Belt of Never-ending Agony",
-      "80_score": "Cloak of Concentrated Hatred",
-      "70_score": "Qiraji Bindings of Command",
-      "65_score": "Jom Gabbar",
-      "60_score": "Gloves of Enforcement",
-      "55_score": "Qiraji Execution Bracers",
-      "54_score": "Ouro's Intact Hide",
-      "53_score": "Carapace of the Old God",
-      "52_score": "Eye of C'Thun"
-    }
-  ],
   "Garlick": [
     {
       "date": "2020-08-17 01.42.51",
@@ -785,78 +769,6 @@
       "54_score": "",
       "53_score": "",
       "52_score": ""
-    }
-  ],
-  "Snakepala": [
-    {
-      "date": "2020-08-21 11.25.36",
-      "character": "Snakepala",
-      "100_score": "Qiraji Bindings of Dominance",
-      "90_score": "Vek'lor's Diadem",
-      "80_score": "Skin of the Great Sandworm",
-      "70_score": "Breastplate of Annihilation",
-      "65_score": "Barbed Choker",
-      "60_score": "Hive Defiler Wristguards",
-      "55_score": "",
-      "54_score": "",
-      "53_score": "",
-      "52_score": ""
-    },
-    {
-      "date": "2020-09-15 18.13.03",
-      "character": "Snakepala",
-      "100_score": "Qiraji Bindings of Dominance",
-      "90_score": "Qiraji Bindings of Dominance",
-      "80_score": "Skin of the Great Sandworm",
-      "70_score": "Carapace of the Old God",
-      "65_score": "Hive Defiler Wristguards",
-      "60_score": "Barbed Choker",
-      "55_score": "Gauntlets of Annihilation",
-      "54_score": "Vek'lor's Diadem",
-      "53_score": "Breastplate of Annihilation",
-      "52_score": "Eye of C'Thun"
-    },
-    {
-      "date": "2020-09-19 17.21.45",
-      "character": "Snakepala",
-      "100_score": "Qiraji Bindings of Dominance",
-      "90_score": "Vek'lor's Diadem",
-      "80_score": "Skin of the Great Sandworm",
-      "70_score": "Breastplate of Annihilation",
-      "65_score": "Barbed Choker",
-      "60_score": "Hive Defiler Wristguards",
-      "55_score": "Qiraji Bindings of Dominance",
-      "54_score": "Carapace of the Old God",
-      "53_score": "Gauntlets of Annihilation",
-      "52_score": "Eye of C'Thun"
-    },
-    {
-      "date": "2020-09-28 13.35.18",
-      "character": "Snakepala",
-      "100_score": "Qiraji Bindings of Dominance",
-      "90_score": "Carapace of the Old God",
-      "80_score": "Skin of the Great Sandworm",
-      "70_score": "Qiraji Bindings of Dominance",
-      "65_score": "w",
-      "60_score": "Legplates of Blazing Light",
-      "55_score": "Eye of C'Thun",
-      "54_score": "Vek'lor's Diadem",
-      "53_score": "Ring of the Martyr",
-      "52_score": "Grasp of the Old God"
-    },
-    {
-      "date": "2020-10-17 17.44.33",
-      "character": "Snakepala",
-      "100_score": "Ring of the Martyr",
-      "90_score": "Carapace of the Old God",
-      "80_score": "Skin of the Great Sandworm",
-      "70_score": "Legplates of Blazing Light",
-      "65_score": "Bracelets of Royal Redemption",
-      "60_score": "Eye of C'Thun",
-      "55_score": "Gauntlets of the Righteous Champion",
-      "54_score": "Qiraji Bindings of Dominance",
-      "53_score": "Qiraji Bindings of Dominance",
-      "52_score": "Vek'lor's Diadem"
     }
   ],
   "Glamor": [
@@ -1625,22 +1537,6 @@
       "52_score": ""
     }
   ],
-  "Mardrömmar": [
-    {
-      "date": "2020-10-02 14.05.38",
-      "character": "Mardrömmar",
-      "100_score": "Gauntlets of Annihilation",
-      "90_score": "Anubisath Warhammer",
-      "80_score": "Ancient Qiraji Ripper",
-      "70_score": "Jom Gabbar",
-      "65_score": "Badge of the Swarmguard",
-      "60_score": "Boots of the Fallen Hero",
-      "55_score": "Ring of the Qiraji Fury",
-      "54_score": "Hive Defiler Wristguards",
-      "53_score": "Larvae of the Great Worm",
-      "52_score": "Eye of C'Thun"
-    }
-  ],
   "Darand": [
     {
       "date": "2020-10-08 21.49.01",
@@ -1731,6 +1627,22 @@
       "54_score": "Ring of the Godslayer",
       "53_score": "Qiraji Bindings of Command",
       "52_score": "Carapace of the Old God"
+    }
+  ],
+  "Mckek": [
+    {
+      "date": "2020-11-03 20.38.53",
+      "character": "Mckek",
+      "100_score": "Death's Sting",
+      "90_score": "Imperial Qiraji Armaments",
+      "80_score": "Belt of Never-ending Agony",
+      "70_score": "Vek'lor's Diadem",
+      "65_score": "Qiraji Bindings of Command",
+      "60_score": "Ouro's Intact Hide",
+      "55_score": "Carapace of the Old God",
+      "54_score": "Jom Gabbar",
+      "53_score": "Cloak of Concentrated Hatred",
+      "52_score": "Vanquished Tentacle of C'Thun"
     }
   ]
 }

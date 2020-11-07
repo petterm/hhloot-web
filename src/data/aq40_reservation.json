@@ -532,7 +532,7 @@
     "52_score": "Wand of Qiraji Nobility"
   },
   {
-    "date": "2020-09-08 16.37.24",
+    "date": "2020-10-03 18.07.30",
     "character": "Yungbanz",
     "100_score": "Imperial Qiraji Regalia",
     "90_score": "Wasphide Gauntlets",
@@ -726,5 +726,19 @@
     "54_score": "Ring of the Godslayer",
     "53_score": "Qiraji Bindings of Command",
     "52_score": "Carapace of the Old God"
+  },
+  {
+    "date": "2020-11-03 20.38.53",
+    "character": "Mckek",
+    "100_score": "Death's Sting",
+    "90_score": "Imperial Qiraji Armaments",
+    "80_score": "Belt of Never-ending Agony",
+    "70_score": "Vek'lor's Diadem",
+    "65_score": "Qiraji Bindings of Command",
+    "60_score": "Ouro's Intact Hide",
+    "55_score": "Carapace of the Old God",
+    "54_score": "Jom Gabbar",
+    "53_score": "Cloak of Concentrated Hatred",
+    "52_score": "Vanquished Tentacle of C'Thun"
   }
 ]
