@@ -1,5 +1,5 @@
 import React from 'react';
-import { getBosses } from '../../api';
+import { getBosses } from '../../api/loot';
 import { Instance } from '../../types';
 import LootOption from './LootOption';
 import style from './LootOptionsList.module.css';
@@ -8,8 +8,8 @@ interface LootOptionsListProps {
     instance: Instance,
 }
 
-const LootOptionsList: React.FunctionComponent<LootOptionsListProps> = () => {
-    const bosses = Object.values(getBosses());
+const LootOptionsList: React.FunctionComponent<LootOptionsListProps> = ({ instance }) => {
+    const bosses = Object.values(getBosses(instance));
 
     return (
         <div className={style.wrap}>

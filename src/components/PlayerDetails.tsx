@@ -1,26 +1,26 @@
 import React from 'react';
-import { Player, PlayerItemEntry, Item } from '../types'
+import { Player, PlayerItemEntry, Item, Instance } from '../types'
 import { useParams } from 'react-router-dom';
-import { getPlayer, getBosses } from '../api';
+import { getPlayer } from '../api';
 import { getFinalScore, getPositionBonus, getItemBonus, getAttendanceBonus,
     getCombinedPlayerAttendanceList, CombinedPlayerAttendance } from '../api/points';
 import ItemLink from './ItemLink';
 import PlayerName, { formatName } from './PlayerName';
 import style from './PlayerDetails.module.css';
 import { scoreGroupEdges } from '../constants';
+import { getBosses } from '../api/loot';
 
-type PlayerDetailsParams = {
-    playerName: string,
-}
+type PlayerDetailsProps = { instance: Instance };
+type PlayerDetailsParams = { playerName: string };
 
 const scoreRowClass = (row: PlayerItemEntry) => scoreGroupEdges.includes(row.score) ? style.scoreRowEdge : '';
 
-const PlayerDetails = () => {
+const PlayerDetails: React.FunctionComponent<PlayerDetailsProps> = ({ instance }) => {
     const { playerName } = useParams<PlayerDetailsParams>();
     const player: Player = getPlayer(formatName(playerName));
 
     const freeLoot: Item[] = [];
-    Object.values(getBosses()).forEach(
+    Object.values(getBosses(instance)).forEach(
         boss => boss.drops.forEach(
             drop => drop.freeLoot.forEach(name => {
                 if (name === playerName) {

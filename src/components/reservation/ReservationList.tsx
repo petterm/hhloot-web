@@ -6,7 +6,7 @@ import ReservationListSlot from './ReservationListSlot';
 import Trashcan from './Trashcan';
 import SubmitList from './SubmitList';
 import style from './ReservationList.module.css';
-import { submitReservations } from '../../api/reservations';
+import { ReservationsList } from '../../api/reservations';
 
 type ActionAdd = { type: 'ADD', score: ItemScore, item: Item };
 type ActionRemove = { type: 'REMOVE', score: ItemScore };
@@ -67,16 +67,11 @@ const logReducer = (state: State, action: Action) => {
 
 interface ReservationListProps {
     player: Player,
+    onSubmit: (reservations: ReservationsList) => void,
 };
 
-const ReservationList: React.FunctionComponent<ReservationListProps> = ({ player }) => {
+const ReservationList: React.FunctionComponent<ReservationListProps> = ({ player, onSubmit }) => {
     const [state, dispatch] = useReducer(logReducer, initialState(player));
-    const onSubmit = () => {
-        submitReservations(player, itemScores.reduce((slots, score) => ({
-            ...slots,
-            [score]: state[score].item,
-        }), itemScoresMap))
-    };
 
     return (
         <div className={style.wrap}>
@@ -95,7 +90,9 @@ const ReservationList: React.FunctionComponent<ReservationListProps> = ({ player
                 ))}
             </div>
             <Trashcan dispatch={dispatch} />
-            <SubmitList onSubmit={onSubmit} validList={true} />
+            <SubmitList onSubmit={() => onSubmit(
+                    itemScores.reduce((slots, score) => ({ ...slots, [score]: state[score].item }), itemScoresMap)
+                )} validList={true} />
         </div>
     )
 };

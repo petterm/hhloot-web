@@ -1,53 +1,12 @@
 import reservations from '../data/aq40_reservation.json';
-import lootTable from '../data/aq40_loot_table.json';
 import itemIcons from '../data/item_icons.json';
-import { Boss, BossDrop, ItemScore, Player, PlayerItemEntry, Class } from '../types';
+import { ItemScore, Player, PlayerItemEntry, Class, Instance } from '../types';
 import { getRaids, getPlayersData, getPlayers } from './async';
+import { getBossDrops } from './loot';
 
-type BossMap = { [key: string]: Boss; };
-const bossMap: BossMap = {};
 
-type BossDropMap = { [key: string]: BossDrop; };
-const bossDropMap: BossDropMap = {};
-
-const parseLootTable = (): void => {
-    let index = 0;
-
-    lootTable.forEach((dropJson) => {
-        const bosses = dropJson['Boss'].split(',').map(str => str.trim())
-        bosses.forEach(bossName => {
-            if (!bossName) return;
-    
-            const drop: BossDrop = bossDropMap[dropJson['Item Name']] || {
-                reservations: [],
-                freeLoot: [],
-                item: {
-                    id: parseInt(dropJson['Item ID']),
-                    name: dropJson['Item Name'],
-                    restricted: dropJson['Restricted'] ? true : false,
-                },
-            };
-            
-            if (bossMap[bossName]) {
-                bossMap[bossName].drops.push(drop)
-            } else {
-                bossMap[bossName] = {
-                    name: bossName,
-                    drops: [drop],
-                    index: index++,
-                }
-            }
-    
-            bossDropMap[dropJson['Item Name']] = drop;
-        })
-    })
-
-    for (const [, boss] of Object.entries(bossMap)) {
-        boss.drops.sort((a,b) => a.item.name.localeCompare(b.item.name))
-    }
-};
-
-const createEntry = (score: ItemScore, itemName?: string): PlayerItemEntry => {
+const createEntry = (instance: Instance, score: ItemScore, itemName?: string): PlayerItemEntry => {
+    const bossDropMap = getBossDrops(instance);
     const playerEntry: PlayerItemEntry = {
         itemBonusEvents: [],
         score: score,
@@ -63,7 +22,7 @@ const createEntry = (score: ItemScore, itemName?: string): PlayerItemEntry => {
     return playerEntry
 };
 
-const parsePlayerReservations = (): void => {
+const parsePlayerReservations = (instance: Instance): void => {
     const players = getPlayersData();
     const playerMap = getPlayers();
     reservations.forEach(playerReservation => {
@@ -80,23 +39,24 @@ const parsePlayerReservations = (): void => {
             player.guildRank = playerInfo.guildRank
         }
 
-        player.scoreSlots.push(createEntry(100, playerReservation['100_score']))
-        player.scoreSlots.push(createEntry(90, playerReservation['90_score']))
-        player.scoreSlots.push(createEntry(80, playerReservation['80_score']))
-        player.scoreSlots.push(createEntry(70, playerReservation['70_score']))
-        player.scoreSlots.push(createEntry(65, playerReservation['65_score']))
-        player.scoreSlots.push(createEntry(60, playerReservation['60_score']))
-        player.scoreSlots.push(createEntry(55, playerReservation['55_score']))
-        player.scoreSlots.push(createEntry(54, playerReservation['54_score']))
-        player.scoreSlots.push(createEntry(53, playerReservation['53_score']))
-        player.scoreSlots.push(createEntry(52, playerReservation['52_score']))
+        player.scoreSlots.push(createEntry(instance, 100, playerReservation['100_score']))
+        player.scoreSlots.push(createEntry(instance, 90, playerReservation['90_score']))
+        player.scoreSlots.push(createEntry(instance, 80, playerReservation['80_score']))
+        player.scoreSlots.push(createEntry(instance, 70, playerReservation['70_score']))
+        player.scoreSlots.push(createEntry(instance, 65, playerReservation['65_score']))
+        player.scoreSlots.push(createEntry(instance, 60, playerReservation['60_score']))
+        player.scoreSlots.push(createEntry(instance, 55, playerReservation['55_score']))
+        player.scoreSlots.push(createEntry(instance, 54, playerReservation['54_score']))
+        player.scoreSlots.push(createEntry(instance, 53, playerReservation['53_score']))
+        player.scoreSlots.push(createEntry(instance, 52, playerReservation['52_score']))
 
         playerMap[playerName] = player;
     })
 };
 
-const markReceivedItems = () => {
+const markReceivedItems = (instance: Instance) => {
     const playerMap = getPlayers();
+    const bossDropMap = getBossDrops(instance);
     const raids = getRaids()
     for (let i in raids) {
         const raid = raids[i];
@@ -140,8 +100,9 @@ const markReceivedItems = () => {
     }
 }
 
-const addPlayerReservationsToItems = () => {
+const addPlayerReservationsToItems = (instance: Instance) => {
     const playerMap = getPlayers();
+    const bossDropMap = getBossDrops(instance);
     for (let name in playerMap) {
         const player: Player = playerMap[name];
 
@@ -158,9 +119,6 @@ const addPlayerReservationsToItems = () => {
     }
 };
 
-export const getBosses = (): BossMap => bossMap;
-
-export const getBoss = (name: string) => getBosses()[name];
 
 export const getPlayer = (name: string): Player => {
     const players = getPlayers();
@@ -169,9 +127,8 @@ export const getPlayer = (name: string): Player => {
 
 export const getItemIcon = (id: number) => (itemIcons as {[key: number]: string})[id];
 
-export const prepareData = () => {
-    parseLootTable();
-    parsePlayerReservations();
-    markReceivedItems();
-    addPlayerReservationsToItems();
+export const prepareData = (instance: Instance) => {
+    parsePlayerReservations(instance);
+    markReceivedItems(instance);
+    addPlayerReservationsToItems(instance);
 };

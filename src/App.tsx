@@ -1,19 +1,23 @@
 import React, { useEffect, useState } from 'react';
 import { HashRouter as Router, Link, Switch, Route } from 'react-router-dom';
 import { fetchData, getPlayers } from './api/async';
-import { getBosses, prepareData } from './api';
+import { prepareData } from './api';
 import PlayerList from './components/PlayerList';
 import PlayerDetails from './components/PlayerDetails';
 import BossList from './components/BossList';
 import ReservationsStart from './components/reservation/ReservationsStart';
+import { getBosses } from './api/loot';
+import { Instance } from './types';
 import './App.css';
+import AdminReservations from './components/reservationAdmin/AdminReservations';
 
 function App() {
     const [isLoaded, setIsLoaded] = useState(false);
+    const instance: Instance = 'aq40';
 
     useEffect(() => {
         fetchData()
-            .then(prepareData)
+            .then(() => prepareData(instance))
             .then(
                 () => setIsLoaded(true),
                 (error: Error) => {
@@ -30,15 +34,20 @@ function App() {
                         <Link to="/">Bosses</Link>
                         {" - "}
                         <Link to="/players">Players</Link>
+                        {" - "}
+                        <Link to="/reservations">Update reservations</Link>
                         <Switch>
                             <Route exact path="/">
-                                <BossList bosses={Object.values(getBosses())} />
+                                <BossList bosses={Object.values(getBosses(instance))} />
                             </Route>
                             <Route exact path="/players">
                                 <PlayerList players={Object.values(getPlayers())} />
                             </Route>
                             <Route path="/players/:playerName">
-                                <PlayerDetails />
+                                <PlayerDetails instance={instance} />
+                            </Route>
+                            <Route path="/reservations/admin">
+                                <AdminReservations />
                             </Route>
                             <Route path="/reservations">
                                 <ReservationsStart />
