@@ -36,6 +36,8 @@ function App() {
                         <Link to="/players">Players</Link>
                         {" - "}
                         <Link to="/reservations">Update reservations</Link>
+                        {" - "}
+                        <Link to="/reservations/admin">Admin</Link>
                         <Switch>
                             <Route exact path="/">
                                 <BossList bosses={Object.values(getBosses(instance))} />
@@ -46,8 +48,8 @@ function App() {
                             <Route path="/players/:playerName">
                                 <PlayerDetails instance={instance} />
                             </Route>
-                            <Route path="/reservations/admin">
-                                <AdminReservations />
+                            <Route path={"/reservations/admin/:playerName?"}>
+                                <AdminReservations instance={instance} />
                             </Route>
                             <Route path="/reservations">
                                 <ReservationsStart />

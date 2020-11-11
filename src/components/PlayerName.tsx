@@ -3,7 +3,7 @@ import { Player } from '../types'
 import { classColor } from '../constants';
 
 type PlayerNameProps = { player: Player };
-const PlayerName = ({ player }: PlayerNameProps) => {
+const PlayerName: React.FunctionComponent<PlayerNameProps> = ({ player }) => {
     const color = player.class ? classColor[player.class] : '#888';
 
     return (

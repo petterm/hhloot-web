@@ -123,49 +123,6 @@ module.exports = {
                 method: 'GET',
                 path: '/reservations',
                 query: {
-                    instance: 'aq40',
-                },
-                cookies: {
-                    submitted: '1',
-                    approved: '1',
-                },
-            },
-            response: {
-                data: reservationsData.filter(entry => entry.instance === 'aq40').concat([newSubmitApproved]),
-            },
-        },
-        {
-            request: {
-                method: 'GET',
-                path: '/reservations',
-                query: {
-                    instance: 'aq40',
-                },
-                cookies: {
-                    submitted: '1',
-                },
-            },
-            response: {
-                data: reservationsData.filter(entry => entry.instance === 'aq40').concat([newSubmit]),
-            },
-        },
-        {
-            request: {
-                method: 'GET',
-                path: '/reservations',
-                query: {
-                    instance: 'aq40',
-                }
-            },
-            response: {
-                data: reservationsData.filter(entry => entry.instance === 'aq40'),
-            },
-        },
-        {
-            request: {
-                method: 'GET',
-                path: '/reservations',
-                query: {
                     player: 'Meche',
                 },
                 cookies: {
@@ -202,6 +159,49 @@ module.exports = {
             },
             response: {
                 data: reservationsData.filter(entry => entry.name === 'Meche'),
+            },
+        },
+        {
+            request: {
+                method: 'GET',
+                path: '/reservations',
+                query: {
+                    instance: 'aq40',
+                },
+                cookies: {
+                    submitted: '1',
+                    approved: '1',
+                },
+            },
+            response: {
+                data: reservationsData.filter(entry => entry.instance === 'aq40').concat([newSubmitApproved]),
+            },
+        },
+        {
+            request: {
+                method: 'GET',
+                path: '/reservations',
+                query: {
+                    instance: 'aq40',
+                },
+                cookies: {
+                    submitted: '1',
+                },
+            },
+            response: {
+                data: reservationsData.filter(entry => entry.instance === 'aq40').concat([newSubmit]),
+            },
+        },
+        {
+            request: {
+                method: 'GET',
+                path: '/reservations',
+                query: {
+                    instance: 'aq40',
+                }
+            },
+            response: {
+                data: reservationsData.filter(entry => entry.instance === 'aq40'),
             },
         },
         {

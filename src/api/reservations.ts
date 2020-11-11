@@ -20,6 +20,7 @@ export const submitReservations = async (player: Player, instance: Instance, res
 };
 
 export type ApiResponseReservationsList = {
+    id: number,
     name: PlayerName,
     instance: Instance,
     submitted: string,
@@ -29,6 +30,7 @@ export type ApiResponseReservationsList = {
 }[];
 
 export type AdminReservationsEntry = {
+    id: number,
     name: PlayerName,
     instance: Instance,
     submitted: string,
@@ -37,7 +39,7 @@ export type AdminReservationsEntry = {
     slots: (Item | undefined)[],
 };
 
-export const getReservations = async (approved: boolean, instance: Instance | undefined, player: Player | undefined) => {
+export const getReservations = async (approved: boolean, instance: Instance | undefined, player?: Player) => {
     const url = approved ? '/Api/reservations/approved' : '/Api/reservations';
     const params = {
         instance,
@@ -45,15 +47,13 @@ export const getReservations = async (approved: boolean, instance: Instance | un
     };
 
     return Axios.get<ApiResponseReservationsList>(url, { params })
-        .then(response => {
-            console.log('Requested reservations', response.data);
-            return response.data.map(entry => ({
-                name: entry.name,
-                instance: entry.instance,
-                submitted: entry.submitted,
-                approved: entry.approved,
-                approvedBy: entry.approvedBy,
-                slots: entry.slots.map(itemName => itemName ? getItem(itemName) : undefined),
-            }));
-        });
+        .then(response => response.data.map(entry => ({
+            id: entry.id,
+            name: entry.name,
+            instance: entry.instance,
+            submitted: entry.submitted,
+            approved: entry.approved,
+            approvedBy: entry.approvedBy,
+            slots: entry.slots.map(itemName => itemName ? getItem(itemName) : undefined),
+        })));
 };

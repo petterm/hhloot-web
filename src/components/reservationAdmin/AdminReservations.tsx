@@ -1,17 +1,30 @@
 import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import { getPlayer } from '../../api';
 import { AdminReservationsEntry, getReservations } from '../../api/reservations';
 import { Instance, Player } from '../../types';
+import AdminReservationsList from './AdminReservationsList';
+import AdminReservationsPlayer from './AdminReservationsPlayer';
 
-const AdminReservations: React.FunctionComponent = () => {
+type AdminReservationsProps = {
+    instance: Instance,
+}
+
+type AdminReservationsParams = {
+    playerName?: string,
+}
+
+const AdminReservations: React.FunctionComponent<AdminReservationsProps> = ({ instance }) => {
     const [isFetching, setIsFetching] = useState(true);
-    const [reservations, setReservations] = useState<AdminReservationsEntry[]>([]);
     const [error, setError] = useState<Error>();
-    const [approved, setApproved] = useState(false);
-    const [instance, setInstance] = useState<Instance>('aq40');
-    const [player, setPlayer] = useState<Player>();
+    const [reservations, setReservations] = useState<AdminReservationsEntry[]>([]);
+
+    const { playerName } = useParams<AdminReservationsParams>();
+    const player: Player | undefined = playerName ? getPlayer(formatName(playerName)) : undefined;
 
     useEffect(() => {
-        getReservations(approved, instance, player)
+        setIsFetching(true);
+        getReservations(false, instance, player)
             .then(entries => {
                 setReservations(entries);
                 setIsFetching(false);
@@ -20,7 +33,7 @@ const AdminReservations: React.FunctionComponent = () => {
                 setError(error);
                 setIsFetching(false);
             })
-    }, [approved, instance, player]);
+    }, [instance, player]);
 
     if (isFetching) {
         return (<p>Loading..</p>);
@@ -37,11 +50,11 @@ const AdminReservations: React.FunctionComponent = () => {
 
     return (
         <div>
-            {reservations.map(entry => (
-                <div>
-                    {entry.name}, {entry.instance}, {entry.submitted}, {entry.slots.length}
-                </div>
-            ))}
+            {player ? (
+                <AdminReservationsPlayer player={player} entries={reservations} />
+            ) : (
+                <AdminReservationsList entries={reservations} />
+            )}
         </div>
     );
 }

@@ -15,8 +15,7 @@ const dateFormat = 'YYYY-MM-DD HH.mm.ss';
 
 Object.values(reservations).forEach(entries => {
     entries.forEach((entry, index) => {
-        const approved = index === entries.length - 1 ||
-            entries.length > 3 && index % 2;
+        const approved = index % 2;
         newData.push({
             id: id++,
             name: entry.character,
