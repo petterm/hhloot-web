@@ -17,7 +17,7 @@ function App() {
 
     useEffect(() => {
         fetchData()
-            .then(() => prepareData(instance))
+            .then(() => prepareData())
             .then(
                 () => setIsLoaded(true),
                 (error: Error) => {

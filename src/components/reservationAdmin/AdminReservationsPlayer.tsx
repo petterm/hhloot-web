@@ -1,7 +1,9 @@
-import React from 'react';
-import { AdminReservationsEntry } from '../../api/reservations';
+import React, { useState } from 'react';
+import { getPlayer } from '../../api';
+import { AdminReservationsEntry, approveReservation } from '../../api/reservations';
 import { scoreGroupEdges } from '../../constants';
 import { Item, Player, PlayerItemEntry } from '../../types';
+import Button from '../Button';
 import ItemLink from '../ItemLink';
 import PlayerName from '../PlayerName';
 import style from './AdminReservationsPlayer.module.css';
@@ -14,11 +16,27 @@ type AdminReservationsPlayerProps = {
 const scoreRowClass = (row: PlayerItemEntry) => scoreGroupEdges.includes(row.score) ? style.scoreRowEdge : '';
 
 const AdminReservationsPlayer: React.FunctionComponent<AdminReservationsPlayerProps> = ({ player, entries }) => {
+    const [approved, setApproved] = useState(false);
+    const [fetching, setFetching] = useState(false);
+    const [error, setError] = useState<Error>();
+
+    const onApprove = () => {
+        if (!fetching && !approved) {
+            setFetching(true);
+            setError(undefined);
+            approveReservation(lastSubmission.id, getPlayer('Meche'))
+                .then(() => {
+                    setFetching(false);
+                    setApproved(true);
+                }).catch(e => {
+                    setFetching(false);
+                    setError(e);
+                });
+        }
+    }
+
     const lastSubmission: AdminReservationsEntry = entries.slice(-1)[0];
     const historicSubmissions: AdminReservationsEntry[] = entries.slice(0, -1);
-    const onApprove = () => {
-        console.log('Approve entry with id:', lastSubmission.id);
-    }
 
     return (
         <div className={style.wrap}>
@@ -64,7 +82,10 @@ const AdminReservationsPlayer: React.FunctionComponent<AdminReservationsPlayerPr
                                         )}
                                     </>
                                 ) : (
-                                    <span>--</span>
+                                    <div className={style.cellItemEmpty}>
+                                        <span className={style.cellItemEmptyIcon}></span>
+                                        <span className={style.cellItemEmptyText}>(Empty)</span>
+                                    </div>
                                 )}
                             </td>
                             {!lastSubmission.approved && (
@@ -88,9 +109,23 @@ const AdminReservationsPlayer: React.FunctionComponent<AdminReservationsPlayerPr
 
             {!lastSubmission.approved && (
                 <div className={style.approveWrap}>
-                    <button className={style.approve} onClick={onApprove}>
-                        Approve new list
-                    </button>
+                    {fetching ? (
+                        <div className={style.approving}>Approving..</div>
+                    ) : approved ? (
+                        <div className={style.approved}>Approved!</div>
+                    ) : (
+                        <>
+                            <Button onClick={onApprove}>
+                                Approve new list
+                            </Button>
+                            {!!error && (
+                                <div className={style.errorWrap}>
+                                    <p className={style.errorTitle}>Error approving:</p>
+                                    <pre className={style.errorMessage}>{error.message}</pre>
+                                </div>
+                            )}
+                        </>
+                    )}
                 </div>
             )}
 

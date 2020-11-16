@@ -5,3 +5,27 @@
 .playerSelect {
     margin-bottom: 20px;
 }
+
+.submitting {
+    color: #b19c64;
+}
+
+.submitted {
+    color: #64b168;
+}
+
+.errorWrap {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.errorTitle {
+    color: rgb(158, 0, 0);
+    margin: 0 10px 0 0;
+}
+
+.errorMessage {
+    margin: 0;
+    font-size: normal;
+}

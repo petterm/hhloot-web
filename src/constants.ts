@@ -3,10 +3,6 @@ import { ItemScore, Class, Instance } from "./types";
 export const itemScores: ItemScore[] = [
     100, 90, 80, 70, 65, 60, 55, 54, 53, 52,
 ];
-export const itemScoresMap = {
-    100: {}, 90: {}, 80: {}, 70: {}, 65: {},
-    60: {}, 55: {}, 54: {}, 53: {}, 52: {},
-};
 
 export const instances: Instance[] = ['aq40', 'naxx'];
 

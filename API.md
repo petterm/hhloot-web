@@ -61,6 +61,42 @@ Body:
     ]
 }
 ```
+```json
+{
+    "name": "Meche",
+    "instance": "aq40",
+    "slots": [
+        20929,
+        21126,
+        20928,
+        21232,
+        20927,
+        20926,
+        null,
+        21664,
+        21621,
+        22732
+    ]
+}
+```
+```json
+{
+    "name": "Meche",
+    "instance": "aq40",
+    "slots": [
+        20929,
+        21611,
+        20928,
+        21232,
+        20927,
+        20926,
+        null,
+        21664,
+        21621,
+        22732
+    ]
+}
+```
 
 Response:
 ```json
@@ -93,7 +129,7 @@ Body:
 ```json
 {
     "id": 12,
-    "approver": "Meche",
+    "approver": "Meche"
 }
 ```
 

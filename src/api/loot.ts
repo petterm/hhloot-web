@@ -15,14 +15,16 @@ type LootTable = {
 
 type BossMap = { [key: string]: Boss; };
 
-type BossDropMap = { [key: string]: BossDrop; };
+type BossDropNameMap = { [key: string]: BossDrop; };
+type BossDropIdMap = { [key: number]: BossDrop; };
 
 type InstanceLoot = {
     instance: Instance,
     bossMap: BossMap,
-    bossDropMap: BossDropMap,
 }
 const instanceLoot: { [key: string]: InstanceLoot } = {}
+const globalBossDropNameMap: BossDropNameMap = {};
+const globalBossDropIdMap: BossDropIdMap = {};
 
 const parseLootTable = (instance: Instance, rawData: LootTable): void => {
     let index = 0;
@@ -30,7 +32,6 @@ const parseLootTable = (instance: Instance, rawData: LootTable): void => {
     const lootTable: InstanceLoot = {
         instance,
         bossMap: {},
-        bossDropMap: {}
     }
     instanceLoot[instance] = lootTable;
 
@@ -39,7 +40,7 @@ const parseLootTable = (instance: Instance, rawData: LootTable): void => {
         bosses.forEach(bossName => {
             if (!bossName) return;
     
-            const drop: BossDrop = lootTable.bossDropMap[dropJson['Item Name']] || {
+            const drop: BossDrop = globalBossDropNameMap[dropJson['Item Name']] || {
                 reservations: [],
                 freeLoot: [],
                 item: {
@@ -59,7 +60,8 @@ const parseLootTable = (instance: Instance, rawData: LootTable): void => {
                 }
             }
     
-            lootTable.bossDropMap[dropJson['Item Name']] = drop;
+            globalBossDropNameMap[dropJson['Item Name']] = drop;
+            globalBossDropIdMap[parseInt(dropJson['Item ID'])] = drop;
         })
     })
 
@@ -72,7 +74,7 @@ parseLootTable('aq40', lootTableAQ40)
 // parseLootTable('naxx', lootTableNaxx)
 
 export const getBosses = (instance: Instance): BossMap => instanceLoot[instance].bossMap;
-export const getBossDrops = (instance: Instance): BossDropMap => instanceLoot[instance].bossDropMap;
+export const getBossDrops = (): BossDropNameMap => globalBossDropNameMap;
 
 export const getBoss = (bossName: string): Boss => {
     const instance = Object.values(instanceLoot).find(instance => bossName in instance.bossMap);
@@ -82,10 +84,12 @@ export const getBoss = (bossName: string): Boss => {
     return instance.bossMap[bossName];
 };
 
-export const getItem = (itemName: string): Item => {
-    const instance = Object.values(instanceLoot).find(instance => itemName in instance.bossDropMap);
-    if (!instance) {
-        throw Error(`Unknown item ${itemName}`);
+export const getItem = (item: string | number): Item => {
+    if (typeof(item) === 'string' && item in globalBossDropNameMap) {
+        return globalBossDropNameMap[item].item;
     }
-    return instance.bossDropMap[itemName].item;
+    if (typeof(item) === 'number' && item in globalBossDropIdMap) {
+        return globalBossDropIdMap[item].item;
+    }
+    throw Error(`Unknown item ${item}`);
 };
