@@ -97,7 +97,10 @@ const AdminReservationsPlayer: React.FunctionComponent<AdminReservationsPlayerPr
                                     {lastSubmission.slots[index] ? (
                                         <ItemLink item={lastSubmission.slots[index] as Item} size='small' />
                                     ) : (
-                                        <span>--</span>
+                                        <div className={style.cellItemEmpty}>
+                                            <span className={style.cellItemEmptyIcon}></span>
+                                            <span className={style.cellItemEmptyText}>(Empty)</span>
+                                        </div>
                                     )}
                                 </td>
                             </>

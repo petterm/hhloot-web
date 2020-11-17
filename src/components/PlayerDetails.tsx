@@ -8,7 +8,7 @@ import ItemLink from './ItemLink';
 import PlayerName, { formatName } from './PlayerName';
 import style from './PlayerDetails.module.css';
 import { scoreGroupEdges } from '../constants';
-import { getBosses } from '../api/loot';
+import { getBossDrops } from '../api/loot';
 
 type PlayerDetailsProps = { instance: Instance };
 type PlayerDetailsParams = { playerName: string };
@@ -20,15 +20,13 @@ const PlayerDetails: React.FunctionComponent<PlayerDetailsProps> = ({ instance }
     const player: Player = getPlayer(formatName(playerName));
 
     const freeLoot: Item[] = [];
-    Object.values(getBosses(instance)).forEach(
-        boss => boss.drops.forEach(
-            drop => drop.freeLoot.forEach(name => {
-                if (name === playerName) {
-                    freeLoot.push(drop.item);
-                }
-            })
-        )
-    );
+    Object.values(getBossDrops(instance)).forEach(
+        drop => drop.freeLoot.forEach(name => {
+            if (name === playerName) {
+                freeLoot.push(drop.item);
+            }
+        })
+    )
 
     const attendanceRaids = getCombinedPlayerAttendanceList(player);
 

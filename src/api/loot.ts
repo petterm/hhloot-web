@@ -1,5 +1,6 @@
 import lootTableAQ40 from '../data/aq40_loot_table.json';
 // import lootTableNaxx from '../data/naxx_loot_table.json';
+import itemIcons from '../data/item_icons.json';
 import { Boss, BossDrop, Instance, Item } from '../types';
 
 type LootTable = {
@@ -48,6 +49,7 @@ const parseLootTable = (instance: Instance, rawData: LootTable): void => {
                     name: dropJson['Item Name'],
                     restricted: dropJson['Restricted'] ? true : false,
                 },
+                instance,
             };
             
             if (lootTable.bossMap[bossName]) {
@@ -74,7 +76,19 @@ parseLootTable('aq40', lootTableAQ40)
 // parseLootTable('naxx', lootTableNaxx)
 
 export const getBosses = (instance: Instance): BossMap => instanceLoot[instance].bossMap;
-export const getBossDrops = (): BossDropNameMap => globalBossDropNameMap;
+export const getBossDrops = (instance?: Instance): BossDropNameMap => {
+    if (instance) {
+        const filteredBossDrops: BossDropNameMap = {};
+        for (const itemName in globalBossDropNameMap) {
+            const item = globalBossDropNameMap[itemName];
+            if (item.instance === instance) {
+                filteredBossDrops[itemName] = item;
+            }
+        }
+        return filteredBossDrops;
+    }
+    return globalBossDropNameMap;
+};
 
 export const getBoss = (bossName: string): Boss => {
     const instance = Object.values(instanceLoot).find(instance => bossName in instance.bossMap);
@@ -93,3 +107,5 @@ export const getItem = (item: string | number): Item => {
     }
     throw Error(`Unknown item ${item}`);
 };
+
+export const getItemIcon = (id: number) => (itemIcons as {[key: number]: string})[id];

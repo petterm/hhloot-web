@@ -1,4 +1,4 @@
-import { Instance, PlayerName } from "../types";
+import { Class, GuildRank, Instance, PlayerName } from "../types";
 
 type Slot = number | null;
 
@@ -40,3 +40,9 @@ export type ReservationApprovePostResponse = {
     approvedBy: PlayerName,
     slots: Slot[],
 }
+
+export type PlayersResponse = {
+    name: string,
+    class: Class,
+    guildRank: GuildRank,
+}[];

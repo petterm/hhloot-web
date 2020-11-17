@@ -1,58 +1,6 @@
-import reservations from '../data/aq40_reservation.json';
-import itemIcons from '../data/item_icons.json';
-import { ItemScore, Player, PlayerItemEntry, Class } from '../types';
-import { getRaids, getPlayersData, getPlayers } from './async';
+import { Player, PlayerItemEntry } from '../types';
+import { getRaids, getPlayers } from './async';
 import { getBossDrops } from './loot';
-
-
-const createEntry = (score: ItemScore, itemName?: string): PlayerItemEntry => {
-    const bossDropMap = getBossDrops();
-    const playerEntry: PlayerItemEntry = {
-        itemBonusEvents: [],
-        score: score,
-    };
-    if (itemName) {
-        let bossDrop = bossDropMap[itemName];
-        if (bossDrop) {
-            playerEntry.item = bossDrop.item;
-        } else {
-            console.warn(`Invalid item entry ${itemName}`)
-        }
-    }
-    return playerEntry
-};
-
-const parsePlayerReservations = (): void => {
-    const players = getPlayersData();
-    const playerMap = getPlayers();
-    reservations.forEach(playerReservation => {
-        const playerName = playerReservation.character;
-        const player: Player = {
-            attendedRaids: [],
-            name: playerName,
-            scoreSlots: [],
-        }
-
-        const playerInfo = players.find(info => info.name === playerName)
-        if (playerInfo) {
-            player.class = playerInfo.class as Class;
-            player.guildRank = playerInfo.guildRank
-        }
-
-        player.scoreSlots.push(createEntry(100, playerReservation['100_score']))
-        player.scoreSlots.push(createEntry(90, playerReservation['90_score']))
-        player.scoreSlots.push(createEntry(80, playerReservation['80_score']))
-        player.scoreSlots.push(createEntry(70, playerReservation['70_score']))
-        player.scoreSlots.push(createEntry(65, playerReservation['65_score']))
-        player.scoreSlots.push(createEntry(60, playerReservation['60_score']))
-        player.scoreSlots.push(createEntry(55, playerReservation['55_score']))
-        player.scoreSlots.push(createEntry(54, playerReservation['54_score']))
-        player.scoreSlots.push(createEntry(53, playerReservation['53_score']))
-        player.scoreSlots.push(createEntry(52, playerReservation['52_score']))
-
-        playerMap[playerName] = player;
-    })
-};
 
 const markReceivedItems = () => {
     const playerMap = getPlayers();
@@ -119,16 +67,12 @@ const addPlayerReservationsToItems = () => {
     }
 };
 
-
 export const getPlayer = (name: string): Player => {
     const players = getPlayers();
     return players[name];
 };
 
-export const getItemIcon = (id: number) => (itemIcons as {[key: number]: string})[id];
-
 export const prepareData = () => {
-    parsePlayerReservations();
     markReceivedItems();
     addPlayerReservationsToItems();
 };

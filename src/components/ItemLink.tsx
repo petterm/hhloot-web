@@ -1,6 +1,6 @@
 import React from 'react';
+import { getItemIcon } from '../api/loot';
 import { Item } from '../types'
-import { getItemIcon } from '../api';
 import style from './ItemLink.module.css';
 
 const wowheadIconUrl = 'https://wow.zamimg.com/images/wow/icons'

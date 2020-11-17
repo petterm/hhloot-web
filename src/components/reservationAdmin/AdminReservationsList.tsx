@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link, useRouteMatch } from 'react-router-dom';
-import { getPlayer } from '../../api';
 import { AdminReservationsEntry } from '../../api/reservations';
 import PlayerName from '../PlayerName';
 import style from './AdminReservationsList.module.css';
@@ -16,8 +15,8 @@ const AdminReservationsList: React.FunctionComponent<AdminReservationsListProps>
     const newSubmissions: AdminReservationsEntry[] = [];
 
     for (const row of entries) {
-        if (!(row.name in playerLists)) playerLists[row.name] = [];
-        playerLists[row.name].push(row);
+        if (!(row.player.name in playerLists)) playerLists[row.player.name] = [];
+        playerLists[row.player.name].push(row);
     }
 
     const playerNames = Object.keys(playerLists);
@@ -40,8 +39,8 @@ const AdminReservationsList: React.FunctionComponent<AdminReservationsListProps>
                 </h3>
                 {newSubmissions.map(entry => (
                     <div key={entry.id} className={style.entry}>
-                        <Link to={`${match.url}/${entry.name}`} style={{ textDecoration: 'none' }}>
-                            <PlayerName player={getPlayer(entry.name)} />
+                        <Link to={`${match.url}/${entry.player.name}`} style={{ textDecoration: 'none' }}>
+                            <PlayerName player={entry.player} />
                         </Link>
                         {', '}
                         {entry.instance}
@@ -63,8 +62,8 @@ const AdminReservationsList: React.FunctionComponent<AdminReservationsListProps>
                 </h3>
                 {approved.map(entry => (
                     <div key={entry.id} className={style.entry}>
-                        <Link to={`${match.url}/${entry.name}`} style={{ textDecoration: 'none' }}>
-                            <PlayerName player={getPlayer(entry.name)} />
+                        <Link to={`${match.url}/${entry.player.name}`} style={{ textDecoration: 'none' }}>
+                            <PlayerName player={entry.player} />
                         </Link>
                         {', '}
                         {entry.instance}

@@ -1,4 +1,5 @@
 import Axios from "axios";
+import { getPlayer } from ".";
 import { itemScores } from "../constants";
 import { Instance, Item, ItemScore, Player, PlayerName } from "../types";
 import { ReservationApprovePostRequest, ReservationApprovePostResponse,
@@ -22,7 +23,7 @@ export const submitReservations = async (player: Player, instance: Instance, res
 
 export type AdminReservationsEntry = {
     id: number,
-    name: PlayerName,
+    player: Player,
     instance: Instance,
     submitted: string,
     approved?: string,
@@ -35,22 +36,31 @@ export const getReservations = async (
     instance: Instance | undefined,
     player?: Player
 ): Promise<AdminReservationsEntry[]> => {
-    const url = approved ? '/Api/reservations/approved' : '/Api/reservations';
+    const url = approved ? '/api/reservations/approved' : '/api/reservations';
     const params = {
         instance,
         player: player ? player.name : undefined,
     };
 
     return Axios.get<ReservationsResponse>(url, { params })
-        .then(({ data }) => data.map(entry => ({
-            id: entry.id,
-            name: entry.name,
-            instance: entry.instance,
-            submitted: entry.submitted,
-            approved: entry.approved,
-            approvedBy: entry.approvedBy,
-            slots: entry.slots.map(itemId => itemId ? getItem(itemId) : undefined),
-        })));
+        .then(({ data }) => {
+            const filteredResult: AdminReservationsEntry[] = [];
+            data.forEach(entry => {
+                const player = getPlayer(entry.name);
+                if (player) {
+                    filteredResult.push({
+                        id: entry.id,
+                        player,
+                        instance: entry.instance,
+                        submitted: entry.submitted,
+                        approved: entry.approved,
+                        approvedBy: entry.approvedBy,
+                        slots: entry.slots.map(itemId => itemId ? getItem(itemId) : undefined),
+                    });
+                }
+            });
+            return filteredResult;
+        });
 };
 
 export const approveReservation = async (reservationId: number, approver: Player): Promise<AdminReservationsEntry> => {
@@ -63,7 +73,7 @@ export const approveReservation = async (reservationId: number, approver: Player
     return Axios.post<ReservationApprovePostResponse>(url, data)
         .then(({ data }) => ({
             id: data.id,
-            name: data.name,
+            player: getPlayer(data.name),
             instance: data.instance,
             submitted: data.submitted,
             approved: data.approved,

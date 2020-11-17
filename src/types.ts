@@ -40,6 +40,7 @@ export interface Player {
 
 export interface BossDrop {
     item: Item;
+    instance: Instance,
     reservations: {
         playerName: PlayerName;
         entry: PlayerItemEntry;
