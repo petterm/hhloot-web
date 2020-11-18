@@ -13,15 +13,15 @@ import AdminReservations from './components/reservationAdmin/AdminReservations';
 
 function App() {
     const [isLoaded, setIsLoaded] = useState(false);
+    const [error, setError] = useState<Error>();
     const instance: Instance = 'aq40';
 
     useEffect(() => {
         fetchData()
             .then(() => prepareData())
-            .then(
-                () => setIsLoaded(true),
-                (error: Error) => {
-                // setError(error)
+            .then(() => setIsLoaded(true))
+            .catch((error) => {
+                setError(error);
                 console.error(error);
             })
     }, []);
@@ -56,7 +56,12 @@ function App() {
                             </Route>
                         </Switch>
                     </>
-                ) : (
+                ) : error ? (
+                    <>
+                        <p>Error fetching data!</p>
+                        <pre>{error.message}</pre>
+                    </>
+                ) :(
                     <p>Loading..</p>
                 )}
             </div>

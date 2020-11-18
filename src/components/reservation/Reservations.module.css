@@ -1,4 +1,40 @@
 .wrap {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 33px;
+    gap: 10px;
+}
+
+.submit {
     display: flex;
-    padding: 10px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit button {
+    height: 33px;
+}
+
+.submitting {
+    color: #b19c64;
+}
+
+.submitted {
+    color: #64b168;
+}
+
+.errorWrap {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.errorTitle {
+    color: rgb(78, 15, 15);
+    margin: 0 10px 0 0;
+}
+
+.errorMessage {
+    margin: 0;
+    font-size: normal;
 }

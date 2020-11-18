@@ -79,4 +79,5 @@ tr:first-child .attendanceValue {
     margin-left: 5px;
     font-size: 12px;
     color: #aaa;
+    white-space: nowrap;
 }

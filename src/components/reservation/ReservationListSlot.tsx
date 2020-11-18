@@ -1,15 +1,18 @@
-import React, { Dispatch } from 'react';
+import React from 'react';
 import { useDrop } from 'react-dnd';
 import { Item, ItemScore } from '../../types';
-import { Action } from './ReservationList';
 import { DragItem, DropResult } from './Reservations';
 import ReservationItem from './ReservationItem';
 import style from './ReservationListSlot.module.css';
+import { scoreGroupEdges } from '../../constants';
 
 interface ReservationListSlotProps {
     slotScore: ItemScore,
+    addItem: (item: Item, score: ItemScore) => void,
+    moveItem: (sourceScore: ItemScore, targetScore: ItemScore) => void,
+    replaceItem: (item: Item, score: ItemScore) => void,
+    swapItem: (sourceScore: ItemScore, targetScore: ItemScore) => void,
     item?: Item,
-    dispatch: Dispatch<Action>,
     received?: string,
 };
 
@@ -18,24 +21,25 @@ interface CollectedProps {
     isOver: boolean,
 }
 
-const ReservationListSlot: React.FunctionComponent<ReservationListSlotProps> = ({ slotScore, item, received, dispatch }) => {
+const ReservationListSlot: React.FunctionComponent<ReservationListSlotProps> = ({
+    slotScore, item, received, addItem, moveItem, replaceItem, swapItem,
+}) => {
     const [{ canDrop, isOver }, dropRef] = useDrop<DragItem, DropResult, CollectedProps>({
         accept: 'ITEM',
         drop: (dropItem, monitor) => {
             if (dropItem.sourceScore) {
-                dispatch({
-                    type: item ? 'SWAP' : 'MOVE',
-                    sourceScore: dropItem.sourceScore,
-                    targetScore: slotScore
-                });
+                if (item) {
+                    swapItem(dropItem.sourceScore, slotScore);
+                } else {
+                    moveItem(dropItem.sourceScore, slotScore);
+                }
             } else {
-                dispatch({
-                    type: item ? 'REPLACE' : 'ADD',
-                    item: (dropItem as any).item,
-                    score: slotScore,
-                });
+                if (item) {
+                    replaceItem(dropItem.item, slotScore);
+                } else {
+                    addItem(dropItem.item, slotScore);
+                }
             }
-
             return {
                 name: `Reservation slot ${slotScore}`,
                 type: 'SLOT',
@@ -45,29 +49,39 @@ const ReservationListSlot: React.FunctionComponent<ReservationListSlotProps> = (
             canDrop: monitor.canDrop(),
             isOver: monitor.isOver(),
         }),
-        canDrop: () => !received,
+        canDrop: (dropItem) => !received && dropItem.item !== item,
     });
 
     const isActive = canDrop && isOver;
-    let backgroundColor = received ? '#1d3d1d' : '#222';
-    let border = '1px solid #222';
-    if (isActive) {
-        border = '1px solid #888';
-    } else if (canDrop) {
-        backgroundColor = '#333';
+    const wrapClass = [style.wrap];
+
+    if (received) {
+        wrapClass.push(style.wrapReceived);
     }
 
+    if (isActive) {
+        wrapClass.push(style.wrapActive);
+    }
+
+    if (canDrop) {
+        wrapClass.push(style.wrapDrop);
+    }
+
+    if (scoreGroupEdges.includes(slotScore)) {
+        wrapClass.push(style.wrapScoreRowEdge);
+    }
+
+
     return (
-        <div className={style.slotWrap}>
+        <div className={wrapClass.join(' ')}>
             <div className={style.slotScore}>
                 {slotScore}
             </div>
-            <div className={style.slotItem} ref={dropRef} style={{ backgroundColor, border }}>
+            <div className={style.slotItem} ref={dropRef}>
                 {item && (
                     <ReservationItem
                         item={item}
                         slotScore={slotScore}
-                        dispatch={dispatch}
                         locked={!!received}
                     />
                 )}

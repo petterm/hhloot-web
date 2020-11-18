@@ -1,18 +1,47 @@
-.slotWrap {
+.wrap {
     display: flex;
+    background-color: #111;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+.wrap:nth-child(2n) {
+    background-color: #222;
+}
+
+.wrapReceived,
+.wrapReceived:nth-child(2n) {
+    background-color: #103310;
+}
+
+.wrapReceived.wrapActive {
+    opacity: 0.8;
+}
+
+.wrapActive {
+    border-color: #888;
+    background-color: #1a1a1a;
+}
+.wrapActive:nth-child(2n) {
+    background-color: #2a2a2a;
+}
+
+.wrapScoreRowEdge {
+    margin-bottom: 15px;
 }
 
 .slotScore {
     text-align: right;
     width: 30px;
     height: 22px;
-    padding: 10px 5px;
+    padding: 10px 10px 10px 5px;
 }
 
 .slotItem {
-    background-color: #222;
     width: 300px;
     height: 40px;
+    display: flex;
+    align-items: center;
 }
 
 .slotDroppable {

@@ -1,3 +1,12 @@
 .wrap {
-    margin-top: 20px;
+    padding: 5px;
+    background-color: #222;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    text-align: center;
+}
+
+.wrapActive {
+    border-color: #888;
+    background-color: #1a1a1a;
 }

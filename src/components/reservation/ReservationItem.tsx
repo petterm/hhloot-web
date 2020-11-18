@@ -1,23 +1,21 @@
-import React, { Dispatch } from 'react';
+import React from 'react';
 import { useDrag } from 'react-dnd';
 import { Item, ItemScore } from '../../types';
-import style from './ReservationItem.module.css';
-import { Action } from './ReservationList';
 import ItemLink, { hideWowheadTooltip } from '../ItemLink';
 import { DragItem, DropResult } from './Reservations';
+import style from './ReservationItem.module.css';
 
 interface ReservationItemProps {
     slotScore: ItemScore,
     item: Item,
     locked: boolean,
-    dispatch: Dispatch<Action>,
 };
 
 interface CollectedProps {
     isDragging: boolean
 };
 
-const ReservationItem: React.FunctionComponent<ReservationItemProps> = ({ slotScore, item, locked, dispatch }) => {
+const ReservationItem: React.FunctionComponent<ReservationItemProps> = ({ slotScore, item, locked }) => {
     const [{ isDragging }, dragRef] = useDrag<DragItem, DropResult, CollectedProps>({
         item: { type: 'ITEM', item, sourceScore: slotScore },
         collect: (monitor) => {

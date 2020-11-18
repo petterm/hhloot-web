@@ -1,11 +1,13 @@
-import React, { Dispatch } from 'react';
+import React from 'react';
 import { useDrop } from 'react-dnd';
-import style from './Trashcan.module.css';
-import { Action } from './ReservationList';
 import { DragItem, DropResult } from './Reservations';
+import { ItemScore } from '../../types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTrash } from '@fortawesome/free-solid-svg-icons'
+import style from './Trashcan.module.css';
 
 interface TrascanProps {
-    dispatch: Dispatch<Action>,
+    removeItem: (score: ItemScore) => void,
 };
 
 interface CollectedProps {
@@ -13,19 +15,13 @@ interface CollectedProps {
     isOver: boolean,
 }
 
-const Trashcan: React.FunctionComponent<TrascanProps> = ({ dispatch }) => {
+const Trashcan: React.FunctionComponent<TrascanProps> = ({ removeItem }) => {
     const [{ canDrop, isOver }, dropRef] = useDrop<DragItem, DropResult, CollectedProps>({
         accept: 'ITEM',
         drop: (dropItem, monitor) => {
             if (dropItem.sourceScore) {
-                dispatch({
-                    type: 'REMOVE',
-                    score: dropItem.sourceScore,
-                });
-            } else {
-                // Dropped item taken from droplist
+                removeItem(dropItem.sourceScore);
             }
-
             return {
                 name: `Trashcan ${dropItem.item.name}`,
                 type: 'TRASH',
@@ -35,21 +31,22 @@ const Trashcan: React.FunctionComponent<TrascanProps> = ({ dispatch }) => {
             canDrop: monitor.canDrop(),
             isOver: monitor.isOver(),
         }),
-        // canDrop: () => !received,
     });
 
     const isActive = canDrop && isOver;
-    let backgroundColor = '#222';
-    let border = '1px solid #222';
+    const wrapClass = [style.wrap];
+
     if (isActive) {
-        border = '1px solid #888';
-    } else if (canDrop) {
-        backgroundColor = '#333';
+        wrapClass.push(style.wrapActive);
+    }
+
+    if (canDrop) {
+        wrapClass.push(style.wrapDrop);
     }
 
     return (
-        <div className={style.wrap} ref={dropRef} style={{ backgroundColor, border }}>
-            Remove item
+        <div className={wrapClass.join(' ')} ref={dropRef}>
+            <FontAwesomeIcon icon={faTrash} /> Remove
         </div>
     )
 };
