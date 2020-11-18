@@ -1,3 +1,5 @@
+import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 import { getPlayer } from '../../api';
 import { AdminReservationsEntry, approveReservation } from '../../api/reservations';
@@ -37,6 +39,7 @@ const AdminReservationsPlayer: React.FunctionComponent<AdminReservationsPlayerPr
 
     const lastSubmission: AdminReservationsEntry = entries.slice(-1)[0];
     const historicSubmissions: AdminReservationsEntry[] = entries.slice(0, -1);
+    historicSubmissions.reverse(); // Show new entries first
 
     return (
         <div className={style.wrap}>
@@ -91,7 +94,7 @@ const AdminReservationsPlayer: React.FunctionComponent<AdminReservationsPlayerPr
                             {!lastSubmission.approved && (
                             <>
                                 <td className={style.cell}>
-                                    {'>'}
+                                    <FontAwesomeIcon icon={faLongArrowAltRight} />
                                 </td>
                                 <td className={style.cellItem}>
                                     {lastSubmission.slots[index] ? (
@@ -133,30 +136,45 @@ const AdminReservationsPlayer: React.FunctionComponent<AdminReservationsPlayerPr
             )}
 
             {historicSubmissions.length > 0 && (
-                <table className={style.table}>
-                    <thead>
-                        <tr>
-                            <th className={style.headerCell}>
-                                Historic submissions
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {historicSubmissions.map((entry) => (
-                            <tr key={entry.id} className={style.row}>
-                                <td className={style.cell}>
-                                    {entry.instance}
-                                </td>
-                                <td className={style.cell}>
-                                    {entry.submitted}
-                                </td>
-                                <td className={style.cell}>
-                                    {entry.slots.length}
-                                </td>
+                <>
+                    <h3 className={style.historicHeader}>
+                        Historic submissions
+                    </h3>
+                    <table className={[style.table, style.historicTable].join(' ')}>
+                        <thead>
+                            <tr>
+                                <th>
+                                    Instance
+                                </th>
+                                <th>
+                                    Submitted
+                                </th>
+                                <th>
+                                    Approved by
+                                </th>
                             </tr>
-                        ))}
-                    </tbody>
-                </table>
+                        </thead>
+                        <tbody>
+                            {historicSubmissions.map((entry) => (
+                                <tr key={entry.id}>
+                                    <td>
+                                        {entry.instance}
+                                    </td>
+                                    <td>
+                                        {entry.submitted}
+                                    </td>
+                                    {entry.approvedBy ? (
+                                        <td>
+                                            {entry.approvedBy}
+                                        </td>
+                                    ) : (
+                                        <td></td>
+                                    )}
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                </>
             )}
         </div>
     );

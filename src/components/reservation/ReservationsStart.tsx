@@ -25,6 +25,7 @@ const ReservationsStart: React.FunctionComponent = () => {
                 </Route>
                 <Route path={match.path}>
                     <div className={style.selectPlayer}>
+                        <p>Select your character:</p>
                         <PlayerSelect onChange={onPlayerSelect} />
                     </div>
                 </Route>

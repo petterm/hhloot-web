@@ -29,6 +29,7 @@ const PlayerDetails: React.FunctionComponent<PlayerDetailsProps> = ({ instance }
     )
 
     const attendanceRaids = getCombinedPlayerAttendanceList(player);
+    attendanceRaids.reverse();
 
     return (
         <div>
@@ -63,7 +64,12 @@ const PlayerDetails: React.FunctionComponent<PlayerDetailsProps> = ({ instance }
                                             <span className={style.receivedDate}>({entry.received})</span>
                                         )}
                                     </>
-                                ) : '--'}
+                                ) : (
+                                    <div className={style.cellItemEmpty}>
+                                        <span className={style.cellItemEmptyIcon}></span>
+                                        <span className={style.cellItemEmptyText}>(Empty)</span>
+                                    </div>
+                                )}
                             </td>
                             <td className={entry.received ? style.cellReceived : style.cell}>
                                 {entry.score}

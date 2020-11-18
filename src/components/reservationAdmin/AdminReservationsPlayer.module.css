@@ -48,7 +48,8 @@
 }
 
 .cellItemEmptyText {
-
+    color: #888;
+    font-size: 14px;
 }
 
 .cell {
@@ -118,4 +119,31 @@ tr:first-child .cellReceived {
 .errorMessage {
     margin: 0;
     font-size: normal;
+}
+
+.historicHeader {
+    margin: 30px 0 0;
+}
+
+.historicTable {
+    border-spacing: 0;
+    margin-top: 10px;
+}
+
+.historicTable th {
+    text-align: left;
+}
+
+.historicTable tr {
+    background-color: none;
+}
+
+.historicTable tr:nth-child(2n) {
+    background-color: #222;
+}
+
+.historicTable th,
+.historicTable td {
+    padding: 5px 10px;
+    border-bottom: 1px solid #333;
 }

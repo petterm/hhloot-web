@@ -1,3 +1,4 @@
+import moment from 'moment';
 import React from 'react';
 import { Link, useRouteMatch } from 'react-router-dom';
 import { AdminReservationsEntry } from '../../api/reservations';
@@ -7,6 +8,9 @@ import style from './AdminReservationsList.module.css';
 type AdminReservationsListProps = {
     entries: AdminReservationsEntry[],
 }
+
+const age = (timestamp: string) =>
+    moment.duration(moment(timestamp).diff(moment())).humanize(true);
 
 const AdminReservationsList: React.FunctionComponent<AdminReservationsListProps> = ({ entries }) => {
     const match = useRouteMatch();
@@ -33,51 +37,81 @@ const AdminReservationsList: React.FunctionComponent<AdminReservationsListProps>
 
     return (
         <div className={style.wrap}>
-            <div className={style.secton}>
+            <div className={style.section}>
                 <h3 className={style.sectionHeader}>
                     New submissions:
                 </h3>
-                {newSubmissions.map(entry => (
-                    <div key={entry.id} className={style.entry}>
-                        <Link to={`${match.url}/${entry.player.name}`} style={{ textDecoration: 'none' }}>
-                            <PlayerName player={entry.player} />
-                        </Link>
-                        {', '}
-                        {entry.instance}
-                        {', '}
-                        {entry.submitted}
-                        {', '}
-                        {entry.slots.length}
-                    </div>
-                ))}
-                {newSubmissions.length === 0 && (
-                    <div className={[style.entry, style.entryEmpty].join(' ')}>
-                        No new submissions! :)
-                    </div>
-                )}
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Player</th>
+                            <th>Instance</th>
+                            <th>Last updated</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {newSubmissions.map(entry => (
+                            <tr key={entry.id} className={style.entry}>
+                                <td>
+                                    <Link to={`${match.url}/${entry.player.name}`} style={{ textDecoration: 'none' }}>
+                                        <PlayerName player={entry.player} />
+                                    </Link>
+                                </td>
+                                <td>
+                                    {entry.instance}
+                                </td>
+                                <td title={entry.submitted}>
+                                    {age(entry.submitted)}
+                                </td>
+                            </tr>
+                        ))}
+                        {newSubmissions.length === 0 && (
+                            <tr className={[style.entry, style.entryEmpty].join(' ')}>
+                                <td colSpan={3}>
+                                    No new submissions! :)
+                                </td>
+                            </tr>
+                        )}
+                    </tbody>
+                </table>
             </div>
-            <div className={style.secton}>
+            <div className={style.section}>
                 <h3 className={style.sectionHeader}>
                     Approved:
                 </h3>
-                {approved.map(entry => (
-                    <div key={entry.id} className={style.entry}>
-                        <Link to={`${match.url}/${entry.player.name}`} style={{ textDecoration: 'none' }}>
-                            <PlayerName player={entry.player} />
-                        </Link>
-                        {', '}
-                        {entry.instance}
-                        {', '}
-                        {entry.submitted}
-                        {', '}
-                        {entry.slots.length}
-                    </div>
-                ))}
-                {approved.length === 0 && (
-                    <div className={[style.entry, style.entryEmpty].join(' ')}>
-                        No approved submissions! :(
-                    </div>
-                )}
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Player</th>
+                            <th>Instance</th>
+                            <th>Last updated</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {approved.map(entry => (
+                            <tr key={entry.id} className={style.entry}>
+                                <td>
+                                    <Link to={`${match.url}/${entry.player.name}`} style={{ textDecoration: 'none' }}>
+                                        <PlayerName player={entry.player} />
+                                    </Link>
+                                </td>
+                                <td>
+                                    {entry.instance}
+                                </td>
+                                <td title={entry.submitted}>
+                                    {age(entry.submitted)}
+                                </td>
+                            </tr>
+                        ))}
+                        {approved.length === 0 && (
+                            <tr className={[style.entry, style.entryEmpty].join(' ')}>
+                                <td colSpan={3}>
+                                    No approved submissions! :(
+                                </td>
+                            </tr>
+                        )}
+                    </tbody>
+                </table>
             </div>
         </div>
     );

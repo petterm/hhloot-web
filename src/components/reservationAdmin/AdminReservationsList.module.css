@@ -1,0 +1,39 @@
+.wrap {
+
+}
+
+.section {
+    margin-top: 20px;
+}
+
+.section table {
+    border-spacing: 0;
+    width: 500px;
+}
+
+.section tr {
+    background-color: #111;
+}
+
+.section tr:first-child {
+    border-top: 1px solid #333;
+}
+
+.section tr:nth-child(2n) {
+    background-color: #222;
+}
+
+.section th {
+    text-align: left;
+}
+
+.section th,
+.section td {
+    padding: 5px 10px;
+    border-bottom: 1px solid #333;
+}
+
+.sectionHeader {
+    margin: 0 0 10px;
+}
+
