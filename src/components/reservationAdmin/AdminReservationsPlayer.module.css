@@ -92,9 +92,13 @@ tr:first-child .cellReceived {
     align-items: center;
 }
 
-.approveButton:hover {
-    /* color: #ddd; */
-    background-color: #009107;
+.selectApprover {
+    margin-right: 10px;
+    width: 300px;
+}
+
+.approveWrap button {
+    height: 35px;
 }
 
 .approving {

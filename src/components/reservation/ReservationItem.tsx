@@ -29,7 +29,7 @@ const ReservationItem: React.FunctionComponent<ReservationItemProps> = ({ slotSc
 
     return (
         <div className={style.wrap} ref={dragRef} style={{ opacity: isDragging ? 0.5 : 1 }}>
-            <ItemLink item={item} size='small' />
+            <ItemLink item={item} size='small' noTextLink />
         </div>
     )
 };

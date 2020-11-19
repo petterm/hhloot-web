@@ -13,8 +13,13 @@ export const hideWowheadTooltip = () => {
     }
 }
 
-type ItemLinkProps = { item: Item, noText?: boolean, size: 'tiny' | 'small' | 'medium' | 'large' };
-const ItemLink = ({ item, noText, size }: ItemLinkProps) => {
+type ItemLinkProps = {
+    item: Item,
+    noText?: boolean,
+    noTextLink?: boolean,
+    size: 'tiny' | 'small' | 'medium' | 'large',
+};
+const ItemLink = ({ item, noText, noTextLink, size }: ItemLinkProps) => {
     const icon = getItemIcon(item.id);
     const iconStyle: React.CSSProperties = {
         background: `url("${wowheadIconUrl}/${size}/${icon}${iconExtension(size)}") left center no-repeat`,
@@ -25,14 +30,21 @@ const ItemLink = ({ item, noText, size }: ItemLinkProps) => {
     }
 
     return (
-        <a href={`https://classic.wowhead.com/item=${item.id}`} target='_blank' className={style.wrap} rel="noopener noreferrer" >
-            <span className={iconClass.join(' ')} style={iconStyle} />
-            {noText ? null : (
+        <div className={style.wrap}>
+            <a href={`https://classic.wowhead.com/item=${item.id}`} target='_blank' className={style.wrap} rel="noopener noreferrer" >
+                <span className={iconClass.join(' ')} style={iconStyle} />
+                {noText || noTextLink ? null : (
+                    <span className={style.text}>
+                        {item.name}
+                    </span>
+                )}
+            </a>
+            {noTextLink && (
                 <span className={style.text}>
                     {item.name}
                 </span>
             )}
-        </a>
+        </div>
     );
 }
 

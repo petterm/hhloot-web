@@ -5,9 +5,14 @@ import { getPlayers } from '../api/async';
 import Select, { ActionMeta, StylesConfig, ValueType } from 'react-select';
 import { ThemeConfig } from 'react-select/src/theme';
 
-const getOptions = () => {
-    const players = Object.values(getPlayers());
+const getOptions = (officers: boolean) => {
+    let players = Object.values(getPlayers());
+    if (officers) {
+        players = players.filter(a => a.guildRank && ['Guild Master', 'Officer'].includes(a.guildRank));
+    }
+
     players.sort((a, b) => a.name.localeCompare(b.name));
+
     return players.map(player => ({
         value: player,
         label: player.name,
@@ -59,14 +64,24 @@ const selectPlayer = (callback: (player: Player | undefined) => void) =>
         }
     };
 
-type PlayerSelectProps = { onChange: (player: Player | undefined) => void };
-const PlayerSelect: React.FunctionComponent<PlayerSelectProps> = ({ onChange }) => (
+type PlayerSelectProps = {
+    value?: Player,
+    onChange: (player: Player | undefined) => void,
+    officers?: boolean,
+    isClearable?: boolean,
+    placeholder?: string,
+};
+const PlayerSelect: React.FunctionComponent<PlayerSelectProps> = ({
+    value, onChange, officers, isClearable, placeholder,
+}) => (
     <Select
-        options={getOptions()}
+        isClearable={isClearable}
+        onChange={selectPlayer(onChange)}
+        options={getOptions(officers || false)}
+        placeholder={placeholder}
         styles={optionStyles}
         theme={themeStyles}
-        onChange={selectPlayer(onChange)}
-        isClearable
+        value={value ? { value: value, label: value.name } : undefined}
     />
 );
 

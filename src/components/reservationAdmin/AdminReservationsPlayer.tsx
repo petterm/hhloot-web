@@ -1,4 +1,4 @@
-import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
+import { faCheck, faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 import { getPlayer } from '../../api';
@@ -8,6 +8,7 @@ import { Item, Player, PlayerItemEntry } from '../../types';
 import Button from '../Button';
 import ItemLink from '../ItemLink';
 import PlayerName from '../PlayerName';
+import PlayerSelect from '../PlayerSelect';
 import style from './AdminReservationsPlayer.module.css';
 
 type AdminReservationsPlayerProps = {
@@ -18,15 +19,26 @@ type AdminReservationsPlayerProps = {
 const scoreRowClass = (row: PlayerItemEntry) => scoreGroupEdges.includes(row.score) ? style.scoreRowEdge : '';
 
 const AdminReservationsPlayer: React.FunctionComponent<AdminReservationsPlayerProps> = ({ player, entries }) => {
+    const savedApprover = localStorage.getItem("approver");
+    const [approver, setApproverInner] = useState<Player | undefined>(savedApprover ? getPlayer(savedApprover) : undefined);
     const [approved, setApproved] = useState(false);
     const [fetching, setFetching] = useState(false);
     const [error, setError] = useState<Error>();
 
+    const setApprover = (player?: Player) => {
+        if (player) {
+            localStorage.setItem('approver', player.name);
+        } else {
+            localStorage.removeItem('approver');
+        }
+        setApproverInner(player);
+    };
+
     const onApprove = () => {
-        if (!fetching && !approved) {
+        if (!fetching && !approved && approver) {
             setFetching(true);
             setError(undefined);
-            approveReservation(lastSubmission.id, getPlayer('Meche'))
+            approveReservation(lastSubmission.id, approver)
                 .then(() => {
                     setFetching(false);
                     setApproved(true);
@@ -115,21 +127,30 @@ const AdminReservationsPlayer: React.FunctionComponent<AdminReservationsPlayerPr
 
             {!lastSubmission.approved && (
                 <div className={style.approveWrap}>
-                    {fetching ? (
-                        <div className={style.approving}>Approving..</div>
-                    ) : approved ? (
-                        <div className={style.approved}>Approved!</div>
-                    ) : (
+                    <div className={style.selectApprover}>
+                        <PlayerSelect value={approver} onChange={setApprover} placeholder={'Select approver...'} officers />
+                    </div>
+                    {approver && (
                         <>
-                            <Button onClick={onApprove}>
-                                Approve new list
-                            </Button>
-                            {!!error && (
-                                <div className={style.errorWrap}>
-                                    <p className={style.errorTitle}>Error approving:</p>
-                                    <pre className={style.errorMessage}>{error.message}</pre>
-                                </div>
-                            )}
+                        {fetching ? (
+                            <div className={style.approving}>Approving..</div>
+                        ) : approved ? (
+                            <div className={style.approved}>
+                                <FontAwesomeIcon icon={faCheck} /> Approved!
+                            </div>
+                        ) : (
+                            <>
+                                <Button onClick={onApprove}>
+                                    Approve new list
+                                </Button>
+                                {!!error && (
+                                    <div className={style.errorWrap}>
+                                        <p className={style.errorTitle}>Error approving:</p>
+                                        <pre className={style.errorMessage}>{error.message}</pre>
+                                    </div>
+                                )}
+                            </>
+                        )}
                         </>
                     )}
                 </div>

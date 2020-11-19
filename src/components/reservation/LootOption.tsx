@@ -27,7 +27,7 @@ const LootOption: React.FunctionComponent<LootOptionProps> = ({ item }) => {
     return (
         <div className={style.wrap} ref={dragRef} style={{ opacity: isDragging ? 0.5 : 1 }}>
             <div className={style.itemDragable}>
-                <ItemLink item={item} size='small' />
+                <ItemLink item={item} size='small' noTextLink />
             </div>
         </div>
     )
