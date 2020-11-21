@@ -1656,5 +1656,37 @@
       "53_score": "Cloak of Concentrated Hatred",
       "52_score": "Vanquished Tentacle of C'Thun"
     }
+  ],
+  "Leesha": [
+    {
+      "date": "2020-11-20 18.35.30",
+      "character": "Leesha",
+      "100_score": "Husk of the Old God",
+      "90_score": "Ouro's Intact Hide",
+      "80_score": "Vek'nilash's Circlet",
+      "70_score": "Qiraji Bindings of Dominance",
+      "65_score": "Qiraji Bindings of Dominance",
+      "60_score": "Imperial Qiraji Regalia",
+      "55_score": "Cloak of the Devoured",
+      "54_score": "Dark Storm Gauntlets",
+      "53_score": "Eyestalk Waist Cord",
+      "52_score": "Mantle of Phrenic Power"
+    }
+  ],
+  "Timânris": [
+    {
+      "date": "2020-11-21 15.28.17",
+      "character": "Timânris",
+      "100_score": "Imperial Qiraji Regalia",
+      "90_score": "Dark Storm Gauntlets",
+      "80_score": "Cloak of the Devoured",
+      "70_score": "Ouro's Intact Hide",
+      "65_score": "Wand of Qiraji Nobility",
+      "60_score": "Mantle of Phrenic Power",
+      "55_score": "Husk of the Old God",
+      "54_score": "Eyestalk Waist Cord",
+      "53_score": "Qiraji Bindings of Dominance",
+      "52_score": "Burrower Bracers"
+    }
   ]
 }

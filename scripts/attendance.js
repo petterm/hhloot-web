@@ -27,7 +27,7 @@ http.get(dataFileURL, function(response) {
         if ("RIDB" in data) {
             const ridbData = luaJson.parse("return " + data["RIDB"]);
 
-            // fs.writeFile('tmpRidb.json', JSON.stringify(ridbData, null, 2), err => { if (err) throw err; });
+            fs.writeFile('tmpRidb.json', JSON.stringify(ridbData, null, 2), err => { if (err) throw err; });
             // if ("Players" in ridbData) {
             //     const players = [];
             //     for (const name in ridbData["Players"]) {
