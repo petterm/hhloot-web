@@ -20,7 +20,12 @@ const AdminReservations: React.FunctionComponent<AdminReservationsProps> = ({ in
     const [reservations, setReservations] = useState<AdminReservationsEntry[]>([]);
 
     const { playerName } = useParams<AdminReservationsParams>();
-    const player: Player | undefined = playerName ? getPlayer(formatName(playerName)) : undefined;
+    let player: Player | undefined;
+    if (playerName) {
+        try {
+            player = getPlayer(formatName(playerName));
+        } catch (error) {}
+    }
 
     useEffect(() => {
         setIsFetching(true);

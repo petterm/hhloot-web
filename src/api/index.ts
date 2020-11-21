@@ -69,7 +69,10 @@ const addPlayerReservationsToItems = () => {
 
 export const getPlayer = (name: string): Player => {
     const players = getPlayers();
-    return players[name];
+    if (name in players) {
+        return players[name];
+    }
+    throw Error(`Unknown player ${name}`);
 };
 
 export const prepareData = () => {

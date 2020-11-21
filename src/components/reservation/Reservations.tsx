@@ -30,6 +30,7 @@ const Reservations: React.FunctionComponent = () => {
     const [submitted, setSubmitted] = useState(false);
     const [error, setError] = useState<Error>();
 
+    // TODO: This does no longer work! getPlayer throws error and I cant break the list of hooks above
     if (!player) {
         return (<Redirect to={'/reservations'} />)
     }

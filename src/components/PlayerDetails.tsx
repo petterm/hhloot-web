@@ -1,5 +1,5 @@
 import React from 'react';
-import { Player, PlayerItemEntry, Item, Instance } from '../types'
+import { PlayerItemEntry, Item, Instance } from '../types'
 import { useParams } from 'react-router-dom';
 import { getPlayer } from '../api';
 import { getFinalScore, getPositionBonus, getItemBonus, getAttendanceBonus,
@@ -17,7 +17,7 @@ const scoreRowClass = (row: PlayerItemEntry) => scoreGroupEdges.includes(row.sco
 
 const PlayerDetails: React.FunctionComponent<PlayerDetailsProps> = ({ instance }) => {
     const { playerName } = useParams<PlayerDetailsParams>();
-    const player: Player = getPlayer(formatName(playerName));
+    const player = getPlayer(formatName(playerName));
 
     const freeLoot: Item[] = [];
     Object.values(getBossDrops(instance)).forEach(

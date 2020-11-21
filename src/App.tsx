@@ -10,6 +10,7 @@ import { getBosses } from './api/loot';
 import { Instance } from './types';
 import './App.css';
 import AdminReservations from './components/reservationAdmin/AdminReservations';
+import InvalidPlayerHandler from './components/InvalidPlayerHandler';
 
 function App() {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -46,7 +47,9 @@ function App() {
                                 <PlayerList players={Object.values(getPlayers())} />
                             </Route>
                             <Route path="/players/:playerName">
-                                <PlayerDetails instance={instance} />
+                                <InvalidPlayerHandler path="/players" >
+                                    <PlayerDetails instance={instance} />
+                                </InvalidPlayerHandler>
                             </Route>
                             <Route path={"/reservations/admin/:playerName?"}>
                                 <AdminReservations instance={instance} />

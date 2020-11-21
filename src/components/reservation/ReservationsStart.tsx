@@ -3,6 +3,7 @@ import { Switch, Route, useHistory, useRouteMatch } from 'react-router-dom';
 import Reservations from './Reservations';
 import style from './ReservationsStart.module.css';
 import PlayerSelect from '../PlayerSelect';
+import InvalidPlayerHandler from '../InvalidPlayerHandler';
 import { Player } from '../../types';
 
 const ReservationsStart: React.FunctionComponent = () => {
@@ -21,7 +22,9 @@ const ReservationsStart: React.FunctionComponent = () => {
         <div className={style.wrap}>
             <Switch>
                 <Route path={`${match.path}/:instance/:playerName`}>
-                    <Reservations />
+                    <InvalidPlayerHandler path={match.path}>
+                        <Reservations />
+                    </InvalidPlayerHandler>
                 </Route>
                 <Route path={match.path}>
                     <div className={style.selectPlayer}>
