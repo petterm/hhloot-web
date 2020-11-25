@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { Boss, Player, BossDrop } from '../types'
+import { instanceName } from '../constants';
+import { Boss, Player, BossDrop, Instance } from '../types'
 import BossEntry from './BossEntry';
 import style from './BossList.module.css';
 import LootPlayers from './LootPlayers';
 
-type BossListProps = { bosses: Boss[] };
+type BossListProps = { bosses: Boss[], instance: Instance };
 type LootPlayer = {
     player: Player,
     loot: BossDrop,
@@ -18,7 +19,7 @@ const localStorageSet = (key: string, value: boolean) => {
     }
 }
 
-const BossList = ({ bosses }: BossListProps) => {
+const BossList = ({ bosses, instance }: BossListProps) => {
     const [hideReceived, setHideReceivedInner] = useState(localStorage.getItem("hideReceived") ? true : false);
     const setHideReceived = (value: boolean) => {
         setHideReceivedInner(value);
@@ -54,7 +55,7 @@ const BossList = ({ bosses }: BossListProps) => {
     return (
         <div className={style.wrapper}>
             <div>
-                <h1>Bosses AQ 40</h1>
+                <h1>Bosses {instanceName[instance]}</h1>
                 <label style={{ cursor: "pointer" }}>
                     <input
                         type='checkbox'

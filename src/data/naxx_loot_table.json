@@ -1,0 +1,940 @@
+[
+    {
+        "name": "Wristguards of Vengeance",
+        "id": 22936,
+        "slot": "Wrist",
+        "source": "Anub'Rekhan",
+        "icon": "inv_bracer_17"
+    },
+    {
+        "name": "Widow's Remorse",
+        "id": 22806,
+        "slot": "One-Hand",
+        "source": "Grand Widow Faerlina",
+        "icon": "inv_sword_60"
+    },
+    {
+        "name": "Kiss of the Spider",
+        "id": 22954,
+        "slot": "Trinket",
+        "source": "Maexxna",
+        "icon": "inv_trinket_naxxramas04"
+    },
+    {
+        "name": "Severance",
+        "id": 22815,
+        "slot": "Two-Hand",
+        "source": "Patchwerk",
+        "icon": "inv_axe_22"
+    },
+    {
+        "name": "The End of Dreams",
+        "id": 22988,
+        "slot": "One-Hand",
+        "source": "Grobbulus",
+        "icon": "inv_mace_1h_stratholme_d_02"
+    },
+    {
+        "name": "Rime Covered Mantle",
+        "id": 22983,
+        "slot": "Shoulder",
+        "source": "Gluth",
+        "icon": "inv_shoulder_05"
+    },
+    {
+        "name": "Plated Abomination Ribcage",
+        "id": 23000,
+        "slot": "Chest",
+        "source": "Thaddius",
+        "icon": "inv_chest_chain_15"
+    },
+    {
+        "name": "Hatchet of Sundered Bone",
+        "id": 22816,
+        "slot": "One-Hand",
+        "source": "Noth the Plaguebringer",
+        "icon": "inv_axe_08"
+    },
+    {
+        "name": "Legplates of Carnage",
+        "id": 23068,
+        "slot": "Legs",
+        "source": "Heigan the Unclean",
+        "icon": "inv_pants_plate_20"
+    },
+    {
+        "name": "Band of Unnatural Forces",
+        "id": 23038,
+        "slot": "Finger",
+        "source": "Loatheb",
+        "icon": "inv_jewelry_ring_48naxxramas"
+    },
+    {
+        "name": "Iblis, Blade of the Fallen Seraph",
+        "id": 23014,
+        "slot": "One-Hand",
+        "source": "Instructor Razuvious",
+        "icon": "inv_sword_07"
+    },
+    {
+        "name": "Sadist's Collar",
+        "id": 23023,
+        "slot": "Neck",
+        "source": "Gothik the Harvester",
+        "icon": "inv_jewelry_necklace_29naxxramas"
+    },
+    {
+        "name": "Corrupted Ashbringer",
+        "id": 22691,
+        "slot": "Two-Hand",
+        "source": "Four Horsemen",
+        "icon": "inv_sword_2h_ashbringercorrupt"
+    },
+    {
+        "name": "Slayer's Crest",
+        "id": 23041,
+        "slot": "Trinket",
+        "source": "Sapphiron",
+        "icon": "inv_trinket_naxxramas03"
+    },
+    {
+        "name": "Gressil, Dawn of Ruin",
+        "id": 23054,
+        "slot": "One-Hand",
+        "source": "Kel'Thuzad",
+        "icon": "inv_sword_61"
+    },
+    {
+        "name": "The Phylactery of Kel'Thuzad",
+        "id": 22520,
+        "slot": "Quest",
+        "source": "Kel'Thuzad",
+        "icon": "inv_misc_urn_01"
+    },
+    {
+        "name": "Shroud of Dominion",
+        "id": 23045,
+        "slot": "Back",
+        "source": "Sapphiron",
+        "icon": "inv_misc_cape_naxxramas_03"
+    },
+    {
+        "name": "Stormrage's Talisman of Seething",
+        "id": 23053,
+        "slot": "Neck",
+        "source": "Kel'Thuzad",
+        "icon": "inv_jewelry_necklace_28naxxramas"
+    },
+    {
+        "name": "Kingsfall",
+        "id": 22802,
+        "slot": "One-Hand",
+        "source": "Kel'Thuzad",
+        "icon": "inv_weapon_shortblade_37"
+    },
+    {
+        "name": "Girdle of the Mentor",
+        "id": 23219,
+        "slot": "Waist",
+        "source": "Instructor Razuvious",
+        "icon": "inv_belt_13"
+    },
+    {
+        "name": "Wraith Blade",
+        "id": 22807,
+        "slot": "One-Hand",
+        "source": "Maexxna",
+        "icon": "inv_sword_11"
+    },
+    {
+        "name": "Soulstring",
+        "id": 22811,
+        "slot": "Ranged",
+        "source": "Four Horsemen",
+        "icon": "inv_weapon_bow_13"
+    },
+    {
+        "name": "Might of Menethil",
+        "id": 22798,
+        "slot": "Two-Hand",
+        "source": "Kel'Thuzad",
+        "icon": "inv_mace_25"
+    },
+    {
+        "name": "The Castigator",
+        "id": 22808,
+        "slot": "One-Hand",
+        "source": "Thaddius",
+        "icon": "inv_mace_1h_stratholme_d_01"
+    },
+    {
+        "name": "Soulseeker",
+        "id": 22799,
+        "slot": "Two-Hand",
+        "source": "Kel'Thuzad",
+        "icon": "inv_staff_15"
+    },
+    {
+        "name": "Brimstone Staff",
+        "id": 22800,
+        "slot": "Two-Hand",
+        "source": "Loatheb",
+        "icon": "inv_staff_13"
+    },
+    {
+        "name": "Leggings of Apocalypse",
+        "id": 23071,
+        "slot": "Legs",
+        "source": "Four Horsemen",
+        "icon": "inv_pants_leather_09"
+    },
+    {
+        "name": "The Restrained Essence of Sapphiron",
+        "id": 23046,
+        "slot": "Trinket",
+        "source": "Sapphiron",
+        "icon": "inv_trinket_naxxramas06"
+    },
+    {
+        "name": "Hammer of the Twisting Nether",
+        "id": 23056,
+        "slot": "One-Hand",
+        "source": "Kel'Thuzad",
+        "icon": "inv_mace_27"
+    },
+    {
+        "name": "Eye of the Dead",
+        "id": 23047,
+        "slot": "Trinket",
+        "source": "Sapphiron",
+        "icon": "inv_trinket_naxxramas01"
+    },
+    {
+        "name": "Claw of the Frost Wyrm",
+        "id": 23242,
+        "slot": "Off Hand",
+        "source": "Sapphiron",
+        "icon": "inv_weapon_hand_03"
+    },
+    {
+        "name": "The Widow's Embrace",
+        "id": 22942,
+        "slot": "One-Hand",
+        "source": "Grand Widow Faerlina",
+        "icon": "inv_mace_29"
+    },
+    {
+        "name": "Might of the Scourge",
+        "id": 23548,
+        "slot": "Perm. Enhancement",
+        "source": "Sapphiron",
+        "icon": "spell_shadow_deathpact"
+    },
+    {
+        "name": "Spire of Twilight",
+        "id": 22801,
+        "slot": "Two-Hand",
+        "source": "Thaddius",
+        "icon": "inv_staff_31"
+    },
+    {
+        "name": "Gem of Trapped Innocents",
+        "id": 23057,
+        "slot": "Neck",
+        "source": "Kel'Thuzad",
+        "icon": "inv_jewelry_necklace_29naxxramas"
+    },
+    {
+        "name": "Warmth of Forgiveness",
+        "id": 23027,
+        "slot": "Trinket",
+        "source": "Four Horsemen",
+        "icon": "inv_trinket_naxxramas01"
+    },
+    {
+        "name": "Death's Bargain",
+        "id": 23075,
+        "slot": "Shield",
+        "source": "Gluth",
+        "icon": "inv_armor_shield_naxxramas_d_01"
+    },
+    {
+        "name": "Shield of Condemnation",
+        "id": 22819,
+        "slot": "Shield",
+        "source": "Kel'Thuzad",
+        "icon": "inv_shield_28"
+    },
+    {
+        "name": "Touch of Frost",
+        "id": 22935,
+        "slot": "Neck",
+        "source": "Anub'Rekhan",
+        "icon": "inv_jewelry_amulet_04"
+    },
+    {
+        "name": "Band of the Inevitable",
+        "id": 23031,
+        "slot": "Finger",
+        "source": "Noth the Plaguebringer",
+        "icon": "inv_jewelry_ring_53naxxramas"
+    },
+    {
+        "name": "Maexxna's Fang",
+        "id": 22804,
+        "slot": "One-Hand",
+        "source": "Maexxna",
+        "icon": "inv_knife_1h_stratholme_d_01"
+    },
+    {
+        "name": "Leggings of Polarity",
+        "id": 23070,
+        "slot": "Legs",
+        "source": "Thaddius",
+        "icon": "inv_pants_08"
+    },
+    {
+        "name": "Cryptfiend Silk Cloak",
+        "id": 22938,
+        "slot": "Back",
+        "source": "Anub'Rekhan",
+        "icon": "inv_misc_cape_naxxramas_02"
+    },
+    {
+        "name": "Seal of the Damned",
+        "id": 23025,
+        "slot": "Finger",
+        "source": "Four Horsemen",
+        "icon": "inv_jewelry_ring_48naxxramas"
+    },
+    {
+        "name": "Band of Unanswered Prayers",
+        "id": 22939,
+        "slot": "Finger",
+        "source": "Anub'Rekhan",
+        "icon": "inv_jewelry_ring_50naxxramas"
+    },
+    {
+        "name": "Sapphiron's Right Eye",
+        "id": 23048,
+        "slot": "Held In Off-hand",
+        "source": "Sapphiron",
+        "icon": "inv_offhand_naxxramas_02"
+    },
+    {
+        "name": "Sapphiron's Left Eye",
+        "id": 23049,
+        "slot": "Held In Off-hand",
+        "source": "Sapphiron",
+        "icon": "inv_offhand_naxxramas_03"
+    },
+    {
+        "name": "The Eye of Nerub",
+        "id": 23039,
+        "slot": "Two-Hand",
+        "source": "Loatheb",
+        "icon": "inv_weapon_halberd_04"
+    },
+    {
+        "name": "The Face of Death",
+        "id": 23043,
+        "slot": "Shield",
+        "source": "Sapphiron",
+        "icon": "inv_shield_26"
+    },
+    {
+        "name": "Cloak of the Necropolis",
+        "id": 23050,
+        "slot": "Back",
+        "source": "Sapphiron",
+        "icon": "inv_misc_cape_naxxramas_03"
+    },
+    {
+        "name": "Doomfinger",
+        "id": 22821,
+        "slot": "Ranged",
+        "source": "Kel'Thuzad",
+        "icon": "inv_wand_1h_stratholme_d_02"
+    },
+    {
+        "name": "Cloak of Suturing",
+        "id": 22960,
+        "slot": "Back",
+        "source": "Patchwerk",
+        "icon": "inv_misc_cape_naxxramas_02"
+    },
+    {
+        "name": "The Plague Bearer",
+        "id": 22818,
+        "slot": "Shield",
+        "source": "Patchwerk",
+        "icon": "inv_shield_27"
+    },
+    {
+        "name": "Preceptor's Hat",
+        "id": 23035,
+        "slot": "Head",
+        "source": "Heigan the Unclean",
+        "icon": "inv_helmet_50"
+    },
+    {
+        "name": "Wand of Fates",
+        "id": 22820,
+        "slot": "Ranged",
+        "source": "Patchwerk",
+        "icon": "inv_wand_1h_stratholme_d_01"
+    },
+    {
+        "name": "Icebane Helmet",
+        "id": 23019,
+        "slot": "Head",
+        "source": "Heigan the Unclean",
+        "icon": "inv_helmet_06"
+    },
+    {
+        "name": "Desecrated Circlet",
+        "id": 22367,
+        "slot": "Armor Token",
+        "source": "Thaddius",
+        "icon": "inv_misc_desecrated_clothhelm"
+    },
+    {
+        "name": "Glacial Headdress",
+        "id": 23032,
+        "slot": "Head",
+        "source": "Gothik the Harvester",
+        "icon": "inv_helmet_53"
+    },
+    {
+        "name": "The Soul Harvester's Bindings",
+        "id": 23021,
+        "slot": "Wrist",
+        "source": "Gothik the Harvester",
+        "icon": "inv_bracer_07"
+    },
+    {
+        "name": "Crystal Webbed Robe",
+        "id": 23220,
+        "slot": "Chest",
+        "source": "Maexxna",
+        "icon": "inv_chest_cloth_46"
+    },
+    {
+        "name": "Necklace of Necropsy",
+        "id": 23036,
+        "slot": "Neck",
+        "source": "Heigan the Unclean",
+        "icon": "inv_jewelry_necklace_30naxxramas"
+    },
+    {
+        "name": "Cloak of the Scourge",
+        "id": 23030,
+        "slot": "Back",
+        "source": "Noth the Plaguebringer",
+        "icon": "inv_misc_cape_naxxramas_01"
+    },
+    {
+        "name": "Loatheb's Reflection",
+        "id": 23042,
+        "slot": "Trinket",
+        "source": "Loatheb",
+        "icon": "inv_trinket_naxxramas05"
+    },
+    {
+        "name": "Midnight Haze",
+        "id": 22803,
+        "slot": "One-Hand",
+        "source": "Grobbulus",
+        "icon": "inv_knife_1h_stratholme_d_02"
+    },
+    {
+        "name": "Band of Reanimation",
+        "id": 22961,
+        "slot": "Finger",
+        "source": "Patchwerk",
+        "icon": "inv_jewelry_ring_49naxxramas"
+    },
+    {
+        "name": "Icebane Pauldrons",
+        "id": 22940,
+        "slot": "Shoulder",
+        "source": "Grand Widow Faerlina",
+        "icon": "inv_shoulder_16"
+    },
+    {
+        "name": "Hailstone Band",
+        "id": 23028,
+        "slot": "Finger",
+        "source": "Noth the Plaguebringer",
+        "icon": "inv_jewelry_ring_35"
+    },
+    {
+        "name": "Wand of the Whispering Dead",
+        "id": 23009,
+        "slot": "Ranged",
+        "source": "Instructor Razuvious",
+        "icon": "inv_wand_1h_stratholme_d_01"
+    },
+    {
+        "name": "Noth's Frigid Heart",
+        "id": 23029,
+        "slot": "Held In Off-hand",
+        "source": "Noth the Plaguebringer",
+        "icon": "inv_offhand_naxxramas_04"
+    },
+    {
+        "name": "Toxin Injector",
+        "id": 22810,
+        "slot": "Ranged",
+        "source": "Grobbulus",
+        "icon": "inv_weapon_rifle_11"
+    },
+    {
+        "name": "Desecrated Shoulderpads",
+        "id": 22368,
+        "slot": "Armor Token",
+        "source": "Patchwerk, Gluth, Grobbulus",
+        "icon": "inv_misc_desecrated_clothshoulder"
+    },
+    {
+        "name": "Desecrated Robe",
+        "id": 22351,
+        "slot": "Armor Token",
+        "source": "Four Horsemen",
+        "icon": "inv_misc_desecrated_clothchest"
+    },
+    {
+        "name": "Power of the Scourge",
+        "id": 23545,
+        "slot": "Perm. Enhancement",
+        "source": "Sapphiron",
+        "icon": "spell_shadow_darkritual"
+    },
+    {
+        "name": "Desecrated Helmet",
+        "id": 22353,
+        "slot": "Armor Token",
+        "source": "Thaddius",
+        "icon": "inv_misc_desecrated_platehelm"
+    },
+    {
+        "name": "Frostfire Ring",
+        "id": 23062,
+        "slot": "Finger",
+        "source": "Kel'Thuzad",
+        "icon": "inv_jewelry_ring_51naxxramas"
+    },
+    {
+        "name": "Desecrated Bindings",
+        "id": 22369,
+        "slot": "Armor Token",
+        "source": "Grand Widow Faerlina, Gluth, Anub'Rekhan",
+        "icon": "inv_misc_desecrated_clothbracer"
+    },
+    {
+        "name": "Desecrated Sandals",
+        "id": 22372,
+        "slot": "Armor Token",
+        "source": "Instructor Razuvious, Gluth, Gothik the Harvester",
+        "icon": "inv_misc_desecrated_clothboots"
+    },
+    {
+        "name": "Eye of Diminution",
+        "id": 23001,
+        "slot": "Trinket",
+        "source": "Thaddius",
+        "icon": "inv_trinket_naxxramas02"
+    },
+    {
+        "name": "Desecrated Bracers",
+        "id": 22355,
+        "slot": "Armor Token",
+        "source": "Grand Widow Faerlina, Gluth, Anub'Rekhan",
+        "icon": "inv_misc_desecrated_platebracer"
+    },
+    {
+        "name": "Claymore of Unholy Might",
+        "id": 22813,
+        "slot": "Two-Hand",
+        "source": "Gluth",
+        "icon": "inv_sword_46"
+    },
+    {
+        "name": "Desecrated Headpiece",
+        "id": 22360,
+        "slot": "Armor Token",
+        "source": "Thaddius",
+        "icon": "inv_misc_desecrated_mailhelm"
+    },
+    {
+        "name": "Desecrated Wristguards",
+        "id": 22362,
+        "slot": "Armor Token",
+        "source": "Grand Widow Faerlina, Gluth, Anub'Rekhan",
+        "icon": "inv_misc_desecrated_mailbracer"
+    },
+    {
+        "name": "Glacial Mantle",
+        "id": 22968,
+        "slot": "Shoulder",
+        "source": "Grobbulus",
+        "icon": "inv_shoulder_14"
+    },
+    {
+        "name": "Polar Helmet",
+        "id": 23020,
+        "slot": "Head",
+        "source": "Gothik the Harvester",
+        "icon": "inv_helmet_04"
+    },
+    {
+        "name": "Desecrated Boots",
+        "id": 22365,
+        "slot": "Armor Token",
+        "source": "Instructor Razuvious, Gluth, Gothik the Harvester",
+        "icon": "inv_misc_desecrated_mailboots"
+    },
+    {
+        "name": "Icy Scale Coif",
+        "id": 23033,
+        "slot": "Head",
+        "source": "Heigan the Unclean",
+        "icon": "inv_helmet_20"
+    },
+    {
+        "name": "Polar Shoulder Pads",
+        "id": 22941,
+        "slot": "Shoulder",
+        "source": "Grand Widow Faerlina",
+        "icon": "inv_shoulder_07"
+    },
+    {
+        "name": "Desecrated Spaulders",
+        "id": 22361,
+        "slot": "Armor Token",
+        "source": "Patchwerk, Gluth, Grobbulus",
+        "icon": "inv_misc_desecrated_mailshoulder"
+    },
+    {
+        "name": "Gem of Nerubis",
+        "id": 22937,
+        "slot": "Held In Off-hand",
+        "source": "Anub'Rekhan",
+        "icon": "inv_offhand_naxxramas_d_01"
+    },
+    {
+        "name": "Malice Stone Pendant",
+        "id": 22943,
+        "slot": "Neck",
+        "source": "Grand Widow Faerlina",
+        "icon": "inv_jewelry_necklace_29naxxramas"
+    },
+    {
+        "name": "Signet of the Fallen Defender",
+        "id": 23018,
+        "slot": "Finger",
+        "source": "Instructor Razuvious",
+        "icon": "inv_jewelry_ring_50naxxramas"
+    },
+    {
+        "name": "Boots of Displacement",
+        "id": 23073,
+        "slot": "Feet",
+        "source": "Gothik the Harvester",
+        "icon": "inv_boots_08"
+    },
+    {
+        "name": "Desecrated Gloves",
+        "id": 22371,
+        "slot": "Armor Token",
+        "source": "Maexxna",
+        "icon": "inv_misc_desecrated_clothglove"
+    },
+    {
+        "name": "Desecrated Belt",
+        "id": 22370,
+        "slot": "Armor Token",
+        "source": "Heigan the Unclean, Gluth, Noth the Plaguebringer",
+        "icon": "inv_misc_desecrated_clothbelt"
+    },
+    {
+        "name": "Desecrated Leggings",
+        "id": 22366,
+        "slot": "Armor Token",
+        "source": "Loatheb",
+        "icon": "inv_misc_desecrated_clothpants"
+    },
+    {
+        "name": "Ring of Faith",
+        "id": 23061,
+        "slot": "Finger",
+        "source": "Kel'Thuzad",
+        "icon": "inv_jewelry_ring_51naxxramas"
+    },
+    {
+        "name": "Desecrated Pauldrons",
+        "id": 22354,
+        "slot": "Armor Token",
+        "source": "Patchwerk, Gluth, Grobbulus",
+        "icon": "inv_misc_desecrated_plateshoulder"
+    },
+    {
+        "name": "Maul of the Redeemed Crusader",
+        "id": 22809,
+        "slot": "Two-Hand",
+        "source": "Four Horsemen",
+        "icon": "inv_mace_26"
+    },
+    {
+        "name": "Digested Hand of Power",
+        "id": 22994,
+        "slot": "Held In Off-hand",
+        "source": "Gluth",
+        "icon": "inv_offhand_stratholme_a_02"
+    },
+    {
+        "name": "Desecrated Sabatons",
+        "id": 22358,
+        "slot": "Armor Token",
+        "source": "Instructor Razuvious, Gluth, Gothik the Harvester",
+        "icon": "inv_misc_desecrated_plateboots"
+    },
+    {
+        "name": "Ring of the Dreadnaught",
+        "id": 23059,
+        "slot": "Finger",
+        "source": "Kel'Thuzad",
+        "icon": "inv_jewelry_ring_51naxxramas"
+    },
+    {
+        "name": "Desecrated Tunic",
+        "id": 22350,
+        "slot": "Armor Token",
+        "source": "Four Horsemen",
+        "icon": "inv_misc_desecrated_mailchest"
+    },
+    {
+        "name": "Desecrated Legguards",
+        "id": 22359,
+        "slot": "Armor Token",
+        "source": "Loatheb",
+        "icon": "inv_misc_desecrated_mailpants"
+    },
+    {
+        "name": "Veil of Eclipse",
+        "id": 23017,
+        "slot": "Back",
+        "source": "Instructor Razuvious",
+        "icon": "inv_misc_cape_naxxramas_01"
+    },
+    {
+        "name": "Desecrated Legplates",
+        "id": 22352,
+        "slot": "Armor Token",
+        "source": "Loatheb",
+        "icon": "inv_misc_desecrated_platepants"
+    },
+    {
+        "name": "Bonescythe Ring",
+        "id": 23060,
+        "slot": "Finger",
+        "source": "Kel'Thuzad",
+        "icon": "inv_jewelry_ring_51naxxramas"
+    },
+    {
+        "name": "Desecrated Handguards",
+        "id": 22364,
+        "slot": "Armor Token",
+        "source": "Maexxna",
+        "icon": "inv_misc_desecrated_mailglove"
+    },
+    {
+        "name": "Desecrated Girdle",
+        "id": 22363,
+        "slot": "Armor Token",
+        "source": "Heigan the Unclean, Gluth, Noth the Plaguebringer",
+        "icon": "inv_misc_desecrated_mailbelt"
+    },
+    {
+        "name": "Desecrated Waistguard",
+        "id": 22356,
+        "slot": "Armor Token",
+        "source": "Heigan the Unclean, Gluth, Noth the Plaguebringer",
+        "icon": "inv_misc_desecrated_platebelt"
+    },
+    {
+        "name": "Pendant of Forgotten Names",
+        "id": 22947,
+        "slot": "Neck",
+        "source": "Maexxna",
+        "icon": "inv_jewelry_necklace_28naxxramas"
+    },
+    {
+        "name": "Desecrated Gauntlets",
+        "id": 22357,
+        "slot": "Armor Token",
+        "source": "Maexxna",
+        "icon": "inv_misc_desecrated_plategloves"
+    },
+    {
+        "name": "Ring of Spiritual Fervor",
+        "id": 23037,
+        "slot": "Finger",
+        "source": "Loatheb",
+        "icon": "inv_jewelry_ring_52naxxramas"
+    },
+    {
+        "name": "Glyph of Deflection",
+        "id": 23040,
+        "slot": "Trinket",
+        "source": "Sapphiron",
+        "icon": "inv_trinket_naxxramas05"
+    },
+    {
+        "name": "Gluth's Missing Collar",
+        "id": 22981,
+        "slot": "Neck",
+        "source": "Gluth",
+        "icon": "inv_jewelry_necklace_27naxxramas"
+    },
+    {
+        "name": "Icy Scale Spaulders",
+        "id": 22967,
+        "slot": "Shoulder",
+        "source": "Grobbulus",
+        "icon": "inv_shoulder_14"
+    },
+    {
+        "name": "Ring of the Cryptstalker",
+        "id": 23067,
+        "slot": "Finger",
+        "source": "Kel'Thuzad",
+        "icon": "inv_jewelry_ring_51naxxramas"
+    },
+    {
+        "name": "Idol of Longevity",
+        "id": 23004,
+        "slot": "Relic",
+        "source": "Instructor Razuvious",
+        "icon": "inv_relics_idolofhealth"
+    },
+    {
+        "name": "Libram of Light",
+        "id": 23006,
+        "slot": "Relic",
+        "source": "Noth the Plaguebringer",
+        "icon": "inv_relics_libramofgrace"
+    },
+    {
+        "name": "Ring of the Dreamwalker",
+        "id": 23064,
+        "slot": "Finger",
+        "source": "Kel'Thuzad",
+        "icon": "inv_jewelry_ring_51naxxramas"
+    },
+    {
+        "name": "Desecrated Breastplate",
+        "id": 22349,
+        "slot": "Armor Token",
+        "source": "Four Horsemen",
+        "icon": "inv_misc_desecrated_platechest"
+    },
+    {
+        "name": "Plagueheart Ring",
+        "id": 23063,
+        "slot": "Finger",
+        "source": "Kel'Thuzad",
+        "icon": "inv_jewelry_ring_51naxxramas"
+    },
+    {
+        "name": "Totem of Flowing Water",
+        "id": 23005,
+        "slot": "Relic",
+        "source": "Noth the Plaguebringer",
+        "icon": "inv_relics_totemoflife"
+    },
+    {
+        "name": "Ring of the Earthshatterer",
+        "id": 23065,
+        "slot": "Finger",
+        "source": "Kel'Thuzad",
+        "icon": "inv_jewelry_ring_51naxxramas"
+    },
+    {
+        "name": "Belt of the Grand Crusader",
+        "id": 23666,
+        "slot": "Waist",
+        "source": "Trash",
+        "icon": "inv_belt_27"
+    },
+    {
+        "name": "Ghoul Skin Tunic",
+        "id": 23226,
+        "slot": "Chest",
+        "source": "Trash",
+        "icon": "inv_chest_leather_02"
+    },
+    {
+        "name": "Girdle of Elemental Fury",
+        "id": 23663,
+        "slot": "Waist",
+        "source": "Trash",
+        "icon": "inv_belt_32"
+    },
+    {
+        "name": "Harbinger of Doom",
+        "id": 23044,
+        "slot": "One-Hand",
+        "source": "Trash",
+        "icon": "inv_knife_1h_stratholme_d_03"
+    },
+    {
+        "name": "Leggings of the Grand Crusader",
+        "id": 23668,
+        "slot": "Legs",
+        "source": "Trash",
+        "icon": "inv_pants_04"
+    },
+    {
+        "name": "Misplaced Servo Arm",
+        "id": 23221,
+        "slot": "One-Hand",
+        "source": "Trash",
+        "icon": "inv_mace_28"
+    },
+    {
+        "name": "Necro-Knight's Garb",
+        "id": 23069,
+        "slot": "Chest",
+        "source": "Trash",
+        "icon": "inv_chest_cloth_46"
+    },
+    {
+        "name": "Spaulders of the Grand Crusader",
+        "id": 23667,
+        "slot": "Shoulder",
+        "source": "Trash",
+        "icon": "inv_shoulder_22"
+    },
+    {
+        "name": "Stygian Buckler",
+        "id": 23238,
+        "slot": "Off Hand",
+        "source": "Trash",
+        "icon": "inv_armor_shield_naxxramas_d_02"
+    },
+    {
+        "name": "Ring of the Eternal Flame",
+        "id": 23237,
+        "slot": "Finger",
+        "source": "Trash",
+        "icon": "inv_jewelry_ring_48naxxramas"
+    },
+    {
+        "name": "Ring of Redemption",
+        "id": 23066,
+        "slot": "Finger",
+        "source": "Kel'Thuzad",
+        "icon": "inv_jewelry_ring_51naxxramas"
+    }
+]

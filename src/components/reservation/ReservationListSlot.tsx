@@ -1,10 +1,10 @@
 import React from 'react';
 import { useDrop } from 'react-dnd';
-import { Item, ItemScore } from '../../types';
+import { Instance, Item, ItemScore } from '../../types';
 import { DragItem, DropResult } from './Reservations';
 import ReservationItem from './ReservationItem';
 import style from './ReservationListSlot.module.css';
-import { scoreGroupEdges } from '../../constants';
+import { getScoreGroupEdges } from '../../api/reservations';
 
 interface ReservationListSlotProps {
     slotScore: ItemScore,
@@ -12,6 +12,7 @@ interface ReservationListSlotProps {
     moveItem: (sourceScore: ItemScore, targetScore: ItemScore) => void,
     replaceItem: (item: Item, score: ItemScore) => void,
     swapItem: (sourceScore: ItemScore, targetScore: ItemScore) => void,
+    instance: Instance,
     item?: Item,
     received?: string,
 };
@@ -22,7 +23,7 @@ interface CollectedProps {
 }
 
 const ReservationListSlot: React.FunctionComponent<ReservationListSlotProps> = ({
-    slotScore, item, received, addItem, moveItem, replaceItem, swapItem,
+    slotScore, item, received, addItem, moveItem, replaceItem, swapItem, instance,
 }) => {
     const [{ canDrop, isOver }, dropRef] = useDrop<DragItem, DropResult, CollectedProps>({
         accept: 'ITEM',
@@ -67,7 +68,7 @@ const ReservationListSlot: React.FunctionComponent<ReservationListSlotProps> = (
         wrapClass.push(style.wrapDrop);
     }
 
-    if (scoreGroupEdges.includes(slotScore)) {
+    if (getScoreGroupEdges(instance).includes(slotScore)) {
         wrapClass.push(style.wrapScoreRowEdge);
     }
 

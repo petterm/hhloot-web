@@ -1,10 +1,20 @@
-import { ItemScore, Class, Instance } from "./types";
+import { ItemScore, Class, Instance, ItemScoreAq40, ItemScoreNaxx } from "./types";
 
-export const itemScores: ItemScore[] = [
+export const itemScoresAq40: ItemScoreAq40[] = [
     100, 90, 80, 70, 65, 60, 55, 54, 53, 52,
 ];
+export const scoreGroupEdgesAq40: ItemScore[] = [80, 60];
+
+export const itemScoresNaxx: ItemScoreNaxx[] = [
+    100, 90, 80, 70, 65, 60, 55, 54, 53, 52,
+];
+export const scoreGroupEdgesNaxx: ItemScore[] = [80, 60];
 
 export const instances: Instance[] = ['aq40', 'naxx'];
+export const instanceName: Record<Instance, string> = {
+    aq40: 'AQ 40',
+    naxx: 'Naxxramas',
+};
 
 export const classes: Class[] = [
     'DRUID', 'HUNTER', 'MAGE', 'PALADIN', 'PRIEST', 'ROGUE', 'WARLOCK', 'WARRIOR'
@@ -24,5 +34,3 @@ export const classColor: {[C in Class]: string} = {
 export const rollPointsWindow = 3;
 export const nonBonusRaidCount = 4;
 export const attendanceRaidCount = 6;
-
-export const scoreGroupEdges: ItemScore[] = [80, 60];

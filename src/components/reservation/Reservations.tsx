@@ -7,8 +7,7 @@ import { Instance, Item, ItemScore, Player } from '../../types';
 import { formatName } from '../PlayerName';
 import LootOptionsList from './LootOptionsList';
 import ReservationList from './ReservationList';
-import { ReservationsList, submitReservations } from '../../api/reservations';
-import { itemScores } from '../../constants';
+import { getItemScores, ReservationsList, submitReservations } from '../../api/reservations';
 import { initialState, ItemSlot, addItem, moveItem,
         replaceItem, swapItem, removeItem, reducer } from './state';
 import Trashcan from './Trashcan';
@@ -17,13 +16,16 @@ import style from './Reservations.module.css';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-type ReservationsParams = {
+type ReservationsProps = {
     instance: Instance,
+}
+
+type ReservationsParams = {
     playerName: string,
 }
 
-const Reservations: React.FunctionComponent = () => {
-    const { instance, playerName } = useParams<ReservationsParams>();
+const Reservations: React.FunctionComponent<ReservationsProps> = ({ instance }) => {
+    const { playerName } = useParams<ReservationsParams>();
     const player: Player = getPlayer(formatName(playerName));
     const [state, dispatch] = useReducer(reducer, initialState(player));
     const [submitting, setSubmitting] = useState(false);
@@ -41,7 +43,7 @@ const Reservations: React.FunctionComponent = () => {
             setError(undefined);
 
             const entries: ReservationsList = {};
-            itemScores.forEach(score => entries[score] = state[score] ? (state[score] as ItemSlot).item : undefined)
+            getItemScores(instance).forEach(score => entries[score] = state[score] ? (state[score] as ItemSlot).item : undefined)
 
             submitReservations(player, instance, entries)
                 .then(() => {

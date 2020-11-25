@@ -1,10 +1,10 @@
 import React from 'react';
-import { itemScores } from '../../constants';
 import { Instance, Item, ItemScore, Player } from '../../types';
 import PlayerName from '../PlayerName';
 import ReservationListSlot from './ReservationListSlot';
 import { ItemSlot, State } from './state';
 import style from './ReservationList.module.css';
+import { getItemScores } from '../../api/reservations';
 
 interface ReservationListProps {
     player: Player,
@@ -24,12 +24,13 @@ const ReservationList: React.FunctionComponent<ReservationListProps> = ({
             <PlayerName player={player} />
         </h3>
         <div className={style.slotListWrap}>
-            {itemScores.map(score => (
+            {getItemScores(instance).map(score => (
                 <ReservationListSlot
+                    key={`score-${score}`}
                     slotScore={score}
                     item={state[score] ? (state[score] as ItemSlot).item : undefined}
                     received={state[score] ? (state[score] as ItemSlot).received : undefined}
-                    key={`score-${score}`}
+                    instance={instance}
                     addItem={addItem}
                     moveItem={moveItem}
                     replaceItem={replaceItem}

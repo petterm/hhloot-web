@@ -1,6 +1,6 @@
 import Axios from "axios";
 import { getPlayer } from ".";
-import { itemScores } from "../constants";
+import { itemScoresAq40, itemScoresNaxx, scoreGroupEdgesAq40 } from "../constants";
 import { Instance, Item, ItemScore, Player, PlayerName } from "../types";
 import { ReservationApprovePostRequest, ReservationApprovePostResponse,
     ReservationPostRequest, ReservationPostResponse, ReservationsResponse } from "./apiTypes";
@@ -14,7 +14,7 @@ export const submitReservations = async (player: Player, instance: Instance, res
     const data: ReservationPostRequest = {
         name: player.name,
         instance: instance,
-        slots: itemScores.map(score => idOrNull(reservations[score]))
+        slots: getItemScores(instance).map(score => idOrNull(reservations[score]))
     }
 
     return Axios.post<ReservationPostResponse>('/Api/reservations', data)
@@ -46,8 +46,8 @@ export const getReservations = async (
         .then(({ data }) => {
             const filteredResult: AdminReservationsEntry[] = [];
             data.forEach(entry => {
-                const player = getPlayer(entry.name);
-                if (player) {
+                try {
+                    const player = getPlayer(entry.name);
                     filteredResult.push({
                         id: entry.id,
                         player,
@@ -57,6 +57,8 @@ export const getReservations = async (
                         approvedBy: entry.approvedBy,
                         slots: entry.slots.map(itemId => itemId ? getItem(itemId) : undefined),
                     });
+                } catch (error) {
+                    console.warn('Found reservation for unknown player', entry.name);
                 }
             });
             return filteredResult;
@@ -80,4 +82,24 @@ export const approveReservation = async (reservationId: number, approver: Player
             approvedBy: data.approvedBy,
             slots: data.slots.map(itemId => itemId ? getItem(itemId) : undefined),
         }));
+};
+
+export const getItemScores = (instance: Instance): ItemScore[] => {
+    if (instance === 'aq40') {
+        return itemScoresAq40;
+    }
+    if (instance === 'naxx') {
+        return itemScoresNaxx;
+    }
+    throw Error(`Unknown instance ${instance}`);
+};
+
+export const getScoreGroupEdges = (instance: Instance): ItemScore[] => {
+    if (instance === 'aq40') {
+        return scoreGroupEdgesAq40;
+    }
+    if (instance === 'naxx') {
+        return scoreGroupEdgesAq40;
+    }
+    throw Error(`Unknown instance ${instance}`);
 };

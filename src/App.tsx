@@ -15,10 +15,11 @@ import InvalidPlayerHandler from './components/InvalidPlayerHandler';
 function App() {
     const [isLoaded, setIsLoaded] = useState(false);
     const [error, setError] = useState<Error>();
+    // const instance: Instance = 'naxx';
     const instance: Instance = 'aq40';
 
     useEffect(() => {
-        fetchData()
+        fetchData(instance)
             .then(() => prepareData())
             .then(() => setIsLoaded(true))
             .catch((error) => {
@@ -41,10 +42,10 @@ function App() {
                         <Link to="/reservations/admin">Admin</Link>
                         <Switch>
                             <Route exact path="/">
-                                <BossList bosses={Object.values(getBosses(instance))} />
+                                <BossList bosses={Object.values(getBosses(instance))} instance={instance} />
                             </Route>
                             <Route exact path="/players">
-                                <PlayerList players={Object.values(getPlayers())} />
+                                <PlayerList instance={instance} players={Object.values(getPlayers())} />
                             </Route>
                             <Route path="/players/:playerName">
                                 <InvalidPlayerHandler path="/players" >
@@ -55,7 +56,7 @@ function App() {
                                 <AdminReservations instance={instance} />
                             </Route>
                             <Route path="/reservations">
-                                <ReservationsStart />
+                                <ReservationsStart instance={instance} />
                             </Route>
                         </Switch>
                     </>

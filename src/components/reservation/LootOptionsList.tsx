@@ -1,5 +1,6 @@
 import React from 'react';
 import { getBosses } from '../../api/loot';
+import { instanceName } from '../../constants';
 import { Instance } from '../../types';
 import LootOption from './LootOption';
 import style from './LootOptionsList.module.css';
@@ -14,7 +15,7 @@ const LootOptionsList: React.FunctionComponent<LootOptionsListProps> = ({ instan
     return (
         <div className={style.wrap}>
             <h3 className={style.header}>
-                AQ40 Loot
+                {instanceName[instance]} Loot
             </h3>
             <div className={style.list}>
                 {bosses.map(boss => (

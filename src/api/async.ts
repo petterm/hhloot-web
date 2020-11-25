@@ -1,8 +1,8 @@
 import Axios from "axios";
-import { itemScores } from "../constants";
-import { Class, GuildRank, Player } from "../types";
+import { Class, GuildRank, Instance, Player } from "../types";
 import { PlayersResponse, ReservationsResponse } from "./apiTypes";
 import { getItem } from "./loot";
+import { getItemScores } from "./reservations";
 import { getSheet } from "./sheets";
 
 type Loot = {
@@ -26,7 +26,13 @@ export const getRaids = (): Raid[] => raids;
 export const getPlayers = (): PlayerMap => playerMap;
 export const getPlayersData = (): PlayersResponse => players;
 
-export const fetchData = () => Promise.all([
+const lootSheetTab = (instance: Instance): string => {
+    if (instance === 'aq40') return 'Loot';
+    if (instance === 'naxx') return 'LootNaxx';
+    throw Error(`Unknown instance ${instance}`);
+}
+
+export const fetchData = (instance: Instance) => Promise.all([
     Axios.get<PlayersResponse>('/api/players')
         .then(({ data }) => {
             const ranks: GuildRank[] = ['Guild Master', 'Officer', 'Member', 'Initiate'];
@@ -38,14 +44,14 @@ export const fetchData = () => Promise.all([
                     name: player.name,
                     class: player.class as Class,
                     guildRank: player.guildRank,
-                    scoreSlots: itemScores.map(score => ({ score, itemBonusEvents: [] })),
+                    scoreSlots: getItemScores(instance).map(score => ({ score, itemBonusEvents: [] })),
                 }
             }
             return playerMap;
         }),
     Axios.get<ReservationsResponse>('/api/reservations/approved')
         .then(({ data }) => data),
-    getSheet('1vzK9lPih35GSUPbxLreslyihxPSSIXhS3JW_GWRf7Lw', 'Loot')
+    getSheet('1vzK9lPih35GSUPbxLreslyihxPSSIXhS3JW_GWRf7Lw', lootSheetTab(instance))
         .then((sheetRows) => {
             const raidsRaw: { [date: string]: Raid } = {};
             sheetRows.forEach((value, index) => {
@@ -73,18 +79,15 @@ export const fetchData = () => Promise.all([
             return raids;
         }),
 ]).then(([players, reservations, raids]) => {
-    reservations.forEach(({ name, instance, slots: reservationSlots }) => {
+    reservations.forEach(({ name, instance: reservationInstance, slots: reservationSlots }) => {
         const player = players[name];
-        if (player) {
-            // TODO add other instances
-            if (instance === 'aq40') {
-                player.scoreSlots.forEach((playerSlot, index) => {
-                    const itemId = reservationSlots[index];
-                    if (itemId) {
-                        playerSlot.item = getItem(itemId)
-                    }
-                });
-            }
+        if (player && reservationInstance === instance) {
+            player.scoreSlots.forEach((playerSlot, index) => {
+                const itemId = reservationSlots[index];
+                if (itemId) {
+                    playerSlot.item = getItem(itemId);
+                }
+            });
         }
     });
 });

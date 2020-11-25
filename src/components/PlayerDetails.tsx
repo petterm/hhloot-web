@@ -7,13 +7,13 @@ import { getFinalScore, getPositionBonus, getItemBonus, getAttendanceBonus,
 import ItemLink from './ItemLink';
 import PlayerName, { formatName } from './PlayerName';
 import style from './PlayerDetails.module.css';
-import { scoreGroupEdges } from '../constants';
 import { getBossDrops } from '../api/loot';
+import { getScoreGroupEdges } from '../api/reservations';
 
 type PlayerDetailsProps = { instance: Instance };
 type PlayerDetailsParams = { playerName: string };
 
-const scoreRowClass = (row: PlayerItemEntry) => scoreGroupEdges.includes(row.score) ? style.scoreRowEdge : '';
+const scoreRowClass = (instance: Instance, row: PlayerItemEntry) => getScoreGroupEdges(instance).includes(row.score) ? style.scoreRowEdge : '';
 
 const PlayerDetails: React.FunctionComponent<PlayerDetailsProps> = ({ instance }) => {
     const { playerName } = useParams<PlayerDetailsParams>();
@@ -55,7 +55,7 @@ const PlayerDetails: React.FunctionComponent<PlayerDetailsProps> = ({ instance }
                 </thead>
                 <tbody>
                     {player.scoreSlots.map((entry: PlayerItemEntry, index: number) => (
-                        <tr key={entry.score} className={[style.row, scoreRowClass(entry)].join(' ')}>
+                        <tr key={entry.score} className={[style.row, scoreRowClass(instance, entry)].join(' ')}>
                             <td className={style.cellItem}>
                                 {entry.item ? (
                                     <>

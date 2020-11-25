@@ -46,7 +46,7 @@ const Trashcan: React.FunctionComponent<TrascanProps> = ({ removeItem }) => {
 
     return (
         <div className={wrapClass.join(' ')} ref={dropRef}>
-            <FontAwesomeIcon icon={faTrash} /> Remove
+            <FontAwesomeIcon icon={faTrash} /> (Drop here to remove)
         </div>
     )
 };

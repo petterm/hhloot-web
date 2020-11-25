@@ -2,9 +2,8 @@ import { faCheck, faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 import { getPlayer } from '../../api';
-import { AdminReservationsEntry, approveReservation } from '../../api/reservations';
-import { scoreGroupEdges } from '../../constants';
-import { Item, Player, PlayerItemEntry } from '../../types';
+import { AdminReservationsEntry, approveReservation, getScoreGroupEdges } from '../../api/reservations';
+import { Instance, Item, Player, PlayerItemEntry } from '../../types';
 import Button from '../Button';
 import ItemLink from '../ItemLink';
 import PlayerName from '../PlayerName';
@@ -14,11 +13,12 @@ import style from './AdminReservationsPlayer.module.css';
 type AdminReservationsPlayerProps = {
     player: Player,
     entries: AdminReservationsEntry[],
+    instance: Instance,
 }
 
-const scoreRowClass = (row: PlayerItemEntry) => scoreGroupEdges.includes(row.score) ? style.scoreRowEdge : '';
+const scoreRowClass = (instance: Instance, row: PlayerItemEntry) => getScoreGroupEdges(instance).includes(row.score) ? style.scoreRowEdge : '';
 
-const AdminReservationsPlayer: React.FunctionComponent<AdminReservationsPlayerProps> = ({ player, entries }) => {
+const AdminReservationsPlayer: React.FunctionComponent<AdminReservationsPlayerProps> = ({ player, entries, instance }) => {
     const savedApprover = localStorage.getItem("approver");
     const [approver, setApproverInner] = useState<Player | undefined>(savedApprover ? getPlayer(savedApprover) : undefined);
     const [approved, setApproved] = useState(false);
@@ -81,7 +81,7 @@ const AdminReservationsPlayer: React.FunctionComponent<AdminReservationsPlayerPr
                     {player.scoreSlots.map((entry: PlayerItemEntry, index: number) => (
                         <tr key={entry.score} className={[
                             style.row,
-                            scoreRowClass(entry),
+                            scoreRowClass(instance, entry),
                             !lastSubmission.approved && entry.item === lastSubmission.slots[index] ?
                                 style.rowUnchanged : '',
                         ].join(' ')}>

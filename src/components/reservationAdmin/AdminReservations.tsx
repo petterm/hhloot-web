@@ -56,7 +56,7 @@ const AdminReservations: React.FunctionComponent<AdminReservationsProps> = ({ in
     return (
         <div>
             {player ? (
-                <AdminReservationsPlayer player={player} entries={reservations} />
+                <AdminReservationsPlayer player={player} entries={reservations} instance={instance} />
             ) : (
                 <AdminReservationsList entries={reservations} />
             )}
