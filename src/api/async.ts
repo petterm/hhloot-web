@@ -1,6 +1,6 @@
 import Axios from "axios";
 import { Class, GuildRank, Instance, Player } from "../types";
-import { PlayersResponse, ReservationsResponse } from "./apiTypes";
+import { LoginStatusResponse, PlayersResponse, ReservationsResponse } from "./apiTypes";
 import { getItem } from "./loot";
 import { getItemScores } from "./reservations";
 import { getSheet } from "./sheets";
@@ -91,3 +91,9 @@ export const fetchData = (instance: Instance) => Promise.all([
         }
     });
 });
+
+export const checkLogin = () =>
+    process.env.NODE_ENV === 'development' ? Promise.resolve('Meche') :
+    Axios.get<LoginStatusResponse>('/api/loginstatus')
+        .then(({ data }) => data.authorized ? data.character : undefined)
+        .catch(() => undefined)

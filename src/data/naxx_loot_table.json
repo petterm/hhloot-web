@@ -954,5 +954,12 @@
         "slot": "Finger",
         "source": "Kel'Thuzad",
         "icon": "inv_jewelry_ring_51naxxramas"
+    },
+    {
+        "name": "Nerubian Slavemaker",
+        "id": 22812,
+        "slot": "Ranged",
+        "source": "Kel'Thuzad",
+        "icon": "inv_weapon_crossbow_12"
     }
 ]

@@ -46,3 +46,8 @@ export type PlayersResponse = {
     class: Class,
     guildRank: GuildRank,
 }[];
+
+export type LoginStatusResponse = {
+    authorized: boolean,
+    character?: PlayerName,
+};

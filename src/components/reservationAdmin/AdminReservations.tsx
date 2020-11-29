@@ -8,13 +8,14 @@ import AdminReservationsPlayer from './AdminReservationsPlayer';
 
 type AdminReservationsProps = {
     instance: Instance,
+    loginPlayer: Player,
 }
 
 type AdminReservationsParams = {
     playerName?: string,
 }
 
-const AdminReservations: React.FunctionComponent<AdminReservationsProps> = ({ instance }) => {
+const AdminReservations: React.FunctionComponent<AdminReservationsProps> = ({ instance, loginPlayer }) => {
     const [isFetching, setIsFetching] = useState(true);
     const [error, setError] = useState<Error>();
     const [reservations, setReservations] = useState<AdminReservationsEntry[]>([]);
@@ -56,7 +57,7 @@ const AdminReservations: React.FunctionComponent<AdminReservationsProps> = ({ in
     return (
         <div>
             {player ? (
-                <AdminReservationsPlayer player={player} entries={reservations} instance={instance} />
+                <AdminReservationsPlayer approverPlayer={loginPlayer} player={player} entries={reservations} instance={instance} />
             ) : (
                 <AdminReservationsList entries={reservations} />
             )}

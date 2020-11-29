@@ -1,16 +1,15 @@
 import { faCheck, faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
-import { getPlayer } from '../../api';
 import { AdminReservationsEntry, approveReservation, getScoreGroupEdges } from '../../api/reservations';
 import { Instance, Item, Player, PlayerItemEntry } from '../../types';
 import Button from '../Button';
 import ItemLink from '../ItemLink';
 import PlayerName from '../PlayerName';
-import PlayerSelect from '../PlayerSelect';
 import style from './AdminReservationsPlayer.module.css';
 
 type AdminReservationsPlayerProps = {
+    approverPlayer: Player,
     player: Player,
     entries: AdminReservationsEntry[],
     instance: Instance,
@@ -18,27 +17,16 @@ type AdminReservationsPlayerProps = {
 
 const scoreRowClass = (instance: Instance, row: PlayerItemEntry) => getScoreGroupEdges(instance).includes(row.score) ? style.scoreRowEdge : '';
 
-const AdminReservationsPlayer: React.FunctionComponent<AdminReservationsPlayerProps> = ({ player, entries, instance }) => {
-    const savedApprover = localStorage.getItem("approver");
-    const [approver, setApproverInner] = useState<Player | undefined>(savedApprover ? getPlayer(savedApprover) : undefined);
+const AdminReservationsPlayer: React.FunctionComponent<AdminReservationsPlayerProps> = ({ approverPlayer, player, entries, instance }) => {
     const [approved, setApproved] = useState(false);
     const [fetching, setFetching] = useState(false);
     const [error, setError] = useState<Error>();
 
-    const setApprover = (player?: Player) => {
-        if (player) {
-            localStorage.setItem('approver', player.name);
-        } else {
-            localStorage.removeItem('approver');
-        }
-        setApproverInner(player);
-    };
-
     const onApprove = () => {
-        if (!fetching && !approved && approver) {
+        if (!fetching && !approved && approverPlayer) {
             setFetching(true);
             setError(undefined);
-            approveReservation(lastSubmission.id, approver)
+            approveReservation(lastSubmission.id, approverPlayer)
                 .then(() => {
                     setFetching(false);
                     setApproved(true);
@@ -128,9 +116,9 @@ const AdminReservationsPlayer: React.FunctionComponent<AdminReservationsPlayerPr
             {!lastSubmission.approved && (
                 <div className={style.approveWrap}>
                     <div className={style.selectApprover}>
-                        <PlayerSelect value={approver} onChange={setApprover} placeholder={'Select approver...'} officers />
+                        Approving as <PlayerName player={approverPlayer} />
                     </div>
-                    {approver && (
+                    {approverPlayer && (
                         <>
                         {fetching ? (
                             <div className={style.approving}>Approving..</div>

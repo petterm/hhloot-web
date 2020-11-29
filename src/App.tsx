@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { HashRouter as Router, Link, Switch, Route } from 'react-router-dom';
-import { fetchData, getPlayers } from './api/async';
-import { prepareData } from './api';
+import { HashRouter as Router, Link, Switch, Route, Redirect } from 'react-router-dom';
+import { checkLogin, fetchData, getPlayers } from './api/async';
+import { getPlayer, prepareData } from './api';
 import PlayerList from './components/PlayerList';
 import PlayerDetails from './components/PlayerDetails';
 import BossList from './components/BossList';
 import ReservationsStart from './components/reservation/ReservationsStart';
 import { getBosses } from './api/loot';
-import { Instance } from './types';
+import { Instance, Player, PlayerName } from './types';
 import './App.css';
 import AdminReservations from './components/reservationAdmin/AdminReservations';
 import InvalidPlayerHandler from './components/InvalidPlayerHandler';
@@ -16,6 +16,8 @@ import { instances } from './constants';
 function App() {
     const [isLoaded, setIsLoaded] = useState(false);
     const [error, setError] = useState<Error>();
+    const [loginPlayer, setLoginPlayer] = useState<Player | undefined>();
+
     let instance: Instance = 'naxx';
 
     const pathParts = window.location.pathname.split('/');
@@ -34,6 +36,17 @@ function App() {
                 setError(error);
                 console.error(error);
             })
+            .then(() => checkLogin().then((playerName: PlayerName | undefined) => {
+                try {
+                    if (playerName) {
+                        setLoginPlayer(getPlayer(playerName));
+                    } else {
+                        setLoginPlayer(undefined);
+                    }
+                } catch (error) {
+                    setLoginPlayer(undefined);
+                }
+            }))
     }, [instance]);
 
     return (
@@ -46,8 +59,12 @@ function App() {
                         <Link to="/players">Players</Link>
                         {" - "}
                         <Link to="/reservations">Update reservations</Link>
-                        {/* {" - "}
-                        <Link to="/reservations/admin">Admin</Link> */}
+                        {loginPlayer && (
+                            <>
+                                {" - "}
+                                <Link to="/reservations/admin">Admin</Link>
+                            </>
+                        )}
                         <Switch>
                             <Route exact path="/">
                                 <BossList bosses={Object.values(getBosses(instance))} instance={instance} />
@@ -61,7 +78,11 @@ function App() {
                                 </InvalidPlayerHandler>
                             </Route>
                             <Route path={"/reservations/admin/:playerName?"}>
-                                <AdminReservations instance={instance} />
+                                {loginPlayer ? (
+                                    <AdminReservations instance={instance} loginPlayer={loginPlayer} />
+                                ) : (
+                                    <Redirect to={"/"} />
+                                )}
                             </Route>
                             <Route path="/reservations">
                                 <ReservationsStart instance={instance} />
