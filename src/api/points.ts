@@ -1,4 +1,4 @@
-import { Player, PlayerItemEntry, EntryScore } from "../types";
+import { Player, PlayerItemEntry, EntryScore, Instance } from "../types";
 import attendanceData from '../data/attendance.json';
 import { nonBonusRaidCount, attendanceRaidCount } from "../constants";
 
@@ -15,19 +15,20 @@ type AttendanceData = {
 
 const hasBonusAttendance = (attendance: Attendance) => attendance.date && attendance.value >= 0.1;
 
-const filterBonusRaids = (raids: Attendance[]): Attendance[] => raids.slice(nonBonusRaidCount);
+const filterBonusRaids = (raids: Attendance[], instance: Instance): Attendance[] =>
+    raids.slice(nonBonusRaidCount[instance]);
 
-const getPlayerBonusRaids = (player: Player): Attendance[] => {
+const getPlayerBonusRaids = (player: Player, instance: Instance): Attendance[] => {
     const attendanceList = attendanceData as AttendanceData;
     if (player.name in attendanceList) {
-        return filterBonusRaids(attendanceList[player.name]);
+        return filterBonusRaids(attendanceList[player.name], instance);
     }
     return [];
 };
 
-const getPlayerPositionBonus = (player: Player) => {
+const getPlayerPositionBonus = (player: Player, instance: Instance) => {
     let bonus = 0;
-    const bonusRaids = getPlayerBonusRaids(player);
+    const bonusRaids = getPlayerBonusRaids(player, instance);
     for (const i in bonusRaids) {
         const value = bonusRaids[i];
         if (hasBonusAttendance(value)) {
@@ -60,15 +61,15 @@ const getPlayerAttendance = (player: Player): number => {
     return player.calculatedAttendance
 }
 
-export const getFinalScore = (entry: PlayerItemEntry, player: Player ): number =>
-    entry.score + getItemBonus(entry, player) + getPositionBonus(player) + getAttendanceBonus(player);
+export const getFinalScore = (entry: PlayerItemEntry, player: Player, instance: Instance): number =>
+    entry.score + getItemBonus(entry, player) + getPositionBonus(player, instance) + getAttendanceBonus(player);
 
 export const getItemBonus = (entry: PlayerItemEntry, player: Player): number =>
     entry.item === null ? 0: entry.itemBonusEvents.length;
 
-export const getPositionBonus = (player: Player): number => {
+export const getPositionBonus = (player: Player, instance: Instance): number => {
     if (!player.positionBonus) {
-        player.positionBonus = getPlayerPositionBonus(player);
+        player.positionBonus = getPlayerPositionBonus(player, instance);
     }
     return player.positionBonus;
 };
@@ -78,14 +79,14 @@ export const getAttendanceBonus = (player: Player) => {
     return Math.round(value * 10) / 10;
 };
 
-export const getEntryScore = (entry: PlayerItemEntry, player: Player): EntryScore => {
+export const getEntryScore = (entry: PlayerItemEntry, player: Player, instance: Instance): EntryScore => {
     if (!entry.calcualtedScore) {
         entry.calcualtedScore = {
             base: entry.score,
-            position: getPositionBonus(player),
+            position: getPositionBonus(player, instance),
             item: getItemBonus(entry, player),
             attendance: getAttendanceBonus(player),
-            total: getFinalScore(entry, player),
+            total: getFinalScore(entry, player, instance),
         }
     }
     return entry.calcualtedScore;
@@ -97,9 +98,9 @@ export type CombinedPlayerAttendance = {
     attendance?: number,
 };
 
-export const getCombinedPlayerAttendanceList = (player: Player): CombinedPlayerAttendance[] => {
+export const getCombinedPlayerAttendanceList = (player: Player, instance: Instance): CombinedPlayerAttendance[] => {
     const attendanceRaids = getPlayerAttendanceRaids(player);
-    const bonusRaids = getPlayerBonusRaids(player);
+    const bonusRaids = getPlayerBonusRaids(player, instance);
 
     const combined: { [key: string]: CombinedPlayerAttendance } = {};
     for (const i in bonusRaids) {

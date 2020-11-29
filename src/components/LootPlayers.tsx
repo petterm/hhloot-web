@@ -1,19 +1,19 @@
 import React from 'react';
-import { Player, BossDrop } from '../types'
+import { Player, BossDrop, Instance } from '../types'
 import PlayerName from './PlayerName';
 import { getEntryScore } from '../api/points';
 import { getPlayer } from '../api';
 import { rollPointsWindow } from '../constants';
 
-type LootPlayersProps = { loot: BossDrop, player: Player };
-const LootPlayers = ({ loot, player }: LootPlayersProps) => {
+type LootPlayersProps = { loot: BossDrop, player: Player, instance: Instance };
+const LootPlayers: React.FunctionComponent<LootPlayersProps> = ({ loot, player, instance }) => {
     const scores = loot.reservations
         .map(({ playerName, entry }) => {
             const player = getPlayer(playerName);
             return {
                 player,
                 playerEntry: entry,
-                scores: getEntryScore(entry, player),
+                scores: getEntryScore(entry, player, instance),
             };
         });
 

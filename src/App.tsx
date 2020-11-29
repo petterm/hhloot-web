@@ -11,12 +11,20 @@ import { Instance } from './types';
 import './App.css';
 import AdminReservations from './components/reservationAdmin/AdminReservations';
 import InvalidPlayerHandler from './components/InvalidPlayerHandler';
+import { instances } from './constants';
 
 function App() {
     const [isLoaded, setIsLoaded] = useState(false);
     const [error, setError] = useState<Error>();
-    // const instance: Instance = 'naxx';
-    const instance: Instance = 'aq40';
+    let instance: Instance = 'naxx';
+
+    const pathParts = window.location.pathname.split('/');
+    const path = pathParts[pathParts.length - 1];
+    if (instances.includes(path as Instance)) {
+        instance = path as Instance;
+    } else {
+        console.warn('Path is not a valid instance', path, instances);
+    }
 
     useEffect(() => {
         fetchData(instance)
@@ -26,7 +34,7 @@ function App() {
                 setError(error);
                 console.error(error);
             })
-    }, []);
+    }, [instance]);
 
     return (
         <Router>
@@ -38,8 +46,8 @@ function App() {
                         <Link to="/players">Players</Link>
                         {" - "}
                         <Link to="/reservations">Update reservations</Link>
-                        {" - "}
-                        <Link to="/reservations/admin">Admin</Link>
+                        {/* {" - "}
+                        <Link to="/reservations/admin">Admin</Link> */}
                         <Switch>
                             <Route exact path="/">
                                 <BossList bosses={Object.values(getBosses(instance))} instance={instance} />

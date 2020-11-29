@@ -1,3 +1,16 @@
 .playerSelect {
     margin: 0 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.changePlayer {
+    border: none;
+    background: none transparent;
+    color: #444;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.changePlayer:hover {
+    color: #aaa;
 }

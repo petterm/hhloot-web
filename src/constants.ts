@@ -32,5 +32,8 @@ export const classColor: {[C in Class]: string} = {
 };
 
 export const rollPointsWindow = 3;
-export const nonBonusRaidCount = 4;
+export const nonBonusRaidCount: Record<Instance, number> = {
+    aq40: 4,
+    naxx: 27,
+};
 export const attendanceRaidCount = 6;

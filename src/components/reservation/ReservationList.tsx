@@ -14,14 +14,18 @@ interface ReservationListProps {
     moveItem: (sourceScore: ItemScore, targetScore: ItemScore) => void,
     replaceItem: (item: Item, score: ItemScore) => void,
     swapItem: (sourceScore: ItemScore, targetScore: ItemScore) => void,
+    onChangePlayer: () => void,
 };
 
 const ReservationList: React.FunctionComponent<ReservationListProps> = ({
-    player, instance, state, addItem, moveItem, replaceItem, swapItem,
+    player, instance, state, addItem, moveItem, replaceItem, swapItem, onChangePlayer
 }) => (
     <div className={style.wrap}>
         <h3 className={style.playerSelect}>
             <PlayerName player={player} />
+            <button className={style.changePlayer} onClick={onChangePlayer}>
+                Change player
+            </button>
         </h3>
         <div className={style.slotListWrap}>
             {getItemScores(instance).map(score => (

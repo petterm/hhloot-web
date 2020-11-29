@@ -38,3 +38,7 @@
     margin: 0;
     font-size: normal;
 }
+
+.invalidStateMessage {
+    color: rgb(190, 91, 24);
+}

@@ -11,7 +11,8 @@
         "id": 22806,
         "slot": "One-Hand",
         "source": "Grand Widow Faerlina",
-        "icon": "inv_sword_60"
+        "icon": "inv_sword_60",
+        "restricted": true
     },
     {
         "name": "Kiss of the Spider",
@@ -32,7 +33,8 @@
         "id": 22988,
         "slot": "One-Hand",
         "source": "Grobbulus",
-        "icon": "inv_mace_1h_stratholme_d_02"
+        "icon": "inv_mace_1h_stratholme_d_02",
+        "restricted": true
     },
     {
         "name": "Rime Covered Mantle",
@@ -53,7 +55,8 @@
         "id": 22816,
         "slot": "One-Hand",
         "source": "Noth the Plaguebringer",
-        "icon": "inv_axe_08"
+        "icon": "inv_axe_08",
+        "restricted": true
     },
     {
         "name": "Legplates of Carnage",
@@ -74,7 +77,8 @@
         "id": 23014,
         "slot": "One-Hand",
         "source": "Instructor Razuvious",
-        "icon": "inv_sword_07"
+        "icon": "inv_sword_07",
+        "restricted": true
     },
     {
         "name": "Sadist's Collar",
@@ -102,7 +106,8 @@
         "id": 23054,
         "slot": "One-Hand",
         "source": "Kel'Thuzad",
-        "icon": "inv_sword_61"
+        "icon": "inv_sword_61",
+        "restricted": true
     },
     {
         "name": "The Phylactery of Kel'Thuzad",
@@ -130,7 +135,8 @@
         "id": 22802,
         "slot": "One-Hand",
         "source": "Kel'Thuzad",
-        "icon": "inv_weapon_shortblade_37"
+        "icon": "inv_weapon_shortblade_37",
+        "restricted": true
     },
     {
         "name": "Girdle of the Mentor",
@@ -144,7 +150,8 @@
         "id": 22807,
         "slot": "One-Hand",
         "source": "Maexxna",
-        "icon": "inv_sword_11"
+        "icon": "inv_sword_11",
+        "restricted": true
     },
     {
         "name": "Soulstring",
@@ -165,21 +172,24 @@
         "id": 22808,
         "slot": "One-Hand",
         "source": "Thaddius",
-        "icon": "inv_mace_1h_stratholme_d_01"
+        "icon": "inv_mace_1h_stratholme_d_01",
+        "restricted": true
     },
     {
         "name": "Soulseeker",
         "id": 22799,
         "slot": "Two-Hand",
         "source": "Kel'Thuzad",
-        "icon": "inv_staff_15"
+        "icon": "inv_staff_15",
+        "restricted": true
     },
     {
         "name": "Brimstone Staff",
         "id": 22800,
         "slot": "Two-Hand",
         "source": "Loatheb",
-        "icon": "inv_staff_13"
+        "icon": "inv_staff_13",
+        "restricted": true
     },
     {
         "name": "Leggings of Apocalypse",
@@ -200,7 +210,8 @@
         "id": 23056,
         "slot": "One-Hand",
         "source": "Kel'Thuzad",
-        "icon": "inv_mace_27"
+        "icon": "inv_mace_27",
+        "restricted": true
     },
     {
         "name": "Eye of the Dead",
@@ -214,14 +225,16 @@
         "id": 23242,
         "slot": "Off Hand",
         "source": "Sapphiron",
-        "icon": "inv_weapon_hand_03"
+        "icon": "inv_weapon_hand_03",
+        "restricted": true
     },
     {
         "name": "The Widow's Embrace",
         "id": 22942,
         "slot": "One-Hand",
         "source": "Grand Widow Faerlina",
-        "icon": "inv_mace_29"
+        "icon": "inv_mace_29",
+        "restricted": true
     },
     {
         "name": "Might of the Scourge",
@@ -235,7 +248,8 @@
         "id": 22801,
         "slot": "Two-Hand",
         "source": "Thaddius",
-        "icon": "inv_staff_31"
+        "icon": "inv_staff_31",
+        "restricted": true
     },
     {
         "name": "Gem of Trapped Innocents",
@@ -284,7 +298,8 @@
         "id": 22804,
         "slot": "One-Hand",
         "source": "Maexxna",
-        "icon": "inv_knife_1h_stratholme_d_01"
+        "icon": "inv_knife_1h_stratholme_d_01",
+        "restricted": true
     },
     {
         "name": "Leggings of Polarity",
@@ -445,7 +460,8 @@
         "id": 22803,
         "slot": "One-Hand",
         "source": "Grobbulus",
-        "icon": "inv_knife_1h_stratholme_d_02"
+        "icon": "inv_knife_1h_stratholme_d_02",
+        "restricted": true
     },
     {
         "name": "Band of Reanimation",
@@ -886,7 +902,8 @@
         "id": 23044,
         "slot": "One-Hand",
         "source": "Trash",
-        "icon": "inv_knife_1h_stratholme_d_03"
+        "icon": "inv_knife_1h_stratholme_d_03",
+        "restricted": true
     },
     {
         "name": "Leggings of the Grand Crusader",
@@ -900,7 +917,8 @@
         "id": 23221,
         "slot": "One-Hand",
         "source": "Trash",
-        "icon": "inv_mace_28"
+        "icon": "inv_mace_28",
+        "restricted": true
     },
     {
         "name": "Necro-Knight's Garb",

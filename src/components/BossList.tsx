@@ -94,13 +94,14 @@ const BossList = ({ bosses, instance }: BossListProps) => {
                         hideReceived={hideReceived}
                         masterlooter={masterLooter}
                         oldMembers={oldMembers}
+                        instance={instance}
                         onSelectLootPlayer={onSelectLootPlayer}
                     />
                 ))}
             </div>
             {lootPlayer ? (
                 <div className={style.popup}>
-                    <LootPlayers loot={lootPlayer.loot} player={lootPlayer.player} />
+                    <LootPlayers loot={lootPlayer.loot} player={lootPlayer.player} instance={instance} />
                     <button className={style.popupClose} onClick={onClosePopup}>
                         Close
                     </button>

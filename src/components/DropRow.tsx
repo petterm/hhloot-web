@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BossDrop, Player } from '../types'
+import { BossDrop, Instance, Player } from '../types'
 import { getPlayer } from '../api';
 import { getEntryScore } from '../api/points';
 import DropRowPlayer from './DropRowPlayer';
@@ -12,10 +12,11 @@ type DropRowProps = {
     hideReceived: boolean,
     masterlooter: boolean,
     oldMembers: boolean,
+    instance: Instance,
     onSelectLootPlayer: (x: BossDrop, y: Player) => void,
 };
 
-const DropRow = ({ drop, hideReceived, masterlooter, oldMembers, onSelectLootPlayer }: DropRowProps) => {
+const DropRow = ({ drop, hideReceived, masterlooter, oldMembers, instance, onSelectLootPlayer }: DropRowProps) => {
     const [hoverScore, setHoverScore] = useState<number | undefined>();
 
     const scores = drop.reservations
@@ -24,7 +25,7 @@ const DropRow = ({ drop, hideReceived, masterlooter, oldMembers, onSelectLootPla
             return {
                 player,
                 playerEntry: entry,
-                scores: getEntryScore(entry, player),
+                scores: getEntryScore(entry, player, instance),
             };
         })
         .filter(({ player, playerEntry: { received } }) => {
@@ -54,9 +55,9 @@ const DropRow = ({ drop, hideReceived, masterlooter, oldMembers, onSelectLootPla
                         hoverScore={hoverScore}
                     />
                 ))}
-                {!hideReceived && drop.freeLoot.map(name => (
+                {!hideReceived && drop.freeLoot.map((name, index) => (
                     (oldMembers || getPlayer(name).class) && (
-                        <DropRowPlayerFree key={name} player={getPlayer(name)} />
+                        <DropRowPlayerFree key={`${name}-${index}`} player={getPlayer(name)} />
                     )
                 ))}
             </div>

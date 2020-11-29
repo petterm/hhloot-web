@@ -28,7 +28,7 @@ const PlayerDetails: React.FunctionComponent<PlayerDetailsProps> = ({ instance }
         })
     )
 
-    const attendanceRaids = getCombinedPlayerAttendanceList(player);
+    const attendanceRaids = getCombinedPlayerAttendanceList(player, instance);
     attendanceRaids.reverse();
 
     return (
@@ -78,7 +78,7 @@ const PlayerDetails: React.FunctionComponent<PlayerDetailsProps> = ({ instance }
                                 {getItemBonus(entry, player)}
                             </td>
                             <td className={entry.received ? style.cellReceived : style.cell}>
-                                {getFinalScore(entry, player)}
+                                {getFinalScore(entry, player, instance)}
                             </td>
                         </tr>
                     ))}
@@ -142,7 +142,7 @@ const PlayerDetails: React.FunctionComponent<PlayerDetailsProps> = ({ instance }
                         <td />
                         <td />
                         <td className={style.attendanceValue}>
-                            {getPositionBonus(player)}
+                            {getPositionBonus(player, instance)}
                         </td>
                         <td className={style.attendanceValue}>
                             {getAttendanceBonus(player) * 10} %
