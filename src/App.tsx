@@ -11,7 +11,7 @@ import { Instance, Player, PlayerName } from './types';
 import './App.css';
 import AdminReservations from './components/reservationAdmin/AdminReservations';
 import InvalidPlayerHandler from './components/InvalidPlayerHandler';
-import { instances } from './constants';
+import { instanceName, instances } from './constants';
 
 function App() {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -29,6 +29,7 @@ function App() {
     }
 
     useEffect(() => {
+        document.title = `HH ${instanceName[instance]}`;
         fetchData(instance)
             .then(() => prepareData())
             .then(() => setIsLoaded(true))
@@ -49,22 +50,30 @@ function App() {
             }))
     }, [instance]);
 
+    const image = instance === 'naxx' ? 'ui-ej-boss-kelthuzad.png' : 'ui-ej-boss-cthun.png';
+
     return (
         <Router>
             <div className="App">
                 {isLoaded ? (
                     <>
-                        <Link to="/">Bosses</Link>
-                        {" - "}
-                        <Link to="/players">Players</Link>
-                        {" - "}
-                        <Link to="/reservations">Update reservations</Link>
-                        {loginPlayer && (
-                            <>
-                                {" - "}
-                                <Link to="/reservations/admin">Admin</Link>
-                            </>
-                        )}
+                        <header>
+                            <img className="headerImage" src={`./${image}`} alt={instanceName[instance]} />
+                            <h2 className="headerTitle">{instanceName[instance]}</h2>
+                            <a href="/">Held Hostile</a>
+                            {" - "}
+                            <Link to="/">Bosses</Link>
+                            {" - "}
+                            <Link to="/players">Players</Link>
+                            {" - "}
+                            <Link to="/reservations">Update reservations</Link>
+                            {loginPlayer && (
+                                <>
+                                    {" - "}
+                                    <Link to="/reservations/admin">Admin</Link>
+                                </>
+                            )}
+                        </header>
                         <Switch>
                             <Route exact path="/">
                                 <BossList bosses={Object.values(getBosses(instance))} instance={instance} />

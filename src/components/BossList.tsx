@@ -55,7 +55,7 @@ const BossList = ({ bosses, instance }: BossListProps) => {
     return (
         <div className={style.wrapper}>
             <div>
-                <h1>Bosses {instanceName[instance]}</h1>
+                <h1>Bosses</h1>
                 <label style={{ cursor: "pointer" }}>
                     <input
                         type='checkbox'

@@ -95,5 +95,5 @@ export const fetchData = (instance: Instance) => Promise.all([
 export const checkLogin = () =>
     process.env.NODE_ENV === 'development' ? Promise.resolve('Meche') :
     Axios.get<LoginStatusResponse>('/api/loginstatus')
-        .then(({ data }) => data.authorized ? data.character : undefined)
+        .then(({ data }) => data.authenticated ? data.character : undefined)
         .catch(() => undefined)

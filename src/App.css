@@ -16,7 +16,18 @@ a:visited {
 }
 
 .App header {
-  text-align: center;
+  /* line-height: 40px;
+  vertical-align: middle; */
+}
+
+.App .headerImage {
+  height: 40px;
+  vertical-align: bottom;
+}
+
+.App .headerTitle {
+  display: inline-block;
+  margin: 0 20px 0 0;
 }
 
 .App-logo {

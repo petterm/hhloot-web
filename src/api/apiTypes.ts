@@ -48,6 +48,6 @@ export type PlayersResponse = {
 }[];
 
 export type LoginStatusResponse = {
-    authorized: boolean,
+    authenticated: boolean,
     character?: PlayerName,
 };
