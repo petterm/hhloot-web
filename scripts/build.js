@@ -18,15 +18,23 @@ exec('npx react-scripts build', (err, stdout, stderr) => {
     }
     console.log(stdout);
 
-    const fileNameBase = `build-${timestamp()}`;
-    let inc = 1;
-    let fileName = `${fileNameBase}-${inc}.zip`;
-    while (fs.existsSync(fileName)) {
-        inc += 1;
-        fileName = `${fileNameBase}-${inc}.zip`;
-    }
-
-    zipdir('build', { saveTo: fileName }, (err) => {
-        if (err) console.log(err);
+    exec('git rev-parse --abbrev-ref HEAD', (err, stdout, stderr) => {
+        if (err) {
+            console.log(err);
+        }
+        const branch = stdout.trim();
+        const fileNameBase = branch === 'master' ?
+            `build-${timestamp()}` :
+            `build-${branch}-${timestamp()}`;
+        let inc = 1;
+        let fileName = `${fileNameBase}-${inc}.zip`;
+        while (fs.existsSync(fileName)) {
+            inc += 1;
+            fileName = `${fileNameBase}-${inc}.zip`;
+        }
+    
+        zipdir('build', { saveTo: fileName }, (err) => {
+            if (err) console.log(err);
+        });
     });
 });
