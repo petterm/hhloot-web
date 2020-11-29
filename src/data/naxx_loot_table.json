@@ -961,5 +961,13 @@
         "slot": "Ranged",
         "source": "Kel'Thuzad",
         "icon": "inv_weapon_crossbow_12"
+    },
+    {
+        "name": "The Hungering Cold",
+        "id": 23577,
+        "slot": "One-Hand",
+        "source": "Kel'Thuzad",
+        "icon": "inv_sword_62",
+        "restricted": true
     }
 ]
