@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { instanceName } from '../constants';
 import { Boss, Player, BossDrop, Instance } from '../types'
 import BossEntry from './BossEntry';
 import style from './BossList.module.css';

@@ -527,6 +527,20 @@
         "icon": "spell_shadow_darkritual"
     },
     {
+        "name": "Resilience of the Scourge",
+        "id": 23547,
+        "slot": "Perm. Enhancement",
+        "source": "Sapphiron",
+        "icon": "spell_shadow_deadofnight"
+    },
+    {
+        "name": "Fortitude of the Scourge",
+        "id": 23549,
+        "slot": "Perm. Enhancement",
+        "source": "Sapphiron",
+        "icon": "spell_shadow_antishadow"
+    },
+    {
         "name": "Desecrated Helmet",
         "id": 22353,
         "slot": "Armor Token",
