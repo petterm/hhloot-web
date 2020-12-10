@@ -28,8 +28,16 @@ const PlayerDetails: React.FunctionComponent<PlayerDetailsProps> = ({ instance }
         })
     )
 
-    const attendanceRaids = getCombinedPlayerAttendanceList(player, instance);
-    attendanceRaids.reverse();
+    const attendanceRaids: CombinedPlayerAttendance[] = getCombinedPlayerAttendanceList(player, instance);
+    attendanceRaids.sort((a, b) => {
+        if (a.info.date && b.info.date) {
+            return a.info.date > b.info.date ? -1 : 1;
+        }
+        if (a.info.date) {
+            return -1;
+        }
+        return 1;
+    });
 
     return (
         <div>
@@ -128,7 +136,7 @@ const PlayerDetails: React.FunctionComponent<PlayerDetailsProps> = ({ instance }
                                 {info.date || '-'}
                             </td>
                             <td className={style.attendanceRaid}>
-                                {info.raid || '-'}
+                                {info.raid === 'Fake' ? '-' : info.raid || '-'}
                             </td>
                             <td className={style.attendanceValue}>
                                 {bonus || '-'}

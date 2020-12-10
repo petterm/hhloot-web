@@ -1,3 +1,4 @@
+import moment, { Moment } from 'moment';
 import { ItemScore, Class, Instance, ItemScoreAq40, ItemScoreNaxx } from "./types";
 
 export const itemScoresAq40: ItemScoreAq40[] = [
@@ -32,8 +33,8 @@ export const classColor: {[C in Class]: string} = {
 };
 
 export const rollPointsWindow = 3;
-export const nonBonusRaidCount: Record<Instance, number> = {
-    aq40: 4,
-    naxx: 27,
+export const bonusRaidStartDate: Record<Instance, Moment> = {
+    aq40: moment('2020-08-22'),
+    naxx: moment('2020-12-05'),
 };
 export const attendanceRaidCount = 6;

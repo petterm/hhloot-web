@@ -1,6 +1,7 @@
+import moment from 'moment';
 import { Player, PlayerItemEntry, EntryScore, Instance } from "../types";
 import attendanceData from '../data/attendance.json';
-import { nonBonusRaidCount, attendanceRaidCount } from "../constants";
+import { bonusRaidStartDate, attendanceRaidCount } from "../constants";
 
 export type Attendance = {
     key: string,
@@ -16,7 +17,7 @@ type AttendanceData = {
 const hasBonusAttendance = (attendance: Attendance) => attendance.date && attendance.value >= 0.1;
 
 const filterBonusRaids = (raids: Attendance[], instance: Instance): Attendance[] =>
-    raids.slice(nonBonusRaidCount[instance]);
+    raids.filter(raid => raid.date && moment(raid.date).isAfter(bonusRaidStartDate[instance]));
 
 const getPlayerBonusRaids = (player: Player, instance: Instance): Attendance[] => {
     const attendanceList = attendanceData as AttendanceData;
