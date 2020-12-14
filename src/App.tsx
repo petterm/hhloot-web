@@ -94,7 +94,7 @@ function App() {
                                 )}
                             </Route>
                             <Route path="/reservations">
-                                <ReservationsStart instance={instance} />
+                                <ReservationsStart instance={instance} loginPlayer={loginPlayer} />
                             </Route>
                         </Switch>
                     </>

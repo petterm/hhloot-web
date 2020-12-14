@@ -284,7 +284,8 @@
         "id": 22935,
         "slot": "Neck",
         "source": "Anub'Rekhan",
-        "icon": "inv_jewelry_amulet_04"
+        "icon": "inv_jewelry_amulet_04",
+        "hidden": true
     },
     {
         "name": "Band of the Inevitable",
@@ -404,7 +405,8 @@
         "id": 23019,
         "slot": "Head",
         "source": "Heigan the Unclean",
-        "icon": "inv_helmet_06"
+        "icon": "inv_helmet_06",
+        "hidden": true
     },
     {
         "name": "Desecrated Circlet",
@@ -418,7 +420,8 @@
         "id": 23032,
         "slot": "Head",
         "source": "Gothik the Harvester",
-        "icon": "inv_helmet_53"
+        "icon": "inv_helmet_53",
+        "hidden": true
     },
     {
         "name": "The Soul Harvester's Bindings",
@@ -453,7 +456,8 @@
         "id": 23042,
         "slot": "Trinket",
         "source": "Loatheb",
-        "icon": "inv_trinket_naxxramas05"
+        "icon": "inv_trinket_naxxramas05",
+        "hidden": true
     },
     {
         "name": "Midnight Haze",
@@ -475,14 +479,16 @@
         "id": 22940,
         "slot": "Shoulder",
         "source": "Grand Widow Faerlina",
-        "icon": "inv_shoulder_16"
+        "icon": "inv_shoulder_16",
+        "hidden": true
     },
     {
         "name": "Hailstone Band",
         "id": 23028,
         "slot": "Finger",
         "source": "Noth the Plaguebringer",
-        "icon": "inv_jewelry_ring_35"
+        "icon": "inv_jewelry_ring_35",
+        "hidden": true
     },
     {
         "name": "Wand of the Whispering Dead",
@@ -608,14 +614,16 @@
         "id": 22968,
         "slot": "Shoulder",
         "source": "Grobbulus",
-        "icon": "inv_shoulder_14"
+        "icon": "inv_shoulder_14",
+        "hidden": true
     },
     {
         "name": "Polar Helmet",
         "id": 23020,
         "slot": "Head",
         "source": "Gothik the Harvester",
-        "icon": "inv_helmet_04"
+        "icon": "inv_helmet_04",
+        "hidden": true
     },
     {
         "name": "Desecrated Boots",
@@ -629,14 +637,16 @@
         "id": 23033,
         "slot": "Head",
         "source": "Heigan the Unclean",
-        "icon": "inv_helmet_20"
+        "icon": "inv_helmet_20",
+        "hidden": true
     },
     {
         "name": "Polar Shoulder Pads",
         "id": 22941,
         "slot": "Shoulder",
         "source": "Grand Widow Faerlina",
-        "icon": "inv_shoulder_07"
+        "icon": "inv_shoulder_07",
+        "hidden": true
     },
     {
         "name": "Desecrated Spaulders",
@@ -832,7 +842,8 @@
         "id": 22967,
         "slot": "Shoulder",
         "source": "Grobbulus",
-        "icon": "inv_shoulder_14"
+        "icon": "inv_shoulder_14",
+        "hidden": true
     },
     {
         "name": "Ring of the Cryptstalker",
@@ -983,5 +994,41 @@
         "source": "Kel'Thuzad",
         "icon": "inv_sword_62",
         "restricted": true
+    },
+    {
+        "name": "Atiesh, Greatstaff of the Guardian (Druid)",
+        "id": 22632,
+        "slot": "Two-Hand",
+        "source": "Trash",
+        "icon": "inv_staff_medivh",
+        "restricted": true,
+        "hidden": true
+    },
+    {
+        "name": "Atiesh, Greatstaff of the Guardian (Mage)",
+        "id": 22589,
+        "slot": "Two-Hand",
+        "source": "Trash",
+        "icon": "inv_staff_medivh",
+        "restricted": true,
+        "hidden": true
+    },
+    {
+        "name": "Atiesh, Greatstaff of the Guardian (Priest)",
+        "id": 22631,
+        "slot": "Two-Hand",
+        "source": "Trash",
+        "icon": "inv_staff_medivh",
+        "restricted": true,
+        "hidden": true
+    },
+    {
+        "name": "Atiesh, Greatstaff of the Guardian (Warlock)",
+        "id": 22630,
+        "slot": "Two-Hand",
+        "source": "Trash",
+        "icon": "inv_staff_medivh",
+        "restricted": true,
+        "hidden": true
     }
 ]

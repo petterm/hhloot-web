@@ -13,6 +13,7 @@ export interface Item {
     name: string;
     id: number;
     restricted: boolean;
+    hidden: boolean;
 }
 
 export interface PlayerItemEntry {

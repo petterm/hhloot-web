@@ -9,9 +9,10 @@ import { getPlayer } from '../../api';
 
 type ReservationsStartProps = {
     instance: Instance,
+    loginPlayer?: Player,
 }
 
-const ReservationsStart: React.FunctionComponent<ReservationsStartProps> = ({ instance }) => {
+const ReservationsStart: React.FunctionComponent<ReservationsStartProps> = ({ instance, loginPlayer }) => {
     const history = useHistory();
     const match = useRouteMatch();
     let savedPlayer: Player | undefined;
@@ -37,7 +38,11 @@ const ReservationsStart: React.FunctionComponent<ReservationsStartProps> = ({ in
             <Switch>
                 <Route path={`${match.path}/:playerName`}>
                     <InvalidPlayerHandler path={match.path}>
-                        <Reservations instance={instance} onChangePlayer={() => onPlayerSelect(undefined)} />
+                        <Reservations
+                            instance={instance}
+                            onChangePlayer={() => onPlayerSelect(undefined)}
+                            loginPlayer={loginPlayer}
+                        />
                     </InvalidPlayerHandler>
                 </Route>
                 <Route path={match.path}>

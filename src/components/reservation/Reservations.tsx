@@ -18,6 +18,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 type ReservationsProps = {
     instance: Instance,
+    loginPlayer?: Player,
     onChangePlayer: () => void,
 }
 
@@ -29,7 +30,6 @@ const invalidStateMessage = (state: Partial<Record<ItemScore, ItemSlot>>, instan
     const edgeScores = getScoreGroupEdges(instance);
     let invalidSections = 0;
     let currentCount = 0;
-    console.log(edgeScores, state);
     for (const score of getItemScores(instance)) {
         if (state[score] && state[score]?.item.restricted) {
             currentCount++;
@@ -38,7 +38,6 @@ const invalidStateMessage = (state: Partial<Record<ItemScore, ItemSlot>>, instan
             if (currentCount > 1) invalidSections++;
             currentCount = 0;
         }
-        console.log(state[score], currentCount, invalidSections);
     }
     if (currentCount > 1) invalidSections++;
 
@@ -46,7 +45,7 @@ const invalidStateMessage = (state: Partial<Record<ItemScore, ItemSlot>>, instan
     return undefined;
 }
 
-const Reservations: React.FunctionComponent<ReservationsProps> = ({ instance, onChangePlayer }) => {
+const Reservations: React.FunctionComponent<ReservationsProps> = ({ instance, loginPlayer, onChangePlayer }) => {
     const { playerName } = useParams<ReservationsParams>();
     const player: Player = getPlayer(formatName(playerName));
     const [state, dispatch] = useReducer(reducer, initialState(player));
@@ -81,7 +80,7 @@ const Reservations: React.FunctionComponent<ReservationsProps> = ({ instance, on
         <DndProvider backend={HTML5Backend}>
             <div className={style.wrap}>
                 <div className={style.loot}>
-                    <LootOptionsList instance={instance} />
+                    <LootOptionsList instance={instance} loginPlayer={loginPlayer} />
                 </div>
                 <div className={style.reservations}>
                     <ReservationList

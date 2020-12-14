@@ -29,19 +29,26 @@ const ItemLink = ({ item, noText, noTextLink, size }: ItemLinkProps) => {
         iconClass.push(style['icon--restricted'])
     }
 
+    // The fulhax for Atiesh T_T
+    const displayName = item.name.replace(/\(.*\)/, '');
+    const wrapClass = [style.wrap];
+    if ([22632, 22589, 22631, 22630].includes(item.id)) {
+        wrapClass.push(style.wrapLegendary);
+    }
+
     return (
-        <div className={style.wrap}>
+        <div className={wrapClass.join(' ')}>
             <a href={`https://classic.wowhead.com/item=${item.id}`} target='_blank' className={style.wrap} rel="noopener noreferrer" >
                 <span className={iconClass.join(' ')} style={iconStyle} />
                 {noText || noTextLink ? null : (
                     <span className={style.text}>
-                        {item.name}
+                        {displayName}
                     </span>
                 )}
             </a>
             {noTextLink && (
                 <span className={style.text}>
-                    {item.name}
+                    {displayName}
                 </span>
             )}
         </div>

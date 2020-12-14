@@ -5,6 +5,10 @@
     align-items: center;
 }
 
+.wrapLegendary {
+    color: #ff8000;
+}
+
 .text {
     white-space: nowrap;
     overflow: hidden;

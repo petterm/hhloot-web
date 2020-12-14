@@ -20,6 +20,7 @@ type LootTableNaxx = {
     "source": string,
     "icon": string,
     "restricted"?: boolean,
+    "hidden"?: boolean,
 };
 
 type BossMap = { [key: string]: Boss; };
@@ -44,6 +45,7 @@ const getUnifiedEntry = (instance: Instance, drop: LootTableAq40 | LootTableNaxx
             id: parseInt(dropAq['Item ID']),
             slot: dropAq['Slot'],
             restricted: dropAq['Restricted'] ? true : false,
+            hidden: false,
         };
     }
     if (instance === 'naxx'){
@@ -54,6 +56,7 @@ const getUnifiedEntry = (instance: Instance, drop: LootTableAq40 | LootTableNaxx
             id: dropNaxx['id'],
             slot: dropNaxx['slot'],
             restricted: dropNaxx['restricted'] || false,
+            hidden: dropNaxx['hidden'] || false,
         };
     }
     throw Error("Invalid instance");
@@ -81,6 +84,7 @@ const parseLootTable = (instance: Instance, rawData: LootTableAq40[] | LootTable
                     id: dropUnified.id,
                     name: dropUnified.name,
                     restricted: dropUnified.restricted,
+                    hidden: dropUnified.hidden,
                 },
                 instance,
             };
