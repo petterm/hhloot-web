@@ -41,10 +41,17 @@ export type ReservationApprovePostResponse = {
     slots: Slot[],
 }
 
+export type PlayersResponseRaid = {
+    instance: string,
+    date: string,
+    attendance: number,
+};
+
 export type PlayersResponse = {
     name: string,
     class: Class,
     guildRank: GuildRank,
+    raidAttendance: PlayersResponseRaid[],
 }[];
 
 export type LoginStatusResponse = {

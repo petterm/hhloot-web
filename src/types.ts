@@ -23,10 +23,13 @@ export interface PlayerItemEntry {
     calcualtedScore?: EntryScore;
 }
 
-interface PlayerRaidEvent {
+export interface PlayerRaidEvent {
     date: Date;
+    instanceName: string,
     attendanceValue: number;
-    attendenceBonus: 0 | 1;
+    bonus?: {
+        value: number,
+    },
 }
 
 export interface Player {

@@ -173,6 +173,12 @@
       "value": 1,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-29",
+      "value": 0,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Anusaukko": [
@@ -349,6 +355,12 @@
       "value": 1,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-29",
+      "value": 1,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Bluesoup": [
@@ -525,6 +537,12 @@
       "value": 0,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-29",
+      "value": 1,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Cosy": [
@@ -701,6 +719,12 @@
       "value": 1,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-29",
+      "value": 1,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Darand": [
@@ -851,6 +875,12 @@
       "value": 0,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-27",
+      "value": 0,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Deaurion": [
@@ -1027,6 +1057,12 @@
       "value": 1,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-29",
+      "value": 1,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Ditro": [
@@ -1203,6 +1239,12 @@
       "value": 1,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-29",
+      "value": 1,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Dotandrun": [
@@ -1259,6 +1301,12 @@
       "value": 1,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-10",
+      "value": 1,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Firmand": [
@@ -1435,6 +1483,12 @@
       "value": 1,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-29",
+      "value": 1,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Garlick": [
@@ -1611,6 +1665,12 @@
       "value": 1,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-29",
+      "value": 0,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Glamor": [
@@ -1787,6 +1847,12 @@
       "value": 1,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-29",
+      "value": 1,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Grillspett": [
@@ -1963,6 +2029,12 @@
       "value": 1,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-29",
+      "value": 1,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Heckstor": [
@@ -2095,6 +2167,12 @@
       "value": 1,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-24",
+      "value": 1,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Herath": [
@@ -2227,6 +2305,12 @@
       "value": 1,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-24",
+      "value": 1,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Hijaarah": [
@@ -2371,6 +2455,12 @@
       "value": 1,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-25",
+      "value": 1,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Hubbé": [
@@ -2547,6 +2637,12 @@
       "value": 1,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-29",
+      "value": 1,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Jalka": [
@@ -2723,6 +2819,12 @@
       "value": 1,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-29",
+      "value": 1,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Klesket": [
@@ -2899,6 +3001,12 @@
       "value": 1,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-29",
+      "value": 1,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Kongs": [
@@ -3075,6 +3183,12 @@
       "value": 0,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-29",
+      "value": 1,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Leesha": [
@@ -3137,6 +3251,12 @@
       "value": 1,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-11",
+      "value": 1,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Macsonkor": [
@@ -3313,6 +3433,12 @@
       "value": 1,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-29",
+      "value": 1,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Magickmike": [
@@ -3356,6 +3482,12 @@
       "value": 0,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-8",
+      "value": 0,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Mckek": [
@@ -3460,6 +3592,12 @@
       "value": 1,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-18",
+      "value": 1,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Meche": [
@@ -3636,6 +3774,12 @@
       "value": 1,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-29",
+      "value": 1,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Mimtor": [
@@ -3768,6 +3912,12 @@
       "value": 1,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-24",
+      "value": 1,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Nympth": [
@@ -3944,6 +4094,12 @@
       "value": 1,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-29",
+      "value": 1,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Piclasa": [
@@ -4120,6 +4276,12 @@
       "value": 1,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-29",
+      "value": 1,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Päänmurskain": [
@@ -4250,6 +4412,12 @@
       "value": 1,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-24",
+      "value": 1,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Qbx": [
@@ -4318,6 +4486,12 @@
       "value": 1,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-11",
+      "value": 1,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Reneko": [
@@ -4494,6 +4668,12 @@
       "value": 1,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-29",
+      "value": 1,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Rövbrytaren": [
@@ -4670,6 +4850,12 @@
       "value": 1,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-29",
+      "value": 1,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Seppä": [
@@ -4802,6 +4988,12 @@
       "value": 1,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-24",
+      "value": 1,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Shoegun": [
@@ -4934,6 +5126,12 @@
       "value": 1,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-23",
+      "value": 0,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Sovietgirl": [
@@ -5110,6 +5308,12 @@
       "value": 1,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-29",
+      "value": 0,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Suncho": [
@@ -5286,6 +5490,12 @@
       "value": 1,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-29",
+      "value": 0,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Svartie": [
@@ -5462,6 +5672,12 @@
       "value": 1,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-29",
+      "value": 1,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Thankyoucash": [
@@ -5560,6 +5776,12 @@
       "value": 1,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-17",
+      "value": 1,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Thdrag": [
@@ -5700,6 +5922,12 @@
       "value": 1,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-24",
+      "value": 1,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Thenuker": [
@@ -5876,6 +6104,12 @@
       "value": 0,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-29",
+      "value": 1,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Thirena": [
@@ -6052,6 +6286,12 @@
       "value": 0,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-29",
+      "value": 0,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Timânris": [
@@ -6114,6 +6354,12 @@
       "value": 1,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-11",
+      "value": 0,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Toestabber": [
@@ -6290,6 +6536,12 @@
       "value": 0,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-29",
+      "value": 0,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Trollsmet": [
@@ -6466,6 +6718,12 @@
       "value": 0,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-29",
+      "value": 0,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Upñu": [
@@ -6509,6 +6767,12 @@
       "value": 0,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-8",
+      "value": 1,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Vepaz": [
@@ -6685,6 +6949,12 @@
       "value": 0,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-29",
+      "value": 0,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Wulfrun": [
@@ -6861,6 +7131,12 @@
       "value": 1,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-29",
+      "value": 1,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Wyldfyre": [
@@ -7037,6 +7313,12 @@
       "value": 1,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-29",
+      "value": 1,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Xuana": [
@@ -7213,6 +7495,12 @@
       "value": 0,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-29",
+      "value": 0,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Xéna": [
@@ -7389,6 +7677,12 @@
       "value": 0,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-29",
+      "value": 0,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ],
   "Yungbanz": [
@@ -7565,6 +7859,12 @@
       "value": 1,
       "raid": "Naxxramas",
       "date": "2020-12-05 18:30"
+    },
+    {
+      "key": "index-29",
+      "value": 1,
+      "raid": "Naxxramas",
+      "date": "2020-12-10 19:30"
     }
   ]
 }

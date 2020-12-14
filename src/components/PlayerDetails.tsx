@@ -2,8 +2,7 @@ import React from 'react';
 import { PlayerItemEntry, Item, Instance } from '../types'
 import { useParams } from 'react-router-dom';
 import { getPlayer } from '../api';
-import { getFinalScore, getPositionBonus, getItemBonus, getAttendanceBonus,
-    getCombinedPlayerAttendanceList, CombinedPlayerAttendance } from '../api/points';
+import { getFinalScore, getPositionBonus, getItemBonus, getAttendanceBonus, getSortedPaddedRaids } from '../api/points';
 import ItemLink from './ItemLink';
 import PlayerName, { formatName } from './PlayerName';
 import style from './PlayerDetails.module.css';
@@ -28,16 +27,7 @@ const PlayerDetails: React.FunctionComponent<PlayerDetailsProps> = ({ instance }
         })
     )
 
-    const attendanceRaids: CombinedPlayerAttendance[] = getCombinedPlayerAttendanceList(player, instance);
-    attendanceRaids.sort((a, b) => {
-        if (a.info.date && b.info.date) {
-            return a.info.date > b.info.date ? -1 : 1;
-        }
-        if (a.info.date) {
-            return -1;
-        }
-        return 1;
-    });
+
 
     return (
         <div>
@@ -130,19 +120,19 @@ const PlayerDetails: React.FunctionComponent<PlayerDetailsProps> = ({ instance }
                     </tr>
                 </thead>
                 <tbody>
-                    {attendanceRaids.map(({ info, bonus, attendance }: CombinedPlayerAttendance) => (
-                        <tr key={info.key} className={style.row}>
+                    {getSortedPaddedRaids(player).map((raid, index) => (
+                        <tr key={index} className={style.row}>
                             <td className={style.attendanceDate}>
-                                {info.date || '-'}
+                                {raid.date || '-'}
                             </td>
                             <td className={style.attendanceRaid}>
-                                {info.raid === 'Fake' ? '-' : info.raid || '-'}
+                                {raid.instanceName}
                             </td>
                             <td className={style.attendanceValue}>
-                                {bonus || '-'}
+                                {raid.bonus ? raid.bonus.value : '-'}
                             </td>
                             <td className={style.attendanceValue}>
-                                {attendance === undefined ? '' : `${attendance * 100} %`}
+                                {`${raid.attendanceValue * 100} %`}
                             </td>
                         </tr>
                     ))}

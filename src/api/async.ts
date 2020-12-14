@@ -1,6 +1,8 @@
 import Axios from "axios";
+import moment from 'moment';
+import { bonusRaidStartDate } from "../constants";
 import { Class, GuildRank, Instance, Player } from "../types";
-import { LoginStatusResponse, PlayersResponse, ReservationsResponse } from "./apiTypes";
+import { LoginStatusResponse, PlayersResponse, PlayersResponseRaid, ReservationsResponse } from "./apiTypes";
 import { getItem } from "./loot";
 import { getItemScores } from "./reservations";
 import { getSheet } from "./sheets";
@@ -32,6 +34,10 @@ const lootSheetTab = (instance: Instance): string => {
     throw Error(`Unknown instance ${instance}`);
 }
 
+const raidBonus = (raid: PlayersResponseRaid, instance: Instance): { value: number } | undefined =>
+    moment(raid.date).isSameOrAfter(bonusRaidStartDate[instance]) ?
+        { value: raid.attendance >= 0.1 ? 1 : 0 } : undefined;
+
 export const fetchData = (instance: Instance) => Promise.all([
     Axios.get<PlayersResponse>('/api/players')
         .then(({ data }) => {
@@ -40,7 +46,12 @@ export const fetchData = (instance: Instance) => Promise.all([
             for (const i in players) {
                 const player = players[i];
                 playerMap[player.name] = {
-                    attendedRaids: [],
+                    attendedRaids: player.raidAttendance.map(raid => ({
+                        attendanceValue: raid.attendance,
+                        date: raid.date,
+                        instanceName: raid.instance,
+                        bonus: raidBonus(raid, instance),
+                    })),
                     name: player.name,
                     class: player.class as Class,
                     guildRank: player.guildRank,
