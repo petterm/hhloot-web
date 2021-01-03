@@ -26,17 +26,17 @@ export interface PlayerItemEntry {
 
 export interface PlayerRaidEvent {
     date: Date;
-    instanceName: string,
+    instanceName: string;
     attendanceValue: number;
     bonus?: {
-        value: number,
-    },
+        value: number;
+    };
 }
 
 export interface Player {
     name: PlayerName;
-    class?: Class,
-    guildRank?: GuildRank,
+    class?: Class;
+    guildRank?: GuildRank;
     scoreSlots: PlayerItemEntry[];
     attendedRaids: PlayerRaidEvent[];
     calculatedAttendance?: number;
@@ -45,12 +45,15 @@ export interface Player {
 
 export interface BossDrop {
     item: Item;
-    instance: Instance,
+    instance: Instance;
     reservations: {
         playerName: PlayerName;
         entry: PlayerItemEntry;
     }[];
-    freeLoot: PlayerName[];
+    freeLoot: {
+        playerName: PlayerName;
+        date: string;
+    }[];
 }
 
 export interface Boss {
@@ -60,9 +63,9 @@ export interface Boss {
 }
 
 export interface EntryScore {
-    base: number,
-    position: number,
-    item: number,
-    attendance: number,
-    total: number,
+    base: number;
+    position: number;
+    item: number;
+    attendance: number;
+    total: number;
 }

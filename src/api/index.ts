@@ -21,7 +21,10 @@ const markReceivedItems = () => {
                 if (index !== -1) {
                     playerSlots[index].received = raid.date;
                 } else {
-                    bossDropMap[lootEvent.item].freeLoot.push(player.name)
+                    bossDropMap[lootEvent.item].freeLoot.push({
+                        playerName: player.name,
+                        date: raid.date,
+                    });
                 }
             } else {
                 console.warn('Loot event for unknown player', lootEvent.character);

@@ -55,9 +55,9 @@ const DropRow = ({ drop, hideReceived, masterlooter, oldMembers, instance, onSel
                         hoverScore={hoverScore}
                     />
                 ))}
-                {!hideReceived && drop.freeLoot.map((name, index) => (
-                    (oldMembers || getPlayer(name).class) && (
-                        <DropRowPlayerFree key={`${name}-${index}`} player={getPlayer(name)} />
+                {!hideReceived && drop.freeLoot.map((drop, index) => (
+                    (oldMembers || getPlayer(drop.playerName).class) && (
+                        <DropRowPlayerFree key={`${drop.playerName}-${index}`} player={getPlayer(drop.playerName)} />
                     )
                 ))}
             </div>

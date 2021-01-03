@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import ItemLink from './ItemLink';
 import PlayerName from './PlayerName';
 import { getScoreGroupEdges } from '../api/reservations';
+import { getAttendanceBonus } from '../api/points';
 
 type PlayerListProps = { players: Player[], instance: Instance };
 const PlayerList = ({ players, instance }: PlayerListProps) => {
@@ -44,6 +45,18 @@ const PlayerList = ({ players, instance }: PlayerListProps) => {
                                     ) : '-'}
                                 </td>
                             ))}
+                            <td style={{
+                                    padding: '0 8px',
+                                    borderBottom: '1px solid #333',
+                                    borderTop: index ? 'none' : '1px solid #333',
+                                    borderLeft: '2px solid #333',
+                                    fontSize: 12,
+                                    color: '#aaa',
+                                    textAlign: 'right',
+                                    paddingLeft: 10,
+                            }}>
+                                {getAttendanceBonus(player) * 10} %
+                            </td>
                         </tr>
                     ))}
                 </tbody>

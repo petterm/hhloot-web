@@ -10,20 +10,17 @@ const getPlayerAttendanceRaids = (player: Player): PlayerRaidEvent[] =>
 const getPlayerAttendance = (player: Player): number => {
     if (typeof(player.calculatedAttendance) === 'undefined') {
         const playerAttendanceList: PlayerRaidEvent[] = getPlayerAttendanceRaids(player);
-        if (playerAttendanceList.length) {
-            let attendanceSum = playerAttendanceList.reduce((sum, attendance) => sum + attendance.attendanceValue, 0);
+        let attendanceSum = playerAttendanceList.reduce((sum, attendance) => sum + attendance.attendanceValue, 0);
 
-            // Pad attendance with 100% raids for new players
-            if (playerAttendanceList.length < attendanceRaidCount) {
-                attendanceSum += attendanceRaidCount - playerAttendanceList.length
-            }
-
-            player.calculatedAttendance =  attendanceSum / attendanceRaidCount;
-            // Round to 1 digit
-            player.calculatedAttendance = Math.round(player.calculatedAttendance * 100) / 100;
-        } else {
-            player.calculatedAttendance = 0;
+        // Pad attendance with 100% raids for new players
+        if (playerAttendanceList.length < attendanceRaidCount) {
+            attendanceSum += attendanceRaidCount - playerAttendanceList.length
         }
+
+        player.calculatedAttendance =  attendanceSum / attendanceRaidCount;
+
+        // Round to 1 digit
+        player.calculatedAttendance = Math.round(player.calculatedAttendance * 100) / 100;
     }
     return player.calculatedAttendance
 };

@@ -18,11 +18,14 @@ const PlayerDetails: React.FunctionComponent<PlayerDetailsProps> = ({ instance }
     const { playerName } = useParams<PlayerDetailsParams>();
     const player = getPlayer(formatName(playerName));
 
-    const freeLoot: Item[] = [];
+    const freeLoot: { item: Item, date: string }[] = [];
     Object.values(getBossDrops(instance)).forEach(
-        drop => drop.freeLoot.forEach(name => {
-            if (name === playerName) {
-                freeLoot.push(drop.item);
+        drop => drop.freeLoot.forEach(({ playerName: dropPlayer, date }) => {
+            if (dropPlayer === playerName) {
+                freeLoot.push({
+                    item: drop.item,
+                    date,
+                });
             }
         })
     )
@@ -92,10 +95,11 @@ const PlayerDetails: React.FunctionComponent<PlayerDetailsProps> = ({ instance }
                         </tr>
                     </thead>
                     <tbody>
-                        {freeLoot.map((item, index) => (
-                            <tr key={item.name} className={style.row}>
+                        {freeLoot.map((drop, index) => (
+                            <tr key={drop.item.name} className={style.row}>
                                 <td className={style.cellItem}>
-                                    <ItemLink item={item} size='small' />
+                                    <ItemLink item={drop.item} size='small' />
+                                    <span className={style.receivedDate}>({drop.date})</span>
                                 </td>
                             </tr>
                         ))}
