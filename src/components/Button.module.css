@@ -19,3 +19,10 @@
     cursor: pointer;
     background-color: #009107;
 }
+
+.button:disabled {
+    cursor: not-allowed;
+    background-color: #575757;
+    border: 0.1em solid #414141;
+    color: rgb(36, 36, 36);
+}

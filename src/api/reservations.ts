@@ -1,5 +1,5 @@
 import Axios from "axios";
-import { getPlayer } from ".";
+import { getPlayer, prepareData } from ".";
 import { itemScoresAq40, itemScoresNaxx, scoreGroupEdgesAq40 } from "../constants";
 import { Instance, Item, ItemScore, Player, PlayerName } from "../types";
 import { ReservationApprovePostRequest, ReservationApprovePostResponse,
@@ -23,7 +23,7 @@ export const submitReservations = async (player: Player, instance: Instance, res
 
 export type AdminReservationsEntry = {
     id: number,
-    player: Player,
+    player: Player | string,
     instance: Instance,
     submitted: string,
     approved?: string,
@@ -34,7 +34,8 @@ export type AdminReservationsEntry = {
 export const getReservations = async (
     approved: boolean,
     instance: Instance | undefined,
-    player?: Player
+    player?: Player,
+    showAll?: boolean
 ): Promise<AdminReservationsEntry[]> => {
     const url = approved ? '/api/reservations/approved' : '/api/reservations';
     const params = {
@@ -59,6 +60,17 @@ export const getReservations = async (
                     });
                 } catch (error) {
                     console.warn('Found reservation for unknown player', entry.name);
+                    if (showAll) {
+                        filteredResult.push({
+                            id: entry.id,
+                            player: entry.name,
+                            instance: entry.instance,
+                            submitted: entry.submitted,
+                            approved: entry.approved,
+                            approvedBy: entry.approvedBy,
+                            slots: entry.slots.map(itemId => itemId ? getItem(itemId) : undefined),
+                        });
+                    }
                 }
             });
             return filteredResult;
@@ -73,15 +85,31 @@ export const approveReservation = async (reservationId: number, approver: Player
     }
 
     return Axios.post<ReservationApprovePostResponse>(url, data)
-        .then(({ data }) => ({
-            id: data.id,
-            player: getPlayer(data.name),
-            instance: data.instance,
-            submitted: data.submitted,
-            approved: data.approved,
-            approvedBy: data.approvedBy,
-            slots: data.slots.map(itemId => itemId ? getItem(itemId) : undefined),
-        }));
+        .then(({ data: newReservations }) => {
+            const player = getPlayer(newReservations.name);
+            const newReservationItems = newReservations.slots.map(itemId => itemId ? getItem(itemId) : undefined);
+
+            player.scoreSlots.forEach((playerSlot, index) => {
+                const item = newReservationItems[index];
+                if (item) {
+                    playerSlot.item = item;
+                } else {
+                    playerSlot.item = undefined;
+                }
+            });
+
+            prepareData();
+            
+            return {
+                id: newReservations.id,
+                player: player,
+                instance: newReservations.instance,
+                submitted: newReservations.submitted,
+                approved: newReservations.approved,
+                approvedBy: newReservations.approvedBy,
+                slots: newReservationItems,
+            };
+        });
 };
 
 export const getItemScores = (instance: Instance): ItemScore[] => {

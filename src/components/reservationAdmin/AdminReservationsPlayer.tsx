@@ -1,8 +1,10 @@
 import { faCheck, faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { AdminReservationsEntry, approveReservation, getScoreGroupEdges } from '../../api/reservations';
-import { Instance, Item, Player, PlayerItemEntry } from '../../types';
+import { itemScoresNaxx } from '../../constants';
+import { Instance, Item, ItemScoreNaxx, Player } from '../../types';
 import Button from '../Button';
 import ItemLink from '../ItemLink';
 import PlayerName from '../PlayerName';
@@ -10,14 +12,38 @@ import style from './AdminReservationsPlayer.module.css';
 
 type AdminReservationsPlayerProps = {
     approverPlayer: Player,
-    player: Player,
     entries: AdminReservationsEntry[],
     instance: Instance,
+    playerName: string,
+    player?: Player,
+    entryId?: number,
 }
 
-const scoreRowClass = (instance: Instance, row: PlayerItemEntry) => getScoreGroupEdges(instance).includes(row.score) ? style.scoreRowEdge : '';
+const scoreRowClass = (instance: Instance, score: ItemScoreNaxx) => getScoreGroupEdges(instance).includes(score) ? style.scoreRowEdge : '';
 
-const AdminReservationsPlayer: React.FunctionComponent<AdminReservationsPlayerProps> = ({ approverPlayer, player, entries, instance }) => {
+const playerCurrentEntry = (index: number, player?: Player) => {
+    if (!player) return null;
+    const entry = player.scoreSlots[index];
+    return (
+        <td className={style.cellItem}>
+            {entry.item ? (
+                <>
+                    <ItemLink item={entry.item} size='small' />
+                    {entry.received && (
+                        <span className={style.receivedDate}>({entry.received})</span>
+                    )}
+                </>
+            ) : (
+                <div className={style.cellItemEmpty}>
+                    <span className={style.cellItemEmptyIcon}></span>
+                    <span className={style.cellItemEmptyText}>(Empty)</span>
+                </div>
+            )}
+        </td>
+    )
+} 
+
+const AdminReservationsPlayer: React.FunctionComponent<AdminReservationsPlayerProps> = ({ approverPlayer, player, playerName, entryId, entries, instance }) => {
     const [approved, setApproved] = useState(false);
     const [fetching, setFetching] = useState(false);
     const [error, setError] = useState<Error>();
@@ -26,25 +52,46 @@ const AdminReservationsPlayer: React.FunctionComponent<AdminReservationsPlayerPr
         if (!fetching && !approved && approverPlayer) {
             setFetching(true);
             setError(undefined);
-            approveReservation(lastSubmission.id, approverPlayer)
+            approveReservation(currentEntry.id, approverPlayer)
                 .then(() => {
                     setFetching(false);
                     setApproved(true);
-                }).catch(e => {
+                })
+                .catch(e => {
                     setFetching(false);
                     setError(e);
                 });
         }
     }
 
-    const lastSubmission: AdminReservationsEntry = entries.slice(-1)[0];
-    const historicSubmissions: AdminReservationsEntry[] = entries.slice(0, -1);
-    historicSubmissions.reverse(); // Show new entries first
+    const allSubmissions: AdminReservationsEntry[] = entries.slice(0);
+    allSubmissions.reverse(); // Show new entries first
+
+    let currentEntry: AdminReservationsEntry = entries.slice(-1)[0];
+    if (entryId) {
+        currentEntry = entries.find(entry => entry.id === entryId) || currentEntry;
+    }
+
+    const showPlayerCurrentList: boolean = !!player;
+    const enableSubmissionApprove: boolean = !!(
+        player && (!entryId || entryId === allSubmissions[0].id) && !currentEntry.approved
+    );
+    // const enableSubmissionApprove: boolean = !!(
+    //     !player ||
+    //     (!entryId && !currentEntry.approved) ||
+    //     (entryId && (entryId !== allSubmissions[0].id || !currentEntry.approved))
+    // );
 
     return (
         <div className={style.wrap}>
             <h1>
-                <PlayerName player={player} />
+                {player ? (
+                    <PlayerName player={player} />
+                ) : (
+                    <span className={style.oldPlayerTitle}>
+                        {playerName}
+                    </span>
+                )}
             </h1>
             <table className={style.mainTable}>
                 <thead>
@@ -52,53 +99,42 @@ const AdminReservationsPlayer: React.FunctionComponent<AdminReservationsPlayerPr
                         <th className={style.headerCell}>
                             Score
                         </th>
-                        <th className={style.headerCell}>
-                            Current list
-                        </th>
-                        {!lastSubmission.approved && (
-                            <>
-                                <th className={style.headerCell}></th>
-                                <th className={style.headerCell}>
-                                    New submission
-                                </th>
-                            </>
+                        {showPlayerCurrentList && (
+                            <th className={style.headerCell}>
+                                Current list
+                            </th>
+                        )}
+                        {showPlayerCurrentList && (
+                            <th className={style.headerCell}></th>
+                        )}
+                        {(
+                            <th className={style.headerCell}>
+                                Submission {currentEntry.id} ({currentEntry.submitted})
+                            </th>
                         )}
                     </tr>
                 </thead>
                 <tbody>
-                    {player.scoreSlots.map((entry: PlayerItemEntry, index: number) => (
-                        <tr key={entry.score} className={[
+                    {itemScoresNaxx.map((score: ItemScoreNaxx, index: number) => (
+                        <tr key={score} className={[
                             style.row,
-                            scoreRowClass(instance, entry),
-                            !lastSubmission.approved && entry.item === lastSubmission.slots[index] ?
+                            scoreRowClass(instance, score),
+                            showPlayerCurrentList && player?.scoreSlots[index].item === currentEntry.slots[index] ?
                                 style.rowUnchanged : '',
                         ].join(' ')}>
-                            <td className={entry.received ? style.cellReceived : style.cell}>
-                                {entry.score}
+                            <td className={player && player.scoreSlots[index].received ? style.cellReceived : style.cell}>
+                                {score}
                             </td>
-                            <td className={style.cellItem}>
-                                {entry.item ? (
-                                    <>
-                                        <ItemLink item={entry.item} size='small' />
-                                        {entry.received && (
-                                            <span className={style.receivedDate}>({entry.received})</span>
-                                        )}
-                                    </>
-                                ) : (
-                                    <div className={style.cellItemEmpty}>
-                                        <span className={style.cellItemEmptyIcon}></span>
-                                        <span className={style.cellItemEmptyText}>(Empty)</span>
-                                    </div>
-                                )}
-                            </td>
-                            {!lastSubmission.approved && (
-                            <>
+                            {showPlayerCurrentList && playerCurrentEntry(index, player)}
+                            {showPlayerCurrentList && (
                                 <td className={style.cell}>
                                     <FontAwesomeIcon icon={faLongArrowAltRight} />
                                 </td>
+                            )}
+                            {(
                                 <td className={style.cellItem}>
-                                    {lastSubmission.slots[index] ? (
-                                        <ItemLink item={lastSubmission.slots[index] as Item} size='small' />
+                                    {currentEntry.slots[index] ? (
+                                        <ItemLink item={currentEntry.slots[index] as Item} size='small' />
                                     ) : (
                                         <div className={style.cellItemEmpty}>
                                             <span className={style.cellItemEmptyIcon}></span>
@@ -106,45 +142,42 @@ const AdminReservationsPlayer: React.FunctionComponent<AdminReservationsPlayerPr
                                         </div>
                                     )}
                                 </td>
-                            </>
                             )}
                         </tr>
                     ))}
                 </tbody>
             </table>
 
-            {!lastSubmission.approved && (
-                <div className={style.approveWrap}>
-                    <div className={style.selectApprover}>
-                        Approving as <PlayerName player={approverPlayer} />
-                    </div>
-                    {approverPlayer && (
+            <div className={style.approveWrap}>
+                <div className={style.selectApprover}>
+                    Approving as <PlayerName player={approverPlayer} />
+                </div>
+                {approverPlayer && (
+                    <>
+                    {fetching ? (
+                        <div className={style.approving}>Approving..</div>
+                    ) : approved ? (
+                        <div className={style.approved}>
+                            <FontAwesomeIcon icon={faCheck} /> Approved!
+                        </div>
+                    ) : (
                         <>
-                        {fetching ? (
-                            <div className={style.approving}>Approving..</div>
-                        ) : approved ? (
-                            <div className={style.approved}>
-                                <FontAwesomeIcon icon={faCheck} /> Approved!
-                            </div>
-                        ) : (
-                            <>
-                                <Button onClick={onApprove}>
-                                    Approve new list
-                                </Button>
-                                {!!error && (
-                                    <div className={style.errorWrap}>
-                                        <p className={style.errorTitle}>Error approving:</p>
-                                        <pre className={style.errorMessage}>{error.message}</pre>
-                                    </div>
-                                )}
-                            </>
-                        )}
+                            <Button onClick={onApprove} disabled={!(showPlayerCurrentList && enableSubmissionApprove)}>
+                                Approve list
+                            </Button>
+                            {!!error && (
+                                <div className={style.errorWrap}>
+                                    <p className={style.errorTitle}>Error approving:</p>
+                                    <pre className={style.errorMessage}>{error.message}</pre>
+                                </div>
+                            )}
                         </>
                     )}
-                </div>
-            )}
+                    </>
+                )}
+            </div>
 
-            {historicSubmissions.length > 0 && (
+            {allSubmissions.length > 0 && (
                 <>
                     <h3 className={style.historicHeader}>
                         Historic submissions
@@ -153,10 +186,13 @@ const AdminReservationsPlayer: React.FunctionComponent<AdminReservationsPlayerPr
                         <thead>
                             <tr>
                                 <th>
-                                    Instance
+                                    ID
                                 </th>
                                 <th>
                                     Submitted
+                                </th>
+                                <th>
+                                    Instance
                                 </th>
                                 <th>
                                     Approved by
@@ -164,13 +200,20 @@ const AdminReservationsPlayer: React.FunctionComponent<AdminReservationsPlayerPr
                             </tr>
                         </thead>
                         <tbody>
-                            {historicSubmissions.map((entry) => (
-                                <tr key={entry.id}>
+                            {allSubmissions.map((entry, index) => (
+                                <tr key={entry.id} className={
+                                    (entryId && entry.id === entryId) ||
+                                    (!entryId && !index)
+                                    ? style.selectedEntry : ''
+                                }>
                                     <td>
-                                        {entry.instance}
+                                        <Link to={`/reservations/admin/${playerName}/${entry.id}`} >{entry.id}</Link>
                                     </td>
                                     <td>
                                         {entry.submitted}
+                                    </td>
+                                    <td>
+                                        {entry.instance}
                                     </td>
                                     {entry.approvedBy ? (
                                         <td>

@@ -13,6 +13,15 @@ type AdminReservationsProps = {
 
 type AdminReservationsParams = {
     playerName?: string,
+    entryId?: string,
+}
+
+const localStorageSet = (key: string, value: boolean) => {
+    if (value) {
+        localStorage.setItem(key, "true");
+    } else {
+        localStorage.removeItem(key);
+    }
 }
 
 const AdminReservations: React.FunctionComponent<AdminReservationsProps> = ({ instance, loginPlayer }) => {
@@ -20,17 +29,27 @@ const AdminReservations: React.FunctionComponent<AdminReservationsProps> = ({ in
     const [error, setError] = useState<Error>();
     const [reservations, setReservations] = useState<AdminReservationsEntry[]>([]);
 
-    const { playerName } = useParams<AdminReservationsParams>();
+    
+    const [showAll, setShowAllInner] = useState(localStorage.getItem('reservationsShowAll') ? true : false);
+    const setShowAll = (value: boolean) => {
+        setShowAllInner(value);
+        localStorageSet('reservationsShowAll', value);
+    }
+
+    const { playerName, entryId: entryIdRaw } = useParams<AdminReservationsParams>();
+    const entryId: number | undefined = entryIdRaw ? parseInt(entryIdRaw) : undefined;
     let player: Player | undefined;
     if (playerName) {
         try {
             player = getPlayer(formatName(playerName));
-        } catch (error) {}
+        } catch (error) {
+            console.warn('Admin reservations for unknown player', playerName);
+        }
     }
 
     useEffect(() => {
         setIsFetching(true);
-        getReservations(false, instance, player)
+        getReservations(false, instance, player, showAll)
             .then(entries => {
                 setReservations(entries);
                 setIsFetching(false);
@@ -39,7 +58,7 @@ const AdminReservations: React.FunctionComponent<AdminReservationsProps> = ({ in
                 setError(error);
                 setIsFetching(false);
             })
-    }, [instance, player]);
+    }, [instance, player, showAll]);
 
     if (isFetching) {
         return (<p>Loading..</p>);
@@ -54,13 +73,24 @@ const AdminReservations: React.FunctionComponent<AdminReservationsProps> = ({ in
         )
     }
 
+    if (playerName) {
+        return (
+            <div>
+                <AdminReservationsPlayer
+                    approverPlayer={loginPlayer}
+                    player={player}
+                    playerName={playerName}
+                    entryId={entryId}
+                    entries={reservations}
+                    instance={instance}
+                />
+            </div>
+        );
+    }
+
     return (
         <div>
-            {player ? (
-                <AdminReservationsPlayer approverPlayer={loginPlayer} player={player} entries={reservations} instance={instance} />
-            ) : (
-                <AdminReservationsList entries={reservations} />
-            )}
+            <AdminReservationsList entries={reservations} showAll={showAll} setShowAll={setShowAll} />
         </div>
     );
 }

@@ -7,20 +7,26 @@ import style from './AdminReservationsList.module.css';
 
 type AdminReservationsListProps = {
     entries: AdminReservationsEntry[],
+    showAll: boolean,
+    setShowAll: (value: boolean) => void,
 }
 
 const age = (timestamp: string) =>
     moment.duration(moment(timestamp).diff(moment())).humanize(true);
 
-const AdminReservationsList: React.FunctionComponent<AdminReservationsListProps> = ({ entries }) => {
+const playerName = (entry: AdminReservationsEntry) =>
+    typeof(entry.player) === 'object' ? entry.player.name : entry.player;
+
+const AdminReservationsList: React.FunctionComponent<AdminReservationsListProps> = ({ entries, showAll, setShowAll }) => {
     const match = useRouteMatch();
     const playerLists: { [player: string]: AdminReservationsEntry[] } = {};
     const approved: AdminReservationsEntry[] = [];
     const newSubmissions: AdminReservationsEntry[] = [];
 
     for (const row of entries) {
-        if (!(row.player.name in playerLists)) playerLists[row.player.name] = [];
-        playerLists[row.player.name].push(row);
+        const name = playerName(row);
+        if (!(name in playerLists)) playerLists[name] = [];
+        playerLists[name].push(row);
     }
 
     const playerNames = Object.keys(playerLists);
@@ -38,6 +44,17 @@ const AdminReservationsList: React.FunctionComponent<AdminReservationsListProps>
     return (
         <div className={style.wrap}>
             <div className={style.section}>
+            <label style={{ cursor: "pointer" }}>
+                    <input
+                        type='checkbox'
+                        style={{ marginRight: 5, cursor: "pointer" }}
+                        checked={showAll}
+                        onChange={() => setShowAll(!showAll)}
+                    />
+                    Show non-members
+                </label>
+            </div>
+            <div className={style.section}>
                 <h3 className={style.sectionHeader}>
                     New submissions:
                 </h3>
@@ -53,8 +70,12 @@ const AdminReservationsList: React.FunctionComponent<AdminReservationsListProps>
                         {newSubmissions.map(entry => (
                             <tr key={entry.id} className={style.entry}>
                                 <td>
-                                    <Link to={`${match.url}/${entry.player.name}`} style={{ textDecoration: 'none' }}>
-                                        <PlayerName player={entry.player} />
+                                    <Link to={`${match.url}/${playerName(entry)}`} style={{ textDecoration: 'none' }}>
+                                        {typeof(entry.player) === 'object' ? (
+                                            <PlayerName player={entry.player} />
+                                        ) : (
+                                            <span className={style.oldPlayer}>{entry.player}</span>
+                                        )}
                                     </Link>
                                 </td>
                                 <td>
@@ -91,8 +112,12 @@ const AdminReservationsList: React.FunctionComponent<AdminReservationsListProps>
                         {approved.map(entry => (
                             <tr key={entry.id} className={style.entry}>
                                 <td>
-                                    <Link to={`${match.url}/${entry.player.name}`} style={{ textDecoration: 'none' }}>
-                                        <PlayerName player={entry.player} />
+                                    <Link to={`${match.url}/${playerName(entry)}`} style={{ textDecoration: 'none' }}>
+                                        {typeof(entry.player) === 'object' ? (
+                                            <PlayerName player={entry.player} />
+                                        ) : (
+                                            <span className={style.oldPlayer}>{entry.player}</span>
+                                        )}
                                     </Link>
                                 </td>
                                 <td>

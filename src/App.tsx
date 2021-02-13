@@ -86,7 +86,7 @@ function App() {
                                     <PlayerDetails instance={instance} />
                                 </InvalidPlayerHandler>
                             </Route>
-                            <Route path={"/reservations/admin/:playerName?"}>
+                            <Route path={"/reservations/admin/:playerName?/:entryId?"}>
                                 {loginPlayer ? (
                                     <AdminReservations instance={instance} loginPlayer={loginPlayer} />
                                 ) : (
