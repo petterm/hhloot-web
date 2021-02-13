@@ -1001,7 +1001,6 @@
         "slot": "Two-Hand",
         "source": "Trash",
         "icon": "inv_staff_medivh",
-        "restricted": true,
         "hidden": true
     },
     {
@@ -1010,7 +1009,6 @@
         "slot": "Two-Hand",
         "source": "Trash",
         "icon": "inv_staff_medivh",
-        "restricted": true,
         "hidden": true
     },
     {
@@ -1019,7 +1017,6 @@
         "slot": "Two-Hand",
         "source": "Trash",
         "icon": "inv_staff_medivh",
-        "restricted": true,
         "hidden": true
     },
     {
@@ -1028,7 +1025,6 @@
         "slot": "Two-Hand",
         "source": "Trash",
         "icon": "inv_staff_medivh",
-        "restricted": true,
         "hidden": true
     }
 ]
