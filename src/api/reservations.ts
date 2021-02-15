@@ -34,13 +34,13 @@ export type AdminReservationsEntry = {
 export const getReservations = async (
     approved: boolean,
     instance: Instance | undefined,
-    player?: Player,
+    playerName?: string,
     showAll?: boolean
 ): Promise<AdminReservationsEntry[]> => {
     const url = approved ? '/api/reservations/approved' : '/api/reservations';
     const params = {
         instance,
-        player: player ? player.name : undefined,
+        player: playerName || undefined,
     };
 
     return Axios.get<ReservationsResponse>(url, { params })

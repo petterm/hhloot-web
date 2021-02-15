@@ -49,7 +49,7 @@ const AdminReservations: React.FunctionComponent<AdminReservationsProps> = ({ in
 
     useEffect(() => {
         setIsFetching(true);
-        getReservations(false, instance, player, showAll)
+        getReservations(false, instance, playerName, showAll)
             .then(entries => {
                 setReservations(entries);
                 setIsFetching(false);
@@ -58,7 +58,7 @@ const AdminReservations: React.FunctionComponent<AdminReservationsProps> = ({ in
                 setError(error);
                 setIsFetching(false);
             })
-    }, [instance, player, showAll]);
+    }, [instance, playerName, showAll]);
 
     if (isFetching) {
         return (<p>Loading..</p>);

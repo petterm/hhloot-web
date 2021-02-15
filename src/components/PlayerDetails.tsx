@@ -30,7 +30,11 @@ const PlayerDetails: React.FunctionComponent<PlayerDetailsProps> = ({ instance }
         })
     )
 
-
+    // Sort by date (old first), then item name
+    freeLoot.sort((a, b) => 
+        a.date < b.date ? -1 : 
+        a.date > b.date ? 1 : 
+        a.item.name.localeCompare(b.item.name));
 
     return (
         <div>
