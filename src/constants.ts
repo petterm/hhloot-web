@@ -7,9 +7,9 @@ export const itemScoresAq40: ItemScoreAq40[] = [
 export const scoreGroupEdgesAq40: ItemScore[] = [80, 60];
 
 export const itemScoresNaxx: ItemScoreNaxx[] = [
-    100, 90, 80, 70, 65, 60, 55, 54, 53, 52,
+    100, 90, 80, 70, 65, 60, 55, 54, 53, 52, 10,
 ];
-export const scoreGroupEdgesNaxx: ItemScore[] = [80, 60];
+export const scoreGroupEdgesNaxx: ItemScore[] = [80, 60, 52];
 
 export const instances: Instance[] = ['aq40', 'naxx'];
 export const instanceName: Record<Instance, string> = {

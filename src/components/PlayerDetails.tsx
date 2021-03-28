@@ -100,7 +100,7 @@ const PlayerDetails: React.FunctionComponent<PlayerDetailsProps> = ({ instance }
                     </thead>
                     <tbody>
                         {freeLoot.map((drop, index) => (
-                            <tr key={drop.item.name} className={style.row}>
+                            <tr key={`${drop.item.name}-${drop.date}`} className={style.row}>
                                 <td className={style.cellItem}>
                                     <ItemLink item={drop.item} size='small' />
                                     <span className={style.receivedDate}>({drop.date})</span>

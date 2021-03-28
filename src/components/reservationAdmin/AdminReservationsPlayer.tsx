@@ -2,8 +2,7 @@ import { faCheck, faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { AdminReservationsEntry, approveReservation, getScoreGroupEdges } from '../../api/reservations';
-import { itemScoresNaxx } from '../../constants';
+import { AdminReservationsEntry, approveReservation, getItemScores, getScoreGroupEdges } from '../../api/reservations';
 import { Instance, Item, ItemScoreNaxx, Player } from '../../types';
 import Button from '../Button';
 import ItemLink from '../ItemLink';
@@ -115,7 +114,7 @@ const AdminReservationsPlayer: React.FunctionComponent<AdminReservationsPlayerPr
                     </tr>
                 </thead>
                 <tbody>
-                    {itemScoresNaxx.map((score: ItemScoreNaxx, index: number) => (
+                    {getItemScores(instance).map((score: ItemScoreNaxx, index: number) => (
                         <tr key={score} className={[
                             style.row,
                             scoreRowClass(instance, score),

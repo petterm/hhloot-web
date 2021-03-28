@@ -1,5 +1,5 @@
 export type ItemScoreAq40 = 100 | 90 | 80 | 70 | 65 | 60 | 55 | 54 | 53 | 52;
-export type ItemScoreNaxx = 100 | 90 | 80 | 70 | 65 | 60 | 55 | 54 | 53 | 52;
+export type ItemScoreNaxx = 100 | 90 | 80 | 70 | 65 | 60 | 55 | 54 | 53 | 52 | 10;
 export type ItemScore = ItemScoreAq40 | ItemScoreNaxx;
 
 export type Class = 'DRUID' | 'HUNTER' | 'MAGE' | 'PALADIN' | 'PRIEST' | 'ROGUE' | 'WARLOCK' | 'WARRIOR';

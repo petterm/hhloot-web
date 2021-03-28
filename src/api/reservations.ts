@@ -1,6 +1,6 @@
 import Axios from "axios";
 import { getPlayer, prepareData } from ".";
-import { itemScoresAq40, itemScoresNaxx, scoreGroupEdgesAq40 } from "../constants";
+import { itemScoresAq40, itemScoresNaxx, scoreGroupEdgesAq40, scoreGroupEdgesNaxx } from "../constants";
 import { Instance, Item, ItemScore, Player, PlayerName } from "../types";
 import { ReservationApprovePostRequest, ReservationApprovePostResponse,
     ReservationPostRequest, ReservationPostResponse, ReservationsResponse } from "./apiTypes";
@@ -127,7 +127,7 @@ export const getScoreGroupEdges = (instance: Instance): ItemScore[] => {
         return scoreGroupEdgesAq40;
     }
     if (instance === 'naxx') {
-        return scoreGroupEdgesAq40;
+        return scoreGroupEdgesNaxx;
     }
     throw Error(`Unknown instance ${instance}`);
 };
