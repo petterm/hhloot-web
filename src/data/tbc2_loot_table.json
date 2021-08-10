@@ -1,0 +1,1097 @@
+[
+    {
+        "id": 33055,
+        "name": "Band of Vile Aggression",
+        "slot": "Finger",
+        "icon": "inv_jewelry_ring_71",
+        "source": "Hydross"
+    },
+    {
+        "id": 30047,
+        "name": "Blackfathom Warbands",
+        "slot": "Wrist",
+        "icon": "inv_bracer_02",
+        "source": "Hydross"
+    },
+    {
+        "id": 30050,
+        "name": "Boots of the Shifting Nightmare",
+        "slot": "Feet",
+        "icon": "inv_boots_05",
+        "source": "Hydross"
+    },
+    {
+        "id": 30048,
+        "name": "Brighthelm of Justice",
+        "slot": "Head",
+        "icon": "inv_helmet_22",
+        "source": "Hydross"
+    },
+    {
+        "id": 30049,
+        "name": "Fathomstone",
+        "slot": "Held In Off-hand",
+        "icon": "inv_misc_gem_azuredraenite_02",
+        "source": "Hydross"
+    },
+    {
+        "id": 30051,
+        "name": "Idol of the Crescent Goddess",
+        "slot": "Relic",
+        "icon": "inv_qirajidol_night",
+        "source": "Hydross"
+    },
+    {
+        "id": 30664,
+        "name": "Living Root of the Wildheart",
+        "slot": "Trinket",
+        "icon": "inv_misc_herb_nightmarevine",
+        "source": "Hydross"
+    },
+    {
+        "id": 30053,
+        "name": "Pauldrons of the Wardancer",
+        "slot": "Shoulder",
+        "icon": "inv_shoulder_20",
+        "source": "Hydross"
+    },
+    {
+        "id": 30054,
+        "name": "Ranger-General's Chestguard",
+        "slot": "Chest",
+        "icon": "inv_chest_plate09",
+        "source": "Hydross"
+    },
+    {
+        "id": 30052,
+        "name": "Ring of Lethality",
+        "slot": "Finger",
+        "icon": "inv_jewelry_ring_51naxxramas",
+        "source": "Hydross"
+    },
+    {
+        "id": 30056,
+        "name": "Robe of Hateful Echoes",
+        "slot": "Chest",
+        "icon": "inv_chest_cloth_43",
+        "source": "Hydross"
+    },
+    {
+        "id": 30629,
+        "name": "Scarab of Displacement",
+        "slot": "Trinket",
+        "icon": "inv_trinket_naxxramas05",
+        "source": "Hydross"
+    },
+    {
+        "id": 30055,
+        "name": "Shoulderpads of the Stranger",
+        "slot": "Shoulder",
+        "icon": "inv_shoulder_23",
+        "source": "Hydross"
+    },
+    {
+        "id": 32516,
+        "name": "Wraps of Purification",
+        "slot": "Wrist",
+        "icon": "inv_bracer_13",
+        "source": "Hydross"
+    },
+    {
+        "id": 30061,
+        "name": "Ancestral Ring of Conquest",
+        "slot": "Finger",
+        "icon": "inv_jewelry_ring_41",
+        "source": "Lurker Below"
+    },
+    {
+        "id": 30060,
+        "name": "Boots of Effortless Striking",
+        "slot": "Feet",
+        "icon": "inv_boots_plate_06",
+        "source": "Lurker Below"
+    },
+    {
+        "id": 30057,
+        "name": "Bracers of Eradication",
+        "slot": "Wrist",
+        "icon": "inv_bracer_19",
+        "source": "Lurker Below"
+    },
+    {
+        "id": 30059,
+        "name": "Choker of Animalistic Fury",
+        "slot": "Neck",
+        "icon": "inv_jewelry_necklace_ahnqiraj_03",
+        "source": "Lurker Below"
+    },
+    {
+        "id": 30064,
+        "name": "Cord of Screaming Terrors",
+        "slot": "Waist",
+        "icon": "inv_belt_03",
+        "source": "Lurker Below"
+    },
+    {
+        "id": 30665,
+        "name": "Earring of Soulful Meditation",
+        "slot": "Trinket",
+        "icon": "inv_jewelry_ring_07",
+        "source": "Lurker Below"
+    },
+    {
+        "id": 30065,
+        "name": "Glowing Breastplate of Truth",
+        "slot": "Chest",
+        "icon": "inv_chest_plate05",
+        "source": "Lurker Below"
+    },
+    {
+        "id": 30062,
+        "name": "Grove-Bands of Remulos",
+        "slot": "Wrist",
+        "icon": "inv_bracer_02",
+        "source": "Lurker Below"
+    },
+    {
+        "id": 30063,
+        "name": "Libram of Absolute Truth",
+        "slot": "Relic",
+        "icon": "inv_relics_libramoftruth",
+        "source": "Lurker Below"
+    },
+    {
+        "id": 30058,
+        "name": "Mallet of the Tides",
+        "slot": "Main Hand",
+        "icon": "inv_weapon_shortblade_42",
+        "source": "Lurker Below"
+    },
+    {
+        "id": 30066,
+        "name": "Tempest-Strider Boots",
+        "slot": "Feet",
+        "icon": "inv_boots_chain_05",
+        "source": "Lurker Below"
+    },
+    {
+        "id": 33054,
+        "name": "The Seal of Danzalar",
+        "slot": "Finger",
+        "icon": "inv_jewelry_ring_39",
+        "source": "Lurker Below"
+    },
+    {
+        "id": 30067,
+        "name": "Velvet Boots of the Guardian",
+        "slot": "Feet",
+        "icon": "inv_boots_05",
+        "source": "Lurker Below"
+    },
+    {
+        "id": 30097,
+        "name": "Coral-Barbed Shoulderpads",
+        "slot": "Shoulder",
+        "icon": "inv_shoulder_19",
+        "source": "Leotheras"
+    },
+    {
+        "id": 30095,
+        "name": "Fang of the Leviathan",
+        "slot": "Main Hand",
+        "icon": "inv_sword_73",
+        "source": "Leotheras"
+    },
+    {
+        "id": 30096,
+        "name": "Girdle of the Invulnerable",
+        "slot": "Waist",
+        "icon": "inv_belt_27",
+        "source": "Leotheras"
+    },
+    {
+        "id": 30239,
+        "name": "Gloves of the Vanquished Champion",
+        "slot": "",
+        "icon": "inv_gauntlets_27",
+        "source": "Leotheras"
+    },
+    {
+        "id": 30240,
+        "name": "Gloves of the Vanquished Defender",
+        "slot": "",
+        "icon": "inv_gauntlets_27",
+        "source": "Leotheras"
+    },
+    {
+        "id": 30241,
+        "name": "Gloves of the Vanquished Hero",
+        "slot": "",
+        "icon": "inv_gauntlets_27",
+        "source": "Leotheras"
+    },
+    {
+        "id": 30092,
+        "name": "Orca-Hide Boots",
+        "slot": "Feet",
+        "icon": "inv_boots_cloth_16",
+        "source": "Leotheras"
+    },
+    {
+        "id": 30091,
+        "name": "True-Aim Stalker Bands",
+        "slot": "Wrist",
+        "icon": "inv_bracer_15",
+        "source": "Leotheras"
+    },
+    {
+        "id": 30627,
+        "name": "Tsunami Talisman",
+        "slot": "Trinket",
+        "icon": "spell_nature_unrelentingstorm",
+        "source": "Leotheras"
+    },
+    {
+        "id": 30101,
+        "name": "Bloodsea Brigand's Vest",
+        "slot": "Chest",
+        "icon": "inv_chest_plate08",
+        "source": "Karathress"
+    },
+    {
+        "id": 30663,
+        "name": "Fathom-Brooch of the Tidewalker",
+        "slot": "Trinket",
+        "icon": "inv_misc_qirajicrystal_04",
+        "source": "Karathress"
+    },
+    {
+        "id": 30099,
+        "name": "Frayed Tether of the Drowned",
+        "slot": "Neck",
+        "icon": "inv_misc_noose_01",
+        "source": "Karathress"
+    },
+    {
+        "id": 30245,
+        "name": "Leggings of the Vanquished Champion",
+        "slot": "",
+        "icon": "inv_pants_plate_17",
+        "source": "Karathress"
+    },
+    {
+        "id": 30246,
+        "name": "Leggings of the Vanquished Defender",
+        "slot": "",
+        "icon": "inv_pants_plate_17",
+        "source": "Karathress"
+    },
+    {
+        "id": 30247,
+        "name": "Leggings of the Vanquished Hero",
+        "slot": "",
+        "icon": "inv_pants_plate_17",
+        "source": "Karathress"
+    },
+    {
+        "id": 30626,
+        "name": "Sextant of Unstable Currents",
+        "slot": "Trinket",
+        "icon": "inv_gizmo_09",
+        "source": "Karathress"
+    },
+    {
+        "id": 30100,
+        "name": "Soul-Strider Boots",
+        "slot": "Feet",
+        "icon": "inv_boots_fabric_01",
+        "source": "Karathress"
+    },
+    {
+        "id": 30090,
+        "name": "World Breaker",
+        "slot": "Two-Hand",
+        "icon": "inv_mace_52",
+        "source": "Karathress"
+    },
+    {
+        "id": 33058,
+        "name": "Band of the Vigilant",
+        "slot": "Finger",
+        "icon": "inv_jewelry_ring_43",
+        "source": "Morogrim"
+    },
+    {
+        "id": 30068,
+        "name": "Girdle of the Tidal Call",
+        "slot": "Waist",
+        "icon": "inv_belt_19",
+        "source": "Morogrim"
+    },
+    {
+        "id": 30075,
+        "name": "Gnarled Chestpiece of the Ancients",
+        "slot": "Chest",
+        "icon": "inv_chest_leather_10",
+        "source": "Morogrim"
+    },
+    {
+        "id": 30079,
+        "name": "Illidari Shoulderpads",
+        "slot": "Shoulder",
+        "icon": "inv_shoulder_25",
+        "source": "Morogrim"
+    },
+    {
+        "id": 30080,
+        "name": "Luminescent Rod of the Naaru",
+        "slot": "Ranged",
+        "icon": "inv_wand_15",
+        "source": "Morogrim"
+    },
+    {
+        "id": 30085,
+        "name": "Mantle of the Tireless Tracker",
+        "slot": "Shoulder",
+        "icon": "inv_shoulder_27",
+        "source": "Morogrim"
+    },
+    {
+        "id": 30084,
+        "name": "Pauldrons of the Argent Sentinel",
+        "slot": "Shoulder",
+        "icon": "inv_shoulder_14",
+        "source": "Morogrim"
+    },
+    {
+        "id": 30008,
+        "name": "Pendant of the Lost Ages",
+        "slot": "Neck",
+        "icon": "inv_jewelry_necklace_12",
+        "source": "Morogrim"
+    },
+    {
+        "id": 30098,
+        "name": "Razor-Scale Battlecloak",
+        "slot": "Back",
+        "icon": "inv_misc_cape_20",
+        "source": "Morogrim"
+    },
+    {
+        "id": 30083,
+        "name": "Ring of Sundered Souls",
+        "slot": "Finger",
+        "icon": "inv_jewelry_ring_31",
+        "source": "Morogrim"
+    },
+    {
+        "id": 30720,
+        "name": "Serpent-Coil Braid",
+        "slot": "Trinket",
+        "icon": "spell_nature_poisoncleansingtotem",
+        "source": "Morogrim"
+    },
+    {
+        "id": 30082,
+        "name": "Talon of Azshara",
+        "slot": "One-Hand",
+        "icon": "inv_sword_50",
+        "source": "Morogrim"
+    },
+    {
+        "id": 30081,
+        "name": "Warboots of Obliteration",
+        "slot": "Feet",
+        "icon": "inv_boots_plate_04",
+        "source": "Morogrim"
+    },
+    {
+        "id": 30106,
+        "name": "Belt of One-Hundred Deaths",
+        "slot": "Waist",
+        "icon": "inv_belt_26",
+        "source": "Lady Vashj"
+    },
+    {
+        "id": 30104,
+        "name": "Cobra-Lash Boots",
+        "slot": "Feet",
+        "icon": "inv_boots_chain_12",
+        "source": "Lady Vashj"
+    },
+    {
+        "id": 30110,
+        "name": "Coral Band of the Revived",
+        "slot": "Finger",
+        "icon": "inv_jewelry_ring_35",
+        "source": "Lady Vashj"
+    },
+    {
+        "id": 30103,
+        "name": "Fang of Vashj",
+        "slot": "One-Hand",
+        "icon": "inv_weapon_shortblade_39",
+        "source": "Lady Vashj"
+    },
+    {
+        "id": 30112,
+        "name": "Glorious Gauntlets of Crestfall",
+        "slot": "Hands",
+        "icon": "inv_gauntlets_20",
+        "source": "Lady Vashj"
+    },
+    {
+        "id": 30242,
+        "name": "Helm of the Vanquished Champion",
+        "slot": "",
+        "icon": "inv_helmet_24",
+        "source": "Lady Vashj"
+    },
+    {
+        "id": 30243,
+        "name": "Helm of the Vanquished Defender",
+        "slot": "",
+        "icon": "inv_helmet_24",
+        "source": "Lady Vashj"
+    },
+    {
+        "id": 30244,
+        "name": "Helm of the Vanquished Hero",
+        "slot": "",
+        "icon": "inv_helmet_24",
+        "source": "Lady Vashj"
+    },
+    {
+        "id": 30102,
+        "name": "Krakken-Heart Breastplate",
+        "slot": "Chest",
+        "icon": "inv_chest_plate11",
+        "source": "Lady Vashj"
+    },
+    {
+        "id": 30108,
+        "name": "Lightfathom Scepter",
+        "slot": "Main Hand",
+        "icon": "inv_weapon_shortblade_43",
+        "source": "Lady Vashj"
+    },
+    {
+        "id": 30621,
+        "name": "Prism of Inner Calm",
+        "slot": "Trinket",
+        "icon": "inv_misc_gem_diamond_07",
+        "source": "Lady Vashj"
+    },
+    {
+        "id": 30109,
+        "name": "Ring of Endless Coils",
+        "slot": "Finger",
+        "icon": "inv_jewelry_ring_44",
+        "source": "Lady Vashj"
+    },
+    {
+        "id": 30111,
+        "name": "Runetotem's Mantle",
+        "slot": "Shoulder",
+        "icon": "inv_shoulder_07",
+        "source": "Lady Vashj"
+    },
+    {
+        "id": 30105,
+        "name": "Serpent Spine Longbow",
+        "slot": "Ranged",
+        "icon": "inv_weapon_bow_08",
+        "source": "Lady Vashj"
+    },
+    {
+        "id": 30107,
+        "name": "Vestments of the Sea-Witch",
+        "slot": "Chest",
+        "icon": "inv_chest_cloth_17",
+        "source": "Lady Vashj"
+    },
+    {
+        "id": 29949,
+        "name": "Arcanite Steam-Pistol",
+        "slot": "Ranged",
+        "icon": "inv_weapon_rifle_18",
+        "source": "Al'ar"
+    },
+    {
+        "id": 29922,
+        "name": "Band of Al'ar",
+        "slot": "Finger",
+        "icon": "inv_jewelry_ring_61",
+        "source": "Al'ar"
+    },
+    {
+        "id": 29948,
+        "name": "Claw of the Phoenix",
+        "slot": "Off Hand",
+        "icon": "inv_weapon_hand_12",
+        "source": "Al'ar"
+    },
+    {
+        "id": 29921,
+        "name": "Fire Crest Breastplate",
+        "slot": "Chest",
+        "icon": "inv_chest_plate03",
+        "source": "Al'ar"
+    },
+    {
+        "id": 29947,
+        "name": "Gloves of the Searing Grip",
+        "slot": "Hands",
+        "icon": "inv_gauntlets_28",
+        "source": "Al'ar"
+    },
+    {
+        "id": 29918,
+        "name": "Mindstorm Wristbands",
+        "slot": "Wrist",
+        "icon": "inv_bracer_13",
+        "source": "Al'ar"
+    },
+    {
+        "id": 29924,
+        "name": "Netherbane",
+        "slot": "One-Hand",
+        "icon": "inv_axe_62",
+        "source": "Al'ar"
+    },
+    {
+        "id": 29920,
+        "name": "Phoenix-Ring of Rebirth",
+        "slot": "Finger",
+        "icon": "inv_jewelry_ring_51naxxramas",
+        "source": "Al'ar"
+    },
+    {
+        "id": 29925,
+        "name": "Phoenix-Wing Cloak",
+        "slot": "Back",
+        "icon": "inv_misc_cape_08",
+        "source": "Al'ar"
+    },
+    {
+        "id": 29923,
+        "name": "Talisman of the Sun King",
+        "slot": "Held In Off-hand",
+        "icon": "inv_offhand_blood_02",
+        "source": "Al'ar"
+    },
+    {
+        "id": 30448,
+        "name": "Talon of Al'ar",
+        "slot": "Trinket",
+        "icon": "spell_fire_soulburn",
+        "source": "Al'ar"
+    },
+    {
+        "id": 32944,
+        "name": "Talon of the Phoenix",
+        "slot": "Main Hand",
+        "icon": "inv_weapon_hand_12",
+        "source": "Al'ar"
+    },
+    {
+        "id": 30447,
+        "name": "Tome of Fiery Redemption",
+        "slot": "Trinket",
+        "icon": "inv_misc_book_07",
+        "source": "Al'ar"
+    },
+    {
+        "id": 29986,
+        "name": "Cowl of the Grand Engineer",
+        "slot": "Head",
+        "icon": "inv_helmet_14",
+        "source": "Void Reaver"
+    },
+    {
+        "id": 30619,
+        "name": "Fel Reaver's Piston",
+        "slot": "Trinket",
+        "icon": "inv_misc_enggizmos_14",
+        "source": "Void Reaver"
+    },
+    {
+        "id": 29983,
+        "name": "Fel-Steel Warhelm",
+        "slot": "Head",
+        "icon": "inv_helmet_03",
+        "source": "Void Reaver"
+    },
+    {
+        "id": 29984,
+        "name": "Girdle of Zaetar",
+        "slot": "Waist",
+        "icon": "inv_belt_08",
+        "source": "Void Reaver"
+    },
+    {
+        "id": 30248,
+        "name": "Pauldrons of the Vanquished Champion",
+        "slot": "",
+        "icon": "inv_shoulder_22",
+        "source": "Void Reaver"
+    },
+    {
+        "id": 30249,
+        "name": "Pauldrons of the Vanquished Defender",
+        "slot": "",
+        "icon": "inv_shoulder_22",
+        "source": "Void Reaver"
+    },
+    {
+        "id": 30250,
+        "name": "Pauldrons of the Vanquished Hero",
+        "slot": "",
+        "icon": "inv_shoulder_22",
+        "source": "Void Reaver"
+    },
+    {
+        "id": 29985,
+        "name": "Void Reaver Greaves",
+        "slot": "Legs",
+        "icon": "inv_pants_mail_15",
+        "source": "Void Reaver"
+    },
+    {
+        "id": 30450,
+        "name": "Warp-Spring Coil",
+        "slot": "Trinket",
+        "icon": "inv_gizmo_hardenedadamantitetube",
+        "source": "Void Reaver"
+    },
+    {
+        "id": 32515,
+        "name": "Wristguards of Determination",
+        "slot": "Wrist",
+        "icon": "inv_bracer_19",
+        "source": "Void Reaver"
+    },
+    {
+        "id": 32267,
+        "name": "Boots of the Resilient",
+        "slot": "Feet",
+        "icon": "inv_boots_plate_06",
+        "source": "Solarian"
+    },
+    {
+        "id": 29981,
+        "name": "Ethereum Life-Staff",
+        "slot": "Two-Hand",
+        "icon": "inv_staff_52",
+        "source": "Solarian"
+    },
+    {
+        "id": 29965,
+        "name": "Girdle of the Righteous Path",
+        "slot": "Waist",
+        "icon": "inv_belt_22",
+        "source": "Solarian"
+    },
+    {
+        "id": 29950,
+        "name": "Greaves of the Bloodwarder",
+        "slot": "Legs",
+        "icon": "inv_pants_plate_05",
+        "source": "Solarian"
+    },
+    {
+        "id": 29962,
+        "name": "Heartrazor",
+        "slot": "One-Hand",
+        "icon": "inv_weapon_shortblade_46",
+        "source": "Solarian"
+    },
+    {
+        "id": 30446,
+        "name": "Solarian's Sapphire",
+        "slot": "Trinket",
+        "icon": "inv_misc_gem_sapphire_01",
+        "source": "Solarian"
+    },
+    {
+        "id": 29977,
+        "name": "Star-Soul Breeches",
+        "slot": "Legs",
+        "icon": "inv_pants_cloth_07",
+        "source": "Solarian"
+    },
+    {
+        "id": 29951,
+        "name": "Star-Strider Boots",
+        "slot": "Feet",
+        "icon": "inv_boots_chain_04",
+        "source": "Solarian"
+    },
+    {
+        "id": 29972,
+        "name": "Trousers of the Astromancer",
+        "slot": "Legs",
+        "icon": "inv_pants_cloth_05",
+        "source": "Solarian"
+    },
+    {
+        "id": 29966,
+        "name": "Vambraces of Ending",
+        "slot": "Wrist",
+        "icon": "inv_bracer_15",
+        "source": "Solarian"
+    },
+    {
+        "id": 30449,
+        "name": "Void Star Talisman",
+        "slot": "Trinket",
+        "icon": "inv_misc_gem_ebondraenite_01",
+        "source": "Solarian"
+    },
+    {
+        "id": 29982,
+        "name": "Wand of the Forgotten Star",
+        "slot": "Ranged",
+        "icon": "inv_wand_15",
+        "source": "Solarian"
+    },
+    {
+        "id": 29976,
+        "name": "Worldstorm Gauntlets",
+        "slot": "Hands",
+        "icon": "inv_gauntlets_26",
+        "source": "Solarian"
+    },
+    {
+        "id": 32458,
+        "name": "Ashes of Al'ar",
+        "slot": "",
+        "icon": "inv_misc_summerfest_brazierorange",
+        "source": "Kael'thas",
+        "hidden": true
+    },
+    {
+        "id": 29997,
+        "name": "Band of the Ranger-General",
+        "slot": "Finger",
+        "icon": "inv_jewelry_ring_55",
+        "source": "Kael'thas"
+    },
+    {
+        "id": 30236,
+        "name": "Chestguard of the Vanquished Champion",
+        "slot": "",
+        "icon": "inv_chest_chain_03",
+        "source": "Kael'thas"
+    },
+    {
+        "id": 30237,
+        "name": "Chestguard of the Vanquished Defender",
+        "slot": "",
+        "icon": "inv_chest_chain_03",
+        "source": "Kael'thas"
+    },
+    {
+        "id": 30238,
+        "name": "Chestguard of the Vanquished Hero",
+        "slot": "",
+        "icon": "inv_chest_chain_03",
+        "source": "Kael'thas"
+    },
+    {
+        "id": 29990,
+        "name": "Crown of the Sun",
+        "slot": "Head",
+        "icon": "inv_helmet_32",
+        "source": "Kael'thas"
+    },
+    {
+        "id": 29987,
+        "name": "Gauntlets of the Sun King",
+        "slot": "Hands",
+        "icon": "inv_gauntlets_17",
+        "source": "Kael'thas"
+    },
+    {
+        "id": 29995,
+        "name": "Leggings of Murderous Intent",
+        "slot": "Legs",
+        "icon": "inv_pants_leather_03",
+        "source": "Kael'thas"
+    },
+    {
+        "id": 29996,
+        "name": "Rod of the Sun King",
+        "slot": "One-Hand",
+        "icon": "inv_mace_48",
+        "source": "Kael'thas"
+    },
+    {
+        "id": 29992,
+        "name": "Royal Cloak of the Sunstriders",
+        "slot": "Back",
+        "icon": "inv_misc_cape_10",
+        "source": "Kael'thas"
+    },
+    {
+        "id": 29998,
+        "name": "Royal Gauntlets of Silvermoon",
+        "slot": "Hands",
+        "icon": "inv_gauntlets_29",
+        "source": "Kael'thas"
+    },
+    {
+        "id": 29991,
+        "name": "Sunhawk Leggings",
+        "slot": "Legs",
+        "icon": "inv_pants_plate_07",
+        "source": "Kael'thas"
+    },
+    {
+        "id": 29989,
+        "name": "Sunshower Light Cloak",
+        "slot": "Back",
+        "icon": "inv_misc_cape_06",
+        "source": "Kael'thas"
+    },
+    {
+        "id": 29994,
+        "name": "Thalassian Wildercloak",
+        "slot": "Back",
+        "icon": "inv_misc_cape_15",
+        "source": "Kael'thas"
+    },
+    {
+        "id": 29988,
+        "name": "The Nexus Key",
+        "slot": "Two-Hand",
+        "icon": "inv_staff_43",
+        "source": "Kael'thas"
+    },
+    {
+        "id": 29993,
+        "name": "Twinblade of the Phoenix",
+        "slot": "Two-Hand",
+        "icon": "inv_sword_2h_blood_c_01",
+        "source": "Kael'thas"
+    },
+    {
+        "id": 32405,
+        "name": "Verdant Sphere",
+        "slot": "",
+        "icon": "inv_misc_gem_pearl_06",
+        "source": "Kael'thas"
+    },
+    {
+        "id": 30027,
+        "name": "Boots of Courage Unending",
+        "slot": "Feet",
+        "icon": "inv_boots_chain_08",
+        "source": "Trash"
+    },
+    {
+        "id": 30022,
+        "name": "Pendant of the Perilous",
+        "slot": "Neck",
+        "icon": "inv_jewelry_necklace_ahnqiraj_01",
+        "source": "Trash"
+    },
+    {
+        "id": 30025,
+        "name": "Serpentshrine Shuriken",
+        "slot": "Thrown",
+        "icon": "inv_throwingknife_06",
+        "source": "Trash"
+    },
+    {
+        "id": 30620,
+        "name": "Spyglass of the Hidden Fleet",
+        "slot": "Trinket",
+        "icon": "inv_misc_spyglass_02",
+        "source": "Trash"
+    },
+    {
+        "id": 30023,
+        "name": "Totem of the Maelstrom",
+        "slot": "Relic",
+        "icon": "spell_nature_earthbind",
+        "source": "Trash"
+    },
+    {
+        "id": 30021,
+        "name": "Wildfury Greatstaff",
+        "slot": "Two-Hand",
+        "icon": "inv_staff_50",
+        "source": "Trash"
+    },
+    {
+        "id": 30026,
+        "name": "Bands of the Celestial Archer",
+        "slot": "Wrist",
+        "icon": "inv_bracer_17",
+        "source": "Trash"
+    },
+    {
+        "id": 30029,
+        "name": "Bark-Gloves of Ancient Wisdom",
+        "slot": "Hands",
+        "icon": "inv_gauntlets_25",
+        "source": "Trash"
+    },
+    {
+        "id": 30020,
+        "name": "Fire-Cord of the Magus",
+        "slot": "Waist",
+        "icon": "inv_belt_03",
+        "source": "Trash"
+    },
+    {
+        "id": 30030,
+        "name": "Girdle of Fallen Stars",
+        "slot": "Waist",
+        "icon": "inv_belt_22",
+        "source": "Trash"
+    },
+    {
+        "id": 30024,
+        "name": "Mantle of the Elven Kings",
+        "slot": "Shoulder",
+        "icon": "inv_shoulder_25",
+        "source": "Trash"
+    },
+    {
+        "id": 30183,
+        "name": "Nether Vortex",
+        "slot": "",
+        "icon": "inv_elemental_mote_nether",
+        "source": "Trash",
+        "hidden": true
+    },
+    {
+        "id": 30028,
+        "name": "Seventh Ring of the Tirisfalen",
+        "slot": "Finger",
+        "icon": "inv_jewelry_ring_24",
+        "source": "Trash"
+    },
+    {
+        "id": 30280,
+        "name": "Pattern: Belt of Blasting",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes",
+        "hidden": true
+    },
+    {
+        "id": 30302,
+        "name": "Pattern: Belt of Deep Shadow",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes",
+        "hidden": true
+    },
+    {
+        "id": 30301,
+        "name": "Pattern: Belt of Natural Power",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes",
+        "hidden": true
+    },
+    {
+        "id": 30303,
+        "name": "Pattern: Belt of the Black Eagle",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes",
+        "hidden": true
+    },
+    {
+        "id": 30281,
+        "name": "Pattern: Belt of the Long Road",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes",
+        "hidden": true
+    },
+    {
+        "id": 30282,
+        "name": "Pattern: Boots of Blasting",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 30305,
+        "name": "Pattern: Boots of Natural Grace",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 30307,
+        "name": "Pattern: Boots of the Crimson Hawk",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 30283,
+        "name": "Pattern: Boots of the Long Road",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 30306,
+        "name": "Pattern: Boots of Utter Darkness",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 30308,
+        "name": "Pattern: Hurricane Boots",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 30304,
+        "name": "Pattern: Monsoon Belt",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes",
+        "hidden": true
+    },
+    {
+        "id": 30321,
+        "name": "Plans: Belt of the Guardian",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes",
+        "hidden": true
+    },
+    {
+        "id": 30323,
+        "name": "Plans: Boots of the Protector",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 30322,
+        "name": "Plans: Red Belt of Battle",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes",
+        "hidden": true
+    },
+    {
+        "id": 30324,
+        "name": "Plans: Red Havoc Boots",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    }
+]

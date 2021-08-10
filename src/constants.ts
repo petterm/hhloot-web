@@ -1,27 +1,63 @@
 import moment, { Moment } from 'moment';
-import { ItemScore, Class, Instance, ItemScoreAq40, ItemScoreNaxx, ItemScoreTBC1 } from "./types";
+import { Class, Instance, InstanceData } from "./types";
 
-export const itemScoresAq40: ItemScoreAq40[] = [
-    100, 90, 80, 70, 65, 60, 55, 54, 53, 52,
-];
-export const scoreGroupEdgesAq40: ItemScore[] = [80, 60];
-
-export const itemScoresNaxx: ItemScoreNaxx[] = [
-    100, 90, 80, 70, 65, 60, 55, 54, 53, 52, 10,
-];
-export const scoreGroupEdgesNaxx: ItemScore[] = [80, 60, 52];
-
-export const itemScoresTBC1: ItemScoreTBC1[] = [
-    100, 90, 80,
-];
-export const scoreGroupEdgesTBC1: ItemScore[] = [];
-
-export const instances: Instance[] = ['aq40', 'naxx', 'tbc1'];
-export const instanceName: Record<Instance, string> = {
-    aq40: 'AQ 40',
-    naxx: 'Naxxramas',
-    tbc1: 'Gruuls Lair & Magtheridon',
-};
+export const instances: Instance[] = ['aq40', 'naxx', 'tbc1', 'tbc2', 'tbc3', 'tbc5'];
+export const instanceData: Record<Instance, InstanceData> = {
+    'aq40': {
+        name: 'AQ40',
+        image: 'ui-ej-boss-cthun.png',
+        bonusRaidStartDate: moment('2020-08-22'),
+        lootSheetID: '1vzK9lPih35GSUPbxLreslyihxPSSIXhS3JW_GWRf7Lw',
+        lootSheetTab: 'Loot',
+        itemScores: [100, 90, 80, 70, 65, 60, 55, 54, 53, 52],
+        scoreGroupEdges: [80, 60],
+    },
+    'naxx': {
+        name: 'Naxxramas',
+        image: 'ui-ej-boss-kelthuzad.png',
+        bonusRaidStartDate: moment('2020-12-05'),
+        lootSheetID: '1vzK9lPih35GSUPbxLreslyihxPSSIXhS3JW_GWRf7Lw',
+        lootSheetTab: 'LootNaxx',
+        itemScores: [100, 90, 80, 70, 65, 60, 55, 54, 53, 52, 10],
+        scoreGroupEdges: [80, 60, 52],
+    },
+    'tbc1': {
+        name: 'Gruuls Lair & Magtheridon',
+        image: 'ui-ej-boss-grull-hug-magtheridon.png',
+        bonusRaidStartDate: moment('2021-06-13'),
+        lootSheetID: '1vzK9lPih35GSUPbxLreslyihxPSSIXhS3JW_GWRf7Lw',
+        lootSheetTab: 'LootTBC1',
+        itemScores: [100, 90, 80],
+        scoreGroupEdges: [],
+    },
+    'tbc2': {
+        name: 'Serpentshrine Cavern & Tempest Keep',
+        image: '',
+        bonusRaidStartDate: moment('2021-09-01'), // Temporary
+        lootSheetID: '1vzK9lPih35GSUPbxLreslyihxPSSIXhS3JW_GWRf7Lw',
+        lootSheetTab: 'LootTBC1',
+        itemScores: [100, 90, 80, 70, 65, 60, 55, 54, 53, 52],
+        scoreGroupEdges: [80, 60],
+    },
+    'tbc3': {
+        name: 'Black Temple & Mount Hyjal',
+        image: '',
+        bonusRaidStartDate: moment('2022-01-01'), // Temporary
+        lootSheetID: '1vzK9lPih35GSUPbxLreslyihxPSSIXhS3JW_GWRf7Lw',
+        lootSheetTab: 'LootTBC1',
+        itemScores: [100, 90, 80, 70, 65, 60, 55, 54, 53, 52],
+        scoreGroupEdges: [80, 60],
+    },
+    'tbc5': {
+        name: 'Sunwell',
+        image: '',
+        bonusRaidStartDate: moment('2022-07-01'), // Temporary
+        lootSheetID: '1vzK9lPih35GSUPbxLreslyihxPSSIXhS3JW_GWRf7Lw',
+        lootSheetTab: 'LootTBC1',
+        itemScores: [100, 90, 80, 70, 65, 60, 55, 54, 53, 52],
+        scoreGroupEdges: [80, 60],
+    },
+}
 
 export const classes: Class[] = [
     'DRUID', 'HUNTER', 'MAGE', 'PALADIN', 'PRIEST', 'ROGUE', 'SHAMAN', 'WARLOCK', 'WARRIOR'
@@ -40,10 +76,5 @@ export const classColor: {[C in Class]: string} = {
 };
 
 export const rollPointsWindow = 3;
-export const bonusRaidStartDate: Record<Instance, Moment> = {
-    aq40: moment('2020-08-22'),
-    naxx: moment('2020-12-05'),
-    tbc1: moment('2021-06-13'),
-};
 export const tbcAttendanceStartDate: Moment = moment('2021-06-13');
 export const attendanceRaidCount = 6;

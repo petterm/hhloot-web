@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { HashRouter as Router, Link, Switch, Route, Redirect } from 'react-router-dom';
 import { checkLogin, fetchData, getPlayers } from './api/async';
-import { getPlayer, prepareData } from './api';
+import { getInstanceData, getPlayer, prepareData } from './api';
 import PlayerList from './components/PlayerList';
 import PlayerDetails from './components/PlayerDetails';
 import BossList from './components/BossList';
@@ -11,14 +11,14 @@ import { Instance, Player, PlayerName } from './types';
 import './App.css';
 import AdminReservations from './components/reservationAdmin/AdminReservations';
 import InvalidPlayerHandler from './components/InvalidPlayerHandler';
-import { instanceName, instances } from './constants';
+import { instances } from './constants';
 
 function App() {
     const [isLoaded, setIsLoaded] = useState(false);
     const [error, setError] = useState<Error>();
     const [loginPlayer, setLoginPlayer] = useState<Player | undefined>();
 
-    let instance: Instance = 'tbc1';
+    let instance: Instance = 'tbc5';
 
     const pathParts = window.location.pathname.split('/');
     const path = pathParts[pathParts.length - 1];
@@ -28,8 +28,10 @@ function App() {
         console.warn('Path is not a valid instance', path, instances);
     }
 
+    const instanceData = getInstanceData(instance);
+
     useEffect(() => {
-        document.title = `HH ${instanceName[instance]}`;
+        document.title = `HH ${instanceData.name}`;
         fetchData(instance)
             .then(() => prepareData())
             .then(() => setIsLoaded(true))
@@ -48,16 +50,7 @@ function App() {
                     setLoginPlayer(undefined);
                 }
             }))
-    }, [instance]);
-
-    let image = '';
-    if (instance === 'naxx') {
-        image = 'ui-ej-boss-kelthuzad.png';
-     } else if (instance === 'aq40') {
-        image = 'ui-ej-boss-cthun.png';
-     } else if (instance === 'tbc1') {
-        image = 'ui-ej-boss-grull-hug-magtheridon.png';
-     }
+    });
 
     return (
         <Router>
@@ -65,8 +58,8 @@ function App() {
                 {isLoaded ? (
                     <>
                         <header>
-                            <img className="headerImage" src={`./${image}`} alt={instanceName[instance]} />
-                            <h2 className="headerTitle">{instanceName[instance]}</h2>
+                            <img className="headerImage" src={`./${instanceData.image}`} alt={instanceData.name} />
+                            <h2 className="headerTitle">{instanceData.name}</h2>
                             <a href="/">Held Hostile</a>
                             {" - "}
                             <Link to="/">Bosses</Link>

@@ -1,6 +1,5 @@
 import Axios from "axios";
-import { getPlayer, prepareData } from ".";
-import { itemScoresAq40, itemScoresNaxx, itemScoresTBC1, scoreGroupEdgesAq40, scoreGroupEdgesNaxx, scoreGroupEdgesTBC1 } from "../constants";
+import { getInstanceData, getPlayer, prepareData } from ".";
 import { Instance, Item, ItemScore, Player, PlayerName } from "../types";
 import { ReservationApprovePostRequest, ReservationApprovePostResponse,
     ReservationPostRequest, ReservationPostResponse, ReservationsResponse } from "./apiTypes";
@@ -11,10 +10,11 @@ export type ReservationsList = Partial<Record<ItemScore, Item>>;
 const idOrNull = (item: Item | undefined): (number | null) => (item && item.id) || null;
 
 export const submitReservations = async (player: Player, instance: Instance, reservations: ReservationsList) => {
+    const instanceData = getInstanceData(instance);
     const data: ReservationPostRequest = {
         name: player.name,
         instance: instance,
-        slots: getItemScores(instance).map(score => idOrNull(reservations[score]))
+        slots: instanceData.itemScores.map(score => idOrNull(reservations[score]))
     }
 
     return Axios.post<ReservationPostResponse>('/Api/reservations', data)
@@ -112,28 +112,4 @@ export const approveReservation = async (reservationId: number, approver: Player
         });
 };
 
-export const getItemScores = (instance: Instance): ItemScore[] => {
-    if (instance === 'aq40') {
-        return itemScoresAq40;
-    }
-    if (instance === 'naxx') {
-        return itemScoresNaxx;
-    }
-    if (instance === 'tbc1') {
-        return itemScoresTBC1;
-    }
-    throw Error(`Unknown instance ${instance}`);
-};
 
-export const getScoreGroupEdges = (instance: Instance): ItemScore[] => {
-    if (instance === 'aq40') {
-        return scoreGroupEdgesAq40;
-    }
-    if (instance === 'naxx') {
-        return scoreGroupEdgesNaxx;
-    }
-    if (instance === 'tbc1') {
-        return scoreGroupEdgesTBC1;
-    }
-    throw Error(`Unknown instance ${instance}`);
-};

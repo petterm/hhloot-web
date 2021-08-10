@@ -1,6 +1,6 @@
 import React from 'react';
+import { getInstanceData } from '../../api';
 import { getBosses } from '../../api/loot';
-import { instanceName } from '../../constants';
 import { Instance, Player } from '../../types';
 import LootOption from './LootOption';
 import style from './LootOptionsList.module.css';
@@ -11,12 +11,13 @@ interface LootOptionsListProps {
 }
 
 const LootOptionsList: React.FunctionComponent<LootOptionsListProps> = ({ instance, loginPlayer }) => {
+    const instanceData = getInstanceData(instance);
     const bosses = Object.values(getBosses(instance));
 
     return (
         <div className={style.wrap}>
             <h3 className={style.header}>
-                {instanceName[instance]} Loot
+                {instanceData.name} Loot
             </h3>
             <div className={style.list}>
                 {bosses.map(boss => (

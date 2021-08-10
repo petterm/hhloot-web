@@ -1,22 +1,24 @@
 import React from 'react';
-import { PlayerItemEntry, Item, Instance } from '../types'
+import { PlayerItemEntry, Item, Instance, InstanceData } from '../types'
 import { useParams } from 'react-router-dom';
-import { getPlayer } from '../api';
-import { getFinalScore, getPositionBonus, getItemBonus, getAttendanceBonus, getSortedPaddedRaids } from '../api/points';
+import { getInstanceData, getPlayer } from '../api';
+import { getFinalScore, getPositionBonus, getItemBonus,
+        getAttendanceBonus, getSortedPaddedRaids } from '../api/points';
 import ItemLink from './ItemLink';
 import PlayerName, { formatName } from './PlayerName';
 import style from './PlayerDetails.module.css';
 import { getBossDrops } from '../api/loot';
-import { getScoreGroupEdges } from '../api/reservations';
 
 type PlayerDetailsProps = { instance: Instance };
 type PlayerDetailsParams = { playerName: string };
 
-const scoreRowClass = (instance: Instance, row: PlayerItemEntry) => getScoreGroupEdges(instance).includes(row.score) ? style.scoreRowEdge : '';
+const scoreRowClass = (instanceData: InstanceData, row: PlayerItemEntry) =>
+    instanceData.scoreGroupEdges.includes(row.score) ? style.scoreRowEdge : '';
 
 const PlayerDetails: React.FunctionComponent<PlayerDetailsProps> = ({ instance }) => {
     const { playerName } = useParams<PlayerDetailsParams>();
     const player = getPlayer(formatName(playerName));
+    const instanceData = getInstanceData(instance);
 
     const freeLoot: { item: Item, date: string }[] = [];
     Object.values(getBossDrops(instance)).forEach(
@@ -60,7 +62,7 @@ const PlayerDetails: React.FunctionComponent<PlayerDetailsProps> = ({ instance }
                 </thead>
                 <tbody>
                     {player.scoreSlots.map((entry: PlayerItemEntry, index: number) => (
-                        <tr key={entry.score} className={[style.row, scoreRowClass(instance, entry)].join(' ')}>
+                        <tr key={entry.score} className={[style.row, scoreRowClass(instanceData, entry)].join(' ')}>
                             <td className={style.cellItem}>
                                 {entry.item ? (
                                     <>

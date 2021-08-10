@@ -2,12 +2,12 @@ import React, { useReducer, useState } from 'react';
 import { DndProvider, DragObjectWithType } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import { useParams } from 'react-router-dom';
-import { getPlayer } from '../../api';
-import { Instance, Item, ItemScore, Player } from '../../types';
+import { getInstanceData, getPlayer } from '../../api';
+import { Instance, InstanceData, Item, ItemScore, Player } from '../../types';
 import { formatName } from '../PlayerName';
 import LootOptionsList from './LootOptionsList';
 import ReservationList from './ReservationList';
-import { getItemScores, getScoreGroupEdges, ReservationsList, submitReservations } from '../../api/reservations';
+import { ReservationsList, submitReservations } from '../../api/reservations';
 import { initialState, ItemSlot, addItem, moveItem,
         replaceItem, swapItem, removeItem, reducer } from './state';
 import Trashcan from './Trashcan';
@@ -26,15 +26,14 @@ type ReservationsParams = {
     playerName: string,
 }
 
-const invalidStateMessage = (state: Partial<Record<ItemScore, ItemSlot>>, instance: Instance): string | undefined => {
-    const edgeScores = getScoreGroupEdges(instance);
+const invalidStateMessage = (state: Partial<Record<ItemScore, ItemSlot>>, instanceData: InstanceData): string | undefined => {
     let invalidSections = 0;
     let currentCount = 0;
-    for (const score of getItemScores(instance)) {
+    for (const score of instanceData.itemScores) {
         if (state[score] && state[score]?.item.restricted) {
             currentCount++;
         }
-        if (edgeScores.includes(score)) {
+        if (instanceData.scoreGroupEdges.includes(score)) {
             if (currentCount > 1) invalidSections++;
             currentCount = 0;
         }
@@ -52,6 +51,7 @@ const Reservations: React.FunctionComponent<ReservationsProps> = ({ instance, lo
     const [submitting, setSubmitting] = useState(false);
     const [submitted, setSubmitted] = useState(false);
     const [error, setError] = useState<Error>();
+    const instanceData = getInstanceData(instance);
 
     const onSubmit = () => {
         if (!submitting) {
@@ -59,7 +59,7 @@ const Reservations: React.FunctionComponent<ReservationsProps> = ({ instance, lo
             setError(undefined);
 
             const entries: ReservationsList = {};
-            getItemScores(instance).forEach(score => entries[score] = state[score] ? (state[score] as ItemSlot).item : undefined)
+            instanceData.itemScores.forEach(score => entries[score] = state[score] ? (state[score] as ItemSlot).item : undefined)
 
             submitReservations(player, instance, entries)
                 .then(() => {
@@ -74,7 +74,7 @@ const Reservations: React.FunctionComponent<ReservationsProps> = ({ instance, lo
         }
     };
 
-    const invalidMessage = invalidStateMessage(state, instance);
+    const invalidMessage = invalidStateMessage(state, instanceData);
 
     return (
         <DndProvider backend={HTML5Backend}>

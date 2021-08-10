@@ -2,8 +2,9 @@ import { faCheck, faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { AdminReservationsEntry, approveReservation, getItemScores, getScoreGroupEdges } from '../../api/reservations';
-import { Instance, Item, ItemScoreNaxx, Player } from '../../types';
+import { getInstanceData } from '../../api';
+import { AdminReservationsEntry, approveReservation } from '../../api/reservations';
+import { Instance, InstanceData, Item, ItemScore, Player } from '../../types';
 import Button from '../Button';
 import ItemLink from '../ItemLink';
 import PlayerName from '../PlayerName';
@@ -18,7 +19,7 @@ type AdminReservationsPlayerProps = {
     entryId?: number,
 }
 
-const scoreRowClass = (instance: Instance, score: ItemScoreNaxx) => getScoreGroupEdges(instance).includes(score) ? style.scoreRowEdge : '';
+const scoreRowClass = (instanceData: InstanceData, score: ItemScore) => instanceData.scoreGroupEdges.includes(score) ? style.scoreRowEdge : '';
 
 const playerCurrentEntry = (index: number, player?: Player) => {
     if (!player) return null;
@@ -42,10 +43,13 @@ const playerCurrentEntry = (index: number, player?: Player) => {
     )
 } 
 
-const AdminReservationsPlayer: React.FunctionComponent<AdminReservationsPlayerProps> = ({ approverPlayer, player, playerName, entryId, entries, instance }) => {
+const AdminReservationsPlayer: React.FunctionComponent<AdminReservationsPlayerProps> = ({
+    approverPlayer, player, playerName, entryId, entries, instance
+}) => {
     const [approved, setApproved] = useState(false);
     const [fetching, setFetching] = useState(false);
     const [error, setError] = useState<Error>();
+    const instanceData = getInstanceData(instance);
 
     const onApprove = () => {
         if (!fetching && !approved && approverPlayer) {
@@ -114,10 +118,10 @@ const AdminReservationsPlayer: React.FunctionComponent<AdminReservationsPlayerPr
                     </tr>
                 </thead>
                 <tbody>
-                    {getItemScores(instance).map((score: ItemScoreNaxx, index: number) => (
+                    {instanceData.itemScores.map((score: ItemScore, index: number) => (
                         <tr key={score} className={[
                             style.row,
-                            scoreRowClass(instance, score),
+                            scoreRowClass(instanceData, score),
                             showPlayerCurrentList && player?.scoreSlots[index].item === currentEntry.slots[index] ?
                                 style.rowUnchanged : '',
                         ].join(' ')}>

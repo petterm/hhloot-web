@@ -4,7 +4,7 @@ import PlayerName from '../PlayerName';
 import ReservationListSlot from './ReservationListSlot';
 import { ItemSlot, State } from './state';
 import style from './ReservationList.module.css';
-import { getItemScores } from '../../api/reservations';
+import { getInstanceData } from '../../api';
 
 interface ReservationListProps {
     player: Player,
@@ -28,7 +28,7 @@ const ReservationList: React.FunctionComponent<ReservationListProps> = ({
             </button>
         </h3>
         <div className={style.slotListWrap}>
-            {getItemScores(instance).map(score => (
+            {getInstanceData(instance).itemScores.map(score => (
                 <ReservationListSlot
                     key={`score-${score}`}
                     slotScore={score}

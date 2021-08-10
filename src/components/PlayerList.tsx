@@ -3,11 +3,12 @@ import { Instance, Player } from '../types'
 import { Link } from 'react-router-dom';
 import ItemLink from './ItemLink';
 import PlayerName from './PlayerName';
-import { getScoreGroupEdges } from '../api/reservations';
 import { getAttendanceBonus } from '../api/points';
+import { getInstanceData } from '../api';
 
 type PlayerListProps = { players: Player[], instance: Instance };
 const PlayerList = ({ players, instance }: PlayerListProps) => {
+    const instanceData = getInstanceData(instance);
     players.sort((a, b) => a.name.localeCompare(b.name))
     return (
         <div>
@@ -38,7 +39,7 @@ const PlayerList = ({ players, instance }: PlayerListProps) => {
                                     padding: '0 8px',
                                     borderBottom: '1px solid #333',
                                     borderTop: index ? 'none' : '1px solid #333',
-                                    borderRight: getScoreGroupEdges(instance).includes(slot.score) ? '2px solid #333' : 'none',
+                                    borderRight: instanceData.scoreGroupEdges.includes(slot.score) ? '2px solid #333' : 'none',
                                 }}>
                                     {slot.item ? (
                                         <ItemLink item={slot.item} noText size='small' />

@@ -1,4 +1,5 @@
-import { Player, PlayerItemEntry } from '../types';
+import { instanceData } from '../constants';
+import { Instance, InstanceData, Player, PlayerItemEntry } from '../types';
 import { getRaids, getPlayers } from './async';
 import { getBossDrops } from './loot';
 
@@ -82,3 +83,11 @@ export const prepareData = () => {
     markReceivedItems();
     addPlayerReservationsToItems();
 };
+
+export const getInstanceData = (instance: Instance): InstanceData => {
+    const data = instanceData[instance];
+    if (!data) {
+        throw Error(`Unknown instance ${instance}`);
+    }
+    return data;
+}

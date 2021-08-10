@@ -4,7 +4,7 @@ import { Instance, Item, ItemScore } from '../../types';
 import { DragItem, DropResult } from './Reservations';
 import ReservationItem from './ReservationItem';
 import style from './ReservationListSlot.module.css';
-import { getScoreGroupEdges } from '../../api/reservations';
+import { getInstanceData } from '../../api';
 
 interface ReservationListSlotProps {
     slotScore: ItemScore,
@@ -52,6 +52,7 @@ const ReservationListSlot: React.FunctionComponent<ReservationListSlotProps> = (
         }),
         canDrop: (dropItem) => !received && dropItem.item !== item,
     });
+    const instanceData = getInstanceData(instance);
 
     const isActive = canDrop && isOver;
     const wrapClass = [style.wrap];
@@ -68,10 +69,9 @@ const ReservationListSlot: React.FunctionComponent<ReservationListSlotProps> = (
         wrapClass.push(style.wrapDrop);
     }
 
-    if (getScoreGroupEdges(instance).includes(slotScore)) {
+    if (instanceData.scoreGroupEdges.includes(slotScore)) {
         wrapClass.push(style.wrapScoreRowEdge);
     }
-
 
     return (
         <div className={wrapClass.join(' ')}>

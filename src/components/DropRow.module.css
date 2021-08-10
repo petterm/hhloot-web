@@ -19,6 +19,11 @@
     padding: 5px;
 }
 
+/* Force ellipsis on child item links */
+.item > div > a {
+    overflow: hidden;
+}
+
 .players {
     display: flex;
     flex-grow: 1;

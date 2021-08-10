@@ -1,0 +1,604 @@
+[
+    {
+        "id": 30862,
+        "name": "Blessed Adamantite Bracers",
+        "slot": "Wrist",
+        "icon": "inv_bracer_19",
+        "source": "Winterchill"
+    },
+    {
+        "id": 30866,
+        "name": "Blood-stained Pauldrons",
+        "slot": "Shoulder",
+        "icon": "inv_shoulder_65",
+        "source": "Winterchill"
+    },
+    {
+        "id": 30871,
+        "name": "Bracers of Martyrdom",
+        "slot": "Wrist",
+        "icon": "inv_bracer_13",
+        "source": "Winterchill"
+    },
+    {
+        "id": 30864,
+        "name": "Bracers of the Pathfinder",
+        "slot": "Wrist",
+        "icon": "inv_bracer_02",
+        "source": "Winterchill"
+    },
+    {
+        "id": 30872,
+        "name": "Chronicle of Dark Secrets",
+        "slot": "Held In Off-hand",
+        "icon": "inv_offhand_hyjal_d_01",
+        "source": "Winterchill"
+    },
+    {
+        "id": 30870,
+        "name": "Cuffs of Devastation",
+        "slot": "Wrist",
+        "icon": "inv_bracer_12",
+        "source": "Winterchill"
+    },
+    {
+        "id": 30863,
+        "name": "Deadly Cuffs",
+        "slot": "Wrist",
+        "icon": "inv_bracer_09",
+        "source": "Winterchill"
+    },
+    {
+        "id": 30861,
+        "name": "Furious Shackles",
+        "slot": "Wrist",
+        "icon": "inv_bracer_15",
+        "source": "Winterchill"
+    },
+    {
+        "id": 30869,
+        "name": "Howling Wind Bracers",
+        "slot": "Wrist",
+        "icon": "inv_bracer_03",
+        "source": "Winterchill"
+    },
+    {
+        "id": 30868,
+        "name": "Rejuvenating Bracers",
+        "slot": "Wrist",
+        "icon": "inv_bracer_08",
+        "source": "Winterchill"
+    },
+    {
+        "id": 30873,
+        "name": "Stillwater Boots",
+        "slot": "Feet",
+        "icon": "inv_boots_chain_08",
+        "source": "Winterchill"
+    },
+    {
+        "id": 30865,
+        "name": "Tracker's Blade",
+        "slot": "One-Hand",
+        "icon": "inv_weapon_shortblade_59",
+        "source": "Winterchill"
+    },
+    {
+        "id": 30888,
+        "name": "Anetheron's Noose",
+        "slot": "Waist",
+        "icon": "inv_belt_03",
+        "source": "Anetheron"
+    },
+    {
+        "id": 30885,
+        "name": "Archbishop's Slippers",
+        "slot": "Feet",
+        "icon": "inv_boots_cloth_14",
+        "source": "Anetheron"
+    },
+    {
+        "id": 30882,
+        "name": "Bastion of Light",
+        "slot": "Off Hand",
+        "icon": "inv_shield_38",
+        "source": "Anetheron"
+    },
+    {
+        "id": 30881,
+        "name": "Blade of Infamy",
+        "slot": "One-Hand",
+        "icon": "inv_sword_85",
+        "source": "Anetheron"
+    },
+    {
+        "id": 30879,
+        "name": "Don Alejandro's Money Belt",
+        "slot": "Waist",
+        "icon": "inv_belt_26",
+        "source": "Anetheron"
+    },
+    {
+        "id": 30886,
+        "name": "Enchanted Leather Sandals",
+        "slot": "Feet",
+        "icon": "inv_boots_wolf",
+        "source": "Anetheron"
+    },
+    {
+        "id": 30878,
+        "name": "Glimmering Steel Mantle",
+        "slot": "Shoulder",
+        "icon": "inv_shoulder_65",
+        "source": "Anetheron"
+    },
+    {
+        "id": 30887,
+        "name": "Golden Links of Restoration",
+        "slot": "Chest",
+        "icon": "inv_chest_mail_04",
+        "source": "Anetheron"
+    },
+    {
+        "id": 30884,
+        "name": "Hatefury Mantle",
+        "slot": "Shoulder",
+        "icon": "inv_shoulder_68",
+        "source": "Anetheron"
+    },
+    {
+        "id": 30883,
+        "name": "Pillar of Ferocity",
+        "slot": "Two-Hand",
+        "icon": "inv_staff_60",
+        "source": "Anetheron"
+    },
+    {
+        "id": 30880,
+        "name": "Quickstrider Moccasins",
+        "slot": "Feet",
+        "icon": "inv_boots_chain_09",
+        "source": "Anetheron"
+    },
+    {
+        "id": 30874,
+        "name": "The Unbreakable Will",
+        "slot": "One-Hand",
+        "icon": "inv_sword_86",
+        "source": "Anetheron"
+    },
+    {
+        "id": 30895,
+        "name": "Angelista's Sash",
+        "slot": "Waist",
+        "icon": "inv_belt_08",
+        "source": "Kaz'rogal"
+    },
+    {
+        "id": 30892,
+        "name": "Beast-tamer's Shoulders",
+        "slot": "Shoulder",
+        "icon": "inv_shoulder_59",
+        "source": "Kaz'rogal"
+    },
+    {
+        "id": 30915,
+        "name": "Belt of Seething Fury",
+        "slot": "Waist",
+        "icon": "inv_belt_27",
+        "source": "Kaz'rogal"
+    },
+    {
+        "id": 30914,
+        "name": "Belt of the Crescent Moon",
+        "slot": "Waist",
+        "icon": "inv_belt_22",
+        "source": "Kaz'rogal"
+    },
+    {
+        "id": 30891,
+        "name": "Black Featherlight Boots",
+        "slot": "Feet",
+        "icon": "inv_boots_cloth_05",
+        "source": "Kaz'rogal"
+    },
+    {
+        "id": 30894,
+        "name": "Blue Suede Shoes",
+        "slot": "Feet",
+        "icon": "inv_boots_cloth_01",
+        "source": "Kaz'rogal"
+    },
+    {
+        "id": 30918,
+        "name": "Hammer of Atonement",
+        "slot": "Main Hand",
+        "icon": "inv_mace_57",
+        "source": "Kaz'rogal"
+    },
+    {
+        "id": 30889,
+        "name": "Kaz'rogal's Hardened Heart",
+        "slot": "Off Hand",
+        "icon": "inv_shield_39",
+        "source": "Kaz'rogal"
+    },
+    {
+        "id": 30916,
+        "name": "Leggings of Channeled Elements",
+        "slot": "Legs",
+        "icon": "inv_pants_cloth_27",
+        "source": "Kaz'rogal"
+    },
+    {
+        "id": 30917,
+        "name": "Razorfury Mantle",
+        "slot": "Shoulder",
+        "icon": "inv_shoulder_67",
+        "source": "Kaz'rogal"
+    },
+    {
+        "id": 30893,
+        "name": "Sun-touched Chain Leggings",
+        "slot": "Legs",
+        "icon": "inv_pants_mail_17",
+        "source": "Kaz'rogal"
+    },
+    {
+        "id": 30919,
+        "name": "Valestalker Girdle",
+        "slot": "Waist",
+        "icon": "inv_belt_22",
+        "source": "Kaz'rogal"
+    },
+    {
+        "id": 30901,
+        "name": "Boundless Agony",
+        "slot": "One-Hand",
+        "icon": "inv_weapon_shortblade_59",
+        "source": "Azgalor"
+    },
+    {
+        "id": 30900,
+        "name": "Bow-stitched Leggings",
+        "slot": "Legs",
+        "icon": "inv_pants_mail_15",
+        "source": "Azgalor"
+    },
+    {
+        "id": 30899,
+        "name": "Don Rodrigo's Poncho",
+        "slot": "Chest",
+        "icon": "inv_chest_leather_01",
+        "source": "Azgalor"
+    },
+    {
+        "id": 30897,
+        "name": "Girdle of Hope",
+        "slot": "Waist",
+        "icon": "inv_belt_28",
+        "source": "Azgalor"
+    },
+    {
+        "id": 30896,
+        "name": "Glory of the Defender",
+        "slot": "Chest",
+        "icon": "inv_chest_plate02",
+        "source": "Azgalor"
+    },
+    {
+        "id": 31092,
+        "name": "Gloves of the Forgotten Conqueror",
+        "slot": "",
+        "icon": "inv_gauntlets_27",
+        "source": "Azgalor"
+    },
+    {
+        "id": 31094,
+        "name": "Gloves of the Forgotten Protector",
+        "slot": "",
+        "icon": "inv_gauntlets_27",
+        "source": "Azgalor"
+    },
+    {
+        "id": 31093,
+        "name": "Gloves of the Forgotten Vanquisher",
+        "slot": "",
+        "icon": "inv_gauntlets_27",
+        "source": "Azgalor"
+    },
+    {
+        "id": 30898,
+        "name": "Shady Dealer's Pantaloons",
+        "slot": "Legs",
+        "icon": "inv_pants_leather_25",
+        "source": "Azgalor"
+    },
+    {
+        "id": 30909,
+        "name": "Antonidas's Aegis of Rapt Concentration",
+        "slot": "Off Hand",
+        "icon": "inv_shield_40",
+        "source": "Archimonde"
+    },
+    {
+        "id": 30908,
+        "name": "Apostle of Argus",
+        "slot": "Two-Hand",
+        "icon": "inv_staff_54",
+        "source": "Archimonde"
+    },
+    {
+        "id": 30906,
+        "name": "Bristleblitz Striker",
+        "slot": "Ranged",
+        "icon": "inv_weapon_bow_30",
+        "source": "Archimonde"
+    },
+    {
+        "id": 30902,
+        "name": "Cataclysm's Edge",
+        "slot": "Two-Hand",
+        "icon": "inv_sword_68",
+        "source": "Archimonde"
+    },
+    {
+        "id": 31097,
+        "name": "Helm of the Forgotten Conqueror",
+        "slot": "",
+        "icon": "inv_helmet_24",
+        "source": "Archimonde"
+    },
+    {
+        "id": 31095,
+        "name": "Helm of the Forgotten Protector",
+        "slot": "",
+        "icon": "inv_helmet_24",
+        "source": "Archimonde"
+    },
+    {
+        "id": 31096,
+        "name": "Helm of the Forgotten Vanquisher",
+        "slot": "",
+        "icon": "inv_helmet_24",
+        "source": "Archimonde"
+    },
+    {
+        "id": 30912,
+        "name": "Leggings of Eternity",
+        "slot": "Legs",
+        "icon": "inv_pants_cloth_14",
+        "source": "Archimonde"
+    },
+    {
+        "id": 30903,
+        "name": "Legguards of Endless Rage",
+        "slot": "Legs",
+        "icon": "inv_pants_plate_21",
+        "source": "Archimonde"
+    },
+    {
+        "id": 30907,
+        "name": "Mail of Fevered Pursuit",
+        "slot": "Chest",
+        "icon": "inv_chest_chain_17",
+        "source": "Archimonde"
+    },
+    {
+        "id": 30905,
+        "name": "Midnight Chestguard",
+        "slot": "Chest",
+        "icon": "inv_chest_plate02",
+        "source": "Archimonde"
+    },
+    {
+        "id": 30913,
+        "name": "Robes of Rhonin",
+        "slot": "Chest",
+        "icon": "inv_chest_cloth_49",
+        "source": "Archimonde"
+    },
+    {
+        "id": 30904,
+        "name": "Savior's Grasp",
+        "slot": "Chest",
+        "icon": "inv_chest_plate02",
+        "source": "Archimonde"
+    },
+    {
+        "id": 30911,
+        "name": "Scepter of Purification",
+        "slot": "Held In Off-hand",
+        "icon": "inv_offhand_draenei_a_01",
+        "source": "Archimonde"
+    },
+    {
+        "id": 30910,
+        "name": "Tempest of Chaos",
+        "slot": "Main Hand",
+        "icon": "inv_sword_90",
+        "source": "Archimonde"
+    },
+    {
+        "id": 32609,
+        "name": "Boots of the Divine Light",
+        "slot": "Feet",
+        "icon": "inv_boots_cloth_08",
+        "source": "Trash"
+    },
+    {
+        "id": 32592,
+        "name": "Chestguard of Relentless Storms",
+        "slot": "Chest",
+        "icon": "inv_chest_chain_11",
+        "source": "Trash"
+    },
+    {
+        "id": 32591,
+        "name": "Choker of Serrated Blades",
+        "slot": "Neck",
+        "icon": "inv_jewelry_necklace_34",
+        "source": "Trash"
+    },
+    {
+        "id": 32946,
+        "name": "Claw of Molten Fury",
+        "slot": "Main Hand",
+        "icon": "inv_weapon_hand_14",
+        "source": "Trash"
+    },
+    {
+        "id": 32945,
+        "name": "Fist of Molten Fury",
+        "slot": "Off Hand",
+        "icon": "inv_weapon_hand_14",
+        "source": "Trash"
+    },
+    {
+        "id": 34009,
+        "name": "Hammer of Judgement",
+        "slot": "Main Hand",
+        "icon": "inv_mace_57",
+        "source": "Trash"
+    },
+    {
+        "id": 32589,
+        "name": "Hellfire-Encased Pendant",
+        "slot": "Neck",
+        "icon": "inv_jewelry_necklace_17",
+        "source": "Trash"
+    },
+    {
+        "id": 32590,
+        "name": "Nethervoid Cloak",
+        "slot": "Back",
+        "icon": "inv_misc_cape_10",
+        "source": "Trash"
+    },
+    {
+        "id": 34010,
+        "name": "Pepe's Shroud of Pacification",
+        "slot": "Back",
+        "icon": "inv_misc_cape_16",
+        "source": "Trash"
+    },
+    {
+        "id": 32285,
+        "name": "Design: Flashing Crimson Spinel",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 32296,
+        "name": "Design: Great Lionseye",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 32303,
+        "name": "Design: Inscribed Pyrestone",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 32295,
+        "name": "Design: Mystic Lionseye",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 32298,
+        "name": "Design: Shifting Shadowsong Amethyst",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 32297,
+        "name": "Design: Sovereign Shadowsong Amethyst",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 32289,
+        "name": "Design: Stormy Empyrean Sapphire",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 32307,
+        "name": "Design: Veiled Pyrestone",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 32748,
+        "name": "Pattern: Bindings of Lightning Reflexes",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 32751,
+        "name": "Pattern: Living Earth Shoulders",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 32755,
+        "name": "Pattern: Mantle of Nimble Thought",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 32745,
+        "name": "Pattern: Shoulderpads of Renewed Life",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 32752,
+        "name": "Pattern: Swiftheal Wraps",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 32746,
+        "name": "Pattern: Swiftstrike Bracers",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 32739,
+        "name": "Plans: Dawnsteel Shoulders",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 23631,
+        "name": "Plans: Fel Edged Battleaxe",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 32736,
+        "name": "Plans: Swiftsteel Bracers",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    }
+]

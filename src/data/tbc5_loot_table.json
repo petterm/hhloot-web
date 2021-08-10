@@ -1,0 +1,968 @@
+[
+    {
+        "id": 34166,
+        "name": "Band of Lucent Beams",
+        "slot": "Finger",
+        "icon": "inv_jewelry_ring_57",
+        "source": "Kalecgos"
+    },
+    {
+        "id": 34848,
+        "name": "Bracers of the Forgotten Conqueror",
+        "slot": "",
+        "icon": "inv_bracer_16",
+        "source": "Kalecgos"
+    },
+    {
+        "id": 34851,
+        "name": "Bracers of the Forgotten Protector",
+        "slot": "",
+        "icon": "inv_bracer_17",
+        "source": "Kalecgos"
+    },
+    {
+        "id": 34852,
+        "name": "Bracers of the Forgotten Vanquisher",
+        "slot": "",
+        "icon": "inv_bracer_15",
+        "source": "Kalecgos"
+    },
+    {
+        "id": 34169,
+        "name": "Breeches of Natural Aggression",
+        "slot": "Legs",
+        "icon": "inv_pants_leather_23",
+        "source": "Kalecgos"
+    },
+    {
+        "id": 34164,
+        "name": "Dragonscale-Encrusted Longblade",
+        "slot": "One-Hand",
+        "icon": "inv_sword_115",
+        "source": "Kalecgos"
+    },
+    {
+        "id": 34165,
+        "name": "Fang of Kalecgos",
+        "slot": "One-Hand",
+        "icon": "inv_weapon_shortblade_74",
+        "source": "Kalecgos"
+    },
+    {
+        "id": 34167,
+        "name": "Legplates of the Holy Juggernaut",
+        "slot": "Legs",
+        "icon": "inv_pants_plate_22",
+        "source": "Kalecgos"
+    },
+    {
+        "id": 34170,
+        "name": "Pantaloons of Calming Strife",
+        "slot": "Legs",
+        "icon": "inv_pants_cloth_07",
+        "source": "Kalecgos"
+    },
+    {
+        "id": 34168,
+        "name": "Starstalker Legguards",
+        "slot": "Legs",
+        "icon": "inv_pants_mail_16",
+        "source": "Kalecgos"
+    },
+    {
+        "id": 34853,
+        "name": "Belt of the Forgotten Conqueror",
+        "slot": "",
+        "icon": "inv_belt_31",
+        "source": "Brutallus"
+    },
+    {
+        "id": 34854,
+        "name": "Belt of the Forgotten Protector",
+        "slot": "",
+        "icon": "inv_belt_33",
+        "source": "Brutallus"
+    },
+    {
+        "id": 34855,
+        "name": "Belt of the Forgotten Vanquisher",
+        "slot": "",
+        "icon": "inv_belt_27",
+        "source": "Brutallus"
+    },
+    {
+        "id": 34177,
+        "name": "Clutch of Demise",
+        "slot": "Neck",
+        "icon": "inv_jewelry_necklace_43",
+        "source": "Brutallus"
+    },
+    {
+        "id": 34178,
+        "name": "Collar of the Pit Lord",
+        "slot": "Neck",
+        "icon": "inv_jewelry_necklace_47",
+        "source": "Brutallus"
+    },
+    {
+        "id": 34180,
+        "name": "Felfury Legplates",
+        "slot": "Legs",
+        "icon": "inv_pants_plate_24",
+        "source": "Brutallus"
+    },
+    {
+        "id": 34179,
+        "name": "Heart of the Pit",
+        "slot": "Held In Off-hand",
+        "icon": "inv_offhand_sunwell_d_02",
+        "source": "Brutallus"
+    },
+    {
+        "id": 34181,
+        "name": "Leggings of Calamity",
+        "slot": "Legs",
+        "icon": "inv_pants_cloth_05",
+        "source": "Brutallus"
+    },
+    {
+        "id": 34176,
+        "name": "Reign of Misery",
+        "slot": "Main Hand",
+        "icon": "inv_mace_73",
+        "source": "Brutallus"
+    },
+    {
+        "id": 34856,
+        "name": "Boots of the Forgotten Conqueror",
+        "slot": "",
+        "icon": "inv_boots_plate_06",
+        "source": "Felmyst"
+    },
+    {
+        "id": 34857,
+        "name": "Boots of the Forgotten Protector",
+        "slot": "",
+        "icon": "inv_boots_plate_04",
+        "source": "Felmyst"
+    },
+    {
+        "id": 34858,
+        "name": "Boots of the Forgotten Vanquisher",
+        "slot": "",
+        "icon": "inv_boots_plate_07",
+        "source": "Felmyst"
+    },
+    {
+        "id": 34352,
+        "name": "Borderland Fortress Grips",
+        "slot": "Hands",
+        "icon": "inv_gauntlets_68",
+        "source": "Felmyst"
+    },
+    {
+        "id": 34184,
+        "name": "Brooch of the Highborne",
+        "slot": "Neck",
+        "icon": "inv_jewelry_necklace_44",
+        "source": "Felmyst"
+    },
+    {
+        "id": 34186,
+        "name": "Chain Links of the Tumultuous Storm",
+        "slot": "Legs",
+        "icon": "inv_pants_mail_15",
+        "source": "Felmyst"
+    },
+    {
+        "id": 34182,
+        "name": "Grand Magister's Staff of Torrents",
+        "slot": "Two-Hand",
+        "icon": "inv_staff_74",
+        "source": "Felmyst"
+    },
+    {
+        "id": 34188,
+        "name": "Leggings of the Immortal Night",
+        "slot": "Legs",
+        "icon": "inv_pants_leather_27",
+        "source": "Felmyst"
+    },
+    {
+        "id": 34185,
+        "name": "Sword Breaker's Bulwark",
+        "slot": "Off Hand",
+        "icon": "inv_shield_53",
+        "source": "Felmyst"
+    },
+    {
+        "id": 34210,
+        "name": "Amice of the Convoker",
+        "slot": "Shoulder",
+        "icon": "inv_shoulder_96",
+        "source": "Eredar Twins"
+    },
+    {
+        "id": 34204,
+        "name": "Amulet of Unfettered Magics",
+        "slot": "Neck",
+        "icon": "inv_jewelry_necklace_40",
+        "source": "Eredar Twins"
+    },
+    {
+        "id": 34199,
+        "name": "Archon's Gavel",
+        "slot": "Main Hand",
+        "icon": "inv_mace_71",
+        "source": "Eredar Twins"
+    },
+    {
+        "id": 34189,
+        "name": "Band of Ruinous Delight",
+        "slot": "Finger",
+        "icon": "inv_jewelry_ring_36",
+        "source": "Eredar Twins"
+    },
+    {
+        "id": 34853,
+        "name": "Belt of the Forgotten Conqueror",
+        "slot": "",
+        "icon": "inv_belt_31",
+        "source": "Eredar Twins"
+    },
+    {
+        "id": 34854,
+        "name": "Belt of the Forgotten Protector",
+        "slot": "",
+        "icon": "inv_belt_33",
+        "source": "Eredar Twins"
+    },
+    {
+        "id": 34855,
+        "name": "Belt of the Forgotten Vanquisher",
+        "slot": "",
+        "icon": "inv_belt_27",
+        "source": "Eredar Twins"
+    },
+    {
+        "id": 34206,
+        "name": "Book of Highborne Hymns",
+        "slot": "Held In Off-hand",
+        "icon": "inv_offhand_sunwell_d_01",
+        "source": "Eredar Twins"
+    },
+    {
+        "id": 34856,
+        "name": "Boots of the Forgotten Conqueror",
+        "slot": "",
+        "icon": "inv_boots_plate_06",
+        "source": "Eredar Twins"
+    },
+    {
+        "id": 34857,
+        "name": "Boots of the Forgotten Protector",
+        "slot": "",
+        "icon": "inv_boots_plate_04",
+        "source": "Eredar Twins"
+    },
+    {
+        "id": 34858,
+        "name": "Boots of the Forgotten Vanquisher",
+        "slot": "",
+        "icon": "inv_boots_plate_07",
+        "source": "Eredar Twins"
+    },
+    {
+        "id": 34848,
+        "name": "Bracers of the Forgotten Conqueror",
+        "slot": "",
+        "icon": "inv_bracer_16",
+        "source": "Eredar Twins"
+    },
+    {
+        "id": 34851,
+        "name": "Bracers of the Forgotten Protector",
+        "slot": "",
+        "icon": "inv_bracer_17",
+        "source": "Eredar Twins"
+    },
+    {
+        "id": 34852,
+        "name": "Bracers of the Forgotten Vanquisher",
+        "slot": "",
+        "icon": "inv_bracer_15",
+        "source": "Eredar Twins"
+    },
+    {
+        "id": 34190,
+        "name": "Crimson Paragon's Cover",
+        "slot": "Back",
+        "icon": "inv_misc_cape_18",
+        "source": "Eredar Twins"
+    },
+    {
+        "id": 34208,
+        "name": "Equilibrium Epaulets",
+        "slot": "Shoulder",
+        "icon": "inv_shoulder_90",
+        "source": "Eredar Twins"
+    },
+    {
+        "id": 34196,
+        "name": "Golden Bow of Quel'Thalas",
+        "slot": "Ranged",
+        "icon": "inv_weapon_bow_38",
+        "source": "Eredar Twins"
+    },
+    {
+        "id": 34203,
+        "name": "Grip of Mannoroth",
+        "slot": "Off Hand",
+        "icon": "inv_weapon_hand_15",
+        "source": "Eredar Twins"
+    },
+    {
+        "id": 34194,
+        "name": "Mantle of the Golden Forest",
+        "slot": "Shoulder",
+        "icon": "inv_shoulder_90",
+        "source": "Eredar Twins"
+    },
+    {
+        "id": 34192,
+        "name": "Pauldrons of Perseverance",
+        "slot": "Shoulder",
+        "icon": "inv_shoulder_89",
+        "source": "Eredar Twins"
+    },
+    {
+        "id": 34202,
+        "name": "Shawl of Wonderment",
+        "slot": "Shoulder",
+        "icon": "inv_shoulder_96",
+        "source": "Eredar Twins"
+    },
+    {
+        "id": 34197,
+        "name": "Shiv of Exsanguination",
+        "slot": "One-Hand",
+        "icon": "inv_weapon_shortblade_75",
+        "source": "Eredar Twins"
+    },
+    {
+        "id": 34195,
+        "name": "Shoulderpads of Vehemence",
+        "slot": "Shoulder",
+        "icon": "inv_shoulder_88",
+        "source": "Eredar Twins"
+    },
+    {
+        "id": 34205,
+        "name": "Shroud of Redeemed Souls",
+        "slot": "Back",
+        "icon": "inv_misc_cape_06",
+        "source": "Eredar Twins"
+    },
+    {
+        "id": 35290,
+        "name": "Sin'dorei Pendant of Conquest",
+        "slot": "Neck",
+        "icon": "inv_jewelry_necklace_36",
+        "source": "Eredar Twins"
+    },
+    {
+        "id": 35291,
+        "name": "Sin'dorei Pendant of Salvation",
+        "slot": "Neck",
+        "icon": "inv_jewelry_necklace_36",
+        "source": "Eredar Twins"
+    },
+    {
+        "id": 35292,
+        "name": "Sin'dorei Pendant of Triumph",
+        "slot": "Neck",
+        "icon": "inv_jewelry_necklace_36",
+        "source": "Eredar Twins"
+    },
+    {
+        "id": 34209,
+        "name": "Spaulders of Reclamation",
+        "slot": "Shoulder",
+        "icon": "inv_shoulder_88",
+        "source": "Eredar Twins"
+    },
+    {
+        "id": 34193,
+        "name": "Spaulders of the Thalassian Savior",
+        "slot": "Shoulder",
+        "icon": "inv_shoulder_89",
+        "source": "Eredar Twins"
+    },
+    {
+        "id": 34198,
+        "name": "Stanchion of Primal Instinct",
+        "slot": "Two-Hand",
+        "icon": "inv_staff_12",
+        "source": "Eredar Twins"
+    },
+    {
+        "id": 34231,
+        "name": "Aegis of Angelic Fortune",
+        "slot": "Off Hand",
+        "icon": "inv_shield_52",
+        "source": "M'uru"
+    },
+    {
+        "id": 34427,
+        "name": "Blackened Naaru Sliver",
+        "slot": "Trinket",
+        "icon": "inv_jewelry_talisman_16",
+        "source": "M'uru"
+    },
+    {
+        "id": 34232,
+        "name": "Fel Conquerer Raiments",
+        "slot": "Chest",
+        "icon": "inv_chest_cloth_51",
+        "source": "M'uru"
+    },
+    {
+        "id": 34229,
+        "name": "Garments of Serene Shores",
+        "slot": "Chest",
+        "icon": "inv_chest_chain_11",
+        "source": "M'uru"
+    },
+    {
+        "id": 34240,
+        "name": "Gauntlets of the Soothed Soul",
+        "slot": "Hands",
+        "icon": "inv_gauntlets_20",
+        "source": "M'uru"
+    },
+    {
+        "id": 34430,
+        "name": "Glimmering Naaru Sliver",
+        "slot": "Trinket",
+        "icon": "inv_jewelry_talisman_17",
+        "source": "M'uru"
+    },
+    {
+        "id": 34211,
+        "name": "Harness of Carnal Instinct",
+        "slot": "Chest",
+        "icon": "inv_chest_leather_14",
+        "source": "M'uru"
+    },
+    {
+        "id": 34216,
+        "name": "Heroic Judicator's Chestguard",
+        "slot": "Chest",
+        "icon": "inv_chest_plate18",
+        "source": "M'uru"
+    },
+    {
+        "id": 34214,
+        "name": "Muramasa",
+        "slot": "One-Hand",
+        "icon": "inv_sword_114",
+        "source": "M'uru"
+    },
+    {
+        "id": 34213,
+        "name": "Ring of Hardened Resolve",
+        "slot": "Finger",
+        "icon": "inv_jewelry_ring_72",
+        "source": "M'uru"
+    },
+    {
+        "id": 34230,
+        "name": "Ring of Omnipotence",
+        "slot": "Finger",
+        "icon": "inv_jewelry_ring_68",
+        "source": "M'uru"
+    },
+    {
+        "id": 34233,
+        "name": "Robes of Faltered Light",
+        "slot": "Chest",
+        "icon": "inv_chest_cloth_32",
+        "source": "M'uru"
+    },
+    {
+        "id": 34234,
+        "name": "Shadowed Gauntlets of Paroxysm",
+        "slot": "Hands",
+        "icon": "inv_gauntlets_28",
+        "source": "M'uru"
+    },
+    {
+        "id": 34429,
+        "name": "Shifting Naaru Sliver",
+        "slot": "Trinket",
+        "icon": "inv_jewelry_talisman_15",
+        "source": "M'uru"
+    },
+    {
+        "id": 35282,
+        "name": "Sin'dorei Band of Dominance",
+        "slot": "Finger",
+        "icon": "inv_jewelry_ring_60",
+        "source": "M'uru"
+    },
+    {
+        "id": 35283,
+        "name": "Sin'dorei Band of Salvation",
+        "slot": "Finger",
+        "icon": "inv_jewelry_ring_60",
+        "source": "M'uru"
+    },
+    {
+        "id": 35284,
+        "name": "Sin'dorei Band of Triumph",
+        "slot": "Finger",
+        "icon": "inv_jewelry_ring_60",
+        "source": "M'uru"
+    },
+    {
+        "id": 34428,
+        "name": "Steely Naaru Sliver",
+        "slot": "Trinket",
+        "icon": "inv_jewelry_talisman_18",
+        "source": "M'uru"
+    },
+    {
+        "id": 34212,
+        "name": "Sunglow Vest",
+        "slot": "Chest",
+        "icon": "inv_chest_leather_12",
+        "source": "M'uru"
+    },
+    {
+        "id": 34228,
+        "name": "Vicious Hawkstrider Hauberk",
+        "slot": "Chest",
+        "icon": "inv_chest_chain_17",
+        "source": "M'uru"
+    },
+    {
+        "id": 34215,
+        "name": "Warharness of Reckless Fury",
+        "slot": "Chest",
+        "icon": "inv_chest_plate20",
+        "source": "M'uru"
+    },
+    {
+        "id": 34247,
+        "name": "Apolyon, the Soul-Render",
+        "slot": "Two-Hand",
+        "icon": "inv_sword_116",
+        "source": "Kil'Jaeden"
+    },
+    {
+        "id": 34341,
+        "name": "Borderland Paingrips",
+        "slot": "Hands",
+        "icon": "inv_gauntlets_65",
+        "source": "Kil'Jaeden"
+    },
+    {
+        "id": 34241,
+        "name": "Cloak of Unforgivable Sin",
+        "slot": "Back",
+        "icon": "inv_misc_cape_naxxramas_02",
+        "source": "Kil'Jaeden"
+    },
+    {
+        "id": 34333,
+        "name": "Coif of Alleria",
+        "slot": "Head",
+        "icon": "inv_helmet128",
+        "source": "Kil'Jaeden"
+    },
+    {
+        "id": 34245,
+        "name": "Cover of Ursol the Wise",
+        "slot": "Head",
+        "icon": "inv_helmet_126",
+        "source": "Kil'Jaeden"
+    },
+    {
+        "id": 34332,
+        "name": "Cowl of Gul'dan",
+        "slot": "Head",
+        "icon": "inv_helmet128",
+        "source": "Kil'Jaeden"
+    },
+    {
+        "id": 34339,
+        "name": "Cowl of Light's Purity",
+        "slot": "Head",
+        "icon": "inv_helmet_132",
+        "source": "Kil'Jaeden"
+    },
+    {
+        "id": 34345,
+        "name": "Crown of Anasterian",
+        "slot": "Head",
+        "icon": "inv_helmet_92",
+        "source": "Kil'Jaeden"
+    },
+    {
+        "id": 34329,
+        "name": "Crux of the Apocalypse",
+        "slot": "One-Hand",
+        "icon": "inv_weapon_shortblade_75",
+        "source": "Kil'Jaeden"
+    },
+    {
+        "id": 34340,
+        "name": "Dark Conjuror's Collar",
+        "slot": "Head",
+        "icon": "inv_helmet_132",
+        "source": "Kil'Jaeden"
+    },
+    {
+        "id": 34244,
+        "name": "Duplicitous Guise",
+        "slot": "Head",
+        "icon": "inv_helmet_126",
+        "source": "Kil'Jaeden"
+    },
+    {
+        "id": 34337,
+        "name": "Golden Staff of the Sin'dorei",
+        "slot": "Two-Hand",
+        "icon": "inv_staff_73",
+        "source": "Kil'Jaeden"
+    },
+    {
+        "id": 34335,
+        "name": "Hammer of Sanctification",
+        "slot": "Main Hand",
+        "icon": "inv_mace_72",
+        "source": "Kil'Jaeden"
+    },
+    {
+        "id": 34331,
+        "name": "Hand of the Deceiver",
+        "slot": "Main Hand",
+        "icon": "inv_weapon_hand_15",
+        "source": "Kil'Jaeden"
+    },
+    {
+        "id": 34344,
+        "name": "Handguards of Defiled Worlds",
+        "slot": "Hands",
+        "icon": "inv_gauntlets_15",
+        "source": "Kil'Jaeden"
+    },
+    {
+        "id": 34342,
+        "name": "Handguards of the Dawn",
+        "slot": "Hands",
+        "icon": "inv_gauntlets_16",
+        "source": "Kil'Jaeden"
+    },
+    {
+        "id": 34243,
+        "name": "Helm of Burning Righteousness",
+        "slot": "Head",
+        "icon": "inv_helmet_25",
+        "source": "Kil'Jaeden"
+    },
+    {
+        "id": 34336,
+        "name": "Sunflare",
+        "slot": "Main Hand",
+        "icon": "inv_weapon_shortblade_73",
+        "source": "Kil'Jaeden"
+    },
+    {
+        "id": 34242,
+        "name": "Tattered Cape of Antonidas",
+        "slot": "Back",
+        "icon": "inv_misc_cape_20",
+        "source": "Kil'Jaeden"
+    },
+    {
+        "id": 34343,
+        "name": "Thalassian Ranger Gauntlets",
+        "slot": "Hands",
+        "icon": "inv_gauntlets_51",
+        "source": "Kil'Jaeden"
+    },
+    {
+        "id": 34334,
+        "name": "Thori'dal, the Stars' Fury",
+        "slot": "Ranged",
+        "icon": "inv_weapon_bow_39",
+        "source": "Kil'Jaeden"
+    },
+    {
+        "id": 34349,
+        "name": "Blade of Life's Inevitability",
+        "slot": "Thrown",
+        "icon": "inv_throwingknife_07",
+        "source": "Trash"
+    },
+    {
+        "id": 34350,
+        "name": "Gauntlets of the Ancient Shadowmoon",
+        "slot": "Hands",
+        "icon": "inv_gauntlets_41",
+        "source": "Trash"
+    },
+    {
+        "id": 34346,
+        "name": "Mounting Vengeance",
+        "slot": "Off Hand",
+        "icon": "inv_weapon_hand_13",
+        "source": "Trash"
+    },
+    {
+        "id": 35733,
+        "name": "Ring of Harmonic Beauty",
+        "slot": "Finger",
+        "icon": "inv_jewelry_ring_57",
+        "source": "Trash"
+    },
+    {
+        "id": 34183,
+        "name": "Shivering Felspine",
+        "slot": "Two-Hand",
+        "icon": "inv_weapon_halberd_20",
+        "source": "Trash"
+    },
+    {
+        "id": 34351,
+        "name": "Tranquil Majesty Wraps",
+        "slot": "Hands",
+        "icon": "inv_gauntlets_48",
+        "source": "Trash"
+    },
+    {
+        "id": 34348,
+        "name": "Wand of Cleansing Light",
+        "slot": "Ranged",
+        "icon": "inv_wand_24",
+        "source": "Trash"
+    },
+    {
+        "id": 34347,
+        "name": "Wand of the Demonsoul",
+        "slot": "Ranged",
+        "icon": "inv_wand_25",
+        "source": "Trash"
+    },
+    {
+        "id": 35202,
+        "name": "Design: Amulet of Flowing Life",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 35200,
+        "name": "Design: Hard Khorium Band",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 35203,
+        "name": "Design: Hard Khorium Choker",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 35198,
+        "name": "Design: Loop of Forged Power",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 35201,
+        "name": "Design: Pendant of Sunfire",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 35199,
+        "name": "Design: Ring of Flowing Life",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 35218,
+        "name": "Pattern: Carapace of Sun and Shadow",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 35217,
+        "name": "Pattern: Embrace of the Phoenix",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 35213,
+        "name": "Pattern: Fletcher's Gloves of the Phoenix",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 35214,
+        "name": "Pattern: Gloves of Immortal Dusk",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 35205,
+        "name": "Pattern: Hands of Eternal Light",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 35216,
+        "name": "Pattern: Leather Chestguard of the Sun",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 35212,
+        "name": "Pattern: Leather Gauntlets of the Sun",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 35207,
+        "name": "Pattern: Robe of Eternal Light",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 35219,
+        "name": "Pattern: Sun-Drenched Scale Chestguard",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 35215,
+        "name": "Pattern: Sun-Drenched Scale Gloves",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 35204,
+        "name": "Pattern: Sunfire Handwraps",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 35206,
+        "name": "Pattern: Sunfire Robe",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 35209,
+        "name": "Plans: Hard Khorium Battlefists",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 35211,
+        "name": "Plans: Hard Khorium Battleplate",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 35210,
+        "name": "Plans: Sunblessed Breastplate",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 35208,
+        "name": "Plans: Sunblessed Gauntlets",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 35186,
+        "name": "Schematic: Annihilator Holo-Gogs",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 35196,
+        "name": "Schematic: Hard Khorium Goggles",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 35190,
+        "name": "Schematic: Hyper-Magnified Moon Specs",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 35193,
+        "name": "Schematic: Lightning Etched Specs",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 35195,
+        "name": "Schematic: Mayhem Projection Goggles",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 35189,
+        "name": "Schematic: Powerheal 9000 Lens",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 35192,
+        "name": "Schematic: Primal-Attuned Goggles",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    },
+    {
+        "id": 35194,
+        "name": "Schematic: Surestrike Goggles v3,0",
+        "slot": "",
+        "icon": "inv_scroll_04",
+        "source": "Recipes"
+    }
+]
