@@ -1,6 +1,6 @@
 import Axios from "axios";
 import moment from 'moment';
-import { bonusRaidStartDate } from "../constants";
+import { bonusRaidStartDate, tbcAttendanceStartDate } from "../constants";
 import { Class, GuildRank, Instance, Player } from "../types";
 import { LoginStatusResponse, PlayersResponse, PlayersResponseRaid, ReservationsResponse } from "./apiTypes";
 import { getItem } from "./loot";
@@ -31,8 +31,11 @@ export const getPlayersData = (): PlayersResponse => players;
 const lootSheetTab = (instance: Instance): string => {
     if (instance === 'aq40') return 'Loot';
     if (instance === 'naxx') return 'LootNaxx';
+    if (instance === 'tbc1') return 'LootTBC1';
     throw Error(`Unknown instance ${instance}`);
 }
+
+const isTBCRaid = (instance: Instance): boolean => ['tbc1'].includes(instance);
 
 const raidBonus = (raid: PlayersResponseRaid, instance: Instance): { value: number } | undefined =>
     moment(raid.date).isSameOrAfter(bonusRaidStartDate[instance]) ?
@@ -46,12 +49,13 @@ export const fetchData = (instance: Instance) => Promise.all([
             for (const i in players) {
                 const player = players[i];
                 playerMap[player.name] = {
-                    attendedRaids: player.raidAttendance.map(raid => ({
-                        attendanceValue: raid.attendance,
-                        date: raid.date,
-                        instanceName: raid.instance,
-                        bonus: raidBonus(raid, instance),
-                    })),
+                    attendedRaids: player.raidAttendance.filter(raid => !isTBCRaid(instance) || !raid.date || tbcAttendanceStartDate.isBefore(raid.date))
+                        .map(raid => ({
+                            attendanceValue: raid.attendance,
+                            date: raid.date,
+                            instanceName: raid.instance,
+                            bonus: raidBonus(raid, instance),
+                        })),
                     name: player.name,
                     class: player.class as Class,
                     guildRank: player.guildRank,

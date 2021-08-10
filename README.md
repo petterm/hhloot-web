@@ -15,3 +15,7 @@ TODO:
 Future:
 - Support for multiple instances (naxx)
 - Support for instance-dependant slots and scores
+
+Data sources:
+- Boss drop-table: https://thatsmybis.com/loot
+- Item details: https://www.wowhead.com

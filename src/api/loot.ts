@@ -1,5 +1,6 @@
 import lootTableAQ40 from '../data/aq40_loot_table.json';
 import lootTableNaxx from '../data/naxx_loot_table.json';
+import lootTableTBC1 from '../data/tbc1_loot_table.json';
 import itemIcons from '../data/item_icons.json';
 import { Boss, BossDrop, Instance, Item } from '../types';
 
@@ -46,9 +47,10 @@ const getUnifiedEntry = (instance: Instance, drop: LootTableAq40 | LootTableNaxx
             slot: dropAq['Slot'],
             restricted: dropAq['Restricted'] ? true : false,
             hidden: false,
+            icon: undefined,
         };
     }
-    if (instance === 'naxx'){
+    if (instance === 'naxx' || instance === 'tbc1'){
         const dropNaxx = drop as LootTableNaxx;
         return {
             bosses: dropNaxx['source'].split(',').map(str => str.trim()),
@@ -57,6 +59,7 @@ const getUnifiedEntry = (instance: Instance, drop: LootTableAq40 | LootTableNaxx
             slot: dropNaxx['slot'],
             restricted: dropNaxx['restricted'] || false,
             hidden: dropNaxx['hidden'] || false,
+            icon: dropNaxx['icon'],
         };
     }
     throw Error("Invalid instance");
@@ -85,6 +88,7 @@ const parseLootTable = (instance: Instance, rawData: LootTableAq40[] | LootTable
                     name: dropUnified.name,
                     restricted: dropUnified.restricted,
                     hidden: dropUnified.hidden,
+                    icon: dropUnified.icon,
                 },
                 instance,
             };
@@ -111,6 +115,7 @@ const parseLootTable = (instance: Instance, rawData: LootTableAq40[] | LootTable
 
 parseLootTable('aq40', lootTableAQ40);
 parseLootTable('naxx', lootTableNaxx);
+parseLootTable('tbc1', lootTableTBC1);
 
 export const getBosses = (instance: Instance): BossMap => instanceLoot[instance].bossMap;
 export const getBossDrops = (instance?: Instance): BossDropNameMap => {

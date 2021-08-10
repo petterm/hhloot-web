@@ -1,19 +1,21 @@
 export type ItemScoreAq40 = 100 | 90 | 80 | 70 | 65 | 60 | 55 | 54 | 53 | 52;
 export type ItemScoreNaxx = 100 | 90 | 80 | 70 | 65 | 60 | 55 | 54 | 53 | 52 | 10;
-export type ItemScore = ItemScoreAq40 | ItemScoreNaxx;
+export type ItemScoreTBC1 = 100 | 90 | 80;
+export type ItemScore = ItemScoreAq40 | ItemScoreNaxx | ItemScoreTBC1;
 
-export type Class = 'DRUID' | 'HUNTER' | 'MAGE' | 'PALADIN' | 'PRIEST' | 'ROGUE' | 'WARLOCK' | 'WARRIOR';
+export type Class = 'DRUID' | 'HUNTER' | 'MAGE' | 'PALADIN' | 'PRIEST' | 'ROGUE' | 'SHAMAN' | 'WARLOCK' | 'WARRIOR';
 
 export type Date = string;
 export type GuildRank = 'Guild Master' | 'Officer' | 'Officer alt' | 'Member' | 'Initiate' | 'Social' | 'Alt';
 export type PlayerName = string;
-export type Instance = 'aq40' | 'naxx';
+export type Instance = 'aq40' | 'naxx' | 'tbc1';
 
 export interface Item {
     name: string;
     id: number;
     restricted: boolean;
     hidden: boolean;
+    icon?: string;
 }
 
 export interface PlayerItemEntry {

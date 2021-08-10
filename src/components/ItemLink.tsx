@@ -20,7 +20,7 @@ type ItemLinkProps = {
     size: 'tiny' | 'small' | 'medium' | 'large',
 };
 const ItemLink = ({ item, noText, noTextLink, size }: ItemLinkProps) => {
-    const icon = getItemIcon(item.id);
+    const icon = item.icon ? item.icon : getItemIcon(item.id);
     const iconStyle: React.CSSProperties = {
         background: `url("${wowheadIconUrl}/${size}/${icon}${iconExtension(size)}") left center no-repeat`,
     };
@@ -38,7 +38,7 @@ const ItemLink = ({ item, noText, noTextLink, size }: ItemLinkProps) => {
 
     return (
         <div className={wrapClass.join(' ')}>
-            <a href={`https://classic.wowhead.com/item=${item.id}`} target='_blank' className={style.wrap} rel="noopener noreferrer" >
+            <a href={`https://tbc.wowhead.com/item=${item.id}`} target='_blank' className={style.wrap} rel="noopener noreferrer" >
                 <span className={iconClass.join(' ')} style={iconStyle} />
                 {noText || noTextLink ? null : (
                     <span className={style.text}>

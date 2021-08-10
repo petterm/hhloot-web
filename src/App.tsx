@@ -18,7 +18,7 @@ function App() {
     const [error, setError] = useState<Error>();
     const [loginPlayer, setLoginPlayer] = useState<Player | undefined>();
 
-    let instance: Instance = 'naxx';
+    let instance: Instance = 'tbc1';
 
     const pathParts = window.location.pathname.split('/');
     const path = pathParts[pathParts.length - 1];
@@ -50,7 +50,14 @@ function App() {
             }))
     }, [instance]);
 
-    const image = instance === 'naxx' ? 'ui-ej-boss-kelthuzad.png' : 'ui-ej-boss-cthun.png';
+    let image = '';
+    if (instance === 'naxx') {
+        image = 'ui-ej-boss-kelthuzad.png';
+     } else if (instance === 'aq40') {
+        image = 'ui-ej-boss-cthun.png';
+     } else if (instance === 'tbc1') {
+        image = 'ui-ej-boss-grull-hug-magtheridon.png';
+     }
 
     return (
         <Router>
