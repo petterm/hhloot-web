@@ -32,7 +32,7 @@ export const instanceData: Record<Instance, InstanceData> = {
     },
     'tbc2': {
         name: 'Serpentshrine Cavern & Tempest Keep',
-        image: '',
+        image: 'ui-ej-boss-vashj-kael.png',
         bonusRaidStartDate: moment('2021-09-01'), // Temporary
         lootSheetID: '1vzK9lPih35GSUPbxLreslyihxPSSIXhS3JW_GWRf7Lw',
         lootSheetTab: 'LootTBC1',
@@ -41,7 +41,7 @@ export const instanceData: Record<Instance, InstanceData> = {
     },
     'tbc3': {
         name: 'Black Temple & Mount Hyjal',
-        image: '',
+        image: 'ui-ej-boss-missing.png',
         bonusRaidStartDate: moment('2022-01-01'), // Temporary
         lootSheetID: '1vzK9lPih35GSUPbxLreslyihxPSSIXhS3JW_GWRf7Lw',
         lootSheetTab: 'LootTBC1',
@@ -50,7 +50,7 @@ export const instanceData: Record<Instance, InstanceData> = {
     },
     'tbc5': {
         name: 'Sunwell',
-        image: '',
+        image: 'ui-ej-boss-missing.png',
         bonusRaidStartDate: moment('2022-07-01'), // Temporary
         lootSheetID: '1vzK9lPih35GSUPbxLreslyihxPSSIXhS3JW_GWRf7Lw',
         lootSheetTab: 'LootTBC1',

@@ -39,6 +39,7 @@ const ReservationList: React.FunctionComponent<ReservationListProps> = ({
                     moveItem={moveItem}
                     replaceItem={replaceItem}
                     swapItem={swapItem}
+                    player={player}
                 />
             ))}
         </div>

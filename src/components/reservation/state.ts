@@ -9,7 +9,10 @@ type ActionRemove = { type: 'REMOVE', score: ItemScore };
 type ActionReplace = { type: 'REPLACE', score: ItemScore, item: Item };
 type ActionMove = { type: 'MOVE', targetScore: ItemScore, sourceScore: ItemScore };
 type ActionSwap = { type: 'SWAP', targetScore: ItemScore, sourceScore: ItemScore };
-export type Action = ActionAdd | ActionRemove | ActionReplace | ActionMove | ActionSwap;
+type ActionReset = { type: 'RESET', player: Player }
+export type Action = ActionAdd | ActionRemove | ActionReplace | ActionMove | ActionSwap | ActionReset;
+
+export type Reducer = (state: State, action: Action) => State;
 
 export const initialState = (player: Player): State => player.scoreSlots.reduce((slots, slot) => ({
     ...slots,
@@ -44,6 +47,8 @@ export const reducer = (state: State, action: Action): State => {
                 [action.sourceScore]: state[action.targetScore],
                 [action.targetScore]: state[action.sourceScore],
             }
+        case 'RESET':
+            return initialState(action.player)
         default:
             throw new Error('Reservations action missing type');
     }
@@ -68,3 +73,5 @@ export const swapItem = (dispatch: Dispatch<Action>) =>
     (sourceScore: ItemScore, targetScore: ItemScore) => dispatch({ type: 'SWAP', sourceScore, targetScore });
 
 export const removeItem = (dispatch: Dispatch<Action>) => (score: ItemScore) => dispatch({ type: 'REMOVE', score });
+
+export const reset = (dispatch: Dispatch<Action>) => (player: Player) => dispatch({ type: 'RESET', player });

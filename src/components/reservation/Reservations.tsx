@@ -9,7 +9,7 @@ import LootOptionsList from './LootOptionsList';
 import ReservationList from './ReservationList';
 import { ReservationsList, submitReservations } from '../../api/reservations';
 import { initialState, ItemSlot, addItem, moveItem,
-        replaceItem, swapItem, removeItem, reducer } from './state';
+        replaceItem, swapItem, removeItem, reducer, State, Action, Reducer, reset } from './state';
 import Trashcan from './Trashcan';
 import Button from '../Button';
 import style from './Reservations.module.css';
@@ -44,10 +44,35 @@ const invalidStateMessage = (state: Partial<Record<ItemScore, ItemSlot>>, instan
     return undefined;
 }
 
+const localStorageInitialState = (state: State, instance: Instance): State => {
+    const storedString = window.localStorage.getItem(`resDraft-${instance}`);
+    const instanceData = getInstanceData(instance);
+    if (storedString) {
+        const storedData = JSON.parse(storedString);
+        instanceData.itemScores.forEach(score => {
+            if (!state[score]?.received && storedData[score]) {
+                state[score] = storedData[score];
+            }
+        });
+    }
+    return state;
+}
+
+const localStorageReducer = (reducer: Reducer, instance: Instance): Reducer => (state: State, action: Action) => {
+    const newState = reducer(state, action);
+
+    window.localStorage.setItem(`resDraft-${instance}`, JSON.stringify(newState))
+
+    return newState;
+}
+
 const Reservations: React.FunctionComponent<ReservationsProps> = ({ instance, loginPlayer, onChangePlayer }) => {
     const { playerName } = useParams<ReservationsParams>();
     const player: Player = getPlayer(formatName(playerName));
-    const [state, dispatch] = useReducer(reducer, initialState(player));
+    const [state, dispatch] = useReducer(
+        localStorageReducer(reducer, instance),
+        localStorageInitialState(initialState(player), instance)
+    );
     const [submitting, setSubmitting] = useState(false);
     const [submitted, setSubmitted] = useState(false);
     const [error, setError] = useState<Error>();
@@ -73,6 +98,12 @@ const Reservations: React.FunctionComponent<ReservationsProps> = ({ instance, lo
                 });
         }
     };
+
+    const onReset = () => {
+        if (!submitting) {
+            reset(dispatch)(player)
+        }
+    }
 
     const invalidMessage = invalidStateMessage(state, instanceData);
 
@@ -113,9 +144,15 @@ const Reservations: React.FunctionComponent<ReservationsProps> = ({ instance, lo
                                     {invalidMessage}
                                 </p>
                             ) : (
-                                <Button onClick={onSubmit} >
-                                    Submit
-                                </Button>
+                                <>
+                                    <Button onClick={onReset} >
+                                        Reset
+                                    </Button>
+                                    &nbsp;
+                                    <Button onClick={onSubmit} >
+                                        Submit
+                                    </Button>
+                                </>
                             )}
                             {!!error && (
                                 <div className={style.errorWrap}>

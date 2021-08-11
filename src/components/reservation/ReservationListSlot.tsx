@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDrop } from 'react-dnd';
-import { Instance, Item, ItemScore } from '../../types';
+import { Instance, Item, ItemScore, Player } from '../../types';
 import { DragItem, DropResult } from './Reservations';
 import ReservationItem from './ReservationItem';
 import style from './ReservationListSlot.module.css';
@@ -14,6 +14,7 @@ interface ReservationListSlotProps {
     swapItem: (sourceScore: ItemScore, targetScore: ItemScore) => void,
     instance: Instance,
     item?: Item,
+    player: Player,
     received?: string,
 };
 
@@ -23,7 +24,7 @@ interface CollectedProps {
 }
 
 const ReservationListSlot: React.FunctionComponent<ReservationListSlotProps> = ({
-    slotScore, item, received, addItem, moveItem, replaceItem, swapItem, instance,
+    slotScore, item, player, received, addItem, moveItem, replaceItem, swapItem, instance,
 }) => {
     const [{ canDrop, isOver }, dropRef] = useDrop<DragItem, DropResult, CollectedProps>({
         accept: 'ITEM',
@@ -71,6 +72,16 @@ const ReservationListSlot: React.FunctionComponent<ReservationListSlotProps> = (
 
     if (instanceData.scoreGroupEdges.includes(slotScore)) {
         wrapClass.push(style.wrapScoreRowEdge);
+    }
+
+    // Check if this item slot is changed compared to the players currently accepted list
+    const playerItemEntry = player.scoreSlots.find(itemEntry => itemEntry.score === slotScore)
+    const playerItem = playerItemEntry && playerItemEntry.item
+    const changed = playerItem === undefined ? item !== undefined : item && item.id !== (playerItem as Item).id;
+    console.log(playerItemEntry, playerItem, changed)
+
+    if (changed) {
+        wrapClass.push(style.wrapSlotChanged)
     }
 
     return (
