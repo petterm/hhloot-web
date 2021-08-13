@@ -50,7 +50,7 @@ function App() {
                     setLoginPlayer(undefined);
                 }
             }))
-    });
+    }, [instance, instanceData]);
 
     return (
         <Router>
