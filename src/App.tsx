@@ -76,7 +76,7 @@ function App() {
                             {loginPlayer === undefined ? (
                                 <>
                                     <span style={{ color: '#555' }}>{" - "}</span>
-                                    <a href="/Identity/Account/Login" style={{ color: '#555' }}>Login</a>
+                                    <a href={`/Identity/Account/Login?ReturnUrl=%2F${instance}`} style={{ color: '#555' }}>Login</a>
                                 </>
                             ) : (
                                 <>
