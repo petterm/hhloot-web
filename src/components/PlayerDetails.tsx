@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { PlayerItemEntry, Item, Instance, InstanceData } from '../types'
 import { useParams } from 'react-router-dom';
 import { getInstanceData, getPlayer } from '../api';
@@ -8,6 +8,7 @@ import ItemLink from './ItemLink';
 import PlayerName, { formatName } from './PlayerName';
 import style from './PlayerDetails.module.css';
 import { getBossDrops } from '../api/loot';
+import { attendanceRaidCount } from '../constants';
 
 type PlayerDetailsProps = { instance: Instance };
 type PlayerDetailsParams = { playerName: string };
@@ -17,6 +18,7 @@ const scoreRowClass = (instanceData: InstanceData, row: PlayerItemEntry) =>
 
 const PlayerDetails: React.FunctionComponent<PlayerDetailsProps> = ({ instance }) => {
     const { playerName } = useParams<PlayerDetailsParams>();
+    const [helpVisible, showHelp] = useState(false);
     const player = getPlayer(formatName(playerName));
     const instanceData = getInstanceData(instance);
 
@@ -56,6 +58,12 @@ const PlayerDetails: React.FunctionComponent<PlayerDetailsProps> = ({ instance }
                             Item
                         </th>
                         <th className={style.headerCell}>
+                            Pos.
+                        </th>
+                        <th className={style.headerCell}>
+                            Att.
+                        </th>
+                        <th className={style.headerCell}>
                             Total
                         </th>
                     </tr>
@@ -85,12 +93,41 @@ const PlayerDetails: React.FunctionComponent<PlayerDetailsProps> = ({ instance }
                                 {getItemBonus(entry, player)}
                             </td>
                             <td className={entry.received ? style.cellReceived : style.cell}>
+                                {getPositionBonus(player, instance)}
+                            </td>
+                            <td className={entry.received ? style.cellReceived : style.cell}>
+                                {getAttendanceBonus(player)}
+                            </td>
+                            <td className={entry.received ? style.cellReceived : style.cell}>
                                 {getFinalScore(entry, player, instance)}
                             </td>
                         </tr>
                     ))}
                 </tbody>
             </table>
+            <p className={style.bonusHelpTitle}>
+                What are these numbers?
+                {' '}
+                <span className={style.bonusHelpLink}>(
+                    <button onClick={() => showHelp(!helpVisible)}>
+                        {helpVisible ? 'hide' : 'expand'}
+                    </button>
+                )</span>
+            </p>
+            {helpVisible && (
+                <>
+                    <p className={style.bonusHelpText}>
+                        Your score for an items is calculated as the sum of your base slot weight and a few different bonuses.
+                        You can see your raid history used to calculate position and attendance bonuses at the bottom of this page.
+                    </p>
+                    <ul className={style.bonusHelpList}>
+                        <li><b>Weight:</b> The static base value for this slot.</li>
+                        <li><b>Item bonus:</b> Each time you roll or pass on an item you gain a permanent +1 for that item.</li>
+                        <li><b>Position bonus:</b> Each official raid you attend gives +1 to all slots.</li>
+                        <li><b>Attendance bonus:</b> Your average attendance over the last 6 raids divided by 10.</li>
+                    </ul>
+                </>
+            )}
             {freeLoot.length > 0 && (
                 <table className={style.table}>
                     <thead>
@@ -141,7 +178,10 @@ const PlayerDetails: React.FunctionComponent<PlayerDetailsProps> = ({ instance }
                             <td className={style.attendanceValue}>
                                 {raid.bonus ? raid.bonus.value : '-'}
                             </td>
-                            <td className={style.attendanceValue}>
+                            <td className={[
+                                style.attendanceValue,
+                                index >= attendanceRaidCount ? style.attendanceValueInactive : ''
+                            ].join(' ')}>
                                 {`${raid.attendanceValue * 100} %`}
                             </td>
                         </tr>

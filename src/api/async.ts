@@ -1,4 +1,4 @@
-import Axios from "axios";
+import Axios, { AxiosResponse } from "axios";
 import moment from 'moment';
 import { getInstanceData } from ".";
 import { tbcAttendanceStartDate } from "../constants";
@@ -34,60 +34,67 @@ const raidBonus = (raid: PlayersResponseRaid, instanceData: InstanceData): { val
     moment(raid.date).isSameOrAfter(instanceData.bonusRaidStartDate) ?
         { value: raid.attendance >= 0.1 ? 1 : 0 } : undefined;
 
-export const fetchData = (instance: Instance) => {
-    const instanceData = getInstanceData(instance);
-    return Promise.all([
-    Axios.get<PlayersResponse>('/api/players')
-            .then(({ data }) => {
-                const ranks: GuildRank[] = ['Guild Master', 'Officer', 'Member', 'Initiate'];
-                players = data.filter((player) => ranks.includes(player.guildRank))
-                for (const i in players) {
-                    const player = players[i];
-                    playerMap[player.name] = {
-                        attendedRaids: player.raidAttendance.filter(raid => !isTBCRaid(instance) || !raid.date || tbcAttendanceStartDate.isBefore(raid.date))
-                            .map(raid => ({
-                                attendanceValue: raid.attendance,
-                                date: raid.date,
-                                instanceName: raid.instance,
-                                bonus: raidBonus(raid, instanceData),
-                            })),
-                        name: player.name,
-                        class: player.class as Class,
-                        guildRank: player.guildRank,
-                        scoreSlots: instanceData.itemScores.map(score => ({ score, itemBonusEvents: [] })),
-                    }
+const saveAndFormatPlayers: (instance: Instance, instanceData: InstanceData) => (response: AxiosResponse<PlayersResponse>) => PlayerMap =
+    (instance, instanceData) => ({ data }) => {
+        const ranks: GuildRank[] = ['Guild Master', 'Officer', 'Member', 'Initiate'];
+        players = data.filter((player) => ranks.includes(player.guildRank))
+        for (const i in players) {
+            const player = players[i];
+            playerMap[player.name] = {
+                attendedRaids: player.raidAttendance.filter(raid => !isTBCRaid(instance) || !raid.date || tbcAttendanceStartDate.isBefore(raid.date))
+                    .map(raid => ({
+                        attendanceValue: raid.attendance,
+                        date: raid.date,
+                        instanceName: raid.instance,
+                        bonus: raidBonus(raid, instanceData),
+                    })),
+                name: player.name,
+                class: player.class as Class,
+                guildRank: player.guildRank,
+                scoreSlots: instanceData.itemScores.map(score => ({ score, itemBonusEvents: [] })),
+            }
+        }
+        return playerMap;
+    }
+
+const saveAndFormatReceivedLoot: (instance: Instance, instanceData: InstanceData) => (sheetRows: string[][]) => Raid[] =
+    (instance, instanceData) => (sheetRows) => {
+        const raidsRaw: { [date: string]: Raid } = {};
+        sheetRows.forEach((value, index) => {
+            if (index === 0) return;
+            
+            const row = sheetRows[index];
+            const [date, character, item] = row;
+            const bonusPlayers = row.slice(3).filter(val => !!val.length);
+            if (date && date.length && character && character.length && item && item.length) {
+                if (!raidsRaw[date]) raidsRaw[date] = { date, loot: [] };
+
+                const loot: Loot = {
+                    character,
+                    item,
+                    bonusCharacters: [],
+                };
+                for (const y in bonusPlayers) {
+                    loot.bonusCharacters.push(bonusPlayers[y]);
                 }
-                return playerMap;
-            }),
-        Axios.get<ReservationsResponse>('/api/reservations/approved')
-            .then(({ data }) => data),
-        getSheet(instanceData.lootSheetID, instanceData.lootSheetTab)
-            .then((sheetRows) => {
-                const raidsRaw: { [date: string]: Raid } = {};
-                sheetRows.forEach((value, index) => {
-                    if (index === 0) return;
-                    
-                    const row = sheetRows[index];
-                    const [date, character, item] = row;
-                    const bonusPlayers = row.slice(3).filter(val => !!val.length);
-                    if (date && date.length && character && character.length && item && item.length) {
-                        if (!raidsRaw[date]) raidsRaw[date] = { date, loot: [] };
+                raidsRaw[date].loot.push(loot);
+            }
+        });
 
-                        const loot: Loot = {
-                            character,
-                            item,
-                            bonusCharacters: [],
-                        };
-                        for (const y in bonusPlayers) {
-                            loot.bonusCharacters.push(bonusPlayers[y]);
-                        }
-                        raidsRaw[date].loot.push(loot);
-                    }
-                });
+        raids = Object.values(raidsRaw);
+        return raids;
+    }
 
-                raids = Object.values(raidsRaw);
-                return raids;
-            }),
+export const fetchData = (instance: Instance, isLoggedIn: Boolean) => {
+    const instanceData = getInstanceData(instance);
+    const fetchReservations = isLoggedIn || instance !== 'tbc2';
+    return Promise.all([
+        // Fetch player data and format
+        Axios.get<PlayersResponse>('/api/players').then(saveAndFormatPlayers(instance, instanceData)),
+        // Get reservations
+        fetchReservations ? Axios.get<ReservationsResponse>('/api/reservations/approved').then(({ data }) => data) : Promise.resolve([]),
+        // Get received loot
+        getSheet(instanceData.lootSheetID, instanceData.lootSheetTab).then(saveAndFormatReceivedLoot(instance, instanceData)),
     ]).then(([players, reservations, raids]) => {
         reservations.forEach(({ name, instance: reservationInstance, slots: reservationSlots }) => {
             const player = players[name];
@@ -104,7 +111,8 @@ export const fetchData = (instance: Instance) => {
 }
 
 export const checkLogin = () =>
-    process.env.NODE_ENV === 'development' ? Promise.resolve('Meche') :
+    // process.env.NODE_ENV === 'development' ? Promise.resolve(undefined) :
+    process.env.NODE_ENV === 'development' ? Promise.resolve('Minny') :
     Axios.get<LoginStatusResponse>('/api/loginstatus')
         .then(({ data }) => data.authenticated ? data.character : undefined)
         .catch(() => undefined)

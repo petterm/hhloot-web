@@ -81,6 +81,10 @@
     text-align: right;
 }
 
+.attendanceValueInactive {
+    color: #555;
+}
+
 tr:first-child .cellItem,
 tr:first-child .cell,
 tr:first-child .cellReceived,
@@ -100,4 +104,35 @@ tr:first-child .attendanceValue {
     font-size: 12px;
     color: #aaa;
     white-space: nowrap;
+}
+
+.bonusHelpTitle {
+    font-style: italic;
+}
+
+.bonusHelpLink {
+    font-size: 12px;
+    color: #888;
+}
+
+.bonusHelpLink button {
+    background: none;
+    border: none;
+    color: #888;
+    font-style: italic;
+    padding: 2px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.bonusHelpLink button:hover {
+    color: #ddd;
+} 
+
+.bonusHelpText {
+    font-size: 14px;
+    max-width: 700px;
+}
+
+.bonusHelpList {
+    font-size: 14px;
 }

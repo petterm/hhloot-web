@@ -32,24 +32,30 @@ function App() {
 
     useEffect(() => {
         document.title = `HH ${instanceData.name}`;
-        fetchData(instance)
+        let loginPlayerName: PlayerName | undefined = undefined;
+        checkLogin()
+            .then((playerName: PlayerName | undefined) => {
+                loginPlayerName = playerName;
+            })
+            .then(() => fetchData(instance, !!loginPlayerName))
             .then(() => prepareData())
             .then(() => setIsLoaded(true))
             .catch((error) => {
                 setError(error);
                 console.error(error);
             })
-            .then(() => checkLogin().then((playerName: PlayerName | undefined) => {
+            .then(() => {
                 try {
-                    if (playerName) {
-                        setLoginPlayer(getPlayer(playerName));
+                    if (loginPlayerName) {
+                        setLoginPlayer(getPlayer(loginPlayerName));
                     } else {
                         setLoginPlayer(undefined);
                     }
                 } catch (error) {
                     setLoginPlayer(undefined);
+                    console.error(error);
                 }
-            }))
+            })
     }, [instance, instanceData]);
 
     return (
@@ -67,7 +73,12 @@ function App() {
                             <Link to="/players">Players</Link>
                             {" - "}
                             <Link to="/reservations">Update reservations</Link>
-                            {loginPlayer && (
+                            {loginPlayer === undefined ? (
+                                <>
+                                    <span style={{ color: '#555' }}>{" - "}</span>
+                                    <a href="/Identity/Account/Login" style={{ color: '#555' }}>Login</a>
+                                </>
+                            ) : (
                                 <>
                                     {" - "}
                                     <Link to="/reservations/admin">Admin</Link>

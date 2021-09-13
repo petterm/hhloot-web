@@ -33,9 +33,9 @@ export const instanceData: Record<Instance, InstanceData> = {
     'tbc2': {
         name: 'Serpentshrine Cavern & Tempest Keep',
         image: 'ui-ej-boss-vashj-kael.png',
-        bonusRaidStartDate: moment('2021-09-01'), // Temporary
+        bonusRaidStartDate: moment('2021-09-15'),
         lootSheetID: '1vzK9lPih35GSUPbxLreslyihxPSSIXhS3JW_GWRf7Lw',
-        lootSheetTab: 'LootTBC1',
+        lootSheetTab: 'LootTBC2',
         itemScores: [100, 90, 80, 70, 65, 60, 55, 54, 53, 52],
         scoreGroupEdges: [80, 60],
     },
