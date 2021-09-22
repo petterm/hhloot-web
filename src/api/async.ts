@@ -87,7 +87,7 @@ const saveAndFormatReceivedLoot: (instance: Instance, instanceData: InstanceData
 
 export const fetchData = (instance: Instance, isLoggedIn: Boolean) => {
     const instanceData = getInstanceData(instance);
-    const fetchReservations = isLoggedIn || instance !== 'tbc2';
+    const fetchReservations = true; //isLoggedIn || instance !== 'tbc2';
     return Promise.all([
         // Fetch player data and format
         Axios.get<PlayersResponse>('/api/players').then(saveAndFormatPlayers(instance, instanceData)),
