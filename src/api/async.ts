@@ -92,7 +92,9 @@ export const fetchData = (instance: Instance, isLoggedIn: Boolean) => {
         // Fetch player data and format
         Axios.get<PlayersResponse>('/api/players').then(saveAndFormatPlayers(instance, instanceData)),
         // Get reservations
-        fetchReservations ? Axios.get<ReservationsResponse>('/api/reservations/approved').then(({ data }) => data) : Promise.resolve([]),
+        fetchReservations ? Axios.get<ReservationsResponse>('/api/reservations/approved',  {
+            params: { instance }
+        }).then(({ data }) => data) : Promise.resolve([]),
         // Get received loot
         getSheet(instanceData.lootSheetID, instanceData.lootSheetTab).then(saveAndFormatReceivedLoot(instance, instanceData)),
     ]).then(([players, reservations, raids]) => {
