@@ -85,16 +85,23 @@ const saveAndFormatReceivedLoot: (instance: Instance, instanceData: InstanceData
         return raids;
     }
 
+const fetchReservations = (instance: Instance): Promise<ReservationsResponse> => Axios.get<ReservationsResponse>('/api/reservations/approved',  {
+    params: { instance }
+})
+    .then(({ data }) => data)
+    .catch(({ error }) => {
+        console.error(error);
+        return [];
+    });
+
 export const fetchData = (instance: Instance, isLoggedIn: Boolean) => {
     const instanceData = getInstanceData(instance);
-    const fetchReservations = true; //isLoggedIn || instance !== 'tbc2';
+    // const skipReservations = isLoggedIn || instance !== 'tbc2';
     return Promise.all([
         // Fetch player data and format
         Axios.get<PlayersResponse>('/api/players').then(saveAndFormatPlayers(instance, instanceData)),
         // Get reservations
-        fetchReservations ? Axios.get<ReservationsResponse>('/api/reservations/approved',  {
-            params: { instance }
-        }).then(({ data }) => data) : Promise.resolve([]),
+        fetchReservations(instance),
         // Get received loot
         getSheet(instanceData.lootSheetID, instanceData.lootSheetTab).then(saveAndFormatReceivedLoot(instance, instanceData)),
     ]).then(([players, reservations, raids]) => {
