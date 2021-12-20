@@ -41,8 +41,8 @@ export const instanceData: Record<Instance, InstanceData> = {
     },
     'tbc3': {
         name: 'Black Temple & Mount Hyjal',
-        image: 'ui-ej-boss-missing.png',
-        bonusRaidStartDate: moment('2022-01-01'), // Temporary
+        image: 'ui-ej-boss-archimonde-illidan.png',
+        bonusRaidStartDate: moment('2022-01-12'), // Temporary
         lootSheetID: '1vzK9lPih35GSUPbxLreslyihxPSSIXhS3JW_GWRf7Lw',
         lootSheetTab: 'LootTBC1',
         itemScores: [100, 90, 80, 70, 65, 60, 55, 54, 53, 52],
@@ -50,7 +50,7 @@ export const instanceData: Record<Instance, InstanceData> = {
     },
     'tbc5': {
         name: 'Sunwell',
-        image: 'ui-ej-boss-missing.png',
+        image: 'ui-ej-boss-kiljaeden.png',
         bonusRaidStartDate: moment('2022-07-01'), // Temporary
         lootSheetID: '1vzK9lPih35GSUPbxLreslyihxPSSIXhS3JW_GWRf7Lw',
         lootSheetTab: 'LootTBC1',
