@@ -487,63 +487,72 @@
         "name": "Design: Flashing Crimson Spinel",
         "slot": "",
         "icon": "inv_scroll_04",
-        "source": "Recipes"
+        "source": "Recipes",
+        "hidden": true
     },
     {
         "id": 32296,
         "name": "Design: Great Lionseye",
         "slot": "",
         "icon": "inv_scroll_04",
-        "source": "Recipes"
+        "source": "Recipes",
+        "hidden": true
     },
     {
         "id": 32303,
         "name": "Design: Inscribed Pyrestone",
         "slot": "",
         "icon": "inv_scroll_04",
-        "source": "Recipes"
+        "source": "Recipes",
+        "hidden": true
     },
     {
         "id": 32295,
         "name": "Design: Mystic Lionseye",
         "slot": "",
         "icon": "inv_scroll_04",
-        "source": "Recipes"
+        "source": "Recipes",
+        "hidden": true
     },
     {
         "id": 32298,
         "name": "Design: Shifting Shadowsong Amethyst",
         "slot": "",
         "icon": "inv_scroll_04",
-        "source": "Recipes"
+        "source": "Recipes",
+        "hidden": true
     },
     {
         "id": 32297,
         "name": "Design: Sovereign Shadowsong Amethyst",
         "slot": "",
         "icon": "inv_scroll_04",
-        "source": "Recipes"
+        "source": "Recipes",
+        "hidden": true
     },
     {
         "id": 32289,
         "name": "Design: Stormy Empyrean Sapphire",
         "slot": "",
         "icon": "inv_scroll_04",
-        "source": "Recipes"
+        "source": "Recipes",
+        "hidden": true
     },
     {
         "id": 32307,
         "name": "Design: Veiled Pyrestone",
         "slot": "",
         "icon": "inv_scroll_04",
-        "source": "Recipes"
+        "source": "Recipes",
+        "hidden": true
     },
     {
         "id": 32748,
         "name": "Pattern: Bindings of Lightning Reflexes",
         "slot": "",
         "icon": "inv_scroll_04",
-        "source": "Recipes"
+        "source": "Recipes",
+        "hidden": true
     },
     {
         "id": 32751,
@@ -571,14 +580,16 @@
         "name": "Pattern: Swiftheal Wraps",
         "slot": "",
         "icon": "inv_scroll_04",
-        "source": "Recipes"
+        "source": "Recipes",
+        "hidden": true
     },
     {
         "id": 32746,
         "name": "Pattern: Swiftstrike Bracers",
         "slot": "",
         "icon": "inv_scroll_04",
-        "source": "Recipes"
+        "source": "Recipes",
+        "hidden": true
     },
     {
         "id": 32739,
@@ -592,13 +603,15 @@
         "name": "Plans: Fel Edged Battleaxe",
         "slot": "",
         "icon": "inv_scroll_04",
-        "source": "Recipes"
+        "source": "Recipes",
+        "hidden": true
     },
     {
         "id": 32736,
         "name": "Plans: Swiftsteel Bracers",
         "slot": "",
         "icon": "inv_scroll_04",
-        "source": "Recipes"
+        "source": "Recipes",
+        "hidden": true
     }
 ]

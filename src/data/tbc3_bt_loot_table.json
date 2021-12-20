@@ -781,14 +781,16 @@
         "name": "Warglaive of Azzinoth",
         "slot": "Main Hand",
         "icon": "inv_weapon_glave_01",
-        "source": "Illidan"
+        "source": "Illidan",
+        "hidden": true
     },
     {
         "id": 32838,
         "name": "Warglaive of Azzinoth",
         "slot": "Off Hand",
         "icon": "inv_weapon_glave_01",
-        "source": "Illidan"
+        "source": "Illidan",
+        "hidden": true
     },
     {
         "id": 32374,
@@ -921,21 +923,24 @@
         "name": "Pattern: Bracers of Nimble Thought",
         "slot": "",
         "icon": "inv_scroll_04",
-        "source": "Recipes"
+        "source": "Recipes",
+        "hidden": true
     },
     {
         "id": 32744,
         "name": "Pattern: Bracers of Renewed Life",
         "slot": "",
         "icon": "inv_scroll_04",
-        "source": "Recipes"
+        "source": "Recipes",
+        "hidden": true
     },
     {
         "id": 32750,
         "name": "Pattern: Living Earth Bindings",
         "slot": "",
         "icon": "inv_scroll_04",
-        "source": "Recipes"
+        "source": "Recipes",
+        "hidden": true
     },
     {
         "id": 32749,
@@ -963,7 +968,8 @@
         "name": "Plans: Dawnsteel Bracers",
         "slot": "",
         "icon": "inv_scroll_04",
-        "source": "Recipes"
+        "source": "Recipes",
+        "hidden": true
     },
     {
         "id": 32737,

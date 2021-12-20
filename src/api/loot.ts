@@ -1,10 +1,10 @@
-import lootTableAQ40 from '../data/aq40_loot_table.json';
-import lootTableNaxx from '../data/naxx_loot_table.json';
-import lootTableTBC1 from '../data/tbc1_loot_table.json';
-import lootTableTBC2 from '../data/tbc2_loot_table.json';
-import lootTableTBC3BT from '../data/tbc3_bt_loot_table.json';
-import lootTableTBC3MH from '../data/tbc3_mh_loot_table.json';
-import lootTableTBC5 from '../data/tbc5_loot_table.json';
+import lootTableAQ40_untyped from '../data/aq40_loot_table.json';
+import lootTableNaxx_untyped from '../data/naxx_loot_table.json';
+import lootTableTBC1_untyped from '../data/tbc1_loot_table.json';
+import lootTableTBC2_untyped from '../data/tbc2_loot_table.json';
+import lootTableTBC3BT_untyped from '../data/tbc3_bt_loot_table.json';
+import lootTableTBC3MH_untyped from '../data/tbc3_mh_loot_table.json';
+import lootTableTBC5_untyped from '../data/tbc5_loot_table.json';
 import itemIcons from '../data/item_icons.json';
 import { Boss, BossDrop, Instance, Item } from '../types';
 
@@ -27,6 +27,14 @@ type LootTable = {
     "restricted"?: boolean,
     "hidden"?: boolean,
 };
+
+const lootTableAQ40: LootTableAq40[] = lootTableAQ40_untyped;
+const lootTableNaxx: LootTable[] = lootTableNaxx_untyped;
+const lootTableTBC1: LootTable[] = lootTableTBC1_untyped;
+const lootTableTBC2: LootTable[] = lootTableTBC2_untyped;
+const lootTableTBC3BT: LootTable[] = lootTableTBC3BT_untyped;
+const lootTableTBC3MH: LootTable[] = lootTableTBC3MH_untyped;
+const lootTableTBC5: LootTable[] = lootTableTBC5_untyped;
 
 type BossMap = { [key: string]: Boss; };
 
@@ -67,6 +75,15 @@ const getUnifiedEntry = (instance: Instance, drop: LootTableAq40 | LootTable) =>
     }
 }
 
+const includesDrop = (boss: Boss, newDrop: BossDrop): boolean => {
+    for (let i = 0; i < boss.drops.length; i++) {
+        if (boss.drops[i].item.id === newDrop.item.id) {
+            return true;
+        }
+    }
+    return false;
+}
+
 const parseLootTable = (instance: Instance, rawData: LootTableAq40[] | LootTable[]): void => {
     let index = 0;
 
@@ -96,7 +113,10 @@ const parseLootTable = (instance: Instance, rawData: LootTableAq40[] | LootTable
             };
             
             if (lootTable.bossMap[bossName]) {
-                lootTable.bossMap[bossName].drops.push(drop)
+                // Check for duplicates
+                if (!includesDrop(lootTable.bossMap[bossName], drop)) {
+                    lootTable.bossMap[bossName].drops.push(drop)
+                }
             } else {
                 lootTable.bossMap[bossName] = {
                     name: bossName,

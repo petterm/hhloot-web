@@ -9,6 +9,10 @@
     color: #ff8000;
 }
 
+.wrapLegendary a {
+    color: #ff8000;
+}
+
 .text {
     white-space: nowrap;
     overflow: hidden;

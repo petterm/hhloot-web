@@ -29,10 +29,10 @@ const ItemLink = ({ item, noText, noTextLink, size }: ItemLinkProps) => {
         iconClass.push(style['icon--restricted'])
     }
 
-    // The fulhax for Atiesh T_T
+    // The fulhax for Legendaries T_T
     const displayName = item.name.replace(/\(.*\)/, '');
     const wrapClass = [style.wrap];
-    if ([22632, 22589, 22631, 22630].includes(item.id)) {
+    if ([22632, 22589, 22631, 22630, 32837, 32838, 34334].includes(item.id)) {
         wrapClass.push(style.wrapLegendary);
     }
 
