@@ -42,7 +42,7 @@ export const instanceData: Record<Instance, InstanceData> = {
     'tbc3': {
         name: 'Black Temple & Mount Hyjal',
         image: 'ui-ej-boss-archimonde-illidan.png',
-        bonusRaidStartDate: moment('2022-01-12'), // Temporary
+        bonusRaidStartDate: moment('2022-01-30'),
         lootSheetID: '1vzK9lPih35GSUPbxLreslyihxPSSIXhS3JW_GWRf7Lw',
         lootSheetTab: 'LootTBC1',
         itemScores: [100, 90, 80, 70, 65, 60, 55, 54, 53, 52],
