@@ -44,7 +44,7 @@ export const instanceData: Record<Instance, InstanceData> = {
         image: 'ui-ej-boss-archimonde-illidan.png',
         bonusRaidStartDate: moment('2022-01-30'),
         lootSheetID: '1vzK9lPih35GSUPbxLreslyihxPSSIXhS3JW_GWRf7Lw',
-        lootSheetTab: 'LootTBC1',
+        lootSheetTab: 'LootTBC3',
         itemScores: [100, 90, 80, 70, 65, 60, 55, 54, 53, 52],
         scoreGroupEdges: [80, 60],
     },

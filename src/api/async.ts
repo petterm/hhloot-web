@@ -94,14 +94,13 @@ const fetchReservations = (instance: Instance): Promise<ReservationsResponse> =>
         return [];
     });
 
-export const fetchData = (instance: Instance, isLoggedIn: Boolean) => {
+export const fetchData = (instance: Instance, skipReservations: Boolean) => {
     const instanceData = getInstanceData(instance);
-    // const skipReservations = isLoggedIn || instance !== 'tbc2';
     return Promise.all([
         // Fetch player data and format
         Axios.get<PlayersResponse>('/api/players').then(saveAndFormatPlayers(instance, instanceData)),
         // Get reservations
-        fetchReservations(instance),
+        skipReservations ? [] : fetchReservations(instance),
         // Get received loot
         getSheet(instanceData.lootSheetID, instanceData.lootSheetTab).then(saveAndFormatReceivedLoot(instance, instanceData)),
     ]).then(([players, reservations, raids]) => {
@@ -121,7 +120,7 @@ export const fetchData = (instance: Instance, isLoggedIn: Boolean) => {
 
 export const checkLogin = () =>
     // process.env.NODE_ENV === 'development' ? Promise.resolve(undefined) :
-    process.env.NODE_ENV === 'development' ? Promise.resolve('Minny') :
+    process.env.NODE_ENV === 'development' ? Promise.resolve('Lunaei') :
     Axios.get<LoginStatusResponse>('/api/loginstatus')
         .then(({ data }) => data.authenticated ? data.character : undefined)
         .catch(() => undefined)

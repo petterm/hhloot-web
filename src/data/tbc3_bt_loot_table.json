@@ -778,7 +778,7 @@
     },
     {
         "id": 32837,
-        "name": "Warglaive of Azzinoth",
+        "name": "Warglaive of Azzinoth (MH)",
         "slot": "Main Hand",
         "icon": "inv_weapon_glave_01",
         "source": "Illidan",
@@ -786,7 +786,7 @@
     },
     {
         "id": 32838,
-        "name": "Warglaive of Azzinoth",
+        "name": "Warglaive of Azzinoth (OH)",
         "slot": "Off Hand",
         "icon": "inv_weapon_glave_01",
         "source": "Illidan",
