@@ -56,6 +56,7 @@ export interface Player {
 
 export interface BossDrop {
     item: Item;
+    groupedItems: Item[];
     instance: Instance;
     reservations: {
         playerName: PlayerName;

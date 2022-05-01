@@ -24,6 +24,8 @@
     overflow: hidden;
 }
 
+.groupedItems {}
+
 .players {
     display: flex;
     flex-grow: 1;

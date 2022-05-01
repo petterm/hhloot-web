@@ -51,9 +51,9 @@ export const instanceData: Record<Instance, InstanceData> = {
     'tbc5': {
         name: 'Sunwell',
         image: 'ui-ej-boss-kiljaeden.png',
-        bonusRaidStartDate: moment('2022-07-01'), // Temporary
+        bonusRaidStartDate: moment('2022-06-01'), // Temporary
         lootSheetID: '1vzK9lPih35GSUPbxLreslyihxPSSIXhS3JW_GWRf7Lw',
-        lootSheetTab: 'LootTBC1',
+        lootSheetTab: 'LootTBC5',
         itemScores: [100, 90, 80, 70, 65, 60, 55, 54, 53, 52],
         scoreGroupEdges: [80, 60],
     },

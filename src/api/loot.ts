@@ -26,7 +26,18 @@ type LootTable = {
     "icon": string,
     "restricted"?: boolean,
     "hidden"?: boolean,
+    "groupedWith"?: number,
 };
+type DropUnified = {
+    "bosses": string[];
+    "name": string;
+    "id": number;
+    "slot": string;
+    "restricted": boolean;
+    "hidden": boolean;
+    "icon"?: string;
+    "groupedWith"?: number;
+}
 
 const lootTableAQ40: LootTableAq40[] = lootTableAQ40_untyped;
 const lootTableNaxx: LootTable[] = lootTableNaxx_untyped;
@@ -49,30 +60,30 @@ const instanceLoot: { [key: string]: InstanceLoot } = {}
 const globalBossDropNameMap: BossDropNameMap = {};
 const globalBossDropIdMap: BossDropIdMap = {};
 
-const getUnifiedEntry = (instance: Instance, drop: LootTableAq40 | LootTable) => {
-    if (instance === 'aq40') {
-        const dropAq = drop as LootTableAq40;
-        return {
-            bosses: dropAq['Boss'].split(',').map(str => str.trim()),
-            name: dropAq['Item Name'],
-            id: parseInt(dropAq['Item ID']),
-            slot: dropAq['Slot'],
-            restricted: dropAq['Restricted'] ? true : false,
-            hidden: false,
-            icon: undefined,
-        };
-    } else {
-        const newDrop = drop as LootTable;
-        return {
-            bosses: newDrop['source'].split(',').map(str => str.trim()),
-            name: newDrop['name'],
-            id: newDrop['id'],
-            slot: newDrop['slot'],
-            restricted: newDrop['restricted'] || false,
-            hidden: newDrop['hidden'] || false,
-            icon: newDrop['icon'],
-        };
-    }
+const getUnifiedEntryAq40 = (drop: LootTableAq40): DropUnified => {
+    const dropAq = drop as LootTableAq40;
+    return {
+        bosses: dropAq['Boss'].split(',').map(str => str.trim()),
+        name: dropAq['Item Name'],
+        id: parseInt(dropAq['Item ID']),
+        slot: dropAq['Slot'],
+        restricted: dropAq['Restricted'] ? true : false,
+        hidden: false,
+    };
+}
+
+const getUnifiedEntryDefault = (drop: LootTable): DropUnified => {
+    const newDrop = drop as LootTable;
+    return {
+        bosses: newDrop['source'].split(',').map(str => str.trim()),
+        name: newDrop['name'],
+        id: newDrop['id'],
+        slot: newDrop['slot'],
+        restricted: newDrop['restricted'] || false,
+        hidden: newDrop['hidden'] || false,
+        icon: newDrop['icon'],
+        groupedWith: newDrop['groupedWith'],
+    };
 }
 
 const includesDrop = (boss: Boss, newDrop: BossDrop): boolean => {
@@ -93,9 +104,17 @@ const parseLootTable = (instance: Instance, rawData: LootTableAq40[] | LootTable
     }
     instanceLoot[instance] = lootTable;
 
-    rawData.forEach((dropJson: LootTableAq40 | LootTable) => {
-        const dropUnified = getUnifiedEntry(instance, dropJson);
-        
+    let unifiedData: DropUnified[];
+    if (instance === 'aq40') {
+        unifiedData = (rawData as LootTableAq40[]).map(getUnifiedEntryAq40)
+    } else {
+        unifiedData = (rawData as LootTable[]).map(getUnifiedEntryDefault)
+    }
+
+    const mainItems = unifiedData.filter((drop) => typeof(drop.groupedWith) !== 'number')
+    const groupedItems = unifiedData.filter((drop) => typeof(drop.groupedWith) === 'number')
+
+    mainItems.forEach((dropUnified: DropUnified) => {
         dropUnified.bosses.forEach(bossName => {
             if (!bossName) return;
     
@@ -109,6 +128,7 @@ const parseLootTable = (instance: Instance, rawData: LootTableAq40[] | LootTable
                     hidden: dropUnified.hidden,
                     icon: dropUnified.icon,
                 },
+                groupedItems: [],
                 instance,
             };
             
@@ -129,6 +149,26 @@ const parseLootTable = (instance: Instance, rawData: LootTableAq40[] | LootTable
             globalBossDropIdMap[dropUnified.id] = drop;
         })
     })
+
+    groupedItems.forEach((dropUnified: DropUnified) => {
+        if (dropUnified.groupedWith === undefined) {
+            return;
+        }
+
+        const item: Item = {
+            id: dropUnified.id,
+            name: dropUnified.name,
+            restricted: dropUnified.restricted,
+            hidden: dropUnified.hidden,
+            icon: dropUnified.icon,
+        };
+
+        const parentDrop = globalBossDropIdMap[dropUnified.groupedWith];
+        parentDrop.groupedItems.push(item);
+
+        globalBossDropIdMap[dropUnified.id] = parentDrop;
+        globalBossDropNameMap[dropUnified.name] = parentDrop;
+    });
 
     for (const [, boss] of Object.entries(lootTable.bossMap)) {
         boss.drops.sort((a,b) => a.item.name.localeCompare(b.item.name))
@@ -166,11 +206,26 @@ export const getBoss = (bossName: string): Boss => {
 };
 
 export const getItem = (item: string | number): Item => {
+    const drop = globalBossDropNameMap[item];
     if (typeof(item) === 'string' && item in globalBossDropNameMap) {
-        return globalBossDropNameMap[item].item;
+        if (drop.item.name === item) {
+            return drop.item;
+        }
+        const groupedItem = drop.groupedItems.find((grouped) => grouped.name === item);
+        if (groupedItem) {
+            return groupedItem;
+        }
+        throw Error(`Missing grouped item ${item} inside ${drop.item.name}`);
     }
     if (typeof(item) === 'number' && item in globalBossDropIdMap) {
-        return globalBossDropIdMap[item].item;
+        if (drop.item.id === item) {
+            return drop.item;
+        }
+        const groupedItem = drop.groupedItems.find((grouped) => grouped.id === item);
+        if (groupedItem) {
+            return groupedItem;
+        }
+        throw Error(`Missing grouped item ${item} inside ${drop.item.name}`);
     }
     throw Error(`Unknown item ${item}`);
 };

@@ -964,5 +964,229 @@
         "slot": "",
         "icon": "inv_scroll_04",
         "source": "Recipes"
+    },
+    {
+        "id": 34405,
+        "name": "Helm of Arcane Purity",
+        "slot": "",
+        "icon": "inv_helmet_132",
+        "source": "Kil'jaeden",
+        "groupedWith": 34339
+    },
+    {
+        "id": 34406,
+        "name": "Gloves of Tyri's Power",
+        "slot": "",
+        "icon": "inv_gauntlets_16",
+        "source": "Kil'jaeden",
+        "groupedWith": 34342
+    },
+    {
+        "id": 34402,
+        "name": "Shroud of Chieftain Ner'zhul",
+        "slot": "",
+        "icon": "inv_helmet128",
+        "source": "Kil'jaeden",
+        "groupedWith": 34332
+    },
+    {
+        "id": 34406,
+        "name": "Demontooth Shoulderpads",
+        "slot": "",
+        "icon": "inv_shoulder_88",
+        "source": "Eredar Twins",
+        "groupedWith": 34195
+    },
+    {
+        "id": 34403,
+        "name": "Cover of Ursoc the Mighty",
+        "slot": "",
+        "icon": "inv_helmet_126",
+        "source": "Kil'jaeden",
+        "groupedWith": 34245
+    },
+    {
+        "id": 34381,
+        "name": "Felstrength Legplates",
+        "slot": "",
+        "icon": "inv_pants_plate_21",
+        "source": "Brutallus",
+        "groupedWith": 34180
+    },
+    {
+        "id": 34393,
+        "name": "Shoulderpads of Knowledge's Pursuit",
+        "slot": "",
+        "icon": "inv_shoulder_96",
+        "source": "Eredar Twins",
+        "groupedWith": 34202
+    },
+    {
+        "id": 34404,
+        "name": "Mask of the Fury Hunter",
+        "slot": "",
+        "icon": "inv_helmet_126",
+        "source": "Kil'jaeden",
+        "groupedWith": 34244
+    },
+    {
+        "id": 34382,
+        "name": "Judicator's Legguards",
+        "slot": "",
+        "icon": "inv_pants_plate_19",
+        "source": "Kalecgos",
+        "groupedWith": 34167
+    },
+    {
+        "id": 34394,
+        "name": "Breastplate of Agony's Aversion",
+        "slot": "",
+        "icon": "inv_chest_plate20",
+        "source": "M'uru",
+        "groupedWith": 34215
+    },
+    {
+        "id": 34383,
+        "name": "Kilt of Spiritual Reconstruction",
+        "slot": "",
+        "icon": "inv_pants_mail_15",
+        "source": "Felmyst",
+        "groupedWith": 34186
+    },
+    {
+        "id": 34395,
+        "name": "Noble Judicator's Chestguard",
+        "slot": "",
+        "icon": "inv_chest_plate18",
+        "source": "M'uru",
+        "groupedWith": 34216
+    },
+    {
+        "id": 34384,
+        "name": "Breeches of Natural Splendor",
+        "slot": "",
+        "icon": "inv_pants_leather_23",
+        "source": "Kalecgos",
+        "groupedWith": 34169
+    },
+    {
+        "id": 34396,
+        "name": "Garments of Crashing Shores",
+        "slot": "",
+        "icon": "inv_chest_chain_11",
+        "source": "M'uru",
+        "groupedWith": 34229
+    },
+    {
+        "id": 34385,
+        "name": "Leggings of the Immortal Beast",
+        "slot": "",
+        "icon": "inv_pants_leather_23",
+        "source": "Felmyst",
+        "groupedWith": 34188
+    },
+    {
+        "id": 34397,
+        "name": "Bladed Chaos Tunic",
+        "slot": "",
+        "icon": "inv_chest_leather_16",
+        "source": "M'uru",
+        "groupedWith": 34211
+    },
+    {
+        "id": 34408,
+        "name": "Gloves of the Forest Drifter",
+        "slot": "",
+        "icon": "inv_gauntlets_51",
+        "source": "M'uru",
+        "groupedWith": 34234
+    },
+    {
+        "id": 34386,
+        "name": "Pantaloons of Growing Strife",
+        "slot": "",
+        "icon": "inv_pants_cloth_14",
+        "source": "Kalecgos",
+        "groupedWith": 34170
+    },
+    {
+        "id": 34398,
+        "name": "Utopian Tunic of Elune",
+        "slot": "",
+        "icon": "inv_chest_leather_14",
+        "source": "M'uru",
+        "groupedWith": 34212
+    },
+    {
+        "id": 34409,
+        "name": "Gauntlets of the Ancient Frostwolf",
+        "slot": "",
+        "icon": "inv_gauntlets_52",
+        "source": "Trash",
+        "groupedWith": 34350
+    },
+    {
+        "id": 34388,
+        "name": "Pauldrons of Berserking",
+        "slot": "",
+        "icon": "inv_shoulder_89",
+        "source": "Eredar Twins",
+        "groupedWith": 34192
+    },
+    {
+        "id": 34399,
+        "name": "Robes of Ghostly Hatred",
+        "slot": "",
+        "icon": "inv_chest_cloth_25",
+        "source": "M'uru",
+        "groupedWith": 34233
+    },
+    {
+        "id": 34389,
+        "name": "Spaulders of the Thalassian Defender",
+        "slot": "",
+        "icon": "inv_shoulder_89",
+        "source": "Eredar Twins",
+        "groupedWith": 34193
+    },
+    {
+        "id": 34400,
+        "name": "Crown of Dath'Remar",
+        "slot": "",
+        "icon": "inv_helmet_08",
+        "source": "Kil'jaeden",
+        "groupedWith": 34345
+    },
+    {
+        "id": 34390,
+        "name": "Erupting Epaulets",
+        "slot": "",
+        "icon": "inv_shoulder_90",
+        "source": "Eredar Twins",
+        "groupedWith": 34208
+    },
+    {
+        "id": 34401,
+        "name": "Helm of Uther's Resolve",
+        "slot": "",
+        "icon": "inv_helmet_25",
+        "source": "Kil'jaeden",
+        "groupedWith": 34243
+    },
+    {
+        "id": 34391,
+        "name": "Spaulders of Devastation",
+        "slot": "",
+        "icon": "inv_shoulder_88",
+        "source": "Eredar Twins",
+        "groupedWith": 34209
+    },
+    {
+        "id": 34407,
+        "name": "Tranquil Moonlight Wraps",
+        "slot": "",
+        "icon": "inv_gauntlets_51",
+        "source": "Trash",
+        "groupedWith": 34351
     }
 ]

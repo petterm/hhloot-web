@@ -40,6 +40,13 @@ const DropRow = ({ drop, hideReceived, masterlooter, oldMembers, instance, onSel
         <div className={styles.wrap}>
             <div className={styles.item}>
                 <ItemLink item={drop.item} size='tiny' />
+                {drop.groupedItems.length > 0 && (
+                    <div className={styles.groupedItems}>
+                        {drop.groupedItems.map(item => (
+                            <ItemLink item={item} size='tiny' key={`group-item-${item.id}`} />
+                        ))}
+                    </div>
+                )}
             </div>
             <div className={styles.players}>
                 {scores.map(({ player, playerEntry, scores }, index) => (
