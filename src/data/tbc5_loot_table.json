@@ -697,7 +697,8 @@
         "name": "Thori'dal, the Stars' Fury",
         "slot": "Ranged",
         "icon": "inv_weapon_bow_39",
-        "source": "Kil'Jaeden"
+        "source": "Kil'Jaeden",
+        "hidden": true
     },
     {
         "id": 34349,
