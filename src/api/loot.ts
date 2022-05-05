@@ -206,8 +206,8 @@ export const getBoss = (bossName: string): Boss => {
 };
 
 export const getItem = (item: string | number): Item => {
-    const drop = globalBossDropNameMap[item];
     if (typeof(item) === 'string' && item in globalBossDropNameMap) {
+        const drop = globalBossDropNameMap[item];
         if (drop.item.name === item) {
             return drop.item;
         }
@@ -218,6 +218,7 @@ export const getItem = (item: string | number): Item => {
         throw Error(`Missing grouped item ${item} inside ${drop.item.name}`);
     }
     if (typeof(item) === 'number' && item in globalBossDropIdMap) {
+        const drop = globalBossDropIdMap[item];
         if (drop.item.id === item) {
             return drop.item;
         }
