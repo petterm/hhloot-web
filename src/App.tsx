@@ -18,7 +18,7 @@ function App() {
     const [error, setError] = useState<Error>();
     const [loginPlayer, setLoginPlayer] = useState<Player | undefined>();
 
-    let instance: Instance = 'tbc3';
+    let instance: Instance = 'tbc5';
 
     const pathParts = window.location.pathname.split('/');
     const path = pathParts[pathParts.length - 1];
@@ -38,7 +38,7 @@ function App() {
                 loginPlayerName = playerName;
             })
             // TEMPORARY skip reservations unless logged in as admin until all members have made lists
-            .then(() => fetchData(instance, instance === 'tbc3' && !!loginPlayerName))
+            .then(() => fetchData(instance, false)) // instance === 'tbc3' && !!loginPlayerName))
             .then(() => prepareData())
             .then(() => setIsLoaded(true))
             .catch((error) => {
