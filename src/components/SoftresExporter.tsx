@@ -1,5 +1,12 @@
-import React from "react";
-import { Boss, BossDrop, Player, SoftresitPlayerPayload } from "../types";
+import React, { useState } from "react";
+import {
+  Boss,
+  BossDrop,
+  Player,
+  SoftresitPlayerPayload,
+  SoftresitRaidPayload,
+  SoftresitRaidResponse,
+} from "../types";
 import axios from "axios";
 
 type SoftresExporterProps = { bosses: Boss[]; players: Player[] };
@@ -15,6 +22,10 @@ interface PlayerWithReserves {
 }
 
 const SoftresExporter = ({ bosses, players }: SoftresExporterProps) => {
+  const [loading, setLoading] = useState(false);
+  const [raidId, setRaidId] = useState<string>("");
+  const [raidToken, setRaidToken] = useState<string>("");
+
   const createSoftresList = (): PlayerWithReserves[] => {
     const nonReceived = (
       reservation: BossDrop["reservations"][number]
@@ -56,9 +67,13 @@ const SoftresExporter = ({ bosses, players }: SoftresExporterProps) => {
     const playerNameWithReserves = playersWithContestingReserve.map(
       (playerName) => ({
         player: players.find((p) => p.name === playerName)!,
-        items: dropsWithContestingReserves
-          .filter((drop) => drop.players.includes(playerName))
-          .map((drop) => drop.id),
+        items: Array.from(
+          new Set(
+            dropsWithContestingReserves
+              .filter((drop) => drop.players.includes(playerName))
+              .map((drop) => drop.id)
+          )
+        ),
       })
     );
 
@@ -85,26 +100,72 @@ const SoftresExporter = ({ bosses, players }: SoftresExporterProps) => {
     };
   };
 
-  const addReservesToRaid = () => {
+  const createRaid = async (): Promise<SoftresitRaidResponse> => {
+    const payload: SoftresitRaidPayload = {
+      allowDuplicate: true,
+      amount: 10,
+      banned: [],
+      discord: false,
+      edition: "tbc",
+      faction: "Alliance",
+      hideReserves: false,
+      instance: "sunwellplateau",
+      itemLimit: 0,
+      plusModifier: 1,
+      restrictByClass: false,
+    };
+    const data = (
+      await axios.post(`https://softres.it/api/raid/create`, payload)
+    ).data as SoftresitRaidResponse;
+    return data;
+  };
+
+  const addReservesToRaid = async () => {
+    setLoading(true);
+    const TTP = 400;
+    const { raidId, token } = await createRaid();
     const list = createSoftresList();
-    // replace with id from recently created raid
-    const raidId = "";
-    // replace with token from recently created raid
-    const token = "";
     const playerPayloads = list.map((item) =>
       convertPlayerToPayload(item, token)
     );
 
-    // This n
     playerPayloads.forEach((payload, index) => {
       setTimeout(() => {
         const data = payload;
         axios.post(`https://softres.it/api/raid/reserve/${raidId}`, data);
-      }, index * 250);
+      }, index * TTP);
     });
+
+    setTimeout(() => {
+      setLoading(false);
+      setRaidId(raidId);
+      setRaidToken(token);
+    }, playerPayloads.length * TTP);
   };
 
-  return <button onClick={addReservesToRaid}>Export to softres.it</button>;
+  return (
+    <div>
+      <br></br>
+      {!raidToken && !loading && (
+        <button onClick={addReservesToRaid}>Export to softres.it</button>
+      )}
+      {loading && <h3>Creating softres - do not change or close tabs</h3>}
+      {raidId && (
+        <p>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={`https://softres.it/raid/${raidId}`}
+          >{`https://softres.it/raid/${raidId}`}</a>
+        </p>
+      )}
+      {raidToken && (
+        <p>
+          Your token is <code>{raidToken}</code>
+        </p>
+      )}
+    </div>
+  );
 };
 
 export default SoftresExporter;

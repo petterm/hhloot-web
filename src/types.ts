@@ -115,7 +115,6 @@ export interface SoftresitRaidPayload {
   allowDuplicate: boolean;
   amount: number;
   banned: number[];
-  characterNotes: boolean;
   discord: boolean;
   edition: "tbc";
   faction: "Alliance";
