@@ -108,36 +108,3 @@ export interface EntryScore {
   attendance: number;
   total: number;
 }
-
-// Softres.it payloads and responses
-
-export interface SoftresitRaidPayload {
-  allowDuplicate: boolean;
-  amount: number;
-  banned: number[];
-  discord: boolean;
-  edition: "tbc";
-  faction: "Alliance";
-  hideReserves: boolean;
-  instance: "sunwellplateau";
-  itemLimit: 0;
-  plusModifier: 1;
-  restrictByClass: boolean;
-}
-
-/**
- * This response is considerably larger, but we only care about these two fields.
- */
-export interface SoftresitRaidResponse {
-  raidId: string;
-  token: string;
-}
-
-export interface SoftresitPlayerPayload {
-  payload: {
-    class: string;
-    items: number[];
-    name: string;
-  };
-  token: string;
-}
