@@ -1,7 +1,7 @@
 import moment, { Moment } from 'moment';
 import { Class, Instance, InstanceData } from "./types";
 
-export const instances: Instance[] = ['aq40', 'naxx', 'tbc1', 'tbc2', 'tbc3', 'tbc5'];
+export const instances: Instance[] = ['aq40', 'naxx', 'tbc1', 'tbc2', 'tbc3', 'tbc5', 'wotlk1'];
 export const instanceData: Record<Instance, InstanceData> = {
     'aq40': {
         name: 'AQ40',
@@ -57,13 +57,23 @@ export const instanceData: Record<Instance, InstanceData> = {
         itemScores: [100, 90, 80, 70, 65, 60, 55, 54, 53, 52],
         scoreGroupEdges: [80, 60],
     },
+    'wotlk1': {
+        name: 'Naxx, Obsidian Sanctum & Eye of Eternity',
+        image: 'ui-ej-boss-kelthuzad.png',
+        bonusRaidStartDate: moment('2022-10-09'),
+        lootSheetID: '1vzK9lPih35GSUPbxLreslyihxPSSIXhS3JW_GWRf7Lw',
+        lootSheetTab: 'LootWOTLK1',
+        itemScores: [100, 90, 80, 70, 65, 60, 55, 54, 53, 52],
+        scoreGroupEdges: [80, 60],
+    }
 }
 
 export const classes: Class[] = [
-    'DRUID', 'HUNTER', 'MAGE', 'PALADIN', 'PRIEST', 'ROGUE', 'SHAMAN', 'WARLOCK', 'WARRIOR'
+    'DEATH KNIGHT', 'DRUID', 'HUNTER', 'MAGE', 'PALADIN', 'PRIEST', 'ROGUE', 'SHAMAN', 'WARLOCK', 'WARRIOR'
 ]
 
 export const classColor: {[C in Class]: string} = {
+    'DEATH KNIGHT': '#C41E3A',
     DRUID: '#FF7D0A',
     HUNTER: '#A9D271',
     MAGE: '#40C7EB',
@@ -77,4 +87,5 @@ export const classColor: {[C in Class]: string} = {
 
 export const rollPointsWindow = 3;
 export const tbcAttendanceStartDate: Moment = moment('2021-06-13');
+export const wotlkAttendanceStartDate: Moment = moment('2022-10-09');
 export const attendanceRaidCount = 6;

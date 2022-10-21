@@ -1,7 +1,7 @@
 import Axios, { AxiosResponse } from "axios";
 import moment from 'moment';
 import { getInstanceData } from ".";
-import { tbcAttendanceStartDate } from "../constants";
+import { wotlkAttendanceStartDate } from "../constants";
 import { Class, GuildRank, Instance, InstanceData, Player } from "../types";
 import { LoginStatusResponse, PlayersResponse, PlayersResponseRaid, ReservationsResponse } from "./apiTypes";
 import { getItem } from "./loot";
@@ -41,7 +41,7 @@ const saveAndFormatPlayers: (instance: Instance, instanceData: InstanceData) => 
         for (const i in players) {
             const player = players[i];
             playerMap[player.name] = {
-                attendedRaids: player.raidAttendance.filter(raid => !isTBCRaid(instance) || !raid.date || tbcAttendanceStartDate.isBefore(raid.date))
+                attendedRaids: player.raidAttendance.filter(raid => !isTBCRaid(instance) || !raid.date || wotlkAttendanceStartDate.isBefore(raid.date))
                     .map(raid => ({
                         attendanceValue: raid.attendance,
                         date: raid.date,

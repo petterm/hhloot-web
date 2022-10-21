@@ -18,7 +18,7 @@ function App() {
     const [error, setError] = useState<Error>();
     const [loginPlayer, setLoginPlayer] = useState<Player | undefined>();
 
-    let instance: Instance = 'tbc5';
+    let instance: Instance = 'wotlk1';
 
     const pathParts = window.location.pathname.split('/');
     const path = pathParts[pathParts.length - 1];

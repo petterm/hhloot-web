@@ -38,7 +38,7 @@ const ItemLink = ({ item, noText, noTextLink, size }: ItemLinkProps) => {
 
     return (
         <div className={wrapClass.join(' ')}>
-            <a href={`https://tbc.wowhead.com/item=${item.id}`} target='_blank' className={style.wrap} rel="noopener noreferrer" >
+            <a href={`https://www.wowhead.com/wotlk/item=${item.id}`} target='_blank' className={style.wrap} rel="noopener noreferrer" >
                 <span className={iconClass.join(' ')} style={iconStyle} />
                 {noText || noTextLink ? null : (
                     <span className={style.text}>

@@ -2,12 +2,12 @@ import { Moment } from "moment";
 
 export type ItemScore = 100 | 90 | 80 | 70 | 65 | 60 | 55 | 54 | 53 | 52 | 10;
 
-export type Class = 'DRUID' | 'HUNTER' | 'MAGE' | 'PALADIN' | 'PRIEST' | 'ROGUE' | 'SHAMAN' | 'WARLOCK' | 'WARRIOR';
+export type Class = 'DEATH KNIGHT' | 'DRUID' | 'HUNTER' | 'MAGE' | 'PALADIN' | 'PRIEST' | 'ROGUE' | 'SHAMAN' | 'WARLOCK' | 'WARRIOR';
 
 export type Date = string;
 export type GuildRank = 'Guild Master' | 'Officer' | 'Officer alt' | 'Member' | 'Initiate' | 'Social' | 'Alt';
 export type PlayerName = string;
-export type Instance = 'aq40' | 'naxx' | 'tbc1' | 'tbc2' | 'tbc3' | 'tbc5';
+export type Instance = 'aq40' | 'naxx' | 'tbc1' | 'tbc2' | 'tbc3' | 'tbc5' | 'wotlk1';
 
 export interface InstanceData {
     name: string,
