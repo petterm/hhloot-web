@@ -239,3 +239,19 @@ export const getItemIcon = (id: number) => {
     if (iconID) return iconID;
     throw Error(`Missing icon id for item ${id}`);
 };
+
+const dropToExportLine = (drop: BossDrop): string[] => {
+    const line: string[] = [String(drop.item.id)];
+    drop.reservations.forEach((res) => {
+        line.push([res.playerName, String(res.entry.calcualtedScore?.total)].join(':'))
+    });
+    return line;
+}
+
+// ID,Name:Score,Name:Score;ID,Name:Score
+export const exportLootForGame = (instance: Instance): string => 
+    Object.values(globalBossDropIdMap)
+        .filter(drop => drop.reservations.filter(res => !res.entry.received).length > 0)
+        .map(dropToExportLine)
+        .map(line => line.join(','))
+        .join(';');

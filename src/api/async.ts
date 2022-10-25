@@ -6,6 +6,7 @@ import { Class, GuildRank, Instance, InstanceData, Player } from "../types";
 import { LoginStatusResponse, PlayersResponse, PlayersResponseRaid, ReservationsResponse } from "./apiTypes";
 import { getItem } from "./loot";
 import { getSheet } from "./sheets";
+import reservationsTest from "../data/reservations_test.json";
 
 type Loot = {
     character: string,
@@ -85,14 +86,17 @@ const saveAndFormatReceivedLoot: (instance: Instance, instanceData: InstanceData
         return raids;
     }
 
-const fetchReservations = (instance: Instance): Promise<ReservationsResponse> => Axios.get<ReservationsResponse>('/api/reservations/approved',  {
-    params: { instance }
-})
-    .then(({ data }) => data)
-    .catch(({ error }) => {
-        console.error(error);
-        return [];
-    });
+const fetchReservations = (instance: Instance): Promise<ReservationsResponse> => 
+    process.env.NODE_ENV === 'development' && instance === 'wotlk1' ?
+    Promise.resolve(reservationsTest as ReservationsResponse) :
+    Axios.get<ReservationsResponse>('/api/reservations/approved', {
+        params: { instance }
+    })
+        .then(({ data }) => data)
+        .catch(({ error }) => {
+            console.error(error);
+            return [];
+        });
 
 export const fetchData = (instance: Instance, skipReservations: Boolean) => {
     const instanceData = getInstanceData(instance);
@@ -120,7 +124,7 @@ export const fetchData = (instance: Instance, skipReservations: Boolean) => {
 
 export const checkLogin = () =>
     // process.env.NODE_ENV === 'development' ? Promise.resolve(undefined) :
-    process.env.NODE_ENV === 'development' ? Promise.resolve('Lunaei') :
+    process.env.NODE_ENV === 'development' ? Promise.resolve('Calavera') :
     Axios.get<LoginStatusResponse>('/api/loginstatus')
         .then(({ data }) => data.authenticated ? data.character : undefined)
         .catch(() => undefined)

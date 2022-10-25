@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { exportLootForGame } from '../api/loot';
 import { Boss, Player, BossDrop, Instance } from '../types'
 import BossEntry from './BossEntry';
 import style from './BossList.module.css';
@@ -37,6 +38,11 @@ const BossList = ({ bosses, instance }: BossListProps) => {
         localStorageSet("oldMembers", value);
     }
 
+    const [showMLExport, setShowMLExportInner] = useState(localStorage.getItem("showMLExport") ? true : false);
+    const setShowMLExport = (value: boolean) => {
+        setShowMLExportInner(value);
+        localStorageSet("showMLExport", value);
+    }
 
     const [lootPlayer, setLootPlayer] = useState<LootPlayer>();
 
@@ -84,7 +90,22 @@ const BossList = ({ bosses, instance }: BossListProps) => {
                     />
                     Show old members
                 </label>
+                {" - "}
+                <label style={{ cursor: "pointer" }}>
+                    <input
+                        type='checkbox'
+                        style={{ marginRight: 5, cursor: "pointer" }}
+                        checked={showMLExport}
+                        onChange={() => setShowMLExport(!showMLExport)}
+                    />
+                    Show MasterLooter export
+                </label>
             </div>
+            {showMLExport && (
+                <div>
+                    <textarea readOnly value={exportLootForGame(instance)} />
+                </div>
+            )}
             <div>
                 {bosses.map(boss => (
                     <BossEntry
