@@ -242,7 +242,7 @@ export const getItemIcon = (id: number) => {
 
 const dropToExportLine = (drop: BossDrop): string[] => {
     const line: string[] = [String(drop.item.id)];
-    drop.reservations.forEach((res) => {
+    drop.reservations.filter(res => !res.entry.received).forEach((res) => {
         line.push([res.playerName, String(res.entry.calcualtedScore?.total)].join(':'))
     });
     return line;
