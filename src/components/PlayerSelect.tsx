@@ -2,8 +2,9 @@ import React from 'react';
 import { Player } from '../types'
 import { classColor } from '../constants';
 import { getPlayers } from '../api/async';
-import Select, { ActionMeta, StylesConfig, ValueType } from 'react-select';
-import { ThemeConfig } from 'react-select/src/theme';
+import Select, { ActionMeta, StylesConfig, ThemeConfig } from 'react-select';
+
+type PlayerOption = {value: Player, label: string};
 
 const getOptions = (officers: boolean) => {
     let players = Object.values(getPlayers());
@@ -19,14 +20,14 @@ const getOptions = (officers: boolean) => {
     }));
 }
 
-const optionStyles: StylesConfig = {
-    option: (styles, { data }: { data: { label: string, value: Player }}) => ({
-        ...styles,
-        color: data.value.class ? classColor[data.value.class] : '#888'
+const optionStyles: StylesConfig<PlayerOption> = {
+    option: (baseStyles, { data: { value }}) => ({
+        ...baseStyles,
+        color: value.class ? classColor[value.class] : '#888',
     }),
-    singleValue: (styles, { data }: { data: { label: string, value: Player }}) => ({
-        ...styles,
-        color: data.value.class ? classColor[data.value.class] : '#888'
+    singleValue: (baseStyles, { data: { value }}) => ({
+        ...baseStyles,
+        color: value.class ? classColor[value.class] : '#888',
     }),
 }
 
@@ -52,8 +53,8 @@ const themeStyles: ThemeConfig = (theme) => ({
         neutral80: 'hsl(0, 0%, 55%)',
         neutral90: 'hsl(0, 0%, 600%)',
     },
+});
 
-type PlayerOption = {value: Player, label: string};
 
 const selectPlayer = (callback: (player: Player | undefined) => void) =>
     (option: PlayerOption | null, action: ActionMeta<PlayerOption>) => {
@@ -76,6 +77,7 @@ const PlayerSelect: React.FunctionComponent<PlayerSelectProps> = ({
 }) => (
     <Select
         isClearable={isClearable}
+        isMulti={false}
         onChange={selectPlayer(onChange)}
         options={getOptions(officers || false)}
         placeholder={placeholder}
