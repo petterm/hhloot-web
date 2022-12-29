@@ -6,29 +6,34 @@ import { getBossDrops } from './loot';
 const markReceivedItems = () => {
     const playerMap = getPlayers();
     const bossDropMap = getBossDrops();
-    const raids = getRaids()
+    const raids = getRaids();
+
     for (let i in raids) {
         const raid = raids[i];
         for (let j in raid.loot) {
             const lootEvent = raid.loot[j];
-            const player = playerMap[lootEvent.character];
 
-            // Award item
-            if (player) {
-                const playerSlots = player.scoreSlots;
-                const index = playerSlots.findIndex(
-                    entry => !entry.received && entry.item && entry.item.name === lootEvent.item
-                );
-                if (index !== -1) {
-                    playerSlots[index].received = raid.date;
+            if (lootEvent.character) {
+                const player = playerMap[lootEvent.character];
+                // Award item
+                if (player) {
+                    const playerSlots = player.scoreSlots;
+                    const index = playerSlots.findIndex(
+                        entry => !entry.received && entry.item && entry.item.name === lootEvent.item
+                    );
+                    if (index !== -1) {
+                        playerSlots[index].received = raid.date;
+                        raid.stats.reserved++;
+                    } else {
+                        bossDropMap[lootEvent.item].freeLoot.push({
+                            playerName: player.name,
+                            date: raid.date,
+                        });
+                        raid.stats.free++;
+                    }
                 } else {
-                    bossDropMap[lootEvent.item].freeLoot.push({
-                        playerName: player.name,
-                        date: raid.date,
-                    });
+                    console.warn('Loot event for unknown player', lootEvent.character);
                 }
-            } else {
-                console.warn('Loot event for unknown player', lootEvent.character);
             }
 
             // Add bonus event for player

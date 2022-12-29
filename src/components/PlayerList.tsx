@@ -5,6 +5,7 @@ import ItemLink from './ItemLink';
 import PlayerName from './PlayerName';
 import { getAttendanceBonus } from '../api/points';
 import { getInstanceData } from '../api';
+import style from './PlayerList.module.css';
 
 type PlayerListProps = { players: Player[], instance: Instance };
 const PlayerList = ({ players, instance }: PlayerListProps) => {
@@ -13,49 +14,35 @@ const PlayerList = ({ players, instance }: PlayerListProps) => {
     return (
         <div>
             <h1>Player list</h1>
-            <table style={{ borderSpacing: 0 }}>
+            <table className={style.mainTable}>
                 <tbody>
                     {players.map((player, index) => (
                         <tr
                             key={player.name}
-                            style={{
-                                backgroundColor: index % 2 === 0 ? 'none' : '#222',
-                            }}
+                            className={style.row}
                         >
-                            <td style={{
-                                padding: '5px 20px 5px 5px',
-                                borderBottom: '1px solid #333',
-                                borderTop: index ? 'none' : '1px solid #333',
-                                fontStyle: player.guildRank === 'Initiate' ? 'italic' : '',
-                            }}>
+                            <td className={[
+                                style.cell,
+                                style.cellName,
+                                player.guildRank === 'Initiate' ? style.cellNameInitiate : ''
+                            ].join(' ')}>
                                 <Link to={`/players/${player.name}`} style={{ textDecoration: 'none' }}>
                                     <PlayerName player={player} />
                                 </Link>
                             </td>
                             {player.scoreSlots.map(slot => (
-                                <td key={slot.score} style={{
-                                    textAlign: 'center',
-                                    backgroundColor: slot.received ? '#1d3d1d' : 'none',
-                                    padding: '0 8px',
-                                    borderBottom: '1px solid #333',
-                                    borderTop: index ? 'none' : '1px solid #333',
-                                    borderRight: instanceData.scoreGroupEdges.includes(slot.score) ? '2px solid #333' : 'none',
-                                }}>
+                                <td key={slot.score} className={[
+                                    style.cell,
+                                    style.cellSlot,
+                                    slot.received ? style.cellSlotReceived : '',
+                                    instanceData.scoreGroupEdges.includes(slot.score) ? style.cellSlotGroupEdge : ''
+                                ].join(' ')}>
                                     {slot.item ? (
                                         <ItemLink item={slot.item} noText size='small' />
                                     ) : '-'}
                                 </td>
                             ))}
-                            <td style={{
-                                    padding: '0 8px',
-                                    borderBottom: '1px solid #333',
-                                    borderTop: index ? 'none' : '1px solid #333',
-                                    borderLeft: '2px solid #333',
-                                    fontSize: 12,
-                                    color: '#aaa',
-                                    textAlign: 'right',
-                                    paddingLeft: 10,
-                            }}>
+                            <td className={[style.cell, style.cellAttendance].join(' ')}>
                                 {getAttendanceBonus(player) * 10} %
                             </td>
                         </tr>

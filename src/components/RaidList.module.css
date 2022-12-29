@@ -1,0 +1,31 @@
+.mainTable {
+    border-spacing: 0;
+}
+
+.row {
+    background-color: none;
+}
+
+.row:nth-child(2n) {
+    background-color: #222;
+}
+
+.headerCell {
+    padding: 0 8px;
+    text-align: left;
+}
+
+.cell {
+    padding: 0 8px;
+    border-bottom: 1px solid #333;
+    text-align: right;
+}
+
+.row:first .cell {
+    border-top: 1px solid #333;
+}
+
+.cellDate {
+    padding: 5px 20px 5px 5px;
+    text-align: left;
+}

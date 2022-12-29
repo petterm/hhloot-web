@@ -9,7 +9,7 @@ import { getSheet } from "./sheets";
 import reservationsDevApproved from "../data/reservations_approved.json";
 
 type Loot = {
-    character: string,
+    character?: string,
     item: string,
     bonusCharacters: string[],
 };
@@ -19,6 +19,11 @@ type PlayerMap = {
 export type Raid = {
     date: string,
     loot: Loot[],
+    stats: {
+        reserved: number,
+        free: number,
+        total: number,
+    }
 }
 
 let raids: Raid[];
@@ -67,11 +72,11 @@ const saveAndFormatReceivedLoot: (instance: Instance, instanceData: InstanceData
             const row = sheetRows[index];
             const [date, character, item] = row;
             const bonusPlayers = row.slice(3).filter(val => !!val.length);
-            if (date && date.length && character && character.length && item && item.length) {
-                if (!raidsRaw[date]) raidsRaw[date] = { date, loot: [] };
+            if (date && date.length && item && item.length) {
+                if (!raidsRaw[date]) raidsRaw[date] = { date, loot: [], stats: { free: 0, reserved: 0, total: 0} };
 
                 const loot: Loot = {
-                    character,
+                    character: character && character.length ? character : undefined,
                     item,
                     bonusCharacters: [],
                 };
@@ -79,6 +84,7 @@ const saveAndFormatReceivedLoot: (instance: Instance, instanceData: InstanceData
                     loot.bonusCharacters.push(bonusPlayers[y]);
                 }
                 raidsRaw[date].loot.push(loot);
+                raidsRaw[date].stats.total++;
             }
         });
 

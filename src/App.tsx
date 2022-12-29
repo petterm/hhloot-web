@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { HashRouter as Router, Link, Routes, Route, Navigate } from 'react-router-dom';
-import { checkLogin, fetchData, getPlayers } from './api/async';
+import { checkLogin, fetchData, getPlayers, getRaids } from './api/async';
 import { getInstanceData, getPlayer, prepareData } from './api';
 import PlayerList from './components/PlayerList';
 import PlayerDetails from './components/PlayerDetails';
 import BossList from './components/BossList';
+import RaidList from './components/RaidList';
 import ReservationsStart from './components/reservation/ReservationsStart';
 import { getBosses } from './api/loot';
 import { Instance, Player, PlayerName } from './types';
@@ -73,6 +74,8 @@ function App() {
                             {" - "}
                             <Link to="players">Players</Link>
                             {" - "}
+                            <Link to="raids">Raids</Link>
+                            {" - "}
                             <Link to="reservations">Update reservations</Link>
                             {loginPlayer === undefined ? (
                                 <>
@@ -98,6 +101,9 @@ function App() {
                                     <PlayerDetails instance={instance} />
                                 </InvalidPlayerHandler>
                             }/>
+                            <Route path="raids" element={
+                                <RaidList raids={getRaids()} />
+                            } />
                             <Route path="reservations/admin/:playerName?/:entryId?" element={
                                 loginPlayer ? (
                                     <AdminReservations instance={instance} loginPlayer={loginPlayer} />

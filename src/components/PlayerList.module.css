@@ -1,0 +1,49 @@
+.mainTable {
+    border-spacing: 0;
+}
+
+.row {
+    background-color: none;
+}
+
+.row:nth-child(2n) {
+    background-color: #222;
+}
+
+.cell {
+    padding: 0 8px;
+    border-bottom: 1px solid #333;
+    border-top: 1px solid #333;
+}
+
+.row:first .cell {
+    border-top: none;
+}
+
+.cellName {
+    padding: 5px 20px 5px 5px;
+}
+
+.cellNameInitiate {
+    font-style: italic;
+}
+
+.cellSlot {
+    text-align: center;
+}
+
+.cellSlotGroupEdge {
+    border-right: 2px solid #333;
+}
+
+.cellSlotReceived {
+    background-color: #1d3d1d;
+}
+
+.cellAttendance {
+    border-left: 2px solid #333;
+    font-size: 12px;
+    color: #aaa;
+    text-align: right;
+    padding-left: 10;
+}
