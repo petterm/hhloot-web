@@ -6,7 +6,7 @@ import { Class, GuildRank, Instance, InstanceData, Player } from "../types";
 import { LoginStatusResponse, PlayersResponse, PlayersResponseRaid, ReservationsResponse } from "./apiTypes";
 import { getItem } from "./loot";
 import { getSheet } from "./sheets";
-import reservationsTest from "../data/reservations_test.json";
+import reservationsDevApproved from "../data/reservations_approved.json";
 
 type Loot = {
     character: string,
@@ -88,7 +88,7 @@ const saveAndFormatReceivedLoot: (instance: Instance, instanceData: InstanceData
 
 const fetchReservations = (instance: Instance): Promise<ReservationsResponse> => 
     process.env.NODE_ENV === 'development' && instance === 'wotlk1' ?
-    Promise.resolve(reservationsTest as ReservationsResponse) :
+    Promise.resolve(reservationsDevApproved as ReservationsResponse) :
     Axios.get<ReservationsResponse>('/api/reservations/approved', {
         params: { instance }
     })

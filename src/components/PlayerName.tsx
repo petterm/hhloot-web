@@ -13,6 +13,7 @@ const PlayerName: React.FunctionComponent<PlayerNameProps> = ({ player }) => {
     );
 }
 
-export const formatName = (name: string) => name.substr(0, 1).toUpperCase() + name.substr(1).toLowerCase();
+export const formatName = (name: string) =>
+    name.substring(0, 1).toUpperCase() + name.substring(1).toLowerCase();
 
 export default PlayerName;

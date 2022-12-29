@@ -1,6 +1,6 @@
 import moment from 'moment';
 import React from 'react';
-import { Link, useRouteMatch } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { AdminReservationsEntry } from '../../api/reservations';
 import PlayerName from '../PlayerName';
 import style from './AdminReservationsList.module.css';
@@ -18,7 +18,6 @@ const playerName = (entry: AdminReservationsEntry) =>
     typeof(entry.player) === 'object' ? entry.player.name : entry.player;
 
 const AdminReservationsList: React.FunctionComponent<AdminReservationsListProps> = ({ entries, showAll, setShowAll }) => {
-    const match = useRouteMatch();
     const playerLists: { [player: string]: AdminReservationsEntry[] } = {};
     const approved: AdminReservationsEntry[] = [];
     const newSubmissions: AdminReservationsEntry[] = [];
@@ -70,7 +69,7 @@ const AdminReservationsList: React.FunctionComponent<AdminReservationsListProps>
                         {newSubmissions.map(entry => (
                             <tr key={entry.id} className={style.entry}>
                                 <td>
-                                    <Link to={`${match.url}/${playerName(entry)}`} style={{ textDecoration: 'none' }}>
+                                    <Link to={playerName(entry)} style={{ textDecoration: 'none' }}>
                                         {typeof(entry.player) === 'object' ? (
                                             <PlayerName player={entry.player} />
                                         ) : (
@@ -112,7 +111,7 @@ const AdminReservationsList: React.FunctionComponent<AdminReservationsListProps>
                         {approved.map(entry => (
                             <tr key={entry.id} className={style.entry}>
                                 <td>
-                                    <Link to={`${match.url}/${playerName(entry)}`} style={{ textDecoration: 'none' }}>
+                                    <Link to={playerName(entry)} style={{ textDecoration: 'none' }}>
                                         {typeof(entry.player) === 'object' ? (
                                             <PlayerName player={entry.player} />
                                         ) : (

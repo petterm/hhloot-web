@@ -1,8 +1,9 @@
 import React from 'react';
-import { Redirect } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 
 type InvalidPlayerHandlerProps = {
     path: string,
+    children?: React.ReactNode,
 }
 
 type InvalidPlayerHandlerState = {
@@ -21,7 +22,7 @@ class InvalidPlayerHandler extends React.Component<InvalidPlayerHandlerProps, In
 
     render() {
         if (this.state.hasError) {
-            return <Redirect to={this.props.path} />;
+            return <Navigate to={this.props.path} />;
         }
 
         return this.props.children;

@@ -53,10 +53,10 @@ const themeStyles: ThemeConfig = (theme) => ({
         neutral90: 'hsl(0, 0%, 600%)',
     },
 
-});
+type PlayerOption = {value: Player, label: string};
 
 const selectPlayer = (callback: (player: Player | undefined) => void) =>
-    (option: ValueType<{value: Player, label: string}>, action: ActionMeta<{value: Player, label: string}>) => {
+    (option: PlayerOption | null, action: ActionMeta<PlayerOption>) => {
         if (action.action === "select-option" && option && !('length' in option)) {
             callback(option.value);
         } else {

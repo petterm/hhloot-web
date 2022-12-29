@@ -4,6 +4,8 @@ import { Instance, Item, ItemScore, Player, PlayerName } from "../types";
 import { ReservationApprovePostRequest, ReservationApprovePostResponse,
     ReservationPostRequest, ReservationPostResponse, ReservationsResponse } from "./apiTypes";
 import { getItem } from "./loot";
+import reservationsDevApproved from "../data/reservations_approved.json";
+import reservationsDevAll from "../data/reservations_all.json";
 
 export type ReservationsList = Partial<Record<ItemScore, Item>>;
 
@@ -31,6 +33,16 @@ export type AdminReservationsEntry = {
     slots: (Item | undefined)[],
 };
 
+const debugData = (approved: boolean, player?: string) => {
+    if (player) {
+        return Promise.resolve(reservationsDevAll.filter(entry => entry.name === player) as ReservationsResponse);
+    }
+    if (approved) {
+        return Promise.resolve(reservationsDevApproved as ReservationsResponse);
+    }
+    return Promise.resolve(reservationsDevAll as ReservationsResponse);
+}
+
 export const getReservations = async (
     approved: boolean,
     instance: Instance | undefined,
@@ -43,38 +55,40 @@ export const getReservations = async (
         player: playerName || undefined,
     };
 
-    return Axios.get<ReservationsResponse>(url, { params })
-        .then(({ data }) => {
-            const filteredResult: AdminReservationsEntry[] = [];
-            data.forEach(entry => {
-                try {
-                    const player = getPlayer(entry.name);
-                    filteredResult.push({
-                        id: entry.id,
-                        player,
-                        instance: entry.instance,
-                        submitted: entry.submitted,
-                        approved: entry.approved,
-                        approvedBy: entry.approvedBy,
-                        slots: entry.slots.map(itemId => itemId ? getItem(itemId) : undefined),
-                    });
-                } catch (error) {
-                    console.warn('Found reservation for unknown player', entry.name);
-                    if (showAll) {
+    return (process.env.NODE_ENV === 'development' && instance === 'wotlk1' ?
+        debugData(approved, playerName).then(data => ({ data })) :
+        Axios.get<ReservationsResponse>(url, { params }))
+            .then(({ data }) => {
+                const filteredResult: AdminReservationsEntry[] = [];
+                data.forEach(entry => {
+                    try {
+                        const player = getPlayer(entry.name);
                         filteredResult.push({
                             id: entry.id,
-                            player: entry.name,
+                            player,
                             instance: entry.instance,
                             submitted: entry.submitted,
                             approved: entry.approved,
                             approvedBy: entry.approvedBy,
                             slots: entry.slots.map(itemId => itemId ? getItem(itemId) : undefined),
                         });
+                    } catch (error) {
+                        console.warn('Found reservation for unknown player', entry.name);
+                        if (showAll) {
+                            filteredResult.push({
+                                id: entry.id,
+                                player: entry.name,
+                                instance: entry.instance,
+                                submitted: entry.submitted,
+                                approved: entry.approved,
+                                approvedBy: entry.approvedBy,
+                                slots: entry.slots.map(itemId => itemId ? getItem(itemId) : undefined),
+                            });
+                        }
                     }
-                }
+                });
+                return filteredResult;
             });
-            return filteredResult;
-        });
 };
 
 export const approveReservation = async (reservationId: number, approver: Player): Promise<AdminReservationsEntry> => {

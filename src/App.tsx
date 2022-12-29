@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { HashRouter as Router, Link, Switch, Route, Redirect } from 'react-router-dom';
+import { HashRouter as Router, Link, Routes, Route, Navigate } from 'react-router-dom';
 import { checkLogin, fetchData, getPlayers } from './api/async';
 import { getInstanceData, getPlayer, prepareData } from './api';
 import PlayerList from './components/PlayerList';
@@ -71,9 +71,9 @@ function App() {
                             {" - "}
                             <Link to="/">Bosses</Link>
                             {" - "}
-                            <Link to="/players">Players</Link>
+                            <Link to="players">Players</Link>
                             {" - "}
-                            <Link to="/reservations">Update reservations</Link>
+                            <Link to="reservations">Update reservations</Link>
                             {loginPlayer === undefined ? (
                                 <>
                                     <span style={{ color: '#555' }}>{" - "}</span>
@@ -82,33 +82,32 @@ function App() {
                             ) : (
                                 <>
                                     {" - "}
-                                    <Link to="/reservations/admin">Admin</Link>
+                                    <Link to="reservations/admin">Admin</Link>
                                 </>
                             )}
                         </header>
-                        <Switch>
-                            <Route exact path="/">
+                        <Routes>
+                            <Route path="/" element={
                                 <BossList bosses={Object.values(getBosses(instance))} instance={instance} />
-                            </Route>
-                            <Route exact path="/players">
+                            }/>
+                            <Route path="players" element={
                                 <PlayerList instance={instance} players={Object.values(getPlayers())} />
-                            </Route>
-                            <Route path="/players/:playerName">
+                            }/>
+                            <Route path="players/:playerName" element={
                                 <InvalidPlayerHandler path="/players" >
                                     <PlayerDetails instance={instance} />
                                 </InvalidPlayerHandler>
-                            </Route>
-                            <Route path={"/reservations/admin/:playerName?/:entryId?"}>
-                                {loginPlayer ? (
+                            }/>
+                            <Route path="reservations/admin/:playerName?/:entryId?" element={
+                                loginPlayer ? (
                                     <AdminReservations instance={instance} loginPlayer={loginPlayer} />
                                 ) : (
-                                    <Redirect to={"/"} />
-                                )}
-                            </Route>
-                            <Route path="/reservations">
+                                    <Navigate to={"/"} />
+                                )}/>
+                            <Route path="reservations/*" element={
                                 <ReservationsStart instance={instance} loginPlayer={loginPlayer} />
-                            </Route>
-                        </Switch>
+                            }/>
+                        </Routes>
                     </>
                 ) : error ? (
                     <>

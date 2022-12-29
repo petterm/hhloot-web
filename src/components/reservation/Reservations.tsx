@@ -1,5 +1,5 @@
 import React, { useReducer, useState } from 'react';
-import { DndProvider, DragObjectWithType } from 'react-dnd';
+import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import { useParams } from 'react-router-dom';
 import { getInstanceData, getPlayer } from '../../api';
@@ -68,6 +68,8 @@ const localStorageReducer = (reducer: Reducer, instance: Instance): Reducer => (
 
 const Reservations: React.FunctionComponent<ReservationsProps> = ({ instance, loginPlayer, onChangePlayer }) => {
     const { playerName } = useParams<ReservationsParams>();
+    
+    if (!playerName) throw Error('Missing player name')
     const player: Player = getPlayer(formatName(playerName));
     const [state, dispatch] = useReducer(
         localStorageReducer(reducer, instance),
@@ -172,7 +174,7 @@ const Reservations: React.FunctionComponent<ReservationsProps> = ({ instance, lo
     )
 };
 
-export interface DragItem extends DragObjectWithType{
+export interface DragItem{
     item: Item,
     sourceScore?: ItemScore,
 }
@@ -181,5 +183,9 @@ export interface DropResult {
     name: string,
     type: 'SLOT' | 'TRASH',
 }
+
+export interface CollectedProps {
+    isDragging: boolean
+};
 
 export default Reservations;

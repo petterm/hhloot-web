@@ -2,7 +2,7 @@ import React from 'react';
 import { useDrag } from 'react-dnd';
 import { Item, ItemScore } from '../../types';
 import ItemLink, { hideWowheadTooltip } from '../ItemLink';
-import { DragItem, DropResult } from './Reservations';
+import { DragItem, DropResult, CollectedProps } from './Reservations';
 import style from './ReservationItem.module.css';
 
 interface ReservationItemProps {
@@ -11,25 +11,24 @@ interface ReservationItemProps {
     locked: boolean,
 };
 
-interface CollectedProps {
-    isDragging: boolean
-};
 
 const ReservationItem: React.FunctionComponent<ReservationItemProps> = ({ slotScore, item, locked }) => {
-    const [{ isDragging }, dragRef] = useDrag<DragItem, DropResult, CollectedProps>({
-        item: { type: 'ITEM', item, sourceScore: slotScore },
-        collect: (monitor) => {
-            hideWowheadTooltip();
-            return {
-                isDragging: monitor.isDragging(),
-            };
-        },
+    const [{ isDragging }, dragRef, dragRefPreview] = useDrag<DragItem, DropResult, CollectedProps>({
+        type: 'ITEM',
         canDrag: (monitor) => !locked,
+        item: () => {
+            hideWowheadTooltip();
+            return { item, sourceScore: slotScore };
+        },
     });
 
-    return (
-        <div className={style.wrap} ref={dragRef} style={{ opacity: isDragging ? 0.5 : 1 }}>
+    return isDragging ? (
+        <div className={style.wrap} ref={dragRefPreview} style={{ opacity: 0.5 }}>
             <ItemLink item={item} size='small' noTextLink />
+        </div>
+    ) : (
+        <div className={style.wrap} ref={dragRef}>
+            <ItemLink item={item} size='small' />
         </div>
     )
 };

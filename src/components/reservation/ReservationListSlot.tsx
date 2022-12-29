@@ -78,7 +78,6 @@ const ReservationListSlot: React.FunctionComponent<ReservationListSlotProps> = (
     const playerItemEntry = player.scoreSlots.find(itemEntry => itemEntry.score === slotScore)
     const playerItem = playerItemEntry && playerItemEntry.item
     const changed = playerItem === undefined ? item !== undefined : item && item.id !== (playerItem as Item).id;
-    console.log(playerItemEntry, playerItem, changed)
 
     if (changed) {
         wrapClass.push(style.wrapSlotChanged)

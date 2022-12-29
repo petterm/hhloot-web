@@ -19,7 +19,9 @@ const scoreRowClass = (instanceData: InstanceData, row: PlayerItemEntry) =>
 const PlayerDetails: React.FunctionComponent<PlayerDetailsProps> = ({ instance }) => {
     const { playerName } = useParams<PlayerDetailsParams>();
     const [helpVisible, showHelp] = useState(false);
-    const player = getPlayer(formatName(playerName));
+
+    if (!playerName) throw Error('Missing player name')
+    const player = getPlayer(formatName(playerName || 'Unknown'));
     const instanceData = getInstanceData(instance);
 
     const freeLoot: { item: Item, date: string }[] = [];

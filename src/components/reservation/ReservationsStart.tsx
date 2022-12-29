@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route, useHistory, useRouteMatch, Redirect } from 'react-router-dom';
+import { Routes, Route, useNavigate, Navigate } from 'react-router-dom';
 import Reservations from './Reservations';
 import style from './ReservationsStart.module.css';
 import PlayerSelect from '../PlayerSelect';
@@ -13,8 +13,7 @@ type ReservationsStartProps = {
 }
 
 const ReservationsStart: React.FunctionComponent<ReservationsStartProps> = ({ instance, loginPlayer }) => {
-    const history = useHistory();
-    const match = useRouteMatch();
+    const navigate = useNavigate();
     let savedPlayer: Player | undefined;
     try {
         const value = window.localStorage.getItem('selectedPlayer');
@@ -26,36 +25,36 @@ const ReservationsStart: React.FunctionComponent<ReservationsStartProps> = ({ in
     const onPlayerSelect = (player: Player | undefined) => {
         if (player) {
             window.localStorage.setItem('selectedPlayer', player.name);
-            history.push(`${match.url}/${player.name}`);
+            navigate(player.name);
         } else {
             window.localStorage.removeItem('selectedPlayer');
-            history.push(`${match.url}`);
+            navigate('.');
         }
     };
 
     return (
         <div className={style.wrap}>
-            <Switch>
-                <Route path={`${match.path}/:playerName`}>
-                    <InvalidPlayerHandler path={match.path}>
+            <Routes>
+                <Route path={':playerName'} element={
+                    <InvalidPlayerHandler path={'/'}>
                         <Reservations
                             instance={instance}
                             onChangePlayer={() => onPlayerSelect(undefined)}
                             loginPlayer={loginPlayer}
                         />
                     </InvalidPlayerHandler>
-                </Route>
-                <Route path={match.path}>
-                    {savedPlayer === undefined ? (
+                } />
+                <Route path={'/'} element={
+                    savedPlayer === undefined ? (
                         <div className={style.selectPlayer}>
                             <p>Select your character:</p>
                             <PlayerSelect onChange={onPlayerSelect} />
                         </div>
                     ) : (
-                        <Redirect to={`${match.path}/${savedPlayer.name}`} />
-                    )}
-                </Route>
-            </Switch>
+                        <Navigate to={savedPlayer.name} />
+                    )
+                } />
+            </Routes>
         </div>
     )
 };

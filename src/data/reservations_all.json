@@ -1,0 +1,1582 @@
+[
+    {
+        "id": 554,
+        "name": "Hubbe",
+        "submitted": "2022-10-04 02:11:08",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            43952,
+            40385,
+            40074,
+            40541,
+            40403,
+            40282,
+            39762,
+            40331,
+            40549,
+            43345
+        ]
+    },
+    {
+        "id": 555,
+        "name": "Ronah",
+        "submitted": "2022-10-04 17:40:16",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40396,
+            40255,
+            40432,
+            40631,
+            40637,
+            40560,
+            40399,
+            44005,
+            40625,
+            40628
+        ]
+    },
+    {
+        "id": 556,
+        "name": "Knullmaskin",
+        "submitted": "2022-10-05 10:04:32",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40396,
+            40273,
+            40255,
+            40432,
+            40399,
+            40633,
+            40627,
+            40636,
+            40639,
+            44008
+        ]
+    },
+    {
+        "id": 557,
+        "name": "Ecocosy",
+        "submitted": "2022-10-05 13:09:30",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            44005,
+            40399,
+            40625,
+            40628,
+            null,
+            null,
+            null,
+            null,
+            null,
+            40244
+        ]
+    },
+    {
+        "id": 558,
+        "name": "Ecocosy",
+        "submitted": "2022-10-05 13:15:31",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            44005,
+            40399,
+            40625,
+            40628,
+            40637,
+            40634,
+            40375,
+            null,
+            null,
+            40244
+        ]
+    },
+    {
+        "id": 559,
+        "name": "Ecocosy",
+        "submitted": "2022-10-05 13:16:07",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            44005,
+            40399,
+            40625,
+            40628,
+            40637,
+            40634,
+            40375,
+            40433,
+            null,
+            40244
+        ]
+    },
+    {
+        "id": 560,
+        "name": "Ecocosy",
+        "submitted": "2022-10-05 13:16:56",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            44005,
+            40399,
+            40625,
+            40628,
+            40637,
+            40634,
+            40375,
+            40433,
+            43345,
+            40244
+        ]
+    },
+    {
+        "id": 561,
+        "name": "Ecocosy",
+        "submitted": "2022-10-05 13:36:54",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            44005,
+            40399,
+            40625,
+            40628,
+            40637,
+            40634,
+            40375,
+            40433,
+            43345,
+            43346
+        ]
+    },
+    {
+        "id": 562,
+        "name": "Ditro",
+        "submitted": "2022-10-06 17:59:28",
+        "approved": "2022-10-13 18:59:12",
+        "approvedBy": "Hubbe",
+        "instance": "wotlk1",
+        "slots": [
+            40385,
+            40256,
+            40344,
+            40635,
+            40629,
+            40638,
+            40626,
+            40369,
+            40388,
+            40074
+        ]
+    },
+    {
+        "id": 563,
+        "name": "Hypnos",
+        "submitted": "2022-10-06 19:35:06",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40431,
+            40639,
+            44006,
+            40294,
+            40347,
+            40075,
+            40403,
+            40278,
+            40330,
+            39706
+        ]
+    },
+    {
+        "id": 564,
+        "name": "Hypnos",
+        "submitted": "2022-10-06 20:16:19",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40431,
+            40639,
+            44006,
+            40402,
+            40347,
+            40075,
+            40403,
+            40278,
+            40330,
+            39706
+        ]
+    },
+    {
+        "id": 565,
+        "name": "Ecocosy",
+        "submitted": "2022-10-06 22:59:33",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            44005,
+            40399,
+            44577,
+            40625,
+            40628,
+            40637,
+            40634,
+            40375,
+            43345,
+            43346
+        ]
+    },
+    {
+        "id": 566,
+        "name": "Strayhots",
+        "submitted": "2022-10-07 00:49:52",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40395,
+            44007,
+            39719,
+            40561,
+            40558,
+            40379,
+            40071,
+            44002,
+            44008,
+            40432
+        ]
+    },
+    {
+        "id": 567,
+        "name": "Knullmaskin",
+        "submitted": "2022-10-07 13:50:16",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40396,
+            40273,
+            40255,
+            40432,
+            40399,
+            44008,
+            44005,
+            40561,
+            40558,
+            39712
+        ]
+    },
+    {
+        "id": 568,
+        "name": "Tharionas",
+        "submitted": "2022-10-07 15:11:31",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40431,
+            40541,
+            40186,
+            40260,
+            40075,
+            40634,
+            40403,
+            40591,
+            40631,
+            40384
+        ]
+    },
+    {
+        "id": 569,
+        "name": "Tharionas",
+        "submitted": "2022-10-07 15:13:49",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40431,
+            40541,
+            40186,
+            40260,
+            40075,
+            40634,
+            40403,
+            39701,
+            40631,
+            40384
+        ]
+    },
+    {
+        "id": 570,
+        "name": "Hypnos",
+        "submitted": "2022-10-07 20:55:02",
+        "approved": "2022-10-13 19:07:50",
+        "approvedBy": "Calavera",
+        "instance": "wotlk1",
+        "slots": [
+            44006,
+            40639,
+            40431,
+            40402,
+            40347,
+            40075,
+            40403,
+            40278,
+            40330,
+            39706
+        ]
+    },
+    {
+        "id": 571,
+        "name": "Tharionas",
+        "submitted": "2022-10-08 19:08:19",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40431,
+            40541,
+            40330,
+            40260,
+            40075,
+            40634,
+            40403,
+            39701,
+            40631,
+            40384
+        ]
+    },
+    {
+        "id": 572,
+        "name": "Kekdk",
+        "submitted": "2022-10-09 01:34:42",
+        "approved": "2022-10-13 19:15:16",
+        "approvedBy": "Calavera",
+        "instance": "wotlk1",
+        "slots": [
+            40189,
+            40256,
+            40403,
+            40591,
+            40639,
+            40636,
+            40627,
+            40630,
+            44577,
+            40075
+        ]
+    },
+    {
+        "id": 573,
+        "name": "Tróllsmét",
+        "submitted": "2022-10-09 01:42:51",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40396,
+            40273,
+            40560,
+            40255,
+            40399,
+            40432,
+            40246,
+            44005,
+            40301,
+            44008
+        ]
+    },
+    {
+        "id": 574,
+        "name": "Bombman",
+        "submitted": "2022-10-09 01:58:37",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40385,
+            44577,
+            40632,
+            40638,
+            40403,
+            40074,
+            40388,
+            40331,
+            39762,
+            40282
+        ]
+    },
+    {
+        "id": 575,
+        "name": "Bombman",
+        "submitted": "2022-10-09 01:58:48",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40385,
+            44577,
+            40632,
+            40638,
+            40403,
+            40074,
+            40388,
+            40331,
+            39762,
+            40282
+        ]
+    },
+    {
+        "id": 576,
+        "name": "Druidimies",
+        "submitted": "2022-10-09 12:05:07",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40395,
+            40192,
+            40255,
+            40432,
+            40080,
+            44577,
+            40633,
+            44005,
+            40627,
+            40639
+        ]
+    },
+    {
+        "id": 577,
+        "name": "Calavera",
+        "submitted": "2022-10-09 13:22:08",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40633,
+            40630,
+            40402,
+            44000,
+            40345,
+            40387,
+            40306,
+            39759,
+            40297,
+            40107
+        ]
+    },
+    {
+        "id": 578,
+        "name": "Tharionas",
+        "submitted": "2022-10-09 13:48:45",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40431,
+            40260,
+            40186,
+            40541,
+            40075,
+            40403,
+            40384,
+            40591,
+            44577,
+            40631
+        ]
+    },
+    {
+        "id": 579,
+        "name": "Tharionas",
+        "submitted": "2022-10-09 23:29:00",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40431,
+            40186,
+            40541,
+            40075,
+            40403,
+            40384,
+            44577,
+            40591,
+            40631,
+            40626
+        ]
+    },
+    {
+        "id": 580,
+        "name": "Ecocosy",
+        "submitted": "2022-10-09 23:56:53",
+        "approved": "2022-10-13 19:05:05",
+        "approvedBy": "Grillspett",
+        "instance": "wotlk1",
+        "slots": [
+            44005,
+            40399,
+            40395,
+            40375,
+            40401,
+            40628,
+            40634,
+            40382,
+            43345,
+            43346
+        ]
+    },
+    {
+        "id": 581,
+        "name": "Bzzyyds",
+        "submitted": "2022-10-10 00:48:12",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40396,
+            40255,
+            40399,
+            39712,
+            40374,
+            40301,
+            40325,
+            40246,
+            40273,
+            43954
+        ]
+    },
+    {
+        "id": 582,
+        "name": "Ronah",
+        "submitted": "2022-10-10 01:13:45",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40396,
+            40255,
+            40432,
+            40560,
+            40399,
+            44005,
+            40273,
+            40080,
+            40625,
+            40628
+        ]
+    },
+    {
+        "id": 583,
+        "name": "Wyldi",
+        "submitted": "2022-10-10 06:51:23",
+        "approved": "2022-10-13 19:11:52",
+        "approvedBy": "Calavera",
+        "instance": "wotlk1",
+        "slots": [
+            39763,
+            40074,
+            40367,
+            40383,
+            40543,
+            40275,
+            40371,
+            40629,
+            40626,
+            40632
+        ]
+    },
+    {
+        "id": 584,
+        "name": "Ronah",
+        "submitted": "2022-10-10 12:33:43",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40396,
+            40255,
+            40432,
+            44577,
+            40560,
+            44005,
+            40273,
+            40080,
+            40399,
+            40625
+        ]
+    },
+    {
+        "id": 585,
+        "name": "Ronah",
+        "submitted": "2022-10-10 14:17:07",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40396,
+            40255,
+            40432,
+            44577,
+            40376,
+            44005,
+            40273,
+            40080,
+            40399,
+            40625
+        ]
+    },
+    {
+        "id": 586,
+        "name": "Ronah",
+        "submitted": "2022-10-10 14:20:08",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40396,
+            40255,
+            44577,
+            40376,
+            39712,
+            40405,
+            40273,
+            40080,
+            40399,
+            40625
+        ]
+    },
+    {
+        "id": 587,
+        "name": "Ronah",
+        "submitted": "2022-10-10 14:22:28",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40396,
+            40255,
+            44577,
+            40376,
+            39712,
+            40405,
+            40273,
+            40080,
+            40399,
+            44008
+        ]
+    },
+    {
+        "id": 588,
+        "name": "Xuenn",
+        "submitted": "2022-10-10 15:02:18",
+        "approved": "2022-10-13 19:10:32",
+        "approvedBy": "Calavera",
+        "instance": "wotlk1",
+        "slots": [
+            40539,
+            40541,
+            44011,
+            39714,
+            40403,
+            40431,
+            40205,
+            40186,
+            39701,
+            43952
+        ]
+    },
+    {
+        "id": 589,
+        "name": "Hubbe",
+        "submitted": "2022-10-10 21:51:59",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40385,
+            40074,
+            40403,
+            40256,
+            40282,
+            40331,
+            40549,
+            39762,
+            40388,
+            43345
+        ]
+    },
+    {
+        "id": 590,
+        "name": "Hubbe",
+        "submitted": "2022-10-10 21:53:27",
+        "approved": "2022-10-13 19:00:16",
+        "approvedBy": "Grillspett",
+        "instance": "wotlk1",
+        "slots": [
+            40385,
+            40403,
+            40256,
+            40074,
+            40282,
+            40331,
+            40543,
+            40549,
+            39762,
+            40388
+        ]
+    },
+    {
+        "id": 591,
+        "name": "Calavera",
+        "submitted": "2022-10-11 23:31:26",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40630,
+            40345,
+            40402,
+            40387,
+            40297,
+            40306,
+            40107,
+            40370,
+            43345,
+            40633
+        ]
+    },
+    {
+        "id": 592,
+        "name": "Ronah",
+        "submitted": "2022-10-12 10:00:05",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40396,
+            40255,
+            44577,
+            40376,
+            40432,
+            40405,
+            40273,
+            39712,
+            40399,
+            44008
+        ]
+    },
+    {
+        "id": 593,
+        "name": "Ronah",
+        "submitted": "2022-10-12 18:27:42",
+        "approved": "2022-10-13 19:13:27",
+        "approvedBy": "Grillspett",
+        "instance": "wotlk1",
+        "slots": [
+            40396,
+            40255,
+            44577,
+            40560,
+            40432,
+            40405,
+            40273,
+            39712,
+            40399,
+            44008
+        ]
+    },
+    {
+        "id": 594,
+        "name": "Bzzyyds",
+        "submitted": "2022-10-12 19:37:16",
+        "approved": "2022-10-13 19:09:39",
+        "approvedBy": "Hubbe",
+        "instance": "wotlk1",
+        "slots": [
+            40396,
+            40255,
+            44577,
+            39712,
+            40399,
+            40561,
+            40558,
+            40325,
+            40633,
+            40273
+        ]
+    },
+    {
+        "id": 595,
+        "name": "Kalikke",
+        "submitted": "2022-10-12 20:04:13",
+        "approved": "2022-10-13 19:08:17",
+        "approvedBy": "Calavera",
+        "instance": "wotlk1",
+        "slots": [
+            40395,
+            40401,
+            40399,
+            40374,
+            40382,
+            40375,
+            40626,
+            40629,
+            40632,
+            40272
+        ]
+    },
+    {
+        "id": 596,
+        "name": "Tróllsmét",
+        "submitted": "2022-10-12 22:03:01",
+        "approved": "2022-10-13 19:13:01",
+        "approvedBy": "Grillspett",
+        "instance": "wotlk1",
+        "slots": [
+            40396,
+            40273,
+            40560,
+            40255,
+            40399,
+            40432,
+            40246,
+            44005,
+            40301,
+            44008
+        ]
+    },
+    {
+        "id": 597,
+        "name": "Druidimies",
+        "submitted": "2022-10-12 22:12:34",
+        "approved": "2022-10-13 19:14:27",
+        "approvedBy": "Grillspett",
+        "instance": "wotlk1",
+        "slots": [
+            40395,
+            40192,
+            40255,
+            40432,
+            40399,
+            44577,
+            40633,
+            44005,
+            40627,
+            40630
+        ]
+    },
+    {
+        "id": 598,
+        "name": "Bombman",
+        "submitted": "2022-10-12 23:16:11",
+        "approved": "2022-10-13 18:55:17",
+        "approvedBy": "Grillspett",
+        "instance": "wotlk1",
+        "slots": [
+            40385,
+            44577,
+            40632,
+            40638,
+            40403,
+            40388,
+            39762,
+            40331,
+            40074,
+            40282
+        ]
+    },
+    {
+        "id": 599,
+        "name": "Tharionas",
+        "submitted": "2022-10-12 23:38:57",
+        "approved": "2022-10-13 19:03:17",
+        "approvedBy": "Hubbe",
+        "instance": "wotlk1",
+        "slots": [
+            40431,
+            40330,
+            40075,
+            40403,
+            40384,
+            44577,
+            40591,
+            40631,
+            40626,
+            40541
+        ]
+    },
+    {
+        "id": 600,
+        "name": "Omegakerstin",
+        "submitted": "2022-10-13 00:30:31",
+        "approved": "2022-10-13 19:08:51",
+        "approvedBy": "Calavera",
+        "instance": "wotlk1",
+        "slots": [
+            40396,
+            40399,
+            40255,
+            40633,
+            44005,
+            40561,
+            44008,
+            40558,
+            39712,
+            40627
+        ]
+    },
+    {
+        "id": 601,
+        "name": "Qbx",
+        "submitted": "2022-10-13 01:59:12",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40384,
+            40256,
+            40431,
+            40632,
+            40403,
+            40541,
+            40384,
+            44577,
+            40635,
+            40591
+        ]
+    },
+    {
+        "id": 602,
+        "name": "Qbx",
+        "submitted": "2022-10-13 01:59:41",
+        "approved": "2022-10-13 19:02:55",
+        "approvedBy": "Hubbe",
+        "instance": "wotlk1",
+        "slots": [
+            40384,
+            40256,
+            40431,
+            40632,
+            40403,
+            40541,
+            40384,
+            44577,
+            40591,
+            40635
+        ]
+    },
+    {
+        "id": 603,
+        "name": "Njuffxx",
+        "submitted": "2022-10-13 02:50:11",
+        "approved": "2022-10-13 19:01:49",
+        "approvedBy": "Grillspett",
+        "instance": "wotlk1",
+        "slots": [
+            40375,
+            40432,
+            40395,
+            40071,
+            40323,
+            39766,
+            39756,
+            40630,
+            40379,
+            40439
+        ]
+    },
+    {
+        "id": 604,
+        "name": "Calavera",
+        "submitted": "2022-10-13 08:08:37",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40630,
+            40345,
+            null,
+            40387,
+            40297,
+            40306,
+            40107,
+            40370,
+            43345,
+            40633
+        ]
+    },
+    {
+        "id": 605,
+        "name": "Calavera",
+        "submitted": "2022-10-13 08:09:35",
+        "approved": "2022-10-13 18:57:21",
+        "approvedBy": "Hubbe",
+        "instance": "wotlk1",
+        "slots": [
+            40630,
+            40345,
+            40387,
+            40297,
+            40306,
+            40107,
+            40370,
+            43345,
+            40633,
+            40402
+        ]
+    },
+    {
+        "id": 606,
+        "name": "Bikinis",
+        "submitted": "2022-10-13 09:23:48",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40255,
+            40638,
+            40632,
+            40283,
+            40399,
+            40401,
+            40635,
+            40626,
+            40251,
+            40064
+        ]
+    },
+    {
+        "id": 607,
+        "name": "Tindur",
+        "submitted": "2022-10-13 11:42:32",
+        "approved": "2022-10-13 19:12:10",
+        "approvedBy": "Calavera",
+        "instance": "wotlk1",
+        "slots": [
+            44577,
+            40345,
+            39717,
+            40257,
+            39764,
+            40589,
+            44000,
+            40107,
+            40400,
+            40402
+        ]
+    },
+    {
+        "id": 608,
+        "name": "Bikinis",
+        "submitted": "2022-10-13 11:54:13",
+        "approved": "2022-10-13 19:14:02",
+        "approvedBy": "Grillspett",
+        "instance": "wotlk1",
+        "slots": [
+            40255,
+            40638,
+            40632,
+            40283,
+            40399,
+            40401,
+            40635,
+            40626,
+            40251,
+            40064
+        ]
+    },
+    {
+        "id": 609,
+        "name": "Kharok",
+        "submitted": "2022-10-13 13:47:43",
+        "approved": "2022-10-13 19:07:17",
+        "approvedBy": "Calavera",
+        "instance": "wotlk1",
+        "slots": [
+            40403,
+            40256,
+            40627,
+            40189,
+            40278,
+            39706,
+            40347,
+            40294,
+            40330,
+            40402
+        ]
+    },
+    {
+        "id": 610,
+        "name": "Billbuyers",
+        "submitted": "2022-10-13 14:54:05",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40633,
+            40403,
+            39714,
+            40385,
+            44577,
+            39701,
+            40539,
+            40630,
+            40260,
+            44011
+        ]
+    },
+    {
+        "id": 611,
+        "name": "Billbuyers",
+        "submitted": "2022-10-13 16:35:42",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            39714,
+            40403,
+            40633,
+            40385,
+            44577,
+            39701,
+            40539,
+            40630,
+            40260,
+            44011
+        ]
+    },
+    {
+        "id": 612,
+        "name": "Billbuyers",
+        "submitted": "2022-10-13 16:36:09",
+        "approved": "2022-10-13 19:03:32",
+        "approvedBy": "Hubbe",
+        "instance": "wotlk1",
+        "slots": [
+            40633,
+            40403,
+            39714,
+            40385,
+            44577,
+            39701,
+            40539,
+            40630,
+            40260,
+            44011
+        ]
+    },
+    {
+        "id": 613,
+        "name": "Jalak",
+        "submitted": "2022-10-13 16:40:47",
+        "approved": "2022-10-13 18:59:54",
+        "approvedBy": "Grillspett",
+        "instance": "wotlk1",
+        "slots": [
+            40403,
+            40256,
+            40385,
+            40074,
+            40629,
+            40331,
+            40543,
+            40549,
+            44577,
+            39762
+        ]
+    },
+    {
+        "id": 614,
+        "name": "Ojiisan",
+        "submitted": "2022-10-13 18:34:30",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40396,
+            40255,
+            40558,
+            40273,
+            44008,
+            40562,
+            44005,
+            40399,
+            39712,
+            40408
+        ]
+    },
+    {
+        "id": 615,
+        "name": "Ojiisan",
+        "submitted": "2022-10-13 18:41:52",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40396,
+            40255,
+            40558,
+            40273,
+            44008,
+            40562,
+            44005,
+            40399,
+            39712,
+            40408
+        ]
+    },
+    {
+        "id": 616,
+        "name": "Ojiisan",
+        "submitted": "2022-10-13 18:42:04",
+        "approved": "2022-10-13 19:12:33",
+        "approvedBy": "Grillspett",
+        "instance": "wotlk1",
+        "slots": [
+            40396,
+            40255,
+            40558,
+            40273,
+            44008,
+            40562,
+            44005,
+            40399,
+            40408,
+            39712
+        ]
+    },
+    {
+        "id": 617,
+        "name": "Deaurion",
+        "submitted": "2022-10-13 19:11:36",
+        "approved": "2022-10-13 19:12:31",
+        "approvedBy": "Calavera",
+        "instance": "wotlk1",
+        "slots": [
+            40632,
+            40345,
+            40638,
+            40400,
+            40629,
+            40589,
+            39759,
+            40107,
+            39717,
+            44577
+        ]
+    },
+    {
+        "id": 618,
+        "name": "Hypnos",
+        "submitted": "2022-10-10 20:55:02",
+        "approved": "2022-10-13 19:18:34",
+        "approvedBy": "Hubbe",
+        "instance": "wotlk1",
+        "slots": [
+            44006,
+            40639,
+            40431,
+            40402,
+            40347,
+            40403,
+            40278,
+            40330,
+            39706,
+            null
+        ]
+    },
+    {
+        "id": 619,
+        "name": "Bombman",
+        "submitted": "2022-10-13 22:28:43",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40385,
+            40632,
+            40638,
+            40403,
+            44577,
+            40388,
+            39762,
+            40331,
+            40074,
+            40282
+        ]
+    },
+    {
+        "id": 620,
+        "name": "Redsoup",
+        "submitted": "2022-10-18 22:57:28",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40384,
+            40256,
+            40541,
+            40403,
+            40318,
+            40330,
+            40591,
+            40431,
+            40632,
+            40638
+        ]
+    },
+    {
+        "id": 621,
+        "name": "Redsoup",
+        "submitted": "2022-10-18 23:01:53",
+        "approved": "2022-10-20 17:45:11",
+        "approvedBy": "Hubbe",
+        "instance": "wotlk1",
+        "slots": [
+            40384,
+            40256,
+            44577,
+            40403,
+            40541,
+            40318,
+            40330,
+            40591,
+            40431,
+            40632
+        ]
+    },
+    {
+        "id": 622,
+        "name": "Bombman",
+        "submitted": "2022-10-20 10:05:19",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40385,
+            40632,
+            44577,
+            40403,
+            40638,
+            40388,
+            39762,
+            40331,
+            40074,
+            40282
+        ]
+    },
+    {
+        "id": 623,
+        "name": "Tharionas",
+        "submitted": "2022-10-20 21:37:26",
+        "approved": "2022-10-20 21:37:32",
+        "approvedBy": "Hubbe",
+        "instance": "wotlk1",
+        "slots": [
+            40431,
+            40330,
+            40075,
+            40403,
+            40384,
+            44577,
+            40591,
+            40631,
+            40625,
+            40541
+        ]
+    },
+    {
+        "id": 624,
+        "name": "Grillspett",
+        "submitted": "2022-11-10 16:08:47",
+        "approved": "2022-11-10 16:09:18",
+        "approvedBy": "Grillspett",
+        "instance": "wotlk1",
+        "slots": [
+            40395,
+            40399,
+            40432,
+            40273,
+            44577,
+            40558,
+            40255,
+            44008,
+            40561,
+            44002
+        ]
+    },
+    {
+        "id": 625,
+        "name": "Bombman",
+        "submitted": "2022-11-22 11:52:25",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40385,
+            44577,
+            40632,
+            40403,
+            40074,
+            40388,
+            39762,
+            40331,
+            40282,
+            40638
+        ]
+    },
+    {
+        "id": 626,
+        "name": "Läkarberit",
+        "submitted": "2022-11-25 01:06:46",
+        "approved": "2022-12-11 20:48:39",
+        "approvedBy": "Grillspett",
+        "instance": "wotlk1",
+        "slots": [
+            40284,
+            40108,
+            40258,
+            40192,
+            44008,
+            40558,
+            40561,
+            44005,
+            40398,
+            40395
+        ]
+    },
+    {
+        "id": 627,
+        "name": "Ezoterik",
+        "submitted": "2022-12-17 18:58:23",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40255,
+            40398,
+            40405,
+            40080,
+            40399,
+            44008,
+            40561,
+            40558,
+            40351,
+            40197
+        ]
+    },
+    {
+        "id": 628,
+        "name": "Ezoterik",
+        "submitted": "2022-12-17 19:01:08",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40255,
+            40398,
+            40405,
+            40080,
+            40399,
+            44008,
+            40561,
+            40558,
+            40351,
+            40197
+        ]
+    },
+    {
+        "id": 629,
+        "name": "Ezoterik",
+        "submitted": "2022-12-18 08:25:35",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40396,
+            40255,
+            40398,
+            40405,
+            40080,
+            40399,
+            40561,
+            44008,
+            40558,
+            40351
+        ]
+    },
+    {
+        "id": 630,
+        "name": "Läkarberit",
+        "submitted": "2022-12-18 21:05:03",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40284,
+            40108,
+            40258,
+            40192,
+            44008,
+            40558,
+            40561,
+            40432,
+            40398,
+            40395
+        ]
+    },
+    {
+        "id": 631,
+        "name": "Ezoterik",
+        "submitted": "2022-12-22 13:55:20",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40396,
+            40255,
+            40405,
+            40080,
+            39766,
+            44008,
+            40561,
+            40628,
+            40558,
+            44577
+        ]
+    },
+    {
+        "id": 632,
+        "name": "Ezoterik",
+        "submitted": "2022-12-22 14:07:12",
+        "approved": null,
+        "approvedBy": null,
+        "instance": "wotlk1",
+        "slots": [
+            40396,
+            40255,
+            40405,
+            40080,
+            39766,
+            44008,
+            40561,
+            40628,
+            40558,
+            44577
+        ]
+    }
+]

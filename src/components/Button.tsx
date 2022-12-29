@@ -4,6 +4,7 @@ import style from './Button.module.css';
 type ButtonProps = {
     onClick: () => void,
     disabled?: boolean,
+    children?: React.ReactNode,
 }
 
 const Button: React.FunctionComponent<ButtonProps> = ({ disabled, onClick, children }) => (
