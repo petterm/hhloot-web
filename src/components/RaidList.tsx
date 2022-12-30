@@ -1,31 +1,57 @@
 import React from "react";
 import "chart.js/auto";
-import { Chart, ChartData } from "chart.js";
-import { Bar, Line } from "react-chartjs-2";
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
+import type { ChartData } from "chart.js";
+import { Bar } from "react-chartjs-2";
 import { Raid } from "../api/async";
 import style from './RaidList.module.css';
 
+ChartJS.register(ArcElement, Tooltip, Legend);
+ChartJS.defaults.color = '#ddd';
+ChartJS.defaults.borderColor = '#333';
+
 type RaidListProps = { raids: Raid[] };
 const RaidList = ({ raids }: RaidListProps) => {
-    const totals: {x: string, y: number}[] = [];
-    const reserved: {x: string, y: number}[] = [];
-    const free: {x: string, y: number}[] = [];
-    const shards: {x: string, y: number}[] = [];
+    const totalsData = {
+        data: [] as number[],
+        label: 'Total',
+        backgroundColor: '#333',
+    };
+    const reservedData = {
+        data: [] as number[],
+        label: 'Reserved',
+        backgroundColor: '#56b825',
+    };
+    const freeData = {
+        data: [] as number[],
+        label: 'Free',
+        backgroundColor: '#127b94',
+    };
+    const shardData = {
+        data: [] as number[],
+        label: 'Sharded',
+        backgroundColor: '#540b17',
+    };
+    const labels = [] as string[];
+
     raids.forEach(raid => {
-        totals.push({ x: raid.date, y: raid.stats.total })
-        reserved.push({ x: raid.date, y: raid.stats.reserved })
-        free.push({ x: raid.date, y: raid.stats.free })
-        shards.push({ x: raid.date, y: raid.stats.total - raid.stats.reserved - raid.stats.free })
+        totalsData.data.push(raid.stats.total);
+        reservedData.data.push(raid.stats.reserved);
+        freeData.data.push(raid.stats.free);
+        shardData.data.push(raid.stats.total - raid.stats.reserved - raid.stats.free);
+        labels.push(raid.date);
     })
     
-    // const barData: ChartData<"bar"> = { datasets: [{ data: totals }], labels: ['Total'] };
+    const barData: ChartData<"bar"> = { datasets: [reservedData, freeData, shardData], labels };
     return (
         <div>
             <h1>Raid loot stats</h1>
-{/* 
-            <Bar
-                data={barData}
-            /> */}
+            <div className={style.chartWrapper}>
+                <Bar
+                    data={barData}
+                    options={{ scales: { x: { stacked: true }, y: { stacked: true }}}}
+                />
+            </div>
 
             <table className={style.mainTable}>
                 <tr>
