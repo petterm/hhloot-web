@@ -6,6 +6,7 @@ import lootTableTBC3BT_untyped from '../data/tbc3_bt_loot_table.json';
 import lootTableTBC3MH_untyped from '../data/tbc3_mh_loot_table.json';
 import lootTableTBC5_untyped from '../data/tbc5_loot_table.json';
 import lootTableWOTLK1_untyped from '../data/wotlk1_loot_table.json';
+import lootTableWOTLK2_untyped from '../data/wotlk2_loot_table.json';
 import itemIcons from '../data/item_icons.json';
 import { Boss, BossDrop, Instance, Item } from '../types';
 
@@ -27,6 +28,7 @@ type LootTable = {
     "icon": string,
     "restricted"?: boolean,
     "hidden"?: boolean,
+    "heroic"?: boolean,
     "groupedWith"?: number,
 };
 type DropUnified = {
@@ -36,6 +38,7 @@ type DropUnified = {
     "slot": string;
     "restricted": boolean;
     "hidden": boolean;
+    "heroic": boolean;
     "icon"?: string;
     "groupedWith"?: number;
 }
@@ -48,6 +51,7 @@ const lootTableTBC3BT: LootTable[] = lootTableTBC3BT_untyped;
 const lootTableTBC3MH: LootTable[] = lootTableTBC3MH_untyped;
 const lootTableTBC5: LootTable[] = lootTableTBC5_untyped;
 const lootTableWOTLK1: LootTable[] = lootTableWOTLK1_untyped;
+const lootTableWOTLK2: LootTable[] = lootTableWOTLK2_untyped;
 
 type BossMap = { [key: string]: Boss; };
 
@@ -71,6 +75,7 @@ const getUnifiedEntryAq40 = (drop: LootTableAq40): DropUnified => {
         slot: dropAq['Slot'],
         restricted: dropAq['Restricted'] ? true : false,
         hidden: false,
+        heroic: false,
     };
 }
 
@@ -83,6 +88,7 @@ const getUnifiedEntryDefault = (drop: LootTable): DropUnified => {
         slot: newDrop['slot'],
         restricted: newDrop['restricted'] || false,
         hidden: newDrop['hidden'] || false,
+        heroic: newDrop['heroic'] || false,
         icon: newDrop['icon'],
         groupedWith: newDrop['groupedWith'],
     };
@@ -128,6 +134,7 @@ const parseLootTable = (instance: Instance, rawData: LootTableAq40[] | LootTable
                     name: dropUnified.name,
                     restricted: dropUnified.restricted,
                     hidden: dropUnified.hidden,
+                    heroic: dropUnified.heroic,
                     icon: dropUnified.icon,
                 },
                 groupedItems: [],
@@ -162,6 +169,7 @@ const parseLootTable = (instance: Instance, rawData: LootTableAq40[] | LootTable
             name: dropUnified.name,
             restricted: dropUnified.restricted,
             hidden: dropUnified.hidden,
+            heroic: dropUnified.heroic,
             icon: dropUnified.icon,
         };
 
@@ -173,7 +181,7 @@ const parseLootTable = (instance: Instance, rawData: LootTableAq40[] | LootTable
     });
 
     for (const [, boss] of Object.entries(lootTable.bossMap)) {
-        boss.drops.sort((a,b) => a.item.name.localeCompare(b.item.name))
+        boss.drops.sort((a,b) => a.item.heroic == b.item.heroic ? a.item.name.localeCompare(b.item.name) : a.item.heroic ? 1 : -1)
     }
 };
 
@@ -184,6 +192,7 @@ parseLootTable('tbc2', lootTableTBC2);
 parseLootTable('tbc3', lootTableTBC3MH.concat(lootTableTBC3BT));
 parseLootTable('tbc5', lootTableTBC5);
 parseLootTable('wotlk1', lootTableWOTLK1);
+parseLootTable('wotlk2', lootTableWOTLK2);
 
 export const getBosses = (instance: Instance): BossMap => instanceLoot[instance].bossMap;
 export const getBossDrops = (instance?: Instance): BossDropNameMap => {

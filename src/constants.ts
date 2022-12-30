@@ -1,7 +1,7 @@
 import moment, { Moment } from 'moment';
 import { Class, Instance, InstanceData } from "./types";
 
-export const instances: Instance[] = ['aq40', 'naxx', 'tbc1', 'tbc2', 'tbc3', 'tbc5', 'wotlk1'];
+export const instances: Instance[] = ['aq40', 'naxx', 'tbc1', 'tbc2', 'tbc3', 'tbc5', 'wotlk1', 'wotlk2'];
 export const instanceData: Record<Instance, InstanceData> = {
     'aq40': {
         name: 'AQ40',
@@ -65,7 +65,16 @@ export const instanceData: Record<Instance, InstanceData> = {
         lootSheetTab: 'LootWOTLK1',
         itemScores: [100, 90, 80, 70, 65, 60, 55, 54, 53, 52],
         scoreGroupEdges: [80, 60],
-    }
+    },
+    'wotlk2': {
+        name: 'Ulduar',
+        image: 'wotlk2.png',
+        bonusRaidStartDate: moment('2023-01-19'),
+        lootSheetID: '1vzK9lPih35GSUPbxLreslyihxPSSIXhS3JW_GWRf7Lw',
+        lootSheetTab: 'LootWOTLK2',
+        itemScores: [100, 90, 80, 70, 65, 60, 55, 54, 53, 52],
+        scoreGroupEdges: [80, 60],
+    },
 }
 
 export const classes: Class[] = [

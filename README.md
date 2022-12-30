@@ -19,3 +19,19 @@ Future:
 Data sources:
 - Boss drop-table: https://thatsmybis.com/loot
 - Item details: https://www.wowhead.com
+
+
+Missing items from Ulduar:
+
+- Breastplate of the Wayward Conqueror
+- Breastplate of the Wayward Protector
+- Breastplate of the Wayward Vanquisher
+- Legplates of the Wayward Conqueror
+- Legplates of the Wayward Protector
+- Legplates of the Wayward Vanquisher
+- Bindings of Winter Gale
+- Drape of Icy Intent
+- Frigid Strength of Hodir
+- Gloves of the Frozen Glade
+- Staff of Endless Winter
+- Idol of the Flourishing Life

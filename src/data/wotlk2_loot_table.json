@@ -1,0 +1,1938 @@
+[
+    {
+        "id": 45135,
+        "name": "Boots of Fiery Resolution",
+        "icon": "inv_boots_cloth_19",
+        "slot": "Feet",
+        "heroic": true,
+        "source": "Leviathan"
+    },
+    {
+        "id": 45117,
+        "name": "Constructor's Handwraps",
+        "icon": "inv_gauntlets_64",
+        "slot": "Hands",
+        "source": "Leviathan"
+    },
+    {
+        "id": 45119,
+        "name": "Embrace of the Leviathan",
+        "icon": "inv_belt_49",
+        "slot": "Waist",
+        "source": "Leviathan"
+    },
+    {
+        "id": 45116,
+        "name": "Freya's Choker of Warding",
+        "icon": "inv_jewelry_necklace_29naxxramas",
+        "slot": "Neck",
+        "source": "Leviathan"
+    },
+    {
+        "id": 45109,
+        "name": "Gloves of the Fiery Behemoth",
+        "icon": "inv_gauntlets_51",
+        "slot": "Hands",
+        "source": "Leviathan"
+    },
+    {
+        "id": 45113,
+        "name": "Glowing Ring of Reclamation",
+        "icon": "inv_jewelry_ring_49naxxramas",
+        "slot": "Ring",
+        "source": "Leviathan"
+    },
+    {
+        "id": 45132,
+        "name": "Golden Saronite Dragon",
+        "icon": "inv_weapon_hand_23",
+        "slot": "Main hand",
+        "heroic": true,
+        "source": "Leviathan"
+    },
+    {
+        "id": 45107,
+        "name": "Iron Riveted War Helm",
+        "icon": "inv_helmet_98",
+        "slot": "Head",
+        "source": "Leviathan"
+    },
+    {
+        "id": 45115,
+        "name": "Leviathan Fueling Manual",
+        "icon": "inv_offhand_ulduarraid_d_02",
+        "slot": "Held",
+        "source": "Leviathan"
+    },
+    {
+        "id": 45108,
+        "name": "Mechanist's Bindings",
+        "icon": "inv_bracer_23b",
+        "slot": "Wrist",
+        "source": "Leviathan"
+    },
+    {
+        "id": 45111,
+        "name": "Mimiron's Inferno Couplings",
+        "icon": "inv_bracer_28",
+        "slot": "Wrist",
+        "source": "Leviathan"
+    },
+    {
+        "id": 45133,
+        "name": "Pendant of Fiery Havoc",
+        "icon": "inv_jewelry_necklace_31",
+        "slot": "Neck",
+        "heroic": true,
+        "source": "Leviathan"
+    },
+    {
+        "id": 45134,
+        "name": "Plated Leggings of Ruination",
+        "icon": "inv_pants_plate_25",
+        "slot": "Legs",
+        "heroic": true,
+        "source": "Leviathan"
+    },
+    {
+        "id": 45086,
+        "name": "Rising Sun",
+        "icon": "inv_throwingknife_08",
+        "slot": "Thrown",
+        "source": "Leviathan"
+    },
+    {
+        "id": 45136,
+        "name": "Shoulderpads of Dormant Energies",
+        "icon": "inv_shoulder_84",
+        "slot": "Shoulders",
+        "heroic": true,
+        "source": "Leviathan"
+    },
+    {
+        "id": 45114,
+        "name": "Steamcaller's Totem",
+        "icon": "spell_nature_slowingtotem",
+        "slot": "Relic",
+        "source": "Leviathan"
+    },
+    {
+        "id": 45118,
+        "name": "Steamworker's Goggles",
+        "icon": "inv_helmet_47",
+        "slot": "Head",
+        "source": "Leviathan"
+    },
+    {
+        "id": 45106,
+        "name": "Strength of the Automaton",
+        "icon": "inv_jewelry_ring_58",
+        "slot": "Ring",
+        "source": "Leviathan"
+    },
+    {
+        "id": 45112,
+        "name": "The Leviathan's Coil",
+        "icon": "inv_jewelry_ring_71",
+        "slot": "Ring",
+        "source": "Leviathan"
+    },
+    {
+        "id": 45110,
+        "name": "Titanguard",
+        "icon": "inv_sword_132",
+        "slot": "One hand",
+        "source": "Leviathan"
+    },
+    {
+        "id": 45166,
+        "name": "Charred Saronite Greaves",
+        "icon": "inv_boots_plate_11",
+        "slot": "Feet",
+        "source": "Ignis"
+    },
+    {
+        "id": 45157,
+        "name": "Cindershard Ring",
+        "icon": "inv_jewelry_ring_ahnqiraj_01",
+        "slot": "Ring",
+        "source": "Ignis"
+    },
+    {
+        "id": 45162,
+        "name": "Flamestalker Boots",
+        "icon": "inv_boots_leather_02",
+        "slot": "Feet",
+        "source": "Ignis"
+    },
+    {
+        "id": 45185,
+        "name": "Flamewrought Cinch",
+        "icon": "inv_belt_38a",
+        "slot": "Waist",
+        "source": "Ignis"
+    },
+    {
+        "id": 45161,
+        "name": "Girdle of Embers",
+        "icon": "inv_belt_48c",
+        "slot": "Waist",
+        "source": "Ignis"
+    },
+    {
+        "id": 45158,
+        "name": "Heart of Iron",
+        "icon": "inv_spiritshard_01",
+        "slot": "Trinket",
+        "source": "Ignis"
+    },
+    {
+        "id": 45164,
+        "name": "Helm of the Furnace Master",
+        "icon": "inv_helmet_95",
+        "slot": "Head",
+        "source": "Ignis"
+    },
+    {
+        "id": 45171,
+        "name": "Intensity",
+        "icon": "inv_staff_95",
+        "slot": "Two hand",
+        "source": "Ignis"
+    },
+    {
+        "id": 45167,
+        "name": "Lifeforge Breastplate",
+        "icon": "inv_chest_plate19",
+        "slot": "Vest",
+        "source": "Ignis"
+    },
+    {
+        "id": 45168,
+        "name": "Pyrelight Circle",
+        "icon": "inv_jewelry_ring_71",
+        "slot": "Ring",
+        "source": "Ignis"
+    },
+    {
+        "id": 45170,
+        "name": "Scepter of Creation",
+        "icon": "inv_wand_29",
+        "slot": "Bow",
+        "source": "Ignis"
+    },
+    {
+        "id": 45186,
+        "name": "Soot-Covered Mantle",
+        "icon": "inv_shoulder_97",
+        "slot": "Shoulders",
+        "source": "Ignis"
+    },
+    {
+        "id": 45169,
+        "name": "Totem of the Dancing Flame",
+        "icon": "inv_misc_herb_flamecap",
+        "slot": "Relic",
+        "source": "Ignis"
+    },
+    {
+        "id": 45165,
+        "name": "Worldcarver",
+        "icon": "inv_axe_102",
+        "slot": "Two hand",
+        "source": "Ignis"
+    },
+    {
+        "id": 45187,
+        "name": "Wristguards of the Firetender",
+        "icon": "inv_bracer_24",
+        "slot": "Wrist",
+        "source": "Ignis"
+    },
+    {
+        "id": 45151,
+        "name": "Belt of the Fallen Wyrm",
+        "icon": "inv_belt_47a",
+        "slot": "Waist",
+        "source": "Razorscale"
+    },
+    {
+        "id": 45149,
+        "name": "Bracers of the Broodmother",
+        "icon": "inv_bracer_30b",
+        "slot": "Wrist",
+        "source": "Razorscale"
+    },
+    {
+        "id": 45150,
+        "name": "Collar of the Wyrmhunter",
+        "icon": "inv_helmet_133",
+        "slot": "Head",
+        "source": "Razorscale"
+    },
+    {
+        "id": 45139,
+        "name": "Dragonslayer's Brace",
+        "icon": "inv_belt_34",
+        "slot": "Waist",
+        "source": "Razorscale"
+    },
+    {
+        "id": 45138,
+        "name": "Drape of the Drakerider",
+        "icon": "inv_misc_cape_12",
+        "slot": "Back",
+        "source": "Razorscale"
+    },
+    {
+        "id": 45147,
+        "name": "Guiding Star",
+        "icon": "inv_mace_89",
+        "slot": "Main hand",
+        "source": "Razorscale"
+    },
+    {
+        "id": 45510,
+        "name": "Libram of Discord",
+        "icon": "inv_relics_libramofhope",
+        "slot": "Relic",
+        "source": "Razorscale"
+    },
+    {
+        "id": 45148,
+        "name": "Living Flame",
+        "icon": "spell_fire_burnout",
+        "slot": "Trinket",
+        "source": "Razorscale"
+    },
+    {
+        "id": 45141,
+        "name": "Proto-hide Leggings",
+        "icon": "inv_pants_mail_25",
+        "slot": "Legs",
+        "source": "Razorscale"
+    },
+    {
+        "id": 45140,
+        "name": "Razorscale Shoulderguards",
+        "icon": "inv_shoulder_92",
+        "slot": "Shoulders",
+        "source": "Razorscale"
+    },
+    {
+        "id": 45142,
+        "name": "Remorse",
+        "icon": "inv_sword_135",
+        "slot": "One hand",
+        "source": "Razorscale"
+    },
+    {
+        "id": 45143,
+        "name": "Saronite Mesh Legguards",
+        "icon": "inv_pants_plate_25",
+        "slot": "Legs",
+        "source": "Razorscale"
+    },
+    {
+        "id": 45146,
+        "name": "Shackles of the Odalisque",
+        "icon": "inv_bracer_27",
+        "slot": "Wrist",
+        "source": "Razorscale"
+    },
+    {
+        "id": 45144,
+        "name": "Sigil of Deflection",
+        "icon": "inv_shield_56",
+        "slot": "Relic",
+        "source": "Razorscale"
+    },
+    {
+        "id": 45137,
+        "name": "Veranus' Bane",
+        "icon": "inv_weapon_rifle_31",
+        "slot": "Bow",
+        "source": "Razorscale"
+    },
+    {
+        "id": 45260,
+        "name": "Boots of Hasty Revival",
+        "icon": "inv_boots_leather01",
+        "slot": "Feet",
+        "source": "XT-002"
+    },
+    {
+        "id": 45249,
+        "name": "Brass-lined Boots",
+        "icon": "inv_boots_chain_07",
+        "slot": "Feet",
+        "source": "XT-002"
+    },
+    {
+        "id": 45445,
+        "name": "Breastplate of the Devoted",
+        "icon": "inv_chest_plate18",
+        "slot": "Vest",
+        "heroic": true,
+        "source": "XT-002"
+    },
+    {
+        "id": 45443,
+        "name": "Charm of Meticulous Timing",
+        "icon": "inv_jewelry_amulet_02",
+        "slot": "Neck",
+        "heroic": true,
+        "source": "XT-002"
+    },
+    {
+        "id": 45248,
+        "name": "Clockwork Legplates",
+        "icon": "inv_pants_plate_24",
+        "slot": "Legs",
+        "source": "XT-002"
+    },
+    {
+        "id": 45250,
+        "name": "Crazed Construct Ring",
+        "icon": "inv_jewelry_ring_66",
+        "slot": "Ring",
+        "source": "XT-002"
+    },
+    {
+        "id": 45444,
+        "name": "Gloves of the Steady Hand",
+        "icon": "inv_gauntlets_48",
+        "slot": "Hands",
+        "heroic": true,
+        "source": "XT-002"
+    },
+    {
+        "id": 45246,
+        "name": "Golem-Shard Sticker",
+        "icon": "inv_weapon_shortblade_78",
+        "slot": "One hand",
+        "source": "XT-002"
+    },
+    {
+        "id": 45446,
+        "name": "Grasps of Reason",
+        "icon": "inv_bracer_24b",
+        "slot": "Wrist",
+        "heroic": true,
+        "source": "XT-002"
+    },
+    {
+        "id": 45252,
+        "name": "Horologist's Wristguards",
+        "icon": "inv_bracer_19",
+        "slot": "Wrist",
+        "source": "XT-002"
+    },
+    {
+        "id": 45253,
+        "name": "Mantle of Wavering Calm",
+        "icon": "inv_shoulder_94",
+        "slot": "Shoulders",
+        "source": "XT-002"
+    },
+    {
+        "id": 45257,
+        "name": "Quartz Crystal Wand",
+        "icon": "inv_wand_28",
+        "slot": "Bow",
+        "source": "XT-002"
+    },
+    {
+        "id": 45259,
+        "name": "Quartz-studded Harness",
+        "icon": "inv_chest_plate19",
+        "slot": "Vest",
+        "source": "XT-002"
+    },
+    {
+        "id": 45258,
+        "name": "Sandals of Rash Temperament",
+        "icon": "inv_boots_cloth_16",
+        "slot": "Feet",
+        "source": "XT-002"
+    },
+    {
+        "id": 45251,
+        "name": "Shoulderplates of the Deconstructor",
+        "icon": "inv_shoulder_96",
+        "slot": "Shoulders",
+        "source": "XT-002"
+    },
+    {
+        "id": 45254,
+        "name": "Sigil of the Vengeful Heart",
+        "icon": "inv_shield_56",
+        "slot": "Relic",
+        "source": "XT-002"
+    },
+    {
+        "id": 45247,
+        "name": "Signet of the Earthshaker",
+        "icon": "inv_jewelry_ring_74",
+        "slot": "Ring",
+        "source": "XT-002"
+    },
+    {
+        "id": 45442,
+        "name": "Sorthalis, Hammer of the Watchers",
+        "icon": "inv_mace_91",
+        "slot": "One hand",
+        "heroic": true,
+        "source": "XT-002"
+    },
+    {
+        "id": 45255,
+        "name": "Thunderfall Totem",
+        "icon": "spell_nature_diseasecleansingtotem",
+        "slot": "Relic",
+        "source": "XT-002"
+    },
+    {
+        "id": 45256,
+        "name": "Twisted Visage",
+        "icon": "inv_staff_95",
+        "slot": "Two hand",
+        "source": "XT-002"
+    },
+    {
+        "id": 45226,
+        "name": "Ancient Iron Heaume",
+        "icon": "inv_helmet_91",
+        "slot": "Head",
+        "source": "Assembly"
+    },
+    {
+        "id": 45241,
+        "name": "Belt of Colossal Rage",
+        "icon": "inv_belt_49c",
+        "slot": "Waist",
+        "heroic": true,
+        "source": "Assembly"
+    },
+    {
+        "id": 45242,
+        "name": "Drape of Mortal Downfall",
+        "icon": "inv_misc_cape_13",
+        "slot": "Back",
+        "heroic": true,
+        "source": "Assembly"
+    },
+    {
+        "id": 45224,
+        "name": "Drape of the Lithe",
+        "icon": "inv_misc_cape_02",
+        "slot": "Back",
+        "source": "Assembly"
+    },
+    {
+        "id": 45607,
+        "name": "Fang of Oblivion",
+        "icon": "inv_weapon_shortblade_84",
+        "slot": "One hand",
+        "heroic": true,
+        "source": "Assembly"
+    },
+    {
+        "id": 45244,
+        "name": "Greaves of Swift Vengeance",
+        "icon": "inv_boots_chain_07",
+        "slot": "Feet",
+        "heroic": true,
+        "source": "Assembly"
+    },
+    {
+        "id": 45228,
+        "name": "Handguards of the Enclave",
+        "icon": "inv_gauntlets_67",
+        "slot": "Hands",
+        "source": "Assembly"
+    },
+    {
+        "id": 45193,
+        "name": "Insurmountable Fervor",
+        "icon": "inv_jewelry_necklace_33",
+        "slot": "Neck",
+        "source": "Assembly"
+    },
+    {
+        "id": 45227,
+        "name": "Iron-studded Mantle",
+        "icon": "inv_shoulder_67",
+        "slot": "Shoulders",
+        "source": "Assembly"
+    },
+    {
+        "id": 45238,
+        "name": "Overload Legwraps",
+        "icon": "inv_pants_cloth_28",
+        "slot": "Legs",
+        "source": "Assembly"
+    },
+    {
+        "id": 45237,
+        "name": "Phaelia's Vestments of the Sprouting Seed",
+        "icon": "inv_chest_leather_14",
+        "slot": "Vest",
+        "source": "Assembly"
+    },
+    {
+        "id": 45235,
+        "name": "Radiant Seal",
+        "icon": "inv_jewelry_ring_64",
+        "slot": "Ring",
+        "source": "Assembly"
+    },
+    {
+        "id": 45240,
+        "name": "Raiments of the Iron Council",
+        "icon": "inv_chest_cloth_65",
+        "slot": "Vest",
+        "source": "Assembly"
+    },
+    {
+        "id": 45234,
+        "name": "Rapture",
+        "icon": "inv_staff_93",
+        "slot": "Two hand",
+        "source": "Assembly"
+    },
+    {
+        "id": 45232,
+        "name": "Runed Ironhide Boots",
+        "icon": "inv_boots_cloth_19",
+        "slot": "Feet",
+        "source": "Assembly"
+    },
+    {
+        "id": 45239,
+        "name": "Runeshaper's Gloves",
+        "icon": "inv_gauntlets_50",
+        "slot": "Hands",
+        "source": "Assembly"
+    },
+    {
+        "id": 45243,
+        "name": "Sapphire Amulet of Renewal",
+        "icon": "inv_jewelry_necklace_30naxxramas",
+        "slot": "Neck",
+        "heroic": true,
+        "source": "Assembly"
+    },
+    {
+        "id": 45245,
+        "name": "Shoulderpads of the Intruder",
+        "icon": "inv_shoulder_51",
+        "slot": "Shoulders",
+        "heroic": true,
+        "source": "Assembly"
+    },
+    {
+        "id": 45225,
+        "name": "Steelbreaker's Embrace",
+        "icon": "inv_chest_plate20",
+        "slot": "Vest",
+        "source": "Assembly"
+    },
+    {
+        "id": 45233,
+        "name": "Stormrune Edge",
+        "icon": "inv_sword_136",
+        "slot": "Two hand",
+        "source": "Assembly"
+    },
+    {
+        "id": 45236,
+        "name": "Unblinking Eye",
+        "icon": "inv_misc_gem_lionseye_01",
+        "slot": "Neck",
+        "source": "Assembly"
+    },
+    {
+        "id": 45275,
+        "name": "Bracers of Unleashed Magic",
+        "icon": "inv_bracer_32a",
+        "slot": "Wrist",
+        "source": "Kologarn"
+    },
+    {
+        "id": 45264,
+        "name": "Decimator's Armguards",
+        "icon": "inv_bracer_26b",
+        "slot": "Wrist",
+        "source": "Kologarn"
+    },
+    {
+        "id": 45261,
+        "name": "Giant's Bane",
+        "icon": "inv_weapon_rifle_33",
+        "slot": "Bow",
+        "source": "Kologarn"
+    },
+    {
+        "id": 45268,
+        "name": "Gloves of the Pythonic Guardian",
+        "icon": "inv_gauntlets_10",
+        "slot": "Hands",
+        "source": "Kologarn"
+    },
+    {
+        "id": 45273,
+        "name": "Handwraps of Plentiful Recovery",
+        "icon": "inv_gauntlets_57",
+        "slot": "Hands",
+        "source": "Kologarn"
+    },
+    {
+        "id": 45270,
+        "name": "Idol of the Crying Wind",
+        "icon": "inv_relics_idolofrejuvenation",
+        "slot": "Relic",
+        "source": "Kologarn"
+    },
+    {
+        "id": 45271,
+        "name": "Ironmender",
+        "icon": "inv_offhand_ulduarraid_d_02",
+        "slot": "Held",
+        "source": "Kologarn"
+    },
+    {
+        "id": 45274,
+        "name": "Leggings of the Stoneweaver",
+        "icon": "inv_pants_mail_21",
+        "slot": "Legs",
+        "source": "Kologarn"
+    },
+    {
+        "id": 45266,
+        "name": "Malice",
+        "icon": "inv_sword_133",
+        "slot": "One hand",
+        "source": "Kologarn"
+    },
+    {
+        "id": 45262,
+        "name": "Necklace of Unerring Mettle",
+        "icon": "inv_jewelry_necklace_41",
+        "slot": "Neck",
+        "source": "Kologarn"
+    },
+    {
+        "id": 45272,
+        "name": "Robes of the Umbral Brute",
+        "icon": "inv_chest_cloth_64",
+        "slot": "Vest",
+        "source": "Kologarn"
+    },
+    {
+        "id": 45267,
+        "name": "Saronite Plated Legguards",
+        "icon": "inv_pants_plate_30",
+        "slot": "Legs",
+        "source": "Kologarn"
+    },
+    {
+        "id": 45265,
+        "name": "Shoulderpads of the Monolith",
+        "icon": "inv_shoulder_51",
+        "slot": "Shoulders",
+        "source": "Kologarn"
+    },
+    {
+        "id": 45269,
+        "name": "Unfaltering Armguards",
+        "icon": "inv_bracer_31a",
+        "slot": "Wrist",
+        "source": "Kologarn"
+    },
+    {
+        "id": 45263,
+        "name": "Wrathstone",
+        "icon": "inv_pet_scorchedstone",
+        "slot": "Trinket",
+        "source": "Kologarn"
+    },
+    {
+        "id": 45440,
+        "name": "Amice of the Stoic Watch",
+        "icon": "inv_shoulder_59",
+        "slot": "Shoulders",
+        "source": "Auriaya"
+    },
+    {
+        "id": 45319,
+        "name": "Cloak of the Makers",
+        "icon": "inv_misc_cape_naxxramas_01",
+        "slot": "Back",
+        "source": "Auriaya"
+    },
+    {
+        "id": 45435,
+        "name": "Cowl of the Absolute",
+        "icon": "inv_helmet_133",
+        "slot": "Head",
+        "source": "Auriaya"
+    },
+    {
+        "id": 45325,
+        "name": "Gloves of the Stonereaper",
+        "icon": "inv_gauntlets_22",
+        "slot": "Hands",
+        "source": "Auriaya"
+    },
+    {
+        "id": 45434,
+        "name": "Greaves of the Rockmender",
+        "icon": "inv_boots_plate_11",
+        "slot": "Feet",
+        "source": "Auriaya"
+    },
+    {
+        "id": 45436,
+        "name": "Libram of the Resolute",
+        "icon": "inv_relics_libramoftruth",
+        "slot": "Relic",
+        "source": "Auriaya"
+    },
+    {
+        "id": 45326,
+        "name": "Platinum Band of the Aesir",
+        "icon": "inv_jewelry_ring_50naxxramas",
+        "slot": "Ring",
+        "source": "Auriaya"
+    },
+    {
+        "id": 45438,
+        "name": "Ring of the Faithful Servant",
+        "icon": "inv_jewelry_ring_43",
+        "slot": "Ring",
+        "source": "Auriaya"
+    },
+    {
+        "id": 45437,
+        "name": "Runescribed Blade",
+        "icon": "inv_sword_134",
+        "slot": "Main hand",
+        "source": "Auriaya"
+    },
+    {
+        "id": 45441,
+        "name": "Sandals of the Ancient Keeper",
+        "icon": "inv_boots_cloth_21",
+        "slot": "Feet",
+        "source": "Auriaya"
+    },
+    {
+        "id": 45320,
+        "name": "Shoulderplates of the Eternal",
+        "icon": "inv_shoulder_88",
+        "slot": "Shoulders",
+        "source": "Auriaya"
+    },
+    {
+        "id": 45327,
+        "name": "Siren's Cry",
+        "icon": "inv_weapon_bow_51",
+        "slot": "Bow",
+        "source": "Auriaya"
+    },
+    {
+        "id": 45315,
+        "name": "Stonerender",
+        "icon": "inv_mace_90",
+        "slot": "One hand",
+        "source": "Auriaya"
+    },
+    {
+        "id": 45334,
+        "name": "Unbreakable Chestguard",
+        "icon": "inv_chest_plate20",
+        "slot": "Vest",
+        "source": "Auriaya"
+    },
+    {
+        "id": 45439,
+        "name": "Unwavering Stare",
+        "icon": "inv_jewelry_necklace_11",
+        "slot": "Head",
+        "source": "Auriaya"
+    },
+    {
+        "id": 45610,
+        "name": "Boundless Gaze",
+        "icon": "inv_helmet_92",
+        "slot": "Head",
+        "heroic": true,
+        "source": "Algalon"
+    },
+    {
+        "id": 45587,
+        "name": "Bulwark of Algalon",
+        "icon": "inv_shield_67",
+        "slot": "Shield",
+        "heroic": true,
+        "source": "Algalon"
+    },
+    {
+        "id": 45609,
+        "name": "Comet's Trail",
+        "icon": "spell_arcane_starfire",
+        "slot": "Trinket",
+        "heroic": true,
+        "source": "Algalon"
+    },
+    {
+        "id": 45612,
+        "name": "Constellus",
+        "icon": "inv_mace_92",
+        "slot": "Main hand",
+        "heroic": true,
+        "source": "Algalon"
+    },
+    {
+        "id": 45617,
+        "name": "Cosmos",
+        "icon": "inv_offhand_ulduarraid_d_03",
+        "slot": "Held",
+        "heroic": true,
+        "source": "Algalon"
+    },
+    {
+        "id": 45613,
+        "name": "Dreambinder",
+        "icon": "inv_staff_93",
+        "slot": "Two hand",
+        "heroic": true,
+        "source": "Algalon"
+    },
+    {
+        "id": 45607,
+        "name": "Fang of Oblivion",
+        "icon": "inv_weapon_shortblade_84",
+        "slot": "One hand",
+        "heroic": true,
+        "source": "Algalon"
+    },
+    {
+        "id": 45594,
+        "name": "Legplates of the Endless Void",
+        "icon": "inv_pants_plate_20",
+        "slot": "Legs",
+        "heroic": true,
+        "source": "Algalon"
+    },
+    {
+        "id": 45665,
+        "name": "Pharos Gloves",
+        "icon": "inv_gauntlets_61",
+        "slot": "Hands",
+        "heroic": true,
+        "source": "Algalon"
+    },
+    {
+        "id": 45615,
+        "name": "Planewalker Treads",
+        "icon": "inv_boots_chain_08",
+        "slot": "Feet",
+        "heroic": true,
+        "source": "Algalon"
+    },
+    {
+        "id": 46053,
+        "name": "Reply-Code Alpha",
+        "icon": "spell_arcane_arcanetorrent",
+        "slot": "None",
+        "heroic": true,
+        "source": "Algalon"
+    },
+    {
+        "id": 45599,
+        "name": "Sabatons of Lifeless Night",
+        "icon": "inv_boots_plate_06",
+        "slot": "Feet",
+        "heroic": true,
+        "source": "Algalon"
+    },
+    {
+        "id": 45570,
+        "name": "Skyforge Crossbow",
+        "icon": "inv_weapon_crossbow_33",
+        "slot": "Bow",
+        "heroic": true,
+        "source": "Algalon"
+    },
+    {
+        "id": 45611,
+        "name": "Solar Bindings",
+        "icon": "inv_bracer_26",
+        "slot": "Wrist",
+        "heroic": true,
+        "source": "Algalon"
+    },
+    {
+        "id": 45616,
+        "name": "Star-beaded Clutch",
+        "icon": "inv_belt_40b",
+        "slot": "Waist",
+        "heroic": true,
+        "source": "Algalon"
+    },
+    {
+        "id": 45620,
+        "name": "Starshard Edge",
+        "icon": "inv_weapon_shortblade_92",
+        "slot": "Main hand",
+        "heroic": true,
+        "source": "Algalon"
+    },
+    {
+        "id": 45619,
+        "name": "Starwatcher's Binding",
+        "icon": "inv_belt_46",
+        "slot": "Waist",
+        "heroic": true,
+        "source": "Algalon"
+    },
+    {
+        "id": 45484,
+        "name": "Bladetwister",
+        "icon": "inv_weapon_shortblade_93",
+        "slot": "One hand",
+        "heroic": true,
+        "source": "Freya"
+    },
+    {
+        "id": 45483,
+        "name": "Boots of the Servant",
+        "icon": "inv_boots_cloth_03",
+        "slot": "Feet",
+        "source": "Freya"
+    },
+    {
+        "id": 45485,
+        "name": "Bronze Pendant of the Vanir",
+        "icon": "inv_jewelry_necklace_47",
+        "slot": "Neck",
+        "heroic": true,
+        "source": "Freya"
+    },
+    {
+        "id": 45486,
+        "name": "Drape of the Sullen Goddess",
+        "icon": "inv_misc_cape_naxxramas_02",
+        "slot": "Back",
+        "heroic": true,
+        "source": "Freya"
+    },
+    {
+        "id": 45613,
+        "name": "Dreambinder",
+        "icon": "inv_staff_93",
+        "slot": "Two hand",
+        "heroic": true,
+        "source": "Freya"
+    },
+    {
+        "id": 45481,
+        "name": "Gauntlets of Ruthless Reprisal",
+        "icon": "inv_gauntlets_29",
+        "slot": "Hands",
+        "source": "Freya"
+    },
+    {
+        "id": 45487,
+        "name": "Handguards of Revitalization",
+        "icon": "inv_gauntlets_62",
+        "slot": "Hands",
+        "heroic": true,
+        "source": "Freya"
+    },
+    {
+        "id": 45488,
+        "name": "Leggings of the Enslaved Idol",
+        "icon": "inv_pants_cloth_27",
+        "slot": "Legs",
+        "heroic": true,
+        "source": "Freya"
+    },
+    {
+        "id": 45482,
+        "name": "Leggings of the Lifetender",
+        "icon": "inv_pants_leather_28",
+        "slot": "Legs",
+        "source": "Freya"
+    },
+    {
+        "id": 45653,
+        "name": "Legplates of the Wayward Conqueror",
+        "icon": "inv_pants_plate_17",
+        "slot": "Legs",
+        "source": "Freya"
+    },
+    {
+        "id": 45654,
+        "name": "Legplates of the Wayward Protector",
+        "icon": "inv_pants_plate_17",
+        "slot": "Legs",
+        "source": "Freya"
+    },
+    {
+        "id": 45655,
+        "name": "Legplates of the Wayward Vanquisher",
+        "icon": "inv_pants_plate_17",
+        "slot": "Legs",
+        "source": "Freya"
+    },
+    {
+        "id": 45480,
+        "name": "Nymph Heart Charm",
+        "icon": "inv_jewelry_necklace_10",
+        "slot": "Neck",
+        "source": "Freya"
+    },
+    {
+        "id": 45479,
+        "name": "The Lifebinder",
+        "icon": "inv_staff_93",
+        "slot": "Two hand",
+        "source": "Freya"
+    },
+    {
+        "id": 45632,
+        "name": "Breastplate of the Wayward Conqueror",
+        "icon": "inv_chest_chain_03",
+        "slot": "Legs",
+        "source": "Hodir"
+    },
+    {
+        "id": 45633,
+        "name": "Breastplate of the Wayward Protector",
+        "icon": "inv_chest_chain_03",
+        "slot": "Legs",
+        "source": "Hodir"
+    },
+    {
+        "id": 45634,
+        "name": "Breastplate of the Wayward Vanquisher",
+        "icon": "inv_chest_chain_03",
+        "slot": "Legs",
+        "source": "Hodir"
+    },
+    {
+        "id": 45454,
+        "name": "Frost-bound Chain Bracers",
+        "icon": "inv_bracer_25",
+        "slot": "Wrist",
+        "source": "Hodir"
+    },
+    {
+        "id": 45452,
+        "name": "Frostplate Greaves",
+        "icon": "inv_pants_plate_30",
+        "slot": "Legs",
+        "source": "Hodir"
+    },
+    {
+        "id": 45451,
+        "name": "Frozen Loop",
+        "icon": "inv_jewelry_ring_57",
+        "slot": "Ring",
+        "source": "Hodir"
+    },
+    {
+        "id": 45450,
+        "name": "Northern Barrier",
+        "icon": "inv_shield_66",
+        "slot": "Shield",
+        "source": "Hodir"
+    },
+    {
+        "id": 45453,
+        "name": "Winter's Icy Embrace",
+        "icon": "inv_chest_leather_13",
+        "slot": "Vest",
+        "source": "Hodir"
+    },
+    {
+        "id": 45460,
+        "name": "Bindings of Winter Gale",
+        "icon": "inv_bracer_29",
+        "slot": "Wrist",
+        "heroic": true,
+        "source": "Hodir"
+    },
+    {
+        "id": 45461,
+        "name": "Drape of Icy Intent",
+        "icon": "inv_misc_cape_05",
+        "slot": "Back",
+        "heroic": true,
+        "source": "Hodir"
+    },
+    {
+        "id": 45459,
+        "name": "Frigid Strength of Hodir",
+        "icon": "inv_jewelry_necklace_04",
+        "slot": "Neck",
+        "heroic": true,
+        "source": "Hodir"
+    },
+    {
+        "id": 45462,
+        "name": "Gloves of the Frozen Glade",
+        "icon": "inv_gauntlets_74",
+        "slot": "Hands",
+        "heroic": true,
+        "source": "Hodir"
+    },
+    {
+        "id": 45457,
+        "name": "Staff of Endless Winter",
+        "icon": "inv_staff_94",
+        "slot": "Two hand",
+        "heroic": true,
+        "source": "Hodir"
+    },
+    {
+        "id": 45467,
+        "name": "Belt of the Betrayed",
+        "icon": "inv_belt_45a",
+        "slot": "Waist",
+        "source": "Thorim"
+    },
+    {
+        "id": 45638,
+        "name": "Crown of the Wayward Conqueror",
+        "icon": "inv_helmet_24",
+        "slot": "None",
+        "source": "Thorim"
+    },
+    {
+        "id": 45639,
+        "name": "Crown of the Wayward Protector",
+        "icon": "inv_helmet_24",
+        "slot": "None",
+        "source": "Thorim"
+    },
+    {
+        "id": 45640,
+        "name": "Crown of the Wayward Vanquisher",
+        "icon": "inv_helmet_24",
+        "slot": "None",
+        "source": "Thorim"
+    },
+    {
+        "id": 45473,
+        "name": "Embrace of the Gladiator",
+        "icon": "inv_chest_leather_16",
+        "slot": "Vest",
+        "heroic": true,
+        "source": "Thorim"
+    },
+    {
+        "id": 45471,
+        "name": "Fate's Clutch",
+        "icon": "inv_jewelry_ring_69",
+        "slot": "Ring",
+        "heroic": true,
+        "source": "Thorim"
+    },
+    {
+        "id": 45468,
+        "name": "Leggings of Lost Love",
+        "icon": "inv_pants_cloth_27",
+        "slot": "Legs",
+        "source": "Thorim"
+    },
+    {
+        "id": 45474,
+        "name": "Pauldrons of the Combatant",
+        "icon": "inv_shoulder_01",
+        "slot": "Shoulders",
+        "heroic": true,
+        "source": "Thorim"
+    },
+    {
+        "id": 45466,
+        "name": "Scale of Fates",
+        "icon": "inv_spiritshard_02",
+        "slot": "Trinket",
+        "source": "Thorim"
+    },
+    {
+        "id": 45469,
+        "name": "Sif's Promise",
+        "icon": "inv_jewelry_ring_54",
+        "slot": "Ring",
+        "source": "Thorim"
+    },
+    {
+        "id": 45570,
+        "name": "Skyforge Crossbow",
+        "icon": "inv_weapon_crossbow_33",
+        "slot": "Bow",
+        "heroic": true,
+        "source": "Thorim"
+    },
+    {
+        "id": 45463,
+        "name": "Vulmir, the Northern Tempest",
+        "icon": "inv_mace_91",
+        "slot": "One hand",
+        "source": "Thorim"
+    },
+    {
+        "id": 45472,
+        "name": "Warhelm of the Champion",
+        "icon": "inv_helmet_134",
+        "slot": "Head",
+        "heroic": true,
+        "source": "Thorim"
+    },
+    {
+        "id": 45470,
+        "name": "Wisdom's Hold",
+        "icon": "inv_shield_65",
+        "slot": "Shield",
+        "heroic": true,
+        "source": "Thorim"
+    },
+    {
+        "id": 45663,
+        "name": "Armbands of Bedlam",
+        "icon": "inv_bracer_23a",
+        "slot": "Wrist",
+        "heroic": true,
+        "source": "Mimiron"
+    },
+    {
+        "id": 45493,
+        "name": "Asimov's Drape",
+        "icon": "inv_misc_cape_16",
+        "slot": "Back",
+        "source": "Mimiron"
+    },
+    {
+        "id": 45495,
+        "name": "Conductive Seal",
+        "icon": "inv_jewelry_ring_66",
+        "slot": "Ring",
+        "heroic": true,
+        "source": "Mimiron"
+    },
+    {
+        "id": 45497,
+        "name": "Crown of Luminescence",
+        "icon": "inv_helmet_99",
+        "slot": "Head",
+        "heroic": true,
+        "source": "Mimiron"
+    },
+    {
+        "id": 45494,
+        "name": "Delirium's Touch",
+        "icon": "inv_weapon_hand_23",
+        "slot": "Off hand",
+        "heroic": true,
+        "source": "Mimiron"
+    },
+    {
+        "id": 45641,
+        "name": "Gauntlets of the Wayward Conqueror",
+        "icon": "inv_gauntlets_27",
+        "slot": "None",
+        "source": "Mimiron"
+    },
+    {
+        "id": 45642,
+        "name": "Gauntlets of the Wayward Protector",
+        "icon": "inv_gauntlets_27",
+        "slot": "None",
+        "source": "Mimiron"
+    },
+    {
+        "id": 45643,
+        "name": "Gauntlets of the Wayward Vanquisher",
+        "icon": "inv_gauntlets_27",
+        "slot": "None",
+        "source": "Mimiron"
+    },
+    {
+        "id": 45489,
+        "name": "Insanity's Grip",
+        "icon": "inv_weapon_hand_23",
+        "slot": "Main hand",
+        "source": "Mimiron"
+    },
+    {
+        "id": 45492,
+        "name": "Malleable Steelweave Mantle",
+        "icon": "inv_shoulder_18",
+        "slot": "Shoulders",
+        "source": "Mimiron"
+    },
+    {
+        "id": 45490,
+        "name": "Pandora's Plea",
+        "icon": "achievement_dungeon_ulduar77_25man",
+        "slot": "Trinket",
+        "source": "Mimiron"
+    },
+    {
+        "id": 45620,
+        "name": "Starshard Edge",
+        "icon": "inv_weapon_shortblade_92",
+        "slot": "Main hand",
+        "heroic": true,
+        "source": "Mimiron"
+    },
+    {
+        "id": 45496,
+        "name": "Titanskin Cloak",
+        "icon": "inv_misc_cape_19",
+        "slot": "Back",
+        "heroic": true,
+        "source": "Mimiron"
+    },
+    {
+        "id": 45491,
+        "name": "Waistguard of the Creator",
+        "icon": "inv_belt_15",
+        "slot": "Waist",
+        "source": "Mimiron"
+    },
+    {
+        "id": 45505,
+        "name": "Belt of Clinging Hope",
+        "icon": "inv_belt_44b",
+        "slot": "Waist",
+        "source": "Vezax"
+    },
+    {
+        "id": 45508,
+        "name": "Belt of the Darkspeaker",
+        "icon": "inv_belt_10",
+        "slot": "Waist",
+        "source": "Vezax"
+    },
+    {
+        "id": 45513,
+        "name": "Boots of the Forgotten Depths",
+        "icon": "inv_boots_chain_06",
+        "slot": "Feet",
+        "source": "Vezax"
+    },
+    {
+        "id": 45501,
+        "name": "Boots of the Underdweller",
+        "icon": "inv_boots_plate_06",
+        "slot": "Feet",
+        "source": "Vezax"
+    },
+    {
+        "id": 45504,
+        "name": "Darkcore Leggings",
+        "icon": "inv_pants_mail_09",
+        "slot": "Legs",
+        "source": "Vezax"
+    },
+    {
+        "id": 45518,
+        "name": "Flare of the Heavens",
+        "icon": "spell_holy_summonlightwell",
+        "slot": "Trinket",
+        "heroic": true,
+        "source": "Vezax"
+    },
+    {
+        "id": 45512,
+        "name": "Grips of the Unbroken",
+        "icon": "inv_gauntlets_53",
+        "slot": "Hands",
+        "source": "Vezax"
+    },
+    {
+        "id": 45520,
+        "name": "Handwraps of the Vigilant",
+        "icon": "inv_gauntlets_71",
+        "slot": "Hands",
+        "heroic": true,
+        "source": "Vezax"
+    },
+    {
+        "id": 45502,
+        "name": "Helm of the Faceless",
+        "icon": "inv_helmet_138",
+        "slot": "Head",
+        "source": "Vezax"
+    },
+    {
+        "id": 45509,
+        "name": "Idol of the Corruptor",
+        "icon": "inv_qirajidol_strife",
+        "slot": "Relic",
+        "source": "Vezax"
+    },
+    {
+        "id": 45145,
+        "name": "Libram of the Sacred Shield",
+        "icon": "inv_relics_libramofhope",
+        "slot": "Relic",
+        "source": "Vezax"
+    },
+    {
+        "id": 45498,
+        "name": "Lotrafen, Spear of the Damned",
+        "icon": "inv_weapon_halberd_30",
+        "slot": "Two hand",
+        "source": "Vezax"
+    },
+    {
+        "id": 45514,
+        "name": "Mantle of the Unknowing",
+        "icon": "inv_shoulder_94",
+        "slot": "Shoulders",
+        "source": "Vezax"
+    },
+    {
+        "id": 45503,
+        "name": "Metallic Loop of the Sufferer",
+        "icon": "inv_jewelry_ring_35",
+        "slot": "Ring",
+        "source": "Vezax"
+    },
+    {
+        "id": 45517,
+        "name": "Pendulum of Infinity",
+        "icon": "inv_jewelry_necklace_45",
+        "slot": "Neck",
+        "heroic": true,
+        "source": "Vezax"
+    },
+    {
+        "id": 45515,
+        "name": "Ring of the Vacant Eye",
+        "icon": "inv_jewelry_ring_ahnqiraj_02",
+        "slot": "Ring",
+        "source": "Vezax"
+    },
+    {
+        "id": 45511,
+        "name": "Scepter of Lost Souls",
+        "icon": "inv_wand_28",
+        "slot": "Bow",
+        "source": "Vezax"
+    },
+    {
+        "id": 45507,
+        "name": "The General's Heart",
+        "icon": "inv_misc_ahnqirajtrinket_05",
+        "slot": "Trinket",
+        "source": "Vezax"
+    },
+    {
+        "id": 45519,
+        "name": "Vestments of the Blind Denizen",
+        "icon": "inv_chest_leather_12",
+        "slot": "Vest",
+        "heroic": true,
+        "source": "Vezax"
+    },
+    {
+        "id": 45516,
+        "name": "Voldrethar, Dark Blade of Oblivion",
+        "icon": "inv_sword_136",
+        "slot": "Two hand",
+        "heroic": true,
+        "source": "Vezax"
+    },
+    {
+        "id": 45522,
+        "name": "Blood of the Old God",
+        "icon": "inv_misc_gem_bloodstone_03",
+        "slot": "Trinket",
+        "source": "Yogg-Saron"
+    },
+    {
+        "id": 45524,
+        "name": "Chestguard of Insidious Intent",
+        "icon": "inv_chest_mail_03",
+        "slot": "Vest",
+        "source": "Yogg-Saron"
+    },
+    {
+        "id": 45531,
+        "name": "Chestguard of the Fallen God",
+        "icon": "inv_chest_leather_13",
+        "slot": "Vest",
+        "source": "Yogg-Saron"
+    },
+    {
+        "id": 45532,
+        "name": "Cowl of Dark Whispers",
+        "icon": "inv_helmet_136",
+        "slot": "Head",
+        "source": "Yogg-Saron"
+    },
+    {
+        "id": 45533,
+        "name": "Dark Edge of Depravity",
+        "icon": "inv_weapon_halberd_30",
+        "slot": "Two hand",
+        "heroic": true,
+        "source": "Yogg-Saron"
+    },
+    {
+        "id": 45521,
+        "name": "Earthshaper",
+        "icon": "inv_mace_93",
+        "slot": "Two hand",
+        "source": "Yogg-Saron"
+    },
+    {
+        "id": 45523,
+        "name": "Garona's Guise",
+        "icon": "inv_helmet_100-tga",
+        "slot": "Head",
+        "source": "Yogg-Saron"
+    },
+    {
+        "id": 45525,
+        "name": "Godbane Signet",
+        "icon": "inv_jewelry_ring_54",
+        "slot": "Ring",
+        "source": "Yogg-Saron"
+    },
+    {
+        "id": 45536,
+        "name": "Legguards of Cunning Deception",
+        "icon": "inv_pants_leather_28",
+        "slot": "Legs",
+        "heroic": true,
+        "source": "Yogg-Saron"
+    },
+    {
+        "id": 45656,
+        "name": "Mantle of the Wayward Conqueror",
+        "icon": "inv_shoulder_22",
+        "slot": "None",
+        "source": "Yogg-Saron"
+    },
+    {
+        "id": 45657,
+        "name": "Mantle of the Wayward Protector",
+        "icon": "inv_shoulder_22",
+        "slot": "None",
+        "source": "Yogg-Saron"
+    },
+    {
+        "id": 45658,
+        "name": "Mantle of the Wayward Vanquisher",
+        "icon": "inv_shoulder_22",
+        "slot": "None",
+        "source": "Yogg-Saron"
+    },
+    {
+        "id": 45693,
+        "name": "Mimiron's Head",
+        "icon": "inv_misc_enggizmos_03",
+        "slot": "None",
+        "hidden": true,
+        "heroic": true,
+        "source": "Yogg-Saron"
+    },
+    {
+        "id": 45897,
+        "name": "Reforged Hammer of Ancient Kings",
+        "icon": "inv_mace_99",
+        "slot": "None",
+        "source": "Yogg-Saron"
+    },
+    {
+        "id": 45530,
+        "name": "Sanity's Bond",
+        "icon": "inv_jewelry_ring_80",
+        "slot": "Ring",
+        "source": "Yogg-Saron"
+    },
+    {
+        "id": 45534,
+        "name": "Seal of the Betrayed King",
+        "icon": "inv_jewelry_ring_76",
+        "slot": "Ring",
+        "heroic": true,
+        "source": "Yogg-Saron"
+    },
+    {
+        "id": 45529,
+        "name": "Shawl of Haunted Memories",
+        "icon": "inv_misc_cape_16",
+        "slot": "Back",
+        "source": "Yogg-Saron"
+    },
+    {
+        "id": 45535,
+        "name": "Show of Faith",
+        "icon": "spell_holy_improvedresistanceauras",
+        "slot": "Trinket",
+        "source": "Yogg-Saron"
+    },
+    {
+        "id": 45527,
+        "name": "Soulscribe",
+        "icon": "inv_weapon_shortblade_80",
+        "slot": "Main hand",
+        "source": "Yogg-Saron"
+    },
+    {
+        "id": 45537,
+        "name": "Treads of the False Oracle",
+        "icon": "inv_boots_cloth_17",
+        "slot": "Feet",
+        "heroic": true,
+        "source": "Yogg-Saron"
+    },
+    {
+        "id": 45548,
+        "name": "Belt of the Sleeper",
+        "icon": "inv_belt_49c",
+        "slot": "Waist",
+        "source": "Trash"
+    },
+    {
+        "id": 45540,
+        "name": "Bladebearer's Signet",
+        "icon": "inv_jewelry_ring_72",
+        "slot": "Ring",
+        "source": "Trash"
+    },
+    {
+        "id": 45605,
+        "name": "Daschal's Bite",
+        "icon": "inv_weapon_shortblade_74",
+        "slot": "One hand",
+        "source": "Trash"
+    },
+    {
+        "id": 45542,
+        "name": "Greaves of the Stonewarder",
+        "icon": "inv_boots_plate_08",
+        "slot": "Feet",
+        "source": "Trash"
+    },
+    {
+        "id": 45549,
+        "name": "Grips of Chaos",
+        "icon": "inv_bracer_31b",
+        "slot": "Wrist",
+        "source": "Trash"
+    },
+    {
+        "id": 46138,
+        "name": "Idol of the Flourishing Life",
+        "icon": "inv_relics_idolofrejuvenation",
+        "slot": "Relic",
+        "source": "Trash"
+    },
+    {
+        "id": 45544,
+        "name": "Leggings of the Tortured Earth",
+        "icon": "inv_pants_mail_25",
+        "slot": "Legs",
+        "source": "Trash"
+    },
+    {
+        "id": 45539,
+        "name": "Pendant of Focused Energies",
+        "icon": "inv_jewelry_necklace_40",
+        "slot": "Neck",
+        "source": "Trash"
+    },
+    {
+        "id": 45547,
+        "name": "Relic Hunter's Cord",
+        "icon": "inv_belt_46b",
+        "slot": "Waist",
+        "source": "Trash"
+    },
+    {
+        "id": 45543,
+        "name": "Shoulders of Misfortune",
+        "icon": "inv_shoulder_101",
+        "slot": "Shoulders",
+        "source": "Trash"
+    },
+    {
+        "id": 45541,
+        "name": "Shroud of Alteration",
+        "icon": "inv_misc_cape_05",
+        "slot": "Back",
+        "source": "Trash"
+    },
+    {
+        "id": 45538,
+        "name": "Titanstone Pendant",
+        "icon": "inv_jewelry_necklace_15",
+        "slot": "Neck",
+        "source": "Trash"
+    },
+    {
+        "id": 45038,
+        "name": "Fragment of Val'anyr",
+        "icon": "inv_ingot_titansteel_red",
+        "slot": "None",
+        "source": "Tokens"
+    },
+    {
+        "id": 45087,
+        "name": "Runed Orb",
+        "icon": "inv_misc_runedorb_01",
+        "slot": "None",
+        "source": "Tokens"
+    },
+    {
+        "id": 46027,
+        "name": "Formula: Enchant Weapon - Blade Ward",
+        "icon": "inv_enchant_formulaepic_01",
+        "slot": "None",
+        "source": "Recipes"
+    },
+    {
+        "id": 46348,
+        "name": "Formula: Enchant Weapon - Blood Draining",
+        "icon": "inv_enchant_formulaepic_01",
+        "slot": "None",
+        "source": "Recipes"
+    },
+    {
+        "id": 45100,
+        "name": "Pattern: Belt of Arctic Life",
+        "icon": "inv_scroll_04",
+        "slot": "None",
+        "source": "Recipes"
+    },
+    {
+        "id": 45094,
+        "name": "Pattern: Belt of Dragons",
+        "icon": "inv_scroll_04",
+        "slot": "None",
+        "source": "Recipes"
+    },
+    {
+        "id": 45096,
+        "name": "Pattern: Blue Belt of Chaos",
+        "icon": "inv_scroll_04",
+        "slot": "None",
+        "source": "Recipes"
+    },
+    {
+        "id": 45095,
+        "name": "Pattern: Boots of Living Scale",
+        "icon": "inv_scroll_04",
+        "slot": "None",
+        "source": "Recipes"
+    },
+    {
+        "id": 45101,
+        "name": "Pattern: Boots of Wintry Endurance",
+        "icon": "inv_scroll_04",
+        "slot": "None",
+        "source": "Recipes"
+    },
+    {
+        "id": 45104,
+        "name": "Pattern: Cord of the White Dawn",
+        "icon": "inv_scroll_04",
+        "slot": "None",
+        "source": "Recipes"
+    },
+    {
+        "id": 45098,
+        "name": "Pattern: Death-warmed Belt",
+        "icon": "inv_scroll_04",
+        "slot": "None",
+        "source": "Recipes"
+    },
+    {
+        "id": 45099,
+        "name": "Pattern: Footpads of Silence",
+        "icon": "inv_scroll_04",
+        "slot": "None",
+        "source": "Recipes"
+    },
+    {
+        "id": 45097,
+        "name": "Pattern: Lightning Grounded Boots",
+        "icon": "inv_scroll_04",
+        "slot": "None",
+        "source": "Recipes"
+    },
+    {
+        "id": 45102,
+        "name": "Pattern: Sash of Ancient Power",
+        "icon": "inv_scroll_04",
+        "slot": "None",
+        "source": "Recipes"
+    },
+    {
+        "id": 45105,
+        "name": "Pattern: Savior's Slippers",
+        "icon": "inv_scroll_04",
+        "slot": "None",
+        "source": "Recipes"
+    },
+    {
+        "id": 45103,
+        "name": "Pattern: Spellslinger's Slippers",
+        "icon": "inv_scroll_04",
+        "slot": "None",
+        "source": "Recipes"
+    },
+    {
+        "id": 45089,
+        "name": "Plans: Battlelord's Plate Boots",
+        "icon": "inv_scroll_04",
+        "slot": "None",
+        "source": "Recipes"
+    },
+    {
+        "id": 45088,
+        "name": "Plans: Belt of the Titans",
+        "icon": "inv_scroll_04",
+        "slot": "None",
+        "source": "Recipes"
+    },
+    {
+        "id": 45092,
+        "name": "Plans: Indestructible Plate Girdle",
+        "icon": "inv_scroll_04",
+        "slot": "None",
+        "source": "Recipes"
+    },
+    {
+        "id": 45090,
+        "name": "Plans: Plate Girdle of Righteousness",
+        "icon": "inv_scroll_04",
+        "slot": "None",
+        "source": "Recipes"
+    },
+    {
+        "id": 45093,
+        "name": "Plans: Spiked Deathdealers",
+        "icon": "inv_scroll_04",
+        "slot": "None",
+        "source": "Recipes"
+    },
+    {
+        "id": 45091,
+        "name": "Plans: Treads of Destiny",
+        "icon": "inv_scroll_04",
+        "slot": "None",
+        "source": "Recipes"
+    }
+]
