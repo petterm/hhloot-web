@@ -16,7 +16,7 @@ const dropsIncludingGrouped = (boss: Boss): Item[] => {
         items.push(drop.item);
         drop.groupedItems.forEach(item => items.push(item));
     });
-    items.sort((a,b) => a.heroic == b.heroic ? a.name.localeCompare(b.name) : a.heroic ? 1 : -1)
+    items.sort((a,b) => a.heroic === b.heroic ? a.name.localeCompare(b.name) : a.heroic ? 1 : -1)
 
     return items;
 }

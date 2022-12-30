@@ -181,7 +181,7 @@ const parseLootTable = (instance: Instance, rawData: LootTableAq40[] | LootTable
     });
 
     for (const [, boss] of Object.entries(lootTable.bossMap)) {
-        boss.drops.sort((a,b) => a.item.heroic == b.item.heroic ? a.item.name.localeCompare(b.item.name) : a.item.heroic ? 1 : -1)
+        boss.drops.sort((a,b) => a.item.heroic === b.item.heroic ? a.item.name.localeCompare(b.item.name) : a.item.heroic ? 1 : -1)
     }
 };
 
