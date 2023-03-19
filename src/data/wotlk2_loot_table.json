@@ -1167,6 +1167,14 @@
         "source": "Hodir"
     },
     {
+        "id": 45612,
+        "name": "Constellus",
+        "icon": "inv_mace_92",
+        "slot": "Main hand",
+        "heroic": true,
+        "source": "Hodir"
+    },
+    {
         "id": 45461,
         "name": "Drape of Icy Intent",
         "icon": "inv_misc_cape_05",
@@ -1647,13 +1655,6 @@
         "source": "Yogg-Saron"
     },
     {
-        "id": 45897,
-        "name": "Reforged Hammer of Ancient Kings",
-        "icon": "inv_mace_99",
-        "slot": "None",
-        "source": "Yogg-Saron"
-    },
-    {
         "id": 45530,
         "name": "Sanity's Bond",
         "icon": "inv_jewelry_ring_80",
@@ -1680,6 +1681,7 @@
         "name": "Show of Faith",
         "icon": "spell_holy_improvedresistanceauras",
         "slot": "Trinket",
+        "heroic": true,
         "source": "Yogg-Saron"
     },
     {
@@ -1786,6 +1788,7 @@
         "name": "Fragment of Val'anyr",
         "icon": "inv_ingot_titansteel_red",
         "slot": "None",
+        "hidden": true,
         "source": "Tokens"
     },
     {
@@ -1793,6 +1796,7 @@
         "name": "Runed Orb",
         "icon": "inv_misc_runedorb_01",
         "slot": "None",
+        "hidden": true,
         "source": "Tokens"
     },
     {
