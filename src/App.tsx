@@ -19,7 +19,7 @@ function App() {
     const [error, setError] = useState<Error>();
     const [loginPlayer, setLoginPlayer] = useState<Player | undefined>();
 
-    let instance: Instance = 'wotlk2';
+    let instance: Instance = 'wotlk3';
 
     const pathParts = window.location.pathname.split('/');
     const path = pathParts[pathParts.length - 1];
@@ -66,7 +66,9 @@ function App() {
                 {isLoaded ? (
                     <>
                         <header>
-                            <img className="headerImage" src={`./${instanceData.image}`} alt={instanceData.name} />
+                            {instanceData.image && (
+                                <img className="headerImage" src={`./${instanceData.image}`} alt={instanceData.name} />
+                            )}
                             <h2 className="headerTitle">{instanceData.name}</h2>
                             <a href="/">Held Hostile</a>
                             {" - "}

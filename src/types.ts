@@ -7,11 +7,11 @@ export type Class = 'DEATH KNIGHT' | 'DRUID' | 'HUNTER' | 'MAGE' | 'PALADIN' | '
 export type Date = string;
 export type GuildRank = 'Guild Master' | 'Officer' | 'Officer alt' | 'Member' | 'Initiate' | 'Social' | 'Alt';
 export type PlayerName = string;
-export type Instance = 'aq40' | 'naxx' | 'tbc1' | 'tbc2' | 'tbc3' | 'tbc5' | 'wotlk1' | 'wotlk2';
+export type Instance = 'aq40' | 'naxx' | 'tbc1' | 'tbc2' | 'tbc3' | 'tbc5' | 'wotlk1' | 'wotlk2' | 'wotlk3' | 'wotlk4';
 
 export interface InstanceData {
     name: string,
-    image: string,
+    image?: string,
     bonusRaidStartDate: Moment,
     lootSheetID: string,
     lootSheetTab: string,

@@ -1,0 +1,436 @@
+[
+    {
+        "id": 46966,
+        "name": "Band of the Violent Temperment",
+        "icon": "inv_jewelry_ring_76",
+        "slot": "Ring",
+        "source": "Icehowl"
+    },
+    {
+        "id": 46991,
+        "name": "Belt of the Ice Burrower",
+        "icon": "inv_belt_47a",
+        "slot": "Waist",
+        "source": "Icehowl"
+    },
+    {
+        "id": 46980,
+        "name": "Blade of Tarasque",
+        "icon": "inv_weapon_shortblade_99",
+        "slot": "Main hand",
+        "source": "Icehowl"
+    },
+    {
+        "id": 46967,
+        "name": "Boneshatter Armplates",
+        "icon": "inv_bracer_27b",
+        "slot": "Wrist",
+        "source": "Icehowl"
+    },
+    {
+        "id": 46965,
+        "name": "Breastplate of Cruel Intent",
+        "icon": "inv_chest_mail_07",
+        "slot": "Vest",
+        "source": "Icehowl"
+    },
+    {
+        "id": 46968,
+        "name": "Chestplate of the Towering Monstrosity",
+        "icon": "inv_chest_plate20",
+        "slot": "Vest",
+        "source": "Icehowl"
+    },
+    {
+        "id": 46973,
+        "name": "Cord of the Tenebrous Mist",
+        "icon": "inv_belt_52",
+        "slot": "Waist",
+        "source": "Icehowl"
+    },
+    {
+        "id": 46964,
+        "name": "Crystal Plated Vanguard",
+        "icon": "inv_shield_68",
+        "slot": "Shield",
+        "source": "Icehowl"
+    },
+    {
+        "id": 46971,
+        "name": "Drape of the Untamed Predator",
+        "icon": "inv_misc_cape_16",
+        "slot": "Back",
+        "source": "Icehowl"
+    },
+    {
+        "id": 46993,
+        "name": "Flowing Vestments of Ascent",
+        "icon": "inv_chest_cloth_75",
+        "slot": "Vest",
+        "source": "Icehowl"
+    },
+    {
+        "id": 46977,
+        "name": "Shawl of the Refreshing Winds",
+        "icon": "inv_misc_cape_16",
+        "slot": "Back",
+        "source": "Icehowl"
+    },
+    {
+        "id": 46975,
+        "name": "Leggings of the Broken Beast",
+        "icon": "inv_pants_leather_28",
+        "slot": "Legs",
+        "source": "Icehowl"
+    },
+    {
+        "id": 46989,
+        "name": "Boots of the Unrelenting Storm",
+        "icon": "inv_boots_leather01",
+        "slot": "Feet",
+        "source": "Icehowl"
+    },
+    {
+        "id": 46986,
+        "name": "Boots of the Courageous",
+        "icon": "inv_boots_plate_11",
+        "slot": "Feet",
+        "source": "Icehowl"
+    },
+    {
+        "id": 46969,
+        "name": "Steel Bladebreaker",
+        "icon": "inv_weapon_shortblade_95",
+        "slot": "One-Hand",
+        "source": "Icehowl"
+    },
+
+
+    {
+        "id": 47438,
+        "name": "Bindings of the Autumn Willow",
+        "icon": "inv_bracer_36b",
+        "slot": "Wrist",
+        "source": "Jaraxxus"
+    },
+    {
+        "id": 47002,
+        "name": "Bloodbath Belt",
+        "icon": "inv_belt_49c",
+        "slot": "Waist",
+        "source": "Jaraxxus"
+    },
+    {
+        "id": 47004,
+        "name": "Cuirass of Calamitous Fate",
+        "icon": "inv_chest_leather_14",
+        "slot": "Vest",
+        "source": "Jaraxxus"
+    },
+    {
+        "id": 47067,
+        "name": "Legplates of Failing Light",
+        "icon": "inv_pants_plate_15",
+        "slot": "Legs",
+        "source": "Jaraxxus"
+    },
+    {
+        "id": 47001,
+        "name": "Lionhead Slasher",
+        "icon": "inv_axe_105",
+        "slot": "One hand",
+        "source": "Jaraxxus"
+    },
+    {
+        "id": 47063,
+        "name": "Pride of the Eredar",
+        "icon": "inv_misc_cape_16",
+        "slot": "Back",
+        "source": "Jaraxxus"
+    },
+    {
+        "id": 47059,
+        "name": "Solace of the Defeated",
+        "icon": "achievement_dungeon_ulduar77_25man",
+        "slot": "Trinket",
+        "source": "Jaraxxus"
+    },
+    {
+        "id": 47064,
+        "name": "Symbol of Transgression",
+        "icon": "inv_offhand_pvealliance_d_01",
+        "slot": "Held",
+        "source": "Jaraxxus"
+    },
+    {
+        "id": 46995,
+        "name": "Talonstrike",
+        "icon": "inv_weapon_crossbow_34",
+        "slot": "Bow",
+        "source": "Jaraxxus"
+    },
+    {
+        "id": 47062,
+        "name": "Leggings of the Soothing Touch",
+        "icon": "inv_pants_cloth_33",
+        "slot": "Legs",
+        "source": "Jaraxxus"
+    },
+    {
+        "id": 47068,
+        "name": "Bracers of Cloudy Omen",
+        "icon": "inv_bracer_32a",
+        "slot": "Wrist",
+        "source": "Jaraxxus"
+    },
+    {
+        "id": 47061,
+        "name": "Legguards of Feverish Dedication",
+        "icon": "inv_pants_plate_20",
+        "slot": "Legs",
+        "source": "Jaraxxus"
+    },
+    {
+        "id": 47003,
+        "name": "Dawnbreaker Greaves",
+        "icon": "inv_boots_plate_06",
+        "slot": "Feet",
+        "source": "Jaraxxus"
+    },
+    {
+        "id": 47060,
+        "name": "Charge of the Demon Lord",
+        "icon": "inv_jewelry_necklace_34",
+        "slot": "Neck",
+        "source": "Jaraxxus"
+    },
+    {
+        "id": 47224,
+        "name": "Ring of the Darkmender",
+        "icon": "inv_jewelry_ring_80",
+        "slot": "Finger",
+        "source": "Jaraxxus"
+    },
+
+    { "id": 47095, "name": "Cloak of Displacement", "icon": "inv_misc_cape_16", "slot": "Back", "source": "Faction Champions" },
+    { "id": 47084, "name": "Cord of Biting Cold", "icon": "inv_belt_52", "slot": "Waist", "source": "Faction Champions" },
+    { "id": 47097, "name": "Boots of the Mourning Widow", "icon": "inv_boots_cloth_23", "slot": "Feet", "source": "Faction Champions" },
+    { "id": 47096, "name": "Vestments of the Shattered Fellowship", "icon": "inv_chest_leather_12", "slot": "Chest", "source": "Faction Champions" },
+    { "id": 47077, "name": "Treads of the Icewalker", "icon": "inv_boots_leather_02", "slot": "Feet", "source": "Faction Champions" },
+    { "id": 47074, "name": "Bracers of the Untold Massacre", "icon": "inv_bracer_32a", "slot": "Wrist", "source": "Faction Champions" },
+    { "id": 47087, "name": "Legguards of Concealed Hatred", "icon": "inv_pants_mail_25", "slot": "Legs", "source": "Faction Champions" },
+    { "id": 47099, "name": "Boots of Tremoring Earth", "icon": "inv_boots_chain_06", "slot": "Feet", "source": "Faction Champions" },
+    { "id": 47086, "name": "Chestplate of the Frostborn Hero", "icon": "inv_chest_plate_24", "slot": "Chest", "source": "Faction Champions" },
+    { "id": 47098, "name": "Vambraces of the Broken Bond", "icon": "inv_bracer_28b", "slot": "Wrist", "source": "Faction Champions" },
+    { "id": 47076, "name": "Girdle of Bloodied Scars", "icon": "inv_belt_48c", "slot": "Waist", "source": "Faction Champions" },
+    { "id": 47075, "name": "Ring of Callous Aggression", "icon": "inv_jewelry_ring_65", "slot": "Finger", "source": "Faction Champions" },
+    { "id": 47088, "name": "Satrina's Impeding Scarab", "icon": "inv_scarab_crystal", "slot": "Trinket", "source": "Faction Champions" },
+    { "id": 47078, "name": "Justicebringer", "icon": "inv_axe_103", "slot": "Two-Hand", "source": "Faction Champions" },
+    { "id": 47085, "name": "Bastion of Purity", "icon": "inv_shield_69", "slot": "Off Hand", "source": "Faction Champions" },
+
+
+    {
+        "id": 47143,
+        "name": "Bindings of Dark Essence",
+        "icon": "inv_bracer_37",
+        "slot": "Wrist",
+        "source": "The Twin Val'kyr"
+    },
+    {
+        "id": 47147,
+        "name": "Breastplate of the Frozen Lake",
+        "icon": "inv_chest_plate_22",
+        "slot": "Vest",
+        "source": "The Twin Val'kyr"
+    },
+    {
+        "id": 47146,
+        "name": "Chalice of Searing Light",
+        "icon": "inv_offhand_pvealliance_d_01",
+        "slot": "Held",
+        "source": "The Twin Val'kyr"
+    },
+    {
+        "id": 47145,
+        "name": "Cord of Pale Thorns",
+        "icon": "inv_belt_38a",
+        "slot": "Waist",
+        "source": "The Twin Val'kyr"
+    },
+    {
+        "id": 47144,
+        "name": "Wail of the Val'kyr",
+        "icon": "inv_jewelry_necklace_36",
+        "slot": "Neck",
+        "source": "The Twin Val'kyr"
+    },
+    { "id": 47129, "name": "Skyweaver Robes", "icon": "inv_chest_cloth_75", "slot": "Chest", "source": "The Twin Val'kyr" },
+    { "id": 47112, "name": "Belt of the Merciless Killer", "icon": "inv_belt_37c", "slot": "Waist", "source": "The Twin Val'kyr" },
+    { "id": 47109, "name": "Sabatons of Ruthless Judgment", "icon": "inv_boots_chain_07", "slot": "Feet", "source": "The Twin Val'kyr" },
+    { "id": 47111, "name": "Bracers of the Shieldmaiden", "icon": "inv_bracer_31", "slot": "Wrist", "source": "The Twin Val'kyr" },
+    { "id": 47132, "name": "Legguards of Ascension", "icon": "inv_pants_plate_28", "slot": "Legs", "source": "The Twin Val'kyr" },
+    { "id": 47133, "name": "The Arbiter's Muse", "icon": "inv_jewelry_necklace_44", "slot": "Neck", "source": "The Twin Val'kyr" },
+    { "id": 47110, "name": "The Executioner's Malice", "icon": "inv_jewelry_necklace_33", "slot": "Neck", "source": "The Twin Val'kyr" },
+    { "id": 47131, "name": "Death's Verdict", "icon": "inv_misc_bone_skull_02", "slot": "Trinket", "source": "The Twin Val'kyr" },
+    { "id": 47113, "name": "Twin Spike", "icon": "inv_weapon_shortblade_95", "slot": "One-Hand", "source": "The Twin Val'kyr" },
+    { "id": 47130, "name": "Lupine Longstaff", "icon": "inv_staff_100", "slot": "Two-Hand", "source": "The Twin Val'kyr" },
+
+
+    {
+        "id": 47239,
+        "name": "Archon Glaive",
+        "icon": "inv_staff_101",
+        "slot": "Two hand",
+        "source": "Anub'arak"
+    },
+    {
+        "id": 47237,
+        "name": "Band of Deplorable Violence",
+        "icon": "inv_jewelry_ring_55",
+        "slot": "Ring",
+        "source": "Anub'arak"
+    },
+    {
+        "id": 47153,
+        "name": "Belt of Deathly Dominion",
+        "icon": "inv_belt_45a",
+        "slot": "Waist",
+        "source": "Anub'arak"
+    },
+    {
+        "id": 47207,
+        "name": "Belt of the Forgotten Martyr",
+        "icon": "inv_belt_49c",
+        "slot": "Waist",
+        "source": "Anub'arak"
+    },
+    {
+        "id": 47155,
+        "name": "Bracers of Dark Determination",
+        "icon": "inv_bracer_23b",
+        "slot": "Wrist",
+        "source": "Anub'arak"
+    },
+    {
+        "id": 47209,
+        "name": "Chestguard of Flowing Elements",
+        "icon": "inv_chest_mail_07",
+        "slot": "Vest",
+        "source": "Anub'arak"
+    },
+    {
+        "id": 47240,
+        "name": "Gloves of Bitter Reprisal",
+        "icon": "inv_gauntlets_75",
+        "slot": "Hands",
+        "source": "Anub'arak"
+    },
+    {
+        "id": 47236,
+        "name": "Gloves of the Lifeless Touch",
+        "icon": "inv_gauntlets_79",
+        "slot": "Hands",
+        "source": "Anub'arak"
+    },
+    {
+        "id": 47154,
+        "name": "Greaves of the 7th Legion",
+        "icon": "inv_boots_plate_01",
+        "slot": "Feet",
+        "source": "Anub'arak"
+    },
+    {
+        "id": 47190,
+        "name": "Legwraps of the Awakening",
+        "icon": "inv_pants_leather_28",
+        "slot": "Legs",
+        "source": "Anub'arak"
+    },
+    {
+        "id": 47238,
+        "name": "Maiden's Favor",
+        "icon": "inv_misc_cape_16",
+        "slot": "Back",
+        "source": "Anub'arak"
+    },
+    {
+        "id": 47206,
+        "name": "Misery's End",
+        "icon": "inv_mace_107",
+        "slot": "Main hand",
+        "source": "Anub'arak"
+    },
+    {
+        "id": 47188,
+        "name": "Reign of the Unliving",
+        "icon": "inv_crown_13",
+        "slot": "Trinket",
+        "source": "Anub'arak"
+    },
+    {
+        "id": 47157,
+        "name": "Signet of the Traitor King",
+        "icon": "inv_jewelry_ring_57",
+        "slot": "Ring",
+        "source": "Anub'arak"
+    },
+    { "id": 47192, "name": "Strength of the Nerub", "icon": "inv_misc_cape_16", "slot": "Back", "source": "Anub'arak" },
+    { "id": 47208, "name": "Armbands of the Ashen Saint", "icon": "inv_bracer_37", "slot": "Wrist", "source": "Anub'arak" },
+    { "id": 47189, "name": "Leggings of the Deepening Void", "icon": "inv_pants_cloth_33", "slot": "Legs", "source": "Anub'arak" },
+    { "id": 47205, "name": "Footpads of the Icy Floe", "icon": "inv_boots_cloth_23", "slot": "Feet", "source": "Anub'arak" },
+    { "id": 47191, "name": "Legguards of the Lurking Threat", "icon": "inv_pants_mail_25", "slot": "Legs", "source": "Anub'arak" },
+    { "id": 47156, "name": "Stormpike Cleaver", "icon": "inv_axe_105", "slot": "One-Hand", "source": "Anub'arak" },
+
+    { "id": 47557, "name": "Regalia of the Grand Conqueror", "icon": "inv_chest_chain_03", "slot": "None", "source": "Tribute Chest", "heroic": true },
+    { "id": 47558, "name": "Regalia of the Grand Protector", "icon": "inv_chest_chain_03", "slot": "None", "source": "Tribute Chest", "heroic": true },
+    { "id": 47559, "name": "Regalia of the Grand Vanquisher", "icon": "inv_chest_chain_03", "slot": "None", "source": "Tribute Chest", "heroic": true },
+    { "id": 47506, "name": "Silverwing Defender", "icon": "inv_sword_145", "slot": "One-Hand", "source": "Tribute Chest", "heroic": true },
+    { "id": 47526, "name": "Remorseless", "icon": "inv_mace_105", "slot": "One-Hand", "source": "Tribute Chest", "heroic": true },
+    { "id": 47517, "name": "Blade of the Unbroken Covenant", "icon": "inv_sword_144", "slot": "Main hand", "source": "Tribute Chest", "heroic": true },
+    { "id": 47519, "name": "Catastrophe", "icon": "inv_mace_106", "slot": "Two-Hand", "source": "Tribute Chest", "heroic": true },
+    { "id": 47521, "name": "BRK-1000", "icon": "inv_weapon_rifle_35", "slot": "Ranged", "source": "Tribute Chest", "heroic": true },
+    { "id": 47524, "name": "Clemency", "icon": "inv_staff_98", "slot": "Two-Hand", "source": "Tribute Chest", "heroic": true },
+    { "id": 47515, "name": "Decimation", "icon": "inv_sword_141", "slot": "Two-Hand", "source": "Tribute Chest", "heroic": true },
+    { "id": 47547, "name": "Varian's Furor", "icon": "inv_misc_cape_16", "slot": "Back", "source": "Tribute Chest", "heroic": true },
+    { "id": 47545, "name": "Vereesa's Dexterity", "icon": "inv_misc_cape_16", "slot": "Back", "source": "Tribute Chest", "heroic": true },
+    { "id": 47549, "name": "Magni's Resolution", "icon": "inv_misc_cape_16", "slot": "Back", "source": "Tribute Chest", "heroic": true },
+    { "id": 47552, "name": "Jaina's Radiance", "icon": "inv_misc_cape_16", "slot": "Back", "source": "Tribute Chest", "heroic": true },
+    { "id": 47553, "name": "Bolvar's Devotion", "icon": "inv_misc_cape_16", "slot": "Back", "source": "Tribute Chest", "heroic": true },
+    { "id": 49096, "name": "Crusader's White Warhorse", "icon": "ability_mount_ridinghorse", "slot": "None", "source": "Tribute Chest", "heroic": true, "hidden": true },
+
+    {
+        "id": 47556,
+        "name": "Crusader Orb",
+        "icon": "spell_holy_rune",
+        "slot": "None",
+        "source": "Tokens",
+        "hidden": true
+    },
+    {
+        "id": 47242,
+        "name": "Trophy of the Crusade",
+        "icon": "inv_misc_trophy_argent",
+        "slot": "None",
+        "source": "Tokens",
+        "hidden": true
+    },
+
+    { "id": 47622, "name": "Plans: Breastplate of the White Knight", "icon": "inv_scroll_04", "slot": "None", "source": "Recipes" },
+    { "id": 47623, "name": "Plans: Saronite Swordbreakers", "icon": "inv_scroll_04", "slot": "None", "source": "Recipes" },
+    { "id": 47627, "name": "Plans: Sunforged Bracers", "icon": "inv_scroll_04", "slot": "None", "source": "Recipes" },
+    { "id": 47626, "name": "Plans: Sunforged Breastplate", "icon": "inv_scroll_04", "slot": "None", "source": "Recipes" },
+    { "id": 47624, "name": "Plans: Titanium Razorplate", "icon": "inv_scroll_04", "slot": "None", "source": "Recipes" },
+    { "id": 47625, "name": "Plans: Titanium Spikeguards", "icon": "inv_scroll_04", "slot": "None", "source": "Recipes" },
+    { "id": 47629, "name": "Pattern: Black Chitin Bracers", "icon": "inv_scroll_04", "slot": "None", "source": "Recipes" },
+    { "id": 47635, "name": "Pattern: Bracers of Swift Death", "icon": "inv_scroll_04", "slot": "None", "source": "Recipes" },
+    { "id": 47631, "name": "Pattern: Crusader's Dragonscale Bracers", "icon": "inv_scroll_04", "slot": "None", "source": "Recipes" },
+    { "id": 47630, "name": "Pattern: Crusader's Dragonscale Breastplate", "icon": "inv_scroll_04", "slot": "None", "source": "Recipes" },
+    { "id": 47628, "name": "Pattern: Ensorcelled Nerubian Breastplate", "icon": "inv_scroll_04", "slot": "None", "source": "Recipes" },
+    { "id": 47634, "name": "Pattern: Knightbane Carapace", "icon": "inv_scroll_04", "slot": "None", "source": "Recipes" },
+    { "id": 47632, "name": "Pattern: Lunar Eclipse Chestguard", "icon": "inv_scroll_04", "slot": "None", "source": "Recipes" },
+    { "id": 47633, "name": "Pattern: Moonshadow Armguards", "icon": "inv_scroll_04", "slot": "None", "source": "Recipes" },
+    { "id": 47654, "name": "Pattern: Bejeweled Wizard's Bracers", "icon": "inv_scroll_04", "slot": "None", "source": "Recipes" },
+    { "id": 47655, "name": "Pattern: Merlin's Robe", "icon": "inv_scroll_04", "slot": "None", "source": "Recipes" },
+    { "id": 47656, "name": "Pattern: Royal Moonshroud Bracers", "icon": "inv_scroll_04", "slot": "None", "source": "Recipes" },
+    { "id": 47657, "name": "Pattern: Royal Moonshroud Robe", "icon": "inv_scroll_04", "slot": "None", "source": "Recipes" }
+]

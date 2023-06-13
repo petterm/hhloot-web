@@ -7,6 +7,8 @@ import lootTableTBC3MH_untyped from '../data/tbc3_mh_loot_table.json';
 import lootTableTBC5_untyped from '../data/tbc5_loot_table.json';
 import lootTableWOTLK1_untyped from '../data/wotlk1_loot_table.json';
 import lootTableWOTLK2_untyped from '../data/wotlk2_loot_table.json';
+import lootTableWOTLK3_untyped from '../data/wotlk3_loot_table.json';
+import lootTableWOTLK4_untyped from '../data/wotlk4_loot_table.json';
 import itemIcons from '../data/item_icons.json';
 import { Boss, BossDrop, Instance, Item } from '../types';
 
@@ -52,6 +54,8 @@ const lootTableTBC3MH: LootTable[] = lootTableTBC3MH_untyped;
 const lootTableTBC5: LootTable[] = lootTableTBC5_untyped;
 const lootTableWOTLK1: LootTable[] = lootTableWOTLK1_untyped;
 const lootTableWOTLK2: LootTable[] = lootTableWOTLK2_untyped;
+const lootTableWOTLK3: LootTable[] = lootTableWOTLK3_untyped;
+const lootTableWOTLK4: LootTable[] = lootTableWOTLK4_untyped;
 
 type BossMap = { [key: string]: Boss; };
 
@@ -193,6 +197,8 @@ parseLootTable('tbc3', lootTableTBC3MH.concat(lootTableTBC3BT));
 parseLootTable('tbc5', lootTableTBC5);
 parseLootTable('wotlk1', lootTableWOTLK1);
 parseLootTable('wotlk2', lootTableWOTLK2);
+parseLootTable('wotlk3', lootTableWOTLK3);
+parseLootTable('wotlk4', lootTableWOTLK4);
 
 export const getBosses = (instance: Instance): BossMap => instanceLoot[instance].bossMap;
 export const getBossDrops = (instance?: Instance): BossDropNameMap => {
