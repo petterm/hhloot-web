@@ -86,8 +86,8 @@ export const instanceData: Record<Instance, InstanceData> = {
     },
     'wotlk4': {
         name: 'Ice Crown Citadel',
-        image: 'wotlk2.png',
-        bonusRaidStartDate: moment('2023-08-01'), // Estimate
+        // image: 'wotlk2.png',
+        bonusRaidStartDate: moment('2023-10-06'), // Estimate
         lootSheetID: '1vzK9lPih35GSUPbxLreslyihxPSSIXhS3JW_GWRf7Lw',
         lootSheetTab: 'LootWOTLK4',
         itemScores: [100, 90, 80, 70, 65, 60, 55, 54, 53, 52],

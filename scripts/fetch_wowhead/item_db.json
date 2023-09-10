@@ -1,0 +1,1262 @@
+[
+    {
+        "id": 50451,
+        "name": "Belt of the Lonely Noble",
+        "icon": "inv_belt_70",
+        "slot": "Waist",
+        "source": "Trash"
+    },
+    {
+        "id": 50447,
+        "name": "Harbinger's Bone Band",
+        "icon": "inv_jewelry_ring_84",
+        "slot": "Ring",
+        "source": "Trash"
+    },
+    {
+        "id": 50450,
+        "name": "Leggings of Dubious Charms",
+        "icon": "inv_pants_mail_35",
+        "slot": "Legs",
+        "source": "Trash"
+    },
+    {
+        "id": 50453,
+        "name": "Ring of Rotting Sinew",
+        "icon": "inv_jewelry_ring_81",
+        "slot": "Ring",
+        "source": "Trash"
+    },
+    {
+        "id": 50444,
+        "name": "Rowan's Rifle of Silver Bullets",
+        "icon": "inv_weapon_rifle_39",
+        "slot": "Bow",
+        "source": "Trash"
+    },
+    {
+        "id": 50449,
+        "name": "Stiffened Corpse Shoulderpads",
+        "icon": "inv_shoulder_119",
+        "slot": "Shoulders",
+        "source": "Trash"
+    },
+    {
+        "id": 50452,
+        "name": "Wodin's Lucky Necklace",
+        "icon": "inv_misc_pelt_wolf_ruin_01",
+        "slot": "Neck",
+        "source": "Trash"
+    },
+    {
+        "id": 49908,
+        "name": "Primordial Saronite",
+        "icon": "spell_fire_felflamebreath",
+        "slot": "None",
+        "source": "Tokens"
+    },
+    {
+        "id": 50274,
+        "name": "Shadowfrost Shard",
+        "icon": "inv_enchant_shardshadowfrostlarge",
+        "slot": "None",
+        "source": "Tokens"
+    },
+    {
+        "id": 50604,
+        "name": "Band of the Bone Colossus",
+        "icon": "inv_jewelry_ring_83",
+        "slot": "Ring",
+        "source": "Marrowgar"
+    },
+    {
+        "id": 50609,
+        "name": "Bone Sentinel's Amulet",
+        "icon": "inv_jewelry_necklace_53",
+        "slot": "Neck",
+        "source": "Marrowgar"
+    },
+    {
+        "id": 50611,
+        "name": "Bracers of Dark Reckoning",
+        "icon": "inv_bracer_43",
+        "slot": "Wrist",
+        "source": "Marrowgar"
+    },
+    {
+        "id": 50709,
+        "name": "Bryntroll, the Bone Arbiter",
+        "icon": "inv_axe_120",
+        "slot": "Two hand",
+        "source": "Marrowgar"
+    },
+    {
+        "id": 50616,
+        "name": "Bulwark of Smouldering Steel",
+        "icon": "inv_shield_72",
+        "slot": "Shield",
+        "source": "Marrowgar"
+    },
+    {
+        "id": 50613,
+        "name": "Crushing Coldwraith Belt",
+        "icon": "inv_belt_64",
+        "slot": "Waist",
+        "source": "Marrowgar"
+    },
+    {
+        "id": 50607,
+        "name": "Frostbitten Fur Boots",
+        "icon": "inv_boots_leather_07",
+        "slot": "Feet",
+        "source": "Marrowgar"
+    },
+    {
+        "id": 50608,
+        "name": "Frozen Bonespike",
+        "icon": "inv_weapon_shortblade_101",
+        "slot": "Main hand",
+        "source": "Marrowgar"
+    },
+    {
+        "id": 50606,
+        "name": "Gendarme's Cuirass",
+        "icon": "inv_chest_plate_26",
+        "slot": "Vest",
+        "source": "Marrowgar"
+    },
+    {
+        "id": 50615,
+        "name": "Handguards of Winter's Respite",
+        "icon": "inv_gauntlets_83",
+        "slot": "Hands",
+        "source": "Marrowgar"
+    },
+    {
+        "id": 50612,
+        "name": "Legguards of Lost Hope",
+        "icon": "inv_pants_plate_31",
+        "slot": "Legs",
+        "source": "Marrowgar"
+    },
+    {
+        "id": 50614,
+        "name": "Loop of the Endless Labyrinth",
+        "icon": "inv_jewelry_ring_82",
+        "slot": "Ring",
+        "source": "Marrowgar"
+    },
+    {
+        "id": 50610,
+        "name": "Marrowgar's Frigid Eye",
+        "icon": "item_icecrownringb",
+        "slot": "Ring",
+        "source": "Marrowgar"
+    },
+    {
+        "id": 50617,
+        "name": "Rusted Bonespike Pauldrons",
+        "icon": "inv_shoulder_117",
+        "slot": "Shoulders",
+        "source": "Marrowgar"
+    },
+    {
+        "id": 50605,
+        "name": "Snowserpent Mail Helm",
+        "icon": "inv_helmet_158",
+        "slot": "Head",
+        "source": "Marrowgar"
+    },
+    {
+        "id": 50647,
+        "name": "Ahn'kahar Onyx Neckguard",
+        "icon": "inv_jewelry_necklace_48",
+        "slot": "Neck",
+        "source": "Deathwhisper"
+    },
+    {
+        "id": 50639,
+        "name": "Blood-Soaked Saronite Stompers",
+        "icon": "inv_boots_plate_13",
+        "slot": "Feet",
+        "source": "Deathwhisper"
+    },
+    {
+        "id": 50640,
+        "name": "Broken Ram Skull Helm",
+        "icon": "inv_helmet_151",
+        "slot": "Head",
+        "source": "Deathwhisper"
+    },
+    {
+        "id": 50646,
+        "name": "Cultist's Bloodsoaked Spaulders",
+        "icon": "inv_shoulder_112",
+        "slot": "Shoulders",
+        "source": "Deathwhisper"
+    },
+    {
+        "id": 50649,
+        "name": "Deathwhisper Raiment",
+        "icon": "inv_chest_leather_21",
+        "slot": "Vest",
+        "source": "Deathwhisper"
+    },
+    {
+        "id": 50650,
+        "name": "Fallen Lord's Handguards",
+        "icon": "inv_gauntlets_85",
+        "slot": "Hands",
+        "source": "Deathwhisper"
+    },
+    {
+        "id": 50641,
+        "name": "Heartpierce",
+        "icon": "inv_weapon_shortblade_103",
+        "slot": "One hand",
+        "source": "Deathwhisper"
+    },
+    {
+        "id": 50642,
+        "name": "Juggernaut Band",
+        "icon": "item_icecrownringd",
+        "slot": "Ring",
+        "source": "Deathwhisper"
+    },
+    {
+        "id": 50645,
+        "name": "Leggings of Northern Lights",
+        "icon": "inv_pants_mail_32",
+        "slot": "Legs",
+        "source": "Deathwhisper"
+    },
+    {
+        "id": 50652,
+        "name": "Necrophotic Greaves",
+        "icon": "inv_boots_mail_10",
+        "slot": "Feet",
+        "source": "Deathwhisper"
+    },
+    {
+        "id": 50648,
+        "name": "Nibelung",
+        "icon": "inv_staff_109",
+        "slot": "Two hand",
+        "source": "Deathwhisper"
+    },
+    {
+        "id": 50644,
+        "name": "Ring of Maddening Whispers",
+        "icon": "inv_jewelry_ring_ahnqiraj_05",
+        "slot": "Ring",
+        "source": "Deathwhisper"
+    },
+    {
+        "id": 50643,
+        "name": "Shoulders of Mercy Killing",
+        "icon": "inv_shoulder_114",
+        "slot": "Shoulders",
+        "source": "Deathwhisper"
+    },
+    {
+        "id": 50651,
+        "name": "The Lady's Brittle Bracers",
+        "icon": "inv_bracer_44",
+        "slot": "Wrist",
+        "source": "Deathwhisper"
+    },
+    {
+        "id": 50638,
+        "name": "Zod's Repeating Longbow",
+        "icon": "inv_weapon_bow_55",
+        "slot": "Bow",
+        "source": "Deathwhisper"
+    },
+    {
+        "id": 50366,
+        "name": "Althor's Abacus",
+        "icon": "inv_jewelry_trinket_02",
+        "slot": "Trinket",
+        "source": "Gunship"
+    },
+    {
+        "id": 50658,
+        "name": "Amulet of the Silent Eulogy",
+        "icon": "item_icecrownnecklaced",
+        "slot": "Neck",
+        "source": "Gunship"
+    },
+    {
+        "id": 50660,
+        "name": "Boneguard Commander's Pauldrons",
+        "icon": "inv_shoulder_130",
+        "slot": "Shoulders",
+        "source": "Gunship"
+    },
+    {
+        "id": 50665,
+        "name": "Boots of Unnatural Growth",
+        "icon": "inv_boots_leather_8",
+        "slot": "Feet",
+        "source": "Gunship"
+    },
+    {
+        "id": 50661,
+        "name": "Corp'rethar Ceremonial Crown",
+        "icon": "inv_helmet_156",
+        "slot": "Head",
+        "source": "Gunship"
+    },
+    {
+        "id": 50349,
+        "name": "Corpse Tongue Coin",
+        "icon": "inv_misc_coin_18",
+        "slot": "Trinket",
+        "source": "Gunship"
+    },
+    {
+        "id": 50656,
+        "name": "Ikfirus's Sack of Wonder",
+        "icon": "inv_chest_leather_22",
+        "slot": "Vest",
+        "source": "Gunship"
+    },
+    {
+        "id": 50656,
+        "name": "Ikfirus's Sack of Wonder",
+        "icon": "inv_chest_leather_22",
+        "slot": "Vest",
+        "source": "Gunship"
+    },
+    {
+        "id": 50659,
+        "name": "Polar Bear Claw Bracers",
+        "icon": "inv_bracer_43",
+        "slot": "Wrist",
+        "source": "Gunship"
+    },
+    {
+        "id": 50664,
+        "name": "Ring of Rapid Ascent",
+        "icon": "inv_jewelry_ring_86",
+        "slot": "Ring",
+        "source": "Gunship"
+    },
+    {
+        "id": 50655,
+        "name": "Scourge Hunter's Vambraces",
+        "icon": "inv_bracer_40",
+        "slot": "Wrist",
+        "source": "Gunship"
+    },
+    {
+        "id": 50654,
+        "name": "Scourgeborne Waraxe",
+        "icon": "inv_axe_113",
+        "slot": "One hand",
+        "source": "Gunship"
+    },
+    {
+        "id": 50653,
+        "name": "Shadowvault Slayer's Cloak",
+        "icon": "item_icecrowncloak",
+        "slot": "Back",
+        "source": "Gunship"
+    },
+    {
+        "id": 50657,
+        "name": "Skeleton Lord's Circle",
+        "icon": "inv_jewelry_ring_83",
+        "slot": "Ring",
+        "source": "Gunship"
+    },
+    {
+        "id": 50667,
+        "name": "Waistband of Righteous Fury",
+        "icon": "inv_belt_70",
+        "slot": "Waist",
+        "source": "Gunship"
+    },
+    {
+        "id": 50671,
+        "name": "Belt of the Blood Nova",
+        "icon": "inv_belt_83",
+        "slot": "Waist",
+        "source": "Saurfang"
+    },
+    {
+        "id": 50672,
+        "name": "Bloodvenom Blade",
+        "icon": "inv_sword_154",
+        "slot": "One hand",
+        "source": "Saurfang"
+    },
+    {
+        "id": 52030,
+        "name": "Conqueror's Mark of Sanctification",
+        "icon": "ability_paladin_judgementsofthejust",
+        "slot": "None",
+        "source": "Saurfang"
+    },
+    {
+        "id": 52027,
+        "name": "Conqueror's Mark of Sanctification",
+        "icon": "ability_paladin_shieldofthetemplar",
+        "slot": "None",
+        "source": "Saurfang"
+    },
+    {
+        "id": 50363,
+        "name": "Deathbringer's Will",
+        "icon": "inv_jewelry_trinket_04",
+        "slot": "Trinket",
+        "source": "Saurfang"
+    },
+    {
+        "id": 50668,
+        "name": "Greatcloak of the Turned Champion",
+        "icon": "item_icecrowncape",
+        "slot": "Back",
+        "source": "Saurfang"
+    },
+    {
+        "id": 52026,
+        "name": "Protector's Mark of Sanctification",
+        "icon": "ability_paladin_shieldofthetemplar",
+        "slot": "None",
+        "source": "Saurfang"
+    },
+    {
+        "id": 52029,
+        "name": "Protector's Mark of Sanctification",
+        "icon": "ability_paladin_judgementsofthejust",
+        "slot": "None",
+        "source": "Saurfang"
+    },
+    {
+        "id": 50670,
+        "name": "Toskk's Maximized Wristguards",
+        "icon": "inv_bracer_41",
+        "slot": "Wrist",
+        "source": "Saurfang"
+    },
+    {
+        "id": 52025,
+        "name": "Vanquisher's Mark of Sanctification",
+        "icon": "ability_paladin_shieldofthetemplar",
+        "slot": "None",
+        "source": "Saurfang"
+    },
+    {
+        "id": 52028,
+        "name": "Vanquisher's Mark of Sanctification",
+        "icon": "ability_paladin_judgementsofthejust",
+        "slot": "None",
+        "source": "Saurfang"
+    },
+    {
+        "id": 50691,
+        "name": "Belt of Broken Bones",
+        "icon": "inv_belt_63",
+        "slot": "Waist",
+        "source": "Festergut"
+    },
+    {
+        "id": 50692,
+        "name": "Black Bruise",
+        "icon": "inv_weapon_hand_33",
+        "slot": "Main hand",
+        "source": "Festergut"
+    },
+    {
+        "id": 50689,
+        "name": "Carapace of Forgotten Kings",
+        "icon": "inv_chest_mail_11",
+        "slot": "Vest",
+        "source": "Festergut"
+    },
+    {
+        "id": 50695,
+        "name": "Distant Land",
+        "icon": "inv_staff_107",
+        "slot": "Two hand",
+        "source": "Festergut"
+    },
+    {
+        "id": 50701,
+        "name": "Faceplate of the Forgotten",
+        "icon": "inv_helmet_154",
+        "slot": "Head",
+        "source": "Festergut"
+    },
+    {
+        "id": 50226,
+        "name": "Festergut's Acidic Blood",
+        "icon": "spell_deathknight_bloodboil",
+        "slot": "None",
+        "source": "Festergut"
+    },
+    {
+        "id": 50690,
+        "name": "Fleshrending Gauntlets",
+        "icon": "inv_gauntlets_87",
+        "slot": "Hands",
+        "source": "Festergut"
+    },
+    {
+        "id": 50697,
+        "name": "Gangrenous Leggings",
+        "icon": "inv_pants_leather_34",
+        "slot": "Legs",
+        "source": "Festergut"
+    },
+    {
+        "id": 50700,
+        "name": "Holiday's Grace",
+        "icon": "inv_jewelry_necklace_49",
+        "slot": "Neck",
+        "source": "Festergut"
+    },
+    {
+        "id": 50698,
+        "name": "Horrific Flesh Epaulets",
+        "icon": "inv_shoulder_133",
+        "slot": "Shoulders",
+        "source": "Festergut"
+    },
+    {
+        "id": 50696,
+        "name": "Leather of Stitched Scourge Parts",
+        "icon": "inv_pants_leather_35",
+        "slot": "Legs",
+        "source": "Festergut"
+    },
+    {
+        "id": 50702,
+        "name": "Lingering Illness",
+        "icon": "inv_belt_68",
+        "slot": "Waist",
+        "source": "Festergut"
+    },
+    {
+        "id": 50693,
+        "name": "Might of Blight",
+        "icon": "inv_jewelry_ring_84",
+        "slot": "Ring",
+        "source": "Festergut"
+    },
+    {
+        "id": 50688,
+        "name": "Nerub'ar Stalker's Cord",
+        "icon": "inv_belt_60",
+        "slot": "Waist",
+        "source": "Festergut"
+    },
+    {
+        "id": 50699,
+        "name": "Plague Scientist's Boots",
+        "icon": "inv_boots_cloth_24",
+        "slot": "Feet",
+        "source": "Festergut"
+    },
+    {
+        "id": 50694,
+        "name": "Plaguebringer's Stained Pants",
+        "icon": "inv_kilt_cloth_02",
+        "slot": "Legs",
+        "source": "Festergut"
+    },
+    {
+        "id": 50703,
+        "name": "Unclean Surgical Gloves",
+        "icon": "inv_gauntlets_104",
+        "slot": "Hands",
+        "source": "Festergut"
+    },
+    {
+        "id": 50675,
+        "name": "Aldriana's Gloves of Secrecy",
+        "icon": "inv_gauntlets_79",
+        "slot": "Hands",
+        "source": "Rotface"
+    },
+    {
+        "id": 50682,
+        "name": "Bile-Encrusted Medallion",
+        "icon": "item_icecrownnecklaceb",
+        "slot": "Neck",
+        "source": "Rotface"
+    },
+    {
+        "id": 50681,
+        "name": "Blightborne Warplate",
+        "icon": "inv_chest_plate_26",
+        "slot": "Vest",
+        "source": "Rotface"
+    },
+    {
+        "id": 50687,
+        "name": "Bloodsunder's Bracers",
+        "icon": "inv_bracer_60",
+        "slot": "Wrist",
+        "source": "Rotface"
+    },
+    {
+        "id": 50684,
+        "name": "Corpse-Impaling Spike",
+        "icon": "inv_wand_35",
+        "slot": "Bow",
+        "source": "Rotface"
+    },
+    {
+        "id": 50686,
+        "name": "Death Surgeon's Sleeves",
+        "icon": "inv_bracer_47",
+        "slot": "Wrist",
+        "source": "Rotface"
+    },
+    {
+        "id": 50348,
+        "name": "Dislodged Foreign Object",
+        "icon": "inv_jewelry_trinket_01",
+        "slot": "Trinket",
+        "source": "Rotface"
+    },
+    {
+        "id": 50673,
+        "name": "Dual-Bladed Pauldrons",
+        "icon": "inv_shoulder_113",
+        "slot": "Shoulders",
+        "source": "Rotface"
+    },
+    {
+        "id": 50679,
+        "name": "Helm of the Elder Moon",
+        "icon": "inv_helmet_148",
+        "slot": "Head",
+        "source": "Rotface"
+    },
+    {
+        "id": 50674,
+        "name": "Raging Behemoth's Shoulderplates",
+        "icon": "inv_shoulder_130",
+        "slot": "Shoulders",
+        "source": "Rotface"
+    },
+    {
+        "id": 50676,
+        "name": "Rib Spreader",
+        "icon": "inv_weapon_shortblade_105",
+        "slot": "One hand",
+        "source": "Rotface"
+    },
+    {
+        "id": 50680,
+        "name": "Rot-Resistant Breastplate",
+        "icon": "inv_chest_plate22",
+        "slot": "Vest",
+        "source": "Rotface"
+    },
+    {
+        "id": 50231,
+        "name": "Rotface's Acidic Blood",
+        "icon": "spell_shadow_bloodboil",
+        "slot": "None",
+        "source": "Rotface"
+    },
+    {
+        "id": 50678,
+        "name": "Seal of Many Mouths",
+        "icon": "item_icecrownringc",
+        "slot": "Ring",
+        "source": "Rotface"
+    },
+    {
+        "id": 50685,
+        "name": "Trauma",
+        "icon": "inv_mace_118",
+        "slot": "Main hand",
+        "source": "Rotface"
+    },
+    {
+        "id": 50677,
+        "name": "Winding Sheet",
+        "icon": "item_icecrowncape",
+        "slot": "Back",
+        "source": "Rotface"
+    },
+    {
+        "id": 50707,
+        "name": "Astrylian's Sutured Cinch",
+        "icon": "inv_belt_61",
+        "slot": "Waist",
+        "source": "Putricide"
+    },
+    {
+        "id": 52027,
+        "name": "Conqueror's Mark of Sanctification",
+        "icon": "ability_paladin_shieldofthetemplar",
+        "slot": "None",
+        "source": "Putricide"
+    },
+    {
+        "id": 52030,
+        "name": "Conqueror's Mark of Sanctification",
+        "icon": "ability_paladin_judgementsofthejust",
+        "slot": "None",
+        "source": "Putricide"
+    },
+    {
+        "id": 50708,
+        "name": "Last Word",
+        "icon": "inv_mace_114",
+        "slot": "One hand",
+        "source": "Putricide"
+    },
+    {
+        "id": 50705,
+        "name": "Professor's Bloodied Smock",
+        "icon": "inv_belt_59",
+        "slot": "Waist",
+        "source": "Putricide"
+    },
+    {
+        "id": 52029,
+        "name": "Protector's Mark of Sanctification",
+        "icon": "ability_paladin_judgementsofthejust",
+        "slot": "None",
+        "source": "Putricide"
+    },
+    {
+        "id": 52026,
+        "name": "Protector's Mark of Sanctification",
+        "icon": "ability_paladin_shieldofthetemplar",
+        "slot": "None",
+        "source": "Putricide"
+    },
+    {
+        "id": 50704,
+        "name": "Rigormortis",
+        "icon": "inv_sword_152",
+        "slot": "Main hand",
+        "source": "Putricide"
+    },
+    {
+        "id": 50706,
+        "name": "Tiny Abomination in a Jar",
+        "icon": "inv_alchemy_enchantedvial",
+        "slot": "Trinket",
+        "source": "Putricide"
+    },
+    {
+        "id": 52025,
+        "name": "Vanquisher's Mark of Sanctification",
+        "icon": "ability_paladin_shieldofthetemplar",
+        "slot": "None",
+        "source": "Putricide"
+    },
+    {
+        "id": 52028,
+        "name": "Vanquisher's Mark of Sanctification",
+        "icon": "ability_paladin_judgementsofthejust",
+        "slot": "None",
+        "source": "Putricide"
+    },
+    {
+        "id": 50721,
+        "name": "Crypt Keeper's Bracers",
+        "icon": "inv_bracer_46",
+        "slot": "Wrist",
+        "source": "Council"
+    },
+    {
+        "id": 50603,
+        "name": "Cryptmaker",
+        "icon": "inv_mace_116",
+        "slot": "Two hand",
+        "source": "Council"
+    },
+    {
+        "id": 50713,
+        "name": "Geistlord's Punishment Sack",
+        "icon": "inv_helmet_149",
+        "slot": "Head",
+        "source": "Council"
+    },
+    {
+        "id": 50720,
+        "name": "Incarnadine Band of Mending",
+        "icon": "inv_jewelry_ring_84",
+        "slot": "Ring",
+        "source": "Council"
+    },
+    {
+        "id": 50710,
+        "name": "Keleseth's Seducer",
+        "icon": "inv_weapon_hand_33",
+        "slot": "Off hand",
+        "source": "Council"
+    },
+    {
+        "id": 50712,
+        "name": "Landsoul's Horned Greathelm",
+        "icon": "inv_helmet_151",
+        "slot": "Head",
+        "source": "Council"
+    },
+    {
+        "id": 50723,
+        "name": "Mail of Crimson Coins",
+        "icon": "inv_chest_mail_15",
+        "slot": "Vest",
+        "source": "Council"
+    },
+    {
+        "id": 50718,
+        "name": "Royal Crimson Cloak",
+        "icon": "inv_misc_cape_18",
+        "slot": "Back",
+        "source": "Council"
+    },
+    {
+        "id": 50722,
+        "name": "San'layn Ritualist Gloves",
+        "icon": "inv_gauntlets_92",
+        "slot": "Hands",
+        "source": "Council"
+    },
+    {
+        "id": 50717,
+        "name": "Sanguine Silk Robes",
+        "icon": "inv_chest_cloth_80",
+        "slot": "Vest",
+        "source": "Council"
+    },
+    {
+        "id": 50719,
+        "name": "Shadow Silk Spindle",
+        "icon": "inv_misc_thread_01",
+        "slot": "Held",
+        "source": "Council"
+    },
+    {
+        "id": 50715,
+        "name": "Shoulders of Frost-Tipped Thorns",
+        "icon": "inv_shoulder_111",
+        "slot": "Shoulders",
+        "source": "Council"
+    },
+    {
+        "id": 50716,
+        "name": "Taldaram's Plated Fists",
+        "icon": "inv_gauntlets_87",
+        "slot": "Hands",
+        "source": "Council"
+    },
+    {
+        "id": 50711,
+        "name": "Treads of the Wasteland",
+        "icon": "inv_boots_mail_06",
+        "slot": "Feet",
+        "source": "Council"
+    },
+    {
+        "id": 50714,
+        "name": "Valanar's Other Signet Ring",
+        "icon": "inv_jewelry_ring_81",
+        "slot": "Ring",
+        "source": "Council"
+    },
+    {
+        "id": 50726,
+        "name": "Bauble of True Blood",
+        "icon": "inv_jewelcrafting_gem_28",
+        "slot": "Trinket",
+        "source": "Lana'thel"
+    },
+    {
+        "id": 50724,
+        "name": "Blood Queen's Crimson Choker",
+        "icon": "inv_jewelcrafting_crimsonspinel_02",
+        "slot": "Neck",
+        "source": "Lana'thel"
+    },
+    {
+        "id": 50727,
+        "name": "Bloodfall",
+        "icon": "inv_weapon_staff_109",
+        "slot": "Two hand",
+        "source": "Lana'thel"
+    },
+    {
+        "id": 52030,
+        "name": "Conqueror's Mark of Sanctification",
+        "icon": "ability_paladin_judgementsofthejust",
+        "slot": "None",
+        "source": "Lana'thel"
+    },
+    {
+        "id": 52027,
+        "name": "Conqueror's Mark of Sanctification",
+        "icon": "ability_paladin_shieldofthetemplar",
+        "slot": "None",
+        "source": "Lana'thel"
+    },
+    {
+        "id": 50725,
+        "name": "Dying Light",
+        "icon": "inv_staff_106",
+        "slot": "Two hand",
+        "source": "Lana'thel"
+    },
+    {
+        "id": 50729,
+        "name": "Icecrown Glacial Wall",
+        "icon": "inv_shield_75",
+        "slot": "Shield",
+        "source": "Lana'thel"
+    },
+    {
+        "id": 50728,
+        "name": "Lana'thel's Chain of Flagellation",
+        "icon": "inv_jewelry_necklace_50",
+        "slot": "Neck",
+        "source": "Lana'thel"
+    },
+    {
+        "id": 52029,
+        "name": "Protector's Mark of Sanctification",
+        "icon": "ability_paladin_judgementsofthejust",
+        "slot": "None",
+        "source": "Lana'thel"
+    },
+    {
+        "id": 52026,
+        "name": "Protector's Mark of Sanctification",
+        "icon": "ability_paladin_shieldofthetemplar",
+        "slot": "None",
+        "source": "Lana'thel"
+    },
+    {
+        "id": 52025,
+        "name": "Vanquisher's Mark of Sanctification",
+        "icon": "ability_paladin_shieldofthetemplar",
+        "slot": "None",
+        "source": "Lana'thel"
+    },
+    {
+        "id": 52028,
+        "name": "Vanquisher's Mark of Sanctification",
+        "icon": "ability_paladin_judgementsofthejust",
+        "slot": "None",
+        "source": "Lana'thel"
+    },
+    {
+        "id": 50619,
+        "name": "Anub'ar Stalker's Gloves",
+        "icon": "inv_gauntlets_84",
+        "slot": "Hands",
+        "source": "Valithria"
+    },
+    {
+        "id": 50632,
+        "name": "Boots of the Funeral March",
+        "icon": "inv_boots_plate_14",
+        "slot": "Feet",
+        "source": "Valithria"
+    },
+    {
+        "id": 50630,
+        "name": "Bracers of Eternal Dreaming",
+        "icon": "inv_bracer_40",
+        "slot": "Wrist",
+        "source": "Valithria"
+    },
+    {
+        "id": 50620,
+        "name": "Coldwraith Links",
+        "icon": "inv_belt_63",
+        "slot": "Waist",
+        "source": "Valithria"
+    },
+    {
+        "id": 50622,
+        "name": "Devium's Eternally Cold Ring",
+        "icon": "inv_jewelry_ring_86",
+        "slot": "Ring",
+        "source": "Valithria"
+    },
+    {
+        "id": 49426,
+        "name": "Emblem of Frost",
+        "icon": "inv_misc_frostemblem_01",
+        "slot": "None",
+        "source": "Valithria"
+    },
+    {
+        "id": 50628,
+        "name": "Frostbinder's Shredded Cape",
+        "icon": "inv_misc_cape_16",
+        "slot": "Back",
+        "source": "Valithria"
+    },
+    {
+        "id": 50618,
+        "name": "Frostbrood Sapphire Ring",
+        "icon": "item_icecrownringa",
+        "slot": "Ring",
+        "source": "Valithria"
+    },
+    {
+        "id": 50625,
+        "name": "Grinning Skull Greatboots",
+        "icon": "inv_boots_plate_13",
+        "slot": "Feet",
+        "source": "Valithria"
+    },
+    {
+        "id": 50623,
+        "name": "Leggings of Dying Candles",
+        "icon": "inv_pants_plate_33",
+        "slot": "Legs",
+        "source": "Valithria"
+    },
+    {
+        "id": 50621,
+        "name": "Lungbreaker",
+        "icon": "inv_weapon_shortblade_105",
+        "slot": "One hand",
+        "source": "Valithria"
+    },
+    {
+        "id": 50631,
+        "name": "Nightmare Ender",
+        "icon": "inv_wand_34",
+        "slot": "Bow",
+        "source": "Valithria"
+    },
+    {
+        "id": 50627,
+        "name": "Noose of Malachite",
+        "icon": "item_icecrownnecklacec",
+        "slot": "Neck",
+        "source": "Valithria"
+    },
+    {
+        "id": 50629,
+        "name": "Robe of the Waking Nightmare",
+        "icon": "inv_chest_cloth_77",
+        "slot": "Vest",
+        "source": "Valithria"
+    },
+    {
+        "id": 50624,
+        "name": "Scourge Reaver's Legplates",
+        "icon": "inv_pants_plate_31",
+        "slot": "Legs",
+        "source": "Valithria"
+    },
+    {
+        "id": 50626,
+        "name": "Snowstorm Helm",
+        "icon": "inv_helmet_169",
+        "slot": "Head",
+        "source": "Valithria"
+    },
+    {
+        "id": 52030,
+        "name": "Conqueror's Mark of Sanctification",
+        "icon": "ability_paladin_judgementsofthejust",
+        "slot": "None",
+        "source": "Sindragosa"
+    },
+    {
+        "id": 52027,
+        "name": "Conqueror's Mark of Sanctification",
+        "icon": "ability_paladin_shieldofthetemplar",
+        "slot": "None",
+        "source": "Sindragosa"
+    },
+    {
+        "id": 50636,
+        "name": "Memory of Malygos",
+        "icon": "inv_jewelry_ring_40",
+        "slot": "Ring",
+        "source": "Sindragosa"
+    },
+    {
+        "id": 50365,
+        "name": "Phylactery of the Nameless Lich",
+        "icon": "inv_jewelry_trinket_03",
+        "slot": "Trinket",
+        "source": "Sindragosa"
+    },
+    {
+        "id": 52029,
+        "name": "Protector's Mark of Sanctification",
+        "icon": "ability_paladin_judgementsofthejust",
+        "slot": "None",
+        "source": "Sindragosa"
+    },
+    {
+        "id": 52026,
+        "name": "Protector's Mark of Sanctification",
+        "icon": "ability_paladin_shieldofthetemplar",
+        "slot": "None",
+        "source": "Sindragosa"
+    },
+    {
+        "id": 50633,
+        "name": "Sindragosa's Cruel Claw",
+        "icon": "inv_misc_monsterhorn_03",
+        "slot": "Neck",
+        "source": "Sindragosa"
+    },
+    {
+        "id": 50364,
+        "name": "Sindragosa's Flawless Fang",
+        "icon": "inv_jewelry_trinket_06",
+        "slot": "Trinket",
+        "source": "Sindragosa"
+    },
+    {
+        "id": 50635,
+        "name": "Sundial of Eternal Dusk",
+        "icon": "inv_offhand_zulaman_d_02",
+        "slot": "Held",
+        "source": "Sindragosa"
+    },
+    {
+        "id": 52025,
+        "name": "Vanquisher's Mark of Sanctification",
+        "icon": "ability_paladin_shieldofthetemplar",
+        "slot": "None",
+        "source": "Sindragosa"
+    },
+    {
+        "id": 52028,
+        "name": "Vanquisher's Mark of Sanctification",
+        "icon": "ability_paladin_judgementsofthejust",
+        "slot": "None",
+        "source": "Sindragosa"
+    },
+    {
+        "id": 50731,
+        "name": "Archus, Greatstaff of Antonidas",
+        "icon": "inv_staff_108",
+        "slot": "Two hand",
+        "source": "Lich King"
+    },
+    {
+        "id": 50732,
+        "name": "Bloodsurge, Kel'Thuzad's Blade of Agony",
+        "icon": "inv_sword_150",
+        "slot": "Main hand",
+        "source": "Lich King"
+    },
+    {
+        "id": 52030,
+        "name": "Conqueror's Mark of Sanctification",
+        "icon": "ability_paladin_judgementsofthejust",
+        "slot": "None",
+        "source": "Lich King"
+    },
+    {
+        "id": 52027,
+        "name": "Conqueror's Mark of Sanctification",
+        "icon": "ability_paladin_shieldofthetemplar",
+        "slot": "None",
+        "source": "Lich King"
+    },
+    {
+        "id": 49426,
+        "name": "Emblem of Frost",
+        "icon": "inv_misc_frostemblem_01",
+        "slot": "None",
+        "source": "Lich King"
+    },
+    {
+        "id": 50733,
+        "name": "Fal'inrush, Defender of Quel'thalas",
+        "icon": "inv_weapon_crossbow_38",
+        "slot": "Bow",
+        "source": "Lich King"
+    },
+    {
+        "id": 50730,
+        "name": "Glorenzelg, High-Blade of the Silver Hand",
+        "icon": "inv_sword_153",
+        "slot": "Two hand",
+        "source": "Lich King"
+    },
+    {
+        "id": 50737,
+        "name": "Havoc's Call, Blade of Lordaeron Kings",
+        "icon": "inv_axe_113",
+        "slot": "One hand",
+        "source": "Lich King"
+    },
+    {
+        "id": 50736,
+        "name": "Heaven's Fall, Kryss of a Thousand Lies",
+        "icon": "inv_weapon_shortblade_104",
+        "slot": "One hand",
+        "source": "Lich King"
+    },
+    {
+        "id": 50818,
+        "name": "Invincible's Reins",
+        "icon": "spell_deathknight_summondeathcharger",
+        "slot": "None",
+        "source": "Lich King"
+    },
+    {
+        "id": 50738,
+        "name": "Mithrios, Bronzebeard's Legacy",
+        "icon": "inv_mace_117",
+        "slot": "One hand",
+        "source": "Lich King"
+    },
+    {
+        "id": 50735,
+        "name": "Oathbinder, Charge of the Ranger-General",
+        "icon": "inv_weapon_staff_109",
+        "slot": "Two hand",
+        "source": "Lich King"
+    },
+    {
+        "id": 52029,
+        "name": "Protector's Mark of Sanctification",
+        "icon": "ability_paladin_judgementsofthejust",
+        "slot": "None",
+        "source": "Lich King"
+    },
+    {
+        "id": 52026,
+        "name": "Protector's Mark of Sanctification",
+        "icon": "ability_paladin_shieldofthetemplar",
+        "slot": "None",
+        "source": "Lich King"
+    },
+    {
+        "id": 50734,
+        "name": "Royal Scepter of Terenas II",
+        "icon": "inv_mace_115",
+        "slot": "Main hand",
+        "source": "Lich King"
+    },
+    {
+        "id": 52028,
+        "name": "Vanquisher's Mark of Sanctification",
+        "icon": "ability_paladin_judgementsofthejust",
+        "slot": "None",
+        "source": "Lich King"
+    },
+    {
+        "id": 52025,
+        "name": "Vanquisher's Mark of Sanctification",
+        "icon": "ability_paladin_shieldofthetemplar",
+        "slot": "None",
+        "source": "Lich King"
+    }
+]
