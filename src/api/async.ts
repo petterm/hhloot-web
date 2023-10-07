@@ -130,7 +130,7 @@ export const fetchData = (instance: Instance, skipReservations: Boolean) => {
 
 export const checkLogin = () =>
     // process.env.NODE_ENV === 'development' ? Promise.resolve(undefined) :
-    process.env.NODE_ENV === 'development' ? Promise.resolve('Calavera') :
+    process.env.NODE_ENV === 'development' ? Promise.resolve('Samies') :
     Axios.get<LoginStatusResponse>('/api/loginstatus')
         .then(({ data }) => data.authenticated ? data.character : undefined)
         .catch(() => undefined)

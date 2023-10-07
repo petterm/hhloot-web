@@ -337,10 +337,11 @@
     },
     {
         "id": 52027,
-        "name": "Conqueror's Mark of Sanctification",
+        "name": "Conqueror's Mark of Sanctification (Normal)",
         "icon": "ability_paladin_shieldofthetemplar",
         "slot": "None",
-        "source": "Saurfang"
+        "source": "Saurfang",
+        "hidden": true
     },
     {
         "id": 50363,
@@ -358,10 +359,11 @@
     },
     {
         "id": 52026,
-        "name": "Protector's Mark of Sanctification",
+        "name": "Protector's Mark of Sanctification (Normal)",
         "icon": "ability_paladin_shieldofthetemplar",
         "slot": "None",
-        "source": "Saurfang"
+        "source": "Saurfang",
+        "hidden": true
     },
     {
         "id": 52029,
@@ -379,10 +381,11 @@
     },
     {
         "id": 52025,
-        "name": "Vanquisher's Mark of Sanctification",
+        "name": "Vanquisher's Mark of Sanctification (Normal)",
         "icon": "ability_paladin_shieldofthetemplar",
         "slot": "None",
-        "source": "Saurfang"
+        "source": "Saurfang",
+        "hidden": true
     },
     {
         "id": 52028,
@@ -631,10 +634,11 @@
     },
     {
         "id": 52027,
-        "name": "Conqueror's Mark of Sanctification",
+        "name": "Conqueror's Mark of Sanctification (Normal)",
         "icon": "ability_paladin_shieldofthetemplar",
         "slot": "None",
-        "source": "Putricide"
+        "source": "Putricide",
+        "hidden": true
     },
     {
         "id": 52030,
@@ -666,10 +670,11 @@
     },
     {
         "id": 52026,
-        "name": "Protector's Mark of Sanctification",
+        "name": "Protector's Mark of Sanctification (Normal)",
         "icon": "ability_paladin_shieldofthetemplar",
         "slot": "None",
-        "source": "Putricide"
+        "source": "Putricide",
+        "hidden": true
     },
     {
         "id": 50704,
@@ -687,10 +692,11 @@
     },
     {
         "id": 52025,
-        "name": "Vanquisher's Mark of Sanctification",
+        "name": "Vanquisher's Mark of Sanctification (Normal)",
         "icon": "ability_paladin_shieldofthetemplar",
         "slot": "None",
-        "source": "Putricide"
+        "source": "Putricide",
+        "hidden": true
     },
     {
         "id": 52028,
@@ -834,10 +840,11 @@
     },
     {
         "id": 52027,
-        "name": "Conqueror's Mark of Sanctification",
+        "name": "Conqueror's Mark of Sanctification (Normal)",
         "icon": "ability_paladin_shieldofthetemplar",
         "slot": "None",
-        "source": "Lana'thel"
+        "source": "Lana'thel",
+        "hidden": true
     },
     {
         "id": 50725,
@@ -869,17 +876,19 @@
     },
     {
         "id": 52026,
-        "name": "Protector's Mark of Sanctification",
+        "name": "Protector's Mark of Sanctification (Normal)",
         "icon": "ability_paladin_shieldofthetemplar",
         "slot": "None",
-        "source": "Lana'thel"
+        "source": "Lana'thel",
+        "hidden": true
     },
     {
         "id": 52025,
-        "name": "Vanquisher's Mark of Sanctification",
+        "name": "Vanquisher's Mark of Sanctification (Normal)",
         "icon": "ability_paladin_shieldofthetemplar",
         "slot": "None",
-        "source": "Lana'thel"
+        "source": "Lana'thel",
+        "hidden": true
     },
     {
         "id": 52028,
@@ -1002,10 +1011,11 @@
     },
     {
         "id": 52027,
-        "name": "Conqueror's Mark of Sanctification",
+        "name": "Conqueror's Mark of Sanctification (Normal)",
         "icon": "ability_paladin_shieldofthetemplar",
         "slot": "None",
-        "source": "Sindragosa"
+        "source": "Sindragosa",
+        "hidden": true
     },
     {
         "id": 50636,
@@ -1030,10 +1040,11 @@
     },
     {
         "id": 52026,
-        "name": "Protector's Mark of Sanctification",
+        "name": "Protector's Mark of Sanctification (Normal)",
         "icon": "ability_paladin_shieldofthetemplar",
         "slot": "None",
-        "source": "Sindragosa"
+        "source": "Sindragosa",
+        "hidden": true
     },
     {
         "id": 50633,
@@ -1058,10 +1069,11 @@
     },
     {
         "id": 52025,
-        "name": "Vanquisher's Mark of Sanctification",
+        "name": "Vanquisher's Mark of Sanctification (Normal)",
         "icon": "ability_paladin_shieldofthetemplar",
         "slot": "None",
-        "source": "Sindragosa"
+        "source": "Sindragosa",
+        "hidden": true
     },
     {
         "id": 52028,
@@ -1093,10 +1105,11 @@
     },
     {
         "id": 52027,
-        "name": "Conqueror's Mark of Sanctification",
+        "name": "Conqueror's Mark of Sanctification (Normal)",
         "icon": "ability_paladin_shieldofthetemplar",
         "slot": "None",
-        "source": "Lich King"
+        "source": "Lich King",
+        "hidden": true
     },
     {
         "id": 50733,
@@ -1157,10 +1170,11 @@
     },
     {
         "id": 52026,
-        "name": "Protector's Mark of Sanctification",
+        "name": "Protector's Mark of Sanctification (Normal)",
         "icon": "ability_paladin_shieldofthetemplar",
         "slot": "None",
-        "source": "Lich King"
+        "source": "Lich King",
+        "hidden": true
     },
     {
         "id": 50734,
@@ -1178,10 +1192,11 @@
     },
     {
         "id": 52025,
-        "name": "Vanquisher's Mark of Sanctification",
+        "name": "Vanquisher's Mark of Sanctification (Normal)",
         "icon": "ability_paladin_shieldofthetemplar",
         "slot": "None",
-        "source": "Lich King"
+        "source": "Lich King",
+        "hidden": true
     },
     {
         "id": 50451,
