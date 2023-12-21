@@ -1,3 +1,4 @@
+import moment from "moment";
 import { Player, PlayerItemEntry, EntryScore, Instance, PlayerRaidEvent } from "../types";
 import { attendanceRaidCount } from "../constants";
 
@@ -58,7 +59,7 @@ export const getEntryScore = (entry: PlayerItemEntry, player: Player, instance: 
 
 export const getSortedPaddedRaids = (player: Player) => {
     let attendanceRaids = [...player.attendedRaids];
-    attendanceRaids.sort((a, b) => a.date > b.date ? -1 : 1);
+    attendanceRaids.sort((a, b) => moment(a.date).isAfter(b.date) ? -1 : 1);
     attendanceRaids = attendanceRaids.filter((raid, index) => raid.bonus || index + 1 <= attendanceRaidCount);
     while (attendanceRaids.length < attendanceRaidCount) {
         attendanceRaids.push({

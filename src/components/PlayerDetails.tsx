@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import moment from 'moment';
 import { PlayerItemEntry, Item, Instance, InstanceData } from '../types'
 import { useParams } from 'react-router-dom';
 import { getInstanceData, getPlayer } from '../api';
@@ -38,8 +39,8 @@ const PlayerDetails: React.FunctionComponent<PlayerDetailsProps> = ({ instance }
 
     // Sort by date (old first), then item name
     freeLoot.sort((a, b) => 
-        a.date < b.date ? -1 : 
-        a.date > b.date ? 1 : 
+        moment(a.date).isBefore(b.date) ? -1 : 
+        moment(a.date).isAfter(b.date) ? 1 : 
         a.item.name.localeCompare(b.item.name));
 
     return (
